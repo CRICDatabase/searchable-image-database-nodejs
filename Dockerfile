@@ -3,4 +3,4 @@ FROM node:13.10.1-buster
 WORKDIR /usr/src/app
 # Install app dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install && npm install -g nodemon
