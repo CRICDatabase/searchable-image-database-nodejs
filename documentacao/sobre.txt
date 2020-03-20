@@ -1,0 +1,30 @@
+
+<npm install sequelize>
+<npm install sequelize-cli --save>
+<npm install mysql --save>
+<npm install mysql2 --save>
+<npm install nodemom>
+<npm install --save cors> //Para remover a politica CORS. Se o codigo do CORS no server.json estiver comentado, é porque foi usada uma estrategia melhor para lidar com essa politica de CORS.
+
+<npm install connect multiparty --save> para aceitar upload de arquivos
+<npm install express-fileupload --save>  Para o Express saber lidar com uploads de arquivos
+<npm install --save jimp> Para converter formatos de imagem
+<npm install --save md5> para instalar o sistema de criptografia md5
+<npm install express-zip --save> para fazer download de arquivos Link: https://github.com/thrackle/express-zip
+
+rodar comandos sequelize <npx sequelize comando>
+
+Comandos sequelize{
+    Ajuda <npx sequelize -h>
+    criar base de dados: <npx sequelize db:create>
+    criar um arquivo de migration <npx sequelize migration:create --name=usuario_base>
+    criar a tabela a partir do arquivo de migration <npx sequelize db:migrate>
+    Destroi uma base de dados <npx sequelize db:drop>
+    Adiciona atributos à tabelas <npx sequelize migration:create --name=add-nome_atributo-field to nome_tabela>
+}
+
+HttpStatusCode{
+    <npm install http-status-codes --save>
+}
+
+Para rodar a aplicação use o comando: <nodemon ./src/server> ou <npm run cric_api> (cric_api é uma mascara p o comando nodemon, ver package.json)

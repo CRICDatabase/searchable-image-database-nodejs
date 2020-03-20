@@ -1,0 +1,129 @@
+Requisicao: Id_imagem e id_usuario
+segmentacao:
+{
+	"id_descricao": 10,
+    "id_lesao": 1,
+	"tipo_analise_realizada":"SEGMENTACAO",
+	"segmentos_citoplasma": 
+	[
+		{
+			"coord_x": 250,
+    		"coord_y":250
+		}
+	],
+	"segmentos_nucleo":
+	[
+		{
+			"coord_x": 250,
+    		"coord_y":250
+		}
+	]
+}
+
+Retorno
+{
+    "analista": {
+		"id": 1,
+        "total_classificacoes": 4,
+        "total_segmentacoes": 5
+    },
+	"celulas":
+	[
+		{
+            "id_celula": 1,
+            "tipo_analise_realizada": "CLASSIFICACAO",
+            "lesao": {
+                "nome": "Sem lesão",
+                "descricao": "Nenhuma lesão identificada"
+            },
+            "descricao": {
+                "codigo": 1112,
+                "nome": "HSIL"
+			},
+			"segmentos_citoplasma":
+			[
+				{
+					"coord_x": 500,
+            		"coord_": 500,
+				}
+			],
+			"segmentos_nucleo":
+			[
+				{
+					"coord_x": 500,
+            		"coord_": 500,
+				}
+			]
+        }
+    ]
+}
+
+
+
+
+Saida Postman atual
+{
+    "analista": {
+        "id": 2,
+        "total_classificacoes": 0,
+        "total_segmentacoes": 7
+    },
+    "celulas": [
+        {
+            "id_celula": 13,
+            "tipo_analise_realizada": "SEGMENTACAO",
+            "lesao": {
+                "nome": "Sem lesão",
+                "descricao": "Nenhuma lesão identificada"
+            },
+            "descricao": {
+                "codigo": 1112,
+                "nome": "HSIL"
+            },
+            "segmentos_citoplasma": null,
+            "segmentos_nucleo": null
+        },
+        {
+            "id_celula": 14,
+            "tipo_analise_realizada": "SEGMENTACAO",
+            "lesao": {
+                "nome": "Sem lesão",
+                "descricao": "Nenhuma lesão identificada"
+            },
+            "descricao": {
+                "codigo": 1112,
+                "nome": "HSIL"
+            },
+            "segmentos_citoplasma": null,
+            "segmentos_nucleo": null
+        },
+        {
+            "id_celula": 16,
+            "tipo_analise_realizada": "SEGMENTACAO",
+            "lesao": {
+                "nome": "Sem lesão",
+                "descricao": "Nenhuma lesão identificada"
+            },
+            "descricao": {
+                "codigo": 1112,
+                "nome": "HSIL"
+            },
+            "segmentos_citoplasma": null,
+            "segmentos_nucleo": null
+        },
+        {
+            "id_celula": 17,
+            "tipo_analise_realizada": "SEGMENTACAO",
+            "lesao": {
+                "nome": "Sem lesão",
+                "descricao": "Nenhuma lesão identificada"
+            },
+            "descricao": {
+                "codigo": 1112,
+                "nome": "HSIL"
+            },
+            "segmentos_citoplasma": null,
+            "segmentos_nucleo": null
+        }
+    ]
+}

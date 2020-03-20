@@ -1,0 +1,34 @@
+Requisicao: Id_imagem e id_usuario
+segmentacao:
+{
+	"id_descricao": 10,
+    "id_lesao": 1,
+    "tipo_analise_realizada":"CLASSIFICACAO",
+    "coord_centro_nucleo_x": 555,
+    "coord_centro_nucleo_y": 555
+}
+
+Retorno:
+{
+    "analista": {
+        "id":1,
+        "total_classificacoes": 4,
+        "total_segmentacoes": 5
+    },
+    "celulas": [
+        {
+            "id_celula": 1,
+            "tipo_analise_realizada": "CLASSIFICACAO",
+            "coord_centro_nucleo_x": 500,
+            "coord_centro_nucleo_y": 500,
+            "lesao": {
+                "nome": "Sem lesão",
+                "descricao": "Nenhuma lesão identificada"
+            },
+            "descricao": {
+                "codigo": 1112,
+                "nome": "HSIL"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+/*Script de cadastro de lesões para ser usado em produção*/
+request_body:
+[
+    {
+        "nome": "Sem Lesao",
+        "detalhes": "Nenhuma lesão identificada"
+    },
+    {
+        "nome": "HSIL",
+        "detalhes": ""
+    },
+    {
+        "nome": "LSIL",
+        "detalhes": "Detalhes"
+    }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "primeiro_nome": "Tales",
+    "ultimo_nome": "Mota",
+    "email": "tales@mota.com",
+    "senha": "khdjasdhkjh",
+    "ativo": 1,
+    "api_key": "jlskjiudasdasdsda",
+    "nivel_acesso": "SEQUELI"
+  },
+  {
+    "primeiro_nome": "Fagner",
+    "ultimo_nome": "Oliveira",
+    "email": "tales@mota.com",
+    "senha": "khdjasdhkjh",
+    "ativo": 1,
+    "api_key": "jlskjiudasdasdsda",
+    "nivel_acesso": "SEQUELI"
+  }
+]
