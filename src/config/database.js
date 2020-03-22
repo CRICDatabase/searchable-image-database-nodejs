@@ -5,7 +5,8 @@ module.exports = {
     username: 'root',
     password: '123.456',
     database: 'cric',
-    dialect: 'mysql',
+    dialect: 'mariadb',
+    dialectOptions: {connectTimeout: 1000}, // mariadb connector option
     timezone: '-03:00',
     define: {
         charset: 'utf8',
