@@ -8,7 +8,7 @@ class CitopatologistaModel extends Model {
     static init(connection) {
 
         super.init({
-            codigo_crc: DataTypes.STRING
+            codigo_crc: DataTypes.STRING  /* User's license to provide diagnostic */
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados
