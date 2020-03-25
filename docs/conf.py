@@ -59,3 +59,6 @@ html_static_path = ['_static']
 js_source_path = '../src/'
 jsdoc_config_path = 'jsdoc.conf.json'
 primary_domain = 'js'
+
+# Read The Docs
+master_doc = 'index'
