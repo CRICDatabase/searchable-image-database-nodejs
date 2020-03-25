@@ -8,8 +8,8 @@ class AnalistaModel extends Model {
     static init(connection) {
 
         super.init({
-            total_segmentacoes: DataTypes.NUMBER,
-            total_classificacoes: DataTypes.NUMBER
+            total_segmentacoes: DataTypes.INTEGER,
+            total_classificacoes: DataTypes.INTEGER
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados
