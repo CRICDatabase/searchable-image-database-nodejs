@@ -83,7 +83,7 @@ Post Operations
 
 ..  http:post:: /api/v1/usuarios/analista/{user_id}
 
-    Promote user with `id` equals `user_id` to be analyst.
+    Promote user with ``id`` equals ``user_id`` to be analyst.
 
     :param post_id: post's unique id
     :type post_id: int

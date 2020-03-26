@@ -2,7 +2,7 @@ Models
 ======
 
 The models are described using `Sequelize <https://sequelize.org/>`_ as object-relational mapping.
-The source code for Sequelize's objects are at `src/models`.
+The source code for Sequelize's objects are at ``src/models``.
 
 Users
 -----
