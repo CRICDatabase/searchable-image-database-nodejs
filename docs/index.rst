@@ -9,14 +9,17 @@ Welcome to CRIC Database's documentation!
 CRIC Searchable Image Database is a public cervical cell image database
 aiming supporting cervical cancer analysis of Pap smear.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+..  toctree::
+    :maxdepth: 2
+    :caption: Contents:
 
-   api
-   models
-   developer
-   contributor
+    photo-documentation
+    cell-segmentation
+    cell-classification
+    api
+    models
+    developer
+    contributor
 
 
 
