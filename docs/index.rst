@@ -13,6 +13,7 @@ aiming supporting cervical cancer analysis of Pap smear.
     :maxdepth: 2
     :caption: Contents:
 
+    persona
     photo-documentation
     cell-segmentation
     cell-classification
