@@ -39,7 +39,7 @@ module.exports = {
                 id: 4,
                 primeiro_nome: "Charles",
                 ultimo_nome: "",
-                email: "Charles@test.cricdatabase.com.br",
+                email: "charles@test.cricdatabase.com.br",
                 senha: Criptografia.criarCriptografiaMd5Utf8("123.456"),
                 ativo: 1,
                 created_at: '2020-01-01',
