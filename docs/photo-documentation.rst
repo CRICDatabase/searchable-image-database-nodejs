@@ -1,7 +1,7 @@
 Photo Documentation
 ===================
 
-..  image:: ../img/photo-documentation.jpg
+..  image:: img/photo-documentation.jpg
     :alt: Microscopy next to computer
     :align: center
 
@@ -13,6 +13,13 @@ and ocular len of 10&times;.
 The digita camera was Zeiss AxionCam MRc
 attached to microscopy Zeiss AxioImager.Z2
 powered by Software Axion Vision Zeiss.
+
+Images only represent a small portion of the microscope slide
+as ilustrated below.
+
+..  image:: img/photo-documentation.jpg
+    :alt: Image and microscope slide.
+    :align: center
 
 Acknowledge
 -----------
