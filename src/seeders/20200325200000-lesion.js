@@ -14,13 +14,6 @@ module.exports = {
             },
             {
                 id: 2,
-                nome: "LSIL",
-                detalhes: "",
-                created_at: '2020-01-01',
-                updated_at: '2020-01-01'
-            },
-            {
-                id: 3,
                 nome: "HSIL",
                 detalhes: "",
                 created_at: '2020-01-01',
@@ -30,6 +23,6 @@ module.exports = {
     },
 
     down: (queryInterface, Sequelize) => {
-      return queryInterface.bulkDelete('administrador', null, {});
+      return queryInterface.bulkDelete('lesao', null, {});
     }
 };

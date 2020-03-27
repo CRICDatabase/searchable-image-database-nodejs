@@ -1,7 +1,5 @@
 'use strict';
 
-const Criptografia = require('../utils/criptografia');
-
 module.exports = {
     up: (queryInterface, Sequelize) => {
         return queryInterface.bulkInsert('administrador', [{
