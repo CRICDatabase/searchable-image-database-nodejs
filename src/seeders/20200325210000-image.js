@@ -17,7 +17,7 @@ module.exports = {
                 altura: 400,
                 largura: 600,
                 id_usuario: 1,
-                id_lesao: 1,
+                id_lesao: 2,
                 created_at: '2020-01-01',
                 updated_at: '2020-01-01'
             },
@@ -33,7 +33,7 @@ module.exports = {
                 altura: 400,
                 largura: 600,
                 id_usuario: 1,
-                id_lesao: 2,
+                id_lesao: 3,
                 created_at: '2020-01-01',
                 updated_at: '2020-01-01'
             },
@@ -49,7 +49,7 @@ module.exports = {
                 altura: 400,
                 largura: 600,
                 id_usuario: 1,
-                id_lesao: 1,
+                id_lesao: 2,
                 created_at: '2020-01-01',
                 updated_at: '2020-01-01'
             }
