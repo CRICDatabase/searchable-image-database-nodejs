@@ -157,7 +157,7 @@ module.exports = {
             {
                 id: 21,
                 codigo: 34,
-                nome: "OutrHistiócitoos",
+                nome: "Histiócito",
                 created_at: '2020-01-01',
                 updated_at: '2020-01-01'
             },
