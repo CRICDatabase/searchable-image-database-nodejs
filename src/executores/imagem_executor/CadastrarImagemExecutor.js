@@ -68,7 +68,7 @@ async function validarRequisicao(req) {
 async function prepararCadastroNoBanco(req) {
 
     let nomeImagemTratado = obterNomeImagemTratado(req.files.file.name);
-    const novoNomeImagem = `${Crypto.randomBytes(8).toString("hex")}_${nomeImagemTratado}`; //Cria hexadecimal de 16 bits
+    const novoNomeImagem = req.files.file.name;
     const excluida = 0;
     const classificacao_aprovada = 1;
     const fonte_aquisicao = await obterUsuarioVisitante(req);
