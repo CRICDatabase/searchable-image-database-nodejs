@@ -19,9 +19,10 @@ General Information
     persona
     user
     photo-documentation
-    cell-segmentation
     cell-classification
+    cell-segmentation
     contributor
+    maintainer
 
 Node.js Backend
 ---------------
