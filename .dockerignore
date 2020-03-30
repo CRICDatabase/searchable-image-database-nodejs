@@ -1,2 +1,9 @@
 node_modules
 npm-debug.log
+src/assets/imagens/base_externa/*
+src/assets/imagens/base_externa_zip/*
+src/assets/imagens/base_interna/*
+src/assets/imagens/base_interna_zip/*
+src/assets/imagens/base_original/*
+src/assets/imagens/base_thumbnail/*
+src/assets/imagens/seeders/*
