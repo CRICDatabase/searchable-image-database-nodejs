@@ -2,7 +2,7 @@ Angular
 =======
 
 This is the reference implementation.
-It is available at `https://cricdatabase.com.br/ <https://cricdatabase.com.br/>`_.
+It is available at https://cricdatabase.com.br/..
 
 Home
 ----

@@ -1,7 +1,5 @@
-API
-===
-
-The server answers to 
+REST API
+========
 
 User
 ----

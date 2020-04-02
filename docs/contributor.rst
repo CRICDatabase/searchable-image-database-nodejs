@@ -25,5 +25,5 @@ Three Bash scripts are available to help with examples:
 ..
     AuthorLastName, AuthorFirstName. *Title of Article or Individual Page*. Title of website, Name of publisher, Date of publication, URL or DOI.
 
-.. [Tom2019] Johnson, Tom. *Learn API Doc*. 2020. `<https://idratherbewriting.com/learnapidoc/>`_.
-.. [RESTfulAPI.net] RESTfulAPI.net. *REST Resource Naming Guide*. REST API Tutorial. 2020. `<https://restfulapi.net/resource-naming/>`_.
+.. [Tom2019] Johnson, Tom. *Learn API Doc*. 2020. https://idratherbewriting.com/learnapidoc/.
+.. [RESTfulAPI.net] RESTfulAPI.net. *REST Resource Naming Guide*. REST API Tutorial. 2020. https://restfulapi.net/resource-naming/.
