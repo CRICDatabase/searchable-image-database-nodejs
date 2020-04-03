@@ -59,8 +59,8 @@ We use Kubernetes to orchestrate the deployment.
    to the new Kubernetes cluster,
    you will have to update the DNS.
 
-Digital Ocean
-^^^^^^^^^^^^^
+DigitalOcean
+^^^^^^^^^^^^
 
 Visit https://cloud.digitalocean.com/kubernetes
 and create a new cluster.
@@ -156,6 +156,38 @@ to access the running app locally::
 Open http://localhost:8080 with your web browser
 and you should see the website.
 
+If the website is working as expected,
+is time to open it to the world ::
+
+    $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml
+
+Create a DigitalOcean Load Balancer
+that will load balance
+and
+route HTTP and HTTPS traffic to the Ingress Controller Pod
+deployed in the previous command ::
+
+    $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/provider/cloud-generic.yaml
+
+DigitalOcean will provide you with an external IP address
+that you can use to access the Nginx Ingress
+which will direct the traffic to you application. ::
+
+    $ kubectl get service ingress-nginx -namespace ingress-nginx
+
+The rules of how Nginx Ingress will direct the traffic
+need to be provided ::
+
+    $ kubectl apply -f k8s/cricdatabase-ingress.yaml -n cricdatabase
+
+To test if things are working,
+you can use ``curl`` to resolve the DNS
+to the IP address that DigitalOcean is providing.
+::
+
+  $ curl --resolve "cricdatabase.com.br:80:xxx.xxx.xxx.xxx" http://cricdatabase.com.br/api 
+  %$ curl --resolve "cricdatabase.com.br:xxx:xxx.xxx.xxx.xxx" http://cricdatabase.com.br
+
 When you’re done,
 delete the services ::
 
@@ -179,7 +211,9 @@ delete the Persistent Volume Claim ::
     $ kubectl delete pvc node-image -n cricdatabase
     $ kubectl delete pvc db-data -n cricdatabase
 
-and delete the Persistent Volume ::
+delete the Persistent Volume ::
 
     $ kubectl delete pv node-image
     $ kubectl delete pv db-data
+
+And the Kubernetes cluster.
