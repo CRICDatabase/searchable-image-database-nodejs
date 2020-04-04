@@ -53,11 +53,16 @@ Production Server
 
 We use Kubernetes to orchestrate the deployment.
 
-.. note::
+..  note::
 
-   To have https://cricdatabase.com.br/ directing users
-   to the new Kubernetes cluster,
-   you will have to update the DNS.
+    You can use ``kubectl apply``
+    to update resources.
+
+..  note::
+
+    To have https://cricdatabase.com.br/ directing users
+    to the new Kubernetes cluster,
+    you will have to update the DNS.
 
 DigitalOcean
 ^^^^^^^^^^^^
@@ -186,7 +191,7 @@ to the IP address that DigitalOcean is providing.
 ::
 
   $ curl --resolve "cricdatabase.com.br:80:xxx.xxx.xxx.xxx" http://cricdatabase.com.br/api 
-  %$ curl --resolve "cricdatabase.com.br:xxx:xxx.xxx.xxx.xxx" http://cricdatabase.com.br
+  $ curl --resolve "cricdatabase.com.br:80:xxx.xxx.xxx.xxx" http://cricdatabase.com.br
 
 When you’re done,
 delete the services ::
