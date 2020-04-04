@@ -1,12 +1,15 @@
 'use strict'
 
-const express = require('express');
+const config = require('config');
 const cors = require('cors');
+const express = require('express');
 const FileUpload = require('express-fileupload');
+
 const rotasIndex = require('./rotas/rotasIndex');
 const rotasUsuario = require('./rotas/rotasUsuario');
 const rotasImagem = require('./rotas/rotasImagem');
 const rotasDeTeste = require('./rotas/rotaDeTestes');
+
 require('./database'); //Obtem a conexão com a base de dados
 
 const app = express();
@@ -16,7 +19,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(FileUpload({ limits: { fileSize: 50 * 1024 * 1024 },})); //Limita o tamanho do arquivo a ser upado a 50Mb
 
 const corsConfig = {
-    origin: '*', //Especificar o dominio de origem quando for para produção
+    origin: config.get('domain'),
     optionsSuccessStatus: 200,
 }
 

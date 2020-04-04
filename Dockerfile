@@ -13,4 +13,5 @@ LABEL   version="0.1.2-base" \
 FROM base as production
 # Copy ./src
 COPY . ./
+ENV NODE_ENV production
 LABEL   version="0.1.2"
