@@ -11,7 +11,7 @@ aiming supporting cervical cancer analysis of Pap smear.
 
 This documentation is for the reference implementation written in Node.js.
 More documentation about CRIC Searchable Image Database
-is available at https://readthedocs.org/.
+is available at https://cric-database.readthedocs.io/.
 
 General Information
 -------------------
