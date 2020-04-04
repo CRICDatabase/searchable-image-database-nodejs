@@ -7,7 +7,7 @@ const SistemaController = require('../controllers/sistema/SistemaController');
 //Rotas POST
 
 //Rotas GET
-rotasIndex.get('/', SistemaController.consultarStatusDoSistema);
+rotasIndex.get('/api/v1', SistemaController.consultarStatusDoSistema);
 
 //Rotas PUT
 
