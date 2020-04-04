@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'CRIC Database'
+project = 'Node.js Backend for CRIC Database'
 copyright = '2020, Center for Recognition and Inspection of Cells (CRIC)'
 author = 'Center for Recognition and Inspection of Cells (CRIC)'
 

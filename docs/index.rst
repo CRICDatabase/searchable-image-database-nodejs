@@ -3,29 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to CRIC Database's documentation!
-=========================================
+Welcome to Node.js Backend for CRIC Database's documentation!
+=============================================================
 
 CRIC Searchable Image Database is a public cervical cell image database
 aiming supporting cervical cancer analysis of Pap smear.
 
+This documentation is for the reference implementation written in Node.js.
+More documentation about CRIC Searchable Image Database
+is available at https://readthedocs.org/.
+
 General Information
 -------------------
-
-..  toctree::
-    :maxdepth: 2
-    :caption: Contents:
-
-    persona
-    user
-    photo-documentation
-    cell-classification
-    cell-segmentation
-    contributor
-    maintainer
-
-Node.js Backend
----------------
 
 ..  toctree::
     :maxdepth: 2
@@ -35,17 +24,8 @@ Node.js Backend
     models
     developer
 
-Web Clients
------------
-
-..  toctree::
-    :maxdepth: 2
-    :caption: Contents:
-
-    client-angular
-
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
