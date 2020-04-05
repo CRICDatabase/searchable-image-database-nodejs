@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(FileUpload({ limits: { fileSize: 50 * 1024 * 1024 },})); //Limita o tamanho do arquivo a ser upado a 50Mb
 
 const corsConfig = {
-    origin: config.get('domain'),
+    origin: config.get('origin'),
     optionsSuccessStatus: 200,
 }
 

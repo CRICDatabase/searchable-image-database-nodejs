@@ -1,6 +1,7 @@
 /* Parsed in JSON format only. Don't use JSON5 format. */
 {
     "domain": "localhost",
+    "origin": "http://localhost:8080",  /* for CORS */
     "database": {
         "host": "db",
         "username": "root",

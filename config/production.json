@@ -1,7 +1,8 @@
 /* Parsed in JSON format only. Don't use JSON5 format. */
 /* Enable with `export NODE_ENV=production` */
 {
-    "domain": "cricdatabase.com.br",
+    "domain": "database.cric.com.br",
+    "origin": "http://database.cric.com.br", /* for CORS */
     "database": {
         "host": "db",
         "username": "root",
