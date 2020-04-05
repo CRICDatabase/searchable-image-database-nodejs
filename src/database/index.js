@@ -1,7 +1,8 @@
 'use strict'
 
+const config = require('config');
+
 const Sequelize = require('sequelize');
-const dbConfig = require('../config/database');
 const Usuario_Base = require('../models/UsuarioBaseModel');
 const Administrador = require('../models/AdministradorModel');
 const Citopatologista = require('../models/CitopatologistaModel');
@@ -17,7 +18,7 @@ const SegmentacaoNucleoModel = require('../models/SegmentacaoNucleoModel');
 const SessaoUsuarioModel = require('../models/SessaoUsuarioModel');
 
 // Option 1:
-const connection = new Sequelize(dbConfig);
+const connection = new Sequelize(config.get('database'));
 
 // Option 2: Passing a connection URI (See more in: https://sequelize.org/v5/manual/getting-started.html)
 //const sequelize = new Sequelize('postgres://user:pass@example.com:5432/dbname');
