@@ -21,6 +21,15 @@ General Information
     :caption: Contents:
 
     api
+
+Developers
+----------
+
+..  toctree::
+    :maxdepth: 2
+    :caption: Contents:
+
+    settings
     models
     developer
 
