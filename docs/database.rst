@@ -1,8 +1,5 @@
-Developer
-=========
-
-Database
---------
+Database with Sequelize
+=======================
 
 To create the database,
 run ::
