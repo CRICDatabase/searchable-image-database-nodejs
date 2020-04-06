@@ -32,6 +32,8 @@ Developers
     settings
     models
     developer
+    debugging
+    contributing
 
 Indices and tables
 ------------------
