@@ -14,8 +14,8 @@ module.exports = {
         const todasDescricoes = await ImagemRepositorio.listarDescricoes();
 
         if(todasDescricoes.length == 0) {
-            ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.mensagem = Excecao.DESCRICAO_NAO_ENCONTRADA;
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.DESCRICAO_NAO_ENCONTRADA;
             throw ObjetoExcecao;
         }
 

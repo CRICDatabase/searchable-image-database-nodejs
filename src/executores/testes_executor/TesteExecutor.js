@@ -5,8 +5,8 @@ module.exports = {
 
     async ExecutarTesteObterUsuarioPorEmail(req) {
 
-        ObjetoExcecao.status_code = 400;
-        ObjetoExcecao.mensagem = "Mensagem de teste";
+        ObjetoExcecao.status = 400;
+        ObjetoExcecao.title = "Mensagem de teste";
         throw ObjetoExcecao;
     }
 };

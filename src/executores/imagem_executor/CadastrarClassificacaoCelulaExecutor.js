@@ -31,8 +31,8 @@ module.exports = {
 
         const celulaCadastrada = await ImagemRepositorio.cadastrarCelulaClassificada(id_imagem, req.body.id_lesao);
         if (!celulaCadastrada) {
-            ObjetoExcecao.status_code = HttpStatus.INTERNAL_SERVER_ERROR;
-            ObjetoExcecao.mensagem = Excecao.ERRO_AO_CADASTRAR_CELULA;
+            ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
+            ObjetoExcecao.title = Excecao.ERRO_AO_CADASTRAR_CELULA;
             throw ObjetoExcecao;   
         }
         
@@ -66,8 +66,8 @@ async function validarRequisicao(req) {
         !ValidarTipo.ehNumero(req.body.larguraCanvas) || !ValidarTipo.ehNumero(req.body.alturaOriginalImg) || !ValidarTipo.ehNumero(req.body.larguraOriginalImg) || !ValidarTipo.ehNumero(req.body.coord_centro_nucleo_x) ||
         !ValidarTipo.ehNumero(req.body.coord_centro_nucleo_y)) {
 
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
@@ -78,26 +78,26 @@ async function validarRequisicao(req) {
     const [usuario, analista, imagem, lesao] = await Promise.all([usuarioTask, analistaTask, imagemTask, lesaoTask]);
 
     if (!usuario) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 
     if (!analista) {
-        ObjetoExcecao.status_code = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.mensagem = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;
     }
 
     if (!lesao) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.LESAO_NAO_ENCONTRADA;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.LESAO_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
 
     if (!imagem) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.IMAGEM_NAO_ENCONTRADA;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
 }

@@ -15,8 +15,8 @@ module.exports = {
             let resultado = await SessaoRepositorio.validarTokenAutenticacao(req.headers.token_autenticacao);
             if (resultado.length == 0) {
             
-                ObjetoExcecao.status_code = HttpStatus.UNAUTHORIZED;
-                ObjetoExcecao.mensagem = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
+                ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+                ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
                 throw ObjetoExcecao;
             }
         }

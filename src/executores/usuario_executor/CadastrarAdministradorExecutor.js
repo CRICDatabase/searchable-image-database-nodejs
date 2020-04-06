@@ -25,8 +25,8 @@ async function validarRequisicao(usuarioReq) {
 
     if (!usuarioReq.primeiro_nome || !usuarioReq.email || !usuarioReq.senha || !usuarioReq.api_key || !usuarioReq.nivel_acesso) {
 
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
@@ -34,8 +34,8 @@ async function validarRequisicao(usuarioReq) {
 
     if (registroExistente) {
 
-        ObjetoExcecao.status_code = HttpStatus.CONFLICT;
-        ObjetoExcecao.mensagem = Excecao.CONFLITO_DE_REGISTROS;
+        ObjetoExcecao.status = HttpStatus.CONFLICT;
+        ObjetoExcecao.title = Excecao.CONFLITO_DE_REGISTROS;
         throw ObjetoExcecao;
     }
 }
@@ -43,8 +43,8 @@ async function validarRequisicao(usuarioReq) {
 function prepararRetorno(usuarioCriado, adminCriado) {
 
     if (!adminCriado) {
-        ObjetoExcecao.status_code = HttpStatus.INTERNAL_SERVER_ERROR;
-        ObjetoExcecao.mensagem = Excecao.ERRO_INTERNO;
+        ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
+        ObjetoExcecao.title = Excecao.ERRO_INTERNO;
         throw ObjetoExcecao;
     }
 

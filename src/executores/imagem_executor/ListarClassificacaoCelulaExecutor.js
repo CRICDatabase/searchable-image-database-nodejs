@@ -49,8 +49,8 @@ async function validarRequisicao(req) {
 
     if (!ValidarTipo.ehNumero(req.params.id_usuario) || !ValidarTipo.ehNumero(req.params.id_imagem)) {
 
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
@@ -60,20 +60,20 @@ async function validarRequisicao(req) {
     const [usuario, analista, imagem] = await Promise.all([usuarioTask, analistaTask, imagemTask]);
 
     if (!usuario) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 
     if (!imagem) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.IMAGEM_NAO_ENCONTRADA;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
 
     if (!analista) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.ANALISTA_NAO_ENCONTRADO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.ANALISTA_NAO_ENCONTRADO;
         throw ObjetoExcecao;
     }
 }

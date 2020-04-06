@@ -14,8 +14,8 @@ module.exports = {
         validarRequisicao(req);
         const imagem = await ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
         if(!imagem) {
-            ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.mensagem = Excecao.IMAGEM_NAO_ENCONTRADA;
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
             throw ObjetoExcecao;
         }
         return await prepararRetorno(imagem); 
@@ -25,8 +25,8 @@ module.exports = {
 function validarRequisicao(req) {
 
     if(Number.isNaN(parseInt(req.params.id_imagem))) {
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 }

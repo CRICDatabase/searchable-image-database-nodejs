@@ -16,8 +16,8 @@ module.exports = {
         let citopatologista = await UsuarioRepositorio.obterCitopatologistaCompleto(req.params.id_usuario);
 
         if(citopatologista.length == 0) {
-            ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.mensagem = Excecao.CITOPATOLOGISTA_NAO_ENCONTRADO;
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.CITOPATOLOGISTA_NAO_ENCONTRADO;
             throw ObjetoExcecao;
         }
 
@@ -28,8 +28,8 @@ module.exports = {
 function validarRequisicao(req) {
 
     if(!ValidarTipo.ehNumero(req.params.id_usuario)) {
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 }

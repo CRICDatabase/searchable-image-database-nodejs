@@ -19,8 +19,8 @@ module.exports = {
             return citopatologistaCadastrado;
         }
         else {
-            ObjetoExcecao.status_code = HttpStatus.INTERNAL_SERVER_ERROR;
-            ObjetoExcecao.mensagem = Excecao.ERRO_INTERNO;
+            ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
+            ObjetoExcecao.title = Excecao.ERRO_INTERNO;
             throw ObjetoExcecao;
         }
     }
@@ -29,38 +29,38 @@ module.exports = {
 async function validarRequisicao(req) {
 
     if(!ValidarTipo.ehNumero(req.params.id_usuario) || !ValidarTipo.ehNumero(req.params.id_usuario_adm) || !req.body.codigo_crc) {
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
     if(!await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario)) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 
     if(!await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario_adm)) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.ADMINISTRADOR_NAO_ENCONTRADO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.ADMINISTRADOR_NAO_ENCONTRADO;
         throw ObjetoExcecao;
     }
 
     if(!await UsuarioRepositorio.obterAdministradorPorId(req.params.id_usuario_adm)){
-        ObjetoExcecao.status_code = HttpStatus.UNAUTHORIZED;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_NAO_AUTORIZADO;
+        ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+        ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
         throw ObjetoExcecao;
     }
 
     if(await UsuarioRepositorio.obterCitopatologistaPorId(req.params.id_usuario)) {
-        ObjetoExcecao.status_code = HttpStatus.CONFLICT;
-        ObjetoExcecao.mensagem = Excecao.CITOPATOLOGISTA_EXISTENTE;
+        ObjetoExcecao.status = HttpStatus.CONFLICT;
+        ObjetoExcecao.title = Excecao.CITOPATOLOGISTA_EXISTENTE;
         throw ObjetoExcecao;
     }
 
     if(await UsuarioRepositorio.obterVisitantePorId(req.params.id_usuario)) {
-        ObjetoExcecao.status_code = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.mensagem = Excecao.ACAO_PROIBIDA_PARA_VISITANTE;
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+        ObjetoExcecao.title = Excecao.ACAO_PROIBIDA_PARA_VISITANTE;
         throw ObjetoExcecao;
     }
 }

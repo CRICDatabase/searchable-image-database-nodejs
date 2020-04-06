@@ -30,24 +30,24 @@ async function validarRequisicao(req) {
     let descricoes = req.body;
 
     if(!ValidarTipo.ehNumero(req.params.id_usuario) || descricoes.length == 0) {
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
     descricoes.forEach(descricao => {
 
         if(!ValidarTipo.ehNumero(descricao.codigo)) {
-            ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-            ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             throw ObjetoExcecao;
         }
     });
 
     const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);    
     if(!usuario) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 
@@ -56,8 +56,8 @@ async function validarRequisicao(req) {
     const [administrador, citopatologista] = await Promise.all([administradorTask, citopatologistaTask]);
 
     if(!(administrador || citopatologista)) {
-        ObjetoExcecao.status_code = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.mensagem = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;
     }
 }

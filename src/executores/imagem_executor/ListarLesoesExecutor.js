@@ -13,8 +13,8 @@ module.exports = {
         const todasLesoes = await ImagemRepositorio.listarLesoes();
 
         if(todasLesoes.length == 0) {
-            ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.mensagem = Excecao.LESAO_NAO_ENCONTRADA;
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.LESAO_NAO_ENCONTRADA;
             throw ObjetoExcecao;
         }
 

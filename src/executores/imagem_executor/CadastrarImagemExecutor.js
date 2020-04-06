@@ -22,8 +22,8 @@ module.exports = {
 
         if (!imagemCadastrada) {
             //Apagar o arquivo da pasta base_original caso == .tif ou da pasta bae_original caso != .tif
-            ObjetoExcecao.status_code = HttpStatus.INTERNAL_SERVER_ERROR;
-            ObjetoExcecao.mensagem = Excecao.ERRO_AO_CADASTRAR_IMAGEM;
+            ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
+            ObjetoExcecao.title = Excecao.ERRO_AO_CADASTRAR_IMAGEM;
             throw ObjetoExcecao;
         }
 
@@ -39,15 +39,15 @@ async function validarRequisicao(req) {
         !ValidarTipo.ehNumero(req.body.id_lesao) || !req.files || !req.body.codigo_lamina ||
         !req.body.codigo_lamina) {
             
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
     const UsuarioBase = await UsuarioRepositorio.obterUsuarioBasePorId(req.body.id_usuario);
     if (!UsuarioBase) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 
@@ -59,8 +59,8 @@ async function validarRequisicao(req) {
 
     let naoAutorizado = administrador || citopatologista || visitante;
     if (!naoAutorizado) {
-        ObjetoExcecao.status_code = HttpStatus.UNAUTHORIZED;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_NAO_AUTORIZADO;
+        ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+        ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
         throw ObjetoExcecao;
     }
 }

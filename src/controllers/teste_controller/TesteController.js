@@ -15,7 +15,7 @@ module.exports = {
         }
         catch (erro) {
 
-            if(erro.status_code == HttpStatus.BAD_REQUEST) {
+            if(erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 

@@ -17,10 +17,10 @@ module.exports = {
         const senhaCriptografada = Criptografia.criarCriptografiaMd5Utf8(req.body.senha);
         const usuarioBase = await UsuarioRepositorio.obterUsuarioBasePorEmail(req.body.email);
         let usuario = await UsuarioRepositorio.obterUsuarioCompletoPorIdOuLogin(req.params.id_usuario, req.body.email, senhaCriptografada);
-        
+
         if (!usuario) {
-            ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
             throw ObjetoExcecao;
         }
 
@@ -39,14 +39,14 @@ module.exports = {
 function validarRequisicao(req) {
 
     if (!ValidarTipo.ehNumero(req.params.id_usuario)) {
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
     if (!(req.body.email && req.body.senha)) {
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 }
@@ -54,8 +54,8 @@ function validarRequisicao(req) {
 function validarLogin(email, senhaCriptografada, usuarioBanco) {
 
     if (!(email == usuarioBanco.email) || !(senhaCriptografada == usuarioBanco.senha)) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.NENHUM_USUARIO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.NENHUM_USUARIO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 }
@@ -66,7 +66,15 @@ async function obterRetorno(usuario, token_curinga_login) {
     if (tokenCuringa == token_curinga_login) {
 
         let token_autenticacao = GeradorIdUnico.gerarUuidv4();
-        const sessaoCriada = await SessaoRepositorio.criarRegistroDeSessao(usuario.email, token_autenticacao);
+        const sessaoCriada = await SessaoRepositorio.criarRegistroDeSessao(
+            usuario.email,
+            token_autenticacao
+        ).catch(err => {
+            ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
+            ObjetoExcecao.title = Excecao.ERRO_INTERNO;
+            ObjetoExcecao.detail = "Failed to register new session";
+            throw ObjetoExcecao;
+        });
 
         if (sessaoCriada) {
             const retorno = {
@@ -77,7 +85,8 @@ async function obterRetorno(usuario, token_curinga_login) {
         }
     }
 
-    ObjetoExcecao.status_code = HttpStatus.INTERNAL_SERVER_ERROR;
-    ObjetoExcecao.mensagem = Excecao.ERRO_INTERNO;
+    ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+    ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+    ObjetoExcecao.detail = `token_curinga_login = ${token_curinga_login} is invalid`;
     throw ObjetoExcecao;
 }

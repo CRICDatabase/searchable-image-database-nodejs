@@ -22,8 +22,8 @@ module.exports = {
         const celulaCadastrada = await ImagemRepositorio.cadastrarCelulaSegmentada(id_imagem, req.body.id_descricao);
 
         if (!celulaCadastrada) {
-            ObjetoExcecao.status_code = HttpStatus.INTERNAL_SERVER_ERROR;
-            ObjetoExcecao.mensagem = Excecao.ERRO_AO_CADASTRAR_CELULA;
+            ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
+            ObjetoExcecao.title = Excecao.ERRO_AO_CADASTRAR_CELULA;
             throw ObjetoExcecao;
         }
 
@@ -53,8 +53,8 @@ async function validarRequisicao(req) {
         !ValidarTipo.ehNumero(req.body.alturaOriginalImg) || !ValidarTipo.ehNumero(req.body.larguraCanvas) ||
         !ValidarTipo.ehNumero(req.body.alturaCanvas) || !ValidarTipo.ehNumero(req.body.id_descricao)) {
 
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
@@ -62,8 +62,8 @@ async function validarRequisicao(req) {
         !ValidarTipo.ehNumero(req.params.id_imagem) ||
         !ValidarTipo.ehNumero(req.body.id_descricao)) {
 
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
@@ -77,26 +77,26 @@ async function validarRequisicao(req) {
     const [usuario, analista, imagem, descricao] = await Promise.all([usuarioTask, analistaTask, imagemTask, descricaoTask]);
 
     if (!usuario) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 
     if (!analista) {
-        ObjetoExcecao.status_code = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.mensagem = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;
     }
 
     if (!descricao) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.LESAO_NAO_ENCONTRADA;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.LESAO_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
 
     if (!imagem) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.IMAGEM_NAO_ENCONTRADA;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
 }
@@ -107,8 +107,8 @@ function validarSegmentacao(segmentos) {
     if(segmentos.length > 0) {
         segmentos.forEach(ponto => {
             if(!ValidarTipo.ehNumero(ponto.coord_x) || !ValidarTipo.ehNumero(ponto.coord_y)) {
-                ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-                ObjetoExcecao.mensagem = Excecao.SEGMENTACAO_INVALIDA;
+                ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+                ObjetoExcecao.title = Excecao.SEGMENTACAO_INVALIDA;
                 throw ObjetoExcecao;
             }        
         });

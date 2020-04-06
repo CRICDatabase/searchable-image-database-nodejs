@@ -29,15 +29,15 @@ module.exports = {
             return res.status(HttpStatus.CREATED).json(imagemCadastrada);
         }
         catch (erro) {
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -53,15 +53,15 @@ module.exports = {
             return res.status(HttpStatus.OK).json(imagens);
         }
         catch (erro) {
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -77,15 +77,15 @@ module.exports = {
             return res.status(HttpStatus.OK).json(imagem);
         }
         catch (erro) {
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -101,19 +101,19 @@ module.exports = {
             return res.status(HttpStatus.CREATED).json(classificacoesCadastradas);
         }
         catch (erro) {
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.FORBIDDEN) {
+            if (erro.status == HttpStatus.FORBIDDEN) {
                 return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -130,19 +130,19 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.FORBIDDEN) {
+            if (erro.status == HttpStatus.FORBIDDEN) {
                 return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -158,15 +158,15 @@ module.exports = {
             return res.status(HttpStatus.OK).json(todasClassificacoes);
         }
         catch (erro) {
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -182,15 +182,15 @@ module.exports = {
             return res.status(HttpStatus.OK).json(todasSegmentacoes);
         }
         catch (erro) {
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -206,19 +206,19 @@ module.exports = {
             return res.status(HttpStatus.CREATED).json(lesoesCadastradas);
         }
         catch (erro) {
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.FORBIDDEN) {
+            if (erro.status == HttpStatus.FORBIDDEN) {
                 return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -235,19 +235,19 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.FORBIDDEN) {
+            if (erro.status == HttpStatus.FORBIDDEN) {
                 return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -263,11 +263,11 @@ module.exports = {
             return res.status(HttpStatus.OK).json(todasLesoes);
         }
         catch (erro) {
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -284,11 +284,11 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -305,7 +305,7 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
@@ -322,15 +322,15 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
@@ -347,15 +347,15 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
@@ -372,19 +372,19 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.FORBIDDEN) {
+            if (erro.status == HttpStatus.FORBIDDEN) {
                 return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
@@ -401,19 +401,19 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.FORBIDDEN) {
+            if (erro.status == HttpStatus.FORBIDDEN) {
                 return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
@@ -430,19 +430,19 @@ module.exports = {
         }
         catch (erro) {
 
-            if (erro.status_code == HttpStatus.BAD_REQUEST) {
+            if (erro.status == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.NOT_FOUND) {
+            if (erro.status == HttpStatus.NOT_FOUND) {
                 return res.status(HttpStatus.NOT_FOUND).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.FORBIDDEN) {
+            if (erro.status == HttpStatus.FORBIDDEN) {
                 return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
-            if (erro.status_code == HttpStatus.UNAUTHORIZED) {
+            if (erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
             }
 

@@ -21,8 +21,8 @@ module.exports = {
         const [todasImagens, visitante] = await Promise.all([todasImagensTask, visitanteTask]);
 
         if(todasImagens.length == 0) {
-            ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.mensagem = Excecao.IMAGEM_NAO_ENCONTRADA;
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
             throw ObjetoExcecao;
         }
 
@@ -35,15 +35,15 @@ async function validarRequisicao(req) {
 
     if (!ValidarTipo.ehNumero(req.params.id_usuario)) {
 
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
     const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
     if (!usuario) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 }

@@ -13,8 +13,8 @@ module.exports = {
         await ValidadorDeSessao.validarAcessoAServicos(req);
         const todosUsuarios = await UsuarioRepositorio.ListarTodosUsuarios();        
         if(todosUsuarios.length == 0) {
-            ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.mensagem = Excecao.NENHUM_USUARIO_ENCONTRATO;
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.NENHUM_USUARIO_ENCONTRATO;
             throw ObjetoExcecao;
         }
 

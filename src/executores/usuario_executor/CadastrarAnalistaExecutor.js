@@ -19,8 +19,8 @@ module.exports = {
             return analistaCadastrado;
         }
         else {
-            ObjetoExcecao.status_code = HttpStatus.INTERNAL_SERVER_ERROR;
-            ObjetoExcecao.mensagem = Excecao.ERRO_INTERNO;
+            ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
+            ObjetoExcecao.title = Excecao.ERRO_INTERNO;
             throw ObjetoExcecao;
         }        
     }
@@ -29,20 +29,20 @@ module.exports = {
 async function validarRequisicao(usuario) {
 
     if(!ValidarTipo.ehNumero(usuario.id_usuario)) {
-        ObjetoExcecao.status_code = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.mensagem = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
     if(!await UsuarioRepositorio.obterUsuarioBasePorId(usuario.id_usuario)) {
-        ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.mensagem = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
 
     if(await UsuarioRepositorio.obterAnalistaPorId(usuario.id_usuario)) {
-        ObjetoExcecao.status_code = HttpStatus.CONFLICT;
-        ObjetoExcecao.mensagem = Excecao.ANALISTA_EXISTENTE;
+        ObjetoExcecao.status = HttpStatus.CONFLICT;
+        ObjetoExcecao.title = Excecao.ANALISTA_EXISTENTE;
         throw ObjetoExcecao;
     }    
 
@@ -51,8 +51,8 @@ async function validarRequisicao(usuario) {
     const [Citopatologista, Visitante] = await Promise.all([CitopatologistaTask, VisitanteTask]);
 
     if(!Citopatologista && !Visitante) {
-        ObjetoExcecao.status_code = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.mensagem = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;
     }
 }
