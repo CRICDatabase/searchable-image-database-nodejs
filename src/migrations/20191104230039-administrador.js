@@ -10,7 +10,7 @@ module.exports = {
                     allowNull: false,
                     references: { model: 'usuario_base', key: 'id' },
                     onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT',
+                    onDelete: 'RESTRICT'
                 },
                 nivel_acesso: {
                     type: Sequelize.STRING(20),
@@ -27,7 +27,7 @@ module.exports = {
                 updated_at: {
                     type: Sequelize.DATE,
                     allowNull: false
-                },
+                }
             },
             {
                 charset: 'utf8',

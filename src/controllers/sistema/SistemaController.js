@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const HttpStatus = require('http-status-codes');
 const ObterStatusSistemaExecutor = require('../../executores/sistema/ObterStatusSistemaExecutor');
@@ -12,9 +12,8 @@ module.exports = {
             status = ObterStatusSistemaExecutor.Executar(req);
             return res.status(HttpStatus.OK).json(status);
         }
-        catch(erro)
-        {
+        catch(erro) {
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
-    },
-}
+    }
+};

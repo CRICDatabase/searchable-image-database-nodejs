@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -45,7 +45,7 @@ module.exports = {
         await UsuarioRepositorio.processarQuerySql(sqlQuery);
         return await ListarSegmentacaoCelulaExecutor.Executar(req);
     }
-}
+};
 
 async function validarRequisicao(req) {
 
@@ -125,7 +125,7 @@ async function cadastrarSegmentosCitoplasma(req, id_celula, id_usuario) {
         larguraCanvas: req.body.larguraCanvas,
         alturaOriginalImg: req.body.alturaOriginalImg,
         larguraOriginalImg: req.body.larguraOriginalImg
-    }
+    };
     
     for (let i = 0; i < req.body.segmentos_citoplasma.length; i++) {
 
@@ -150,7 +150,7 @@ async function cadastrarSegmentosNucleo(req, id_celula, id_usuario) {
             larguraCanvas: req.body.larguraCanvas,
             alturaOriginalImg: req.body.alturaOriginalImg,
             larguraOriginalImg: req.body.larguraOriginalImg
-        }
+        };
 
         for (let i = 0; i < req.body.segmentos_nucleo.length; i++) {
 

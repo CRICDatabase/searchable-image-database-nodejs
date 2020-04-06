@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -59,7 +59,7 @@ function prepararRetorno(usuarioCriado, adminCriado) {
         nivel_acesso: adminCriado.dataValues.nivel_acesso,
         createdAt: adminCriado.dataValues.updatedAt,
         updatedAt: adminCriado.dataValues.createdAt
-    }
+    };
     return administrador;
 }
 

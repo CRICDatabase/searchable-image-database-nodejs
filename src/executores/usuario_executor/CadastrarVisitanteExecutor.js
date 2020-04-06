@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -61,6 +61,6 @@ function prepararRetorno(usuarioCriado, visitanteCriado) {
         estado_regiao: visitanteCriado.dataValues.estado_regiao,
         createdAt: visitanteCriado.dataValues.updatedAt,
         updatedAt: visitanteCriado.dataValues.createdAt
-    }
+    };
     return visitante;
 }

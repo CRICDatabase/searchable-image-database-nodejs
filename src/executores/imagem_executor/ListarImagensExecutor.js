@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -28,8 +28,8 @@ module.exports = {
 
         const resutado = await prepararRetorno(todasImagens, visitante);
         return resutado;
-    },
-}
+    }
+};
 
 async function validarRequisicao(req) {
 

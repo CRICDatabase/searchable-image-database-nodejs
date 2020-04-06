@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -10,7 +10,7 @@ module.exports = {
     async Executar(req) {
 
         await ValidadorDeSessao.validarAcessoAServicos(req);
-        const todasLesoes = await ImagemRepositorio.listarLesoes()
+        const todasLesoes = await ImagemRepositorio.listarLesoes();
 
         if(todasLesoes.length == 0) {
             ObjetoExcecao.status_code = HttpStatus.NOT_FOUND;
@@ -20,4 +20,4 @@ module.exports = {
 
         return todasLesoes;
     }
-}
+};

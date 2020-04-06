@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const express = require('express');
 const ImagemController = require('../controllers/imagem_controller/ImagemController');

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -13,7 +13,7 @@ module.exports = {
 
         await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req.params);
-        const analistaCadastrado = await UsuarioRepositorio.cadastrarAnalista(req.params.id_usuario)
+        const analistaCadastrado = await UsuarioRepositorio.cadastrarAnalista(req.params.id_usuario);
 
         if(analistaCadastrado) {
             return analistaCadastrado;

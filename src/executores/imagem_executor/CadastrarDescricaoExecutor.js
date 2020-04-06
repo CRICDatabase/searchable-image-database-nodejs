@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -23,11 +23,10 @@ module.exports = {
         }
 
         return await ListarDescricoes.Executar(req);
-    },
-}
+    }
+};
 
-async function validarRequisicao(req)
-{
+async function validarRequisicao(req) {
     let descricoes = req.body;
 
     if(!ValidarTipo.ehNumero(req.params.id_usuario) || descricoes.length == 0) {

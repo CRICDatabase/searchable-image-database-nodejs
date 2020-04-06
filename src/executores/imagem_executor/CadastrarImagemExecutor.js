@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -88,7 +88,7 @@ async function prepararCadastroNoBanco(req) {
         id_lesao: req.body.id_lesao,
         altura: altura,
         largura: largura
-    }
+    };
 
     return imagem;
 }
@@ -111,7 +111,9 @@ async function cadastrarDadosEArquivoDeImagem(req) {
 
     var sistemaWindows = process.platform === "win32";
     let barra = '/'; //para ambiente linux
-    if(sistemaWindows) { barra = '\\'; }
+    if(sistemaWindows) {
+ barra = '\\'; 
+}
     
     let erroAoSalvar;
     const imagem = await prepararCadastroNoBanco(req);
@@ -160,7 +162,9 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
     let imagemLida;
     let imagemAtualizacao;
     const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? 'base_interna' : 'base_externa';
-    if(sistemaWindows) { barra = '\\'; }
+    if(sistemaWindows) {
+ barra = '\\'; 
+}
 
     const verificarExtensao = req.files.file.mimetype.split('/');
     const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;

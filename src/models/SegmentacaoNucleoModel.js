@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const { Model, DataTypes }  = require('sequelize');
 
@@ -9,7 +9,7 @@ class SegmentacaoNucleoModel extends Model {
 
         super.init({
             coord_x: DataTypes.INTEGER,
-            coord_y: DataTypes.INTEGER,
+            coord_y: DataTypes.INTEGER
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados

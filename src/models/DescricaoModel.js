@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const { Model, DataTypes }  = require('sequelize');
 
@@ -9,7 +9,7 @@ class DescricaoModel extends Model {
 
         super.init({
             codigo: DataTypes.INTEGER,
-            nome: DataTypes.STRING,
+            nome: DataTypes.STRING
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados

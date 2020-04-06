@@ -20,6 +20,8 @@
     "private": true,
     "main": "index.js",
     "scripts": {
+        "lint": "eslint src",
+        "fix": "eslint --fix --fix-type layout src",
         "pretest": "eslint --ignore-path .gitignore .",
         "dev": "nodemon ./src/server.js",
         "start": "node ./src/server.js"

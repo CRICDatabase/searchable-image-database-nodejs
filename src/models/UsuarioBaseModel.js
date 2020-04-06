@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const { Model, DataTypes }  = require('sequelize');
 
@@ -23,7 +23,7 @@ class UsuarioBaseModel extends Model {
             ultimo_nome: DataTypes.STRING,
             email: DataTypes.STRING,
             senha: DataTypes.STRING,
-            ativo: DataTypes.INTEGER,
+            ativo: DataTypes.INTEGER
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados

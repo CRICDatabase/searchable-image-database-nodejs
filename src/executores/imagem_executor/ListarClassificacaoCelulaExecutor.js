@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -43,7 +43,7 @@ module.exports = {
 
         return resultado;
     }
-}
+};
 
 async function validarRequisicao(req) {
 
@@ -91,7 +91,7 @@ async function prepararMensagemRetorno(req, todasCelulas) {
             tipo_analise_realizada: todasCelulas[i].tipo_analise_realizada,
             coord_centro_nucleo_x: todasCelulas[i].coord_centro_nucleo_x,
             coord_centro_nucleo_y: todasCelulas[i].coord_centro_nucleo_y,
-            lesao: lesao,
+            lesao: lesao
         });
     }
 
@@ -105,7 +105,7 @@ async function obterLesao(id_lesao) {
         id: lesaoCompleta.dataValues.id,
         nome: lesaoCompleta.dataValues.nome,
         detalhes: lesaoCompleta.dataValues.detalhes
-    }
+    };
 
     return lesao;
 }

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const TipoAnalise = require('../utils/enumeracoes/tipo_analise_realizada');
 const UsuarioBaseModel = require('../models/UsuarioBaseModel');
@@ -270,4 +270,4 @@ module.exports = {
             codigo_crc: codigo_crc
         });
     }
-}
+};

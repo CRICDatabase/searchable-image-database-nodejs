@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const HttpStatus = require('http-status-codes');
 const CadastrarUsuarioExecutor = require('../../executores/usuario_executor/CadastrarUsuarioBaseExcutor');
@@ -24,8 +24,7 @@ module.exports = {
             usuarioCriado = await CadastrarUsuarioExecutor.Executar(req);
             return res.status(HttpStatus.CREATED).json(usuarioCriado);
         }
-        catch(erro)
-        {
+        catch(erro) {
             if(erro.status_code == HttpStatus.BAD_REQUEST) {
                 return res.status(HttpStatus.BAD_REQUEST).json(erro);
             }

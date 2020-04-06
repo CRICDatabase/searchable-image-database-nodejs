@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const { Model, DataTypes }  = require('sequelize');
 
@@ -10,7 +10,7 @@ class VisitanteModel extends Model {
         super.init({
             pais: DataTypes.STRING,
             estado_regiao: DataTypes.STRING,
-            cidade: DataTypes.STRING,
+            cidade: DataTypes.STRING
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados

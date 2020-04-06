@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const config = require('config');
 const cors = require('cors');
@@ -16,12 +16,12 @@ const app = express();
 app.use(express.static(__dirname + '/assets')); //Configura caminho estático para acesso via URL
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({extended: true}));
-app.use(FileUpload({ limits: { fileSize: 50 * 1024 * 1024 },})); //Limita o tamanho do arquivo a ser upado a 50Mb
+app.use(FileUpload({ limits: { fileSize: 50 * 1024 * 1024 }})); //Limita o tamanho do arquivo a ser upado a 50Mb
 
 const corsConfig = {
     origin: config.get('origin'),
-    optionsSuccessStatus: 200,
-}
+    optionsSuccessStatus: 200
+};
 
 app.use(cors(corsConfig)); //Lidando com politica CORS
 

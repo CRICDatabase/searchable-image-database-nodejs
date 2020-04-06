@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
     NAO_APLICAVEL: 'NA',
@@ -8,4 +8,4 @@ module.exports = {
     ASC_H: 'ASC-H',
     HSIL: 'HSIL',
     CARCINOMA: 'carcinoma'
-}
+};

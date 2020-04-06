@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -24,7 +24,7 @@ module.exports = {
             dt_aquisicao: req.body.dt_aquisicao,
             id_lesao_celula: req.body.id_lesao_celula,
             id_celula: req.body.id_celula
-        }
+        };
 
         const atualizarImagemTask = ImagemRepositorio.atualizarImagem(requisicao);
         const atualizarCelulaTask = ImagemRepositorio.atualizarCelula(requisicao);
@@ -34,7 +34,7 @@ module.exports = {
         await atualizarLesaoMaisGraveNaImagem(requisicao.id_imagem, listaDeClassificacoes);
         return await ObterImagemExecutor.Executar(req);
     }
-}
+};
 
 async function validarRequisicao(req) {
 

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const TipoLesao = require('../../utils/enumeracoes/tipo_lesao');
@@ -38,11 +38,11 @@ module.exports = {
             AscH: totalAscH[0].AscH,
             HSil: totalHSil[0].Hsil,
             Carcinoma: totalCarcinoma[0].Carcinoma
-        }
+        };
 
         return resultado;
     }
-}
+};
 
 async function obterTotalLesoesPorNome(nomeLesao, nomePropriedade) {
 

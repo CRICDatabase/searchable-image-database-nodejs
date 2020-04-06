@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const { Model, DataTypes }  = require('sequelize');
 
@@ -9,7 +9,7 @@ class ClassificacaoCelulaModel extends Model {
 
         super.init({
             coord_centro_nucleo_x: DataTypes.INTEGER,
-            coord_centro_nucleo_y: DataTypes.INTEGER,
+            coord_centro_nucleo_y: DataTypes.INTEGER
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados

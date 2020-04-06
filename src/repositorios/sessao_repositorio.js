@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const SessaoUsuarioModel = require('../models/SessaoUsuarioModel');
 const Sequelize = require("sequelize");
@@ -49,5 +49,5 @@ module.exports = {
                 token_autenticacao: token_autenticacao
             }
         });
-    },
-}
+    }
+};

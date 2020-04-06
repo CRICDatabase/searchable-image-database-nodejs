@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const { Model, DataTypes }  = require('sequelize');
 
@@ -9,7 +9,7 @@ class SessaoUsuarioModel extends Model {
 
         super.init({
             email: DataTypes.STRING,
-            token_autenticacao: DataTypes.STRING,
+            token_autenticacao: DataTypes.STRING
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados

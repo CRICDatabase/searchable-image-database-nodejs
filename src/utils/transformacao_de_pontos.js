@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
 
@@ -15,4 +15,4 @@ module.exports = {
         const novoY = (parametros.coord_y * parametros.alturaCanvas ) / parametros.alturaOriginalImg;        
         return { coord_x: Math.round(novoX), coord_y: Math.round(novoY) };
     }
-}
+};

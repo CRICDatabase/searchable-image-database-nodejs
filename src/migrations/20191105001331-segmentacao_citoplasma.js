@@ -13,25 +13,25 @@ module.exports = {
                 },
                 coord_x: {
                     type: Sequelize.INTEGER,
-                    allowNull: false,
+                    allowNull: false
                 },
                 coord_y: {
                     type: Sequelize.INTEGER,
-                    allowNull: false,
+                    allowNull: false
                 },
                 id_usuario: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
                     references: { model: 'usuario_base', key: 'id' },
                     onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT',
+                    onDelete: 'RESTRICT'
                 },
                 id_celula: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
                     references: { model: 'celula', key: 'id' },
                     onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT',
+                    onDelete: 'RESTRICT'
                 },
                 created_at: {
                     type: Sequelize.DATE,
@@ -40,7 +40,7 @@ module.exports = {
                 updated_at: {
                     type: Sequelize.DATE,
                     allowNull: false
-                },
+                }
             },
             {
                 charset: 'utf8',

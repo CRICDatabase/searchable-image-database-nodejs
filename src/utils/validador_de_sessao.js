@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('./enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('./enumeracoes/controle_de_excecoes');
@@ -20,5 +20,5 @@ module.exports = {
                 throw ObjetoExcecao;
             }
         }
-    },
-}
+    }
+};

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -20,8 +20,8 @@ module.exports = {
         await ImagemRepositorio.excluirCelula(req.params.id_celula, req.params.id_imagem);
 
         return await ListarSegmentacaoCelulaExecutor.Executar(req);
-    },
-}
+    }
+};
 
 async function validarRequisicao(req) {
 

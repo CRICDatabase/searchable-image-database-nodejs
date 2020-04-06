@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -58,6 +58,6 @@ function prepararRetorno(usuarioCriado, citopatologistaCriado) {
         codigo_crc: citopatologistaCriado.dataValues.codigo_crc,
         createdAt: citopatologistaCriado.dataValues.updatedAt,
         updatedAt: citopatologistaCriado.dataValues.createdAt
-    }
+    };
     return citopatologista;
 }

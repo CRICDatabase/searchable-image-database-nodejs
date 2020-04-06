@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -27,7 +27,7 @@ module.exports = {
             larguraCanvas: req.body.larguraCanvas,
             alturaOriginalImg: req.body.alturaOriginalImg,
             larguraOriginalImg: req.body.larguraOriginalImg
-        }
+        };
 
         const celulaCadastrada = await ImagemRepositorio.cadastrarCelulaClassificada(id_imagem, req.body.id_lesao);
         if (!celulaCadastrada) {

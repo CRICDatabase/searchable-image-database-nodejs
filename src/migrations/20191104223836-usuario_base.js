@@ -9,7 +9,7 @@ module.exports = {
                     type: Sequelize.BIGINT,
                     primaryKey: true,
                     autoIncrement: true,
-                    allowNull: false,
+                    allowNull: false
                 },
                 primeiro_nome: {
                     type: Sequelize.STRING(45),
@@ -21,7 +21,7 @@ module.exports = {
                 },
                 email: {
                     type: Sequelize.STRING(100),
-                    allowNull: false,
+                    allowNull: false
                 },
                 senha: {
                     type: Sequelize.STRING(150),
@@ -38,7 +38,7 @@ module.exports = {
                 updated_at: {
                     type: Sequelize.DATE,
                     allowNull: false
-                },
+                }
             },
             {
                 charset: 'utf8',

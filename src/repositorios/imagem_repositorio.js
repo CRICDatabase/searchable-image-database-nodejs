@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const ImagemModel = require('../models/ImagemModel');
 const DescricaoModel = require('../models/DescricaoModel');
@@ -340,10 +340,10 @@ module.exports = {
         {
             where: {
                 id: {
-                    [Sequelize.Op.eq]: requisicao.id_celula,
+                    [Sequelize.Op.eq]: requisicao.id_celula
                 },
                 id_imagem: {
-                    [Sequelize.Op.eq]: requisicao.id_imagem,
+                    [Sequelize.Op.eq]: requisicao.id_imagem
                 }
             }
         });
@@ -356,8 +356,8 @@ module.exports = {
         {
             where: {
                 id: {
-                    [Sequelize.Op.eq]: id_imagem,
-                },
+                    [Sequelize.Op.eq]: id_imagem
+                }
             }
         });
     },
@@ -366,7 +366,7 @@ module.exports = {
         return CelulaModel.count({
             where: {
                 id_imagem: {
-                    [Sequelize.Op.eq]: id_imagem,
+                    [Sequelize.Op.eq]: id_imagem
                 },
                 tipo_analise_realizada: {
                     [Sequelize.Op.eq]: TipoAnalise.CLASSIFICACAO
@@ -379,12 +379,12 @@ module.exports = {
         return CelulaModel.count({
             where: {
                 id_imagem: {
-                    [Sequelize.Op.eq]: id_imagem,
+                    [Sequelize.Op.eq]: id_imagem
                 },
                 tipo_analise_realizada: {
                     [Sequelize.Op.eq]: TipoAnalise.SEGMENTACAO
                 }
             }
         });
-    },
-}
+    }
+};

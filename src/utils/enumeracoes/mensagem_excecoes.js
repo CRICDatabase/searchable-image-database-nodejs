@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
 
@@ -23,5 +23,5 @@ module.exports = {
     ERRO_AO_CADASTRAR_IMAGEM: 'Could not register image',
     ERRO_AO_CADASTRAR_CELULA: 'Error registering cell',
     ACAO_PROIBIDA_PARA_VISITANTE: 'Action not allowed for visitors',
-    CELULA_NAO_ENCONTRADA: 'Cell not found',
+    CELULA_NAO_ENCONTRADA: 'Cell not found'
 };

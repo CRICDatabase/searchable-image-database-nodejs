@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const { Model, DataTypes }  = require('sequelize');
 
@@ -8,7 +8,7 @@ class CelulaModel extends Model {
     static init(connection) {
 
         super.init({
-            tipo_analise_realizada: DataTypes.STRING,
+            tipo_analise_realizada: DataTypes.STRING
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados

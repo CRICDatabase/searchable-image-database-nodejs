@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const HttpStatus = require('http-status-codes');
 const TesteExecutor = require('../../executores/testes_executor/TesteExecutor');
@@ -33,5 +33,5 @@ module.exports = {
         catch (erro) {
             return res.status(HttpStatus.BAD_REQUEST).json(erro);
         }
-    },
-}
+    }
+};

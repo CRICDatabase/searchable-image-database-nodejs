@@ -19,21 +19,21 @@ module.exports = {
                     allowNull: false,
                     references: { model: 'imagem', key: 'id' },
                     onUpdate: 'CASCADE',
-                    onDelete: 'CASCADE',
+                    onDelete: 'CASCADE'
                 },
                 id_lesao: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
                     references: { model: 'lesao', key: 'id' },
                     onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT',
+                    onDelete: 'RESTRICT'
                 },
                 id_descricao: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
                     references: { model: 'descricao', key: 'id' },
                     onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT',
+                    onDelete: 'RESTRICT'
                 },
                 created_at: {
                     type: Sequelize.DATE,
@@ -42,7 +42,7 @@ module.exports = {
                 updated_at: {
                     type: Sequelize.DATE,
                     allowNull: false
-                },
+                }
             },
             {
                 charset: 'utf8',

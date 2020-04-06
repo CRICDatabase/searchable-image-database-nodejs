@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -48,7 +48,7 @@ module.exports = {
 
         return resultado;
     }
-}
+};
 
 async function validarRequisicao(req) {
 
@@ -133,7 +133,7 @@ async function obterDescricao(id_descricao) {
         id: descricaoCompleta.dataValues.id,
         nome: descricaoCompleta.dataValues.nome,
         codigo: descricaoCompleta.dataValues.codigo
-    }
+    };
 
     return descricao;
 }
@@ -168,7 +168,7 @@ function listarSegmentosNucleoPorCelula(req, id_celula, segmentosNucleo) {
         larguraCanvas: req.body.larguraCanvas,
         alturaOriginalImg: req.body.alturaOriginalImg,
         larguraOriginalImg: req.body.larguraOriginalImg
-    }
+    };
 
     segmentosNucleo.forEach(segmento => {
 

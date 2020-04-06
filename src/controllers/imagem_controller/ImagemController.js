@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const HttpStatus = require('http-status-codes');
 const CadastrarImagemExecutor = require('../../executores/imagem_executor/CadastrarImagemExecutor');
@@ -448,5 +448,5 @@ module.exports = {
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
-    },
-}
+    }
+};

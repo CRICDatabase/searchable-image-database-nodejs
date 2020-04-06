@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
 const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
@@ -16,7 +16,9 @@ module.exports = {
         
         var sistemaWindows = process.platform === "win32";
         let barra = '/';
-        if(sistemaWindows) { barra = '\\'; }
+        if(sistemaWindows) {
+ barra = '\\'; 
+}
 
         const nomeArquivo = 'base_interna.zip';
         const diretorioArquivo = `src${barra}assets${barra}imagens${barra}base_interna_zip${barra}`;
@@ -25,11 +27,11 @@ module.exports = {
         const resutado = {
             caminho: caminho_base_diretorio + diretorioArquivo + nomeArquivo,
             nomeArquivo: nomeArquivo
-        }
+        };
 
         return resutado;
     }
-}
+};
 
 async function validarRequisicao(req) {
 

@@ -2,8 +2,7 @@
 
 module.exports = {
 
-    ehNumero(numero)
-    {
+    ehNumero(numero) {
         return !Number.isNaN(Number(numero)) && numero !== null && numero !== "";
-    },
+    }
 };
