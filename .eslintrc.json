@@ -20,8 +20,11 @@
 	"comma-style": ["error", "last"],
 	"curly": "error",
         "global-require": "error",
+        "indent": ["error", 2, { "VariableDeclarator": "first" }],
 	"linebreak-style": ["error", "unix"],
 	"lines-between-class-members": ["error", "always"],
+        "quotes": ["error", "double"],
+        "quote-props": ["error", "as-needed"],
 	"semi-style": ["error", "last"],
         "semi": "error"
     }
