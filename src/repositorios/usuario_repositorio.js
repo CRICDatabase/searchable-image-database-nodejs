@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-const TipoAnalise = require('../utils/enumeracoes/tipo_analise_realizada');
-const UsuarioBaseModel = require('../models/UsuarioBaseModel');
-const AdministradorModel = require('../models/AdministradorModel');
-const CitopatologistaModel = require('../models/CitopatologistaModel');
-const VisitanteModel = require('../models/VisitanteModel');
-const AnalistaModel = require('../models/AnalistaModel');
-const db = require('../database');
+const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
+const UsuarioBaseModel = require("../models/UsuarioBaseModel");
+const AdministradorModel = require("../models/AdministradorModel");
+const CitopatologistaModel = require("../models/CitopatologistaModel");
+const VisitanteModel = require("../models/VisitanteModel");
+const AnalistaModel = require("../models/AnalistaModel");
+const db = require("../database");
 
 module.exports = {
 
@@ -15,9 +15,9 @@ module.exports = {
         let resultado;
 
         await db.query(sqlQuery)
-        .then(([results, metadata]) => {
-            resultado = results;
-        });
+            .then(([results, metadata]) => {
+                resultado = results;
+            });
 
         return resultado;
     },
@@ -90,27 +90,27 @@ module.exports = {
         let resultado;
         if (id_usuario == 0) {
             await db.query(OBTER_USUARIO_SQL + OBTER_PARA_LOGIN)
-            .then(([results, metadata]) => {
+                .then(([results, metadata]) => {
 
-                if (results.length > 0) {
+                    if (results.length > 0) {
 
-                    results.forEach(usuario => {
+                        results.forEach(usuario => {
 
-                        if (usuario.email === email) {
-                            resultado = usuario;
-                        }
-                    });
-                }                
-            });
+                            if (usuario.email === email) {
+                                resultado = usuario;
+                            }
+                        });
+                    }                
+                });
         }
         else {
             await db.query(OBTER_USUARIO_SQL + OBTER_POR_ID)
-            .then(([results, metadata]) => {
+                .then(([results, metadata]) => {
 
-                if (results.length > 0) {
-                    resultado = results[0];
-                }                               
-            });
+                    if (results.length > 0) {
+                        resultado = results[0];
+                    }                               
+                });
         }
 
         return resultado;
@@ -156,14 +156,14 @@ module.exports = {
         WHERE usuario_base.id = ${id_usuario}`;
 
         await db.query(OBTER_ADMINISTRADOR_SQL_QUERY)
-        .then(([results, metadata]) => {
-            if(results.length > 0){
-                administrador = results;
-            }
-            else{
-                administrador = results;
-            }            
-        });
+            .then(([results, metadata]) => {
+                if(results.length > 0){
+                    administrador = results;
+                }
+                else{
+                    administrador = results;
+                }            
+            });
 
         return administrador;
     },
@@ -182,14 +182,14 @@ module.exports = {
         WHERE usuario_base.id = ${id_usuario}`;
 
         await db.query(OBTER_CITOPATOLOGISTA_SQL_QUERY)
-        .then(([results, metadata]) => {
-            if(results.length > 0){
-                citopatologista = results;
-            }
-            else{
-                citopatologista = results;
-            }            
-        });
+            .then(([results, metadata]) => {
+                if(results.length > 0){
+                    citopatologista = results;
+                }
+                else{
+                    citopatologista = results;
+                }            
+            });
 
         return citopatologista;
     },
@@ -208,15 +208,15 @@ module.exports = {
         WHERE usuario_base.id = ${id_usuario}`;
 
         await db.query(OBTER_VISITANTE_SQL_QUERY)
-        .then(([results, metadata]) => {
+            .then(([results, metadata]) => {
 
-            if (results.length > 0) {
-                visitante = results;
-            }
-            else {
-                visitante = results;
-            }
-        });
+                if (results.length > 0) {
+                    visitante = results;
+                }
+                else {
+                    visitante = results;
+                }
+            });
 
         return visitante;
     },
@@ -237,16 +237,16 @@ module.exports = {
         WHERE usuario_base.id = ${id_usuario}`;
 
         await db.query(OBTER_ANALISTA_SQL_QUERY)
-        .then(([results, metadata]) => {
+            .then(([results, metadata]) => {
 
-            if(results.length > 0){
-                analista = results;
-                analista[0].id = id_usuario;
-            }
-            else{
-                analista = results;
-            }            
-        });
+                if(results.length > 0){
+                    analista = results;
+                    analista[0].id = id_usuario;
+                }
+                else{
+                    analista = results;
+                }            
+            });
 
         return analista;
     },

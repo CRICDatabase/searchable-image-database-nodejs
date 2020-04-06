@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.createTable('celula',
+        return queryInterface.createTable("celula",
             {
                 id: {
                     type: Sequelize.BIGINT,
@@ -17,23 +17,23 @@ module.exports = {
                 id_imagem: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
-                    references: { model: 'imagem', key: 'id' },
-                    onUpdate: 'CASCADE',
-                    onDelete: 'CASCADE'
+                    references: { model: "imagem", key: "id" },
+                    onUpdate: "CASCADE",
+                    onDelete: "CASCADE"
                 },
                 id_lesao: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
-                    references: { model: 'lesao', key: 'id' },
-                    onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT'
+                    references: { model: "lesao", key: "id" },
+                    onUpdate: "CASCADE",
+                    onDelete: "RESTRICT"
                 },
                 id_descricao: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
-                    references: { model: 'descricao', key: 'id' },
-                    onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT'
+                    references: { model: "descricao", key: "id" },
+                    onUpdate: "CASCADE",
+                    onDelete: "RESTRICT"
                 },
                 created_at: {
                     type: Sequelize.DATE,
@@ -45,13 +45,13 @@ module.exports = {
                 }
             },
             {
-                charset: 'utf8',
-                collate: 'utf8_general_ci'
+                charset: "utf8",
+                collate: "utf8_general_ci"
             }
         );
     },
 
     down: (queryInterface, Sequelize) => {
-        return queryInterface.dropTable('celula');
+        return queryInterface.dropTable("celula");
     }
 };

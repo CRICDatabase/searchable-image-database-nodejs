@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-const express = require('express');
+const express = require("express");
 const rotasIndex = express.Router();
-const SistemaController = require('../controllers/sistema/SistemaController');
+const SistemaController = require("../controllers/sistema/SistemaController");
 
 //Rotas POST
 
 //Rotas GET
-rotasIndex.get('/api/v1', SistemaController.consultarStatusDoSistema);
+rotasIndex.get("/api/v1", SistemaController.consultarStatusDoSistema);
 
 //Rotas PUT
 

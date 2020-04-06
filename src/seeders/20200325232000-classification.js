@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.bulkInsert('classificacao_celula', [
+        return queryInterface.bulkInsert("classificacao_celula", [
             {
                 id: 1,
                 coord_centro_nucleo_x: 274,
                 coord_centro_nucleo_y: 321,
                 id_usuario: 4,
                 id_celula: 1,
-                created_at: '2020-01-01',
-                updated_at: '2020-01-01'
+                created_at: "2020-01-01",
+                updated_at: "2020-01-01"
             },
             {
                 id: 2,
@@ -18,13 +18,13 @@ module.exports = {
                 coord_centro_nucleo_y: 97,
                 id_usuario: 4,
                 id_celula: 2,
-                created_at: '2020-01-01',
-                updated_at: '2020-01-01'
+                created_at: "2020-01-01",
+                updated_at: "2020-01-01"
             }
         ], {});
     },
 
     down: (queryInterface, Sequelize) => {
-      return queryInterface.bulkDelete('classificacao_celula', null, {});
+        return queryInterface.bulkDelete("classificacao_celula", null, {});
     }
 };

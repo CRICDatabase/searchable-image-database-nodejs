@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.createTable('imagem',
+        return queryInterface.createTable("imagem",
             {
                 id: {
                     type: Sequelize.BIGINT,
@@ -49,16 +49,16 @@ module.exports = {
                 id_usuario: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
-                    references: { model: 'usuario_base', key: 'id' },
-                    onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT'
+                    references: { model: "usuario_base", key: "id" },
+                    onUpdate: "CASCADE",
+                    onDelete: "RESTRICT"
                 },
                 id_lesao: {
                     type: Sequelize.BIGINT,
                     allowNull: false,
-                    references: { model: 'lesao', key: 'id' },
-                    onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT'
+                    references: { model: "lesao", key: "id" },
+                    onUpdate: "CASCADE",
+                    onDelete: "RESTRICT"
                 },
                 created_at: {
                     type: Sequelize.DATE,
@@ -70,13 +70,13 @@ module.exports = {
                 }
             },
             {
-                charset: 'utf8',
-                collate: 'utf8_general_ci'
+                charset: "utf8",
+                collate: "utf8_general_ci"
             }
         );
     },
 
     down: (queryInterface, Sequelize) => {
-        return queryInterface.dropTable('imagem');
+        return queryInterface.dropTable("imagem");
     }
 };

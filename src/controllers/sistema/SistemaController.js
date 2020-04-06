@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const HttpStatus = require('http-status-codes');
-const ObterStatusSistemaExecutor = require('../../executores/sistema/ObterStatusSistemaExecutor');
+const HttpStatus = require("http-status-codes");
+const ObterStatusSistemaExecutor = require("../../executores/sistema/ObterStatusSistemaExecutor");
 
 module.exports = {
 

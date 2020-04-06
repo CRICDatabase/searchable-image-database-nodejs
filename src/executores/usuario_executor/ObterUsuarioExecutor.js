@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
-const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
-const HttpStatus = require('http-status-codes');
-const GeradorIdUnico = require('../../utils/gerador_identificador_unico');
-const ValidarTipo = require('../../utils/validacao_de_tipos');
-const Criptografia = require('../../utils/criptografia');
-const UsuarioRepositorio = require('../../repositorios/usuario_repositorio');
-const SessaoRepositorio = require('../../repositorios/sessao_repositorio');
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const HttpStatus = require("http-status-codes");
+const GeradorIdUnico = require("../../utils/gerador_identificador_unico");
+const ValidarTipo = require("../../utils/validacao_de_tipos");
+const Criptografia = require("../../utils/criptografia");
+const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+const SessaoRepositorio = require("../../repositorios/sessao_repositorio");
 
 module.exports = {
 

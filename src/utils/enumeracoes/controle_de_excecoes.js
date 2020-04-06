@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /* Based on  RFC 7807
    https://tools.ietf.org/html/rfc7807

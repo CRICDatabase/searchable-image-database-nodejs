@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = {
     LESAO_NAO_APLICAVEL: 1,

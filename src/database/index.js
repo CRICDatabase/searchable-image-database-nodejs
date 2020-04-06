@@ -1,24 +1,24 @@
-'use strict';
+"use strict";
 
-const config = require('config');
+const config = require("config");
 
-const Sequelize = require('sequelize');
-const Usuario_Base = require('../models/UsuarioBaseModel');
-const Administrador = require('../models/AdministradorModel');
-const Citopatologista = require('../models/CitopatologistaModel');
-const Visitante = require('../models/VisitanteModel');
-const Analista = require('../models/AnalistaModel');
-const ImagemModel = require('../models/ImagemModel');
-const DescricaoModel = require('../models/DescricaoModel');
-const CelulaModel = require('../models/CelulaModel');
-const LesaoModel = require('../models/LesaoModel');
-const ClassificacaoCelulaModel = require('../models/ClassificacaoCelulaModel');
-const SegmentacaoCitoplasmaModel = require('../models/SegmentacaoCitoplasmaModel');
-const SegmentacaoNucleoModel = require('../models/SegmentacaoNucleoModel');
-const SessaoUsuarioModel = require('../models/SessaoUsuarioModel');
+const Sequelize = require("sequelize");
+const Usuario_Base = require("../models/UsuarioBaseModel");
+const Administrador = require("../models/AdministradorModel");
+const Citopatologista = require("../models/CitopatologistaModel");
+const Visitante = require("../models/VisitanteModel");
+const Analista = require("../models/AnalistaModel");
+const ImagemModel = require("../models/ImagemModel");
+const DescricaoModel = require("../models/DescricaoModel");
+const CelulaModel = require("../models/CelulaModel");
+const LesaoModel = require("../models/LesaoModel");
+const ClassificacaoCelulaModel = require("../models/ClassificacaoCelulaModel");
+const SegmentacaoCitoplasmaModel = require("../models/SegmentacaoCitoplasmaModel");
+const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
+const SessaoUsuarioModel = require("../models/SessaoUsuarioModel");
 
 // Option 1:
-const connection = new Sequelize(config.get('database'));
+const connection = new Sequelize(config.get("database"));
 
 // Option 2: Passing a connection URI (See more in: https://sequelize.org/v5/manual/getting-started.html)
 //const sequelize = new Sequelize('postgres://user:pass@example.com:5432/dbname');

@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const { Model, DataTypes }  = require('sequelize');
+const { Model, DataTypes }  = require("sequelize");
 
 class ClassificacaoCelulaModel extends Model {
 
@@ -13,19 +13,19 @@ class ClassificacaoCelulaModel extends Model {
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados
-            tableName: 'classificacao_celula' //Evita que o sequelize pesquise pelo nome da tabela no plural
+            tableName: "classificacao_celula" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });
     }
 
     static associacao(models) {
 
         this.belongsTo(models.UsuarioBaseModel, {
-            foreignKey: 'id_usuario', as: 'fk_classificacao_celula_usuario_base'
+            foreignKey: "id_usuario", as: "fk_classificacao_celula_usuario_base"
         });
 
         //verificar se vai continuar dando erro aqui
         this.belongsTo(models.CelulaModel, {
-            foreignKey: 'id_celula', as: 'fk_classificacao_celula_celula'
+            foreignKey: "id_celula", as: "fk_classificacao_celula_celula"
         });
     }
 }

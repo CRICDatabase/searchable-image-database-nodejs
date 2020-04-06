@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 module.exports = {
     //Aplica as modificacoes especificadas
     up: (queryInterface, Sequelize) => {
-        return queryInterface.createTable('usuario_base',
+        return queryInterface.createTable("usuario_base",
             {
                 id: {
                     type: Sequelize.BIGINT,
@@ -41,14 +41,14 @@ module.exports = {
                 }
             },
             {
-                charset: 'utf8',
-                collate: 'utf8_general_ci'
+                charset: "utf8",
+                collate: "utf8_general_ci"
             }
         );
     },
 
     //Desfaz as modificações aplicadas
     down: (queryInterface, Sequelize) => {
-        return queryInterface.dropTable('usuario_base');
+        return queryInterface.dropTable("usuario_base");
     }
 };

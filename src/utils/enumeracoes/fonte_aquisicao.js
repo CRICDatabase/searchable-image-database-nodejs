@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = {
     FONTE_AQUISICAO_INTERNA: 1,

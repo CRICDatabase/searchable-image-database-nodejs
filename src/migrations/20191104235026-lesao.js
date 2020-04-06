@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.createTable('lesao',
+        return queryInterface.createTable("lesao",
             {
                 id: {
                     type: Sequelize.BIGINT,
@@ -28,13 +28,13 @@ module.exports = {
                 }
             },
             {
-                charset: 'utf8',
-                collate: 'utf8_general_ci'
+                charset: "utf8",
+                collate: "utf8_general_ci"
             }
         );
     },
 
     down: (queryInterface, Sequelize) => {
-        return queryInterface.dropTable('lesao');
+        return queryInterface.dropTable("lesao");
     }
 };

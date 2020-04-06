@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 
 module.exports = {
 
@@ -17,12 +17,12 @@ module.exports = {
 //Cria uma Promise
 function definirDelayPromise(tempo) {
     
-    console.log('definirDelayPromise()');
+    console.log("definirDelayPromise()");
     return new Promise((resolve, reject) => {
 
         //Esse if ta tando um erro doido. Mas quando cai no else funciona de boa
         if(tempo < 500) {
-            reject(new Error('Valor de delay inválido'));
+            reject(new Error("Valor de delay inválido"));
         }
         else{
             setTimeout(resolve, tempo);

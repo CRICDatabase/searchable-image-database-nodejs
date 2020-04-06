@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
-const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
-const HttpStatus = require('http-status-codes');
-const ValidarTipo = require('../../utils/validacao_de_tipos');
-const ValidadorDeSessao = require('../../utils/validador_de_sessao');
-const UsuarioRepositorio = require('../../repositorios/usuario_repositorio');
-const ImagemRepositorio = require('../../repositorios/imagem_repositorio');
-const ObterImagemExecutor = require('../../executores/imagem_executor/ObterImagemExecutor');
-const ListarClassificacaoCelulaExecutor = require('../imagem_executor/ListarClassificacaoCelulaExecutor');
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const HttpStatus = require("http-status-codes");
+const ValidarTipo = require("../../utils/validacao_de_tipos");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
+const ListarClassificacaoCelulaExecutor = require("../imagem_executor/ListarClassificacaoCelulaExecutor");
 
 module.exports = {
 

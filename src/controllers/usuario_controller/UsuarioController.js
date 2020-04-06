@@ -1,19 +1,19 @@
-'use strict';
+"use strict";
 
-const HttpStatus = require('http-status-codes');
-const CadastrarUsuarioExecutor = require('../../executores/usuario_executor/CadastrarUsuarioBaseExcutor');
-const CadastrarAdminExecutor = require('../../executores/usuario_executor/CadastrarAdministradorExecutor');
-const CadastrarCitopatologistaExecutor = require('../../executores/usuario_executor/CadastrarCitopatologistaExecutor');
-const CadastrarVisitanteExecutor = require('../../executores/usuario_executor/CadastrarVisitanteExecutor');
-const CadastrarAnalistaExecutor = require('../../executores/usuario_executor/CadastrarAnalistaExecutor');
-const ListarUsuariosExecutor = require('../../executores/usuario_executor/ListarUsuariosExecutor');
-const ObterUsuarioBaseExecutor = require('../../executores/usuario_executor/ObterUsuarioExecutor');
-const ObterAdministradorExecutor = require('../../executores/usuario_executor/ObterAdministradorExecutor');
-const ObterCitopatologistaExecutor = require('../../executores/usuario_executor/ObterCitopatologistaExecutor');
-const ObterVisitanteExecutor = require('../../executores/usuario_executor/ObterVisitanteExecutor');
-const ObterAnalistaExecutor = require('../../executores/usuario_executor/ObterAnalistaExecutor');
-const FazerLogOffExecutor = require('../../executores/usuario_executor/FazerLogOffExecutor');
-const TornarCitopatologistaExecutor = require('../../executores/usuario_executor/TornarCitopatologistaExecutor');
+const HttpStatus = require("http-status-codes");
+const CadastrarUsuarioExecutor = require("../../executores/usuario_executor/CadastrarUsuarioBaseExcutor");
+const CadastrarAdminExecutor = require("../../executores/usuario_executor/CadastrarAdministradorExecutor");
+const CadastrarCitopatologistaExecutor = require("../../executores/usuario_executor/CadastrarCitopatologistaExecutor");
+const CadastrarVisitanteExecutor = require("../../executores/usuario_executor/CadastrarVisitanteExecutor");
+const CadastrarAnalistaExecutor = require("../../executores/usuario_executor/CadastrarAnalistaExecutor");
+const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
+const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
+const ObterAdministradorExecutor = require("../../executores/usuario_executor/ObterAdministradorExecutor");
+const ObterCitopatologistaExecutor = require("../../executores/usuario_executor/ObterCitopatologistaExecutor");
+const ObterVisitanteExecutor = require("../../executores/usuario_executor/ObterVisitanteExecutor");
+const ObterAnalistaExecutor = require("../../executores/usuario_executor/ObterAnalistaExecutor");
+const FazerLogOffExecutor = require("../../executores/usuario_executor/FazerLogOffExecutor");
+const TornarCitopatologistaExecutor = require("../../executores/usuario_executor/TornarCitopatologistaExecutor");
 
 module.exports = {
 

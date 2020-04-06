@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const { Model, DataTypes }  = require('sequelize');
+const { Model, DataTypes }  = require("sequelize");
 
 class SessaoUsuarioModel extends Model {
 
@@ -13,7 +13,7 @@ class SessaoUsuarioModel extends Model {
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados
-            tableName: 'sessao_usuario' //Evita que o sequelize pesquise pelo nome da tabela no plural
+            tableName: "sessao_usuario" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });
     }
 }

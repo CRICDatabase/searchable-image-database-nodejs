@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
-const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
-const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
-const HttpStatus = require('http-status-codes');
-const ValidarTipo = require('../../utils/validacao_de_tipos');
-const ValidadorDeSessao = require('../../utils/validador_de_sessao');
-const UsuarioRepositorio = require('../../repositorios/usuario_repositorio');
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const HttpStatus = require("http-status-codes");
+const ValidarTipo = require("../../utils/validacao_de_tipos");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 module.exports = {
 
@@ -15,12 +15,12 @@ module.exports = {
         await validarRequisicao(req);
         
         var sistemaWindows = process.platform === "win32";
-        let barra = '/';
+        let barra = "/";
         if(sistemaWindows) {
- barra = '\\'; 
-}
+            barra = "\\"; 
+        }
 
-        const nomeArquivo = 'base_interna.zip';
+        const nomeArquivo = "base_interna.zip";
         const diretorioArquivo = `src${barra}assets${barra}imagens${barra}base_interna_zip${barra}`;
         const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;
 

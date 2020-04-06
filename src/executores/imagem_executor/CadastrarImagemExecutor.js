@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
-const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
-const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
-const HttpStatus = require('http-status-codes');
-const FonteAquisicao = require('../../utils/enumeracoes/fonte_aquisicao');
-const ValidarTipo = require('../../utils/validacao_de_tipos');
-const ValidadorDeSessao = require('../../utils/validador_de_sessao');
-const ImagemRepositorio = require('../../repositorios/imagem_repositorio');
-const UsuarioRepositorio = require('../../repositorios/usuario_repositorio');
-const Crypto = require('crypto');
-const FileSystem = require('fs');
-const Jimp = require('jimp');
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const HttpStatus = require("http-status-codes");
+const FonteAquisicao = require("../../utils/enumeracoes/fonte_aquisicao");
+const ValidarTipo = require("../../utils/validacao_de_tipos");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+const Crypto = require("crypto");
+const FileSystem = require("fs");
+const Jimp = require("jimp");
 
 module.exports = {
 
@@ -68,11 +68,11 @@ async function validarRequisicao(req) {
 async function prepararCadastroNoBanco(req) {
 
     let nomeImagemTratado = obterNomeImagemTratado(req.files.file.name);
-    const novoNomeImagem = `${Crypto.randomBytes(8).toString('hex')}_${nomeImagemTratado}`; //Cria hexadecimal de 16 bits
+    const novoNomeImagem = `${Crypto.randomBytes(8).toString("hex")}_${nomeImagemTratado}`; //Cria hexadecimal de 16 bits
     const excluida = 0;
     const classificacao_aprovada = 1;
     const fonte_aquisicao = await obterUsuarioVisitante(req);
-    const caminho_imagem = fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? 'imagens/base_interna/' : 'imagens/base_externa/' ;    
+    const caminho_imagem = fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? "imagens/base_interna/" : "imagens/base_externa/" ;    
     const altura = 0;
     const largura = 0;
 
@@ -102,33 +102,33 @@ async function obterUsuarioVisitante(req) {
 function obterNomeImagemTratado(entrada) {
 
     if (typeof entrada !== "string") {
-        return entrada.toString().replace(' ', '_');
+        return entrada.toString().replace(" ", "_");
     }
-    return entrada.replace(' ', '_');
+    return entrada.replace(" ", "_");
 }
 
 async function cadastrarDadosEArquivoDeImagem(req) {
 
     var sistemaWindows = process.platform === "win32";
-    let barra = '/'; //para ambiente linux
+    let barra = "/"; //para ambiente linux
     if(sistemaWindows) {
- barra = '\\'; 
-}
+        barra = "\\"; 
+    }
     
     let erroAoSalvar;
     const imagem = await prepararCadastroNoBanco(req);
-    const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? 'base_interna' : 'base_externa';
+    const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? "base_interna" : "base_externa";
     const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;
 
     req.files.file.name = imagem.nome;
     const diretorioUploadImagemOriginal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_original${barra}${imagem.nome}`;
     const diretorioUploadDefinitivo = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${imagem.nome}`;
-    const verificarExtensao = req.files.file.mimetype.split('/');
+    const verificarExtensao = req.files.file.mimetype.split("/");
     
-    if(verificarExtensao[1] == 'tiff' || verificarExtensao[1] == 'tif') {
+    if(verificarExtensao[1] == "tiff" || verificarExtensao[1] == "tif") {
         
-        const tif = 'tif';
-        const png = 'png';
+        const tif = "tif";
+        const png = "png";
         imagem.nome = imagem.nome.replace(tif, png);
         FileSystem.writeFile(diretorioUploadImagemOriginal, req.files.file.data, (erro) => {
             if (erro) {
@@ -158,22 +158,22 @@ async function cadastrarDadosEArquivoDeImagem(req) {
 async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
 
     var sistemaWindows = process.platform === "win32";
-    let barra = '/'; //para ambiente linux
+    let barra = "/"; //para ambiente linux
     let imagemLida;
     let imagemAtualizacao;
-    const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? 'base_interna' : 'base_externa';
+    const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? "base_interna" : "base_externa";
     if(sistemaWindows) {
- barra = '\\'; 
-}
+        barra = "\\"; 
+    }
 
-    const verificarExtensao = req.files.file.mimetype.split('/');
+    const verificarExtensao = req.files.file.mimetype.split("/");
     const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;
     let diretorioUploadThumbnail;
     let resultado;
 
-    if(verificarExtensao[1] == 'tiff' || verificarExtensao[1] == 'tif') {
-        const tif = 'tif';
-        const png = 'png';
+    if(verificarExtensao[1] == "tiff" || verificarExtensao[1] == "tif") {
+        const tif = "tif";
+        const png = "png";
         const diretorioUploadImagemOriginal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_original${barra}${req.files.file.name}`;
         const diretorioUploadFinal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${req.files.file.name.replace(tif, png)}`;
 

@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
-const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
-const TipoLesao = require('../../utils/enumeracoes/tipo_lesao');
-const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
-const HttpStatus = require('http-status-codes');
-const ImagemRepositorio = require('../../repositorios/imagem_repositorio');
-const ValidadorDeSessao = require('../../utils/validador_de_sessao');
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const TipoLesao = require("../../utils/enumeracoes/tipo_lesao");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const HttpStatus = require("http-status-codes");
+const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
@@ -13,12 +13,12 @@ module.exports = {
 
         await ValidadorDeSessao.validarAcessoAServicos(req);
 
-        const lesaoNormal = TipoLesao.NORMAL, nomeLesaoNormal = 'Normal';
-        const lesaoAscUs = TipoLesao.ASC_US, nomeLesaoASCUS = 'AscUs';
-        const lesaoLSil = TipoLesao.LSIL, nomeLesaoLSil = 'LSil';
-        const lesaoAscH = TipoLesao.ASC_H, nomeLesaoAscH = 'AscH';
-        const lesaoHSil = TipoLesao.HSIL, nomeLesaoHSil = 'Hsil';
-        const lesaoCarcinoma = TipoLesao.CARCINOMA, nomeLesaoCarcinoma = 'Carcinoma';
+        const lesaoNormal = TipoLesao.NORMAL, nomeLesaoNormal = "Normal";
+        const lesaoAscUs = TipoLesao.ASC_US, nomeLesaoASCUS = "AscUs";
+        const lesaoLSil = TipoLesao.LSIL, nomeLesaoLSil = "LSil";
+        const lesaoAscH = TipoLesao.ASC_H, nomeLesaoAscH = "AscH";
+        const lesaoHSil = TipoLesao.HSIL, nomeLesaoHSil = "Hsil";
+        const lesaoCarcinoma = TipoLesao.CARCINOMA, nomeLesaoCarcinoma = "Carcinoma";
 
         const totalNormalTask = obterTotalLesoesPorNome(lesaoNormal, nomeLesaoNormal);
         const totalAscUstask = obterTotalLesoesPorNome(lesaoAscUs, nomeLesaoASCUS);

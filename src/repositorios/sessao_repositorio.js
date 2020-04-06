@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const SessaoUsuarioModel = require('../models/SessaoUsuarioModel');
+const SessaoUsuarioModel = require("../models/SessaoUsuarioModel");
 const Sequelize = require("sequelize");
-const db = require('../database');
+const db = require("../database");
 
 module.exports = {
 
@@ -35,9 +35,9 @@ module.exports = {
             WHERE token_autenticacao = \'${token_autenticacao}\'`;
 
         await db.query(sqlQuery)
-        .then(([results, metadata]) => {
-            resultado = results;
-        });
+            .then(([results, metadata]) => {
+                resultado = results;
+            });
 
         return resultado;
     },

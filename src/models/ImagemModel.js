@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const { Model, DataTypes }  = require('sequelize');
+const { Model, DataTypes }  = require("sequelize");
 
 /**
  * Represents a image.
@@ -36,18 +36,18 @@ class ImagemModel extends Model {
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados
-            tableName: 'imagem' //Evita que o sequelize pesquise pelo nome da tabela no plural
+            tableName: "imagem" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });
     }
 
     static associacao(models) {
 
         this.belongsTo(models.UsuarioBaseModel, {
-            foreignKey: 'id_usuario', as: 'fk_imagem_usuario_base'
+            foreignKey: "id_usuario", as: "fk_imagem_usuario_base"
         });
 
         this.belongsTo(models.LesaoModel, {
-            foreignKey: 'id_lesao', as: 'fk_imagem_lesao'
+            foreignKey: "id_lesao", as: "fk_imagem_lesao"
         });
     }
 }

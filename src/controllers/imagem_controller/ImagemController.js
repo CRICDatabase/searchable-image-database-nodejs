@@ -1,23 +1,23 @@
-'use strict';
+"use strict";
 
-const HttpStatus = require('http-status-codes');
-const CadastrarImagemExecutor = require('../../executores/imagem_executor/CadastrarImagemExecutor');
-const ListarImagensExecutor = require('../../executores/imagem_executor/ListarImagensExecutor');
-const ObterImagemExecutor = require('../../executores/imagem_executor/ObterImagemExecutor');
-const CadastrarClassificacaoCelulaExecutor = require('../../executores/imagem_executor/CadastrarClassificacaoCelulaExecutor');
-const ListarClassificacaoCelulaExecutor = require('../../executores/imagem_executor/ListarClassificacaoCelulaExecutor');
-const CadastrarSegmentacaoCelulaExecutor = require('../../executores/imagem_executor/CadastrarSegmentacaoCelulaExecutor');
-const ListarSegmentacaoCelulaExecutor = require('../../executores/imagem_executor/ListarSegmentacaoCelulaExecutor');
-const CadastrarLesaoExecutor = require('../../executores/imagem_executor/CadastrarLesaoExecutor');
-const ListarLesaoExecutor = require('../../executores/imagem_executor/ListarLesoesExecutor');
-const CadastrarDescricao = require('../../executores/imagem_executor/CadastrarDescricaoExecutor');
-const ListarDescricao = require('../../executores/imagem_executor/ListarDescricoesExecutor');
-const ListarContagemLesoesEDescricoesNucleosExecutor = require('../../executores/imagem_executor/ListarContagemLesoesEDescricoesNucleos');
-const DownloadImagensBaseInternaExecutor = require('../../executores/imagem_executor/DownloadImagensBaseInternaExecutor');
-const DownloadImagensBaseExternaExecutor = require('../../executores/imagem_executor/DownloadImagensBaseExternaExecutor');
-const ExcluirClassificacaoExecutor = require('../../executores/imagem_executor/ExcluirClassificacaoExecutor');
-const ExcluirSegmentacaoExecutor = require('../../executores/imagem_executor/ExcluirSegmentacaoExecutor');
-const AtualizarDadosImagemExecutor = require('../../executores/imagem_executor/AtualizarDadosImagemExecutor');
+const HttpStatus = require("http-status-codes");
+const CadastrarImagemExecutor = require("../../executores/imagem_executor/CadastrarImagemExecutor");
+const ListarImagensExecutor = require("../../executores/imagem_executor/ListarImagensExecutor");
+const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
+const CadastrarClassificacaoCelulaExecutor = require("../../executores/imagem_executor/CadastrarClassificacaoCelulaExecutor");
+const ListarClassificacaoCelulaExecutor = require("../../executores/imagem_executor/ListarClassificacaoCelulaExecutor");
+const CadastrarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/CadastrarSegmentacaoCelulaExecutor");
+const ListarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/ListarSegmentacaoCelulaExecutor");
+const CadastrarLesaoExecutor = require("../../executores/imagem_executor/CadastrarLesaoExecutor");
+const ListarLesaoExecutor = require("../../executores/imagem_executor/ListarLesoesExecutor");
+const CadastrarDescricao = require("../../executores/imagem_executor/CadastrarDescricaoExecutor");
+const ListarDescricao = require("../../executores/imagem_executor/ListarDescricoesExecutor");
+const ListarContagemLesoesEDescricoesNucleosExecutor = require("../../executores/imagem_executor/ListarContagemLesoesEDescricoesNucleos");
+const DownloadImagensBaseInternaExecutor = require("../../executores/imagem_executor/DownloadImagensBaseInternaExecutor");
+const DownloadImagensBaseExternaExecutor = require("../../executores/imagem_executor/DownloadImagensBaseExternaExecutor");
+const ExcluirClassificacaoExecutor = require("../../executores/imagem_executor/ExcluirClassificacaoExecutor");
+const ExcluirSegmentacaoExecutor = require("../../executores/imagem_executor/ExcluirSegmentacaoExecutor");
+const AtualizarDadosImagemExecutor = require("../../executores/imagem_executor/AtualizarDadosImagemExecutor");
 
 module.exports = {
 

@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-const Excecao = require('./enumeracoes/mensagem_excecoes');
-const ObjetoExcecao = require('./enumeracoes/controle_de_excecoes');
-const HttpStatus = require('http-status-codes');
-const SessaoRepositorio = require('../repositorios/sessao_repositorio');
-const GeradorIdUnico = require('../utils/gerador_identificador_unico');
+const Excecao = require("./enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("./enumeracoes/controle_de_excecoes");
+const HttpStatus = require("http-status-codes");
+const SessaoRepositorio = require("../repositorios/sessao_repositorio");
+const GeradorIdUnico = require("../utils/gerador_identificador_unico");
 
 module.exports = {
 

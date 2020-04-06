@@ -1,5 +1,5 @@
-'use strict';
-const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
+"use strict";
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 
 module.exports = {
 

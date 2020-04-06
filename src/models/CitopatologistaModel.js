@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const { Model, DataTypes }  = require('sequelize');
+const { Model, DataTypes }  = require("sequelize");
 
 /**
  * Represents a cytopathologist.
@@ -20,7 +20,7 @@ class CitopatologistaModel extends Model {
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados
-            tableName: 'citopatologista'
+            tableName: "citopatologista"
         });
     }
 }

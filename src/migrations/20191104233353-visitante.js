@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.createTable('visitante',
+        return queryInterface.createTable("visitante",
             {
                 id: {
                     type: Sequelize.BIGINT,
                     primaryKey: true,
                     allowNull: false,
-                    references: { model: 'usuario_base', key: 'id' },
-                    onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT'
+                    references: { model: "usuario_base", key: "id" },
+                    onUpdate: "CASCADE",
+                    onDelete: "RESTRICT"
                 },
                 pais: {
                     type: Sequelize.STRING(100),
@@ -34,13 +34,13 @@ module.exports = {
                 }
             },
             {
-                charset: 'utf8',
-                collate: 'utf8_general_ci'
+                charset: "utf8",
+                collate: "utf8_general_ci"
             }
         );
     },
 
     down: (queryInterface, Sequelize) => {
-        return queryInterface.dropTable('visitante');
+        return queryInterface.dropTable("visitante");
     }
 };

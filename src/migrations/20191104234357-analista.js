@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.createTable('analista',
+        return queryInterface.createTable("analista",
             {
                 id: {
                     type: Sequelize.BIGINT,
                     primaryKey: true,
                     allowNull: false,
-                    references: { model: 'usuario_base', key: 'id' },
-                    onUpdate: 'CASCADE',
-                    onDelete: 'RESTRICT'
+                    references: { model: "usuario_base", key: "id" },
+                    onUpdate: "CASCADE",
+                    onDelete: "RESTRICT"
                 },
                 total_segmentacoes: {
                     type: Sequelize.INTEGER,
@@ -30,13 +30,13 @@ module.exports = {
                 }
             },
             {
-                charset: 'utf8',
-                collate: 'utf8_general_ci'
+                charset: "utf8",
+                collate: "utf8_general_ci"
             }
         );
     },
 
     down: (queryInterface, Sequelize) => {
-        return queryInterface.dropTable('analista');
+        return queryInterface.dropTable("analista");
     }
 };

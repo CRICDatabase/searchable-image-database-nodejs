@@ -1,12 +1,12 @@
 /* Create admin user */
-'use strict';
+"use strict";
 
-const Criptografia = require('../utils/criptografia');
+const Criptografia = require("../utils/criptografia");
 
 /* Load Models */
-const connection = require('../database');
-const Usuario_Base = require('../models/UsuarioBaseModel');
-const Administrador = require('../models/AdministradorModel');
+const connection = require("../database");
+const Usuario_Base = require("../models/UsuarioBaseModel");
+const Administrador = require("../models/AdministradorModel");
 
 Usuario_Base.create({
     primeiro_nome: "Raniere",
@@ -19,7 +19,7 @@ Usuario_Base.create({
     We are giving all users all the permissions at this moment. */
     Administrador.create({
         id: user.id,
-        api_key: 'bb3058956119997e380d8',
-        nivel_acesso: 'TOTAL'
+        api_key: "bb3058956119997e380d8",
+        nivel_acesso: "TOTAL"
     });
 });

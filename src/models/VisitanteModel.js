@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const { Model, DataTypes }  = require('sequelize');
+const { Model, DataTypes }  = require("sequelize");
 
 class VisitanteModel extends Model {
 
@@ -14,7 +14,7 @@ class VisitanteModel extends Model {
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados
-            tableName: 'visitante'
+            tableName: "visitante"
         });
     }
 }

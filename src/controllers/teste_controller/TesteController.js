@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const HttpStatus = require('http-status-codes');
-const TesteExecutor = require('../../executores/testes_executor/TesteExecutor');
-const PromiseExecutor = require('../../executores/testes_executor/PromiseExecutor');
+const HttpStatus = require("http-status-codes");
+const TesteExecutor = require("../../executores/testes_executor/TesteExecutor");
+const PromiseExecutor = require("../../executores/testes_executor/PromiseExecutor");
 
 module.exports = {
 

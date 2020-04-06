@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
-const ImagemModel = require('../models/ImagemModel');
-const DescricaoModel = require('../models/DescricaoModel');
-const LesaoModel = require('../models/LesaoModel');
-const CelulaModel = require('../models/CelulaModel');
-const SegmentacaoCitoplasmaModel = require('../models/SegmentacaoCitoplasmaModel');
-const SegmentacaoNucleoModel = require('../models/SegmentacaoNucleoModel');
-const ClassificacaoModel = require('../models/ClassificacaoCelulaModel');
-const Configuracao = require('../utils/enumeracoes/configuracao_lesao_descricao');
-const TipoAnalise = require('../utils/enumeracoes/tipo_analise_realizada');
-const FonteAquisicao = require('../utils/enumeracoes/fonte_aquisicao');
+const ImagemModel = require("../models/ImagemModel");
+const DescricaoModel = require("../models/DescricaoModel");
+const LesaoModel = require("../models/LesaoModel");
+const CelulaModel = require("../models/CelulaModel");
+const SegmentacaoCitoplasmaModel = require("../models/SegmentacaoCitoplasmaModel");
+const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
+const ClassificacaoModel = require("../models/ClassificacaoCelulaModel");
+const Configuracao = require("../utils/enumeracoes/configuracao_lesao_descricao");
+const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
+const FonteAquisicao = require("../utils/enumeracoes/fonte_aquisicao");
 const Sequelize = require("sequelize");
-const db = require('../database');
+const db = require("../database");
 
 module.exports = {
 
@@ -126,7 +126,7 @@ module.exports = {
     async listarImagens() {
         return ImagemModel.findAll({
             order: [
-                ['created_at', 'DESC']
+                ["created_at", "DESC"]
             ]
         });
     },
@@ -134,7 +134,7 @@ module.exports = {
     async listarImagensValidasNoSistema() {
         return ImagemModel.findAll({
             order: [
-                ['created_at', 'DESC']
+                ["created_at", "DESC"]
             ],
             where: {
                 excluida: {
@@ -147,7 +147,7 @@ module.exports = {
     async listarImagensPorIdVisitante(id_usuario) {
         return ImagemModel.findAll({
             order: [
-                ['created_at', 'DESC']
+                ["created_at", "DESC"]
             ],
             where: {
                 id_usuario: {

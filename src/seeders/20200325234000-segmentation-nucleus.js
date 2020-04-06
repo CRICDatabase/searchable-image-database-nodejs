@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.bulkInsert('segmentacao_nucleo', [
+        return queryInterface.bulkInsert("segmentacao_nucleo", [
             {
                 id:  1,
                 coord_x:  283,
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  2,
@@ -18,8 +18,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  3,
@@ -27,8 +27,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  4,
@@ -36,8 +36,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  5,
@@ -45,8 +45,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  6,
@@ -54,8 +54,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  7,
@@ -63,8 +63,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  8,
@@ -72,8 +72,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  9,
@@ -81,8 +81,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  10,
@@ -90,8 +90,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  11,
@@ -99,8 +99,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  12,
@@ -108,8 +108,8 @@ module.exports = {
                 coord_y:  88,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  13,
@@ -117,8 +117,8 @@ module.exports = {
                 coord_y:  87,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  14,
@@ -126,8 +126,8 @@ module.exports = {
                 coord_y:  86,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  15,
@@ -135,8 +135,8 @@ module.exports = {
                 coord_y:  85,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  16,
@@ -144,8 +144,8 @@ module.exports = {
                 coord_y:  85,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  17,
@@ -153,8 +153,8 @@ module.exports = {
                 coord_y:  85,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  18,
@@ -162,8 +162,8 @@ module.exports = {
                 coord_y:  84,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:35',
-                updated_at:  '2020-03-28 10:12:35' 
+                created_at:  "2020-03-28 10:12:35",
+                updated_at:  "2020-03-28 10:12:35" 
             },
             {
                 id:  19,
@@ -171,8 +171,8 @@ module.exports = {
                 coord_y:  84,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  20,
@@ -180,8 +180,8 @@ module.exports = {
                 coord_y:  84,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  21,
@@ -189,8 +189,8 @@ module.exports = {
                 coord_y:  84,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  22,
@@ -198,8 +198,8 @@ module.exports = {
                 coord_y:  83,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  23,
@@ -207,8 +207,8 @@ module.exports = {
                 coord_y:  83,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  24,
@@ -216,8 +216,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  25,
@@ -225,8 +225,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  26,
@@ -234,8 +234,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  27,
@@ -243,8 +243,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  28,
@@ -252,8 +252,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  29,
@@ -261,8 +261,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  30,
@@ -270,8 +270,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  31,
@@ -279,8 +279,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  32,
@@ -288,8 +288,8 @@ module.exports = {
                 coord_y:  82,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  33,
@@ -297,8 +297,8 @@ module.exports = {
                 coord_y:  83,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  34,
@@ -306,8 +306,8 @@ module.exports = {
                 coord_y:  85,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  35,
@@ -315,8 +315,8 @@ module.exports = {
                 coord_y:  86,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  36,
@@ -324,8 +324,8 @@ module.exports = {
                 coord_y:  88,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  37,
@@ -333,8 +333,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  38,
@@ -342,8 +342,8 @@ module.exports = {
                 coord_y:  93,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  39,
@@ -351,8 +351,8 @@ module.exports = {
                 coord_y:  95,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  40,
@@ -360,8 +360,8 @@ module.exports = {
                 coord_y:  96,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  41,
@@ -369,8 +369,8 @@ module.exports = {
                 coord_y:  98,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  42,
@@ -378,8 +378,8 @@ module.exports = {
                 coord_y:  98,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  43,
@@ -387,8 +387,8 @@ module.exports = {
                 coord_y:  100,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  44,
@@ -396,8 +396,8 @@ module.exports = {
                 coord_y:  101,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  45,
@@ -405,8 +405,8 @@ module.exports = {
                 coord_y:  103,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  46,
@@ -414,8 +414,8 @@ module.exports = {
                 coord_y:  105,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  47,
@@ -423,8 +423,8 @@ module.exports = {
                 coord_y:  106,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  48,
@@ -432,8 +432,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  49,
@@ -441,8 +441,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  50,
@@ -450,8 +450,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  51,
@@ -459,8 +459,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  52,
@@ -468,8 +468,8 @@ module.exports = {
                 coord_y:  112,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  53,
@@ -477,8 +477,8 @@ module.exports = {
                 coord_y:  113,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  54,
@@ -486,8 +486,8 @@ module.exports = {
                 coord_y:  114,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  55,
@@ -495,8 +495,8 @@ module.exports = {
                 coord_y:  115,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  56,
@@ -504,8 +504,8 @@ module.exports = {
                 coord_y:  116,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  57,
@@ -513,8 +513,8 @@ module.exports = {
                 coord_y:  118,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  58,
@@ -522,8 +522,8 @@ module.exports = {
                 coord_y:  119,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  59,
@@ -531,8 +531,8 @@ module.exports = {
                 coord_y:  120,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  60,
@@ -540,8 +540,8 @@ module.exports = {
                 coord_y:  121,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  61,
@@ -549,8 +549,8 @@ module.exports = {
                 coord_y:  123,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  62,
@@ -558,8 +558,8 @@ module.exports = {
                 coord_y:  125,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  63,
@@ -567,8 +567,8 @@ module.exports = {
                 coord_y:  125,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  64,
@@ -576,8 +576,8 @@ module.exports = {
                 coord_y:  126,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  65,
@@ -585,8 +585,8 @@ module.exports = {
                 coord_y:  127,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  66,
@@ -594,8 +594,8 @@ module.exports = {
                 coord_y:  128,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  67,
@@ -603,8 +603,8 @@ module.exports = {
                 coord_y:  128,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  68,
@@ -612,8 +612,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  69,
@@ -621,8 +621,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  70,
@@ -630,8 +630,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  71,
@@ -639,8 +639,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  72,
@@ -648,8 +648,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  73,
@@ -657,8 +657,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  74,
@@ -666,8 +666,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  75,
@@ -675,8 +675,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  76,
@@ -684,8 +684,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  77,
@@ -693,8 +693,8 @@ module.exports = {
                 coord_y:  128,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  78,
@@ -702,8 +702,8 @@ module.exports = {
                 coord_y:  125,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  79,
@@ -711,8 +711,8 @@ module.exports = {
                 coord_y:  124,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  80,
@@ -720,8 +720,8 @@ module.exports = {
                 coord_y:  122,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  81,
@@ -729,8 +729,8 @@ module.exports = {
                 coord_y:  119,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  82,
@@ -738,8 +738,8 @@ module.exports = {
                 coord_y:  118,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  83,
@@ -747,8 +747,8 @@ module.exports = {
                 coord_y:  115,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:36',
-                updated_at:  '2020-03-28 10:12:36' 
+                created_at:  "2020-03-28 10:12:36",
+                updated_at:  "2020-03-28 10:12:36" 
             },
             {
                 id:  84,
@@ -756,8 +756,8 @@ module.exports = {
                 coord_y:  113,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  85,
@@ -765,8 +765,8 @@ module.exports = {
                 coord_y:  112,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  86,
@@ -774,8 +774,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  87,
@@ -783,8 +783,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  88,
@@ -792,8 +792,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  89,
@@ -801,8 +801,8 @@ module.exports = {
                 coord_y:  105,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  90,
@@ -810,8 +810,8 @@ module.exports = {
                 coord_y:  103,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  91,
@@ -819,8 +819,8 @@ module.exports = {
                 coord_y:  101,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  92,
@@ -828,8 +828,8 @@ module.exports = {
                 coord_y:  100,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  93,
@@ -837,8 +837,8 @@ module.exports = {
                 coord_y:  96,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  94,
@@ -846,8 +846,8 @@ module.exports = {
                 coord_y:  94,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  95,
@@ -855,8 +855,8 @@ module.exports = {
                 coord_y:  93,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  96,
@@ -864,8 +864,8 @@ module.exports = {
                 coord_y:  92,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  97,
@@ -873,8 +873,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  98,
@@ -882,8 +882,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  99,
@@ -891,8 +891,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  100,
@@ -900,8 +900,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  101,
@@ -909,8 +909,8 @@ module.exports = {
                 coord_y:  90,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  102,
@@ -918,8 +918,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  103,
@@ -927,8 +927,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  104,
@@ -936,8 +936,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  105,
@@ -945,8 +945,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  106,
@@ -954,8 +954,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  107,
@@ -963,8 +963,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  108,
@@ -972,8 +972,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  109,
@@ -981,8 +981,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  110,
@@ -990,8 +990,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  111,
@@ -999,8 +999,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  112,
@@ -1008,8 +1008,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  113,
@@ -1017,8 +1017,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  114,
@@ -1026,8 +1026,8 @@ module.exports = {
                 coord_y:  89,
                 id_usuario:  4,
                 id_celula:  4,
-                created_at:  '2020-03-28 10:12:37',
-                updated_at:  '2020-03-28 10:12:37' 
+                created_at:  "2020-03-28 10:12:37",
+                updated_at:  "2020-03-28 10:12:37" 
             },
             {
                 id:  115,
@@ -1035,8 +1035,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  116,
@@ -1044,8 +1044,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  117,
@@ -1053,8 +1053,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  118,
@@ -1062,8 +1062,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  119,
@@ -1071,8 +1071,8 @@ module.exports = {
                 coord_y:  230,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  120,
@@ -1080,8 +1080,8 @@ module.exports = {
                 coord_y:  229,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  121,
@@ -1089,8 +1089,8 @@ module.exports = {
                 coord_y:  229,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  122,
@@ -1098,8 +1098,8 @@ module.exports = {
                 coord_y:  228,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  123,
@@ -1107,8 +1107,8 @@ module.exports = {
                 coord_y:  227,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  124,
@@ -1116,8 +1116,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  125,
@@ -1125,8 +1125,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  126,
@@ -1134,8 +1134,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  127,
@@ -1143,8 +1143,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  128,
@@ -1152,8 +1152,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  129,
@@ -1161,8 +1161,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  130,
@@ -1170,8 +1170,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  131,
@@ -1179,8 +1179,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  132,
@@ -1188,8 +1188,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  133,
@@ -1197,8 +1197,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  134,
@@ -1206,8 +1206,8 @@ module.exports = {
                 coord_y:  227,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  135,
@@ -1215,8 +1215,8 @@ module.exports = {
                 coord_y:  228,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  136,
@@ -1224,8 +1224,8 @@ module.exports = {
                 coord_y:  229,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  137,
@@ -1233,8 +1233,8 @@ module.exports = {
                 coord_y:  230,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  138,
@@ -1242,8 +1242,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  139,
@@ -1251,8 +1251,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  140,
@@ -1260,8 +1260,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  141,
@@ -1269,8 +1269,8 @@ module.exports = {
                 coord_y:  233,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  142,
@@ -1278,8 +1278,8 @@ module.exports = {
                 coord_y:  234,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  143,
@@ -1287,8 +1287,8 @@ module.exports = {
                 coord_y:  234,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  144,
@@ -1296,8 +1296,8 @@ module.exports = {
                 coord_y:  239,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  145,
@@ -1305,8 +1305,8 @@ module.exports = {
                 coord_y:  241,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  146,
@@ -1314,8 +1314,8 @@ module.exports = {
                 coord_y:  242,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  147,
@@ -1323,8 +1323,8 @@ module.exports = {
                 coord_y:  244,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  148,
@@ -1332,8 +1332,8 @@ module.exports = {
                 coord_y:  250,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  149,
@@ -1341,8 +1341,8 @@ module.exports = {
                 coord_y:  252,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  150,
@@ -1350,8 +1350,8 @@ module.exports = {
                 coord_y:  253,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  151,
@@ -1359,8 +1359,8 @@ module.exports = {
                 coord_y:  253,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  152,
@@ -1368,8 +1368,8 @@ module.exports = {
                 coord_y:  254,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  153,
@@ -1377,8 +1377,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  154,
@@ -1386,8 +1386,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  155,
@@ -1395,8 +1395,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  156,
@@ -1404,8 +1404,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  157,
@@ -1413,8 +1413,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  158,
@@ -1422,8 +1422,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  159,
@@ -1431,8 +1431,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  160,
@@ -1440,8 +1440,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  161,
@@ -1449,8 +1449,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  162,
@@ -1458,8 +1458,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  163,
@@ -1467,8 +1467,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  164,
@@ -1476,8 +1476,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  165,
@@ -1485,8 +1485,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  166,
@@ -1494,8 +1494,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  167,
@@ -1503,8 +1503,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  168,
@@ -1512,8 +1512,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  169,
@@ -1521,8 +1521,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  170,
@@ -1530,8 +1530,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:08',
-                updated_at:  '2020-03-28 10:14:08' 
+                created_at:  "2020-03-28 10:14:08",
+                updated_at:  "2020-03-28 10:14:08" 
             },
             {
                 id:  171,
@@ -1539,8 +1539,8 @@ module.exports = {
                 coord_y:  253,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  172,
@@ -1548,8 +1548,8 @@ module.exports = {
                 coord_y:  252,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  173,
@@ -1557,8 +1557,8 @@ module.exports = {
                 coord_y:  250,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  174,
@@ -1566,8 +1566,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  175,
@@ -1575,8 +1575,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  176,
@@ -1584,8 +1584,8 @@ module.exports = {
                 coord_y:  245,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  177,
@@ -1593,8 +1593,8 @@ module.exports = {
                 coord_y:  242,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  178,
@@ -1602,8 +1602,8 @@ module.exports = {
                 coord_y:  241,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  179,
@@ -1611,8 +1611,8 @@ module.exports = {
                 coord_y:  239,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  180,
@@ -1620,8 +1620,8 @@ module.exports = {
                 coord_y:  239,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  181,
@@ -1629,8 +1629,8 @@ module.exports = {
                 coord_y:  236,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  182,
@@ -1638,8 +1638,8 @@ module.exports = {
                 coord_y:  234,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  183,
@@ -1647,8 +1647,8 @@ module.exports = {
                 coord_y:  234,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  184,
@@ -1656,8 +1656,8 @@ module.exports = {
                 coord_y:  234,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  185,
@@ -1665,8 +1665,8 @@ module.exports = {
                 coord_y:  233,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  186,
@@ -1674,8 +1674,8 @@ module.exports = {
                 coord_y:  233,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  187,
@@ -1683,8 +1683,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  188,
@@ -1692,8 +1692,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  189,
@@ -1701,8 +1701,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  190,
@@ -1710,8 +1710,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  191,
@@ -1719,8 +1719,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  192,
@@ -1728,8 +1728,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  193,
@@ -1737,8 +1737,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  194,
@@ -1746,8 +1746,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  5,
-                created_at:  '2020-03-28 10:14:09',
-                updated_at:  '2020-03-28 10:14:09' 
+                created_at:  "2020-03-28 10:14:09",
+                updated_at:  "2020-03-28 10:14:09" 
             },
             {
                 id:  195,
@@ -1755,8 +1755,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  196,
@@ -1764,8 +1764,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  197,
@@ -1773,8 +1773,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  198,
@@ -1782,8 +1782,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  199,
@@ -1791,8 +1791,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  200,
@@ -1800,8 +1800,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  201,
@@ -1809,8 +1809,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  202,
@@ -1818,8 +1818,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  203,
@@ -1827,8 +1827,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  204,
@@ -1836,8 +1836,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  205,
@@ -1845,8 +1845,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  206,
@@ -1854,8 +1854,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  207,
@@ -1863,8 +1863,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  208,
@@ -1872,8 +1872,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  209,
@@ -1881,8 +1881,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  210,
@@ -1890,8 +1890,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  211,
@@ -1899,8 +1899,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  212,
@@ -1908,8 +1908,8 @@ module.exports = {
                 coord_y:  306,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  213,
@@ -1917,8 +1917,8 @@ module.exports = {
                 coord_y:  307,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  214,
@@ -1926,8 +1926,8 @@ module.exports = {
                 coord_y:  309,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  215,
@@ -1935,8 +1935,8 @@ module.exports = {
                 coord_y:  310,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  216,
@@ -1944,8 +1944,8 @@ module.exports = {
                 coord_y:  311,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  217,
@@ -1953,8 +1953,8 @@ module.exports = {
                 coord_y:  312,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  218,
@@ -1962,8 +1962,8 @@ module.exports = {
                 coord_y:  314,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:08',
-                updated_at:  '2020-03-28 10:15:08' 
+                created_at:  "2020-03-28 10:15:08",
+                updated_at:  "2020-03-28 10:15:08" 
             },
             {
                 id:  219,
@@ -1971,8 +1971,8 @@ module.exports = {
                 coord_y:  316,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  220,
@@ -1980,8 +1980,8 @@ module.exports = {
                 coord_y:  318,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  221,
@@ -1989,8 +1989,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  222,
@@ -1998,8 +1998,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  223,
@@ -2007,8 +2007,8 @@ module.exports = {
                 coord_y:  322,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  224,
@@ -2016,8 +2016,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  225,
@@ -2025,8 +2025,8 @@ module.exports = {
                 coord_y:  324,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  226,
@@ -2034,8 +2034,8 @@ module.exports = {
                 coord_y:  324,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  227,
@@ -2043,8 +2043,8 @@ module.exports = {
                 coord_y:  327,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  228,
@@ -2052,8 +2052,8 @@ module.exports = {
                 coord_y:  327,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  229,
@@ -2061,8 +2061,8 @@ module.exports = {
                 coord_y:  328,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  230,
@@ -2070,8 +2070,8 @@ module.exports = {
                 coord_y:  328,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  231,
@@ -2079,8 +2079,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  232,
@@ -2088,8 +2088,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  233,
@@ -2097,8 +2097,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  234,
@@ -2106,8 +2106,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  235,
@@ -2115,8 +2115,8 @@ module.exports = {
                 coord_y:  331,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  236,
@@ -2124,8 +2124,8 @@ module.exports = {
                 coord_y:  331,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  237,
@@ -2133,8 +2133,8 @@ module.exports = {
                 coord_y:  333,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  238,
@@ -2142,8 +2142,8 @@ module.exports = {
                 coord_y:  336,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  239,
@@ -2151,8 +2151,8 @@ module.exports = {
                 coord_y:  337,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  240,
@@ -2160,8 +2160,8 @@ module.exports = {
                 coord_y:  339,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  241,
@@ -2169,8 +2169,8 @@ module.exports = {
                 coord_y:  341,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  242,
@@ -2178,8 +2178,8 @@ module.exports = {
                 coord_y:  343,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  243,
@@ -2187,8 +2187,8 @@ module.exports = {
                 coord_y:  344,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  244,
@@ -2196,8 +2196,8 @@ module.exports = {
                 coord_y:  344,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  245,
@@ -2205,8 +2205,8 @@ module.exports = {
                 coord_y:  346,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  246,
@@ -2214,8 +2214,8 @@ module.exports = {
                 coord_y:  346,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  247,
@@ -2223,8 +2223,8 @@ module.exports = {
                 coord_y:  346,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  248,
@@ -2232,8 +2232,8 @@ module.exports = {
                 coord_y:  347,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  249,
@@ -2241,8 +2241,8 @@ module.exports = {
                 coord_y:  347,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  250,
@@ -2250,8 +2250,8 @@ module.exports = {
                 coord_y:  347,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  251,
@@ -2259,8 +2259,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  252,
@@ -2268,8 +2268,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  253,
@@ -2277,8 +2277,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  254,
@@ -2286,8 +2286,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  255,
@@ -2295,8 +2295,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  256,
@@ -2304,8 +2304,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  257,
@@ -2313,8 +2313,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  258,
@@ -2322,8 +2322,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  259,
@@ -2331,8 +2331,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  260,
@@ -2340,8 +2340,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  261,
@@ -2349,8 +2349,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  262,
@@ -2358,8 +2358,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  263,
@@ -2367,8 +2367,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  264,
@@ -2376,8 +2376,8 @@ module.exports = {
                 coord_y:  348,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  265,
@@ -2385,8 +2385,8 @@ module.exports = {
                 coord_y:  347,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  266,
@@ -2394,8 +2394,8 @@ module.exports = {
                 coord_y:  346,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  267,
@@ -2403,8 +2403,8 @@ module.exports = {
                 coord_y:  345,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  268,
@@ -2412,8 +2412,8 @@ module.exports = {
                 coord_y:  344,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  269,
@@ -2421,8 +2421,8 @@ module.exports = {
                 coord_y:  343,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  270,
@@ -2430,8 +2430,8 @@ module.exports = {
                 coord_y:  342,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  271,
@@ -2439,8 +2439,8 @@ module.exports = {
                 coord_y:  342,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  272,
@@ -2448,8 +2448,8 @@ module.exports = {
                 coord_y:  341,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  273,
@@ -2457,8 +2457,8 @@ module.exports = {
                 coord_y:  340,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  274,
@@ -2466,8 +2466,8 @@ module.exports = {
                 coord_y:  339,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  275,
@@ -2475,8 +2475,8 @@ module.exports = {
                 coord_y:  337,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  276,
@@ -2484,8 +2484,8 @@ module.exports = {
                 coord_y:  337,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  277,
@@ -2493,8 +2493,8 @@ module.exports = {
                 coord_y:  336,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  278,
@@ -2502,8 +2502,8 @@ module.exports = {
                 coord_y:  335,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  279,
@@ -2511,8 +2511,8 @@ module.exports = {
                 coord_y:  335,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  280,
@@ -2520,8 +2520,8 @@ module.exports = {
                 coord_y:  333,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  281,
@@ -2529,8 +2529,8 @@ module.exports = {
                 coord_y:  333,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  282,
@@ -2538,8 +2538,8 @@ module.exports = {
                 coord_y:  332,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  283,
@@ -2547,8 +2547,8 @@ module.exports = {
                 coord_y:  332,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  284,
@@ -2556,8 +2556,8 @@ module.exports = {
                 coord_y:  332,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  285,
@@ -2565,8 +2565,8 @@ module.exports = {
                 coord_y:  332,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  286,
@@ -2574,8 +2574,8 @@ module.exports = {
                 coord_y:  332,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  287,
@@ -2583,8 +2583,8 @@ module.exports = {
                 coord_y:  332,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  288,
@@ -2592,8 +2592,8 @@ module.exports = {
                 coord_y:  332,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  289,
@@ -2601,8 +2601,8 @@ module.exports = {
                 coord_y:  331,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  290,
@@ -2610,8 +2610,8 @@ module.exports = {
                 coord_y:  331,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  291,
@@ -2619,8 +2619,8 @@ module.exports = {
                 coord_y:  331,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  292,
@@ -2628,8 +2628,8 @@ module.exports = {
                 coord_y:  331,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  293,
@@ -2637,8 +2637,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  294,
@@ -2646,8 +2646,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  295,
@@ -2655,8 +2655,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  296,
@@ -2664,8 +2664,8 @@ module.exports = {
                 coord_y:  327,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  297,
@@ -2673,8 +2673,8 @@ module.exports = {
                 coord_y:  326,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  298,
@@ -2682,8 +2682,8 @@ module.exports = {
                 coord_y:  325,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  299,
@@ -2691,8 +2691,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  300,
@@ -2700,8 +2700,8 @@ module.exports = {
                 coord_y:  321,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  301,
@@ -2709,8 +2709,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  302,
@@ -2718,8 +2718,8 @@ module.exports = {
                 coord_y:  318,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  303,
@@ -2727,8 +2727,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  304,
@@ -2736,8 +2736,8 @@ module.exports = {
                 coord_y:  310,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  305,
@@ -2745,8 +2745,8 @@ module.exports = {
                 coord_y:  309,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:09',
-                updated_at:  '2020-03-28 10:15:09' 
+                created_at:  "2020-03-28 10:15:09",
+                updated_at:  "2020-03-28 10:15:09" 
             },
             {
                 id:  306,
@@ -2754,8 +2754,8 @@ module.exports = {
                 coord_y:  308,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  307,
@@ -2763,8 +2763,8 @@ module.exports = {
                 coord_y:  307,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  308,
@@ -2772,8 +2772,8 @@ module.exports = {
                 coord_y:  306,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  309,
@@ -2781,8 +2781,8 @@ module.exports = {
                 coord_y:  305,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  310,
@@ -2790,8 +2790,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  311,
@@ -2799,8 +2799,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  312,
@@ -2808,8 +2808,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  313,
@@ -2817,8 +2817,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  314,
@@ -2826,8 +2826,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  315,
@@ -2835,8 +2835,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  316,
@@ -2844,8 +2844,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  317,
@@ -2853,8 +2853,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  318,
@@ -2862,8 +2862,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  319,
@@ -2871,8 +2871,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  320,
@@ -2880,8 +2880,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  321,
@@ -2889,8 +2889,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  322,
@@ -2898,8 +2898,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  323,
@@ -2907,8 +2907,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  324,
@@ -2916,8 +2916,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  325,
@@ -2925,8 +2925,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  326,
@@ -2934,8 +2934,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  327,
@@ -2943,8 +2943,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  328,
@@ -2952,8 +2952,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  329,
@@ -2961,8 +2961,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  330,
@@ -2970,8 +2970,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  331,
@@ -2979,8 +2979,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  6,
-                created_at:  '2020-03-28 10:15:10',
-                updated_at:  '2020-03-28 10:15:10' 
+                created_at:  "2020-03-28 10:15:10",
+                updated_at:  "2020-03-28 10:15:10" 
             },
             {
                 id:  332,
@@ -2988,8 +2988,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  333,
@@ -2997,8 +2997,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  334,
@@ -3006,8 +3006,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  335,
@@ -3015,8 +3015,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  336,
@@ -3024,8 +3024,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  337,
@@ -3033,8 +3033,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  338,
@@ -3042,8 +3042,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  339,
@@ -3051,8 +3051,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  340,
@@ -3060,8 +3060,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  341,
@@ -3069,8 +3069,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  342,
@@ -3078,8 +3078,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  343,
@@ -3087,8 +3087,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  344,
@@ -3096,8 +3096,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  345,
@@ -3105,8 +3105,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  346,
@@ -3114,8 +3114,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  347,
@@ -3123,8 +3123,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  348,
@@ -3132,8 +3132,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  349,
@@ -3141,8 +3141,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  350,
@@ -3150,8 +3150,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  351,
@@ -3159,8 +3159,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  352,
@@ -3168,8 +3168,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  353,
@@ -3177,8 +3177,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  354,
@@ -3186,8 +3186,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  355,
@@ -3195,8 +3195,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  356,
@@ -3204,8 +3204,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  357,
@@ -3213,8 +3213,8 @@ module.exports = {
                 coord_y:  112,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  358,
@@ -3222,8 +3222,8 @@ module.exports = {
                 coord_y:  113,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  359,
@@ -3231,8 +3231,8 @@ module.exports = {
                 coord_y:  114,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:19',
-                updated_at:  '2020-03-28 10:19:19' 
+                created_at:  "2020-03-28 10:19:19",
+                updated_at:  "2020-03-28 10:19:19" 
             },
             {
                 id:  360,
@@ -3240,8 +3240,8 @@ module.exports = {
                 coord_y:  115,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  361,
@@ -3249,8 +3249,8 @@ module.exports = {
                 coord_y:  116,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  362,
@@ -3258,8 +3258,8 @@ module.exports = {
                 coord_y:  117,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  363,
@@ -3267,8 +3267,8 @@ module.exports = {
                 coord_y:  117,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  364,
@@ -3276,8 +3276,8 @@ module.exports = {
                 coord_y:  119,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  365,
@@ -3285,8 +3285,8 @@ module.exports = {
                 coord_y:  120,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  366,
@@ -3294,8 +3294,8 @@ module.exports = {
                 coord_y:  122,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  367,
@@ -3303,8 +3303,8 @@ module.exports = {
                 coord_y:  123,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  368,
@@ -3312,8 +3312,8 @@ module.exports = {
                 coord_y:  124,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  369,
@@ -3321,8 +3321,8 @@ module.exports = {
                 coord_y:  126,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  370,
@@ -3330,8 +3330,8 @@ module.exports = {
                 coord_y:  129,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  371,
@@ -3339,8 +3339,8 @@ module.exports = {
                 coord_y:  130,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  372,
@@ -3348,8 +3348,8 @@ module.exports = {
                 coord_y:  132,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  373,
@@ -3357,8 +3357,8 @@ module.exports = {
                 coord_y:  133,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  374,
@@ -3366,8 +3366,8 @@ module.exports = {
                 coord_y:  134,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  375,
@@ -3375,8 +3375,8 @@ module.exports = {
                 coord_y:  136,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  376,
@@ -3384,8 +3384,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  377,
@@ -3393,8 +3393,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  378,
@@ -3402,8 +3402,8 @@ module.exports = {
                 coord_y:  140,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  379,
@@ -3411,8 +3411,8 @@ module.exports = {
                 coord_y:  141,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  380,
@@ -3420,8 +3420,8 @@ module.exports = {
                 coord_y:  142,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  381,
@@ -3429,8 +3429,8 @@ module.exports = {
                 coord_y:  143,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  382,
@@ -3438,8 +3438,8 @@ module.exports = {
                 coord_y:  145,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  383,
@@ -3447,8 +3447,8 @@ module.exports = {
                 coord_y:  147,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  384,
@@ -3456,8 +3456,8 @@ module.exports = {
                 coord_y:  149,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  385,
@@ -3465,8 +3465,8 @@ module.exports = {
                 coord_y:  150,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  386,
@@ -3474,8 +3474,8 @@ module.exports = {
                 coord_y:  150,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  387,
@@ -3483,8 +3483,8 @@ module.exports = {
                 coord_y:  151,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  388,
@@ -3492,8 +3492,8 @@ module.exports = {
                 coord_y:  151,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  389,
@@ -3501,8 +3501,8 @@ module.exports = {
                 coord_y:  153,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  390,
@@ -3510,8 +3510,8 @@ module.exports = {
                 coord_y:  153,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  391,
@@ -3519,8 +3519,8 @@ module.exports = {
                 coord_y:  154,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  392,
@@ -3528,8 +3528,8 @@ module.exports = {
                 coord_y:  154,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  393,
@@ -3537,8 +3537,8 @@ module.exports = {
                 coord_y:  154,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  394,
@@ -3546,8 +3546,8 @@ module.exports = {
                 coord_y:  154,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  395,
@@ -3555,8 +3555,8 @@ module.exports = {
                 coord_y:  155,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  396,
@@ -3564,8 +3564,8 @@ module.exports = {
                 coord_y:  155,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  397,
@@ -3573,8 +3573,8 @@ module.exports = {
                 coord_y:  155,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  398,
@@ -3582,8 +3582,8 @@ module.exports = {
                 coord_y:  155,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  399,
@@ -3591,8 +3591,8 @@ module.exports = {
                 coord_y:  155,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  400,
@@ -3600,8 +3600,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  401,
@@ -3609,8 +3609,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  402,
@@ -3618,8 +3618,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  403,
@@ -3627,8 +3627,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  404,
@@ -3636,8 +3636,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  405,
@@ -3645,8 +3645,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  406,
@@ -3654,8 +3654,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  407,
@@ -3663,8 +3663,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  408,
@@ -3672,8 +3672,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  409,
@@ -3681,8 +3681,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  410,
@@ -3690,8 +3690,8 @@ module.exports = {
                 coord_y:  156,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  411,
@@ -3699,8 +3699,8 @@ module.exports = {
                 coord_y:  155,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  412,
@@ -3708,8 +3708,8 @@ module.exports = {
                 coord_y:  154,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  413,
@@ -3717,8 +3717,8 @@ module.exports = {
                 coord_y:  153,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  414,
@@ -3726,8 +3726,8 @@ module.exports = {
                 coord_y:  153,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  415,
@@ -3735,8 +3735,8 @@ module.exports = {
                 coord_y:  152,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  416,
@@ -3744,8 +3744,8 @@ module.exports = {
                 coord_y:  151,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  417,
@@ -3753,8 +3753,8 @@ module.exports = {
                 coord_y:  150,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  418,
@@ -3762,8 +3762,8 @@ module.exports = {
                 coord_y:  150,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  419,
@@ -3771,8 +3771,8 @@ module.exports = {
                 coord_y:  149,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  420,
@@ -3780,8 +3780,8 @@ module.exports = {
                 coord_y:  149,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  421,
@@ -3789,8 +3789,8 @@ module.exports = {
                 coord_y:  147,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  422,
@@ -3798,8 +3798,8 @@ module.exports = {
                 coord_y:  147,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  423,
@@ -3807,8 +3807,8 @@ module.exports = {
                 coord_y:  146,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  424,
@@ -3816,8 +3816,8 @@ module.exports = {
                 coord_y:  145,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  425,
@@ -3825,8 +3825,8 @@ module.exports = {
                 coord_y:  143,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  426,
@@ -3834,8 +3834,8 @@ module.exports = {
                 coord_y:  142,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  427,
@@ -3843,8 +3843,8 @@ module.exports = {
                 coord_y:  140,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  428,
@@ -3852,8 +3852,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  429,
@@ -3861,8 +3861,8 @@ module.exports = {
                 coord_y:  136,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  430,
@@ -3870,8 +3870,8 @@ module.exports = {
                 coord_y:  135,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  431,
@@ -3879,8 +3879,8 @@ module.exports = {
                 coord_y:  133,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  432,
@@ -3888,8 +3888,8 @@ module.exports = {
                 coord_y:  131,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  433,
@@ -3897,8 +3897,8 @@ module.exports = {
                 coord_y:  130,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  434,
@@ -3906,8 +3906,8 @@ module.exports = {
                 coord_y:  128,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  435,
@@ -3915,8 +3915,8 @@ module.exports = {
                 coord_y:  123,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  436,
@@ -3924,8 +3924,8 @@ module.exports = {
                 coord_y:  123,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  437,
@@ -3933,8 +3933,8 @@ module.exports = {
                 coord_y:  117,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  438,
@@ -3942,8 +3942,8 @@ module.exports = {
                 coord_y:  116,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  439,
@@ -3951,8 +3951,8 @@ module.exports = {
                 coord_y:  116,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  440,
@@ -3960,8 +3960,8 @@ module.exports = {
                 coord_y:  115,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  441,
@@ -3969,8 +3969,8 @@ module.exports = {
                 coord_y:  115,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  442,
@@ -3978,8 +3978,8 @@ module.exports = {
                 coord_y:  114,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  443,
@@ -3987,8 +3987,8 @@ module.exports = {
                 coord_y:  113,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  444,
@@ -3996,8 +3996,8 @@ module.exports = {
                 coord_y:  112,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:20',
-                updated_at:  '2020-03-28 10:19:20' 
+                created_at:  "2020-03-28 10:19:20",
+                updated_at:  "2020-03-28 10:19:20" 
             },
             {
                 id:  445,
@@ -4005,8 +4005,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  446,
@@ -4014,8 +4014,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  447,
@@ -4023,8 +4023,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  448,
@@ -4032,8 +4032,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  449,
@@ -4041,8 +4041,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  450,
@@ -4050,8 +4050,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  451,
@@ -4059,8 +4059,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  452,
@@ -4068,8 +4068,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  453,
@@ -4077,8 +4077,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  454,
@@ -4086,8 +4086,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  455,
@@ -4095,8 +4095,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  456,
@@ -4104,8 +4104,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  457,
@@ -4113,8 +4113,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  458,
@@ -4122,8 +4122,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  459,
@@ -4131,8 +4131,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  460,
@@ -4140,8 +4140,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  461,
@@ -4149,8 +4149,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  462,
@@ -4158,8 +4158,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  463,
@@ -4167,8 +4167,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  464,
@@ -4176,8 +4176,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  465,
@@ -4185,8 +4185,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  466,
@@ -4194,8 +4194,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  467,
@@ -4203,8 +4203,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  468,
@@ -4212,8 +4212,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  469,
@@ -4221,8 +4221,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  470,
@@ -4230,8 +4230,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  471,
@@ -4239,8 +4239,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  472,
@@ -4248,8 +4248,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  473,
@@ -4257,8 +4257,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  474,
@@ -4266,8 +4266,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  475,
@@ -4275,8 +4275,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  476,
@@ -4284,8 +4284,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  477,
@@ -4293,8 +4293,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  478,
@@ -4302,8 +4302,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  479,
@@ -4311,8 +4311,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  480,
@@ -4320,8 +4320,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  481,
@@ -4329,8 +4329,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  482,
@@ -4338,8 +4338,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  483,
@@ -4347,8 +4347,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  484,
@@ -4356,8 +4356,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  485,
@@ -4365,8 +4365,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  486,
@@ -4374,8 +4374,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  487,
@@ -4383,8 +4383,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  488,
@@ -4392,8 +4392,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  14,
-                created_at:  '2020-03-28 10:19:21',
-                updated_at:  '2020-03-28 10:19:21' 
+                created_at:  "2020-03-28 10:19:21",
+                updated_at:  "2020-03-28 10:19:21" 
             },
             {
                 id:  489,
@@ -4401,8 +4401,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  490,
@@ -4410,8 +4410,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  491,
@@ -4419,8 +4419,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  492,
@@ -4428,8 +4428,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  493,
@@ -4437,8 +4437,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  494,
@@ -4446,8 +4446,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  495,
@@ -4455,8 +4455,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  496,
@@ -4464,8 +4464,8 @@ module.exports = {
                 coord_y:  186,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  497,
@@ -4473,8 +4473,8 @@ module.exports = {
                 coord_y:  187,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  498,
@@ -4482,8 +4482,8 @@ module.exports = {
                 coord_y:  189,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  499,
@@ -4491,8 +4491,8 @@ module.exports = {
                 coord_y:  190,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  500,
@@ -4500,8 +4500,8 @@ module.exports = {
                 coord_y:  191,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  501,
@@ -4509,8 +4509,8 @@ module.exports = {
                 coord_y:  192,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  502,
@@ -4518,8 +4518,8 @@ module.exports = {
                 coord_y:  192,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  503,
@@ -4527,8 +4527,8 @@ module.exports = {
                 coord_y:  193,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  504,
@@ -4536,8 +4536,8 @@ module.exports = {
                 coord_y:  195,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  505,
@@ -4545,8 +4545,8 @@ module.exports = {
                 coord_y:  198,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  506,
@@ -4554,8 +4554,8 @@ module.exports = {
                 coord_y:  199,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  507,
@@ -4563,8 +4563,8 @@ module.exports = {
                 coord_y:  200,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  508,
@@ -4572,8 +4572,8 @@ module.exports = {
                 coord_y:  202,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  509,
@@ -4581,8 +4581,8 @@ module.exports = {
                 coord_y:  202,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  510,
@@ -4590,8 +4590,8 @@ module.exports = {
                 coord_y:  202,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  511,
@@ -4599,8 +4599,8 @@ module.exports = {
                 coord_y:  203,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  512,
@@ -4608,8 +4608,8 @@ module.exports = {
                 coord_y:  203,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  513,
@@ -4617,8 +4617,8 @@ module.exports = {
                 coord_y:  204,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  514,
@@ -4626,8 +4626,8 @@ module.exports = {
                 coord_y:  204,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  515,
@@ -4635,8 +4635,8 @@ module.exports = {
                 coord_y:  206,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  516,
@@ -4644,8 +4644,8 @@ module.exports = {
                 coord_y:  208,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  517,
@@ -4653,8 +4653,8 @@ module.exports = {
                 coord_y:  209,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  518,
@@ -4662,8 +4662,8 @@ module.exports = {
                 coord_y:  211,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  519,
@@ -4671,8 +4671,8 @@ module.exports = {
                 coord_y:  212,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  520,
@@ -4680,8 +4680,8 @@ module.exports = {
                 coord_y:  213,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  521,
@@ -4689,8 +4689,8 @@ module.exports = {
                 coord_y:  214,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  522,
@@ -4698,8 +4698,8 @@ module.exports = {
                 coord_y:  215,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  523,
@@ -4707,8 +4707,8 @@ module.exports = {
                 coord_y:  217,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  524,
@@ -4716,8 +4716,8 @@ module.exports = {
                 coord_y:  218,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  525,
@@ -4725,8 +4725,8 @@ module.exports = {
                 coord_y:  220,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  526,
@@ -4734,8 +4734,8 @@ module.exports = {
                 coord_y:  222,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  527,
@@ -4743,8 +4743,8 @@ module.exports = {
                 coord_y:  223,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  528,
@@ -4752,8 +4752,8 @@ module.exports = {
                 coord_y:  224,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  529,
@@ -4761,8 +4761,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  530,
@@ -4770,8 +4770,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  531,
@@ -4779,8 +4779,8 @@ module.exports = {
                 coord_y:  228,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  532,
@@ -4788,8 +4788,8 @@ module.exports = {
                 coord_y:  230,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  533,
@@ -4797,8 +4797,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:56',
-                updated_at:  '2020-03-28 10:19:56' 
+                created_at:  "2020-03-28 10:19:56",
+                updated_at:  "2020-03-28 10:19:56" 
             },
             {
                 id:  534,
@@ -4806,8 +4806,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  535,
@@ -4815,8 +4815,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  536,
@@ -4824,8 +4824,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  537,
@@ -4833,8 +4833,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  538,
@@ -4842,8 +4842,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  539,
@@ -4851,8 +4851,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  540,
@@ -4860,8 +4860,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  541,
@@ -4869,8 +4869,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  542,
@@ -4878,8 +4878,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  543,
@@ -4887,8 +4887,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  544,
@@ -4896,8 +4896,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  545,
@@ -4905,8 +4905,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  546,
@@ -4914,8 +4914,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  547,
@@ -4923,8 +4923,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  548,
@@ -4932,8 +4932,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  549,
@@ -4941,8 +4941,8 @@ module.exports = {
                 coord_y:  229,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  550,
@@ -4950,8 +4950,8 @@ module.exports = {
                 coord_y:  229,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  551,
@@ -4959,8 +4959,8 @@ module.exports = {
                 coord_y:  228,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  552,
@@ -4968,8 +4968,8 @@ module.exports = {
                 coord_y:  226,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  553,
@@ -4977,8 +4977,8 @@ module.exports = {
                 coord_y:  222,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  554,
@@ -4986,8 +4986,8 @@ module.exports = {
                 coord_y:  218,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  555,
@@ -4995,8 +4995,8 @@ module.exports = {
                 coord_y:  217,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  556,
@@ -5004,8 +5004,8 @@ module.exports = {
                 coord_y:  216,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  557,
@@ -5013,8 +5013,8 @@ module.exports = {
                 coord_y:  213,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  558,
@@ -5022,8 +5022,8 @@ module.exports = {
                 coord_y:  207,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  559,
@@ -5031,8 +5031,8 @@ module.exports = {
                 coord_y:  205,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  560,
@@ -5040,8 +5040,8 @@ module.exports = {
                 coord_y:  204,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  561,
@@ -5049,8 +5049,8 @@ module.exports = {
                 coord_y:  202,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  562,
@@ -5058,8 +5058,8 @@ module.exports = {
                 coord_y:  201,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  563,
@@ -5067,8 +5067,8 @@ module.exports = {
                 coord_y:  199,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  564,
@@ -5076,8 +5076,8 @@ module.exports = {
                 coord_y:  198,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  565,
@@ -5085,8 +5085,8 @@ module.exports = {
                 coord_y:  196,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  566,
@@ -5094,8 +5094,8 @@ module.exports = {
                 coord_y:  194,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  567,
@@ -5103,8 +5103,8 @@ module.exports = {
                 coord_y:  194,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  568,
@@ -5112,8 +5112,8 @@ module.exports = {
                 coord_y:  192,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  569,
@@ -5121,8 +5121,8 @@ module.exports = {
                 coord_y:  191,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  570,
@@ -5130,8 +5130,8 @@ module.exports = {
                 coord_y:  190,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  571,
@@ -5139,8 +5139,8 @@ module.exports = {
                 coord_y:  189,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  572,
@@ -5148,8 +5148,8 @@ module.exports = {
                 coord_y:  189,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  573,
@@ -5157,8 +5157,8 @@ module.exports = {
                 coord_y:  188,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  574,
@@ -5166,8 +5166,8 @@ module.exports = {
                 coord_y:  188,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  575,
@@ -5175,8 +5175,8 @@ module.exports = {
                 coord_y:  187,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  576,
@@ -5184,8 +5184,8 @@ module.exports = {
                 coord_y:  187,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  577,
@@ -5193,8 +5193,8 @@ module.exports = {
                 coord_y:  186,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  578,
@@ -5202,8 +5202,8 @@ module.exports = {
                 coord_y:  186,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  579,
@@ -5211,8 +5211,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  580,
@@ -5220,8 +5220,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  581,
@@ -5229,8 +5229,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  582,
@@ -5238,8 +5238,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  583,
@@ -5247,8 +5247,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  584,
@@ -5256,8 +5256,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  585,
@@ -5265,8 +5265,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  586,
@@ -5274,8 +5274,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  587,
@@ -5283,8 +5283,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  588,
@@ -5292,8 +5292,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  589,
@@ -5301,8 +5301,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  590,
@@ -5310,8 +5310,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  591,
@@ -5319,8 +5319,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  592,
@@ -5328,8 +5328,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  593,
@@ -5337,8 +5337,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  594,
@@ -5346,8 +5346,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  595,
@@ -5355,8 +5355,8 @@ module.exports = {
                 coord_y:  185,
                 id_usuario:  4,
                 id_celula:  15,
-                created_at:  '2020-03-28 10:19:57',
-                updated_at:  '2020-03-28 10:19:57' 
+                created_at:  "2020-03-28 10:19:57",
+                updated_at:  "2020-03-28 10:19:57" 
             },
             {
                 id:  596,
@@ -5364,8 +5364,8 @@ module.exports = {
                 coord_y:  294,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  597,
@@ -5373,8 +5373,8 @@ module.exports = {
                 coord_y:  293,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  598,
@@ -5382,8 +5382,8 @@ module.exports = {
                 coord_y:  290,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  599,
@@ -5391,8 +5391,8 @@ module.exports = {
                 coord_y:  288,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  600,
@@ -5400,8 +5400,8 @@ module.exports = {
                 coord_y:  287,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  601,
@@ -5409,8 +5409,8 @@ module.exports = {
                 coord_y:  286,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  602,
@@ -5418,8 +5418,8 @@ module.exports = {
                 coord_y:  283,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  603,
@@ -5427,8 +5427,8 @@ module.exports = {
                 coord_y:  282,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  604,
@@ -5436,8 +5436,8 @@ module.exports = {
                 coord_y:  281,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  605,
@@ -5445,8 +5445,8 @@ module.exports = {
                 coord_y:  278,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  606,
@@ -5454,8 +5454,8 @@ module.exports = {
                 coord_y:  277,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  607,
@@ -5463,8 +5463,8 @@ module.exports = {
                 coord_y:  276,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  608,
@@ -5472,8 +5472,8 @@ module.exports = {
                 coord_y:  275,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  609,
@@ -5481,8 +5481,8 @@ module.exports = {
                 coord_y:  275,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  610,
@@ -5490,8 +5490,8 @@ module.exports = {
                 coord_y:  274,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  611,
@@ -5499,8 +5499,8 @@ module.exports = {
                 coord_y:  274,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  612,
@@ -5508,8 +5508,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  613,
@@ -5517,8 +5517,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  614,
@@ -5526,8 +5526,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  615,
@@ -5535,8 +5535,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  616,
@@ -5544,8 +5544,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  617,
@@ -5553,8 +5553,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  618,
@@ -5562,8 +5562,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  619,
@@ -5571,8 +5571,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  620,
@@ -5580,8 +5580,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  621,
@@ -5589,8 +5589,8 @@ module.exports = {
                 coord_y:  273,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  622,
@@ -5598,8 +5598,8 @@ module.exports = {
                 coord_y:  275,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:54',
-                updated_at:  '2020-03-28 10:20:54' 
+                created_at:  "2020-03-28 10:20:54",
+                updated_at:  "2020-03-28 10:20:54" 
             },
             {
                 id:  623,
@@ -5607,8 +5607,8 @@ module.exports = {
                 coord_y:  276,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  624,
@@ -5616,8 +5616,8 @@ module.exports = {
                 coord_y:  278,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  625,
@@ -5625,8 +5625,8 @@ module.exports = {
                 coord_y:  281,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  626,
@@ -5634,8 +5634,8 @@ module.exports = {
                 coord_y:  284,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  627,
@@ -5643,8 +5643,8 @@ module.exports = {
                 coord_y:  286,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  628,
@@ -5652,8 +5652,8 @@ module.exports = {
                 coord_y:  288,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  629,
@@ -5661,8 +5661,8 @@ module.exports = {
                 coord_y:  290,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  630,
@@ -5670,8 +5670,8 @@ module.exports = {
                 coord_y:  291,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  631,
@@ -5679,8 +5679,8 @@ module.exports = {
                 coord_y:  294,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  632,
@@ -5688,8 +5688,8 @@ module.exports = {
                 coord_y:  295,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  633,
@@ -5697,8 +5697,8 @@ module.exports = {
                 coord_y:  297,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  634,
@@ -5706,8 +5706,8 @@ module.exports = {
                 coord_y:  299,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  635,
@@ -5715,8 +5715,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  636,
@@ -5724,8 +5724,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  637,
@@ -5733,8 +5733,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  638,
@@ -5742,8 +5742,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  639,
@@ -5751,8 +5751,8 @@ module.exports = {
                 coord_y:  306,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  640,
@@ -5760,8 +5760,8 @@ module.exports = {
                 coord_y:  306,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  641,
@@ -5769,8 +5769,8 @@ module.exports = {
                 coord_y:  308,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  642,
@@ -5778,8 +5778,8 @@ module.exports = {
                 coord_y:  310,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  643,
@@ -5787,8 +5787,8 @@ module.exports = {
                 coord_y:  311,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  644,
@@ -5796,8 +5796,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  645,
@@ -5805,8 +5805,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  646,
@@ -5814,8 +5814,8 @@ module.exports = {
                 coord_y:  314,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  647,
@@ -5823,8 +5823,8 @@ module.exports = {
                 coord_y:  314,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  648,
@@ -5832,8 +5832,8 @@ module.exports = {
                 coord_y:  315,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  649,
@@ -5841,8 +5841,8 @@ module.exports = {
                 coord_y:  316,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  650,
@@ -5850,8 +5850,8 @@ module.exports = {
                 coord_y:  317,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  651,
@@ -5859,8 +5859,8 @@ module.exports = {
                 coord_y:  317,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  652,
@@ -5868,8 +5868,8 @@ module.exports = {
                 coord_y:  318,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  653,
@@ -5877,8 +5877,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  654,
@@ -5886,8 +5886,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  655,
@@ -5895,8 +5895,8 @@ module.exports = {
                 coord_y:  321,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  656,
@@ -5904,8 +5904,8 @@ module.exports = {
                 coord_y:  321,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  657,
@@ -5913,8 +5913,8 @@ module.exports = {
                 coord_y:  321,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  658,
@@ -5922,8 +5922,8 @@ module.exports = {
                 coord_y:  321,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  659,
@@ -5931,8 +5931,8 @@ module.exports = {
                 coord_y:  321,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  660,
@@ -5940,8 +5940,8 @@ module.exports = {
                 coord_y:  322,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  661,
@@ -5949,8 +5949,8 @@ module.exports = {
                 coord_y:  322,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  662,
@@ -5958,8 +5958,8 @@ module.exports = {
                 coord_y:  322,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  663,
@@ -5967,8 +5967,8 @@ module.exports = {
                 coord_y:  322,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  664,
@@ -5976,8 +5976,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  665,
@@ -5985,8 +5985,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  666,
@@ -5994,8 +5994,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  667,
@@ -6003,8 +6003,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  668,
@@ -6012,8 +6012,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  669,
@@ -6021,8 +6021,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  670,
@@ -6030,8 +6030,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  671,
@@ -6039,8 +6039,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  672,
@@ -6048,8 +6048,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  673,
@@ -6057,8 +6057,8 @@ module.exports = {
                 coord_y:  322,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  674,
@@ -6066,8 +6066,8 @@ module.exports = {
                 coord_y:  322,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  675,
@@ -6075,8 +6075,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  676,
@@ -6084,8 +6084,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  677,
@@ -6093,8 +6093,8 @@ module.exports = {
                 coord_y:  315,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  678,
@@ -6102,8 +6102,8 @@ module.exports = {
                 coord_y:  314,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  679,
@@ -6111,8 +6111,8 @@ module.exports = {
                 coord_y:  312,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  680,
@@ -6120,8 +6120,8 @@ module.exports = {
                 coord_y:  308,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  681,
@@ -6129,8 +6129,8 @@ module.exports = {
                 coord_y:  306,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  682,
@@ -6138,8 +6138,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  683,
@@ -6147,8 +6147,8 @@ module.exports = {
                 coord_y:  299,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  684,
@@ -6156,8 +6156,8 @@ module.exports = {
                 coord_y:  299,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  685,
@@ -6165,8 +6165,8 @@ module.exports = {
                 coord_y:  297,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  686,
@@ -6174,8 +6174,8 @@ module.exports = {
                 coord_y:  297,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  687,
@@ -6183,8 +6183,8 @@ module.exports = {
                 coord_y:  295,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  688,
@@ -6192,8 +6192,8 @@ module.exports = {
                 coord_y:  294,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  689,
@@ -6201,8 +6201,8 @@ module.exports = {
                 coord_y:  293,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  690,
@@ -6210,8 +6210,8 @@ module.exports = {
                 coord_y:  293,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  691,
@@ -6219,8 +6219,8 @@ module.exports = {
                 coord_y:  292,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  692,
@@ -6228,8 +6228,8 @@ module.exports = {
                 coord_y:  291,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  693,
@@ -6237,8 +6237,8 @@ module.exports = {
                 coord_y:  291,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  694,
@@ -6246,8 +6246,8 @@ module.exports = {
                 coord_y:  291,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  695,
@@ -6255,8 +6255,8 @@ module.exports = {
                 coord_y:  292,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  696,
@@ -6264,8 +6264,8 @@ module.exports = {
                 coord_y:  293,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  697,
@@ -6273,8 +6273,8 @@ module.exports = {
                 coord_y:  294,
                 id_usuario:  4,
                 id_celula:  16,
-                created_at:  '2020-03-28 10:20:55',
-                updated_at:  '2020-03-28 10:20:55' 
+                created_at:  "2020-03-28 10:20:55",
+                updated_at:  "2020-03-28 10:20:55" 
             },
             {
                 id:  698,
@@ -6282,8 +6282,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  699,
@@ -6291,8 +6291,8 @@ module.exports = {
                 coord_y:  249,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  700,
@@ -6300,8 +6300,8 @@ module.exports = {
                 coord_y:  249,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  701,
@@ -6309,8 +6309,8 @@ module.exports = {
                 coord_y:  249,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  702,
@@ -6318,8 +6318,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  703,
@@ -6327,8 +6327,8 @@ module.exports = {
                 coord_y:  246,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  704,
@@ -6336,8 +6336,8 @@ module.exports = {
                 coord_y:  245,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  705,
@@ -6345,8 +6345,8 @@ module.exports = {
                 coord_y:  243,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  706,
@@ -6354,8 +6354,8 @@ module.exports = {
                 coord_y:  242,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  707,
@@ -6363,8 +6363,8 @@ module.exports = {
                 coord_y:  241,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  708,
@@ -6372,8 +6372,8 @@ module.exports = {
                 coord_y:  241,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  709,
@@ -6381,8 +6381,8 @@ module.exports = {
                 coord_y:  240,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  710,
@@ -6390,8 +6390,8 @@ module.exports = {
                 coord_y:  240,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  711,
@@ -6399,8 +6399,8 @@ module.exports = {
                 coord_y:  239,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  712,
@@ -6408,8 +6408,8 @@ module.exports = {
                 coord_y:  239,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  713,
@@ -6417,8 +6417,8 @@ module.exports = {
                 coord_y:  238,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  714,
@@ -6426,8 +6426,8 @@ module.exports = {
                 coord_y:  237,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  715,
@@ -6435,8 +6435,8 @@ module.exports = {
                 coord_y:  236,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  716,
@@ -6444,8 +6444,8 @@ module.exports = {
                 coord_y:  235,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  717,
@@ -6453,8 +6453,8 @@ module.exports = {
                 coord_y:  234,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  718,
@@ -6462,8 +6462,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  719,
@@ -6471,8 +6471,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  720,
@@ -6480,8 +6480,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  721,
@@ -6489,8 +6489,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  722,
@@ -6498,8 +6498,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  723,
@@ -6507,8 +6507,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  724,
@@ -6516,8 +6516,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  725,
@@ -6525,8 +6525,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  726,
@@ -6534,8 +6534,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  727,
@@ -6543,8 +6543,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  728,
@@ -6552,8 +6552,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  729,
@@ -6561,8 +6561,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  730,
@@ -6570,8 +6570,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  731,
@@ -6579,8 +6579,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  732,
@@ -6588,8 +6588,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  733,
@@ -6597,8 +6597,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  734,
@@ -6606,8 +6606,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  735,
@@ -6615,8 +6615,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  736,
@@ -6624,8 +6624,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  737,
@@ -6633,8 +6633,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  738,
@@ -6642,8 +6642,8 @@ module.exports = {
                 coord_y:  231,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  739,
@@ -6651,8 +6651,8 @@ module.exports = {
                 coord_y:  232,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  740,
@@ -6660,8 +6660,8 @@ module.exports = {
                 coord_y:  233,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  741,
@@ -6669,8 +6669,8 @@ module.exports = {
                 coord_y:  234,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  742,
@@ -6678,8 +6678,8 @@ module.exports = {
                 coord_y:  237,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  743,
@@ -6687,8 +6687,8 @@ module.exports = {
                 coord_y:  239,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  744,
@@ -6696,8 +6696,8 @@ module.exports = {
                 coord_y:  240,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  745,
@@ -6705,8 +6705,8 @@ module.exports = {
                 coord_y:  241,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  746,
@@ -6714,8 +6714,8 @@ module.exports = {
                 coord_y:  242,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  747,
@@ -6723,8 +6723,8 @@ module.exports = {
                 coord_y:  243,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  748,
@@ -6732,8 +6732,8 @@ module.exports = {
                 coord_y:  243,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  749,
@@ -6741,8 +6741,8 @@ module.exports = {
                 coord_y:  245,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  750,
@@ -6750,8 +6750,8 @@ module.exports = {
                 coord_y:  246,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  751,
@@ -6759,8 +6759,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  752,
@@ -6768,8 +6768,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  753,
@@ -6777,8 +6777,8 @@ module.exports = {
                 coord_y:  250,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  754,
@@ -6786,8 +6786,8 @@ module.exports = {
                 coord_y:  252,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  755,
@@ -6795,8 +6795,8 @@ module.exports = {
                 coord_y:  253,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  756,
@@ -6804,8 +6804,8 @@ module.exports = {
                 coord_y:  254,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  757,
@@ -6813,8 +6813,8 @@ module.exports = {
                 coord_y:  254,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  758,
@@ -6822,8 +6822,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  759,
@@ -6831,8 +6831,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  760,
@@ -6840,8 +6840,8 @@ module.exports = {
                 coord_y:  256,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  761,
@@ -6849,8 +6849,8 @@ module.exports = {
                 coord_y:  257,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  762,
@@ -6858,8 +6858,8 @@ module.exports = {
                 coord_y:  258,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  763,
@@ -6867,8 +6867,8 @@ module.exports = {
                 coord_y:  258,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  764,
@@ -6876,8 +6876,8 @@ module.exports = {
                 coord_y:  259,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  765,
@@ -6885,8 +6885,8 @@ module.exports = {
                 coord_y:  260,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  766,
@@ -6894,8 +6894,8 @@ module.exports = {
                 coord_y:  261,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  767,
@@ -6903,8 +6903,8 @@ module.exports = {
                 coord_y:  262,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  768,
@@ -6912,8 +6912,8 @@ module.exports = {
                 coord_y:  263,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  769,
@@ -6921,8 +6921,8 @@ module.exports = {
                 coord_y:  263,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  770,
@@ -6930,8 +6930,8 @@ module.exports = {
                 coord_y:  263,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  771,
@@ -6939,8 +6939,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  772,
@@ -6948,8 +6948,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  773,
@@ -6957,8 +6957,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:25',
-                updated_at:  '2020-03-28 10:21:25' 
+                created_at:  "2020-03-28 10:21:25",
+                updated_at:  "2020-03-28 10:21:25" 
             },
             {
                 id:  774,
@@ -6966,8 +6966,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  775,
@@ -6975,8 +6975,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  776,
@@ -6984,8 +6984,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  777,
@@ -6993,8 +6993,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  778,
@@ -7002,8 +7002,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  779,
@@ -7011,8 +7011,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  780,
@@ -7020,8 +7020,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  781,
@@ -7029,8 +7029,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  782,
@@ -7038,8 +7038,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  783,
@@ -7047,8 +7047,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  784,
@@ -7056,8 +7056,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  785,
@@ -7065,8 +7065,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  786,
@@ -7074,8 +7074,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  787,
@@ -7083,8 +7083,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  788,
@@ -7092,8 +7092,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  789,
@@ -7101,8 +7101,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  790,
@@ -7110,8 +7110,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  791,
@@ -7119,8 +7119,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  792,
@@ -7128,8 +7128,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  793,
@@ -7137,8 +7137,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  794,
@@ -7146,8 +7146,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  795,
@@ -7155,8 +7155,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  796,
@@ -7164,8 +7164,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  797,
@@ -7173,8 +7173,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  798,
@@ -7182,8 +7182,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  799,
@@ -7191,8 +7191,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  800,
@@ -7200,8 +7200,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  801,
@@ -7209,8 +7209,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  802,
@@ -7218,8 +7218,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  803,
@@ -7227,8 +7227,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  804,
@@ -7236,8 +7236,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  805,
@@ -7245,8 +7245,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  806,
@@ -7254,8 +7254,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  807,
@@ -7263,8 +7263,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  808,
@@ -7272,8 +7272,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  809,
@@ -7281,8 +7281,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  810,
@@ -7290,8 +7290,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  811,
@@ -7299,8 +7299,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  812,
@@ -7308,8 +7308,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  813,
@@ -7317,8 +7317,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  814,
@@ -7326,8 +7326,8 @@ module.exports = {
                 coord_y:  264,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  815,
@@ -7335,8 +7335,8 @@ module.exports = {
                 coord_y:  263,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  816,
@@ -7344,8 +7344,8 @@ module.exports = {
                 coord_y:  262,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  817,
@@ -7353,8 +7353,8 @@ module.exports = {
                 coord_y:  262,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  818,
@@ -7362,8 +7362,8 @@ module.exports = {
                 coord_y:  261,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  819,
@@ -7371,8 +7371,8 @@ module.exports = {
                 coord_y:  260,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  820,
@@ -7380,8 +7380,8 @@ module.exports = {
                 coord_y:  259,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  821,
@@ -7389,8 +7389,8 @@ module.exports = {
                 coord_y:  257,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  822,
@@ -7398,8 +7398,8 @@ module.exports = {
                 coord_y:  256,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  823,
@@ -7407,8 +7407,8 @@ module.exports = {
                 coord_y:  255,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  824,
@@ -7416,8 +7416,8 @@ module.exports = {
                 coord_y:  254,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  825,
@@ -7425,8 +7425,8 @@ module.exports = {
                 coord_y:  253,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  826,
@@ -7434,8 +7434,8 @@ module.exports = {
                 coord_y:  252,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  827,
@@ -7443,8 +7443,8 @@ module.exports = {
                 coord_y:  252,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  828,
@@ -7452,8 +7452,8 @@ module.exports = {
                 coord_y:  251,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  829,
@@ -7461,8 +7461,8 @@ module.exports = {
                 coord_y:  250,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  830,
@@ -7470,8 +7470,8 @@ module.exports = {
                 coord_y:  249,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  831,
@@ -7479,8 +7479,8 @@ module.exports = {
                 coord_y:  249,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  832,
@@ -7488,8 +7488,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  833,
@@ -7497,8 +7497,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  834,
@@ -7506,8 +7506,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  835,
@@ -7515,8 +7515,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  836,
@@ -7524,8 +7524,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  837,
@@ -7533,8 +7533,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  838,
@@ -7542,8 +7542,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  839,
@@ -7551,8 +7551,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  840,
@@ -7560,8 +7560,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  841,
@@ -7569,8 +7569,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  842,
@@ -7578,8 +7578,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  843,
@@ -7587,8 +7587,8 @@ module.exports = {
                 coord_y:  246,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  844,
@@ -7596,8 +7596,8 @@ module.exports = {
                 coord_y:  246,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  845,
@@ -7605,8 +7605,8 @@ module.exports = {
                 coord_y:  246,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  846,
@@ -7614,8 +7614,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  847,
@@ -7623,8 +7623,8 @@ module.exports = {
                 coord_y:  247,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  848,
@@ -7632,8 +7632,8 @@ module.exports = {
                 coord_y:  248,
                 id_usuario:  4,
                 id_celula:  17,
-                created_at:  '2020-03-28 10:21:26',
-                updated_at:  '2020-03-28 10:21:26' 
+                created_at:  "2020-03-28 10:21:26",
+                updated_at:  "2020-03-28 10:21:26" 
             },
             {
                 id:  849,
@@ -7641,8 +7641,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  850,
@@ -7650,8 +7650,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  851,
@@ -7659,8 +7659,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  852,
@@ -7668,8 +7668,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  853,
@@ -7677,8 +7677,8 @@ module.exports = {
                 coord_y:  328,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  854,
@@ -7686,8 +7686,8 @@ module.exports = {
                 coord_y:  327,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  855,
@@ -7695,8 +7695,8 @@ module.exports = {
                 coord_y:  322,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  856,
@@ -7704,8 +7704,8 @@ module.exports = {
                 coord_y:  321,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  857,
@@ -7713,8 +7713,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  858,
@@ -7722,8 +7722,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  859,
@@ -7731,8 +7731,8 @@ module.exports = {
                 coord_y:  317,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  860,
@@ -7740,8 +7740,8 @@ module.exports = {
                 coord_y:  316,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  861,
@@ -7749,8 +7749,8 @@ module.exports = {
                 coord_y:  311,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  862,
@@ -7758,8 +7758,8 @@ module.exports = {
                 coord_y:  309,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  863,
@@ -7767,8 +7767,8 @@ module.exports = {
                 coord_y:  309,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  864,
@@ -7776,8 +7776,8 @@ module.exports = {
                 coord_y:  307,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  865,
@@ -7785,8 +7785,8 @@ module.exports = {
                 coord_y:  306,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  866,
@@ -7794,8 +7794,8 @@ module.exports = {
                 coord_y:  305,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  867,
@@ -7803,8 +7803,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  868,
@@ -7812,8 +7812,8 @@ module.exports = {
                 coord_y:  302,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  869,
@@ -7821,8 +7821,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  870,
@@ -7830,8 +7830,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  871,
@@ -7839,8 +7839,8 @@ module.exports = {
                 coord_y:  299,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  872,
@@ -7848,8 +7848,8 @@ module.exports = {
                 coord_y:  298,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  873,
@@ -7857,8 +7857,8 @@ module.exports = {
                 coord_y:  297,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  874,
@@ -7866,8 +7866,8 @@ module.exports = {
                 coord_y:  293,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  875,
@@ -7875,8 +7875,8 @@ module.exports = {
                 coord_y:  292,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  876,
@@ -7884,8 +7884,8 @@ module.exports = {
                 coord_y:  290,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  877,
@@ -7893,8 +7893,8 @@ module.exports = {
                 coord_y:  290,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  878,
@@ -7902,8 +7902,8 @@ module.exports = {
                 coord_y:  289,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  879,
@@ -7911,8 +7911,8 @@ module.exports = {
                 coord_y:  288,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:57',
-                updated_at:  '2020-03-28 10:21:57' 
+                created_at:  "2020-03-28 10:21:57",
+                updated_at:  "2020-03-28 10:21:57" 
             },
             {
                 id:  880,
@@ -7920,8 +7920,8 @@ module.exports = {
                 coord_y:  288,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  881,
@@ -7929,8 +7929,8 @@ module.exports = {
                 coord_y:  287,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  882,
@@ -7938,8 +7938,8 @@ module.exports = {
                 coord_y:  286,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  883,
@@ -7947,8 +7947,8 @@ module.exports = {
                 coord_y:  285,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  884,
@@ -7956,8 +7956,8 @@ module.exports = {
                 coord_y:  285,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  885,
@@ -7965,8 +7965,8 @@ module.exports = {
                 coord_y:  283,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  886,
@@ -7974,8 +7974,8 @@ module.exports = {
                 coord_y:  281,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  887,
@@ -7983,8 +7983,8 @@ module.exports = {
                 coord_y:  281,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  888,
@@ -7992,8 +7992,8 @@ module.exports = {
                 coord_y:  280,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  889,
@@ -8001,8 +8001,8 @@ module.exports = {
                 coord_y:  280,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  890,
@@ -8010,8 +8010,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  891,
@@ -8019,8 +8019,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  892,
@@ -8028,8 +8028,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  893,
@@ -8037,8 +8037,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  894,
@@ -8046,8 +8046,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  895,
@@ -8055,8 +8055,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  896,
@@ -8064,8 +8064,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  897,
@@ -8073,8 +8073,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  898,
@@ -8082,8 +8082,8 @@ module.exports = {
                 coord_y:  279,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  899,
@@ -8091,8 +8091,8 @@ module.exports = {
                 coord_y:  280,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  900,
@@ -8100,8 +8100,8 @@ module.exports = {
                 coord_y:  281,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  901,
@@ -8109,8 +8109,8 @@ module.exports = {
                 coord_y:  281,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  902,
@@ -8118,8 +8118,8 @@ module.exports = {
                 coord_y:  281,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  903,
@@ -8127,8 +8127,8 @@ module.exports = {
                 coord_y:  282,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  904,
@@ -8136,8 +8136,8 @@ module.exports = {
                 coord_y:  283,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  905,
@@ -8145,8 +8145,8 @@ module.exports = {
                 coord_y:  284,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  906,
@@ -8154,8 +8154,8 @@ module.exports = {
                 coord_y:  285,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  907,
@@ -8163,8 +8163,8 @@ module.exports = {
                 coord_y:  286,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  908,
@@ -8172,8 +8172,8 @@ module.exports = {
                 coord_y:  287,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  909,
@@ -8181,8 +8181,8 @@ module.exports = {
                 coord_y:  288,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  910,
@@ -8190,8 +8190,8 @@ module.exports = {
                 coord_y:  290,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  911,
@@ -8199,8 +8199,8 @@ module.exports = {
                 coord_y:  290,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  912,
@@ -8208,8 +8208,8 @@ module.exports = {
                 coord_y:  290,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  913,
@@ -8217,8 +8217,8 @@ module.exports = {
                 coord_y:  291,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  914,
@@ -8226,8 +8226,8 @@ module.exports = {
                 coord_y:  291,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  915,
@@ -8235,8 +8235,8 @@ module.exports = {
                 coord_y:  292,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  916,
@@ -8244,8 +8244,8 @@ module.exports = {
                 coord_y:  292,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  917,
@@ -8253,8 +8253,8 @@ module.exports = {
                 coord_y:  292,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  918,
@@ -8262,8 +8262,8 @@ module.exports = {
                 coord_y:  293,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  919,
@@ -8271,8 +8271,8 @@ module.exports = {
                 coord_y:  294,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  920,
@@ -8280,8 +8280,8 @@ module.exports = {
                 coord_y:  295,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  921,
@@ -8289,8 +8289,8 @@ module.exports = {
                 coord_y:  297,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  922,
@@ -8298,8 +8298,8 @@ module.exports = {
                 coord_y:  297,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  923,
@@ -8307,8 +8307,8 @@ module.exports = {
                 coord_y:  299,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  924,
@@ -8316,8 +8316,8 @@ module.exports = {
                 coord_y:  300,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  925,
@@ -8325,8 +8325,8 @@ module.exports = {
                 coord_y:  301,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  926,
@@ -8334,8 +8334,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  927,
@@ -8343,8 +8343,8 @@ module.exports = {
                 coord_y:  306,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  928,
@@ -8352,8 +8352,8 @@ module.exports = {
                 coord_y:  307,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  929,
@@ -8361,8 +8361,8 @@ module.exports = {
                 coord_y:  308,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  930,
@@ -8370,8 +8370,8 @@ module.exports = {
                 coord_y:  309,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  931,
@@ -8379,8 +8379,8 @@ module.exports = {
                 coord_y:  310,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  932,
@@ -8388,8 +8388,8 @@ module.exports = {
                 coord_y:  311,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  933,
@@ -8397,8 +8397,8 @@ module.exports = {
                 coord_y:  311,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  934,
@@ -8406,8 +8406,8 @@ module.exports = {
                 coord_y:  312,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  935,
@@ -8415,8 +8415,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  936,
@@ -8424,8 +8424,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  937,
@@ -8433,8 +8433,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  938,
@@ -8442,8 +8442,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  939,
@@ -8451,8 +8451,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  940,
@@ -8460,8 +8460,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  941,
@@ -8469,8 +8469,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  942,
@@ -8478,8 +8478,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  943,
@@ -8487,8 +8487,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  944,
@@ -8496,8 +8496,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  945,
@@ -8505,8 +8505,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  946,
@@ -8514,8 +8514,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  947,
@@ -8523,8 +8523,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  948,
@@ -8532,8 +8532,8 @@ module.exports = {
                 coord_y:  312,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  949,
@@ -8541,8 +8541,8 @@ module.exports = {
                 coord_y:  311,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  950,
@@ -8550,8 +8550,8 @@ module.exports = {
                 coord_y:  310,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  951,
@@ -8559,8 +8559,8 @@ module.exports = {
                 coord_y:  309,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  952,
@@ -8568,8 +8568,8 @@ module.exports = {
                 coord_y:  309,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  953,
@@ -8577,8 +8577,8 @@ module.exports = {
                 coord_y:  307,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  954,
@@ -8586,8 +8586,8 @@ module.exports = {
                 coord_y:  306,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  955,
@@ -8595,8 +8595,8 @@ module.exports = {
                 coord_y:  305,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  956,
@@ -8604,8 +8604,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  957,
@@ -8613,8 +8613,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  958,
@@ -8622,8 +8622,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  959,
@@ -8631,8 +8631,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  960,
@@ -8640,8 +8640,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  961,
@@ -8649,8 +8649,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  962,
@@ -8658,8 +8658,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  963,
@@ -8667,8 +8667,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  964,
@@ -8676,8 +8676,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  965,
@@ -8685,8 +8685,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  966,
@@ -8694,8 +8694,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  967,
@@ -8703,8 +8703,8 @@ module.exports = {
                 coord_y:  303,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  968,
@@ -8712,8 +8712,8 @@ module.exports = {
                 coord_y:  304,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  969,
@@ -8721,8 +8721,8 @@ module.exports = {
                 coord_y:  305,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  970,
@@ -8730,8 +8730,8 @@ module.exports = {
                 coord_y:  307,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  971,
@@ -8739,8 +8739,8 @@ module.exports = {
                 coord_y:  309,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:58',
-                updated_at:  '2020-03-28 10:21:58' 
+                created_at:  "2020-03-28 10:21:58",
+                updated_at:  "2020-03-28 10:21:58" 
             },
             {
                 id:  972,
@@ -8748,8 +8748,8 @@ module.exports = {
                 coord_y:  310,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  973,
@@ -8757,8 +8757,8 @@ module.exports = {
                 coord_y:  312,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  974,
@@ -8766,8 +8766,8 @@ module.exports = {
                 coord_y:  312,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  975,
@@ -8775,8 +8775,8 @@ module.exports = {
                 coord_y:  313,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  976,
@@ -8784,8 +8784,8 @@ module.exports = {
                 coord_y:  314,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  977,
@@ -8793,8 +8793,8 @@ module.exports = {
                 coord_y:  316,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  978,
@@ -8802,8 +8802,8 @@ module.exports = {
                 coord_y:  316,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  979,
@@ -8811,8 +8811,8 @@ module.exports = {
                 coord_y:  319,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  980,
@@ -8820,8 +8820,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  981,
@@ -8829,8 +8829,8 @@ module.exports = {
                 coord_y:  320,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  982,
@@ -8838,8 +8838,8 @@ module.exports = {
                 coord_y:  323,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  983,
@@ -8847,8 +8847,8 @@ module.exports = {
                 coord_y:  325,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  984,
@@ -8856,8 +8856,8 @@ module.exports = {
                 coord_y:  325,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  985,
@@ -8865,8 +8865,8 @@ module.exports = {
                 coord_y:  325,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  986,
@@ -8874,8 +8874,8 @@ module.exports = {
                 coord_y:  327,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  987,
@@ -8883,8 +8883,8 @@ module.exports = {
                 coord_y:  327,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  988,
@@ -8892,8 +8892,8 @@ module.exports = {
                 coord_y:  327,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  989,
@@ -8901,8 +8901,8 @@ module.exports = {
                 coord_y:  328,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  990,
@@ -8910,8 +8910,8 @@ module.exports = {
                 coord_y:  328,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  991,
@@ -8919,8 +8919,8 @@ module.exports = {
                 coord_y:  328,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  992,
@@ -8928,8 +8928,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  993,
@@ -8937,8 +8937,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  994,
@@ -8946,8 +8946,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  995,
@@ -8955,8 +8955,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  996,
@@ -8964,8 +8964,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  997,
@@ -8973,8 +8973,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  998,
@@ -8982,8 +8982,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  999,
@@ -8991,8 +8991,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1000,
@@ -9000,8 +9000,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1001,
@@ -9009,8 +9009,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1002,
@@ -9018,8 +9018,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1003,
@@ -9027,8 +9027,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1004,
@@ -9036,8 +9036,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1005,
@@ -9045,8 +9045,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1006,
@@ -9054,8 +9054,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1007,
@@ -9063,8 +9063,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1008,
@@ -9072,8 +9072,8 @@ module.exports = {
                 coord_y:  330,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1009,
@@ -9081,8 +9081,8 @@ module.exports = {
                 coord_y:  329,
                 id_usuario:  4,
                 id_celula:  18,
-                created_at:  '2020-03-28 10:21:59',
-                updated_at:  '2020-03-28 10:21:59' 
+                created_at:  "2020-03-28 10:21:59",
+                updated_at:  "2020-03-28 10:21:59" 
             },
             {
                 id:  1010,
@@ -9090,8 +9090,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1011,
@@ -9099,8 +9099,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1012,
@@ -9108,8 +9108,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1013,
@@ -9117,8 +9117,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1014,
@@ -9126,8 +9126,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1015,
@@ -9135,8 +9135,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1016,
@@ -9144,8 +9144,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1017,
@@ -9153,8 +9153,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1018,
@@ -9162,8 +9162,8 @@ module.exports = {
                 coord_y:  29,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1019,
@@ -9171,8 +9171,8 @@ module.exports = {
                 coord_y:  29,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1020,
@@ -9180,8 +9180,8 @@ module.exports = {
                 coord_y:  30,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1021,
@@ -9189,8 +9189,8 @@ module.exports = {
                 coord_y:  30,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1022,
@@ -9198,8 +9198,8 @@ module.exports = {
                 coord_y:  30,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1023,
@@ -9207,8 +9207,8 @@ module.exports = {
                 coord_y:  31,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1024,
@@ -9216,8 +9216,8 @@ module.exports = {
                 coord_y:  32,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1025,
@@ -9225,8 +9225,8 @@ module.exports = {
                 coord_y:  33,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1026,
@@ -9234,8 +9234,8 @@ module.exports = {
                 coord_y:  34,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1027,
@@ -9243,8 +9243,8 @@ module.exports = {
                 coord_y:  36,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1028,
@@ -9252,8 +9252,8 @@ module.exports = {
                 coord_y:  37,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1029,
@@ -9261,8 +9261,8 @@ module.exports = {
                 coord_y:  39,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1030,
@@ -9270,8 +9270,8 @@ module.exports = {
                 coord_y:  41,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1031,
@@ -9279,8 +9279,8 @@ module.exports = {
                 coord_y:  42,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1032,
@@ -9288,8 +9288,8 @@ module.exports = {
                 coord_y:  43,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1033,
@@ -9297,8 +9297,8 @@ module.exports = {
                 coord_y:  43,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1034,
@@ -9306,8 +9306,8 @@ module.exports = {
                 coord_y:  44,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1035,
@@ -9315,8 +9315,8 @@ module.exports = {
                 coord_y:  45,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1036,
@@ -9324,8 +9324,8 @@ module.exports = {
                 coord_y:  47,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1037,
@@ -9333,8 +9333,8 @@ module.exports = {
                 coord_y:  48,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1038,
@@ -9342,8 +9342,8 @@ module.exports = {
                 coord_y:  49,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1039,
@@ -9351,8 +9351,8 @@ module.exports = {
                 coord_y:  49,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1040,
@@ -9360,8 +9360,8 @@ module.exports = {
                 coord_y:  50,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1041,
@@ -9369,8 +9369,8 @@ module.exports = {
                 coord_y:  52,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1042,
@@ -9378,8 +9378,8 @@ module.exports = {
                 coord_y:  54,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1043,
@@ -9387,8 +9387,8 @@ module.exports = {
                 coord_y:  55,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1044,
@@ -9396,8 +9396,8 @@ module.exports = {
                 coord_y:  56,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1045,
@@ -9405,8 +9405,8 @@ module.exports = {
                 coord_y:  56,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1046,
@@ -9414,8 +9414,8 @@ module.exports = {
                 coord_y:  57,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1047,
@@ -9423,8 +9423,8 @@ module.exports = {
                 coord_y:  57,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1048,
@@ -9432,8 +9432,8 @@ module.exports = {
                 coord_y:  58,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1049,
@@ -9441,8 +9441,8 @@ module.exports = {
                 coord_y:  58,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1050,
@@ -9450,8 +9450,8 @@ module.exports = {
                 coord_y:  60,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1051,
@@ -9459,8 +9459,8 @@ module.exports = {
                 coord_y:  60,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1052,
@@ -9468,8 +9468,8 @@ module.exports = {
                 coord_y:  61,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1053,
@@ -9477,8 +9477,8 @@ module.exports = {
                 coord_y:  62,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1054,
@@ -9486,8 +9486,8 @@ module.exports = {
                 coord_y:  63,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1055,
@@ -9495,8 +9495,8 @@ module.exports = {
                 coord_y:  64,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1056,
@@ -9504,8 +9504,8 @@ module.exports = {
                 coord_y:  65,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1057,
@@ -9513,8 +9513,8 @@ module.exports = {
                 coord_y:  66,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1058,
@@ -9522,8 +9522,8 @@ module.exports = {
                 coord_y:  67,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1059,
@@ -9531,8 +9531,8 @@ module.exports = {
                 coord_y:  68,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1060,
@@ -9540,8 +9540,8 @@ module.exports = {
                 coord_y:  68,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1061,
@@ -9549,8 +9549,8 @@ module.exports = {
                 coord_y:  68,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1062,
@@ -9558,8 +9558,8 @@ module.exports = {
                 coord_y:  69,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1063,
@@ -9567,8 +9567,8 @@ module.exports = {
                 coord_y:  70,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1064,
@@ -9576,8 +9576,8 @@ module.exports = {
                 coord_y:  70,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1065,
@@ -9585,8 +9585,8 @@ module.exports = {
                 coord_y:  71,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1066,
@@ -9594,8 +9594,8 @@ module.exports = {
                 coord_y:  71,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1067,
@@ -9603,8 +9603,8 @@ module.exports = {
                 coord_y:  71,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1068,
@@ -9612,8 +9612,8 @@ module.exports = {
                 coord_y:  74,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1069,
@@ -9621,8 +9621,8 @@ module.exports = {
                 coord_y:  74,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:43',
-                updated_at:  '2020-03-28 10:22:43' 
+                created_at:  "2020-03-28 10:22:43",
+                updated_at:  "2020-03-28 10:22:43" 
             },
             {
                 id:  1070,
@@ -9630,8 +9630,8 @@ module.exports = {
                 coord_y:  74,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1071,
@@ -9639,8 +9639,8 @@ module.exports = {
                 coord_y:  74,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1072,
@@ -9648,8 +9648,8 @@ module.exports = {
                 coord_y:  74,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1073,
@@ -9657,8 +9657,8 @@ module.exports = {
                 coord_y:  74,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1074,
@@ -9666,8 +9666,8 @@ module.exports = {
                 coord_y:  74,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1075,
@@ -9675,8 +9675,8 @@ module.exports = {
                 coord_y:  73,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1076,
@@ -9684,8 +9684,8 @@ module.exports = {
                 coord_y:  73,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1077,
@@ -9693,8 +9693,8 @@ module.exports = {
                 coord_y:  72,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1078,
@@ -9702,8 +9702,8 @@ module.exports = {
                 coord_y:  71,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1079,
@@ -9711,8 +9711,8 @@ module.exports = {
                 coord_y:  70,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1080,
@@ -9720,8 +9720,8 @@ module.exports = {
                 coord_y:  70,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1081,
@@ -9729,8 +9729,8 @@ module.exports = {
                 coord_y:  69,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1082,
@@ -9738,8 +9738,8 @@ module.exports = {
                 coord_y:  69,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1083,
@@ -9747,8 +9747,8 @@ module.exports = {
                 coord_y:  68,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1084,
@@ -9756,8 +9756,8 @@ module.exports = {
                 coord_y:  68,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1085,
@@ -9765,8 +9765,8 @@ module.exports = {
                 coord_y:  67,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1086,
@@ -9774,8 +9774,8 @@ module.exports = {
                 coord_y:  66,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1087,
@@ -9783,8 +9783,8 @@ module.exports = {
                 coord_y:  65,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1088,
@@ -9792,8 +9792,8 @@ module.exports = {
                 coord_y:  62,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1089,
@@ -9801,8 +9801,8 @@ module.exports = {
                 coord_y:  61,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1090,
@@ -9810,8 +9810,8 @@ module.exports = {
                 coord_y:  60,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1091,
@@ -9819,8 +9819,8 @@ module.exports = {
                 coord_y:  59,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1092,
@@ -9828,8 +9828,8 @@ module.exports = {
                 coord_y:  58,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1093,
@@ -9837,8 +9837,8 @@ module.exports = {
                 coord_y:  57,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1094,
@@ -9846,8 +9846,8 @@ module.exports = {
                 coord_y:  55,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1095,
@@ -9855,8 +9855,8 @@ module.exports = {
                 coord_y:  54,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1096,
@@ -9864,8 +9864,8 @@ module.exports = {
                 coord_y:  51,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1097,
@@ -9873,8 +9873,8 @@ module.exports = {
                 coord_y:  49,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1098,
@@ -9882,8 +9882,8 @@ module.exports = {
                 coord_y:  48,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1099,
@@ -9891,8 +9891,8 @@ module.exports = {
                 coord_y:  47,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1100,
@@ -9900,8 +9900,8 @@ module.exports = {
                 coord_y:  46,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1101,
@@ -9909,8 +9909,8 @@ module.exports = {
                 coord_y:  44,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1102,
@@ -9918,8 +9918,8 @@ module.exports = {
                 coord_y:  43,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1103,
@@ -9927,8 +9927,8 @@ module.exports = {
                 coord_y:  41,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1104,
@@ -9936,8 +9936,8 @@ module.exports = {
                 coord_y:  40,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1105,
@@ -9945,8 +9945,8 @@ module.exports = {
                 coord_y:  39,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1106,
@@ -9954,8 +9954,8 @@ module.exports = {
                 coord_y:  37,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1107,
@@ -9963,8 +9963,8 @@ module.exports = {
                 coord_y:  35,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1108,
@@ -9972,8 +9972,8 @@ module.exports = {
                 coord_y:  34,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1109,
@@ -9981,8 +9981,8 @@ module.exports = {
                 coord_y:  33,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1110,
@@ -9990,8 +9990,8 @@ module.exports = {
                 coord_y:  33,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1111,
@@ -9999,8 +9999,8 @@ module.exports = {
                 coord_y:  31,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1112,
@@ -10008,8 +10008,8 @@ module.exports = {
                 coord_y:  29,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1113,
@@ -10017,8 +10017,8 @@ module.exports = {
                 coord_y:  29,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1114,
@@ -10026,8 +10026,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1115,
@@ -10035,8 +10035,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1116,
@@ -10044,8 +10044,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1117,
@@ -10053,8 +10053,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1118,
@@ -10062,8 +10062,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1119,
@@ -10071,8 +10071,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1120,
@@ -10080,8 +10080,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1121,
@@ -10089,8 +10089,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1122,
@@ -10098,8 +10098,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1123,
@@ -10107,8 +10107,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1124,
@@ -10116,8 +10116,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1125,
@@ -10125,8 +10125,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1126,
@@ -10134,8 +10134,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1127,
@@ -10143,8 +10143,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1128,
@@ -10152,8 +10152,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1129,
@@ -10161,8 +10161,8 @@ module.exports = {
                 coord_y:  28,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1130,
@@ -10170,8 +10170,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1131,
@@ -10179,8 +10179,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1132,
@@ -10188,8 +10188,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1133,
@@ -10197,8 +10197,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1134,
@@ -10206,8 +10206,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1135,
@@ -10215,8 +10215,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1136,
@@ -10224,8 +10224,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1137,
@@ -10233,8 +10233,8 @@ module.exports = {
                 coord_y:  27,
                 id_usuario:  4,
                 id_celula:  19,
-                created_at:  '2020-03-28 10:22:44',
-                updated_at:  '2020-03-28 10:22:44' 
+                created_at:  "2020-03-28 10:22:44",
+                updated_at:  "2020-03-28 10:22:44" 
             },
             {
                 id:  1138,
@@ -10242,8 +10242,8 @@ module.exports = {
                 coord_y:  96,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1139,
@@ -10251,8 +10251,8 @@ module.exports = {
                 coord_y:  96,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1140,
@@ -10260,8 +10260,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1141,
@@ -10269,8 +10269,8 @@ module.exports = {
                 coord_y:  98,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1142,
@@ -10278,8 +10278,8 @@ module.exports = {
                 coord_y:  99,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1143,
@@ -10287,8 +10287,8 @@ module.exports = {
                 coord_y:  101,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1144,
@@ -10296,8 +10296,8 @@ module.exports = {
                 coord_y:  102,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1145,
@@ -10305,8 +10305,8 @@ module.exports = {
                 coord_y:  103,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1146,
@@ -10314,8 +10314,8 @@ module.exports = {
                 coord_y:  104,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1147,
@@ -10323,8 +10323,8 @@ module.exports = {
                 coord_y:  105,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1148,
@@ -10332,8 +10332,8 @@ module.exports = {
                 coord_y:  105,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1149,
@@ -10341,8 +10341,8 @@ module.exports = {
                 coord_y:  106,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1150,
@@ -10350,8 +10350,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1151,
@@ -10359,8 +10359,8 @@ module.exports = {
                 coord_y:  109,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1152,
@@ -10368,8 +10368,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1153,
@@ -10377,8 +10377,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:45',
-                updated_at:  '2020-03-28 10:28:45' 
+                created_at:  "2020-03-28 10:28:45",
+                updated_at:  "2020-03-28 10:28:45" 
             },
             {
                 id:  1154,
@@ -10386,8 +10386,8 @@ module.exports = {
                 coord_y:  113,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1155,
@@ -10395,8 +10395,8 @@ module.exports = {
                 coord_y:  117,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1156,
@@ -10404,8 +10404,8 @@ module.exports = {
                 coord_y:  117,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1157,
@@ -10413,8 +10413,8 @@ module.exports = {
                 coord_y:  119,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1158,
@@ -10422,8 +10422,8 @@ module.exports = {
                 coord_y:  120,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1159,
@@ -10431,8 +10431,8 @@ module.exports = {
                 coord_y:  121,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1160,
@@ -10440,8 +10440,8 @@ module.exports = {
                 coord_y:  122,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1161,
@@ -10449,8 +10449,8 @@ module.exports = {
                 coord_y:  123,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1162,
@@ -10458,8 +10458,8 @@ module.exports = {
                 coord_y:  124,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1163,
@@ -10467,8 +10467,8 @@ module.exports = {
                 coord_y:  125,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1164,
@@ -10476,8 +10476,8 @@ module.exports = {
                 coord_y:  126,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1165,
@@ -10485,8 +10485,8 @@ module.exports = {
                 coord_y:  127,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1166,
@@ -10494,8 +10494,8 @@ module.exports = {
                 coord_y:  128,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1167,
@@ -10503,8 +10503,8 @@ module.exports = {
                 coord_y:  130,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1168,
@@ -10512,8 +10512,8 @@ module.exports = {
                 coord_y:  131,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1169,
@@ -10521,8 +10521,8 @@ module.exports = {
                 coord_y:  133,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1170,
@@ -10530,8 +10530,8 @@ module.exports = {
                 coord_y:  133,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1171,
@@ -10539,8 +10539,8 @@ module.exports = {
                 coord_y:  134,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1172,
@@ -10548,8 +10548,8 @@ module.exports = {
                 coord_y:  135,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1173,
@@ -10557,8 +10557,8 @@ module.exports = {
                 coord_y:  136,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1174,
@@ -10566,8 +10566,8 @@ module.exports = {
                 coord_y:  136,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1175,
@@ -10575,8 +10575,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1176,
@@ -10584,8 +10584,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1177,
@@ -10593,8 +10593,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1178,
@@ -10602,8 +10602,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1179,
@@ -10611,8 +10611,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1180,
@@ -10620,8 +10620,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1181,
@@ -10629,8 +10629,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1182,
@@ -10638,8 +10638,8 @@ module.exports = {
                 coord_y:  137,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1183,
@@ -10647,8 +10647,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1184,
@@ -10656,8 +10656,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1185,
@@ -10665,8 +10665,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1186,
@@ -10674,8 +10674,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1187,
@@ -10683,8 +10683,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1188,
@@ -10692,8 +10692,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1189,
@@ -10701,8 +10701,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1190,
@@ -10710,8 +10710,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1191,
@@ -10719,8 +10719,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1192,
@@ -10728,8 +10728,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1193,
@@ -10737,8 +10737,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1194,
@@ -10746,8 +10746,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1195,
@@ -10755,8 +10755,8 @@ module.exports = {
                 coord_y:  138,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1196,
@@ -10764,8 +10764,8 @@ module.exports = {
                 coord_y:  136,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1197,
@@ -10773,8 +10773,8 @@ module.exports = {
                 coord_y:  134,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1198,
@@ -10782,8 +10782,8 @@ module.exports = {
                 coord_y:  133,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1199,
@@ -10791,8 +10791,8 @@ module.exports = {
                 coord_y:  132,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1200,
@@ -10800,8 +10800,8 @@ module.exports = {
                 coord_y:  131,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1201,
@@ -10809,8 +10809,8 @@ module.exports = {
                 coord_y:  130,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1202,
@@ -10818,8 +10818,8 @@ module.exports = {
                 coord_y:  127,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1203,
@@ -10827,8 +10827,8 @@ module.exports = {
                 coord_y:  124,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1204,
@@ -10836,8 +10836,8 @@ module.exports = {
                 coord_y:  119,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1205,
@@ -10845,8 +10845,8 @@ module.exports = {
                 coord_y:  117,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1206,
@@ -10854,8 +10854,8 @@ module.exports = {
                 coord_y:  116,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1207,
@@ -10863,8 +10863,8 @@ module.exports = {
                 coord_y:  114,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1208,
@@ -10872,8 +10872,8 @@ module.exports = {
                 coord_y:  111,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1209,
@@ -10881,8 +10881,8 @@ module.exports = {
                 coord_y:  110,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1210,
@@ -10890,8 +10890,8 @@ module.exports = {
                 coord_y:  108,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1211,
@@ -10899,8 +10899,8 @@ module.exports = {
                 coord_y:  107,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1212,
@@ -10908,8 +10908,8 @@ module.exports = {
                 coord_y:  106,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1213,
@@ -10917,8 +10917,8 @@ module.exports = {
                 coord_y:  105,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1214,
@@ -10926,8 +10926,8 @@ module.exports = {
                 coord_y:  102,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1215,
@@ -10935,8 +10935,8 @@ module.exports = {
                 coord_y:  101,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1216,
@@ -10944,8 +10944,8 @@ module.exports = {
                 coord_y:  99,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1217,
@@ -10953,8 +10953,8 @@ module.exports = {
                 coord_y:  98,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1218,
@@ -10962,8 +10962,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1219,
@@ -10971,8 +10971,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1220,
@@ -10980,8 +10980,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1221,
@@ -10989,8 +10989,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1222,
@@ -10998,8 +10998,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1223,
@@ -11007,8 +11007,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1224,
@@ -11016,8 +11016,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1225,
@@ -11025,8 +11025,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1226,
@@ -11034,8 +11034,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1227,
@@ -11043,8 +11043,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1228,
@@ -11052,8 +11052,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1229,
@@ -11061,8 +11061,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1230,
@@ -11070,8 +11070,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1231,
@@ -11079,8 +11079,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1232,
@@ -11088,8 +11088,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1233,
@@ -11097,8 +11097,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1234,
@@ -11106,8 +11106,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1235,
@@ -11115,8 +11115,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1236,
@@ -11124,8 +11124,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1237,
@@ -11133,8 +11133,8 @@ module.exports = {
                 coord_y:  97,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1238,
@@ -11142,8 +11142,8 @@ module.exports = {
                 coord_y:  96,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             },
             {
                 id:  1239,
@@ -11151,14 +11151,14 @@ module.exports = {
                 coord_y:  96,
                 id_usuario:  4,
                 id_celula:  29,
-                created_at:  '2020-03-28 10:28:46',
-                updated_at:  '2020-03-28 10:28:46' 
+                created_at:  "2020-03-28 10:28:46",
+                updated_at:  "2020-03-28 10:28:46" 
             }
             
         ], {});
     },
 
     down: (queryInterface, Sequelize) => {
-      return queryInterface.bulkDelete('segmentacao_nucleo', null, {});
+        return queryInterface.bulkDelete("segmentacao_nucleo", null, {});
     }
 };

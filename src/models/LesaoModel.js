@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const { Model, DataTypes }  = require('sequelize');
+const { Model, DataTypes }  = require("sequelize");
 
 class LesaoModel extends Model {
 
@@ -13,7 +13,7 @@ class LesaoModel extends Model {
         },
         {
             sequelize: connection, //Recebe a conexao com o banco de dados
-            tableName: 'lesao' //Evita que o sequelize pesquise pelo nome da tabela no plural
+            tableName: "lesao" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });
     }
 }

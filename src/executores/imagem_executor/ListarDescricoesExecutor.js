@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-const Excecao = require('../../utils/enumeracoes/mensagem_excecoes');
-const ObjetoExcecao = require('../../utils/enumeracoes/controle_de_excecoes');
-const HttpStatus = require('http-status-codes');
-const ImagemRepositorio = require('../../repositorios/imagem_repositorio');
-const ValidadorDeSessao = require('../../utils/validador_de_sessao');
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const HttpStatus = require("http-status-codes");
+const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
