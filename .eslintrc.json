@@ -1,0 +1,19 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module",
+        "ecmaFeatures": {
+        }
+    },
+    "rules": {
+	"arrow-body-style": ["error", "always"],
+	"brace-style": ["error", "stroustrup"],
+	"comma-dangle": ["error", "never"],
+	"comma-spacing": ["error", { "before": false, "after": true }],
+	"comma-style": ["error", "last"],
+	"linebreak-style": ["error", "unix"],
+	"lines-between-class-members": ["error", "always"],
+	"semi-style": ["error", "last"],
+        "semi": "error"
+    }
+}
