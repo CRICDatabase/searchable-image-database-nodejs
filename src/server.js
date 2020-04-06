@@ -18,12 +18,18 @@ app.use(express.json({limit: "50mb"}));
 app.use(express.urlencoded({extended: true}));
 app.use(FileUpload({ limits: { fileSize: 50 * 1024 * 1024 }})); //Limita o tamanho do arquivo a ser upado a 50Mb
 
-const corsConfig = {
-    origin: config.get("origin"),
-    optionsSuccessStatus: 200
-};
+var whitelist = config.get("cors.whitelist")
+var corsOptionsDelegate = function (req, callback) {
+  var corsOptions;
+  if (whitelist.indexOf(req.header('Origin')) !== -1) {
+    corsOptions = { origin: true }
+  } else {
+    corsOptions = { origin: false }
+  }
+  callback(null, corsOptions)
+}
 
-app.use(cors(corsConfig)); //Lidando com politica CORS
+app.use(cors(corsOptionsDelegate)); //Lidando com politica CORS
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
