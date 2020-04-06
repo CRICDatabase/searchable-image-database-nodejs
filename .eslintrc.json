@@ -6,6 +6,12 @@
         "ecmaFeatures": {
         }
     },
+    "env": {
+        "browser": true,
+        "node": true,
+        "shared-node-browser": true,
+        "amd": true
+    },
     "rules": {
 	"arrow-body-style": ["error", "always"],
 	"brace-style": ["error", "stroustrup"],
@@ -13,6 +19,7 @@
 	"comma-spacing": ["error", { "before": false, "after": true }],
 	"comma-style": ["error", "last"],
 	"curly": "error",
+        "global-require": "error",
 	"linebreak-style": ["error", "unix"],
 	"lines-between-class-members": ["error", "always"],
 	"semi-style": ["error", "last"],
