@@ -13,14 +13,24 @@ This documentation is for the reference implementation written in Node.js.
 More documentation about CRIC Searchable Image Database
 is available at https://cric-database.readthedocs.io/.
 
-General Information
--------------------
+REST API
+--------
+
+We provide examples
+of calls to the REST API
+using `cURL <https://curl.haxx.se/>`_.
+The output of the calls
+are based in the seeders
+included in the source code.
 
 ..  toctree::
     :maxdepth: 2
     :caption: Contents:
 
-    api
+    rest_api/user
+    rest_api/injury
+    rest_api/description
+    rest_api/image
 
 Developers
 ----------
@@ -31,7 +41,7 @@ Developers
 
     settings
     models
-    developer
+    database
     debugging
     contributing
 

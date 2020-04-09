@@ -4,15 +4,13 @@ Settings
 Values that might change depending on your environment
 are managed with the help of `config <http://lorenwest.github.com/node-config>`_.
 
-The default values are kept in ``config/default.json``
+The default values are kept in ``config/default.js``
 
-..  literalinclude:: ../config/default.json
-    :lines: 2-
+..  literalinclude:: ../config/default.js
 
-Values used in production mode are kept in ``config/production.json``
+Values used in production mode are kept in ``config/production.js``
 
-..  literalinclude:: ../config/production.json
-    :lines: 3-
+..  literalinclude:: ../config/production.js
 
 To enable production mode,
 run ::
