@@ -7,7 +7,6 @@ curl \
         "email": "cyrus@test.database.cric.com.br",
         "senha": "123.456",
         "ativo": 1,
-        "api_key": "123.456.789.0",
         "codico_crc": "1234.5678-90"
     }' \
     -X POST "http://api.database.cric.com.br/api/v1/usuarios-citopatologista"
