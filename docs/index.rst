@@ -27,6 +27,7 @@ included in the source code.
     :maxdepth: 2
     :caption: Contents:
 
+    rest_api/meta
     rest_api/user
     rest_api/injury
     rest_api/description

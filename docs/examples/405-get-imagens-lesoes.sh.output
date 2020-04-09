@@ -1,0 +1,37 @@
+[
+    {
+        "id": 2,
+        "nome": "ASC-US",
+        "detalhes": "",
+        "createdAt": "2020-01-01T03:00:00.000Z",
+        "updatedAt": "2020-01-01T03:00:00.000Z"
+    },
+    {
+        "id": 3,
+        "nome": "LSIL",
+        "detalhes": "",
+        "createdAt": "2020-01-01T03:00:00.000Z",
+        "updatedAt": "2020-01-01T03:00:00.000Z"
+    },
+    {
+        "id": 4,
+        "nome": "ASC-H",
+        "detalhes": "",
+        "createdAt": "2020-01-01T03:00:00.000Z",
+        "updatedAt": "2020-01-01T03:00:00.000Z"
+    },
+    {
+        "id": 5,
+        "nome": "HSIL",
+        "detalhes": "",
+        "createdAt": "2020-01-01T03:00:00.000Z",
+        "updatedAt": "2020-01-01T03:00:00.000Z"
+    },
+    {
+        "id": 6,
+        "nome": "Carcinoma",
+        "detalhes": "",
+        "createdAt": "2020-01-01T03:00:00.000Z",
+        "updatedAt": "2020-01-01T03:00:00.000Z"
+    }
+]

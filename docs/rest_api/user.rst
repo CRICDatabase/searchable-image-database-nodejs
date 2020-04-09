@@ -26,6 +26,16 @@ Post Operations
     :statuscode 409:
     :statuscode 500:
 
+    **Example**
+
+    ..  literalinclude:: ../examples/101-post-usuarios.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/101-post-usuarios.sh.output
+        :language: json
+        :caption: Output
+
 ..  http:post:: /api/v1/usuarios-administrador
 
     Create a new user with administrator rights.
@@ -52,6 +62,16 @@ Post Operations
     :statuscode 409:
     :statuscode 500:
 
+    **Example**
+
+    ..  literalinclude:: ../examples/102-post-usuarios-administrador.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/102-post-usuarios-administrador.sh.output
+        :language: json
+        :caption: Output
+
 ..  http:post:: /api/v1/usuarios-citopatologista
 
     Create a new user with cytopathologist rights.
@@ -76,9 +96,19 @@ Post Operations
     :statuscode 409:
     :statuscode 500:
 
+    **Example**
+
+    ..  literalinclude:: ../examples/103-post-usuarios-citopatologista.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/103-post-usuarios-citopatologista.sh.output
+        :language: json
+        :caption: Output
+
 ..  http:post:: /api/v1/usuarios/analista/{user_id}
 
-    Promote user with ``id`` equals ``user_id`` to be analyst.
+    Promote a cytopathologist with ``id`` equals ``user_id`` to be analyst.
 
     :param post_id: post's unique id
     :type post_id: int
@@ -90,6 +120,32 @@ Post Operations
     :statuscode 401:
     :statuscode 409:
     :statuscode 500:
+
+    **Example**
+
+    ..  literalinclude:: ../examples/104-post-usuarios-analista.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/104-post-usuarios-analista.sh.output
+        :language: json
+        :caption: Output
+
+
+    **Example**
+
+    If the ``user_id`` provided isn't a cytopathologist,
+    your request will fail.
+
+    ..  literalinclude:: ../examples/105-post-usuarios-analista-fail.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/105-post-usuarios-analista-fail.sh.output
+        :language: json
+        :caption: Output
+
+
 
 Get Operations
 --------------
@@ -128,11 +184,11 @@ Get Operations
 
     **Example**
 
-    ..  literalinclude:: ../examples/get-usuarios-1.sh
+    ..  literalinclude:: ../examples/106-get-usuarios-1.sh
         :language: bash
         :caption: Input
 
-    ..  literalinclude:: ../examples/get-usuarios-1.sh.output
+    ..  literalinclude:: ../examples/106-get-usuarios-1.sh.output
         :language: json
         :caption: Output
 

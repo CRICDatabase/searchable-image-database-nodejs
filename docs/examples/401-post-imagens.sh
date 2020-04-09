@@ -7,4 +7,4 @@ curl \
         "dt_aquisicao": "20202-01-01"
     }' \
     --data @example0001.jpg \
-    -X POST "http://cricdatabase.com.br/api/v1/imagens/"
+    -X POST "http://localhost:3000/api/v1/imagens/"

@@ -25,11 +25,11 @@ Post Operations
 
     **Example**
 
-    ..  literalinclude:: ../examples/post-imagens-lesoes.sh
+    ..  literalinclude:: ../examples/406-post-imagens-descricoes.sh
         :language: bash
         :caption: Input
 
-    ..  literalinclude:: ../examples/post-imagens-lesoes.sh.output
+    ..  literalinclude:: ../examples/406-post-imagens-descricoes.sh.output
         :language: json
         :caption: Output
 
@@ -51,11 +51,11 @@ Get Operations
 
     **Example**
 
-    ..  literalinclude:: ../examples/get-imagens-descricoes.sh
+    ..  literalinclude:: ../examples/407-get-imagens-descricoes.sh
         :language: bash
         :caption: Input
 
-    ..  literalinclude:: ../examples/get-imagens-descricoes.sh.output
+    ..  literalinclude:: ../examples/407-get-imagens-descricoes.sh.output
         :language: json
         :caption: Output
 
