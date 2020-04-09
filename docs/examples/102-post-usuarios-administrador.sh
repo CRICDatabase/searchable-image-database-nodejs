@@ -10,4 +10,4 @@ curl \
         "api_key": "123.456.789.0",
         "nivel_acesso": "TOTAL"
     }' \
-    -X GET "http://localhost:3000/api/v1/usuarios-administrador"
+    -X POST "http://api.database.cric.com.br/api/v1/usuarios-administrador"

@@ -8,4 +8,4 @@ curl \
         "senha": "123.456",
         "ativo": 1
     }' \
-    -X GET "http://localhost:3000/api/v1/usuarios"
+    -X POST "http://api.database.cric.com.br/api/v1/usuarios"

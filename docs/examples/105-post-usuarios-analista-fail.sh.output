@@ -1,7 +1,7 @@
 {
     "type": "",
-    "status": 404,
-    "title": "User not found",
+    "status": 403,
+    "title": "No permission to perform the operation",
     "detail": "",
     "instance": ""
 }

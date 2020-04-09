@@ -10,4 +10,4 @@ curl \
         "api_key": "123.456.789.0",
         "codico_crc": "1234.5678-90"
     }' \
-    -X GET "http://localhost:3000/api/v1/usuarios-citopatologista"
+    -X POST "http://api.database.cric.com.br/api/v1/usuarios-citopatologista"

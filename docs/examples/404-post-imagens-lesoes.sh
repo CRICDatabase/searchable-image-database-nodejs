@@ -19,4 +19,4 @@ curl \
             "detalhes":""
         }
     ]' \
-    -X GET "http://localhost:3000/api/v1/imagens-lesoes/1"
+    -X GET "http://api.database.cric.com.br/api/v1/imagens-lesoes/1"

@@ -1,2 +1,2 @@
 curl \
-    -X GET "http://localhost:3000/api/v1/"
+    -X GET "http://api.database.cric.com.br/api/v1/"
