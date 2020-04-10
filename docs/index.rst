@@ -40,6 +40,7 @@ Developers
     :maxdepth: 2
     :caption: Contents:
 
+    dependencies
     settings
     models
     database
