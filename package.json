@@ -1,0 +1,29 @@
+{
+    "name": "cric_database_backend_rocketseat",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon ./src/server.js",
+        "start": "node ./src/server.js"
+    },
+    "keywords": [],
+    "author": "Fagner de Oliveira Bernardo",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.1.6",
+        "express-zip": "^3.0.0",
+        "http-status-codes": "^1.4.0",
+        "jimp": "^0.9.3",
+        "md5": "^2.2.1",
+        "mysql": "^2.17.1",
+        "mysql2": "^2.0.0",
+        "nodemon": "^1.19.4",
+        "sequelize": "^5.21.2"
+    },
+    "devDependencies": {
+        "sequelize-cli": "^5.5.1"
+    }
+}
