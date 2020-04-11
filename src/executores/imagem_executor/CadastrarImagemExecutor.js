@@ -186,7 +186,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
         resultado = await ImagemRepositorio.atualizarDimensoesImagem(imagem.id, imagem.altura, imagem.largura);
         imagemLida.write(diretorioUploadFinal);
 
-        let imagemRedimensionada = imagemLida.resize(256, 256);
+        let imagemRedimensionada = imagemLida.scaleToFit(256, 256);
         imagemRedimensionada.write(diretorioUploadThumbnail);
     }
     else {
@@ -200,7 +200,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
         imagemAtualizacao.largura = imagemLida.bitmap.width;
         resultado = await ImagemRepositorio.atualizarDimensoesImagem(imagem.id, imagem.altura, imagem.largura);
 
-        let imagemRedimensionada = imagemLida.resize(256, 256);
+        let imagemRedimensionada = imagemLida.scaleToFit(256, 256);
         imagemRedimensionada.write(diretorioUploadThumbnail);
     }
 
