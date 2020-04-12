@@ -315,10 +315,21 @@ module.exports = {
 
     async downloadImagensBaseInterna(req, res) {
 
-        let resultado;
+        let result;
         try {
-            resultado = await DownloadImagensBaseInternaExecutor.Executar(req);
-            return res.download(resultado.caminho, resultado.nomeArquivo);
+            result = DownloadImagensBaseInternaExecutor.Executar(req);
+            result.then((zip) => {
+                res.set("Content-Type", "application/zip");
+                zip
+                    .pipe(res)
+                    .on("finish", function () {
+                        console.log("Zip file with dump of image + data sent to user.");
+                    });
+
+            })
+                .catch((err) => {
+                    console.log(`Failed to send zip file to user because of ${err}`);
+                });
         }
         catch (erro) {
 

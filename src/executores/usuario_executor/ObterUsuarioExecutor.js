@@ -29,7 +29,7 @@ module.exports = {
             if (req.headers.token_autenticacao === undefined) {
                 ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
                 ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-                ObjetoExcecao.detail = `token_autenticacao is missing in Request Headers.`;
+                ObjetoExcecao.detail = "token_autenticacao is missing in Request Headers.";
                 throw ObjetoExcecao;
             }
             validarLogin(req.body.email, senhaCriptografada, usuario);
