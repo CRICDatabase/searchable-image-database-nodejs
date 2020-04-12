@@ -1,10 +1,15 @@
 "use strict";
 
+const HttpStatus = require("http-status-codes");
+const JSZip = require("jszip");
+const fs = require("fs");
+
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const HttpStatus = require("http-status-codes");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+
+const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 module.exports = {
@@ -14,22 +19,23 @@ module.exports = {
         await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req);
         
-        var sistemaWindows = process.platform === "win32";
-        let barra = "/";
-        if(sistemaWindows) {
-            barra = "\\"; 
+        const all_images = await ImagemRepositorio.listarImagensValidasNoSistema();
+        /* TODO process image from user
+        const visitanteTask = UsuarioRepositorio.obterVisitantePorId(req.params.id_usuario);
+        const [todasImagens, visitante] = await Promise.all([todasImagensTask, visitanteTask]);
+        */
+
+        var zip = new JSZip();
+        for await (let image of all_images){
+            try {
+                zip.file(image.nome, fs.readFileSync(image.caminho_imagem));
+            }
+            catch(err) {
+                console.log(`Fail to add ${image.nome} due ${err}`);
+            }
         }
 
-        const nomeArquivo = "base_interna.zip";
-        const diretorioArquivo = `src${barra}assets${barra}imagens${barra}base_interna_zip${barra}`;
-        const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;
-
-        const resutado = {
-            caminho: caminho_base_diretorio + diretorioArquivo + nomeArquivo,
-            nomeArquivo: nomeArquivo
-        };
-
-        return resutado;
+        return zip;
     }
 };
 
