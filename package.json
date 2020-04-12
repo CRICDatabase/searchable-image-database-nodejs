@@ -2,11 +2,14 @@
     "name": "searchable-image-database-nodejs",
     "version": "0.1.7",
     "description": "CRIC Searchable Image Database is a public cervical cell image database aiming supporting cervical cancer analysis of Pap smear.",
-    "keywords": ["cervical cell", "Pap smear"],
+    "keywords": [
+        "cervical cell",
+        "Pap smear"
+    ],
     "homepage": "https://github.com/CRICDatabase/searchable-image-database-nodejs",
     "repository": {
-        "type" : "git",
-        "url" : "https://github.com/CRICDatabase/searchable-image-database-nodejs.git"
+        "type": "git",
+        "url": "https://github.com/CRICDatabase/searchable-image-database-nodejs.git"
     },
     "bugs": {
         "url": "https://github.com/CRICDatabase/searchable-image-database-nodejs/issues"
@@ -34,6 +37,7 @@
         "express-zip": "^3.0.0",
         "http-status-codes": "^1.4.0",
         "jimp": "^0.9.3",
+        "jszip": "^3.3.0",
         "md5": "^2.2.1",
         "mysql": "^2.17.1",
         "mysql2": "^2.0.0",
