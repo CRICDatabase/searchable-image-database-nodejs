@@ -35,7 +35,8 @@ module.exports = {
             }
         }
 
-        return zip;
+        return zip
+            .generateNodeStream({type:'nodebuffer',streamFiles:true});
     }
 };
 
