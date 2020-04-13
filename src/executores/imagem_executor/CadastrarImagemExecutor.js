@@ -125,28 +125,42 @@ async function cadastrarDadosEArquivoDeImagem(req) {
     const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;
 
     req.files.file.name = imagem.nome;
-    const diretorioUploadImagemOriginal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_original${barra}${imagem.nome}`;
-    const diretorioUploadDefinitivo = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${imagem.nome}`;
-    const verificarExtensao = req.files.file.mimetype.split("/");
-    
-    if(verificarExtensao[1] == "tiff" || verificarExtensao[1] == "tif") {
-        
-        const tif = "tif";
-        const png = "png";
-        imagem.nome = imagem.nome.replace(tif, png);
-        FileSystem.writeFile(diretorioUploadImagemOriginal, req.files.file.data, (erro) => {
+    let diretorioUploadDefinitivo = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${imagem.nome}`;
+    const filename_parts = imagem.nome.split(".");
+    const filename_extension = filename_parts[filename_parts.length - 1];
+
+    /* Gecko and WebKit does NOT support TIFF, so we will convert to PNG */
+    if(filename_extension == "tiff" || filename_extension == "tif") {
+        FileSystem.writeFile(
+            diretorioUploadDefinitivo,
+            req.files.file.data,
+            (erro) => {
+                if (erro) {
+                    erroAoSalvar = erro;
+                }
+            }
+        );
+
+        imagem.nome = imagem.nome.replace(
+            filename_extension,
+            "png"
+        );
+        diretorioUploadDefinitivo = diretorioUploadDefinitivo.replace(
+            filename_extension,
+            "png"
+        );
+    }
+
+    FileSystem.writeFile(
+        diretorioUploadDefinitivo,
+        req.files.file.data,
+        (erro) => {
             if (erro) {
                 erroAoSalvar = erro;
             }
-        });
-    }
-    else {
-        FileSystem.writeFile(diretorioUploadDefinitivo, req.files.file.data, (erro) => {
-            if (erro) {
-                erroAoSalvar = erro;
-            }
-        });
-    }
+        }
+    );
+
 
     let imagemCadastrada;
     if(!erroAoSalvar) {
@@ -170,18 +184,18 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
         barra = "\\"; 
     }
 
-    const verificarExtensao = req.files.file.mimetype.split("/");
+    const filename_parts = imagem.nome.split(".");
+    const filename_extension = filename_parts[filename_parts.length - 1];
+
     const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;
     let diretorioUploadThumbnail;
     let resultado;
 
-    if(verificarExtensao[1] == "tiff" || verificarExtensao[1] == "tif") {
-        const tif = "tif";
-        const png = "png";
+    if(filename_extension == "tiff" || filename_extension == "tif") {
         const diretorioUploadImagemOriginal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_original${barra}${req.files.file.name}`;
-        const diretorioUploadFinal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${req.files.file.name.replace(tif, png)}`;
+        const diretorioUploadFinal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${req.files.file.name.replace(filename_extension, "png")}`;
 
-        diretorioUploadThumbnail = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_thumbnail${barra}${req.files.file.name.replace(tif, png)}`;
+        diretorioUploadThumbnail = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_thumbnail${barra}${req.files.file.name.replace(filename_extension, "png")}`;
 
         imagemLida = await Jimp.read(diretorioUploadImagemOriginal);
         imagemAtualizacao = imagem;
