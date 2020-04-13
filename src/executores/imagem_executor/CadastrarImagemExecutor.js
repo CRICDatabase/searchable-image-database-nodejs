@@ -34,13 +34,18 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-
-    if (!req.body.id_usuario || !req.body.id_lesao || !ValidarTipo.ehNumero(req.body.id_usuario) ||
-        !ValidarTipo.ehNumero(req.body.id_lesao) || !req.files || !req.body.codigo_lamina ||
-        !req.body.codigo_lamina) {
-            
+    if (!req.body.id_usuario || !req.body.id_lesao ||
+        !ValidarTipo.ehNumero(req.body.id_usuario) || !ValidarTipo.ehNumero(req.body.id_lesao) ||
+        !req.body.codigo_lamina ) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = "Check id_usuario, id_lesao and codigo_lamina";
+        throw ObjetoExcecao;
+    }
+    if (!req.files) {
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = "Missing image file";
         throw ObjetoExcecao;
     }
 

@@ -1,10 +1,8 @@
 curl \
     -H "token_autenticacao: bac8db9147ac80b4ba8a05bb0de7c4fd" \
-    --data '{
-        "id_usuario": 1,
-        "id_lesao": 1,
-        "codigo_lamina": "example",
-        "dt_aquisicao": "20202-01-01"
-    }' \
-    --data @example0001.jpg \
+    -F "id_usuario=1" \
+    -F "id_lesao=1" \
+    -F "codigo_lamina=example" \
+    -F "dt_aquisicao=2020-01-01" \
+    -F file=@example0001.jpg \
     -X POST "http://api.database.cric.com.br/api/v1/imagens/"
