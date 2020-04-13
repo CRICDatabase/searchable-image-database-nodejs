@@ -95,8 +95,8 @@ async function prepararCadastroNoBanco(req) {
 
 async function obterUsuarioVisitante(req) {
 
-    const viistante = await UsuarioRepositorio.obterVisitantePorId(req.body.id_usuario);
-    return viistante ? FonteAquisicao.FONTE_AQUISICAO_EXTERNA : FonteAquisicao.FONTE_AQUISICAO_INTERNA;
+    const vistante = await UsuarioRepositorio.obterVisitantePorId(req.body.id_usuario);
+    return vistante ? FonteAquisicao.FONTE_AQUISICAO_EXTERNA : FonteAquisicao.FONTE_AQUISICAO_INTERNA;
 }
 
 function obterNomeImagemTratado(entrada) {
