@@ -28,8 +28,7 @@ module.exports = {
         }
 
         await converterSalvarArquivoAtualizarRegistroNoBanco(req, imagemCadastrada.dataValues);    
-        //await salvarImagemThumbnail(req);
-        return true;
+        return imagemCadastrada;
     }
 };
 
