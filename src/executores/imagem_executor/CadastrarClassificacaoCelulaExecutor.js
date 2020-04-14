@@ -54,7 +54,7 @@ module.exports = {
             const listaDeClassificacoes = await ListarClassificacaoCelulaExecutor.Executar(req);
 
             await atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes);
-            return await ObterImagemExecutor.Executar(req);            
+            return await ObterImagemExecutor.Executar(req);
         }
     }
 };

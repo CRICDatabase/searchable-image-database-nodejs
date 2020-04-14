@@ -33,5 +33,33 @@
         "detalhes": "",
         "createdAt": "2020-01-01T03:00:00.000Z",
         "updatedAt": "2020-01-01T03:00:00.000Z"
+    },
+    {
+        "id": 7,
+        "nome": "ASC-H",
+        "detalhes": "",
+        "createdAt": "2020-04-14T21:27:20.000Z",
+        "updatedAt": "2020-04-14T21:27:20.000Z"
+    },
+    {
+        "id": 8,
+        "nome": "ASC-US",
+        "detalhes": "",
+        "createdAt": "2020-04-14T21:27:20.000Z",
+        "updatedAt": "2020-04-14T21:27:20.000Z"
+    },
+    {
+        "id": 9,
+        "nome": "HSIL",
+        "detalhes": "",
+        "createdAt": "2020-04-14T21:27:20.000Z",
+        "updatedAt": "2020-04-14T21:27:20.000Z"
+    },
+    {
+        "id": 10,
+        "nome": "LSIL",
+        "detalhes": "",
+        "createdAt": "2020-04-14T21:27:20.000Z",
+        "updatedAt": "2020-04-14T21:27:20.000Z"
     }
 ]

@@ -1,7 +1,16 @@
 {
-    "errno": -2,
-    "code": "ENOENT",
-    "syscall": "open",
-    "path": "/opt/cric/backend/src/executores/imagem_executor/../../../src/assets/imagens/base_original/168408d67315d911_example0004.tif",
-    "methodName": "constructor"
+    "id": 6,
+    "nome": "e122ffc21f654cda_example0004.png",
+    "codigo_lamina": "TIF Example",
+    "excluida": 0,
+    "classificacao_aprovada": 1,
+    "dt_aquisicao": "2020-01-01T00:00:00.000Z",
+    "fonte_aquisicao": 1,
+    "caminho_imagem": "imagens/base_interna/",
+    "id_usuario": "1",
+    "id_lesao": "1",
+    "altura": 400,
+    "largura": 600,
+    "updatedAt": "2020-04-14T21:27:08.614Z",
+    "createdAt": "2020-04-14T21:27:08.614Z"
 }

@@ -46,8 +46,8 @@
         "email": "terry@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
         "ativo": 1,
-        "createdAt": "2020-04-14T19:52:39.000Z",
-        "updatedAt": "2020-04-14T19:52:39.000Z"
+        "createdAt": "2020-04-14T21:26:37.000Z",
+        "updatedAt": "2020-04-14T21:26:37.000Z"
     },
     {
         "id": 6,
@@ -56,8 +56,8 @@
         "email": "adan@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
         "ativo": 1,
-        "createdAt": "2020-04-14T19:52:39.000Z",
-        "updatedAt": "2020-04-14T19:52:39.000Z"
+        "createdAt": "2020-04-14T21:26:53.000Z",
+        "updatedAt": "2020-04-14T21:26:53.000Z"
     },
     {
         "id": 7,
@@ -66,7 +66,7 @@
         "email": "cyrus@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
         "ativo": 1,
-        "createdAt": "2020-04-14T19:52:40.000Z",
-        "updatedAt": "2020-04-14T19:52:40.000Z"
+        "createdAt": "2020-04-14T21:26:53.000Z",
+        "updatedAt": "2020-04-14T21:26:53.000Z"
     }
 ]

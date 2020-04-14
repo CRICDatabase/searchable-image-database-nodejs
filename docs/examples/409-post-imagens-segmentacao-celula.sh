@@ -37,15 +37,15 @@ curl \
             {
                 "coord_x": 190,
                 "coord_y": 145,
-            }
+            },
             {
                 "coord_x": 210,
                 "coord_y": 190,
-            }
+            },
             {
                 "coord_x": 265,
                 "coord_y": 175,
-            }
+            },
             {
                 "coord_x": 255,
                 "coord_y": 125,

@@ -7,10 +7,16 @@
     "dt_aquisicao": "2020-01-01T00:00:00.000Z",
     "fonte_aquisicao": 1,
     "caminho_imagem": "imagens/base_interna/",
-    "id_usuario": "1",
-    "id_lesao": "1",
     "altura": 400,
     "largura": 600,
-    "updatedAt": "2020-04-14T21:26:58.814Z",
-    "createdAt": "2020-04-14T21:26:58.814Z"
+    "createdAt": "2020-04-14T21:26:58.000Z",
+    "updatedAt": "2020-04-14T21:27:22.000Z",
+    "id_usuario": 1,
+    "lesao": {
+        "id": 2,
+        "nome": "ASC-US",
+        "detalhes": "",
+        "createdAt": "2020-01-01T03:00:00.000Z",
+        "updatedAt": "2020-01-01T03:00:00.000Z"
+    }
 }

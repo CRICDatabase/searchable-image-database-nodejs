@@ -129,6 +129,17 @@ Post Operations
     :statuscode 409:
     :statuscode 500:
 
+    **Example**
+
+    ..  literalinclude:: ../examples/409-post-imagens-segmentacao-celula.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/409-post-imagens-segmentacao-celula.sh.output
+        :language: json
+        :caption: Output
+
+
 Get Operations
 --------------
 
