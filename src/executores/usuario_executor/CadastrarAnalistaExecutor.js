@@ -53,6 +53,7 @@ async function validarRequisicao(usuario) {
     if(!Citopatologista && !Visitante) {
         ObjetoExcecao.status = HttpStatus.FORBIDDEN;
         ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
+        ObjetoExcecao.details = `User with id ${usuario.id_usuario} isn't cytopathologist`;
         throw ObjetoExcecao;
     }
 }
