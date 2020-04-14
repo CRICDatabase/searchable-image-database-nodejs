@@ -129,28 +129,6 @@ async function cadastrarDadosEArquivoDeImagem(req) {
     const filename_parts = imagem.nome.split(".");
     const filename_extension = filename_parts[filename_parts.length - 1];
 
-    /* Gecko and WebKit does NOT support TIFF, so we will convert to PNG */
-    if(filename_extension == "tiff" || filename_extension == "tif") {
-        FileSystem.writeFile(
-            diretorioUploadDefinitivo,
-            req.files.file.data,
-            (erro) => {
-                if (erro) {
-                    erroAoSalvar = erro;
-                }
-            }
-        );
-
-        imagem.nome = imagem.nome.replace(
-            filename_extension,
-            "png"
-        );
-        diretorioUploadDefinitivo = diretorioUploadDefinitivo.replace(
-            filename_extension,
-            "png"
-        );
-    }
-
     FileSystem.writeFile(
         diretorioUploadDefinitivo,
         req.files.file.data,
@@ -161,6 +139,31 @@ async function cadastrarDadosEArquivoDeImagem(req) {
         }
     );
 
+    /* Gecko and WebKit does NOT support TIFF, so we will convert to PNG */
+    if(filename_extension == "tiff" || filename_extension == "tif") {
+        Jimp.read(diretorioUploadDefinitivo)
+            .then((image) => {
+                return image
+                    .write(
+                        diretorioUploadDefinitivo.replace(
+                            filename_extension,
+                            "png"
+                        )
+                    );
+            })
+            .catch((err) => {
+                console.error(`Cound not read file because ${err}`);
+            });
+
+        imagem.nome = imagem.nome.replace(
+            filename_extension,
+            "png"
+        );
+        diretorioUploadDefinitivo = diretorioUploadDefinitivo.replace(
+            filename_extension,
+            "png"
+        );
+    }
 
     let imagemCadastrada;
     if(!erroAoSalvar) {
