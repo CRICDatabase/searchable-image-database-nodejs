@@ -28,15 +28,35 @@ Post Operations
 
     **Example**
 
-    ..  literalinclude:: ../examples/401-post-imagens.sh
+    ..  literalinclude:: ../examples/401-post-imagens-png.sh
         :language: bash
         :caption: Input
 
-    ..  literalinclude:: ../examples/401-post-imagens.sh.output
+    ..  literalinclude:: ../examples/401-post-imagens-png.sh.output
         :language: json
         :caption: Output
 
-..  http:post:: /api/v1/imagens/image_id}/classificacao-celula/{user_id}
+    **Example**
+
+    ..  literalinclude:: ../examples/401-post-imagens-tif.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/401-post-imagens-tif.sh.output
+        :language: json
+        :caption: Output
+
+    **Example**
+
+    ..  literalinclude:: ../examples/401-post-imagens-jpg.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/401-post-imagens-jpg.sh.output
+        :language: json
+        :caption: Output
+
+..  http:post:: /api/v1/imagens/{image_id}/classificacao-celula/{user_id}
 
     Classify a single cell with nucleus located at *x* and *y*.
 
@@ -66,6 +86,17 @@ Post Operations
     :statuscode 401:
     :statuscode 409:
     :statuscode 500:
+
+    **Example**
+
+    ..  literalinclude:: ../examples/408-post-imagens-classificacao-celula.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/408-post-imagens-classificacao-celula.sh.output
+        :language: json
+        :caption: Output
+
 
 ..  http:post:: /api/v1/imagens/{image_id}/segmentacao-celula/{user_id}
 
