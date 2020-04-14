@@ -15,7 +15,7 @@ rotasUsuario.post("/api/v1/usuarios/:id_usuario_adm/citopatologista/:id_usuario"
 rotasUsuario.post("/api/v1/usuarios/:id_usuario", UsuarioController.obterUsuario);
 
 //Rotas de usuario GET
-rotasUsuario.get("/api/v1/usuarios", UsuarioController.listarUsuarios);
+rotasUsuario.get("/api/v1/usuarios/:id_usuario?", UsuarioController.listarUsuarios);
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/administrador", UsuarioController.obterAdministrador);
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/citopatologista", UsuarioController.obterCitopatologista);
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/visitante", UsuarioController.obterVisitante);
