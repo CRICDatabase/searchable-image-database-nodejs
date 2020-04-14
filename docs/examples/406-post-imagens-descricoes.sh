@@ -3,20 +3,8 @@ curl \
     -H "Content-Type: application/json" \
     --data '[
         {
-            "nome":"ASC-H",
-            "detalhes":""
-        },
-        {
-            "nome":"ASC-US",
-            "detalhes":""
-        },
-        {
-            "nome":"HSIL",
-            "detalhes":""
-        },
-        {
-            "nome":"LSIL",
-            "detalhes":""
+            "codigo": 1,
+            "nome": "Epithelia"
         }
     ]' \
-    -X GET "http://api.database.cric.com.br/api/v1/imagens-lesoes/1"
+    -X POST "http://api.database.cric.com.br/api/v1/imagens-lesoes/1"
