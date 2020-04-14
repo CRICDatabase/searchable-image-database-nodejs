@@ -7,7 +7,7 @@ module.exports = {
                 id:  1,
                 coord_x:  283,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -16,7 +16,7 @@ module.exports = {
                 id:  2,
                 coord_x:  282,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -25,7 +25,7 @@ module.exports = {
                 id:  3,
                 coord_x:  282,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -34,7 +34,7 @@ module.exports = {
                 id:  4,
                 coord_x:  281,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -43,7 +43,7 @@ module.exports = {
                 id:  5,
                 coord_x:  280,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -52,7 +52,7 @@ module.exports = {
                 id:  6,
                 coord_x:  278,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -61,7 +61,7 @@ module.exports = {
                 id:  7,
                 coord_x:  277,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -70,7 +70,7 @@ module.exports = {
                 id:  8,
                 coord_x:  272,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -79,7 +79,7 @@ module.exports = {
                 id:  9,
                 coord_x:  268,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -88,7 +88,7 @@ module.exports = {
                 id:  10,
                 coord_x:  267,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -97,7 +97,7 @@ module.exports = {
                 id:  11,
                 coord_x:  265,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -106,7 +106,7 @@ module.exports = {
                 id:  12,
                 coord_x:  263,
                 coord_y:  88,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -115,7 +115,7 @@ module.exports = {
                 id:  13,
                 coord_x:  260,
                 coord_y:  87,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -124,7 +124,7 @@ module.exports = {
                 id:  14,
                 coord_x:  259,
                 coord_y:  86,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -133,7 +133,7 @@ module.exports = {
                 id:  15,
                 coord_x:  258,
                 coord_y:  85,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -142,7 +142,7 @@ module.exports = {
                 id:  16,
                 coord_x:  257,
                 coord_y:  85,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -151,7 +151,7 @@ module.exports = {
                 id:  17,
                 coord_x:  256,
                 coord_y:  85,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -160,7 +160,7 @@ module.exports = {
                 id:  18,
                 coord_x:  255,
                 coord_y:  84,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:35",
                 updated_at:  "2020-03-28 10:12:35" 
@@ -169,7 +169,7 @@ module.exports = {
                 id:  19,
                 coord_x:  253,
                 coord_y:  84,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -178,7 +178,7 @@ module.exports = {
                 id:  20,
                 coord_x:  253,
                 coord_y:  84,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -187,7 +187,7 @@ module.exports = {
                 id:  21,
                 coord_x:  253,
                 coord_y:  84,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -196,7 +196,7 @@ module.exports = {
                 id:  22,
                 coord_x:  252,
                 coord_y:  83,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -205,7 +205,7 @@ module.exports = {
                 id:  23,
                 coord_x:  252,
                 coord_y:  83,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -214,7 +214,7 @@ module.exports = {
                 id:  24,
                 coord_x:  251,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -223,7 +223,7 @@ module.exports = {
                 id:  25,
                 coord_x:  251,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -232,7 +232,7 @@ module.exports = {
                 id:  26,
                 coord_x:  250,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -241,7 +241,7 @@ module.exports = {
                 id:  27,
                 coord_x:  248,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -250,7 +250,7 @@ module.exports = {
                 id:  28,
                 coord_x:  248,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -259,7 +259,7 @@ module.exports = {
                 id:  29,
                 coord_x:  248,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -268,7 +268,7 @@ module.exports = {
                 id:  30,
                 coord_x:  247,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -277,7 +277,7 @@ module.exports = {
                 id:  31,
                 coord_x:  247,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -286,7 +286,7 @@ module.exports = {
                 id:  32,
                 coord_x:  247,
                 coord_y:  82,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -295,7 +295,7 @@ module.exports = {
                 id:  33,
                 coord_x:  247,
                 coord_y:  83,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -304,7 +304,7 @@ module.exports = {
                 id:  34,
                 coord_x:  246,
                 coord_y:  85,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -313,7 +313,7 @@ module.exports = {
                 id:  35,
                 coord_x:  246,
                 coord_y:  86,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -322,7 +322,7 @@ module.exports = {
                 id:  36,
                 coord_x:  246,
                 coord_y:  88,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -331,7 +331,7 @@ module.exports = {
                 id:  37,
                 coord_x:  246,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -340,7 +340,7 @@ module.exports = {
                 id:  38,
                 coord_x:  246,
                 coord_y:  93,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -349,7 +349,7 @@ module.exports = {
                 id:  39,
                 coord_x:  246,
                 coord_y:  95,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -358,7 +358,7 @@ module.exports = {
                 id:  40,
                 coord_x:  246,
                 coord_y:  96,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -367,7 +367,7 @@ module.exports = {
                 id:  41,
                 coord_x:  246,
                 coord_y:  98,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -376,7 +376,7 @@ module.exports = {
                 id:  42,
                 coord_x:  246,
                 coord_y:  98,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -385,7 +385,7 @@ module.exports = {
                 id:  43,
                 coord_x:  246,
                 coord_y:  100,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -394,7 +394,7 @@ module.exports = {
                 id:  44,
                 coord_x:  246,
                 coord_y:  101,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -403,7 +403,7 @@ module.exports = {
                 id:  45,
                 coord_x:  246,
                 coord_y:  103,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -412,7 +412,7 @@ module.exports = {
                 id:  46,
                 coord_x:  246,
                 coord_y:  105,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -421,7 +421,7 @@ module.exports = {
                 id:  47,
                 coord_x:  246,
                 coord_y:  106,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -430,7 +430,7 @@ module.exports = {
                 id:  48,
                 coord_x:  246,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -439,7 +439,7 @@ module.exports = {
                 id:  49,
                 coord_x:  246,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -448,7 +448,7 @@ module.exports = {
                 id:  50,
                 coord_x:  246,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -457,7 +457,7 @@ module.exports = {
                 id:  51,
                 coord_x:  246,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -466,7 +466,7 @@ module.exports = {
                 id:  52,
                 coord_x:  247,
                 coord_y:  112,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -475,7 +475,7 @@ module.exports = {
                 id:  53,
                 coord_x:  247,
                 coord_y:  113,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -484,7 +484,7 @@ module.exports = {
                 id:  54,
                 coord_x:  247,
                 coord_y:  114,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -493,7 +493,7 @@ module.exports = {
                 id:  55,
                 coord_x:  248,
                 coord_y:  115,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -502,7 +502,7 @@ module.exports = {
                 id:  56,
                 coord_x:  248,
                 coord_y:  116,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -511,7 +511,7 @@ module.exports = {
                 id:  57,
                 coord_x:  249,
                 coord_y:  118,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -520,7 +520,7 @@ module.exports = {
                 id:  58,
                 coord_x:  250,
                 coord_y:  119,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -529,7 +529,7 @@ module.exports = {
                 id:  59,
                 coord_x:  251,
                 coord_y:  120,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -538,7 +538,7 @@ module.exports = {
                 id:  60,
                 coord_x:  253,
                 coord_y:  121,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -547,7 +547,7 @@ module.exports = {
                 id:  61,
                 coord_x:  256,
                 coord_y:  123,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -556,7 +556,7 @@ module.exports = {
                 id:  62,
                 coord_x:  258,
                 coord_y:  125,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -565,7 +565,7 @@ module.exports = {
                 id:  63,
                 coord_x:  259,
                 coord_y:  125,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -574,7 +574,7 @@ module.exports = {
                 id:  64,
                 coord_x:  261,
                 coord_y:  126,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -583,7 +583,7 @@ module.exports = {
                 id:  65,
                 coord_x:  263,
                 coord_y:  127,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -592,7 +592,7 @@ module.exports = {
                 id:  66,
                 coord_x:  264,
                 coord_y:  128,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -601,7 +601,7 @@ module.exports = {
                 id:  67,
                 coord_x:  265,
                 coord_y:  128,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -610,7 +610,7 @@ module.exports = {
                 id:  68,
                 coord_x:  269,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -619,7 +619,7 @@ module.exports = {
                 id:  69,
                 coord_x:  272,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -628,7 +628,7 @@ module.exports = {
                 id:  70,
                 coord_x:  274,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -637,7 +637,7 @@ module.exports = {
                 id:  71,
                 coord_x:  276,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -646,7 +646,7 @@ module.exports = {
                 id:  72,
                 coord_x:  277,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -655,7 +655,7 @@ module.exports = {
                 id:  73,
                 coord_x:  280,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -664,7 +664,7 @@ module.exports = {
                 id:  74,
                 coord_x:  281,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -673,7 +673,7 @@ module.exports = {
                 id:  75,
                 coord_x:  283,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -682,7 +682,7 @@ module.exports = {
                 id:  76,
                 coord_x:  284,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -691,7 +691,7 @@ module.exports = {
                 id:  77,
                 coord_x:  286,
                 coord_y:  128,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -700,7 +700,7 @@ module.exports = {
                 id:  78,
                 coord_x:  287,
                 coord_y:  125,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -709,7 +709,7 @@ module.exports = {
                 id:  79,
                 coord_x:  288,
                 coord_y:  124,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -718,7 +718,7 @@ module.exports = {
                 id:  80,
                 coord_x:  288,
                 coord_y:  122,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -727,7 +727,7 @@ module.exports = {
                 id:  81,
                 coord_x:  289,
                 coord_y:  119,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -736,7 +736,7 @@ module.exports = {
                 id:  82,
                 coord_x:  290,
                 coord_y:  118,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -745,7 +745,7 @@ module.exports = {
                 id:  83,
                 coord_x:  291,
                 coord_y:  115,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:36",
                 updated_at:  "2020-03-28 10:12:36" 
@@ -754,7 +754,7 @@ module.exports = {
                 id:  84,
                 coord_x:  291,
                 coord_y:  113,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -763,7 +763,7 @@ module.exports = {
                 id:  85,
                 coord_x:  291,
                 coord_y:  112,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -772,7 +772,7 @@ module.exports = {
                 id:  86,
                 coord_x:  292,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -781,7 +781,7 @@ module.exports = {
                 id:  87,
                 coord_x:  292,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -790,7 +790,7 @@ module.exports = {
                 id:  88,
                 coord_x:  293,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -799,7 +799,7 @@ module.exports = {
                 id:  89,
                 coord_x:  293,
                 coord_y:  105,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -808,7 +808,7 @@ module.exports = {
                 id:  90,
                 coord_x:  293,
                 coord_y:  103,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -817,7 +817,7 @@ module.exports = {
                 id:  91,
                 coord_x:  293,
                 coord_y:  101,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -826,7 +826,7 @@ module.exports = {
                 id:  92,
                 coord_x:  293,
                 coord_y:  100,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -835,7 +835,7 @@ module.exports = {
                 id:  93,
                 coord_x:  293,
                 coord_y:  96,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -844,7 +844,7 @@ module.exports = {
                 id:  94,
                 coord_x:  291,
                 coord_y:  94,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -853,7 +853,7 @@ module.exports = {
                 id:  95,
                 coord_x:  290,
                 coord_y:  93,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -862,7 +862,7 @@ module.exports = {
                 id:  96,
                 coord_x:  289,
                 coord_y:  92,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -871,7 +871,7 @@ module.exports = {
                 id:  97,
                 coord_x:  288,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -880,7 +880,7 @@ module.exports = {
                 id:  98,
                 coord_x:  287,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -889,7 +889,7 @@ module.exports = {
                 id:  99,
                 coord_x:  287,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -898,7 +898,7 @@ module.exports = {
                 id:  100,
                 coord_x:  286,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -907,7 +907,7 @@ module.exports = {
                 id:  101,
                 coord_x:  285,
                 coord_y:  90,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -916,7 +916,7 @@ module.exports = {
                 id:  102,
                 coord_x:  284,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -925,7 +925,7 @@ module.exports = {
                 id:  103,
                 coord_x:  282,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -934,7 +934,7 @@ module.exports = {
                 id:  104,
                 coord_x:  282,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -943,7 +943,7 @@ module.exports = {
                 id:  105,
                 coord_x:  281,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -952,7 +952,7 @@ module.exports = {
                 id:  106,
                 coord_x:  281,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -961,7 +961,7 @@ module.exports = {
                 id:  107,
                 coord_x:  281,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -970,7 +970,7 @@ module.exports = {
                 id:  108,
                 coord_x:  281,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -979,7 +979,7 @@ module.exports = {
                 id:  109,
                 coord_x:  280,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -988,7 +988,7 @@ module.exports = {
                 id:  110,
                 coord_x:  280,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -997,7 +997,7 @@ module.exports = {
                 id:  111,
                 coord_x:  280,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -1006,7 +1006,7 @@ module.exports = {
                 id:  112,
                 coord_x:  281,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -1015,7 +1015,7 @@ module.exports = {
                 id:  113,
                 coord_x:  282,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -1024,7 +1024,7 @@ module.exports = {
                 id:  114,
                 coord_x:  283,
                 coord_y:  89,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  4,
                 created_at:  "2020-03-28 10:12:37",
                 updated_at:  "2020-03-28 10:12:37" 
@@ -1033,7 +1033,7 @@ module.exports = {
                 id:  115,
                 coord_x:  436,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1042,7 +1042,7 @@ module.exports = {
                 id:  116,
                 coord_x:  435,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1051,7 +1051,7 @@ module.exports = {
                 id:  117,
                 coord_x:  434,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1060,7 +1060,7 @@ module.exports = {
                 id:  118,
                 coord_x:  431,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1069,7 +1069,7 @@ module.exports = {
                 id:  119,
                 coord_x:  427,
                 coord_y:  230,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1078,7 +1078,7 @@ module.exports = {
                 id:  120,
                 coord_x:  426,
                 coord_y:  229,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1087,7 +1087,7 @@ module.exports = {
                 id:  121,
                 coord_x:  424,
                 coord_y:  229,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1096,7 +1096,7 @@ module.exports = {
                 id:  122,
                 coord_x:  422,
                 coord_y:  228,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1105,7 +1105,7 @@ module.exports = {
                 id:  123,
                 coord_x:  421,
                 coord_y:  227,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1114,7 +1114,7 @@ module.exports = {
                 id:  124,
                 coord_x:  418,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1123,7 +1123,7 @@ module.exports = {
                 id:  125,
                 coord_x:  417,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1132,7 +1132,7 @@ module.exports = {
                 id:  126,
                 coord_x:  417,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1141,7 +1141,7 @@ module.exports = {
                 id:  127,
                 coord_x:  415,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1150,7 +1150,7 @@ module.exports = {
                 id:  128,
                 coord_x:  414,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1159,7 +1159,7 @@ module.exports = {
                 id:  129,
                 coord_x:  414,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1168,7 +1168,7 @@ module.exports = {
                 id:  130,
                 coord_x:  413,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1177,7 +1177,7 @@ module.exports = {
                 id:  131,
                 coord_x:  413,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1186,7 +1186,7 @@ module.exports = {
                 id:  132,
                 coord_x:  412,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1195,7 +1195,7 @@ module.exports = {
                 id:  133,
                 coord_x:  411,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1204,7 +1204,7 @@ module.exports = {
                 id:  134,
                 coord_x:  410,
                 coord_y:  227,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1213,7 +1213,7 @@ module.exports = {
                 id:  135,
                 coord_x:  410,
                 coord_y:  228,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1222,7 +1222,7 @@ module.exports = {
                 id:  136,
                 coord_x:  410,
                 coord_y:  229,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1231,7 +1231,7 @@ module.exports = {
                 id:  137,
                 coord_x:  409,
                 coord_y:  230,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1240,7 +1240,7 @@ module.exports = {
                 id:  138,
                 coord_x:  409,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1249,7 +1249,7 @@ module.exports = {
                 id:  139,
                 coord_x:  409,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1258,7 +1258,7 @@ module.exports = {
                 id:  140,
                 coord_x:  409,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1267,7 +1267,7 @@ module.exports = {
                 id:  141,
                 coord_x:  408,
                 coord_y:  233,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1276,7 +1276,7 @@ module.exports = {
                 id:  142,
                 coord_x:  408,
                 coord_y:  234,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1285,7 +1285,7 @@ module.exports = {
                 id:  143,
                 coord_x:  408,
                 coord_y:  234,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1294,7 +1294,7 @@ module.exports = {
                 id:  144,
                 coord_x:  408,
                 coord_y:  239,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1303,7 +1303,7 @@ module.exports = {
                 id:  145,
                 coord_x:  408,
                 coord_y:  241,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1312,7 +1312,7 @@ module.exports = {
                 id:  146,
                 coord_x:  408,
                 coord_y:  242,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1321,7 +1321,7 @@ module.exports = {
                 id:  147,
                 coord_x:  408,
                 coord_y:  244,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1330,7 +1330,7 @@ module.exports = {
                 id:  148,
                 coord_x:  408,
                 coord_y:  250,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1339,7 +1339,7 @@ module.exports = {
                 id:  149,
                 coord_x:  408,
                 coord_y:  252,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1348,7 +1348,7 @@ module.exports = {
                 id:  150,
                 coord_x:  408,
                 coord_y:  253,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1357,7 +1357,7 @@ module.exports = {
                 id:  151,
                 coord_x:  409,
                 coord_y:  253,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1366,7 +1366,7 @@ module.exports = {
                 id:  152,
                 coord_x:  411,
                 coord_y:  254,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1375,7 +1375,7 @@ module.exports = {
                 id:  153,
                 coord_x:  413,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1384,7 +1384,7 @@ module.exports = {
                 id:  154,
                 coord_x:  414,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1393,7 +1393,7 @@ module.exports = {
                 id:  155,
                 coord_x:  416,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1402,7 +1402,7 @@ module.exports = {
                 id:  156,
                 coord_x:  419,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1411,7 +1411,7 @@ module.exports = {
                 id:  157,
                 coord_x:  420,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1420,7 +1420,7 @@ module.exports = {
                 id:  158,
                 coord_x:  422,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1429,7 +1429,7 @@ module.exports = {
                 id:  159,
                 coord_x:  422,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1438,7 +1438,7 @@ module.exports = {
                 id:  160,
                 coord_x:  423,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1447,7 +1447,7 @@ module.exports = {
                 id:  161,
                 coord_x:  424,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1456,7 +1456,7 @@ module.exports = {
                 id:  162,
                 coord_x:  424,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1465,7 +1465,7 @@ module.exports = {
                 id:  163,
                 coord_x:  425,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1474,7 +1474,7 @@ module.exports = {
                 id:  164,
                 coord_x:  427,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1483,7 +1483,7 @@ module.exports = {
                 id:  165,
                 coord_x:  429,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1492,7 +1492,7 @@ module.exports = {
                 id:  166,
                 coord_x:  431,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1501,7 +1501,7 @@ module.exports = {
                 id:  167,
                 coord_x:  432,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1510,7 +1510,7 @@ module.exports = {
                 id:  168,
                 coord_x:  433,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1519,7 +1519,7 @@ module.exports = {
                 id:  169,
                 coord_x:  435,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1528,7 +1528,7 @@ module.exports = {
                 id:  170,
                 coord_x:  436,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:08",
                 updated_at:  "2020-03-28 10:14:08" 
@@ -1537,7 +1537,7 @@ module.exports = {
                 id:  171,
                 coord_x:  437,
                 coord_y:  253,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1546,7 +1546,7 @@ module.exports = {
                 id:  172,
                 coord_x:  438,
                 coord_y:  252,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1555,7 +1555,7 @@ module.exports = {
                 id:  173,
                 coord_x:  438,
                 coord_y:  250,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1564,7 +1564,7 @@ module.exports = {
                 id:  174,
                 coord_x:  438,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1573,7 +1573,7 @@ module.exports = {
                 id:  175,
                 coord_x:  438,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1582,7 +1582,7 @@ module.exports = {
                 id:  176,
                 coord_x:  439,
                 coord_y:  245,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1591,7 +1591,7 @@ module.exports = {
                 id:  177,
                 coord_x:  441,
                 coord_y:  242,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1600,7 +1600,7 @@ module.exports = {
                 id:  178,
                 coord_x:  441,
                 coord_y:  241,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1609,7 +1609,7 @@ module.exports = {
                 id:  179,
                 coord_x:  441,
                 coord_y:  239,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1618,7 +1618,7 @@ module.exports = {
                 id:  180,
                 coord_x:  441,
                 coord_y:  239,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1627,7 +1627,7 @@ module.exports = {
                 id:  181,
                 coord_x:  441,
                 coord_y:  236,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1636,7 +1636,7 @@ module.exports = {
                 id:  182,
                 coord_x:  441,
                 coord_y:  234,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1645,7 +1645,7 @@ module.exports = {
                 id:  183,
                 coord_x:  441,
                 coord_y:  234,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1654,7 +1654,7 @@ module.exports = {
                 id:  184,
                 coord_x:  441,
                 coord_y:  234,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1663,7 +1663,7 @@ module.exports = {
                 id:  185,
                 coord_x:  441,
                 coord_y:  233,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1672,7 +1672,7 @@ module.exports = {
                 id:  186,
                 coord_x:  441,
                 coord_y:  233,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1681,7 +1681,7 @@ module.exports = {
                 id:  187,
                 coord_x:  439,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1690,7 +1690,7 @@ module.exports = {
                 id:  188,
                 coord_x:  438,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1699,7 +1699,7 @@ module.exports = {
                 id:  189,
                 coord_x:  437,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1708,7 +1708,7 @@ module.exports = {
                 id:  190,
                 coord_x:  436,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1717,7 +1717,7 @@ module.exports = {
                 id:  191,
                 coord_x:  436,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1726,7 +1726,7 @@ module.exports = {
                 id:  192,
                 coord_x:  435,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1735,7 +1735,7 @@ module.exports = {
                 id:  193,
                 coord_x:  435,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1744,7 +1744,7 @@ module.exports = {
                 id:  194,
                 coord_x:  436,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  5,
                 created_at:  "2020-03-28 10:14:09",
                 updated_at:  "2020-03-28 10:14:09" 
@@ -1753,7 +1753,7 @@ module.exports = {
                 id:  195,
                 coord_x:  297,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1762,7 +1762,7 @@ module.exports = {
                 id:  196,
                 coord_x:  296,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1771,7 +1771,7 @@ module.exports = {
                 id:  197,
                 coord_x:  290,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1780,7 +1780,7 @@ module.exports = {
                 id:  198,
                 coord_x:  285,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1789,7 +1789,7 @@ module.exports = {
                 id:  199,
                 coord_x:  279,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1798,7 +1798,7 @@ module.exports = {
                 id:  200,
                 coord_x:  278,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1807,7 +1807,7 @@ module.exports = {
                 id:  201,
                 coord_x:  276,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1816,7 +1816,7 @@ module.exports = {
                 id:  202,
                 coord_x:  274,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1825,7 +1825,7 @@ module.exports = {
                 id:  203,
                 coord_x:  273,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1834,7 +1834,7 @@ module.exports = {
                 id:  204,
                 coord_x:  270,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1843,7 +1843,7 @@ module.exports = {
                 id:  205,
                 coord_x:  267,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1852,7 +1852,7 @@ module.exports = {
                 id:  206,
                 coord_x:  266,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1861,7 +1861,7 @@ module.exports = {
                 id:  207,
                 coord_x:  265,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1870,7 +1870,7 @@ module.exports = {
                 id:  208,
                 coord_x:  263,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1879,7 +1879,7 @@ module.exports = {
                 id:  209,
                 coord_x:  262,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1888,7 +1888,7 @@ module.exports = {
                 id:  210,
                 coord_x:  260,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1897,7 +1897,7 @@ module.exports = {
                 id:  211,
                 coord_x:  259,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1906,7 +1906,7 @@ module.exports = {
                 id:  212,
                 coord_x:  257,
                 coord_y:  306,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1915,7 +1915,7 @@ module.exports = {
                 id:  213,
                 coord_x:  256,
                 coord_y:  307,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1924,7 +1924,7 @@ module.exports = {
                 id:  214,
                 coord_x:  255,
                 coord_y:  309,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1933,7 +1933,7 @@ module.exports = {
                 id:  215,
                 coord_x:  253,
                 coord_y:  310,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1942,7 +1942,7 @@ module.exports = {
                 id:  216,
                 coord_x:  253,
                 coord_y:  311,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1951,7 +1951,7 @@ module.exports = {
                 id:  217,
                 coord_x:  251,
                 coord_y:  312,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1960,7 +1960,7 @@ module.exports = {
                 id:  218,
                 coord_x:  251,
                 coord_y:  314,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:08",
                 updated_at:  "2020-03-28 10:15:08" 
@@ -1969,7 +1969,7 @@ module.exports = {
                 id:  219,
                 coord_x:  249,
                 coord_y:  316,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -1978,7 +1978,7 @@ module.exports = {
                 id:  220,
                 coord_x:  248,
                 coord_y:  318,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -1987,7 +1987,7 @@ module.exports = {
                 id:  221,
                 coord_x:  246,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -1996,7 +1996,7 @@ module.exports = {
                 id:  222,
                 coord_x:  245,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2005,7 +2005,7 @@ module.exports = {
                 id:  223,
                 coord_x:  243,
                 coord_y:  322,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2014,7 +2014,7 @@ module.exports = {
                 id:  224,
                 coord_x:  242,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2023,7 +2023,7 @@ module.exports = {
                 id:  225,
                 coord_x:  241,
                 coord_y:  324,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2032,7 +2032,7 @@ module.exports = {
                 id:  226,
                 coord_x:  241,
                 coord_y:  324,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2041,7 +2041,7 @@ module.exports = {
                 id:  227,
                 coord_x:  239,
                 coord_y:  327,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2050,7 +2050,7 @@ module.exports = {
                 id:  228,
                 coord_x:  239,
                 coord_y:  327,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2059,7 +2059,7 @@ module.exports = {
                 id:  229,
                 coord_x:  239,
                 coord_y:  328,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2068,7 +2068,7 @@ module.exports = {
                 id:  230,
                 coord_x:  238,
                 coord_y:  328,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2077,7 +2077,7 @@ module.exports = {
                 id:  231,
                 coord_x:  237,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2086,7 +2086,7 @@ module.exports = {
                 id:  232,
                 coord_x:  237,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2095,7 +2095,7 @@ module.exports = {
                 id:  233,
                 coord_x:  237,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2104,7 +2104,7 @@ module.exports = {
                 id:  234,
                 coord_x:  237,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2113,7 +2113,7 @@ module.exports = {
                 id:  235,
                 coord_x:  237,
                 coord_y:  331,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2122,7 +2122,7 @@ module.exports = {
                 id:  236,
                 coord_x:  237,
                 coord_y:  331,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2131,7 +2131,7 @@ module.exports = {
                 id:  237,
                 coord_x:  237,
                 coord_y:  333,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2140,7 +2140,7 @@ module.exports = {
                 id:  238,
                 coord_x:  237,
                 coord_y:  336,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2149,7 +2149,7 @@ module.exports = {
                 id:  239,
                 coord_x:  237,
                 coord_y:  337,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2158,7 +2158,7 @@ module.exports = {
                 id:  240,
                 coord_x:  237,
                 coord_y:  339,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2167,7 +2167,7 @@ module.exports = {
                 id:  241,
                 coord_x:  237,
                 coord_y:  341,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2176,7 +2176,7 @@ module.exports = {
                 id:  242,
                 coord_x:  237,
                 coord_y:  343,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2185,7 +2185,7 @@ module.exports = {
                 id:  243,
                 coord_x:  237,
                 coord_y:  344,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2194,7 +2194,7 @@ module.exports = {
                 id:  244,
                 coord_x:  237,
                 coord_y:  344,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2203,7 +2203,7 @@ module.exports = {
                 id:  245,
                 coord_x:  239,
                 coord_y:  346,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2212,7 +2212,7 @@ module.exports = {
                 id:  246,
                 coord_x:  242,
                 coord_y:  346,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2221,7 +2221,7 @@ module.exports = {
                 id:  247,
                 coord_x:  244,
                 coord_y:  346,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2230,7 +2230,7 @@ module.exports = {
                 id:  248,
                 coord_x:  246,
                 coord_y:  347,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2239,7 +2239,7 @@ module.exports = {
                 id:  249,
                 coord_x:  248,
                 coord_y:  347,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2248,7 +2248,7 @@ module.exports = {
                 id:  250,
                 coord_x:  248,
                 coord_y:  347,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2257,7 +2257,7 @@ module.exports = {
                 id:  251,
                 coord_x:  250,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2266,7 +2266,7 @@ module.exports = {
                 id:  252,
                 coord_x:  251,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2275,7 +2275,7 @@ module.exports = {
                 id:  253,
                 coord_x:  254,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2284,7 +2284,7 @@ module.exports = {
                 id:  254,
                 coord_x:  255,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2293,7 +2293,7 @@ module.exports = {
                 id:  255,
                 coord_x:  257,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2302,7 +2302,7 @@ module.exports = {
                 id:  256,
                 coord_x:  258,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2311,7 +2311,7 @@ module.exports = {
                 id:  257,
                 coord_x:  259,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2320,7 +2320,7 @@ module.exports = {
                 id:  258,
                 coord_x:  260,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2329,7 +2329,7 @@ module.exports = {
                 id:  259,
                 coord_x:  261,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2338,7 +2338,7 @@ module.exports = {
                 id:  260,
                 coord_x:  263,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2347,7 +2347,7 @@ module.exports = {
                 id:  261,
                 coord_x:  263,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2356,7 +2356,7 @@ module.exports = {
                 id:  262,
                 coord_x:  265,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2365,7 +2365,7 @@ module.exports = {
                 id:  263,
                 coord_x:  267,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2374,7 +2374,7 @@ module.exports = {
                 id:  264,
                 coord_x:  270,
                 coord_y:  348,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2383,7 +2383,7 @@ module.exports = {
                 id:  265,
                 coord_x:  270,
                 coord_y:  347,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2392,7 +2392,7 @@ module.exports = {
                 id:  266,
                 coord_x:  272,
                 coord_y:  346,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2401,7 +2401,7 @@ module.exports = {
                 id:  267,
                 coord_x:  272,
                 coord_y:  345,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2410,7 +2410,7 @@ module.exports = {
                 id:  268,
                 coord_x:  273,
                 coord_y:  344,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2419,7 +2419,7 @@ module.exports = {
                 id:  269,
                 coord_x:  274,
                 coord_y:  343,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2428,7 +2428,7 @@ module.exports = {
                 id:  270,
                 coord_x:  276,
                 coord_y:  342,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2437,7 +2437,7 @@ module.exports = {
                 id:  271,
                 coord_x:  277,
                 coord_y:  342,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2446,7 +2446,7 @@ module.exports = {
                 id:  272,
                 coord_x:  278,
                 coord_y:  341,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2455,7 +2455,7 @@ module.exports = {
                 id:  273,
                 coord_x:  281,
                 coord_y:  340,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2464,7 +2464,7 @@ module.exports = {
                 id:  274,
                 coord_x:  283,
                 coord_y:  339,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2473,7 +2473,7 @@ module.exports = {
                 id:  275,
                 coord_x:  284,
                 coord_y:  337,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2482,7 +2482,7 @@ module.exports = {
                 id:  276,
                 coord_x:  285,
                 coord_y:  337,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2491,7 +2491,7 @@ module.exports = {
                 id:  277,
                 coord_x:  288,
                 coord_y:  336,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2500,7 +2500,7 @@ module.exports = {
                 id:  278,
                 coord_x:  291,
                 coord_y:  335,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2509,7 +2509,7 @@ module.exports = {
                 id:  279,
                 coord_x:  291,
                 coord_y:  335,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2518,7 +2518,7 @@ module.exports = {
                 id:  280,
                 coord_x:  293,
                 coord_y:  333,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2527,7 +2527,7 @@ module.exports = {
                 id:  281,
                 coord_x:  294,
                 coord_y:  333,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2536,7 +2536,7 @@ module.exports = {
                 id:  282,
                 coord_x:  296,
                 coord_y:  332,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2545,7 +2545,7 @@ module.exports = {
                 id:  283,
                 coord_x:  297,
                 coord_y:  332,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2554,7 +2554,7 @@ module.exports = {
                 id:  284,
                 coord_x:  298,
                 coord_y:  332,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2563,7 +2563,7 @@ module.exports = {
                 id:  285,
                 coord_x:  298,
                 coord_y:  332,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2572,7 +2572,7 @@ module.exports = {
                 id:  286,
                 coord_x:  299,
                 coord_y:  332,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2581,7 +2581,7 @@ module.exports = {
                 id:  287,
                 coord_x:  300,
                 coord_y:  332,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2590,7 +2590,7 @@ module.exports = {
                 id:  288,
                 coord_x:  301,
                 coord_y:  332,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2599,7 +2599,7 @@ module.exports = {
                 id:  289,
                 coord_x:  302,
                 coord_y:  331,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2608,7 +2608,7 @@ module.exports = {
                 id:  290,
                 coord_x:  303,
                 coord_y:  331,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2617,7 +2617,7 @@ module.exports = {
                 id:  291,
                 coord_x:  303,
                 coord_y:  331,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2626,7 +2626,7 @@ module.exports = {
                 id:  292,
                 coord_x:  304,
                 coord_y:  331,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2635,7 +2635,7 @@ module.exports = {
                 id:  293,
                 coord_x:  304,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2644,7 +2644,7 @@ module.exports = {
                 id:  294,
                 coord_x:  306,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2653,7 +2653,7 @@ module.exports = {
                 id:  295,
                 coord_x:  307,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2662,7 +2662,7 @@ module.exports = {
                 id:  296,
                 coord_x:  307,
                 coord_y:  327,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2671,7 +2671,7 @@ module.exports = {
                 id:  297,
                 coord_x:  307,
                 coord_y:  326,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2680,7 +2680,7 @@ module.exports = {
                 id:  298,
                 coord_x:  307,
                 coord_y:  325,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2689,7 +2689,7 @@ module.exports = {
                 id:  299,
                 coord_x:  307,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2698,7 +2698,7 @@ module.exports = {
                 id:  300,
                 coord_x:  308,
                 coord_y:  321,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2707,7 +2707,7 @@ module.exports = {
                 id:  301,
                 coord_x:  308,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2716,7 +2716,7 @@ module.exports = {
                 id:  302,
                 coord_x:  308,
                 coord_y:  318,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2725,7 +2725,7 @@ module.exports = {
                 id:  303,
                 coord_x:  308,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2734,7 +2734,7 @@ module.exports = {
                 id:  304,
                 coord_x:  308,
                 coord_y:  310,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2743,7 +2743,7 @@ module.exports = {
                 id:  305,
                 coord_x:  308,
                 coord_y:  309,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:09",
                 updated_at:  "2020-03-28 10:15:09" 
@@ -2752,7 +2752,7 @@ module.exports = {
                 id:  306,
                 coord_x:  308,
                 coord_y:  308,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2761,7 +2761,7 @@ module.exports = {
                 id:  307,
                 coord_x:  307,
                 coord_y:  307,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2770,7 +2770,7 @@ module.exports = {
                 id:  308,
                 coord_x:  306,
                 coord_y:  306,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2779,7 +2779,7 @@ module.exports = {
                 id:  309,
                 coord_x:  305,
                 coord_y:  305,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2788,7 +2788,7 @@ module.exports = {
                 id:  310,
                 coord_x:  303,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2797,7 +2797,7 @@ module.exports = {
                 id:  311,
                 coord_x:  303,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2806,7 +2806,7 @@ module.exports = {
                 id:  312,
                 coord_x:  302,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2815,7 +2815,7 @@ module.exports = {
                 id:  313,
                 coord_x:  301,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2824,7 +2824,7 @@ module.exports = {
                 id:  314,
                 coord_x:  301,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2833,7 +2833,7 @@ module.exports = {
                 id:  315,
                 coord_x:  300,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2842,7 +2842,7 @@ module.exports = {
                 id:  316,
                 coord_x:  299,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2851,7 +2851,7 @@ module.exports = {
                 id:  317,
                 coord_x:  298,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2860,7 +2860,7 @@ module.exports = {
                 id:  318,
                 coord_x:  297,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2869,7 +2869,7 @@ module.exports = {
                 id:  319,
                 coord_x:  296,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2878,7 +2878,7 @@ module.exports = {
                 id:  320,
                 coord_x:  295,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2887,7 +2887,7 @@ module.exports = {
                 id:  321,
                 coord_x:  294,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2896,7 +2896,7 @@ module.exports = {
                 id:  322,
                 coord_x:  293,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2905,7 +2905,7 @@ module.exports = {
                 id:  323,
                 coord_x:  293,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2914,7 +2914,7 @@ module.exports = {
                 id:  324,
                 coord_x:  293,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2923,7 +2923,7 @@ module.exports = {
                 id:  325,
                 coord_x:  292,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2932,7 +2932,7 @@ module.exports = {
                 id:  326,
                 coord_x:  292,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2941,7 +2941,7 @@ module.exports = {
                 id:  327,
                 coord_x:  293,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2950,7 +2950,7 @@ module.exports = {
                 id:  328,
                 coord_x:  294,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2959,7 +2959,7 @@ module.exports = {
                 id:  329,
                 coord_x:  295,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2968,7 +2968,7 @@ module.exports = {
                 id:  330,
                 coord_x:  296,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2977,7 +2977,7 @@ module.exports = {
                 id:  331,
                 coord_x:  297,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  6,
                 created_at:  "2020-03-28 10:15:10",
                 updated_at:  "2020-03-28 10:15:10" 
@@ -2986,7 +2986,7 @@ module.exports = {
                 id:  332,
                 coord_x:  279,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -2995,7 +2995,7 @@ module.exports = {
                 id:  333,
                 coord_x:  278,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3004,7 +3004,7 @@ module.exports = {
                 id:  334,
                 coord_x:  278,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3013,7 +3013,7 @@ module.exports = {
                 id:  335,
                 coord_x:  276,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3022,7 +3022,7 @@ module.exports = {
                 id:  336,
                 coord_x:  274,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3031,7 +3031,7 @@ module.exports = {
                 id:  337,
                 coord_x:  272,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3040,7 +3040,7 @@ module.exports = {
                 id:  338,
                 coord_x:  271,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3049,7 +3049,7 @@ module.exports = {
                 id:  339,
                 coord_x:  269,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3058,7 +3058,7 @@ module.exports = {
                 id:  340,
                 coord_x:  267,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3067,7 +3067,7 @@ module.exports = {
                 id:  341,
                 coord_x:  265,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3076,7 +3076,7 @@ module.exports = {
                 id:  342,
                 coord_x:  263,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3085,7 +3085,7 @@ module.exports = {
                 id:  343,
                 coord_x:  263,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3094,7 +3094,7 @@ module.exports = {
                 id:  344,
                 coord_x:  263,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3103,7 +3103,7 @@ module.exports = {
                 id:  345,
                 coord_x:  262,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3112,7 +3112,7 @@ module.exports = {
                 id:  346,
                 coord_x:  261,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3121,7 +3121,7 @@ module.exports = {
                 id:  347,
                 coord_x:  260,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3130,7 +3130,7 @@ module.exports = {
                 id:  348,
                 coord_x:  258,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3139,7 +3139,7 @@ module.exports = {
                 id:  349,
                 coord_x:  258,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3148,7 +3148,7 @@ module.exports = {
                 id:  350,
                 coord_x:  257,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3157,7 +3157,7 @@ module.exports = {
                 id:  351,
                 coord_x:  256,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3166,7 +3166,7 @@ module.exports = {
                 id:  352,
                 coord_x:  255,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3175,7 +3175,7 @@ module.exports = {
                 id:  353,
                 coord_x:  254,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3184,7 +3184,7 @@ module.exports = {
                 id:  354,
                 coord_x:  253,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3193,7 +3193,7 @@ module.exports = {
                 id:  355,
                 coord_x:  252,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3202,7 +3202,7 @@ module.exports = {
                 id:  356,
                 coord_x:  251,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3211,7 +3211,7 @@ module.exports = {
                 id:  357,
                 coord_x:  251,
                 coord_y:  112,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3220,7 +3220,7 @@ module.exports = {
                 id:  358,
                 coord_x:  251,
                 coord_y:  113,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3229,7 +3229,7 @@ module.exports = {
                 id:  359,
                 coord_x:  250,
                 coord_y:  114,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:19",
                 updated_at:  "2020-03-28 10:19:19" 
@@ -3238,7 +3238,7 @@ module.exports = {
                 id:  360,
                 coord_x:  250,
                 coord_y:  115,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3247,7 +3247,7 @@ module.exports = {
                 id:  361,
                 coord_x:  249,
                 coord_y:  116,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3256,7 +3256,7 @@ module.exports = {
                 id:  362,
                 coord_x:  249,
                 coord_y:  117,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3265,7 +3265,7 @@ module.exports = {
                 id:  363,
                 coord_x:  249,
                 coord_y:  117,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3274,7 +3274,7 @@ module.exports = {
                 id:  364,
                 coord_x:  249,
                 coord_y:  119,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3283,7 +3283,7 @@ module.exports = {
                 id:  365,
                 coord_x:  248,
                 coord_y:  120,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3292,7 +3292,7 @@ module.exports = {
                 id:  366,
                 coord_x:  248,
                 coord_y:  122,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3301,7 +3301,7 @@ module.exports = {
                 id:  367,
                 coord_x:  248,
                 coord_y:  123,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3310,7 +3310,7 @@ module.exports = {
                 id:  368,
                 coord_x:  248,
                 coord_y:  124,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3319,7 +3319,7 @@ module.exports = {
                 id:  369,
                 coord_x:  248,
                 coord_y:  126,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3328,7 +3328,7 @@ module.exports = {
                 id:  370,
                 coord_x:  248,
                 coord_y:  129,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3337,7 +3337,7 @@ module.exports = {
                 id:  371,
                 coord_x:  248,
                 coord_y:  130,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3346,7 +3346,7 @@ module.exports = {
                 id:  372,
                 coord_x:  248,
                 coord_y:  132,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3355,7 +3355,7 @@ module.exports = {
                 id:  373,
                 coord_x:  248,
                 coord_y:  133,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3364,7 +3364,7 @@ module.exports = {
                 id:  374,
                 coord_x:  248,
                 coord_y:  134,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3373,7 +3373,7 @@ module.exports = {
                 id:  375,
                 coord_x:  248,
                 coord_y:  136,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3382,7 +3382,7 @@ module.exports = {
                 id:  376,
                 coord_x:  248,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3391,7 +3391,7 @@ module.exports = {
                 id:  377,
                 coord_x:  248,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3400,7 +3400,7 @@ module.exports = {
                 id:  378,
                 coord_x:  248,
                 coord_y:  140,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3409,7 +3409,7 @@ module.exports = {
                 id:  379,
                 coord_x:  248,
                 coord_y:  141,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3418,7 +3418,7 @@ module.exports = {
                 id:  380,
                 coord_x:  248,
                 coord_y:  142,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3427,7 +3427,7 @@ module.exports = {
                 id:  381,
                 coord_x:  248,
                 coord_y:  143,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3436,7 +3436,7 @@ module.exports = {
                 id:  382,
                 coord_x:  248,
                 coord_y:  145,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3445,7 +3445,7 @@ module.exports = {
                 id:  383,
                 coord_x:  248,
                 coord_y:  147,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3454,7 +3454,7 @@ module.exports = {
                 id:  384,
                 coord_x:  248,
                 coord_y:  149,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3463,7 +3463,7 @@ module.exports = {
                 id:  385,
                 coord_x:  248,
                 coord_y:  150,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3472,7 +3472,7 @@ module.exports = {
                 id:  386,
                 coord_x:  248,
                 coord_y:  150,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3481,7 +3481,7 @@ module.exports = {
                 id:  387,
                 coord_x:  250,
                 coord_y:  151,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3490,7 +3490,7 @@ module.exports = {
                 id:  388,
                 coord_x:  251,
                 coord_y:  151,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3499,7 +3499,7 @@ module.exports = {
                 id:  389,
                 coord_x:  255,
                 coord_y:  153,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3508,7 +3508,7 @@ module.exports = {
                 id:  390,
                 coord_x:  256,
                 coord_y:  153,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3517,7 +3517,7 @@ module.exports = {
                 id:  391,
                 coord_x:  258,
                 coord_y:  154,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3526,7 +3526,7 @@ module.exports = {
                 id:  392,
                 coord_x:  259,
                 coord_y:  154,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3535,7 +3535,7 @@ module.exports = {
                 id:  393,
                 coord_x:  260,
                 coord_y:  154,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3544,7 +3544,7 @@ module.exports = {
                 id:  394,
                 coord_x:  261,
                 coord_y:  154,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3553,7 +3553,7 @@ module.exports = {
                 id:  395,
                 coord_x:  263,
                 coord_y:  155,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3562,7 +3562,7 @@ module.exports = {
                 id:  396,
                 coord_x:  265,
                 coord_y:  155,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3571,7 +3571,7 @@ module.exports = {
                 id:  397,
                 coord_x:  265,
                 coord_y:  155,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3580,7 +3580,7 @@ module.exports = {
                 id:  398,
                 coord_x:  267,
                 coord_y:  155,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3589,7 +3589,7 @@ module.exports = {
                 id:  399,
                 coord_x:  270,
                 coord_y:  155,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3598,7 +3598,7 @@ module.exports = {
                 id:  400,
                 coord_x:  270,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3607,7 +3607,7 @@ module.exports = {
                 id:  401,
                 coord_x:  272,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3616,7 +3616,7 @@ module.exports = {
                 id:  402,
                 coord_x:  272,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3625,7 +3625,7 @@ module.exports = {
                 id:  403,
                 coord_x:  273,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3634,7 +3634,7 @@ module.exports = {
                 id:  404,
                 coord_x:  274,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3643,7 +3643,7 @@ module.exports = {
                 id:  405,
                 coord_x:  275,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3652,7 +3652,7 @@ module.exports = {
                 id:  406,
                 coord_x:  276,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3661,7 +3661,7 @@ module.exports = {
                 id:  407,
                 coord_x:  277,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3670,7 +3670,7 @@ module.exports = {
                 id:  408,
                 coord_x:  278,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3679,7 +3679,7 @@ module.exports = {
                 id:  409,
                 coord_x:  280,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3688,7 +3688,7 @@ module.exports = {
                 id:  410,
                 coord_x:  281,
                 coord_y:  156,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3697,7 +3697,7 @@ module.exports = {
                 id:  411,
                 coord_x:  283,
                 coord_y:  155,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3706,7 +3706,7 @@ module.exports = {
                 id:  412,
                 coord_x:  284,
                 coord_y:  154,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3715,7 +3715,7 @@ module.exports = {
                 id:  413,
                 coord_x:  285,
                 coord_y:  153,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3724,7 +3724,7 @@ module.exports = {
                 id:  414,
                 coord_x:  286,
                 coord_y:  153,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3733,7 +3733,7 @@ module.exports = {
                 id:  415,
                 coord_x:  287,
                 coord_y:  152,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3742,7 +3742,7 @@ module.exports = {
                 id:  416,
                 coord_x:  288,
                 coord_y:  151,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3751,7 +3751,7 @@ module.exports = {
                 id:  417,
                 coord_x:  288,
                 coord_y:  150,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3760,7 +3760,7 @@ module.exports = {
                 id:  418,
                 coord_x:  289,
                 coord_y:  150,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3769,7 +3769,7 @@ module.exports = {
                 id:  419,
                 coord_x:  290,
                 coord_y:  149,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3778,7 +3778,7 @@ module.exports = {
                 id:  420,
                 coord_x:  291,
                 coord_y:  149,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3787,7 +3787,7 @@ module.exports = {
                 id:  421,
                 coord_x:  291,
                 coord_y:  147,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3796,7 +3796,7 @@ module.exports = {
                 id:  422,
                 coord_x:  292,
                 coord_y:  147,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3805,7 +3805,7 @@ module.exports = {
                 id:  423,
                 coord_x:  292,
                 coord_y:  146,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3814,7 +3814,7 @@ module.exports = {
                 id:  424,
                 coord_x:  292,
                 coord_y:  145,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3823,7 +3823,7 @@ module.exports = {
                 id:  425,
                 coord_x:  293,
                 coord_y:  143,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3832,7 +3832,7 @@ module.exports = {
                 id:  426,
                 coord_x:  293,
                 coord_y:  142,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3841,7 +3841,7 @@ module.exports = {
                 id:  427,
                 coord_x:  293,
                 coord_y:  140,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3850,7 +3850,7 @@ module.exports = {
                 id:  428,
                 coord_x:  293,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3859,7 +3859,7 @@ module.exports = {
                 id:  429,
                 coord_x:  293,
                 coord_y:  136,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3868,7 +3868,7 @@ module.exports = {
                 id:  430,
                 coord_x:  293,
                 coord_y:  135,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3877,7 +3877,7 @@ module.exports = {
                 id:  431,
                 coord_x:  293,
                 coord_y:  133,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3886,7 +3886,7 @@ module.exports = {
                 id:  432,
                 coord_x:  293,
                 coord_y:  131,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3895,7 +3895,7 @@ module.exports = {
                 id:  433,
                 coord_x:  293,
                 coord_y:  130,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3904,7 +3904,7 @@ module.exports = {
                 id:  434,
                 coord_x:  293,
                 coord_y:  128,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3913,7 +3913,7 @@ module.exports = {
                 id:  435,
                 coord_x:  291,
                 coord_y:  123,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3922,7 +3922,7 @@ module.exports = {
                 id:  436,
                 coord_x:  290,
                 coord_y:  123,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3931,7 +3931,7 @@ module.exports = {
                 id:  437,
                 coord_x:  288,
                 coord_y:  117,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3940,7 +3940,7 @@ module.exports = {
                 id:  438,
                 coord_x:  287,
                 coord_y:  116,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3949,7 +3949,7 @@ module.exports = {
                 id:  439,
                 coord_x:  287,
                 coord_y:  116,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3958,7 +3958,7 @@ module.exports = {
                 id:  440,
                 coord_x:  286,
                 coord_y:  115,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3967,7 +3967,7 @@ module.exports = {
                 id:  441,
                 coord_x:  286,
                 coord_y:  115,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3976,7 +3976,7 @@ module.exports = {
                 id:  442,
                 coord_x:  285,
                 coord_y:  114,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3985,7 +3985,7 @@ module.exports = {
                 id:  443,
                 coord_x:  284,
                 coord_y:  113,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -3994,7 +3994,7 @@ module.exports = {
                 id:  444,
                 coord_x:  284,
                 coord_y:  112,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:20",
                 updated_at:  "2020-03-28 10:19:20" 
@@ -4003,7 +4003,7 @@ module.exports = {
                 id:  445,
                 coord_x:  284,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4012,7 +4012,7 @@ module.exports = {
                 id:  446,
                 coord_x:  282,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4021,7 +4021,7 @@ module.exports = {
                 id:  447,
                 coord_x:  281,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4030,7 +4030,7 @@ module.exports = {
                 id:  448,
                 coord_x:  280,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4039,7 +4039,7 @@ module.exports = {
                 id:  449,
                 coord_x:  279,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4048,7 +4048,7 @@ module.exports = {
                 id:  450,
                 coord_x:  279,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4057,7 +4057,7 @@ module.exports = {
                 id:  451,
                 coord_x:  278,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4066,7 +4066,7 @@ module.exports = {
                 id:  452,
                 coord_x:  277,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4075,7 +4075,7 @@ module.exports = {
                 id:  453,
                 coord_x:  277,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4084,7 +4084,7 @@ module.exports = {
                 id:  454,
                 coord_x:  277,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4093,7 +4093,7 @@ module.exports = {
                 id:  455,
                 coord_x:  276,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4102,7 +4102,7 @@ module.exports = {
                 id:  456,
                 coord_x:  276,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4111,7 +4111,7 @@ module.exports = {
                 id:  457,
                 coord_x:  275,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4120,7 +4120,7 @@ module.exports = {
                 id:  458,
                 coord_x:  275,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4129,7 +4129,7 @@ module.exports = {
                 id:  459,
                 coord_x:  275,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4138,7 +4138,7 @@ module.exports = {
                 id:  460,
                 coord_x:  274,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4147,7 +4147,7 @@ module.exports = {
                 id:  461,
                 coord_x:  274,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4156,7 +4156,7 @@ module.exports = {
                 id:  462,
                 coord_x:  274,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4165,7 +4165,7 @@ module.exports = {
                 id:  463,
                 coord_x:  274,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4174,7 +4174,7 @@ module.exports = {
                 id:  464,
                 coord_x:  274,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4183,7 +4183,7 @@ module.exports = {
                 id:  465,
                 coord_x:  273,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4192,7 +4192,7 @@ module.exports = {
                 id:  466,
                 coord_x:  273,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4201,7 +4201,7 @@ module.exports = {
                 id:  467,
                 coord_x:  273,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4210,7 +4210,7 @@ module.exports = {
                 id:  468,
                 coord_x:  272,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4219,7 +4219,7 @@ module.exports = {
                 id:  469,
                 coord_x:  272,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4228,7 +4228,7 @@ module.exports = {
                 id:  470,
                 coord_x:  271,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4237,7 +4237,7 @@ module.exports = {
                 id:  471,
                 coord_x:  271,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4246,7 +4246,7 @@ module.exports = {
                 id:  472,
                 coord_x:  271,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4255,7 +4255,7 @@ module.exports = {
                 id:  473,
                 coord_x:  270,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4264,7 +4264,7 @@ module.exports = {
                 id:  474,
                 coord_x:  270,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4273,7 +4273,7 @@ module.exports = {
                 id:  475,
                 coord_x:  269,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4282,7 +4282,7 @@ module.exports = {
                 id:  476,
                 coord_x:  269,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4291,7 +4291,7 @@ module.exports = {
                 id:  477,
                 coord_x:  269,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4300,7 +4300,7 @@ module.exports = {
                 id:  478,
                 coord_x:  269,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4309,7 +4309,7 @@ module.exports = {
                 id:  479,
                 coord_x:  270,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4318,7 +4318,7 @@ module.exports = {
                 id:  480,
                 coord_x:  271,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4327,7 +4327,7 @@ module.exports = {
                 id:  481,
                 coord_x:  272,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4336,7 +4336,7 @@ module.exports = {
                 id:  482,
                 coord_x:  273,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4345,7 +4345,7 @@ module.exports = {
                 id:  483,
                 coord_x:  274,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4354,7 +4354,7 @@ module.exports = {
                 id:  484,
                 coord_x:  275,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4363,7 +4363,7 @@ module.exports = {
                 id:  485,
                 coord_x:  276,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4372,7 +4372,7 @@ module.exports = {
                 id:  486,
                 coord_x:  277,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4381,7 +4381,7 @@ module.exports = {
                 id:  487,
                 coord_x:  278,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4390,7 +4390,7 @@ module.exports = {
                 id:  488,
                 coord_x:  279,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  14,
                 created_at:  "2020-03-28 10:19:21",
                 updated_at:  "2020-03-28 10:19:21" 
@@ -4399,7 +4399,7 @@ module.exports = {
                 id:  489,
                 coord_x:  294,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4408,7 +4408,7 @@ module.exports = {
                 id:  490,
                 coord_x:  294,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4417,7 +4417,7 @@ module.exports = {
                 id:  491,
                 coord_x:  293,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4426,7 +4426,7 @@ module.exports = {
                 id:  492,
                 coord_x:  292,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4435,7 +4435,7 @@ module.exports = {
                 id:  493,
                 coord_x:  291,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4444,7 +4444,7 @@ module.exports = {
                 id:  494,
                 coord_x:  290,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4453,7 +4453,7 @@ module.exports = {
                 id:  495,
                 coord_x:  288,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4462,7 +4462,7 @@ module.exports = {
                 id:  496,
                 coord_x:  287,
                 coord_y:  186,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4471,7 +4471,7 @@ module.exports = {
                 id:  497,
                 coord_x:  285,
                 coord_y:  187,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4480,7 +4480,7 @@ module.exports = {
                 id:  498,
                 coord_x:  284,
                 coord_y:  189,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4489,7 +4489,7 @@ module.exports = {
                 id:  499,
                 coord_x:  282,
                 coord_y:  190,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4498,7 +4498,7 @@ module.exports = {
                 id:  500,
                 coord_x:  281,
                 coord_y:  191,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4507,7 +4507,7 @@ module.exports = {
                 id:  501,
                 coord_x:  280,
                 coord_y:  192,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4516,7 +4516,7 @@ module.exports = {
                 id:  502,
                 coord_x:  280,
                 coord_y:  192,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4525,7 +4525,7 @@ module.exports = {
                 id:  503,
                 coord_x:  279,
                 coord_y:  193,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4534,7 +4534,7 @@ module.exports = {
                 id:  504,
                 coord_x:  278,
                 coord_y:  195,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4543,7 +4543,7 @@ module.exports = {
                 id:  505,
                 coord_x:  277,
                 coord_y:  198,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4552,7 +4552,7 @@ module.exports = {
                 id:  506,
                 coord_x:  277,
                 coord_y:  199,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4561,7 +4561,7 @@ module.exports = {
                 id:  507,
                 coord_x:  277,
                 coord_y:  200,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4570,7 +4570,7 @@ module.exports = {
                 id:  508,
                 coord_x:  277,
                 coord_y:  202,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4579,7 +4579,7 @@ module.exports = {
                 id:  509,
                 coord_x:  277,
                 coord_y:  202,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4588,7 +4588,7 @@ module.exports = {
                 id:  510,
                 coord_x:  277,
                 coord_y:  202,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4597,7 +4597,7 @@ module.exports = {
                 id:  511,
                 coord_x:  276,
                 coord_y:  203,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4606,7 +4606,7 @@ module.exports = {
                 id:  512,
                 coord_x:  276,
                 coord_y:  203,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4615,7 +4615,7 @@ module.exports = {
                 id:  513,
                 coord_x:  276,
                 coord_y:  204,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4624,7 +4624,7 @@ module.exports = {
                 id:  514,
                 coord_x:  276,
                 coord_y:  204,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4633,7 +4633,7 @@ module.exports = {
                 id:  515,
                 coord_x:  276,
                 coord_y:  206,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4642,7 +4642,7 @@ module.exports = {
                 id:  516,
                 coord_x:  276,
                 coord_y:  208,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4651,7 +4651,7 @@ module.exports = {
                 id:  517,
                 coord_x:  276,
                 coord_y:  209,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4660,7 +4660,7 @@ module.exports = {
                 id:  518,
                 coord_x:  276,
                 coord_y:  211,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4669,7 +4669,7 @@ module.exports = {
                 id:  519,
                 coord_x:  276,
                 coord_y:  212,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4678,7 +4678,7 @@ module.exports = {
                 id:  520,
                 coord_x:  276,
                 coord_y:  213,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4687,7 +4687,7 @@ module.exports = {
                 id:  521,
                 coord_x:  276,
                 coord_y:  214,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4696,7 +4696,7 @@ module.exports = {
                 id:  522,
                 coord_x:  276,
                 coord_y:  215,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4705,7 +4705,7 @@ module.exports = {
                 id:  523,
                 coord_x:  276,
                 coord_y:  217,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4714,7 +4714,7 @@ module.exports = {
                 id:  524,
                 coord_x:  277,
                 coord_y:  218,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4723,7 +4723,7 @@ module.exports = {
                 id:  525,
                 coord_x:  277,
                 coord_y:  220,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4732,7 +4732,7 @@ module.exports = {
                 id:  526,
                 coord_x:  280,
                 coord_y:  222,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4741,7 +4741,7 @@ module.exports = {
                 id:  527,
                 coord_x:  283,
                 coord_y:  223,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4750,7 +4750,7 @@ module.exports = {
                 id:  528,
                 coord_x:  284,
                 coord_y:  224,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4759,7 +4759,7 @@ module.exports = {
                 id:  529,
                 coord_x:  286,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4768,7 +4768,7 @@ module.exports = {
                 id:  530,
                 coord_x:  287,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4777,7 +4777,7 @@ module.exports = {
                 id:  531,
                 coord_x:  288,
                 coord_y:  228,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4786,7 +4786,7 @@ module.exports = {
                 id:  532,
                 coord_x:  291,
                 coord_y:  230,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4795,7 +4795,7 @@ module.exports = {
                 id:  533,
                 coord_x:  293,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:56",
                 updated_at:  "2020-03-28 10:19:56" 
@@ -4804,7 +4804,7 @@ module.exports = {
                 id:  534,
                 coord_x:  295,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4813,7 +4813,7 @@ module.exports = {
                 id:  535,
                 coord_x:  298,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4822,7 +4822,7 @@ module.exports = {
                 id:  536,
                 coord_x:  299,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4831,7 +4831,7 @@ module.exports = {
                 id:  537,
                 coord_x:  301,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4840,7 +4840,7 @@ module.exports = {
                 id:  538,
                 coord_x:  301,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4849,7 +4849,7 @@ module.exports = {
                 id:  539,
                 coord_x:  302,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4858,7 +4858,7 @@ module.exports = {
                 id:  540,
                 coord_x:  303,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4867,7 +4867,7 @@ module.exports = {
                 id:  541,
                 coord_x:  306,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4876,7 +4876,7 @@ module.exports = {
                 id:  542,
                 coord_x:  306,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4885,7 +4885,7 @@ module.exports = {
                 id:  543,
                 coord_x:  307,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4894,7 +4894,7 @@ module.exports = {
                 id:  544,
                 coord_x:  309,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4903,7 +4903,7 @@ module.exports = {
                 id:  545,
                 coord_x:  312,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4912,7 +4912,7 @@ module.exports = {
                 id:  546,
                 coord_x:  313,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4921,7 +4921,7 @@ module.exports = {
                 id:  547,
                 coord_x:  314,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4930,7 +4930,7 @@ module.exports = {
                 id:  548,
                 coord_x:  316,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4939,7 +4939,7 @@ module.exports = {
                 id:  549,
                 coord_x:  319,
                 coord_y:  229,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4948,7 +4948,7 @@ module.exports = {
                 id:  550,
                 coord_x:  319,
                 coord_y:  229,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4957,7 +4957,7 @@ module.exports = {
                 id:  551,
                 coord_x:  320,
                 coord_y:  228,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4966,7 +4966,7 @@ module.exports = {
                 id:  552,
                 coord_x:  322,
                 coord_y:  226,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4975,7 +4975,7 @@ module.exports = {
                 id:  553,
                 coord_x:  324,
                 coord_y:  222,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4984,7 +4984,7 @@ module.exports = {
                 id:  554,
                 coord_x:  324,
                 coord_y:  218,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -4993,7 +4993,7 @@ module.exports = {
                 id:  555,
                 coord_x:  324,
                 coord_y:  217,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5002,7 +5002,7 @@ module.exports = {
                 id:  556,
                 coord_x:  324,
                 coord_y:  216,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5011,7 +5011,7 @@ module.exports = {
                 id:  557,
                 coord_x:  324,
                 coord_y:  213,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5020,7 +5020,7 @@ module.exports = {
                 id:  558,
                 coord_x:  324,
                 coord_y:  207,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5029,7 +5029,7 @@ module.exports = {
                 id:  559,
                 coord_x:  324,
                 coord_y:  205,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5038,7 +5038,7 @@ module.exports = {
                 id:  560,
                 coord_x:  324,
                 coord_y:  204,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5047,7 +5047,7 @@ module.exports = {
                 id:  561,
                 coord_x:  323,
                 coord_y:  202,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5056,7 +5056,7 @@ module.exports = {
                 id:  562,
                 coord_x:  323,
                 coord_y:  201,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5065,7 +5065,7 @@ module.exports = {
                 id:  563,
                 coord_x:  321,
                 coord_y:  199,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5074,7 +5074,7 @@ module.exports = {
                 id:  564,
                 coord_x:  320,
                 coord_y:  198,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5083,7 +5083,7 @@ module.exports = {
                 id:  565,
                 coord_x:  318,
                 coord_y:  196,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5092,7 +5092,7 @@ module.exports = {
                 id:  566,
                 coord_x:  316,
                 coord_y:  194,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5101,7 +5101,7 @@ module.exports = {
                 id:  567,
                 coord_x:  316,
                 coord_y:  194,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5110,7 +5110,7 @@ module.exports = {
                 id:  568,
                 coord_x:  315,
                 coord_y:  192,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5119,7 +5119,7 @@ module.exports = {
                 id:  569,
                 coord_x:  313,
                 coord_y:  191,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5128,7 +5128,7 @@ module.exports = {
                 id:  570,
                 coord_x:  313,
                 coord_y:  190,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5137,7 +5137,7 @@ module.exports = {
                 id:  571,
                 coord_x:  312,
                 coord_y:  189,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5146,7 +5146,7 @@ module.exports = {
                 id:  572,
                 coord_x:  311,
                 coord_y:  189,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5155,7 +5155,7 @@ module.exports = {
                 id:  573,
                 coord_x:  309,
                 coord_y:  188,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5164,7 +5164,7 @@ module.exports = {
                 id:  574,
                 coord_x:  308,
                 coord_y:  188,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5173,7 +5173,7 @@ module.exports = {
                 id:  575,
                 coord_x:  304,
                 coord_y:  187,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5182,7 +5182,7 @@ module.exports = {
                 id:  576,
                 coord_x:  302,
                 coord_y:  187,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5191,7 +5191,7 @@ module.exports = {
                 id:  577,
                 coord_x:  301,
                 coord_y:  186,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5200,7 +5200,7 @@ module.exports = {
                 id:  578,
                 coord_x:  299,
                 coord_y:  186,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5209,7 +5209,7 @@ module.exports = {
                 id:  579,
                 coord_x:  298,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5218,7 +5218,7 @@ module.exports = {
                 id:  580,
                 coord_x:  296,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5227,7 +5227,7 @@ module.exports = {
                 id:  581,
                 coord_x:  295,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5236,7 +5236,7 @@ module.exports = {
                 id:  582,
                 coord_x:  293,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5245,7 +5245,7 @@ module.exports = {
                 id:  583,
                 coord_x:  293,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5254,7 +5254,7 @@ module.exports = {
                 id:  584,
                 coord_x:  293,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5263,7 +5263,7 @@ module.exports = {
                 id:  585,
                 coord_x:  291,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5272,7 +5272,7 @@ module.exports = {
                 id:  586,
                 coord_x:  291,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5281,7 +5281,7 @@ module.exports = {
                 id:  587,
                 coord_x:  291,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5290,7 +5290,7 @@ module.exports = {
                 id:  588,
                 coord_x:  290,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5299,7 +5299,7 @@ module.exports = {
                 id:  589,
                 coord_x:  290,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5308,7 +5308,7 @@ module.exports = {
                 id:  590,
                 coord_x:  290,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5317,7 +5317,7 @@ module.exports = {
                 id:  591,
                 coord_x:  290,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5326,7 +5326,7 @@ module.exports = {
                 id:  592,
                 coord_x:  291,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5335,7 +5335,7 @@ module.exports = {
                 id:  593,
                 coord_x:  292,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5344,7 +5344,7 @@ module.exports = {
                 id:  594,
                 coord_x:  293,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5353,7 +5353,7 @@ module.exports = {
                 id:  595,
                 coord_x:  294,
                 coord_y:  185,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  15,
                 created_at:  "2020-03-28 10:19:57",
                 updated_at:  "2020-03-28 10:19:57" 
@@ -5362,7 +5362,7 @@ module.exports = {
                 id:  596,
                 coord_x:  337,
                 coord_y:  294,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5371,7 +5371,7 @@ module.exports = {
                 id:  597,
                 coord_x:  336,
                 coord_y:  293,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5380,7 +5380,7 @@ module.exports = {
                 id:  598,
                 coord_x:  335,
                 coord_y:  290,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5389,7 +5389,7 @@ module.exports = {
                 id:  599,
                 coord_x:  334,
                 coord_y:  288,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5398,7 +5398,7 @@ module.exports = {
                 id:  600,
                 coord_x:  334,
                 coord_y:  287,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5407,7 +5407,7 @@ module.exports = {
                 id:  601,
                 coord_x:  333,
                 coord_y:  286,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5416,7 +5416,7 @@ module.exports = {
                 id:  602,
                 coord_x:  333,
                 coord_y:  283,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5425,7 +5425,7 @@ module.exports = {
                 id:  603,
                 coord_x:  332,
                 coord_y:  282,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5434,7 +5434,7 @@ module.exports = {
                 id:  604,
                 coord_x:  332,
                 coord_y:  281,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5443,7 +5443,7 @@ module.exports = {
                 id:  605,
                 coord_x:  329,
                 coord_y:  278,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5452,7 +5452,7 @@ module.exports = {
                 id:  606,
                 coord_x:  329,
                 coord_y:  277,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5461,7 +5461,7 @@ module.exports = {
                 id:  607,
                 coord_x:  328,
                 coord_y:  276,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5470,7 +5470,7 @@ module.exports = {
                 id:  608,
                 coord_x:  327,
                 coord_y:  275,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5479,7 +5479,7 @@ module.exports = {
                 id:  609,
                 coord_x:  326,
                 coord_y:  275,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5488,7 +5488,7 @@ module.exports = {
                 id:  610,
                 coord_x:  324,
                 coord_y:  274,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5497,7 +5497,7 @@ module.exports = {
                 id:  611,
                 coord_x:  323,
                 coord_y:  274,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5506,7 +5506,7 @@ module.exports = {
                 id:  612,
                 coord_x:  322,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5515,7 +5515,7 @@ module.exports = {
                 id:  613,
                 coord_x:  321,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5524,7 +5524,7 @@ module.exports = {
                 id:  614,
                 coord_x:  319,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5533,7 +5533,7 @@ module.exports = {
                 id:  615,
                 coord_x:  319,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5542,7 +5542,7 @@ module.exports = {
                 id:  616,
                 coord_x:  318,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5551,7 +5551,7 @@ module.exports = {
                 id:  617,
                 coord_x:  317,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5560,7 +5560,7 @@ module.exports = {
                 id:  618,
                 coord_x:  316,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5569,7 +5569,7 @@ module.exports = {
                 id:  619,
                 coord_x:  316,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5578,7 +5578,7 @@ module.exports = {
                 id:  620,
                 coord_x:  314,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5587,7 +5587,7 @@ module.exports = {
                 id:  621,
                 coord_x:  313,
                 coord_y:  273,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5596,7 +5596,7 @@ module.exports = {
                 id:  622,
                 coord_x:  310,
                 coord_y:  275,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:54",
                 updated_at:  "2020-03-28 10:20:54" 
@@ -5605,7 +5605,7 @@ module.exports = {
                 id:  623,
                 coord_x:  309,
                 coord_y:  276,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5614,7 +5614,7 @@ module.exports = {
                 id:  624,
                 coord_x:  308,
                 coord_y:  278,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5623,7 +5623,7 @@ module.exports = {
                 id:  625,
                 coord_x:  308,
                 coord_y:  281,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5632,7 +5632,7 @@ module.exports = {
                 id:  626,
                 coord_x:  308,
                 coord_y:  284,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5641,7 +5641,7 @@ module.exports = {
                 id:  627,
                 coord_x:  307,
                 coord_y:  286,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5650,7 +5650,7 @@ module.exports = {
                 id:  628,
                 coord_x:  307,
                 coord_y:  288,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5659,7 +5659,7 @@ module.exports = {
                 id:  629,
                 coord_x:  307,
                 coord_y:  290,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5668,7 +5668,7 @@ module.exports = {
                 id:  630,
                 coord_x:  307,
                 coord_y:  291,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5677,7 +5677,7 @@ module.exports = {
                 id:  631,
                 coord_x:  307,
                 coord_y:  294,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5686,7 +5686,7 @@ module.exports = {
                 id:  632,
                 coord_x:  307,
                 coord_y:  295,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5695,7 +5695,7 @@ module.exports = {
                 id:  633,
                 coord_x:  307,
                 coord_y:  297,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5704,7 +5704,7 @@ module.exports = {
                 id:  634,
                 coord_x:  307,
                 coord_y:  299,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5713,7 +5713,7 @@ module.exports = {
                 id:  635,
                 coord_x:  307,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5722,7 +5722,7 @@ module.exports = {
                 id:  636,
                 coord_x:  307,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5731,7 +5731,7 @@ module.exports = {
                 id:  637,
                 coord_x:  306,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5740,7 +5740,7 @@ module.exports = {
                 id:  638,
                 coord_x:  306,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5749,7 +5749,7 @@ module.exports = {
                 id:  639,
                 coord_x:  306,
                 coord_y:  306,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5758,7 +5758,7 @@ module.exports = {
                 id:  640,
                 coord_x:  306,
                 coord_y:  306,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5767,7 +5767,7 @@ module.exports = {
                 id:  641,
                 coord_x:  306,
                 coord_y:  308,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5776,7 +5776,7 @@ module.exports = {
                 id:  642,
                 coord_x:  306,
                 coord_y:  310,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5785,7 +5785,7 @@ module.exports = {
                 id:  643,
                 coord_x:  306,
                 coord_y:  311,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5794,7 +5794,7 @@ module.exports = {
                 id:  644,
                 coord_x:  306,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5803,7 +5803,7 @@ module.exports = {
                 id:  645,
                 coord_x:  306,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5812,7 +5812,7 @@ module.exports = {
                 id:  646,
                 coord_x:  306,
                 coord_y:  314,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5821,7 +5821,7 @@ module.exports = {
                 id:  647,
                 coord_x:  306,
                 coord_y:  314,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5830,7 +5830,7 @@ module.exports = {
                 id:  648,
                 coord_x:  306,
                 coord_y:  315,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5839,7 +5839,7 @@ module.exports = {
                 id:  649,
                 coord_x:  306,
                 coord_y:  316,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5848,7 +5848,7 @@ module.exports = {
                 id:  650,
                 coord_x:  306,
                 coord_y:  317,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5857,7 +5857,7 @@ module.exports = {
                 id:  651,
                 coord_x:  306,
                 coord_y:  317,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5866,7 +5866,7 @@ module.exports = {
                 id:  652,
                 coord_x:  307,
                 coord_y:  318,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5875,7 +5875,7 @@ module.exports = {
                 id:  653,
                 coord_x:  309,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5884,7 +5884,7 @@ module.exports = {
                 id:  654,
                 coord_x:  311,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5893,7 +5893,7 @@ module.exports = {
                 id:  655,
                 coord_x:  312,
                 coord_y:  321,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5902,7 +5902,7 @@ module.exports = {
                 id:  656,
                 coord_x:  313,
                 coord_y:  321,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5911,7 +5911,7 @@ module.exports = {
                 id:  657,
                 coord_x:  315,
                 coord_y:  321,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5920,7 +5920,7 @@ module.exports = {
                 id:  658,
                 coord_x:  315,
                 coord_y:  321,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5929,7 +5929,7 @@ module.exports = {
                 id:  659,
                 coord_x:  316,
                 coord_y:  321,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5938,7 +5938,7 @@ module.exports = {
                 id:  660,
                 coord_x:  318,
                 coord_y:  322,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5947,7 +5947,7 @@ module.exports = {
                 id:  661,
                 coord_x:  319,
                 coord_y:  322,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5956,7 +5956,7 @@ module.exports = {
                 id:  662,
                 coord_x:  321,
                 coord_y:  322,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5965,7 +5965,7 @@ module.exports = {
                 id:  663,
                 coord_x:  322,
                 coord_y:  322,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5974,7 +5974,7 @@ module.exports = {
                 id:  664,
                 coord_x:  325,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5983,7 +5983,7 @@ module.exports = {
                 id:  665,
                 coord_x:  326,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -5992,7 +5992,7 @@ module.exports = {
                 id:  666,
                 coord_x:  326,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6001,7 +6001,7 @@ module.exports = {
                 id:  667,
                 coord_x:  328,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6010,7 +6010,7 @@ module.exports = {
                 id:  668,
                 coord_x:  329,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6019,7 +6019,7 @@ module.exports = {
                 id:  669,
                 coord_x:  329,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6028,7 +6028,7 @@ module.exports = {
                 id:  670,
                 coord_x:  329,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6037,7 +6037,7 @@ module.exports = {
                 id:  671,
                 coord_x:  330,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6046,7 +6046,7 @@ module.exports = {
                 id:  672,
                 coord_x:  331,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6055,7 +6055,7 @@ module.exports = {
                 id:  673,
                 coord_x:  333,
                 coord_y:  322,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6064,7 +6064,7 @@ module.exports = {
                 id:  674,
                 coord_x:  333,
                 coord_y:  322,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6073,7 +6073,7 @@ module.exports = {
                 id:  675,
                 coord_x:  334,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6082,7 +6082,7 @@ module.exports = {
                 id:  676,
                 coord_x:  335,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6091,7 +6091,7 @@ module.exports = {
                 id:  677,
                 coord_x:  336,
                 coord_y:  315,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6100,7 +6100,7 @@ module.exports = {
                 id:  678,
                 coord_x:  337,
                 coord_y:  314,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6109,7 +6109,7 @@ module.exports = {
                 id:  679,
                 coord_x:  337,
                 coord_y:  312,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6118,7 +6118,7 @@ module.exports = {
                 id:  680,
                 coord_x:  338,
                 coord_y:  308,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6127,7 +6127,7 @@ module.exports = {
                 id:  681,
                 coord_x:  338,
                 coord_y:  306,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6136,7 +6136,7 @@ module.exports = {
                 id:  682,
                 coord_x:  338,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6145,7 +6145,7 @@ module.exports = {
                 id:  683,
                 coord_x:  338,
                 coord_y:  299,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6154,7 +6154,7 @@ module.exports = {
                 id:  684,
                 coord_x:  338,
                 coord_y:  299,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6163,7 +6163,7 @@ module.exports = {
                 id:  685,
                 coord_x:  338,
                 coord_y:  297,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6172,7 +6172,7 @@ module.exports = {
                 id:  686,
                 coord_x:  338,
                 coord_y:  297,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6181,7 +6181,7 @@ module.exports = {
                 id:  687,
                 coord_x:  338,
                 coord_y:  295,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6190,7 +6190,7 @@ module.exports = {
                 id:  688,
                 coord_x:  338,
                 coord_y:  294,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6199,7 +6199,7 @@ module.exports = {
                 id:  689,
                 coord_x:  338,
                 coord_y:  293,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6208,7 +6208,7 @@ module.exports = {
                 id:  690,
                 coord_x:  338,
                 coord_y:  293,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6217,7 +6217,7 @@ module.exports = {
                 id:  691,
                 coord_x:  338,
                 coord_y:  292,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6226,7 +6226,7 @@ module.exports = {
                 id:  692,
                 coord_x:  337,
                 coord_y:  291,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6235,7 +6235,7 @@ module.exports = {
                 id:  693,
                 coord_x:  336,
                 coord_y:  291,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6244,7 +6244,7 @@ module.exports = {
                 id:  694,
                 coord_x:  336,
                 coord_y:  291,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6253,7 +6253,7 @@ module.exports = {
                 id:  695,
                 coord_x:  336,
                 coord_y:  292,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6262,7 +6262,7 @@ module.exports = {
                 id:  696,
                 coord_x:  337,
                 coord_y:  293,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6271,7 +6271,7 @@ module.exports = {
                 id:  697,
                 coord_x:  337,
                 coord_y:  294,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  16,
                 created_at:  "2020-03-28 10:20:55",
                 updated_at:  "2020-03-28 10:20:55" 
@@ -6280,7 +6280,7 @@ module.exports = {
                 id:  698,
                 coord_x:  398,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6289,7 +6289,7 @@ module.exports = {
                 id:  699,
                 coord_x:  398,
                 coord_y:  249,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6298,7 +6298,7 @@ module.exports = {
                 id:  700,
                 coord_x:  398,
                 coord_y:  249,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6307,7 +6307,7 @@ module.exports = {
                 id:  701,
                 coord_x:  397,
                 coord_y:  249,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6316,7 +6316,7 @@ module.exports = {
                 id:  702,
                 coord_x:  396,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6325,7 +6325,7 @@ module.exports = {
                 id:  703,
                 coord_x:  396,
                 coord_y:  246,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6334,7 +6334,7 @@ module.exports = {
                 id:  704,
                 coord_x:  395,
                 coord_y:  245,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6343,7 +6343,7 @@ module.exports = {
                 id:  705,
                 coord_x:  395,
                 coord_y:  243,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6352,7 +6352,7 @@ module.exports = {
                 id:  706,
                 coord_x:  394,
                 coord_y:  242,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6361,7 +6361,7 @@ module.exports = {
                 id:  707,
                 coord_x:  393,
                 coord_y:  241,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6370,7 +6370,7 @@ module.exports = {
                 id:  708,
                 coord_x:  393,
                 coord_y:  241,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6379,7 +6379,7 @@ module.exports = {
                 id:  709,
                 coord_x:  393,
                 coord_y:  240,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6388,7 +6388,7 @@ module.exports = {
                 id:  710,
                 coord_x:  392,
                 coord_y:  240,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6397,7 +6397,7 @@ module.exports = {
                 id:  711,
                 coord_x:  392,
                 coord_y:  239,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6406,7 +6406,7 @@ module.exports = {
                 id:  712,
                 coord_x:  392,
                 coord_y:  239,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6415,7 +6415,7 @@ module.exports = {
                 id:  713,
                 coord_x:  392,
                 coord_y:  238,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6424,7 +6424,7 @@ module.exports = {
                 id:  714,
                 coord_x:  391,
                 coord_y:  237,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6433,7 +6433,7 @@ module.exports = {
                 id:  715,
                 coord_x:  391,
                 coord_y:  236,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6442,7 +6442,7 @@ module.exports = {
                 id:  716,
                 coord_x:  391,
                 coord_y:  235,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6451,7 +6451,7 @@ module.exports = {
                 id:  717,
                 coord_x:  391,
                 coord_y:  234,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6460,7 +6460,7 @@ module.exports = {
                 id:  718,
                 coord_x:  390,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6469,7 +6469,7 @@ module.exports = {
                 id:  719,
                 coord_x:  389,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6478,7 +6478,7 @@ module.exports = {
                 id:  720,
                 coord_x:  388,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6487,7 +6487,7 @@ module.exports = {
                 id:  721,
                 coord_x:  387,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6496,7 +6496,7 @@ module.exports = {
                 id:  722,
                 coord_x:  385,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6505,7 +6505,7 @@ module.exports = {
                 id:  723,
                 coord_x:  383,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6514,7 +6514,7 @@ module.exports = {
                 id:  724,
                 coord_x:  382,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6523,7 +6523,7 @@ module.exports = {
                 id:  725,
                 coord_x:  381,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6532,7 +6532,7 @@ module.exports = {
                 id:  726,
                 coord_x:  379,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6541,7 +6541,7 @@ module.exports = {
                 id:  727,
                 coord_x:  378,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6550,7 +6550,7 @@ module.exports = {
                 id:  728,
                 coord_x:  377,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6559,7 +6559,7 @@ module.exports = {
                 id:  729,
                 coord_x:  377,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6568,7 +6568,7 @@ module.exports = {
                 id:  730,
                 coord_x:  375,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6577,7 +6577,7 @@ module.exports = {
                 id:  731,
                 coord_x:  375,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6586,7 +6586,7 @@ module.exports = {
                 id:  732,
                 coord_x:  374,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6595,7 +6595,7 @@ module.exports = {
                 id:  733,
                 coord_x:  373,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6604,7 +6604,7 @@ module.exports = {
                 id:  734,
                 coord_x:  371,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6613,7 +6613,7 @@ module.exports = {
                 id:  735,
                 coord_x:  370,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6622,7 +6622,7 @@ module.exports = {
                 id:  736,
                 coord_x:  367,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6631,7 +6631,7 @@ module.exports = {
                 id:  737,
                 coord_x:  366,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6640,7 +6640,7 @@ module.exports = {
                 id:  738,
                 coord_x:  365,
                 coord_y:  231,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6649,7 +6649,7 @@ module.exports = {
                 id:  739,
                 coord_x:  363,
                 coord_y:  232,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6658,7 +6658,7 @@ module.exports = {
                 id:  740,
                 coord_x:  363,
                 coord_y:  233,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6667,7 +6667,7 @@ module.exports = {
                 id:  741,
                 coord_x:  362,
                 coord_y:  234,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6676,7 +6676,7 @@ module.exports = {
                 id:  742,
                 coord_x:  361,
                 coord_y:  237,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6685,7 +6685,7 @@ module.exports = {
                 id:  743,
                 coord_x:  361,
                 coord_y:  239,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6694,7 +6694,7 @@ module.exports = {
                 id:  744,
                 coord_x:  361,
                 coord_y:  240,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6703,7 +6703,7 @@ module.exports = {
                 id:  745,
                 coord_x:  361,
                 coord_y:  241,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6712,7 +6712,7 @@ module.exports = {
                 id:  746,
                 coord_x:  360,
                 coord_y:  242,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6721,7 +6721,7 @@ module.exports = {
                 id:  747,
                 coord_x:  360,
                 coord_y:  243,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6730,7 +6730,7 @@ module.exports = {
                 id:  748,
                 coord_x:  360,
                 coord_y:  243,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6739,7 +6739,7 @@ module.exports = {
                 id:  749,
                 coord_x:  360,
                 coord_y:  245,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6748,7 +6748,7 @@ module.exports = {
                 id:  750,
                 coord_x:  360,
                 coord_y:  246,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6757,7 +6757,7 @@ module.exports = {
                 id:  751,
                 coord_x:  360,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6766,7 +6766,7 @@ module.exports = {
                 id:  752,
                 coord_x:  360,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6775,7 +6775,7 @@ module.exports = {
                 id:  753,
                 coord_x:  360,
                 coord_y:  250,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6784,7 +6784,7 @@ module.exports = {
                 id:  754,
                 coord_x:  360,
                 coord_y:  252,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6793,7 +6793,7 @@ module.exports = {
                 id:  755,
                 coord_x:  360,
                 coord_y:  253,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6802,7 +6802,7 @@ module.exports = {
                 id:  756,
                 coord_x:  360,
                 coord_y:  254,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6811,7 +6811,7 @@ module.exports = {
                 id:  757,
                 coord_x:  360,
                 coord_y:  254,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6820,7 +6820,7 @@ module.exports = {
                 id:  758,
                 coord_x:  360,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6829,7 +6829,7 @@ module.exports = {
                 id:  759,
                 coord_x:  360,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6838,7 +6838,7 @@ module.exports = {
                 id:  760,
                 coord_x:  360,
                 coord_y:  256,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6847,7 +6847,7 @@ module.exports = {
                 id:  761,
                 coord_x:  360,
                 coord_y:  257,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6856,7 +6856,7 @@ module.exports = {
                 id:  762,
                 coord_x:  360,
                 coord_y:  258,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6865,7 +6865,7 @@ module.exports = {
                 id:  763,
                 coord_x:  360,
                 coord_y:  258,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6874,7 +6874,7 @@ module.exports = {
                 id:  764,
                 coord_x:  361,
                 coord_y:  259,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6883,7 +6883,7 @@ module.exports = {
                 id:  765,
                 coord_x:  361,
                 coord_y:  260,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6892,7 +6892,7 @@ module.exports = {
                 id:  766,
                 coord_x:  363,
                 coord_y:  261,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6901,7 +6901,7 @@ module.exports = {
                 id:  767,
                 coord_x:  364,
                 coord_y:  262,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6910,7 +6910,7 @@ module.exports = {
                 id:  768,
                 coord_x:  366,
                 coord_y:  263,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6919,7 +6919,7 @@ module.exports = {
                 id:  769,
                 coord_x:  366,
                 coord_y:  263,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6928,7 +6928,7 @@ module.exports = {
                 id:  770,
                 coord_x:  368,
                 coord_y:  263,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6937,7 +6937,7 @@ module.exports = {
                 id:  771,
                 coord_x:  369,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6946,7 +6946,7 @@ module.exports = {
                 id:  772,
                 coord_x:  370,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6955,7 +6955,7 @@ module.exports = {
                 id:  773,
                 coord_x:  371,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:25",
                 updated_at:  "2020-03-28 10:21:25" 
@@ -6964,7 +6964,7 @@ module.exports = {
                 id:  774,
                 coord_x:  372,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -6973,7 +6973,7 @@ module.exports = {
                 id:  775,
                 coord_x:  373,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -6982,7 +6982,7 @@ module.exports = {
                 id:  776,
                 coord_x:  373,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -6991,7 +6991,7 @@ module.exports = {
                 id:  777,
                 coord_x:  374,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7000,7 +7000,7 @@ module.exports = {
                 id:  778,
                 coord_x:  375,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7009,7 +7009,7 @@ module.exports = {
                 id:  779,
                 coord_x:  375,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7018,7 +7018,7 @@ module.exports = {
                 id:  780,
                 coord_x:  376,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7027,7 +7027,7 @@ module.exports = {
                 id:  781,
                 coord_x:  377,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7036,7 +7036,7 @@ module.exports = {
                 id:  782,
                 coord_x:  378,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7045,7 +7045,7 @@ module.exports = {
                 id:  783,
                 coord_x:  379,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7054,7 +7054,7 @@ module.exports = {
                 id:  784,
                 coord_x:  380,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7063,7 +7063,7 @@ module.exports = {
                 id:  785,
                 coord_x:  381,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7072,7 +7072,7 @@ module.exports = {
                 id:  786,
                 coord_x:  381,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7081,7 +7081,7 @@ module.exports = {
                 id:  787,
                 coord_x:  382,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7090,7 +7090,7 @@ module.exports = {
                 id:  788,
                 coord_x:  384,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7099,7 +7099,7 @@ module.exports = {
                 id:  789,
                 coord_x:  384,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7108,7 +7108,7 @@ module.exports = {
                 id:  790,
                 coord_x:  385,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7117,7 +7117,7 @@ module.exports = {
                 id:  791,
                 coord_x:  385,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7126,7 +7126,7 @@ module.exports = {
                 id:  792,
                 coord_x:  385,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7135,7 +7135,7 @@ module.exports = {
                 id:  793,
                 coord_x:  386,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7144,7 +7144,7 @@ module.exports = {
                 id:  794,
                 coord_x:  387,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7153,7 +7153,7 @@ module.exports = {
                 id:  795,
                 coord_x:  387,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7162,7 +7162,7 @@ module.exports = {
                 id:  796,
                 coord_x:  387,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7171,7 +7171,7 @@ module.exports = {
                 id:  797,
                 coord_x:  388,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7180,7 +7180,7 @@ module.exports = {
                 id:  798,
                 coord_x:  389,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7189,7 +7189,7 @@ module.exports = {
                 id:  799,
                 coord_x:  389,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7198,7 +7198,7 @@ module.exports = {
                 id:  800,
                 coord_x:  391,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7207,7 +7207,7 @@ module.exports = {
                 id:  801,
                 coord_x:  391,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7216,7 +7216,7 @@ module.exports = {
                 id:  802,
                 coord_x:  392,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7225,7 +7225,7 @@ module.exports = {
                 id:  803,
                 coord_x:  393,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7234,7 +7234,7 @@ module.exports = {
                 id:  804,
                 coord_x:  394,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7243,7 +7243,7 @@ module.exports = {
                 id:  805,
                 coord_x:  394,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7252,7 +7252,7 @@ module.exports = {
                 id:  806,
                 coord_x:  395,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7261,7 +7261,7 @@ module.exports = {
                 id:  807,
                 coord_x:  395,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7270,7 +7270,7 @@ module.exports = {
                 id:  808,
                 coord_x:  396,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7279,7 +7279,7 @@ module.exports = {
                 id:  809,
                 coord_x:  396,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7288,7 +7288,7 @@ module.exports = {
                 id:  810,
                 coord_x:  396,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7297,7 +7297,7 @@ module.exports = {
                 id:  811,
                 coord_x:  396,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7306,7 +7306,7 @@ module.exports = {
                 id:  812,
                 coord_x:  397,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7315,7 +7315,7 @@ module.exports = {
                 id:  813,
                 coord_x:  397,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7324,7 +7324,7 @@ module.exports = {
                 id:  814,
                 coord_x:  398,
                 coord_y:  264,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7333,7 +7333,7 @@ module.exports = {
                 id:  815,
                 coord_x:  398,
                 coord_y:  263,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7342,7 +7342,7 @@ module.exports = {
                 id:  816,
                 coord_x:  398,
                 coord_y:  262,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7351,7 +7351,7 @@ module.exports = {
                 id:  817,
                 coord_x:  398,
                 coord_y:  262,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7360,7 +7360,7 @@ module.exports = {
                 id:  818,
                 coord_x:  398,
                 coord_y:  261,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7369,7 +7369,7 @@ module.exports = {
                 id:  819,
                 coord_x:  398,
                 coord_y:  260,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7378,7 +7378,7 @@ module.exports = {
                 id:  820,
                 coord_x:  399,
                 coord_y:  259,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7387,7 +7387,7 @@ module.exports = {
                 id:  821,
                 coord_x:  399,
                 coord_y:  257,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7396,7 +7396,7 @@ module.exports = {
                 id:  822,
                 coord_x:  399,
                 coord_y:  256,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7405,7 +7405,7 @@ module.exports = {
                 id:  823,
                 coord_x:  399,
                 coord_y:  255,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7414,7 +7414,7 @@ module.exports = {
                 id:  824,
                 coord_x:  399,
                 coord_y:  254,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7423,7 +7423,7 @@ module.exports = {
                 id:  825,
                 coord_x:  399,
                 coord_y:  253,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7432,7 +7432,7 @@ module.exports = {
                 id:  826,
                 coord_x:  399,
                 coord_y:  252,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7441,7 +7441,7 @@ module.exports = {
                 id:  827,
                 coord_x:  399,
                 coord_y:  252,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7450,7 +7450,7 @@ module.exports = {
                 id:  828,
                 coord_x:  399,
                 coord_y:  251,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7459,7 +7459,7 @@ module.exports = {
                 id:  829,
                 coord_x:  399,
                 coord_y:  250,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7468,7 +7468,7 @@ module.exports = {
                 id:  830,
                 coord_x:  399,
                 coord_y:  249,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7477,7 +7477,7 @@ module.exports = {
                 id:  831,
                 coord_x:  399,
                 coord_y:  249,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7486,7 +7486,7 @@ module.exports = {
                 id:  832,
                 coord_x:  399,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7495,7 +7495,7 @@ module.exports = {
                 id:  833,
                 coord_x:  399,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7504,7 +7504,7 @@ module.exports = {
                 id:  834,
                 coord_x:  399,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7513,7 +7513,7 @@ module.exports = {
                 id:  835,
                 coord_x:  399,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7522,7 +7522,7 @@ module.exports = {
                 id:  836,
                 coord_x:  398,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7531,7 +7531,7 @@ module.exports = {
                 id:  837,
                 coord_x:  398,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7540,7 +7540,7 @@ module.exports = {
                 id:  838,
                 coord_x:  398,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7549,7 +7549,7 @@ module.exports = {
                 id:  839,
                 coord_x:  397,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7558,7 +7558,7 @@ module.exports = {
                 id:  840,
                 coord_x:  396,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7567,7 +7567,7 @@ module.exports = {
                 id:  841,
                 coord_x:  395,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7576,7 +7576,7 @@ module.exports = {
                 id:  842,
                 coord_x:  395,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7585,7 +7585,7 @@ module.exports = {
                 id:  843,
                 coord_x:  394,
                 coord_y:  246,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7594,7 +7594,7 @@ module.exports = {
                 id:  844,
                 coord_x:  394,
                 coord_y:  246,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7603,7 +7603,7 @@ module.exports = {
                 id:  845,
                 coord_x:  395,
                 coord_y:  246,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7612,7 +7612,7 @@ module.exports = {
                 id:  846,
                 coord_x:  396,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7621,7 +7621,7 @@ module.exports = {
                 id:  847,
                 coord_x:  397,
                 coord_y:  247,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7630,7 +7630,7 @@ module.exports = {
                 id:  848,
                 coord_x:  398,
                 coord_y:  248,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  17,
                 created_at:  "2020-03-28 10:21:26",
                 updated_at:  "2020-03-28 10:21:26" 
@@ -7639,7 +7639,7 @@ module.exports = {
                 id:  849,
                 coord_x:  425,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7648,7 +7648,7 @@ module.exports = {
                 id:  850,
                 coord_x:  426,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7657,7 +7657,7 @@ module.exports = {
                 id:  851,
                 coord_x:  426,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7666,7 +7666,7 @@ module.exports = {
                 id:  852,
                 coord_x:  427,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7675,7 +7675,7 @@ module.exports = {
                 id:  853,
                 coord_x:  428,
                 coord_y:  328,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7684,7 +7684,7 @@ module.exports = {
                 id:  854,
                 coord_x:  429,
                 coord_y:  327,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7693,7 +7693,7 @@ module.exports = {
                 id:  855,
                 coord_x:  432,
                 coord_y:  322,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7702,7 +7702,7 @@ module.exports = {
                 id:  856,
                 coord_x:  433,
                 coord_y:  321,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7711,7 +7711,7 @@ module.exports = {
                 id:  857,
                 coord_x:  433,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7720,7 +7720,7 @@ module.exports = {
                 id:  858,
                 coord_x:  434,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7729,7 +7729,7 @@ module.exports = {
                 id:  859,
                 coord_x:  434,
                 coord_y:  317,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7738,7 +7738,7 @@ module.exports = {
                 id:  860,
                 coord_x:  434,
                 coord_y:  316,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7747,7 +7747,7 @@ module.exports = {
                 id:  861,
                 coord_x:  435,
                 coord_y:  311,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7756,7 +7756,7 @@ module.exports = {
                 id:  862,
                 coord_x:  435,
                 coord_y:  309,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7765,7 +7765,7 @@ module.exports = {
                 id:  863,
                 coord_x:  435,
                 coord_y:  309,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7774,7 +7774,7 @@ module.exports = {
                 id:  864,
                 coord_x:  435,
                 coord_y:  307,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7783,7 +7783,7 @@ module.exports = {
                 id:  865,
                 coord_x:  435,
                 coord_y:  306,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7792,7 +7792,7 @@ module.exports = {
                 id:  866,
                 coord_x:  435,
                 coord_y:  305,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7801,7 +7801,7 @@ module.exports = {
                 id:  867,
                 coord_x:  435,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7810,7 +7810,7 @@ module.exports = {
                 id:  868,
                 coord_x:  435,
                 coord_y:  302,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7819,7 +7819,7 @@ module.exports = {
                 id:  869,
                 coord_x:  436,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7828,7 +7828,7 @@ module.exports = {
                 id:  870,
                 coord_x:  436,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7837,7 +7837,7 @@ module.exports = {
                 id:  871,
                 coord_x:  436,
                 coord_y:  299,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7846,7 +7846,7 @@ module.exports = {
                 id:  872,
                 coord_x:  436,
                 coord_y:  298,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7855,7 +7855,7 @@ module.exports = {
                 id:  873,
                 coord_x:  436,
                 coord_y:  297,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7864,7 +7864,7 @@ module.exports = {
                 id:  874,
                 coord_x:  436,
                 coord_y:  293,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7873,7 +7873,7 @@ module.exports = {
                 id:  875,
                 coord_x:  436,
                 coord_y:  292,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7882,7 +7882,7 @@ module.exports = {
                 id:  876,
                 coord_x:  436,
                 coord_y:  290,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7891,7 +7891,7 @@ module.exports = {
                 id:  877,
                 coord_x:  436,
                 coord_y:  290,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7900,7 +7900,7 @@ module.exports = {
                 id:  878,
                 coord_x:  436,
                 coord_y:  289,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7909,7 +7909,7 @@ module.exports = {
                 id:  879,
                 coord_x:  435,
                 coord_y:  288,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:57",
                 updated_at:  "2020-03-28 10:21:57" 
@@ -7918,7 +7918,7 @@ module.exports = {
                 id:  880,
                 coord_x:  434,
                 coord_y:  288,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7927,7 +7927,7 @@ module.exports = {
                 id:  881,
                 coord_x:  432,
                 coord_y:  287,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7936,7 +7936,7 @@ module.exports = {
                 id:  882,
                 coord_x:  431,
                 coord_y:  286,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7945,7 +7945,7 @@ module.exports = {
                 id:  883,
                 coord_x:  430,
                 coord_y:  285,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7954,7 +7954,7 @@ module.exports = {
                 id:  884,
                 coord_x:  429,
                 coord_y:  285,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7963,7 +7963,7 @@ module.exports = {
                 id:  885,
                 coord_x:  427,
                 coord_y:  283,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7972,7 +7972,7 @@ module.exports = {
                 id:  886,
                 coord_x:  425,
                 coord_y:  281,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7981,7 +7981,7 @@ module.exports = {
                 id:  887,
                 coord_x:  424,
                 coord_y:  281,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7990,7 +7990,7 @@ module.exports = {
                 id:  888,
                 coord_x:  424,
                 coord_y:  280,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -7999,7 +7999,7 @@ module.exports = {
                 id:  889,
                 coord_x:  423,
                 coord_y:  280,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8008,7 +8008,7 @@ module.exports = {
                 id:  890,
                 coord_x:  422,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8017,7 +8017,7 @@ module.exports = {
                 id:  891,
                 coord_x:  421,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8026,7 +8026,7 @@ module.exports = {
                 id:  892,
                 coord_x:  421,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8035,7 +8035,7 @@ module.exports = {
                 id:  893,
                 coord_x:  420,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8044,7 +8044,7 @@ module.exports = {
                 id:  894,
                 coord_x:  420,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8053,7 +8053,7 @@ module.exports = {
                 id:  895,
                 coord_x:  417,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8062,7 +8062,7 @@ module.exports = {
                 id:  896,
                 coord_x:  416,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8071,7 +8071,7 @@ module.exports = {
                 id:  897,
                 coord_x:  415,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8080,7 +8080,7 @@ module.exports = {
                 id:  898,
                 coord_x:  413,
                 coord_y:  279,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8089,7 +8089,7 @@ module.exports = {
                 id:  899,
                 coord_x:  413,
                 coord_y:  280,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8098,7 +8098,7 @@ module.exports = {
                 id:  900,
                 coord_x:  411,
                 coord_y:  281,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8107,7 +8107,7 @@ module.exports = {
                 id:  901,
                 coord_x:  411,
                 coord_y:  281,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8116,7 +8116,7 @@ module.exports = {
                 id:  902,
                 coord_x:  410,
                 coord_y:  281,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8125,7 +8125,7 @@ module.exports = {
                 id:  903,
                 coord_x:  410,
                 coord_y:  282,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8134,7 +8134,7 @@ module.exports = {
                 id:  904,
                 coord_x:  410,
                 coord_y:  283,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8143,7 +8143,7 @@ module.exports = {
                 id:  905,
                 coord_x:  409,
                 coord_y:  284,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8152,7 +8152,7 @@ module.exports = {
                 id:  906,
                 coord_x:  408,
                 coord_y:  285,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8161,7 +8161,7 @@ module.exports = {
                 id:  907,
                 coord_x:  406,
                 coord_y:  286,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8170,7 +8170,7 @@ module.exports = {
                 id:  908,
                 coord_x:  405,
                 coord_y:  287,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8179,7 +8179,7 @@ module.exports = {
                 id:  909,
                 coord_x:  403,
                 coord_y:  288,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8188,7 +8188,7 @@ module.exports = {
                 id:  910,
                 coord_x:  401,
                 coord_y:  290,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8197,7 +8197,7 @@ module.exports = {
                 id:  911,
                 coord_x:  401,
                 coord_y:  290,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8206,7 +8206,7 @@ module.exports = {
                 id:  912,
                 coord_x:  400,
                 coord_y:  290,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8215,7 +8215,7 @@ module.exports = {
                 id:  913,
                 coord_x:  399,
                 coord_y:  291,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8224,7 +8224,7 @@ module.exports = {
                 id:  914,
                 coord_x:  396,
                 coord_y:  291,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8233,7 +8233,7 @@ module.exports = {
                 id:  915,
                 coord_x:  396,
                 coord_y:  292,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8242,7 +8242,7 @@ module.exports = {
                 id:  916,
                 coord_x:  395,
                 coord_y:  292,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8251,7 +8251,7 @@ module.exports = {
                 id:  917,
                 coord_x:  394,
                 coord_y:  292,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8260,7 +8260,7 @@ module.exports = {
                 id:  918,
                 coord_x:  394,
                 coord_y:  293,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8269,7 +8269,7 @@ module.exports = {
                 id:  919,
                 coord_x:  392,
                 coord_y:  294,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8278,7 +8278,7 @@ module.exports = {
                 id:  920,
                 coord_x:  390,
                 coord_y:  295,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8287,7 +8287,7 @@ module.exports = {
                 id:  921,
                 coord_x:  389,
                 coord_y:  297,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8296,7 +8296,7 @@ module.exports = {
                 id:  922,
                 coord_x:  388,
                 coord_y:  297,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8305,7 +8305,7 @@ module.exports = {
                 id:  923,
                 coord_x:  387,
                 coord_y:  299,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8314,7 +8314,7 @@ module.exports = {
                 id:  924,
                 coord_x:  387,
                 coord_y:  300,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8323,7 +8323,7 @@ module.exports = {
                 id:  925,
                 coord_x:  387,
                 coord_y:  301,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8332,7 +8332,7 @@ module.exports = {
                 id:  926,
                 coord_x:  386,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8341,7 +8341,7 @@ module.exports = {
                 id:  927,
                 coord_x:  386,
                 coord_y:  306,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8350,7 +8350,7 @@ module.exports = {
                 id:  928,
                 coord_x:  386,
                 coord_y:  307,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8359,7 +8359,7 @@ module.exports = {
                 id:  929,
                 coord_x:  386,
                 coord_y:  308,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8368,7 +8368,7 @@ module.exports = {
                 id:  930,
                 coord_x:  386,
                 coord_y:  309,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8377,7 +8377,7 @@ module.exports = {
                 id:  931,
                 coord_x:  386,
                 coord_y:  310,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8386,7 +8386,7 @@ module.exports = {
                 id:  932,
                 coord_x:  386,
                 coord_y:  311,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8395,7 +8395,7 @@ module.exports = {
                 id:  933,
                 coord_x:  386,
                 coord_y:  311,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8404,7 +8404,7 @@ module.exports = {
                 id:  934,
                 coord_x:  386,
                 coord_y:  312,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8413,7 +8413,7 @@ module.exports = {
                 id:  935,
                 coord_x:  386,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8422,7 +8422,7 @@ module.exports = {
                 id:  936,
                 coord_x:  386,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8431,7 +8431,7 @@ module.exports = {
                 id:  937,
                 coord_x:  386,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8440,7 +8440,7 @@ module.exports = {
                 id:  938,
                 coord_x:  386,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8449,7 +8449,7 @@ module.exports = {
                 id:  939,
                 coord_x:  387,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8458,7 +8458,7 @@ module.exports = {
                 id:  940,
                 coord_x:  389,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8467,7 +8467,7 @@ module.exports = {
                 id:  941,
                 coord_x:  391,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8476,7 +8476,7 @@ module.exports = {
                 id:  942,
                 coord_x:  392,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8485,7 +8485,7 @@ module.exports = {
                 id:  943,
                 coord_x:  394,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8494,7 +8494,7 @@ module.exports = {
                 id:  944,
                 coord_x:  394,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8503,7 +8503,7 @@ module.exports = {
                 id:  945,
                 coord_x:  395,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8512,7 +8512,7 @@ module.exports = {
                 id:  946,
                 coord_x:  396,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8521,7 +8521,7 @@ module.exports = {
                 id:  947,
                 coord_x:  396,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8530,7 +8530,7 @@ module.exports = {
                 id:  948,
                 coord_x:  397,
                 coord_y:  312,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8539,7 +8539,7 @@ module.exports = {
                 id:  949,
                 coord_x:  398,
                 coord_y:  311,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8548,7 +8548,7 @@ module.exports = {
                 id:  950,
                 coord_x:  398,
                 coord_y:  310,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8557,7 +8557,7 @@ module.exports = {
                 id:  951,
                 coord_x:  398,
                 coord_y:  309,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8566,7 +8566,7 @@ module.exports = {
                 id:  952,
                 coord_x:  399,
                 coord_y:  309,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8575,7 +8575,7 @@ module.exports = {
                 id:  953,
                 coord_x:  400,
                 coord_y:  307,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8584,7 +8584,7 @@ module.exports = {
                 id:  954,
                 coord_x:  401,
                 coord_y:  306,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8593,7 +8593,7 @@ module.exports = {
                 id:  955,
                 coord_x:  401,
                 coord_y:  305,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8602,7 +8602,7 @@ module.exports = {
                 id:  956,
                 coord_x:  403,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8611,7 +8611,7 @@ module.exports = {
                 id:  957,
                 coord_x:  403,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8620,7 +8620,7 @@ module.exports = {
                 id:  958,
                 coord_x:  404,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8629,7 +8629,7 @@ module.exports = {
                 id:  959,
                 coord_x:  405,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8638,7 +8638,7 @@ module.exports = {
                 id:  960,
                 coord_x:  405,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8647,7 +8647,7 @@ module.exports = {
                 id:  961,
                 coord_x:  406,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8656,7 +8656,7 @@ module.exports = {
                 id:  962,
                 coord_x:  406,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8665,7 +8665,7 @@ module.exports = {
                 id:  963,
                 coord_x:  407,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8674,7 +8674,7 @@ module.exports = {
                 id:  964,
                 coord_x:  407,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8683,7 +8683,7 @@ module.exports = {
                 id:  965,
                 coord_x:  408,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8692,7 +8692,7 @@ module.exports = {
                 id:  966,
                 coord_x:  408,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8701,7 +8701,7 @@ module.exports = {
                 id:  967,
                 coord_x:  409,
                 coord_y:  303,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8710,7 +8710,7 @@ module.exports = {
                 id:  968,
                 coord_x:  409,
                 coord_y:  304,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8719,7 +8719,7 @@ module.exports = {
                 id:  969,
                 coord_x:  409,
                 coord_y:  305,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8728,7 +8728,7 @@ module.exports = {
                 id:  970,
                 coord_x:  409,
                 coord_y:  307,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8737,7 +8737,7 @@ module.exports = {
                 id:  971,
                 coord_x:  409,
                 coord_y:  309,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:58",
                 updated_at:  "2020-03-28 10:21:58" 
@@ -8746,7 +8746,7 @@ module.exports = {
                 id:  972,
                 coord_x:  408,
                 coord_y:  310,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8755,7 +8755,7 @@ module.exports = {
                 id:  973,
                 coord_x:  407,
                 coord_y:  312,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8764,7 +8764,7 @@ module.exports = {
                 id:  974,
                 coord_x:  407,
                 coord_y:  312,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8773,7 +8773,7 @@ module.exports = {
                 id:  975,
                 coord_x:  406,
                 coord_y:  313,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8782,7 +8782,7 @@ module.exports = {
                 id:  976,
                 coord_x:  406,
                 coord_y:  314,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8791,7 +8791,7 @@ module.exports = {
                 id:  977,
                 coord_x:  405,
                 coord_y:  316,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8800,7 +8800,7 @@ module.exports = {
                 id:  978,
                 coord_x:  405,
                 coord_y:  316,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8809,7 +8809,7 @@ module.exports = {
                 id:  979,
                 coord_x:  405,
                 coord_y:  319,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8818,7 +8818,7 @@ module.exports = {
                 id:  980,
                 coord_x:  405,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8827,7 +8827,7 @@ module.exports = {
                 id:  981,
                 coord_x:  405,
                 coord_y:  320,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8836,7 +8836,7 @@ module.exports = {
                 id:  982,
                 coord_x:  405,
                 coord_y:  323,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8845,7 +8845,7 @@ module.exports = {
                 id:  983,
                 coord_x:  408,
                 coord_y:  325,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8854,7 +8854,7 @@ module.exports = {
                 id:  984,
                 coord_x:  409,
                 coord_y:  325,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8863,7 +8863,7 @@ module.exports = {
                 id:  985,
                 coord_x:  409,
                 coord_y:  325,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8872,7 +8872,7 @@ module.exports = {
                 id:  986,
                 coord_x:  411,
                 coord_y:  327,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8881,7 +8881,7 @@ module.exports = {
                 id:  987,
                 coord_x:  412,
                 coord_y:  327,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8890,7 +8890,7 @@ module.exports = {
                 id:  988,
                 coord_x:  414,
                 coord_y:  327,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8899,7 +8899,7 @@ module.exports = {
                 id:  989,
                 coord_x:  415,
                 coord_y:  328,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8908,7 +8908,7 @@ module.exports = {
                 id:  990,
                 coord_x:  416,
                 coord_y:  328,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8917,7 +8917,7 @@ module.exports = {
                 id:  991,
                 coord_x:  417,
                 coord_y:  328,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8926,7 +8926,7 @@ module.exports = {
                 id:  992,
                 coord_x:  420,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8935,7 +8935,7 @@ module.exports = {
                 id:  993,
                 coord_x:  420,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8944,7 +8944,7 @@ module.exports = {
                 id:  994,
                 coord_x:  422,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8953,7 +8953,7 @@ module.exports = {
                 id:  995,
                 coord_x:  422,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8962,7 +8962,7 @@ module.exports = {
                 id:  996,
                 coord_x:  423,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8971,7 +8971,7 @@ module.exports = {
                 id:  997,
                 coord_x:  423,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8980,7 +8980,7 @@ module.exports = {
                 id:  998,
                 coord_x:  424,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8989,7 +8989,7 @@ module.exports = {
                 id:  999,
                 coord_x:  424,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -8998,7 +8998,7 @@ module.exports = {
                 id:  1000,
                 coord_x:  424,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9007,7 +9007,7 @@ module.exports = {
                 id:  1001,
                 coord_x:  425,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9016,7 +9016,7 @@ module.exports = {
                 id:  1002,
                 coord_x:  426,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9025,7 +9025,7 @@ module.exports = {
                 id:  1003,
                 coord_x:  426,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9034,7 +9034,7 @@ module.exports = {
                 id:  1004,
                 coord_x:  427,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9043,7 +9043,7 @@ module.exports = {
                 id:  1005,
                 coord_x:  427,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9052,7 +9052,7 @@ module.exports = {
                 id:  1006,
                 coord_x:  427,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9061,7 +9061,7 @@ module.exports = {
                 id:  1007,
                 coord_x:  427,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9070,7 +9070,7 @@ module.exports = {
                 id:  1008,
                 coord_x:  426,
                 coord_y:  330,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9079,7 +9079,7 @@ module.exports = {
                 id:  1009,
                 coord_x:  425,
                 coord_y:  329,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  18,
                 created_at:  "2020-03-28 10:21:59",
                 updated_at:  "2020-03-28 10:21:59" 
@@ -9088,7 +9088,7 @@ module.exports = {
                 id:  1010,
                 coord_x:  398,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9097,7 +9097,7 @@ module.exports = {
                 id:  1011,
                 coord_x:  397,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9106,7 +9106,7 @@ module.exports = {
                 id:  1012,
                 coord_x:  397,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9115,7 +9115,7 @@ module.exports = {
                 id:  1013,
                 coord_x:  397,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9124,7 +9124,7 @@ module.exports = {
                 id:  1014,
                 coord_x:  396,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9133,7 +9133,7 @@ module.exports = {
                 id:  1015,
                 coord_x:  395,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9142,7 +9142,7 @@ module.exports = {
                 id:  1016,
                 coord_x:  393,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9151,7 +9151,7 @@ module.exports = {
                 id:  1017,
                 coord_x:  392,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9160,7 +9160,7 @@ module.exports = {
                 id:  1018,
                 coord_x:  390,
                 coord_y:  29,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9169,7 +9169,7 @@ module.exports = {
                 id:  1019,
                 coord_x:  390,
                 coord_y:  29,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9178,7 +9178,7 @@ module.exports = {
                 id:  1020,
                 coord_x:  389,
                 coord_y:  30,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9187,7 +9187,7 @@ module.exports = {
                 id:  1021,
                 coord_x:  389,
                 coord_y:  30,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9196,7 +9196,7 @@ module.exports = {
                 id:  1022,
                 coord_x:  388,
                 coord_y:  30,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9205,7 +9205,7 @@ module.exports = {
                 id:  1023,
                 coord_x:  388,
                 coord_y:  31,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9214,7 +9214,7 @@ module.exports = {
                 id:  1024,
                 coord_x:  388,
                 coord_y:  32,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9223,7 +9223,7 @@ module.exports = {
                 id:  1025,
                 coord_x:  387,
                 coord_y:  33,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9232,7 +9232,7 @@ module.exports = {
                 id:  1026,
                 coord_x:  387,
                 coord_y:  34,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9241,7 +9241,7 @@ module.exports = {
                 id:  1027,
                 coord_x:  386,
                 coord_y:  36,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9250,7 +9250,7 @@ module.exports = {
                 id:  1028,
                 coord_x:  386,
                 coord_y:  37,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9259,7 +9259,7 @@ module.exports = {
                 id:  1029,
                 coord_x:  386,
                 coord_y:  39,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9268,7 +9268,7 @@ module.exports = {
                 id:  1030,
                 coord_x:  386,
                 coord_y:  41,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9277,7 +9277,7 @@ module.exports = {
                 id:  1031,
                 coord_x:  386,
                 coord_y:  42,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9286,7 +9286,7 @@ module.exports = {
                 id:  1032,
                 coord_x:  386,
                 coord_y:  43,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9295,7 +9295,7 @@ module.exports = {
                 id:  1033,
                 coord_x:  386,
                 coord_y:  43,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9304,7 +9304,7 @@ module.exports = {
                 id:  1034,
                 coord_x:  386,
                 coord_y:  44,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9313,7 +9313,7 @@ module.exports = {
                 id:  1035,
                 coord_x:  386,
                 coord_y:  45,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9322,7 +9322,7 @@ module.exports = {
                 id:  1036,
                 coord_x:  386,
                 coord_y:  47,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9331,7 +9331,7 @@ module.exports = {
                 id:  1037,
                 coord_x:  386,
                 coord_y:  48,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9340,7 +9340,7 @@ module.exports = {
                 id:  1038,
                 coord_x:  386,
                 coord_y:  49,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9349,7 +9349,7 @@ module.exports = {
                 id:  1039,
                 coord_x:  386,
                 coord_y:  49,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9358,7 +9358,7 @@ module.exports = {
                 id:  1040,
                 coord_x:  386,
                 coord_y:  50,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9367,7 +9367,7 @@ module.exports = {
                 id:  1041,
                 coord_x:  386,
                 coord_y:  52,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9376,7 +9376,7 @@ module.exports = {
                 id:  1042,
                 coord_x:  387,
                 coord_y:  54,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9385,7 +9385,7 @@ module.exports = {
                 id:  1043,
                 coord_x:  387,
                 coord_y:  55,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9394,7 +9394,7 @@ module.exports = {
                 id:  1044,
                 coord_x:  388,
                 coord_y:  56,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9403,7 +9403,7 @@ module.exports = {
                 id:  1045,
                 coord_x:  388,
                 coord_y:  56,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9412,7 +9412,7 @@ module.exports = {
                 id:  1046,
                 coord_x:  389,
                 coord_y:  57,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9421,7 +9421,7 @@ module.exports = {
                 id:  1047,
                 coord_x:  389,
                 coord_y:  57,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9430,7 +9430,7 @@ module.exports = {
                 id:  1048,
                 coord_x:  389,
                 coord_y:  58,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9439,7 +9439,7 @@ module.exports = {
                 id:  1049,
                 coord_x:  390,
                 coord_y:  58,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9448,7 +9448,7 @@ module.exports = {
                 id:  1050,
                 coord_x:  391,
                 coord_y:  60,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9457,7 +9457,7 @@ module.exports = {
                 id:  1051,
                 coord_x:  391,
                 coord_y:  60,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9466,7 +9466,7 @@ module.exports = {
                 id:  1052,
                 coord_x:  392,
                 coord_y:  61,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9475,7 +9475,7 @@ module.exports = {
                 id:  1053,
                 coord_x:  392,
                 coord_y:  62,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9484,7 +9484,7 @@ module.exports = {
                 id:  1054,
                 coord_x:  393,
                 coord_y:  63,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9493,7 +9493,7 @@ module.exports = {
                 id:  1055,
                 coord_x:  394,
                 coord_y:  64,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9502,7 +9502,7 @@ module.exports = {
                 id:  1056,
                 coord_x:  394,
                 coord_y:  65,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9511,7 +9511,7 @@ module.exports = {
                 id:  1057,
                 coord_x:  395,
                 coord_y:  66,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9520,7 +9520,7 @@ module.exports = {
                 id:  1058,
                 coord_x:  395,
                 coord_y:  67,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9529,7 +9529,7 @@ module.exports = {
                 id:  1059,
                 coord_x:  396,
                 coord_y:  68,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9538,7 +9538,7 @@ module.exports = {
                 id:  1060,
                 coord_x:  396,
                 coord_y:  68,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9547,7 +9547,7 @@ module.exports = {
                 id:  1061,
                 coord_x:  397,
                 coord_y:  68,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9556,7 +9556,7 @@ module.exports = {
                 id:  1062,
                 coord_x:  399,
                 coord_y:  69,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9565,7 +9565,7 @@ module.exports = {
                 id:  1063,
                 coord_x:  400,
                 coord_y:  70,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9574,7 +9574,7 @@ module.exports = {
                 id:  1064,
                 coord_x:  400,
                 coord_y:  70,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9583,7 +9583,7 @@ module.exports = {
                 id:  1065,
                 coord_x:  401,
                 coord_y:  71,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9592,7 +9592,7 @@ module.exports = {
                 id:  1066,
                 coord_x:  401,
                 coord_y:  71,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9601,7 +9601,7 @@ module.exports = {
                 id:  1067,
                 coord_x:  402,
                 coord_y:  71,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9610,7 +9610,7 @@ module.exports = {
                 id:  1068,
                 coord_x:  405,
                 coord_y:  74,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9619,7 +9619,7 @@ module.exports = {
                 id:  1069,
                 coord_x:  406,
                 coord_y:  74,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:43",
                 updated_at:  "2020-03-28 10:22:43" 
@@ -9628,7 +9628,7 @@ module.exports = {
                 id:  1070,
                 coord_x:  407,
                 coord_y:  74,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9637,7 +9637,7 @@ module.exports = {
                 id:  1071,
                 coord_x:  408,
                 coord_y:  74,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9646,7 +9646,7 @@ module.exports = {
                 id:  1072,
                 coord_x:  409,
                 coord_y:  74,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9655,7 +9655,7 @@ module.exports = {
                 id:  1073,
                 coord_x:  410,
                 coord_y:  74,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9664,7 +9664,7 @@ module.exports = {
                 id:  1074,
                 coord_x:  414,
                 coord_y:  74,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9673,7 +9673,7 @@ module.exports = {
                 id:  1075,
                 coord_x:  416,
                 coord_y:  73,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9682,7 +9682,7 @@ module.exports = {
                 id:  1076,
                 coord_x:  416,
                 coord_y:  73,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9691,7 +9691,7 @@ module.exports = {
                 id:  1077,
                 coord_x:  417,
                 coord_y:  72,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9700,7 +9700,7 @@ module.exports = {
                 id:  1078,
                 coord_x:  417,
                 coord_y:  71,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9709,7 +9709,7 @@ module.exports = {
                 id:  1079,
                 coord_x:  419,
                 coord_y:  70,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9718,7 +9718,7 @@ module.exports = {
                 id:  1080,
                 coord_x:  419,
                 coord_y:  70,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9727,7 +9727,7 @@ module.exports = {
                 id:  1081,
                 coord_x:  420,
                 coord_y:  69,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9736,7 +9736,7 @@ module.exports = {
                 id:  1082,
                 coord_x:  420,
                 coord_y:  69,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9745,7 +9745,7 @@ module.exports = {
                 id:  1083,
                 coord_x:  420,
                 coord_y:  68,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9754,7 +9754,7 @@ module.exports = {
                 id:  1084,
                 coord_x:  421,
                 coord_y:  68,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9763,7 +9763,7 @@ module.exports = {
                 id:  1085,
                 coord_x:  421,
                 coord_y:  67,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9772,7 +9772,7 @@ module.exports = {
                 id:  1086,
                 coord_x:  421,
                 coord_y:  66,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9781,7 +9781,7 @@ module.exports = {
                 id:  1087,
                 coord_x:  421,
                 coord_y:  65,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9790,7 +9790,7 @@ module.exports = {
                 id:  1088,
                 coord_x:  422,
                 coord_y:  62,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9799,7 +9799,7 @@ module.exports = {
                 id:  1089,
                 coord_x:  422,
                 coord_y:  61,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9808,7 +9808,7 @@ module.exports = {
                 id:  1090,
                 coord_x:  422,
                 coord_y:  60,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9817,7 +9817,7 @@ module.exports = {
                 id:  1091,
                 coord_x:  422,
                 coord_y:  59,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9826,7 +9826,7 @@ module.exports = {
                 id:  1092,
                 coord_x:  422,
                 coord_y:  58,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9835,7 +9835,7 @@ module.exports = {
                 id:  1093,
                 coord_x:  422,
                 coord_y:  57,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9844,7 +9844,7 @@ module.exports = {
                 id:  1094,
                 coord_x:  422,
                 coord_y:  55,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9853,7 +9853,7 @@ module.exports = {
                 id:  1095,
                 coord_x:  422,
                 coord_y:  54,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9862,7 +9862,7 @@ module.exports = {
                 id:  1096,
                 coord_x:  422,
                 coord_y:  51,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9871,7 +9871,7 @@ module.exports = {
                 id:  1097,
                 coord_x:  422,
                 coord_y:  49,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9880,7 +9880,7 @@ module.exports = {
                 id:  1098,
                 coord_x:  422,
                 coord_y:  48,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9889,7 +9889,7 @@ module.exports = {
                 id:  1099,
                 coord_x:  422,
                 coord_y:  47,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9898,7 +9898,7 @@ module.exports = {
                 id:  1100,
                 coord_x:  422,
                 coord_y:  46,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9907,7 +9907,7 @@ module.exports = {
                 id:  1101,
                 coord_x:  421,
                 coord_y:  44,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9916,7 +9916,7 @@ module.exports = {
                 id:  1102,
                 coord_x:  421,
                 coord_y:  43,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9925,7 +9925,7 @@ module.exports = {
                 id:  1103,
                 coord_x:  419,
                 coord_y:  41,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9934,7 +9934,7 @@ module.exports = {
                 id:  1104,
                 coord_x:  418,
                 coord_y:  40,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9943,7 +9943,7 @@ module.exports = {
                 id:  1105,
                 coord_x:  417,
                 coord_y:  39,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9952,7 +9952,7 @@ module.exports = {
                 id:  1106,
                 coord_x:  416,
                 coord_y:  37,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9961,7 +9961,7 @@ module.exports = {
                 id:  1107,
                 coord_x:  413,
                 coord_y:  35,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9970,7 +9970,7 @@ module.exports = {
                 id:  1108,
                 coord_x:  413,
                 coord_y:  34,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9979,7 +9979,7 @@ module.exports = {
                 id:  1109,
                 coord_x:  412,
                 coord_y:  33,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9988,7 +9988,7 @@ module.exports = {
                 id:  1110,
                 coord_x:  410,
                 coord_y:  33,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -9997,7 +9997,7 @@ module.exports = {
                 id:  1111,
                 coord_x:  409,
                 coord_y:  31,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10006,7 +10006,7 @@ module.exports = {
                 id:  1112,
                 coord_x:  406,
                 coord_y:  29,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10015,7 +10015,7 @@ module.exports = {
                 id:  1113,
                 coord_x:  405,
                 coord_y:  29,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10024,7 +10024,7 @@ module.exports = {
                 id:  1114,
                 coord_x:  403,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10033,7 +10033,7 @@ module.exports = {
                 id:  1115,
                 coord_x:  402,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10042,7 +10042,7 @@ module.exports = {
                 id:  1116,
                 coord_x:  402,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10051,7 +10051,7 @@ module.exports = {
                 id:  1117,
                 coord_x:  401,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10060,7 +10060,7 @@ module.exports = {
                 id:  1118,
                 coord_x:  400,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10069,7 +10069,7 @@ module.exports = {
                 id:  1119,
                 coord_x:  399,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10078,7 +10078,7 @@ module.exports = {
                 id:  1120,
                 coord_x:  399,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10087,7 +10087,7 @@ module.exports = {
                 id:  1121,
                 coord_x:  398,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10096,7 +10096,7 @@ module.exports = {
                 id:  1122,
                 coord_x:  398,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10105,7 +10105,7 @@ module.exports = {
                 id:  1123,
                 coord_x:  398,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10114,7 +10114,7 @@ module.exports = {
                 id:  1124,
                 coord_x:  398,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10123,7 +10123,7 @@ module.exports = {
                 id:  1125,
                 coord_x:  397,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10132,7 +10132,7 @@ module.exports = {
                 id:  1126,
                 coord_x:  396,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10141,7 +10141,7 @@ module.exports = {
                 id:  1127,
                 coord_x:  396,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10150,7 +10150,7 @@ module.exports = {
                 id:  1128,
                 coord_x:  396,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10159,7 +10159,7 @@ module.exports = {
                 id:  1129,
                 coord_x:  395,
                 coord_y:  28,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10168,7 +10168,7 @@ module.exports = {
                 id:  1130,
                 coord_x:  395,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10177,7 +10177,7 @@ module.exports = {
                 id:  1131,
                 coord_x:  395,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10186,7 +10186,7 @@ module.exports = {
                 id:  1132,
                 coord_x:  395,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10195,7 +10195,7 @@ module.exports = {
                 id:  1133,
                 coord_x:  395,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10204,7 +10204,7 @@ module.exports = {
                 id:  1134,
                 coord_x:  395,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10213,7 +10213,7 @@ module.exports = {
                 id:  1135,
                 coord_x:  396,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10222,7 +10222,7 @@ module.exports = {
                 id:  1136,
                 coord_x:  397,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10231,7 +10231,7 @@ module.exports = {
                 id:  1137,
                 coord_x:  398,
                 coord_y:  27,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  19,
                 created_at:  "2020-03-28 10:22:44",
                 updated_at:  "2020-03-28 10:22:44" 
@@ -10240,7 +10240,7 @@ module.exports = {
                 id:  1138,
                 coord_x:  295,
                 coord_y:  96,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10249,7 +10249,7 @@ module.exports = {
                 id:  1139,
                 coord_x:  295,
                 coord_y:  96,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10258,7 +10258,7 @@ module.exports = {
                 id:  1140,
                 coord_x:  294,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10267,7 +10267,7 @@ module.exports = {
                 id:  1141,
                 coord_x:  291,
                 coord_y:  98,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10276,7 +10276,7 @@ module.exports = {
                 id:  1142,
                 coord_x:  290,
                 coord_y:  99,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10285,7 +10285,7 @@ module.exports = {
                 id:  1143,
                 coord_x:  286,
                 coord_y:  101,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10294,7 +10294,7 @@ module.exports = {
                 id:  1144,
                 coord_x:  285,
                 coord_y:  102,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10303,7 +10303,7 @@ module.exports = {
                 id:  1145,
                 coord_x:  284,
                 coord_y:  103,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10312,7 +10312,7 @@ module.exports = {
                 id:  1146,
                 coord_x:  284,
                 coord_y:  104,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10321,7 +10321,7 @@ module.exports = {
                 id:  1147,
                 coord_x:  282,
                 coord_y:  105,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10330,7 +10330,7 @@ module.exports = {
                 id:  1148,
                 coord_x:  281,
                 coord_y:  105,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10339,7 +10339,7 @@ module.exports = {
                 id:  1149,
                 coord_x:  281,
                 coord_y:  106,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10348,7 +10348,7 @@ module.exports = {
                 id:  1150,
                 coord_x:  279,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10357,7 +10357,7 @@ module.exports = {
                 id:  1151,
                 coord_x:  278,
                 coord_y:  109,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10366,7 +10366,7 @@ module.exports = {
                 id:  1152,
                 coord_x:  278,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10375,7 +10375,7 @@ module.exports = {
                 id:  1153,
                 coord_x:  277,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:45",
                 updated_at:  "2020-03-28 10:28:45" 
@@ -10384,7 +10384,7 @@ module.exports = {
                 id:  1154,
                 coord_x:  277,
                 coord_y:  113,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10393,7 +10393,7 @@ module.exports = {
                 id:  1155,
                 coord_x:  276,
                 coord_y:  117,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10402,7 +10402,7 @@ module.exports = {
                 id:  1156,
                 coord_x:  276,
                 coord_y:  117,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10411,7 +10411,7 @@ module.exports = {
                 id:  1157,
                 coord_x:  276,
                 coord_y:  119,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10420,7 +10420,7 @@ module.exports = {
                 id:  1158,
                 coord_x:  276,
                 coord_y:  120,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10429,7 +10429,7 @@ module.exports = {
                 id:  1159,
                 coord_x:  276,
                 coord_y:  121,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10438,7 +10438,7 @@ module.exports = {
                 id:  1160,
                 coord_x:  276,
                 coord_y:  122,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10447,7 +10447,7 @@ module.exports = {
                 id:  1161,
                 coord_x:  276,
                 coord_y:  123,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10456,7 +10456,7 @@ module.exports = {
                 id:  1162,
                 coord_x:  276,
                 coord_y:  124,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10465,7 +10465,7 @@ module.exports = {
                 id:  1163,
                 coord_x:  276,
                 coord_y:  125,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10474,7 +10474,7 @@ module.exports = {
                 id:  1164,
                 coord_x:  276,
                 coord_y:  126,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10483,7 +10483,7 @@ module.exports = {
                 id:  1165,
                 coord_x:  276,
                 coord_y:  127,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10492,7 +10492,7 @@ module.exports = {
                 id:  1166,
                 coord_x:  276,
                 coord_y:  128,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10501,7 +10501,7 @@ module.exports = {
                 id:  1167,
                 coord_x:  276,
                 coord_y:  130,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10510,7 +10510,7 @@ module.exports = {
                 id:  1168,
                 coord_x:  276,
                 coord_y:  131,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10519,7 +10519,7 @@ module.exports = {
                 id:  1169,
                 coord_x:  276,
                 coord_y:  133,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10528,7 +10528,7 @@ module.exports = {
                 id:  1170,
                 coord_x:  276,
                 coord_y:  133,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10537,7 +10537,7 @@ module.exports = {
                 id:  1171,
                 coord_x:  277,
                 coord_y:  134,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10546,7 +10546,7 @@ module.exports = {
                 id:  1172,
                 coord_x:  277,
                 coord_y:  135,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10555,7 +10555,7 @@ module.exports = {
                 id:  1173,
                 coord_x:  278,
                 coord_y:  136,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10564,7 +10564,7 @@ module.exports = {
                 id:  1174,
                 coord_x:  279,
                 coord_y:  136,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10573,7 +10573,7 @@ module.exports = {
                 id:  1175,
                 coord_x:  280,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10582,7 +10582,7 @@ module.exports = {
                 id:  1176,
                 coord_x:  281,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10591,7 +10591,7 @@ module.exports = {
                 id:  1177,
                 coord_x:  281,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10600,7 +10600,7 @@ module.exports = {
                 id:  1178,
                 coord_x:  282,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10609,7 +10609,7 @@ module.exports = {
                 id:  1179,
                 coord_x:  284,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10618,7 +10618,7 @@ module.exports = {
                 id:  1180,
                 coord_x:  284,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10627,7 +10627,7 @@ module.exports = {
                 id:  1181,
                 coord_x:  285,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10636,7 +10636,7 @@ module.exports = {
                 id:  1182,
                 coord_x:  287,
                 coord_y:  137,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10645,7 +10645,7 @@ module.exports = {
                 id:  1183,
                 coord_x:  288,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10654,7 +10654,7 @@ module.exports = {
                 id:  1184,
                 coord_x:  289,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10663,7 +10663,7 @@ module.exports = {
                 id:  1185,
                 coord_x:  291,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10672,7 +10672,7 @@ module.exports = {
                 id:  1186,
                 coord_x:  292,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10681,7 +10681,7 @@ module.exports = {
                 id:  1187,
                 coord_x:  293,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10690,7 +10690,7 @@ module.exports = {
                 id:  1188,
                 coord_x:  294,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10699,7 +10699,7 @@ module.exports = {
                 id:  1189,
                 coord_x:  295,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10708,7 +10708,7 @@ module.exports = {
                 id:  1190,
                 coord_x:  295,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10717,7 +10717,7 @@ module.exports = {
                 id:  1191,
                 coord_x:  297,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10726,7 +10726,7 @@ module.exports = {
                 id:  1192,
                 coord_x:  298,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10735,7 +10735,7 @@ module.exports = {
                 id:  1193,
                 coord_x:  298,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10744,7 +10744,7 @@ module.exports = {
                 id:  1194,
                 coord_x:  300,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10753,7 +10753,7 @@ module.exports = {
                 id:  1195,
                 coord_x:  303,
                 coord_y:  138,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10762,7 +10762,7 @@ module.exports = {
                 id:  1196,
                 coord_x:  304,
                 coord_y:  136,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10771,7 +10771,7 @@ module.exports = {
                 id:  1197,
                 coord_x:  305,
                 coord_y:  134,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10780,7 +10780,7 @@ module.exports = {
                 id:  1198,
                 coord_x:  306,
                 coord_y:  133,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10789,7 +10789,7 @@ module.exports = {
                 id:  1199,
                 coord_x:  307,
                 coord_y:  132,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10798,7 +10798,7 @@ module.exports = {
                 id:  1200,
                 coord_x:  307,
                 coord_y:  131,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10807,7 +10807,7 @@ module.exports = {
                 id:  1201,
                 coord_x:  307,
                 coord_y:  130,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10816,7 +10816,7 @@ module.exports = {
                 id:  1202,
                 coord_x:  307,
                 coord_y:  127,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10825,7 +10825,7 @@ module.exports = {
                 id:  1203,
                 coord_x:  307,
                 coord_y:  124,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10834,7 +10834,7 @@ module.exports = {
                 id:  1204,
                 coord_x:  308,
                 coord_y:  119,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10843,7 +10843,7 @@ module.exports = {
                 id:  1205,
                 coord_x:  308,
                 coord_y:  117,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10852,7 +10852,7 @@ module.exports = {
                 id:  1206,
                 coord_x:  308,
                 coord_y:  116,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10861,7 +10861,7 @@ module.exports = {
                 id:  1207,
                 coord_x:  308,
                 coord_y:  114,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10870,7 +10870,7 @@ module.exports = {
                 id:  1208,
                 coord_x:  308,
                 coord_y:  111,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10879,7 +10879,7 @@ module.exports = {
                 id:  1209,
                 coord_x:  308,
                 coord_y:  110,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10888,7 +10888,7 @@ module.exports = {
                 id:  1210,
                 coord_x:  308,
                 coord_y:  108,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10897,7 +10897,7 @@ module.exports = {
                 id:  1211,
                 coord_x:  308,
                 coord_y:  107,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10906,7 +10906,7 @@ module.exports = {
                 id:  1212,
                 coord_x:  308,
                 coord_y:  106,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10915,7 +10915,7 @@ module.exports = {
                 id:  1213,
                 coord_x:  308,
                 coord_y:  105,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10924,7 +10924,7 @@ module.exports = {
                 id:  1214,
                 coord_x:  308,
                 coord_y:  102,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10933,7 +10933,7 @@ module.exports = {
                 id:  1215,
                 coord_x:  308,
                 coord_y:  101,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10942,7 +10942,7 @@ module.exports = {
                 id:  1216,
                 coord_x:  308,
                 coord_y:  99,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10951,7 +10951,7 @@ module.exports = {
                 id:  1217,
                 coord_x:  306,
                 coord_y:  98,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10960,7 +10960,7 @@ module.exports = {
                 id:  1218,
                 coord_x:  305,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10969,7 +10969,7 @@ module.exports = {
                 id:  1219,
                 coord_x:  301,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10978,7 +10978,7 @@ module.exports = {
                 id:  1220,
                 coord_x:  299,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10987,7 +10987,7 @@ module.exports = {
                 id:  1221,
                 coord_x:  298,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -10996,7 +10996,7 @@ module.exports = {
                 id:  1222,
                 coord_x:  298,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11005,7 +11005,7 @@ module.exports = {
                 id:  1223,
                 coord_x:  298,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11014,7 +11014,7 @@ module.exports = {
                 id:  1224,
                 coord_x:  297,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11023,7 +11023,7 @@ module.exports = {
                 id:  1225,
                 coord_x:  297,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11032,7 +11032,7 @@ module.exports = {
                 id:  1226,
                 coord_x:  296,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11041,7 +11041,7 @@ module.exports = {
                 id:  1227,
                 coord_x:  295,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11050,7 +11050,7 @@ module.exports = {
                 id:  1228,
                 coord_x:  295,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11059,7 +11059,7 @@ module.exports = {
                 id:  1229,
                 coord_x:  294,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11068,7 +11068,7 @@ module.exports = {
                 id:  1230,
                 coord_x:  293,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11077,7 +11077,7 @@ module.exports = {
                 id:  1231,
                 coord_x:  293,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11086,7 +11086,7 @@ module.exports = {
                 id:  1232,
                 coord_x:  292,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11095,7 +11095,7 @@ module.exports = {
                 id:  1233,
                 coord_x:  291,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11104,7 +11104,7 @@ module.exports = {
                 id:  1234,
                 coord_x:  291,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11113,7 +11113,7 @@ module.exports = {
                 id:  1235,
                 coord_x:  291,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11122,7 +11122,7 @@ module.exports = {
                 id:  1236,
                 coord_x:  292,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11131,7 +11131,7 @@ module.exports = {
                 id:  1237,
                 coord_x:  293,
                 coord_y:  97,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11140,7 +11140,7 @@ module.exports = {
                 id:  1238,
                 coord_x:  294,
                 coord_y:  96,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
@@ -11149,7 +11149,7 @@ module.exports = {
                 id:  1239,
                 coord_x:  295,
                 coord_y:  96,
-                id_usuario:  4,
+                id_usuario: 1,
                 id_celula:  29,
                 created_at:  "2020-03-28 10:28:46",
                 updated_at:  "2020-03-28 10:28:46" 
