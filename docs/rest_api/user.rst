@@ -160,6 +160,17 @@ Get Operations
     :>jsonarr string senha: Password
     :>jsonarr int ativo: 1 if user is active and 0 otherwise.
 
+    **Example**
+
+    ..  literalinclude:: ../examples/106-get-usuarios.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/106-get-usuarios.sh.output
+        :language: json
+        :caption: Output
+
+
 ..  http:get:: /api/v1/usuarios/{user_id}
 
     Get single user.
@@ -184,11 +195,11 @@ Get Operations
 
     **Example**
 
-    ..  literalinclude:: ../examples/106-get-usuarios-1.sh
+    ..  literalinclude:: ../examples/107-get-usuarios-1.sh
         :language: bash
         :caption: Input
 
-    ..  literalinclude:: ../examples/106-get-usuarios-1.sh.output
+    ..  literalinclude:: ../examples/107-get-usuarios-1.sh.output
         :language: json
         :caption: Output
 

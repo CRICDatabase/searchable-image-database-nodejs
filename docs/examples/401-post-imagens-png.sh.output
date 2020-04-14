@@ -1,0 +1,16 @@
+{
+    "id": 5,
+    "nome": "32ad2cd0346129d7_example0005.png",
+    "codigo_lamina": "PNG Example",
+    "excluida": 0,
+    "classificacao_aprovada": 1,
+    "dt_aquisicao": "2020-01-01T00:00:00.000Z",
+    "fonte_aquisicao": 1,
+    "caminho_imagem": "imagens/base_interna/",
+    "id_usuario": "1",
+    "id_lesao": "1",
+    "altura": 400,
+    "largura": 600,
+    "updatedAt": "2020-04-14T19:52:58.747Z",
+    "createdAt": "2020-04-14T19:52:58.747Z"
+}

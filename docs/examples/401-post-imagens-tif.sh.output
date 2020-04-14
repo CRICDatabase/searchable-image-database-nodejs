@@ -1,0 +1,7 @@
+{
+    "errno": -2,
+    "code": "ENOENT",
+    "syscall": "open",
+    "path": "/opt/cric/backend/src/executores/imagem_executor/../../../src/assets/imagens/base_original/168408d67315d911_example0004.tif",
+    "methodName": "constructor"
+}

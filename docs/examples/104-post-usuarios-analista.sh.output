@@ -1,7 +1,7 @@
 {
-    "type": "",
-    "status": 404,
-    "title": "User not found",
-    "detail": "",
-    "instance": ""
+    "id": "7",
+    "total_segmentacoes": 0,
+    "total_classificacoes": 0,
+    "updatedAt": "2020-04-14T19:52:40.368Z",
+    "createdAt": "2020-04-14T19:52:40.368Z"
 }

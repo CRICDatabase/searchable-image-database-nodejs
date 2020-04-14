@@ -5,4 +5,4 @@ curl \
     -F "codigo_lamina=example" \
     -F "dt_aquisicao=2020-01-01" \
     -F file=@example0001.jpg \
-    -X POST "http://api.database.cric.com.br/api/v1/imagens/"
+    -X POST "http://localhost:3000/api/v1/imagens/"

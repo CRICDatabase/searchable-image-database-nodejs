@@ -3,5 +3,6 @@
     "status": 403,
     "title": "No permission to perform the operation",
     "detail": "",
-    "instance": ""
+    "instance": "",
+    "details": "User with id 5 isn't cytopathologist"
 }
