@@ -17,7 +17,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req);
 
         const CSV_CLASSIFICATION_FILENAME = "classifications.csv";

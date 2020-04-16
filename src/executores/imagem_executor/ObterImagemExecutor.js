@@ -9,7 +9,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         validarRequisicao(req);
         const imagem = await ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
         if(!imagem) {

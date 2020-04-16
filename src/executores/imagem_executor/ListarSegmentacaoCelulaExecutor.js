@@ -12,7 +12,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req);
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);

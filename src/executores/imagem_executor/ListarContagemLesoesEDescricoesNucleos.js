@@ -8,8 +8,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
-
         const lesaoNormal = TipoLesao.NORMAL, nomeLesaoNormal = "Normal";
         const lesaoAscUs = TipoLesao.ASC_US, nomeLesaoASCUS = "AscUs";
         const lesaoLSil = TipoLesao.LSIL, nomeLesaoLSil = "LSil";
