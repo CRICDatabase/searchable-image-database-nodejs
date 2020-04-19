@@ -28,7 +28,12 @@ module.exports = {
         var zip = new JSZip();
         for await (let image of all_images){
             try {
-                zip.file(image.nome, fs.readFileSync(image.caminho_imagem));
+                zip.file(
+                    image.nome,
+                    fs.readFileSync(
+                        `${__dirname}/../../assets/${image.caminho_imagem}${image.nome}`
+                    )
+                );
             }
             catch(err) {
                 console.log(`Fail to add ${image.nome} due ${err}`);
