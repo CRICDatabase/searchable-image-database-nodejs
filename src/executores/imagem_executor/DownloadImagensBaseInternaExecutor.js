@@ -48,7 +48,7 @@ module.exports = {
             /* Query for classifications */
             let classifications = await ImagemRepositorio.listarClassificacoesCelula(
                 image.id,
-                1
+                req.params.id_usuario ? req.params.id_usuario : 1
             );
 
             classification_array.push({
