@@ -1,6 +1,6 @@
 {
     "id": 5,
-    "nome": "0b5d9a4f3f861efb_example0005.png",
+    "nome": "2d814d3a0323131b_example0005.png",
     "codigo_lamina": "PNG Example",
     "excluida": 0,
     "classificacao_aprovada": 1,
@@ -11,6 +11,6 @@
     "id_lesao": "1",
     "altura": 400,
     "largura": 600,
-    "updatedAt": "2020-04-14T21:26:59.891Z",
-    "createdAt": "2020-04-14T21:26:59.891Z"
+    "updatedAt": "2020-04-22T16:07:52.130Z",
+    "createdAt": "2020-04-22T16:07:52.130Z"
 }

@@ -19,7 +19,7 @@ rotasImagem.get("/api/v1/imagens-descricoes", ImagemController.listarDescricoes)
 rotasImagem.get("/api/v1/imagens/contagem/lesoes/descricoes", ImagemController.obterContagemLesoesEDescricoesNucleos);
 rotasImagem.get("/api/v1/imagens/:id_imagem/listar-classificacao-celula/:id_usuario", ImagemController.listarClassificacaoDeCelulaParaUmAnalista);
 rotasImagem.get("/api/v1/imagens/:id_imagem/listar-segmentacao-celula/:id_usuario", ImagemController.listarSegmentacaoDeCelulaParaUmAnalista);
-rotasImagem.get("/api/v1/imagens/download/base_interna_cvx/:id_usuario", ImagemController.downloadImagensBaseInterna);
+rotasImagem.get("/api/v1/imagens/download/base_interna_cvx/:id_usuario?", ImagemController.downloadImagensBaseInterna);
 rotasImagem.get("/api/v1/imagens/download/base_externa_cvx/:id_usuario", ImagemController.downloadImagensBaseExterna);
 
 //Rotas de imagem PUT

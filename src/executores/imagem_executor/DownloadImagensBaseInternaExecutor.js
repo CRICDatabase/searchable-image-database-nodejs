@@ -16,7 +16,6 @@ module.exports = {
 
     async Executar(req) {
 
-        console.log("begin");
         const CSV_CLASSIFICATION_FILENAME = "classifications.csv";
         const JSON_CLASSIFICATION_FILENAME = "classifications.json";
 
@@ -48,7 +47,7 @@ module.exports = {
             /* Query for classifications */
             let classifications = await ImagemRepositorio.listarClassificacoesCelula(
                 image.id,
-                1
+                req.params.id_usuario ? req.params.id_usuario : 1
             );
 
             classification_array.push({
@@ -97,23 +96,24 @@ module.exports = {
         }
 
         return zip
-            .generateNodeStream({type:'nodebuffer',streamFiles:true});
+            .generateNodeStream({type:"nodebuffer", streamFiles:true});
     }
 };
 
 async function validarRequisicao(req) {
 
-    if (!ValidarTipo.ehNumero(req.params.id_usuario)) {
+    if(req.params.id_usuario){
+        if (!ValidarTipo.ehNumero(req.params.id_usuario)) {
+            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            throw ObjetoExcecao;
+        }
 
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
-
-    const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    if (!usuario) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-        throw ObjetoExcecao;
+        const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
+        if (!usuario) {
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+            throw ObjetoExcecao;
+        }
     }
 }

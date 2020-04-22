@@ -6,7 +6,7 @@
     "classificacao_aprovada": 1,
     "dt_aquisicao": "2020-01-01T03:00:00.000Z",
     "fonte_aquisicao": 1,
-    "caminho_imagem": "src/assets/imagens/seeders/example0001.jpg",
+    "caminho_imagem": "imagens/seeders/",
     "altura": 400,
     "largura": 600,
     "createdAt": "2020-01-01T03:00:00.000Z",

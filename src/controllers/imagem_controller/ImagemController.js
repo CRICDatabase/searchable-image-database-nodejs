@@ -329,6 +329,7 @@ module.exports = {
             })
                 .catch((err) => {
                     console.log(`Failed to send zip file to user because of ${err}`);
+                    return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err);
                 });
         }
         catch (erro) {
