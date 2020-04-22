@@ -28,10 +28,12 @@ included in the source code.
     :caption: Contents:
 
     rest_api/meta
+    rest_api/header
     rest_api/user
     rest_api/injury
     rest_api/description
     rest_api/image
+    rest_api/download
 
 Developers
 ----------

@@ -1,6 +1,6 @@
 {
     "id": 4,
-    "nome": "a2598ae88be4ceb0_example0006.jpg",
+    "nome": "06437f48251ff300_example0006.jpg",
     "codigo_lamina": "JPG Example",
     "excluida": 0,
     "classificacao_aprovada": 1,
@@ -9,8 +9,8 @@
     "caminho_imagem": "imagens/base_interna/",
     "altura": 400,
     "largura": 600,
-    "createdAt": "2020-04-14T21:26:58.000Z",
-    "updatedAt": "2020-04-14T21:27:22.000Z",
+    "createdAt": "2020-04-22T16:07:34.000Z",
+    "updatedAt": "2020-04-22T16:08:46.000Z",
     "id_usuario": 1,
     "lesao": {
         "id": 2,

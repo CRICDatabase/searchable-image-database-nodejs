@@ -16,7 +16,6 @@ module.exports = {
 
     async Executar(req) {
 
-        console.log("begin");
         const CSV_CLASSIFICATION_FILENAME = "classifications.csv";
         const JSON_CLASSIFICATION_FILENAME = "classifications.json";
 
