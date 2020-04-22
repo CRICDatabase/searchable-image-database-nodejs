@@ -13,6 +13,11 @@ class VisitanteModel extends Model {
             cidade: DataTypes.STRING
         },
         {
+            defaultScope: {
+                attributes: {
+                    exclude: ['created_at', 'updated_at']
+                }
+            },
             sequelize: connection, //Recebe a conexao com o banco de dados
             tableName: "visitante"
         });

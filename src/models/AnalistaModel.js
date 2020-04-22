@@ -12,6 +12,11 @@ class AnalistaModel extends Model {
             total_classificacoes: DataTypes.INTEGER
         },
         {
+            defaultScope: {
+                attributes: {
+                    exclude: ['created_at', 'updated_at']
+                }
+            },
             sequelize: connection, //Recebe a conexao com o banco de dados
             tableName: "analista"
         });

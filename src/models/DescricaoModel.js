@@ -12,6 +12,11 @@ class DescricaoModel extends Model {
             nome: DataTypes.STRING
         },
         {
+            defaultScope: {
+                attributes: {
+                    exclude: ['created_at', 'updated_at']
+                }
+            },
             sequelize: connection, //Recebe a conexao com o banco de dados
             tableName: "descricao" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });

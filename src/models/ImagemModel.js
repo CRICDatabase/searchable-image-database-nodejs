@@ -35,6 +35,11 @@ class ImagemModel extends Model {
             largura: DataTypes.INTEGER
         },
         {
+            defaultScope: {
+                attributes: {
+                    exclude: ['created_at', 'updated_at']
+                }
+            },
             sequelize: connection, //Recebe a conexao com o banco de dados
             tableName: "imagem" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });

@@ -26,6 +26,14 @@ class UsuarioBaseModel extends Model {
             ativo: DataTypes.INTEGER
         },
         {
+            defaultScope: {
+                attributes: {
+                    exclude: [
+                        'created_at',
+                        'updated_at'
+                    ]
+                }
+            },
             sequelize: connection, //Recebe a conexao com o banco de dados
             tableName: "usuario_base" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });

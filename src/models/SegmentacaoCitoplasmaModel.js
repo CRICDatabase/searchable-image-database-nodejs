@@ -12,6 +12,11 @@ class SegmentacaoCitoplasmaModel extends Model {
             coord_y: DataTypes.INTEGER
         },
         {
+            defaultScope: {
+                attributes: {
+                    exclude: ['created_at', 'updated_at']
+                }
+            },
             sequelize: connection, //Recebe a conexao com o banco de dados
             tableName: "segmentacao_citoplasma" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });

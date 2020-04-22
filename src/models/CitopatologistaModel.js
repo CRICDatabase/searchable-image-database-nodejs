@@ -19,6 +19,11 @@ class CitopatologistaModel extends Model {
             codigo_crc: DataTypes.STRING
         },
         {
+            defaultScope: {
+                attributes: {
+                    exclude: ['created_at', 'updated_at']
+                }
+            },
             sequelize: connection, //Recebe a conexao com o banco de dados
             tableName: "citopatologista"
         });
