@@ -4,12 +4,12 @@ const HttpStatus = require("http-status-codes");
 const JSZip = require("jszip");
 const debug = require("debug")("database.cric:DownloadExecutor");
 const fs = require("fs");
+const path = require('path');
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
@@ -19,6 +19,14 @@ module.exports = {
 
         const CSV_CLASSIFICATION_FILENAME = "classifications.csv";
         const JSON_CLASSIFICATION_FILENAME = "classifications.json";
+        const path2assets = path.normalise(
+            path.join(
+                __dirname,
+                "..",
+                "..",
+                "assets"
+            )
+        );
 
         await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req);
@@ -37,7 +45,11 @@ module.exports = {
                 zip.file(
                     image.nome,
                     fs.readFileSync(
-                        `${__dirname}/../../assets/${image.caminho_imagem}${image.nome}`
+                        path.resolve(
+                            path2assets,
+                            image.caminho_imagem,
+                            image.nome
+                        )
                     )
                 );
             }

@@ -1,16 +1,18 @@
 "use strict";
 
+const path = require('path');
+const Crypto = require("crypto");
+const FileSystem = require("fs");
+const Jimp = require("jimp");
+const HttpStatus = require("http-status-codes");
+
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const HttpStatus = require("http-status-codes");
 const FonteAquisicao = require("../../utils/enumeracoes/fonte_aquisicao");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const Crypto = require("crypto");
-const FileSystem = require("fs");
-const Jimp = require("jimp");
 
 module.exports = {
 
@@ -112,20 +114,26 @@ function obterNomeImagemTratado(entrada) {
 }
 
 async function cadastrarDadosEArquivoDeImagem(req) {
-
-    var sistemaWindows = process.platform === "win32";
-    let barra = "/"; //para ambiente linux
-    if(sistemaWindows) {
-        barra = "\\"; 
-    }
     
     let erroAoSalvar;
     const imagem = await prepararCadastroNoBanco(req);
     const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? "base_interna" : "base_externa";
-    const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;
+    const caminho_base_diretorio = path.join(
+        __dirname,
+        "..",
+        "..",
+        ".."
+    );
 
     req.files.file.name = imagem.nome;
-    let diretorioUploadDefinitivo = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${imagem.nome}`;
+    let diretorioUploadDefinitivo = path.join(
+        caminho_base_diretorio,
+        "src",
+        "assets",
+        "imagens",
+        destino,
+        imagem.nome
+    );
     const filename_parts = imagem.nome.split(".");
     const filename_extension = filename_parts[filename_parts.length - 1];
 
@@ -178,27 +186,47 @@ async function cadastrarDadosEArquivoDeImagem(req) {
 
 async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
 
-    var sistemaWindows = process.platform === "win32";
-    let barra = "/"; //para ambiente linux
     let imagemLida;
     let imagemAtualizacao;
     const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? "base_interna" : "base_externa";
-    if(sistemaWindows) {
-        barra = "\\"; 
-    }
 
     const filename_parts = imagem.nome.split(".");
     const filename_extension = filename_parts[filename_parts.length - 1];
 
-    const caminho_base_diretorio = __dirname + `${barra}..${barra}..${barra}..${barra}`;
+    const caminho_base_diretorio = path.join(
+        __dirname,
+        "..",
+        "..",
+        ".."
+    );
     let diretorioUploadThumbnail;
     let resultado;
 
     if(filename_extension == "tiff" || filename_extension == "tif") {
-        const diretorioUploadImagemOriginal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_original${barra}${req.files.file.name}`;
-        const diretorioUploadFinal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${req.files.file.name.replace(filename_extension, "png")}`;
-
-        diretorioUploadThumbnail = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_thumbnail${barra}${req.files.file.name.replace(filename_extension, "png")}`;
+        const diretorioUploadImagemOriginal = path.join(
+            caminho_base_diretorio,
+            "src",
+            "assets",
+            "imagens",
+            "base_original",
+            req.files.file.name
+        );
+        const diretorioUploadFinal = path.join(
+            caminho_base_diretorio,
+            "src",
+            "assets",
+            "imagens",
+            destino,
+            req.files.file.name.replace(filename_extension, "png")
+        );
+        const diretorioUploadThumbnail = path.join(
+            caminho_base_diretorio,
+            "src",
+            "assets",
+            "imagens",
+            base_thumbnail,
+            req.files.file.name.replace(filename_extension, "png")
+        );
 
         imagemLida = await Jimp.read(diretorioUploadImagemOriginal);
         imagemAtualizacao = imagem;
@@ -211,9 +239,22 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
         imagemRedimensionada.write(diretorioUploadThumbnail);
     }
     else {
-        const diretorioUploadFinal = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}${destino}${barra}${req.files.file.name}`;
-
-        diretorioUploadThumbnail = `${caminho_base_diretorio}src${barra}assets${barra}imagens${barra}base_thumbnail${barra}${req.files.file.name}`;
+        const diretorioUploadFinal = path.join(
+            caminho_base_diretorio,
+            "src",
+            "assets",
+            "imagens",
+            destino,
+            req.files.file.name
+        );
+        const diretorioUploadThumbnail = path.join(
+            caminho_base_diretorio,
+            "src",
+            "assets",
+            "imagens",
+            base_thumbnail,
+            req.files.file.name
+        );
 
         imagemLida = await Jimp.read(diretorioUploadFinal);
         imagemAtualizacao = imagem;
