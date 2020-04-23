@@ -199,7 +199,6 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
         "..",
         ".."
     );
-    let diretorioUploadThumbnail;
     let resultado;
 
     if(filename_extension == "tiff" || filename_extension == "tif") {
@@ -224,7 +223,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
             "src",
             "assets",
             "imagens",
-            base_thumbnail,
+            "base_thumbnail",
             req.files.file.name.replace(filename_extension, "png")
         );
 
@@ -252,7 +251,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
             "src",
             "assets",
             "imagens",
-            base_thumbnail,
+            "base_thumbnail",
             req.files.file.name
         );
 
