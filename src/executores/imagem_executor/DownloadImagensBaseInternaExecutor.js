@@ -2,6 +2,7 @@
 
 const HttpStatus = require("http-status-codes");
 const JSZip = require("jszip");
+const debug = require('debug')('database.cric:DownloadExecutor');
 const fs = require("fs");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
@@ -41,7 +42,7 @@ module.exports = {
                 );
             }
             catch(err) {
-                console.log(`Fail to add ${image.nome} due ${err}`);
+                debug(`Fail to add ${image.nome} due ${err}`);
             }
 
             /* Query for classifications */
@@ -82,7 +83,7 @@ module.exports = {
             );
         }
         catch(err) {
-            console.log(`Fail to add ${JSON_CLASSIFICATION_FILENAME} due ${err}`);
+            debug(`Fail to add ${JSON_CLASSIFICATION_FILENAME} due ${err}`);
         }
 
         try {
@@ -92,7 +93,7 @@ module.exports = {
             );
         }
         catch(err) {
-            console.log(`Fail to add ${CSV_CLASSIFICATION_FILANAME} due ${err}`);
+            debug(`Fail to add ${CSV_CLASSIFICATION_FILANAME} due ${err}`);
         }
 
         return zip

@@ -1,6 +1,8 @@
 "use strict";
 
 const HttpStatus = require("http-status-codes");
+const debug = require('debug')('database.cric:ImageController')
+
 const CadastrarImagemExecutor = require("../../executores/imagem_executor/CadastrarImagemExecutor");
 const ListarImagensExecutor = require("../../executores/imagem_executor/ListarImagensExecutor");
 const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
@@ -323,12 +325,12 @@ module.exports = {
                 zip
                     .pipe(res)
                     .on("finish", function () {
-                        console.log("Zip file with dump of image + data sent to user.");
+                        debug("Zip file with dump of image + data sent to user.");
                     });
 
             })
                 .catch((err) => {
-                    console.log(`Failed to send zip file to user because of ${err}`);
+                    debug(`Failed to send zip file to user because of ${err}`);
                     return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err);
                 });
         }

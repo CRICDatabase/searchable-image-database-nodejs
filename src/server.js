@@ -2,6 +2,7 @@
 
 const config = require("config");
 const cors = require("cors");
+const debug = require('debug')('database.cric:main');
 const express = require("express");
 const FileUpload = require("express-fileupload");
 
@@ -45,4 +46,4 @@ app.use("/", rotasImagem);
 
 const porta = process.env.PORT || 3000;
 app.listen(porta);
-console.log("Servidor iniciado em: http://localhost:" + porta);
+debug(`Server is running and listening. Visit http://localhost:${porta}`);
