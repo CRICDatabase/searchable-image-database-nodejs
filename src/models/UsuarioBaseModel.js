@@ -29,8 +29,8 @@ class UsuarioBaseModel extends Model {
             defaultScope: {
                 attributes: {
                     exclude: [
-                        'created_at',
-                        'updated_at'
+                        "created_at",
+                        "updated_at"
                     ]
                 }
             },

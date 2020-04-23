@@ -2,7 +2,7 @@
 
 const HttpStatus = require("http-status-codes");
 const JSZip = require("jszip");
-const debug = require('debug')('database.cric:DownloadExecutor');
+const debug = require("debug")("database.cric:DownloadExecutor");
 const fs = require("fs");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");

@@ -1,7 +1,7 @@
 "use strict";
 
 const HttpStatus = require("http-status-codes");
-const debug = require('debug')('database.cric:ImageController')
+const debug = require("debug")("database.cric:ImageController");
 
 const CadastrarImagemExecutor = require("../../executores/imagem_executor/CadastrarImagemExecutor");
 const ListarImagensExecutor = require("../../executores/imagem_executor/ListarImagensExecutor");
