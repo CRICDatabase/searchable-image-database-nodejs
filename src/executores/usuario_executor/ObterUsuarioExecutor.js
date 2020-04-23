@@ -78,7 +78,7 @@ async function obterRetorno(usuario, token_curinga_login) {
         ).catch(err => {
             ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
             ObjetoExcecao.title = Excecao.ERRO_INTERNO;
-            ObjetoExcecao.detail = "Failed to register new session";
+            ObjetoExcecao.detail = `Failed to register new session due ${err}`;
             throw ObjetoExcecao;
         });
 

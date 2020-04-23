@@ -52,23 +52,23 @@ module.exports = {
             );
 
             classification_array.push({
-                "image_id": image.id,
-                "image_doi": "",
-                "image_name": image.nome,
-                "classifications": classifications.map(
+                image_id: image.id,
+                image_doi: "",
+                image_name: image.nome,
+                classifications: classifications.map(
                     (item) => {
                         return {
-                            "cell_id": item.id_celula,
-                            "characterisitics": item.id_classificacao,
-                            "nucleus_x": item.coord_centro_nucleo_x,
-                            "nucleus_y": item.coord_centro_nucleo_y
+                            cell_id: item.id_celula,
+                            characterisitics: item.id_classificacao,
+                            nucleus_x: item.coord_centro_nucleo_x,
+                            nucleus_y: item.coord_centro_nucleo_y
                         };
                     }
                 )
             });
 
             classifications.forEach(
-                (item, index, array) => {
+                (item) => {
                     classification_csv_string = classification_csv_string + `${image.id},${image.nome},,${item.id_celula},${item.id_classificacao},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
                 }
             );
@@ -93,7 +93,7 @@ module.exports = {
             );
         }
         catch(err) {
-            debug(`Fail to add ${CSV_CLASSIFICATION_FILANAME} due ${err}`);
+            debug(`Fail to add ${CSV_CLASSIFICATION_FILENAME} due ${err}`);
         }
 
         return zip

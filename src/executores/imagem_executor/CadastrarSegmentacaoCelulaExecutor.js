@@ -133,7 +133,7 @@ async function cadastrarSegmentosCitoplasma(req, id_celula, id_usuario) {
         parametros.coord_y = req.body.segmentos_citoplasma[i].coord_y;
         ponto = ConverterPonto.converterPontoParaArmazenarNoBanco(parametros);
         await ImagemRepositorio.cadastrarSegmentoCitoplasmaCelula(id_usuario, id_celula, ponto.coord_x, ponto.coord_y);
-    };
+    }
 
     return req.body.segmentos_citoplasma.length;
 }
@@ -158,7 +158,7 @@ async function cadastrarSegmentosNucleo(req, id_celula, id_usuario) {
             parametros.coord_y = req.body.segmentos_nucleo[i].coord_y;
             ponto = ConverterPonto.converterPontoParaArmazenarNoBanco(parametros);
             await ImagemRepositorio.cadastrarSegmentoNucleoCelula(id_usuario, id_celula, ponto.coord_x, ponto.coord_y);
-        };
+        }
     }
 
     return req.body.segmentos_nucleo.length;

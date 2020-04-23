@@ -14,19 +14,19 @@
         "amd": true
     },
     "rules": {
-	"arrow-body-style": ["error", "always"],
-	"brace-style": ["error", "stroustrup"],
-	"comma-dangle": ["error", "never"],
-	"comma-spacing": ["error", { "before": false, "after": true }],
-	"comma-style": ["error", "last"],
-	"curly": "error",
+        "arrow-body-style": ["error", "always"],
+        "brace-style": ["error", "stroustrup"],
+        "comma-dangle": ["error", "never"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "comma-style": ["error", "last"],
+        "curly": "error",
         "global-require": "error",
         "indent": ["error", 4, { "VariableDeclarator": "first" }],
-	"linebreak-style": ["error", "unix"],
-	"lines-between-class-members": ["error", "always"],
+        "linebreak-style": ["error", "unix"],
+        "lines-between-class-members": ["error", "always"],
         "quotes": ["error", "double"],
         "quote-props": ["error", "as-needed"],
-	"semi-style": ["error", "last"],
+        "semi-style": ["error", "last"],
         "semi": "error"
     }
 }

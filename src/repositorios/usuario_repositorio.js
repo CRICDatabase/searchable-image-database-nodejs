@@ -1,5 +1,7 @@
 "use strict";
 
+const Sequelize = require("sequelize");
+
 const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
 const UsuarioBaseModel = require("../models/UsuarioBaseModel");
 const AdministradorModel = require("../models/AdministradorModel");
@@ -14,8 +16,13 @@ module.exports = {
 
         let resultado;
 
-        await db.query(sqlQuery)
-            .then(([results, metadata]) => {
+        await db.query(
+            sqlQuery,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
                 resultado = results;
             });
 
@@ -84,13 +91,18 @@ module.exports = {
             WHERE usuario_base.id = ${id_usuario}`;
 
         const OBTER_PARA_LOGIN = `
-            WHERE usuario_base.email = \"${email}\"
-            AND usuario_base.senha = \"${senhaCriptografada}\"`;
+            WHERE usuario_base.email = "${email}"
+            AND usuario_base.senha = "${senhaCriptografada}"`;
 
         let resultado;
         if (id_usuario == 0) {
-            await db.query(OBTER_USUARIO_SQL + OBTER_PARA_LOGIN)
-                .then(([results, metadata]) => {
+            await db.query(
+                OBTER_USUARIO_SQL + OBTER_PARA_LOGIN,
+                {
+                    type: Sequelize.QueryTypes.SELECT
+                }
+            )
+                .then((results) => {
 
                     if (results.length > 0) {
 
@@ -104,8 +116,13 @@ module.exports = {
                 });
         }
         else {
-            await db.query(OBTER_USUARIO_SQL + OBTER_POR_ID)
-                .then(([results, metadata]) => {
+            await db.query(
+                OBTER_USUARIO_SQL + OBTER_POR_ID,
+                {
+                    type: Sequelize.QueryTypes.SELECT
+                }
+            )
+                .then((results) => {
 
                     if (results.length > 0) {
                         resultado = results[0];
@@ -155,8 +172,13 @@ module.exports = {
         JOIN administrador on usuario_base.id = administrador.id
         WHERE usuario_base.id = ${id_usuario}`;
 
-        await db.query(OBTER_ADMINISTRADOR_SQL_QUERY)
-            .then(([results, metadata]) => {
+        await db.query(
+            OBTER_ADMINISTRADOR_SQL_QUERY,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
                 if(results.length > 0){
                     administrador = results;
                 }
@@ -181,8 +203,13 @@ module.exports = {
         JOIN citopatologista on usuario_base.id = citopatologista.id
         WHERE usuario_base.id = ${id_usuario}`;
 
-        await db.query(OBTER_CITOPATOLOGISTA_SQL_QUERY)
-            .then(([results, metadata]) => {
+        await db.query(
+            OBTER_CITOPATOLOGISTA_SQL_QUERY,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
                 if(results.length > 0){
                     citopatologista = results;
                 }
@@ -207,8 +234,13 @@ module.exports = {
         JOIN visitante on usuario_base.id = visitante.id
         WHERE usuario_base.id = ${id_usuario}`;
 
-        await db.query(OBTER_VISITANTE_SQL_QUERY)
-            .then(([results, metadata]) => {
+        await db.query(
+            OBTER_VISITANTE_SQL_QUERY,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
 
                 if (results.length > 0) {
                     visitante = results;
@@ -236,8 +268,13 @@ module.exports = {
         LEFT JOIN visitante ON usuario_base.id = visitante.id
         WHERE usuario_base.id = ${id_usuario}`;
 
-        await db.query(OBTER_ANALISTA_SQL_QUERY)
-            .then(([results, metadata]) => {
+        await db.query(
+            OBTER_ANALISTA_SQL_QUERY,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
 
                 if(results.length > 0){
                     analista = results;

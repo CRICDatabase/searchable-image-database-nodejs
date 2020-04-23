@@ -1,5 +1,7 @@
 "use strict";
 
+const Sequelize = require("sequelize");
+
 const ImagemModel = require("../models/ImagemModel");
 const DescricaoModel = require("../models/DescricaoModel");
 const LesaoModel = require("../models/LesaoModel");
@@ -10,7 +12,6 @@ const ClassificacaoModel = require("../models/ClassificacaoCelulaModel");
 const Configuracao = require("../utils/enumeracoes/configuracao_lesao_descricao");
 const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
 const FonteAquisicao = require("../utils/enumeracoes/fonte_aquisicao");
-const Sequelize = require("sequelize");
 const db = require("../database");
 
 module.exports = {
@@ -49,8 +50,13 @@ module.exports = {
     async processarQuerySql(sqlQuery) {
 
         let resultado;
-        await db.query(sqlQuery)
-            .then(([results, metadata]) => {
+        await db.query(
+            sqlQuery,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
                 resultado = results;
             });
 
@@ -177,8 +183,13 @@ module.exports = {
         WHERE analista.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
 
 
-        await db.query(LISTAR_SEGMENTACAO_CITOPLASMA_SQL_QUERY)
-            .then(([results, metadata]) => {
+        await db.query(
+            LISTAR_SEGMENTACAO_CITOPLASMA_SQL_QUERY,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
                 todasSegmentacoesCitoplasma = results;
             });
 
@@ -201,8 +212,13 @@ module.exports = {
         JOIN imagem ON imagem.id = celula.id_imagem
         WHERE analista.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
 
-        await db.query(LISTAR_SEGMENTACAO_NUCLEO_SQL_QUERY)
-            .then(([results, metadata]) => {
+        await db.query(
+            LISTAR_SEGMENTACAO_NUCLEO_SQL_QUERY,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
                 todasSegmentacoesNucleo = results;
             });
 
@@ -226,8 +242,13 @@ module.exports = {
         JOIN imagem ON imagem.id = celula.id_imagem
         WHERE analista.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
 
-        await db.query(LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY)
-            .then(([results, metadata]) => {
+        await db.query(
+            LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
                 todasClassificacoes = results;
             });
 

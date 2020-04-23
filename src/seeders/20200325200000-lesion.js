@@ -1,9 +1,7 @@
 "use strict";
 
-const Criptografia = require("../utils/criptografia");
-
 module.exports = {
-    up: (queryInterface, Sequelize) => {
+    up: (queryInterface) => {
         return queryInterface.bulkInsert("lesao", [
             /* The id equals 1 is used as foreign key to represent "Not applied". */
             {
@@ -51,7 +49,7 @@ module.exports = {
         ], {});
     },
 
-    down: (queryInterface, Sequelize) => {
+    down: (queryInterface) => {
         return queryInterface.bulkDelete("lesao", null, {});
     }
 };

@@ -159,16 +159,6 @@ function listarSegmentosCitoplasmaPorCelula(req, id_celula, segmentosCitoplasma)
 function listarSegmentosNucleoPorCelula(req, id_celula, segmentosNucleo) {
 
     let segmentosFiltrados = [];
-    let ponto;
-
-    let parametros = {
-        coord_x: 0,
-        coord_y: 0,
-        alturaCanvas: req.body.alturaCanvas,
-        larguraCanvas: req.body.larguraCanvas,
-        alturaOriginalImg: req.body.alturaOriginalImg,
-        larguraOriginalImg: req.body.larguraOriginalImg
-    };
 
     segmentosNucleo.forEach(segmento => {
 

@@ -1,9 +1,6 @@
 "use strict";
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const TipoLesao = require("../../utils/enumeracoes/tipo_lesao");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const HttpStatus = require("http-status-codes");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
@@ -49,7 +46,7 @@ async function obterTotalLesoesPorNome(nomeLesao, nomePropriedade) {
     const QUERY_OBTER_TOTAL_LESAO_NORMAL = `
         SELECT COUNT(lesao.nome) AS ${nomePropriedade} from celula
         JOIN lesao on celula.id_lesao = lesao.id
-        WHERE lesao.nome = \"${nomeLesao}\"
+        WHERE lesao.nome = "${nomeLesao}"
     `;
 
     return await ImagemRepositorio.processarQuerySql(QUERY_OBTER_TOTAL_LESAO_NORMAL);

@@ -37,7 +37,7 @@ async function validarRequisicao(usuarioReq) {
         throw ObjetoExcecao;
     }
 
-    let registroExistente = await UsuarioRepositorio.verificarEmailExistente(usuarioReq.email);;
+    let registroExistente = await UsuarioRepositorio.verificarEmailExistente(usuarioReq.email);
 
     if (registroExistente) {
         ObjetoExcecao.status = HttpStatus.CONFLICT;

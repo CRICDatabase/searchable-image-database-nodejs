@@ -5,7 +5,6 @@ const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const HttpStatus = require("http-status-codes");
 const Criptografia = require("../../utils/criptografia");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
@@ -31,7 +30,7 @@ async function validarRequisicao(usuarioReq) {
         throw ObjetoExcecao;
     }
 
-    let registroExistente = await UsuarioRepositorio.verificarEmailExistente(usuarioReq.email);;
+    let registroExistente = await UsuarioRepositorio.verificarEmailExistente(usuarioReq.email);
 
     if (registroExistente) {
         ObjetoExcecao.status = HttpStatus.CONFLICT;

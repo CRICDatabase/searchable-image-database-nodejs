@@ -3,7 +3,7 @@
 const Criptografia = require("../utils/criptografia");
 
 module.exports = {
-    up: (queryInterface, Sequelize) => {
+    up: (queryInterface) => {
         return queryInterface.bulkInsert("usuario_base", [
             {
                 id: 1,
@@ -48,7 +48,7 @@ module.exports = {
         ], {});
     },
 
-    down: (queryInterface, Sequelize) => {
+    down: (queryInterface) => {
         return queryInterface.bulkDelete("usuario_base", null, {});
     }
 };

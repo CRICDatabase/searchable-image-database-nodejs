@@ -1,7 +1,8 @@
 "use strict";
 
-const SessaoUsuarioModel = require("../models/SessaoUsuarioModel");
 const Sequelize = require("sequelize");
+
+const SessaoUsuarioModel = require("../models/SessaoUsuarioModel");
 const db = require("../database");
 
 module.exports = {
@@ -31,11 +32,16 @@ module.exports = {
         const token_nulo = "--------------------------------------------------";
         const sqlQuery = `            
             UPDATE sessao_usuario
-            SET token_autenticacao = \'${token_nulo}\'
-            WHERE token_autenticacao = \'${token_autenticacao}\'`;
+            SET token_autenticacao = '${token_nulo}'
+            WHERE token_autenticacao = '${token_autenticacao}'`;
 
-        await db.query(sqlQuery)
-            .then(([results, metadata]) => {
+        await db.query(
+            sqlQuery,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
                 resultado = results;
             });
 

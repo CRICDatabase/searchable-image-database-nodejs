@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-    up: (queryInterface, Sequelize) => {
+    up: (queryInterface) => {
         return queryInterface.bulkInsert("segmentacao_citoplasma", [
             {
                 id:  1,
@@ -37707,7 +37707,7 @@ module.exports = {
         ], {});
     },
 
-    down: (queryInterface, Sequelize) => {
+    down: (queryInterface) => {
         return queryInterface.bulkDelete("segmentacao_citoplasma", null, {});
     }
 };

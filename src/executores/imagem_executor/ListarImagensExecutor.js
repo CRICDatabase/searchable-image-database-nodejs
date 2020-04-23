@@ -92,7 +92,7 @@ async function obterObjetoDeRetorno(listaImagens) {
 
         const lesao = await ImagemRepositorio.obterLesaoPorId(listaImagens[i].dataValues.id_lesao);
         const totalClassificacoes = await ImagemRepositorio.obterTotalClassificacoesImagem(listaImagens[i].dataValues.id);
-        const totalSegmentacoes = await ImagemRepositorio.obterTotalSegmentacoesImagem(listaImagens[i].dataValues.id);;
+        const totalSegmentacoes = await ImagemRepositorio.obterTotalSegmentacoesImagem(listaImagens[i].dataValues.id);
 
         resultado.push({
             id: listaImagens[i].dataValues.id,

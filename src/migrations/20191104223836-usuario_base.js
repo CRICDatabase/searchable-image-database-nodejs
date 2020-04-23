@@ -48,7 +48,7 @@ module.exports = {
     },
 
     //Desfaz as modificações aplicadas
-    down: (queryInterface, Sequelize) => {
+    down: (queryInterface) => {
         return queryInterface.dropTable("usuario_base");
     }
 };
