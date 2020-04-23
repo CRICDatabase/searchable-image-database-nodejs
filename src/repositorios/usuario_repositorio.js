@@ -1,5 +1,7 @@
 "use strict";
 
+const Sequelize = require("sequelize");
+
 const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
 const UsuarioBaseModel = require("../models/UsuarioBaseModel");
 const AdministradorModel = require("../models/AdministradorModel");
@@ -268,6 +270,17 @@ module.exports = {
         return CitopatologistaModel.create({
             id: id_usuario,
             codigo_crc: codigo_crc
+        });
+    },
+
+    async validarToken(token) {
+
+        return UsuarioBaseModel.findAll({
+            where: {
+                token: {
+                    [Sequelize.Op.eq]: token
+                }
+            }
         });
     }
 };
