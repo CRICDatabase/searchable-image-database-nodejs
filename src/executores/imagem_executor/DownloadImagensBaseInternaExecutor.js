@@ -19,7 +19,7 @@ module.exports = {
 
         const CSV_CLASSIFICATION_FILENAME = "classifications.csv";
         const JSON_CLASSIFICATION_FILENAME = "classifications.json";
-        const path2assets = path.normalise(
+        const path2assets = path.normalize(
             path.join(
                 __dirname,
                 "..",
