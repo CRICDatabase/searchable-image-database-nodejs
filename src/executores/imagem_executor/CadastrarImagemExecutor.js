@@ -1,6 +1,6 @@
 "use strict";
 
-const path = require('path');
+const path = require("path");
 const Crypto = require("crypto");
 const FileSystem = require("fs");
 const Jimp = require("jimp");

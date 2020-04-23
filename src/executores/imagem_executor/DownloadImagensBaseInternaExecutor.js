@@ -4,7 +4,7 @@ const HttpStatus = require("http-status-codes");
 const JSZip = require("jszip");
 const debug = require("debug")("database.cric:DownloadExecutor");
 const fs = require("fs");
-const path = require('path');
+const path = require("path");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
