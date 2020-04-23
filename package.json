@@ -36,16 +36,16 @@
         "express-fileupload": "^1.1.6",
         "express-zip": "^3.0.0",
         "http-status-codes": "^1.4.0",
-        "jimp": "^0.9.3",
-        "jszip": "^3.3.0",
+        "jimp": "^0.9.8",
+        "jszip": "^3.4.0",
         "md5": "^2.2.1",
-        "mysql": "^2.17.1",
-        "mysql2": "^2.0.0",
-        "sequelize": "^5.21.2",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.1.0",
+        "sequelize": "^5.21.7",
         "sequelize-cli": "^5.5.1"
     },
     "devDependencies": {
-        "nodemon": "^1.19.4",
-        "eslint": "^6.8.0"
+        "eslint": "^6.8.0",
+        "nodemon": "^2.0.3"
     }
 }
