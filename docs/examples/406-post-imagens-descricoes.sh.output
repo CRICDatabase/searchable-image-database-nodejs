@@ -2,71 +2,51 @@
     {
         "id": 2,
         "nome": "ASC-US",
-        "detalhes": "",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "detalhes": ""
     },
     {
         "id": 3,
         "nome": "LSIL",
-        "detalhes": "",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "detalhes": ""
     },
     {
         "id": 4,
         "nome": "ASC-H",
-        "detalhes": "",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "detalhes": ""
     },
     {
         "id": 5,
         "nome": "HSIL",
-        "detalhes": "",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "detalhes": ""
     },
     {
         "id": 6,
         "nome": "Carcinoma",
-        "detalhes": "",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "detalhes": ""
     },
     {
         "id": 7,
         "nome": "ASC-H",
-        "detalhes": "",
-        "createdAt": "2020-04-22T16:08:23.000Z",
-        "updatedAt": "2020-04-22T16:08:23.000Z"
+        "detalhes": ""
     },
     {
         "id": 8,
         "nome": "ASC-US",
-        "detalhes": "",
-        "createdAt": "2020-04-22T16:08:24.000Z",
-        "updatedAt": "2020-04-22T16:08:24.000Z"
+        "detalhes": ""
     },
     {
         "id": 9,
         "nome": "HSIL",
-        "detalhes": "",
-        "createdAt": "2020-04-22T16:08:24.000Z",
-        "updatedAt": "2020-04-22T16:08:24.000Z"
+        "detalhes": ""
     },
     {
         "id": 10,
         "nome": "LSIL",
-        "detalhes": "",
-        "createdAt": "2020-04-22T16:08:24.000Z",
-        "updatedAt": "2020-04-22T16:08:24.000Z"
+        "detalhes": ""
     },
     {
         "id": 11,
         "nome": "Epithelia",
-        "detalhes": null,
-        "createdAt": "2020-04-22T16:08:35.000Z",
-        "updatedAt": "2020-04-22T16:08:35.000Z"
+        "detalhes": null
     }
 ]

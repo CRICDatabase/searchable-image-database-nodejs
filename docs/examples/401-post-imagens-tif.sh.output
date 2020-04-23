@@ -1,6 +1,6 @@
 {
     "id": 6,
-    "nome": "ba9deb47fc272588_example0004.png",
+    "nome": "5126332d17511d52_example0004.png",
     "codigo_lamina": "TIF Example",
     "excluida": 0,
     "classificacao_aprovada": 1,
@@ -11,6 +11,6 @@
     "id_lesao": "1",
     "altura": 400,
     "largura": 600,
-    "updatedAt": "2020-04-22T16:07:57.667Z",
-    "createdAt": "2020-04-22T16:07:57.667Z"
+    "updatedAt": "2020-04-23T22:01:42.296Z",
+    "createdAt": "2020-04-23T22:01:42.296Z"
 }

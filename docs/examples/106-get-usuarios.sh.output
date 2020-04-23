@@ -5,9 +5,7 @@
         "ultimo_nome": "",
         "email": "admin@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
-        "ativo": 1,
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "ativo": 1
     },
     {
         "id": 2,
@@ -15,9 +13,7 @@
         "ultimo_nome": "",
         "email": "ruby@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
-        "ativo": 1,
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "ativo": 1
     },
     {
         "id": 3,
@@ -25,9 +21,7 @@
         "ultimo_nome": "",
         "email": "lucy@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
-        "ativo": 1,
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "ativo": 1
     },
     {
         "id": 4,
@@ -35,9 +29,7 @@
         "ultimo_nome": "",
         "email": "charles@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
-        "ativo": 1,
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "ativo": 1
     },
     {
         "id": 5,
@@ -45,9 +37,7 @@
         "ultimo_nome": "",
         "email": "terry@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
-        "ativo": 1,
-        "createdAt": "2020-04-22T16:06:27.000Z",
-        "updatedAt": "2020-04-22T16:06:27.000Z"
+        "ativo": 1
     },
     {
         "id": 6,
@@ -55,9 +45,7 @@
         "ultimo_nome": "",
         "email": "adan@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
-        "ativo": 1,
-        "createdAt": "2020-04-22T16:06:34.000Z",
-        "updatedAt": "2020-04-22T16:06:34.000Z"
+        "ativo": 1
     },
     {
         "id": 7,
@@ -65,8 +53,6 @@
         "ultimo_nome": "",
         "email": "cyrus@test.database.cric.com.br",
         "senha": "b316df1d65ee42ff51a5393df1f86105",
-        "ativo": 1,
-        "createdAt": "2020-04-22T16:06:42.000Z",
-        "updatedAt": "2020-04-22T16:06:42.000Z"
+        "ativo": 1
     }
 ]

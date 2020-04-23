@@ -9,14 +9,10 @@
     "caminho_imagem": "imagens/seeders/",
     "altura": 400,
     "largura": 600,
-    "createdAt": "2020-01-01T03:00:00.000Z",
-    "updatedAt": "2020-01-01T03:00:00.000Z",
     "id_usuario": 1,
     "lesao": {
         "id": 2,
         "nome": "ASC-US",
-        "detalhes": "",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "detalhes": ""
     }
 }

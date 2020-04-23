@@ -2,582 +2,416 @@
     {
         "id": 2,
         "codigo": 1,
-        "nome": "Epithelia",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Epithelia"
     },
     {
         "id": 3,
         "codigo": 2,
-        "nome": "Flora",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Flora"
     },
     {
         "id": 4,
         "codigo": 3,
-        "nome": "Others",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Others"
     },
     {
         "id": 5,
         "codigo": 11,
-        "nome": "Squamous",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Squamous"
     },
     {
         "id": 6,
         "codigo": 12,
-        "nome": "Metaplastic",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Metaplastic"
     },
     {
         "id": 7,
         "codigo": 13,
-        "nome": "Glandular",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Glandular"
     },
     {
         "id": 8,
         "codigo": 20,
-        "nome": " Leptothrix",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": " Leptothrix"
     },
     {
         "id": 9,
         "codigo": 21,
-        "nome": "Lactobacilli",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Lactobacilli"
     },
     {
         "id": 10,
         "codigo": 22,
-        "nome": "Coccobacilli ",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Coccobacilli "
     },
     {
         "id": 11,
         "codigo": 23,
-        "nome": "Trichomonas",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Trichomonas"
     },
     {
         "id": 12,
         "codigo": 24,
-        "nome": "Candida",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Candida"
     },
     {
         "id": 13,
         "codigo": 25,
-        "nome": "Actinomyces",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Actinomyces"
     },
     {
         "id": 14,
         "codigo": 26,
-        "nome": "Gardnerella/Mobiluncus",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Gardnerella/Mobiluncus"
     },
     {
         "id": 15,
         "codigo": 27,
-        "nome": "Chlamydia",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Chlamydia"
     },
     {
         "id": 16,
         "codigo": 28,
-        "nome": "Herpes",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Herpes"
     },
     {
         "id": 17,
         "codigo": 29,
-        "nome": "Cytomegalovirus (CMV)",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Cytomegalovirus (CMV)"
     },
     {
         "id": 18,
         "codigo": 31,
-        "nome": "Neutrophils",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Neutrophils"
     },
     {
         "id": 19,
         "codigo": 32,
-        "nome": "Red blood cells",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Red blood cells"
     },
     {
         "id": 20,
         "codigo": 33,
-        "nome": "Mucus",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Mucus"
     },
     {
         "id": 21,
         "codigo": 34,
-        "nome": "Histiocyte",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Histiocyte"
     },
     {
         "id": 22,
         "codigo": 35,
-        "nome": "Lymphocyte",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Lymphocyte"
     },
     {
         "id": 23,
         "codigo": 36,
-        "nome": "Contaminants",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Contaminants"
     },
     {
         "id": 24,
         "codigo": 37,
-        "nome": "Artifact",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Artifact"
     },
     {
         "id": 25,
         "codigo": 111,
-        "nome": "Young",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Young"
     },
     {
         "id": 26,
         "codigo": 112,
-        "nome": "Mature",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Mature"
     },
     {
         "id": 27,
         "codigo": 121,
-        "nome": "Young",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Young"
     },
     {
         "id": 28,
         "codigo": 122,
-        "nome": "Mature",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Mature"
     },
     {
         "id": 29,
         "codigo": 131,
-        "nome": "Endocervical",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Endocervical"
     },
     {
         "id": 30,
         "codigo": 132,
-        "nome": "Endometrial",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Endometrial"
     },
     {
         "id": 31,
         "codigo": 201,
-        "nome": "Bacilli",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Bacilli"
     },
     {
         "id": 32,
         "codigo": 1111,
-        "nome": "Basal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Basal"
     },
     {
         "id": 33,
         "codigo": 1112,
-        "nome": "Parabasal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Parabasal"
     },
     {
         "id": 34,
         "codigo": 1121,
-        "nome": "Superficial",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Superficial"
     },
     {
         "id": 35,
         "codigo": 1122,
-        "nome": "Intermediate",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Intermediate"
     },
     {
         "id": 36,
         "codigo": 1211,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 37,
         "codigo": 1212,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 38,
         "codigo": 1221,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 39,
         "codigo": 1222,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 40,
         "codigo": 1311,
-        "nome": "Picket-fence",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Picket-fence"
     },
     {
         "id": 41,
         "codigo": 1312,
-        "nome": "Honeycomb",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Honeycomb"
     },
     {
         "id": 42,
         "codigo": 1313,
-        "nome": "Isolated",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Isolated"
     },
     {
         "id": 43,
         "codigo": 1321,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 44,
         "codigo": 1322,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 45,
         "codigo": 11111,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 46,
         "codigo": 11112,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 47,
         "codigo": 11121,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 48,
         "codigo": 11122,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 49,
         "codigo": 11211,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 50,
         "codigo": 11212,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 51,
         "codigo": 11221,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 52,
         "codigo": 11222,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 53,
         "codigo": 12121,
-        "nome": "ASC-H",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "ASC-H"
     },
     {
         "id": 54,
         "codigo": 12122,
-        "nome": "HSIL",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "HSIL"
     },
     {
         "id": 55,
         "codigo": 12123,
-        "nome": "Invasive Carcinoma",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Invasive Carcinoma"
     },
     {
         "id": 56,
         "codigo": 12221,
-        "nome": "ASC-US",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "ASC-US"
     },
     {
         "id": 57,
         "codigo": 12222,
-        "nome": "LSIL",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "LSIL"
     },
     {
         "id": 58,
         "codigo": 13111,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 59,
         "codigo": 13112,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 60,
         "codigo": 13121,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 61,
         "codigo": 13122,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 62,
         "codigo": 13131,
-        "nome": "Normal",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Normal"
     },
     {
         "id": 63,
         "codigo": 13132,
-        "nome": "Changed",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Changed"
     },
     {
         "id": 64,
         "codigo": 13221,
-        "nome": "AGC - Endometrial",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "AGC - Endometrial"
     },
     {
         "id": 65,
         "codigo": 13222,
-        "nome": "Endometrial Adenocarcinoma",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Endometrial Adenocarcinoma"
     },
     {
         "id": 66,
         "codigo": 111121,
-        "nome": "ASC-H",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "ASC-H"
     },
     {
         "id": 67,
         "codigo": 111122,
-        "nome": "HSIL",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "HSIL"
     },
     {
         "id": 68,
         "codigo": 111123,
-        "nome": "Invasive Carcinoma",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Invasive Carcinoma"
     },
     {
         "id": 69,
         "codigo": 111221,
-        "nome": "ASC-H",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "ASC-H"
     },
     {
         "id": 70,
         "codigo": 111222,
-        "nome": "HSIL",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "HSIL"
     },
     {
         "id": 71,
         "codigo": 111223,
-        "nome": "Invasive Carcinoma",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Invasive Carcinoma"
     },
     {
         "id": 72,
         "codigo": 112121,
-        "nome": "ASC-US",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "ASC-US"
     },
     {
         "id": 73,
         "codigo": 112122,
-        "nome": "LSIL",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "LSIL"
     },
     {
         "id": 74,
         "codigo": 112221,
-        "nome": "ASC-US",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "ASC-US"
     },
     {
         "id": 75,
         "codigo": 112222,
-        "nome": "LSIL",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "LSIL"
     },
     {
         "id": 76,
         "codigo": 131121,
-        "nome": "AGC",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "AGC"
     },
     {
         "id": 77,
         "codigo": 131122,
-        "nome": "Adenocarcinoma in situ",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Adenocarcinoma in situ"
     },
     {
         "id": 78,
         "codigo": 131123,
-        "nome": "Invasive Adenocarcinoma",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Invasive Adenocarcinoma"
     },
     {
         "id": 79,
         "codigo": 131221,
-        "nome": "AGC",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "AGC"
     },
     {
         "id": 80,
         "codigo": 131222,
-        "nome": "Adenocarcinoma in situ",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Adenocarcinoma in situ"
     },
     {
         "id": 81,
         "codigo": 131223,
-        "nome": "Invasive Adenocarcinoma",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Invasive Adenocarcinoma"
     },
     {
         "id": 82,
         "codigo": 131321,
-        "nome": "AGC",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "AGC"
     },
     {
         "id": 83,
         "codigo": 131322,
-        "nome": "Adenocarcinoma in situ",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Adenocarcinoma in situ"
     },
     {
         "id": 84,
         "codigo": 131323,
-        "nome": "Invasive Adenocarcinoma",
-        "createdAt": "2020-01-01T03:00:00.000Z",
-        "updatedAt": "2020-01-01T03:00:00.000Z"
+        "nome": "Invasive Adenocarcinoma"
     }
 ]
