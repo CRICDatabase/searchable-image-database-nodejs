@@ -8,7 +8,7 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar() {
         const todasLesoes = await ImagemRepositorio.listarLesoes();
 
         if(todasLesoes.length == 0) {
