@@ -17,8 +17,12 @@ module.exports = {
 
     async Executar(req) {
 
+        await ValidadorDeSessao.validarAcessoAServicos(req);
+        await validarRequisicao(req);
+
         const CSV_CLASSIFICATION_FILENAME = "classifications.csv";
         const JSON_CLASSIFICATION_FILENAME = "classifications.json";
+        const README_FILENAME = "README.classification.md";
         const path2assets = path.normalize(
             path.join(
                 __dirname,
@@ -28,8 +32,23 @@ module.exports = {
             )
         );
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
-        await validarRequisicao(req);
+        var zip = new JSZip();
+        
+        try {
+            zip.file(
+                "README.md",
+                fs.readFileSync(
+                    path.resolve(
+                        path2assets,
+                        "download",
+                        README_FILENAME
+                    )
+                )
+            );
+        }
+        catch(err) {
+            debug(`Fail to add ${README_FILENAME} due ${err}`);
+        }
 
         const all_images = await ImagemRepositorio.listarImagensValidasNoSistema();
         /* TODO process image from user
@@ -39,7 +58,7 @@ module.exports = {
 
         var classification_array = [];
         var classification_csv_string = "image_id,image_filename,image_doi,cell_id,characteristics,nucleus_x,nucleus_y\n";
-        var zip = new JSZip();
+        
         for await (let image of all_images){
             try {
                 zip.file(
@@ -71,7 +90,7 @@ module.exports = {
                     (item) => {
                         return {
                             cell_id: item.id_celula,
-                            characterisitics: item.id_classificacao,
+                            characterisitics: lesionID2lesionName(item.id_classificacao),
                             nucleus_x: item.coord_centro_nucleo_x,
                             nucleus_y: item.coord_centro_nucleo_y
                         };
@@ -81,7 +100,7 @@ module.exports = {
 
             classifications.forEach(
                 (item) => {
-                    classification_csv_string = classification_csv_string + `${image.id},${image.nome},,${item.id_celula},${item.id_classificacao},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
+                    classification_csv_string = classification_csv_string + `${image.id},${image.nome},,${item.id_celula},${lesionID2lesionName(item.id_classificacao)},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
                 }
             );
 
@@ -129,4 +148,29 @@ async function validarRequisicao(req) {
             throw ObjetoExcecao;
         }
     }
+}
+
+function lesionID2lesionName(lession_id) {
+    var lesion_name;
+    switch(lession_id) {
+        case 1:
+            lesion_name = "Negative for intraepithelial lesion";
+            break;
+        case 2:
+            lesion_name = "ASC-US";
+            break;
+        case 3:
+            lesion_name = "LSIL";
+            break;
+        case 4:
+            lesion_name = "ASC-H";
+            break;
+        case 5:
+            lesion_name = "HSIL";
+            break;
+        case 6:
+            lesion_name = "Squamous cell carcinoma";
+            break;
+    }
+    return lesion_name;
 }
