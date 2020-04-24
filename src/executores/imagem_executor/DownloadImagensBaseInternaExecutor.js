@@ -57,7 +57,7 @@ module.exports = {
         */
 
         var classification_array = [];
-        var classification_csv_string = "image_id,image_filename,image_doi,cell_id,category,nucleus_x,nucleus_y\n";
+        var classification_csv_string = "image_id,image_filename,image_doi,cell_id,bethesda_system,nucleus_x,nucleus_y\n";
         
         for await (let image of all_images){
             try {
@@ -90,7 +90,7 @@ module.exports = {
                     (item) => {
                         return {
                             cell_id: item.id_celula,
-                            category: lesionID2lesionName(item.id_lesao),
+                            bethesda_system: lesionID2lesionName(item.id_lesao),
                             nucleus_x: item.coord_centro_nucleo_x,
                             nucleus_y: item.coord_centro_nucleo_y
                         };
@@ -169,7 +169,7 @@ function lesionID2lesionName(lession_id) {
             lesion_name = "HSIL";
             break;
         case 6:
-            lesion_name = "Squamous cell carcinoma";
+            lesion_name = "SCC";
             break;
     }
     return lesion_name;

@@ -20,7 +20,7 @@ Mariana, Claudia, Alessandra.
 - `cell_id`
 
   This is the integer that identifies the cell at http://database.cric.com.br/.
-- `category`
+- `bethesda_system`
 
   Classification of the cell
   using the Bethesda system.
@@ -28,10 +28,20 @@ Mariana, Claudia, Alessandra.
 
   - Negative for intraepithelial lesion
   - ASC-US
+
+    Atypical squamous cells of undetermined significance
   - ASC-H
+
+    Atypical squamous cells cannot exclude HSIL
   - LSIL
+
+    Low grade squamous intraepithelial lesion
   - HSIL
-  - Squamous cell carcinoma
+
+    High grade squamous intraepithelial lesion
+  - SCC
+
+    Squamous cell carcinoma
 - `nucleus_x`
 
   Integer between 1 and 1384 equal to coordinate x of the pixel that represent the cell.
