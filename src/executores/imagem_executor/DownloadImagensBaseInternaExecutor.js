@@ -57,7 +57,7 @@ module.exports = {
         */
 
         var classification_array = [];
-        var classification_csv_string = "image_id,image_filename,image_doi,cell_id,characteristics,nucleus_x,nucleus_y\n";
+        var classification_csv_string = "image_id,image_filename,image_doi,cell_id,category,nucleus_x,nucleus_y\n";
         
         for await (let image of all_images){
             try {
@@ -90,7 +90,7 @@ module.exports = {
                     (item) => {
                         return {
                             cell_id: item.id_celula,
-                            characterisitics: lesionID2lesionName(item.id_classificacao),
+                            category: lesionID2lesionName(item.id_lesao),
                             nucleus_x: item.coord_centro_nucleo_x,
                             nucleus_y: item.coord_centro_nucleo_y
                         };
@@ -100,7 +100,7 @@ module.exports = {
 
             classifications.forEach(
                 (item) => {
-                    classification_csv_string = classification_csv_string + `${image.id},${image.nome},,${item.id_celula},${lesionID2lesionName(item.id_classificacao)},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
+                    classification_csv_string = classification_csv_string + `${image.id},${image.nome},,${item.id_celula},${lesionID2lesionName(item.id_lesao)},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
                 }
             );
 
