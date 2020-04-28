@@ -13,6 +13,7 @@ rotasUsuario.post("/api/v1/usuarios-visitante", UsuarioController.cadastrarUsuar
 rotasUsuario.post("/api/v1/usuarios/analista/:id_usuario", UsuarioController.cadastrarAnalista);
 rotasUsuario.post("/api/v1/usuarios/:id_usuario_adm/citopatologista/:id_usuario", UsuarioController.tornarCitopatologista);
 rotasUsuario.post("/api/v1/usuarios/:id_usuario", UsuarioController.obterUsuario);
+rotasUsuario.post("/api/v1/login/", UsuarioController.login);
 
 //Rotas de usuario GET
 rotasUsuario.get("/api/v1/usuarios/:id_usuario?", UsuarioController.listarUsuarios);

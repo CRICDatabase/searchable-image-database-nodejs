@@ -8,6 +8,7 @@ const CadastrarVisitanteExecutor = require("../../executores/usuario_executor/Ca
 const CadastrarAnalistaExecutor = require("../../executores/usuario_executor/CadastrarAnalistaExecutor");
 const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
 const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
+const LoginService = require("../../executores/usuario_executor/LoginService");
 const ObterAdministradorExecutor = require("../../executores/usuario_executor/ObterAdministradorExecutor");
 const ObterCitopatologistaExecutor = require("../../executores/usuario_executor/ObterCitopatologistaExecutor");
 const ObterVisitanteExecutor = require("../../executores/usuario_executor/ObterVisitanteExecutor");
@@ -295,27 +296,6 @@ module.exports = {
         }
     },
 
-    async fazerLogOff(req, res) {
-
-        let retorno;
-        try{
-            retorno = await FazerLogOffExecutor.Executar(req);
-            return res.status(HttpStatus.ACCEPTED).json(retorno); 
-        }
-        catch(erro){
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
     async tornarCitopatologista(req, res) {
 
         let novoCitopatologista;
@@ -347,5 +327,53 @@ module.exports = {
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
+    },
+
+    async login(req, res) {
+
+        let usuarioBase;
+        try{
+            usuarioBase = await LoginService.Executar(req);
+            console.log(usuarioBase);
+            return res.status(HttpStatus.OK).json(usuarioBase);
+        }
+        catch(erro){
+
+            if(erro.status == HttpStatus.BAD_REQUEST) {
+                return res.status(HttpStatus.BAD_REQUEST).json(erro);
+            }
+
+            if(erro.status == HttpStatus.NOT_FOUND) {
+                return res.status(HttpStatus.NOT_FOUND).json(erro);
+            }
+
+            if(erro.status == HttpStatus.UNAUTHORIZED) {
+                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            }
+
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }        
+    },
+
+    async fazerLogOff(req, res) {
+
+        let retorno;
+        try{
+            retorno = await FazerLogOffExecutor.Executar(req);
+            return res.status(HttpStatus.ACCEPTED).json(retorno); 
+        }
+        catch(erro){
+
+            if(erro.status == HttpStatus.BAD_REQUEST) {
+                return res.status(HttpStatus.BAD_REQUEST).json(erro);
+            }
+
+            if(erro.status == HttpStatus.UNAUTHORIZED) {
+                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            }
+
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
     }
+
 };

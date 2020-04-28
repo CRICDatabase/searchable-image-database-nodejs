@@ -9,16 +9,13 @@ const GeradorIdUnico = require("../utils/gerador_identificador_unico");
 module.exports = {
 
     async validarAcessoAServicos(req) {
-
-        if(req.headers.token_autenticacao != GeradorIdUnico.obterTokenCuringa()) {
-
-            let resultado = await SessaoRepositorio.validarTokenAutenticacao(req.headers.token_autenticacao);
-            if (resultado.length == 0) {
-            
-                ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-                ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
-                throw ObjetoExcecao;
-            }
+        let resultado = await SessaoRepositorio.validarTokenAutenticacao(
+            req.headers.token_autenticacao
+        );
+        if (resultado.length == 0) {        
+            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+            ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
+            throw ObjetoExcecao;
         }
     }
 };

@@ -77,7 +77,7 @@ module.exports = {
         });
     },
 
-    async obterUsuarioCompletoPorIdOuLogin(id_usuario, email, senhaCriptografada) {
+    async obterUsuarioCompletoPorLogin(email, senhaCriptografada) {
 
         const OBTER_USUARIO_SQL = `
             SELECT *
@@ -87,48 +87,29 @@ module.exports = {
             LEFT JOIN visitante on usuario_base.id = visitante.id
             LEFT JOIN analista on usuario_base.id = analista.id `;
 
-        const OBTER_POR_ID = `
-            WHERE usuario_base.id = ${id_usuario}`;
-
         const OBTER_PARA_LOGIN = `
             WHERE usuario_base.email = "${email}"
             AND usuario_base.senha = "${senhaCriptografada}"`;
 
         let resultado;
-        if (id_usuario == 0) {
-            await db.query(
-                OBTER_USUARIO_SQL + OBTER_PARA_LOGIN,
-                {
-                    type: Sequelize.QueryTypes.SELECT
-                }
-            )
-                .then((results) => {
+        await db.query(
+            OBTER_USUARIO_SQL + OBTER_PARA_LOGIN,
+            {
+                type: Sequelize.QueryTypes.SELECT
+            }
+        )
+            .then((results) => {
 
-                    if (results.length > 0) {
+                if (results.length > 0) {
 
-                        results.forEach(usuario => {
+                    results.forEach(usuario => {
 
-                            if (usuario.email === email) {
-                                resultado = usuario;
-                            }
-                        });
-                    }                
-                });
-        }
-        else {
-            await db.query(
-                OBTER_USUARIO_SQL + OBTER_POR_ID,
-                {
-                    type: Sequelize.QueryTypes.SELECT
-                }
-            )
-                .then((results) => {
-
-                    if (results.length > 0) {
-                        resultado = results[0];
-                    }                               
-                });
-        }
+                        if (usuario.email === email) {
+                            resultado = usuario;
+                        }
+                    });
+                }                
+            });
 
         return resultado;
     },
