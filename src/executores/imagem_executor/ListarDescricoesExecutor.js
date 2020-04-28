@@ -10,7 +10,6 @@ module.exports = {
 
     async Executar(req) {
         
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         const todasDescricoes = await ImagemRepositorio.listarDescricoes();
 
         if(todasDescricoes.length == 0) {

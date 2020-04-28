@@ -13,7 +13,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req);
 
         const todasImagensTask = ImagemRepositorio.listarImagensValidasNoSistema();

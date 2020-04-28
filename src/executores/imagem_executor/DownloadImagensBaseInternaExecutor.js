@@ -17,7 +17,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req);
 
         const CSV_CLASSIFICATION_FILENAME = "classifications.csv";
@@ -153,24 +152,24 @@ async function validarRequisicao(req) {
 function lesionID2lesionName(lession_id) {
     var lesion_name;
     switch(lession_id) {
-        case 1:
-            lesion_name = "Negative for intraepithelial lesion";
-            break;
-        case 2:
-            lesion_name = "ASC-US";
-            break;
-        case 3:
-            lesion_name = "LSIL";
-            break;
-        case 4:
-            lesion_name = "ASC-H";
-            break;
-        case 5:
-            lesion_name = "HSIL";
-            break;
-        case 6:
-            lesion_name = "SCC";
-            break;
+    case 1:
+        lesion_name = "Negative for intraepithelial lesion";
+        break;
+    case 2:
+        lesion_name = "ASC-US";
+        break;
+    case 3:
+        lesion_name = "LSIL";
+        break;
+    case 4:
+        lesion_name = "ASC-H";
+        break;
+    case 5:
+        lesion_name = "HSIL";
+        break;
+    case 6:
+        lesion_name = "SCC";
+        break;
     }
     return lesion_name;
 }

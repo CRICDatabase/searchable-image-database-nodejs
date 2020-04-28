@@ -38,7 +38,7 @@ module.exports = {
         await db.query(
             sqlQuery,
             {
-                type: Sequelize.QueryTypes.SELECT
+                type: Sequelize.QueryTypes.UPDATE
             }
         )
             .then((results) => {
