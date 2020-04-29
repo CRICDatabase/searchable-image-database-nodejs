@@ -44,6 +44,7 @@ function prepararRetorno(usuarioCriado, citopatologistaCriado) {
     if (!citopatologistaCriado) {
         ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
         ObjetoExcecao.title = Excecao.ERRO_INTERNO;
+        ObjetoExcecao.detail = "Failed to create a executor cytopathologist";
         throw ObjetoExcecao;
     }
 

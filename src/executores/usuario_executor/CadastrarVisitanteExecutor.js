@@ -45,6 +45,7 @@ function prepararRetorno(usuarioCriado, visitanteCriado) {
     if (!visitanteCriado) {
         ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
         ObjetoExcecao.title = Excecao.ERRO_INTERNO;
+        ObjetoExcecao.detail = "Failed to create a visitor user";
         throw ObjetoExcecao;
     }
 

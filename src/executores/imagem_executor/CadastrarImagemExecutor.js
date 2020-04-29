@@ -26,6 +26,7 @@ module.exports = {
             //Apagar o arquivo da pasta base_original caso == .tif ou da pasta bae_original caso != .tif
             ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
             ObjetoExcecao.title = Excecao.ERRO_AO_CADASTRAR_IMAGEM;
+            ObjetoExcecao.detail = "Failed to register a image";
             throw ObjetoExcecao;
         }
 

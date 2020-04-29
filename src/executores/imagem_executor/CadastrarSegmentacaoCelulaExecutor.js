@@ -24,6 +24,7 @@ module.exports = {
         if (!celulaCadastrada) {
             ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
             ObjetoExcecao.title = Excecao.ERRO_AO_CADASTRAR_CELULA;
+            ObjetoExcecao.detail = "Failed to create a cell";
             throw ObjetoExcecao;
         }
 
