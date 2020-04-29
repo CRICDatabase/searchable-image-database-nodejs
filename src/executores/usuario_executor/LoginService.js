@@ -18,9 +18,6 @@ module.exports = {
             req.body.email,
             senhaCriptografada
         );
-        
-        console.log("hey");
-        console.log(`user: ${usuario}`);
 
         if (usuario) {
 

@@ -334,7 +334,6 @@ module.exports = {
         let usuarioBase;
         try{
             usuarioBase = await LoginService.Executar(req);
-            console.log(usuarioBase);
             return res.status(HttpStatus.OK).json(usuarioBase);
         }
         catch(erro){
