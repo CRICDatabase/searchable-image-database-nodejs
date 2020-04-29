@@ -15,8 +15,7 @@ const ListarLesaoExecutor = require("../../executores/imagem_executor/ListarLeso
 const CadastrarDescricao = require("../../executores/imagem_executor/CadastrarDescricaoExecutor");
 const ListarDescricao = require("../../executores/imagem_executor/ListarDescricoesExecutor");
 const ListarContagemLesoesEDescricoesNucleosExecutor = require("../../executores/imagem_executor/ListarContagemLesoesEDescricoesNucleos");
-const DownloadImagensBaseInternaExecutor = require("../../executores/imagem_executor/DownloadImagensBaseInternaExecutor");
-const DownloadImagensBaseExternaExecutor = require("../../executores/imagem_executor/DownloadImagensBaseExternaExecutor");
+const DownloadBaseExecutor = require("../../executores/imagem_executor/DownloadBaseExecutor");
 const ExcluirClassificacaoExecutor = require("../../executores/imagem_executor/ExcluirClassificacaoExecutor");
 const ExcluirSegmentacaoExecutor = require("../../executores/imagem_executor/ExcluirSegmentacaoExecutor");
 const AtualizarDadosImagemExecutor = require("../../executores/imagem_executor/AtualizarDadosImagemExecutor");
@@ -315,11 +314,11 @@ module.exports = {
         }
     },
 
-    async downloadImagensBaseInterna(req, res) {
+    async downloadBase(req, res) {
 
         let result;
         try {
-            result = DownloadImagensBaseInternaExecutor.Executar(req);
+            result = DownloadBaseExecutor.Executar(req);
             result.then((zip) => {
                 res.set("Content-Type", "application/zip");
                 zip
@@ -333,31 +332,6 @@ module.exports = {
                     debug(`Failed to send zip file to user because of ${err}`);
                     return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err);
                 });
-        }
-        catch (erro) {
-
-            if (erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            if (erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if (erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
-    async downloadImagensBaseExterna(req, res) {
-
-        let resultado;
-        try {
-            resultado = await DownloadImagensBaseExternaExecutor.Executar(req);
-            return res.download(resultado.caminho, resultado.nomeArquivo);
         }
         catch (erro) {
 
