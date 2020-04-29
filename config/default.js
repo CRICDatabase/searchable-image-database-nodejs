@@ -10,6 +10,7 @@ module.exports = {
             "http://localhost:8080"
         ]
     },
+    authorization_seed: "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",
     database: {
         host: "db",
         username: "root",

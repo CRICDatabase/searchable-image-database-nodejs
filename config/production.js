@@ -14,6 +14,7 @@ module.exports = {
             "https://api.database.cric.com.br"
         ]
     },
+    authorization_seed: "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",
     database: {
         host: "db",
         username: "root",
