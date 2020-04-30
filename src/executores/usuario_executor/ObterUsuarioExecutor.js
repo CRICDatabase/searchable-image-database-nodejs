@@ -21,6 +21,7 @@ module.exports = {
         if (!usuario) {
             ObjetoExcecao.status = HttpStatus.NOT_FOUND;
             ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+            ObjetoExcecao.detail = "Failed to create a executer user";
             throw ObjetoExcecao;
         }
 
