@@ -20,7 +20,6 @@
         "Raniere Silva <raniere@rgaiacs.com>"
     ],
     "license": "AGPL",
-    "private": true,
     "main": "index.js",
     "scripts": {
         "lint": "eslint src",
