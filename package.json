@@ -1,6 +1,6 @@
 {
     "name": "searchable-image-database-nodejs",
-    "version": "0.2.0",
+    "version": "1.1.0",
     "description": "CRIC Searchable Image Database is a public cervical cell image database aiming supporting cervical cancer analysis of Pap smear.",
     "keywords": [
         "cervical cell",
