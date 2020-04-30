@@ -1,4 +1,4 @@
-FROM node:13.10.1-buster as base
+FROM node:14-buster as base
 # Create project directory
 WORKDIR /opt/cric/backend
 # Install app dependencies
