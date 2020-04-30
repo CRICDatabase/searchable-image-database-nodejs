@@ -5,7 +5,6 @@ const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const HttpStatus = require("http-status-codes");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const FonteAquisicao = require("../../utils/enumeracoes/fonte_aquisicao");
 

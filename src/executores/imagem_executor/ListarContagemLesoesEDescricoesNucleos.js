@@ -2,11 +2,10 @@
 
 const TipoLesao = require("../../utils/enumeracoes/tipo_lesao");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar() {
 
         const lesaoNormal = TipoLesao.NORMAL, nomeLesaoNormal = "Normal";
         const lesaoAscUs = TipoLesao.ASC_US, nomeLesaoASCUS = "AscUs";
