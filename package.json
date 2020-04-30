@@ -19,7 +19,7 @@
         "Fagner de Oliveira Bernardo <fagner.bernardo@aluno.ufop.edu.br>",
         "Raniere Silva <raniere@rgaiacs.com>"
     ],
-    "license": "AGPL",
+    "license": "AGPL-3.0-or-later",
     "main": "index.js",
     "scripts": {
         "lint": "eslint src",
