@@ -2,6 +2,16 @@
 
 const { Model, DataTypes }  = require("sequelize");
 
+/**
+ * Represents the classification of one cell.
+ * @constructor
+ * @param {Object} data - Data sent to server.
+ * @param {number} data.coord_centro_nucleo_x - Integer of coordinate x of the pixel that represents the cell.
+ * @param {number} data.coord_centro_nucleo_y - Integer of coordinate y of the pixel that represents the cell.
+ * @param {number} data.id_usuario - Integer referencing UsuarioBaseModel that create the classification.
+ * @param {number} data.id_imagem - Integer referencing ImagemModel where the classification belongs.
+ * @returns {Promise} Promise instance of Sequelize object that was created.
+ */
 class ClassificacaoCelulaModel extends Model {
 
     //Recebe a conexao com o banco dedados

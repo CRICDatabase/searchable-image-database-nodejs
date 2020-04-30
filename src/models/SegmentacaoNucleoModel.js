@@ -2,6 +2,16 @@
 
 const { Model, DataTypes }  = require("sequelize");
 
+/**
+ * Represents a cell.
+ * @constructor
+ * @param {Object} data - Data sent to server.
+ * @param {number} data.coord_x - Integer of coordinate x of the pixel that is part of the nucleus segmentation.
+ * @param {number} data.coord_y - Integer of coordinate y of the pixel that is part of the nucleus segmentation.
+ * @param {number} data.id_usuario - Integer referencing UsuarioBaseModel that create the segmentation.
+ * @param {number} data.id_imagem - Integer referencing ImagemModel where the segmentation belongs.
+ * @returns {Promise} Promise instance of Sequelize object that was created.
+ */
 class SegmentacaoNucleoModel extends Model {
 
     //Recebe a conexao com o banco dedados
