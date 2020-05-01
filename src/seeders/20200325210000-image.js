@@ -40,7 +40,6 @@ module.exports = {
             {
                 id: 3,
                 nome: "example0003.jpg",
-                doi: "cric/database.3.v1",
                 codigo_lamina: "0003",
                 excluida: 0,
                 classificacao_aprovada: 1,
