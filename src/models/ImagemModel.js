@@ -7,6 +7,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @constructor
  * @param {Object} data - Data sent to server.
  * @param {string} data.nome - Identifier for the image.
+ * @param {string} data.doi - DOI assign to the image.
  * @param {string} data.codigo_lamina - Code from the glass.
  * @param {number} data.excluida - 1 if image was removed and 0 otherwise.
  * @param {number} data.classificacao_aprovada - 1 if image was approved and 0 otherwise.
@@ -25,6 +26,7 @@ class ImagemModel extends Model {
 
         super.init({
             nome: DataTypes.STRING,
+            doi: DataTypes.STRING,
             codigo_lamina: DataTypes.STRING,
             excluida: DataTypes.INTEGER,
             classificacao_aprovada: DataTypes.INTEGER,

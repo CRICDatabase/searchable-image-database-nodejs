@@ -20,6 +20,7 @@ module.exports = {
 
         return ImagemModel.create({
             nome: imagem.nome,
+            doi: imagem.doi,
             codigo_lamina: imagem.codigo_lamina,
             excluida: imagem.excluida,
             classificacao_aprovada: imagem.classificacao_aprovada,
