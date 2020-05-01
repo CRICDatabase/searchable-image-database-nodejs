@@ -82,7 +82,7 @@ module.exports = {
 
             classification_array.push({
                 image_id: image.id,
-                image_doi: "",
+                image_doi: image.doi,
                 image_name: image.nome,
                 classifications: classifications.map(
                     (item) => {
@@ -98,7 +98,7 @@ module.exports = {
 
             classifications.forEach(
                 (item) => {
-                    classification_csv_string = classification_csv_string + `${image.id},${image.nome},,${item.id_celula},${lesionID2lesionName(item.id_lesao)},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
+                    classification_csv_string = classification_csv_string + `${image.id},${image.nome},${image.doi},${item.id_celula},${lesionID2lesionName(item.id_lesao)},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
                 }
             );
 
