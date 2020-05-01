@@ -38,6 +38,7 @@ async function prepararRetorno(imagem) {
     resultado = {
         id: imagem.dataValues.id,
         nome: imagem.dataValues.nome,
+        doi: imagem.dataValues.doi,
         codigo_lamina: imagem.dataValues.codigo_lamina,
         excluida: imagem.dataValues.excluida,
         classificacao_aprovada: imagem.dataValues.classificacao_aprovada,
