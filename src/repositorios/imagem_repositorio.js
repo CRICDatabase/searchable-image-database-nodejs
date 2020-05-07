@@ -275,13 +275,7 @@ module.exports = {
     },
 
     async listarLesoes() {
-        return LesaoModel.findAll({
-            where: {
-                id: {
-                    [Sequelize.Op.ne]: 1
-                }
-            }
-        });
+        return LesaoModel.findAll();
     },
 
     async excluirImagemPorId(id_imagem) {
