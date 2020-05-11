@@ -201,5 +201,39 @@ Get Operations
         :language: json
         :caption: Output
 
+..  http:get:: /api/v1/imagens/{image_id}/listar-classificacao-celula/{user_id}
+
+    Get classification in image ``image_id``
+    created by user ``user_id``.
+
+    :param image_id: Image's id
+    :type image_id: int
+    :param user_id: User's id
+    :type user_id: int
+
+    :>jsonarr int id_celula: Cell's id
+    :>jsonarr int id_classificacao: Classification's id
+    :>jsonarr string tipo_analise_realizada: "CLASSIFICACAO"
+    :>jsonarr int coord_centro_nucleo_x: *x* coordinate
+    :>jsonarr int coord_centro_nucleo_y: *y* coordinate
+    :>jsonarr object lesao: injury
+
+    :statuscode 200:
+    :statuscode 400:
+    :statuscode 401:
+    :statuscode 409:
+    :statuscode 500:
+
+    **Example**
+
+    ..  literalinclude:: ../examples/410-get-imagens-classificacao-celula.sh
+        :language: bash
+        :caption: Input
+
+    ..  literalinclude:: ../examples/410-get-imagens-classificacao-celula.sh.output
+        :language: json
+        :caption: Output
+
+
 Delete Operations
 -----------------
