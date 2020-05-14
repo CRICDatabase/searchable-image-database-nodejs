@@ -9,7 +9,7 @@ const CadastrarAnalistaExecutor = require("../../executores/usuario_executor/Cad
 const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
 const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
 const LoginService = require("../../executores/usuario_executor/LoginService");
-const ForgetPasswordService = require("../../executores/usuario_executor/ForgetPasswordService");
+const ResetPasswordService = require("../../executores/usuario_executor/ResetPasswordService");
 const ObterAdministradorExecutor = require("../../executores/usuario_executor/ObterAdministradorExecutor");
 const ObterCitopatologistaExecutor = require("../../executores/usuario_executor/ObterCitopatologistaExecutor");
 const ObterVisitanteExecutor = require("../../executores/usuario_executor/ObterVisitanteExecutor");
@@ -355,9 +355,9 @@ module.exports = {
         }        
     },
 
-    async forget_password(req, res) {
+    async reset_password(req, res) {
         try{
-            await ForgetPasswordService.Executar(req);
+            await ResetPasswordService.Executar(req);
             return res.status(HttpStatus.OK).end();
         }
         catch(erro){

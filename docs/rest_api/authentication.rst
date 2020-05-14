@@ -49,7 +49,7 @@ These credentials are transported in plain text.
 When user forgets the password,
 user can request to receive a new one by email.
 
-..  http:post:: /api/v1/forget_password
+..  http:post:: /api/v1/forget-password
 
     Generate new password and send it to user by email.
 
