@@ -16,8 +16,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await validarRequisicao(req);
-
         const CSV_CLASSIFICATIONS_FILENAME = "classifications.csv";
         const JSON_CLASSIFICATIONS_FILENAME = "classifications.json";
         const README_CLASSIFICATIONS_FILENAME = "README.classifications.md";
@@ -250,24 +248,6 @@ module.exports = {
             .generateNodeStream({type:"nodebuffer", streamFiles:true});
     }
 };
-
-async function validarRequisicao(req) {
-
-    if(req.params.id_usuario){
-        if (!ValidarTipo.ehNumero(req.params.id_usuario)) {
-            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-            throw ObjetoExcecao;
-        }
-
-        const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-        if (!usuario) {
-            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-            throw ObjetoExcecao;
-        }
-    }
-}
 
 function lesionID2lesionName(lession_id) {
     var lesion_name;
