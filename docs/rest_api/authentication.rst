@@ -46,6 +46,27 @@ These credentials are transported in plain text.
         :language: json
         :caption: Output
 
+When user forgets the password,
+user can request to receive a new one by email.
+
+..  http:post:: /api/v1/forget_password
+
+    Generate new password and send it to user by email.
+
+    :<json string email: User's email address
+
+    :statuscode 200:
+    :statuscode 400:
+    :statuscode 401:
+    :statuscode 409:
+    :statuscode 500:
+
+    **Example**
+
+    ..  literalinclude:: ../examples/004forget-password.sh
+        :language: bash
+        :caption: Input
+
 
 .. [RFC_2617] The Internet Society. *HTTP Authentication: Basic and Digest
               Access Authentication*. 1999. https://tools.ietf.org/html/rfc2617.

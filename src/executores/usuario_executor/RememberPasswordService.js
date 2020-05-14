@@ -3,22 +3,29 @@
 const config = require("config");
 const HttpStatus = require("http-status-codes");
 const nodemailer = require('nodemailer');
+const debug = require("debug")("database.cric:RememberPasswordService");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const GeradorIdUnico = require("../../utils/gerador_identificador_unico");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const Criptografia = require("../../utils/criptografia");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const SessaoRepositorio = require("../../repositorios/sessao_repositorio");
 
 module.exports = {
 
     async Executar(req) {
-
         validarRequisicao(req);
 
-        let usuario = await UsuarioRepositorio.obterUsuarioBasePorEmail(req.body.email);
+        const new_password = String(
+            Math.floor(Math.random() * 100000001)
+        );
+
+        let usuario = await UsuarioRepositorio.change_password(
+            req.body.email,
+            Criptografia.criarCriptografiaMd5Utf8(
+                new_password
+            )
+        );
 
         if (!usuario) {
             ObjetoExcecao.status = HttpStatus.NOT_FOUND;
@@ -26,6 +33,7 @@ module.exports = {
             ObjetoExcecao.detail = "Failed to find user";
             throw ObjetoExcecao;
         }
+
 
         const smtp_info = config.get("nodemailer");
 
@@ -35,14 +43,14 @@ module.exports = {
             from: smtp_info.auth.user,
             to: usuario.dataValues.email,
             subject: 'Your Password for CRIC',
-            text: usuario.dataValues.password
+            text: new_password
         };
 
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
-                console.log(error);
+                debug(error);
             } else {
-                console.log('Email sent: ' + info.response);
+                debug(`Email sent: ${info.response}`);
             }
         });
     }

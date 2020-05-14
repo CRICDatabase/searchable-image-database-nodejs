@@ -14,6 +14,7 @@ rotasUsuario.post("/api/v1/usuarios/analista/:id_usuario", UsuarioController.cad
 rotasUsuario.post("/api/v1/usuarios/:id_usuario_adm/citopatologista/:id_usuario", UsuarioController.tornarCitopatologista);
 rotasUsuario.post("/api/v1/usuarios/:id_usuario", UsuarioController.obterUsuario);
 rotasUsuario.post("/api/v1/login", UsuarioController.login);
+rotasUsuario.post("/api/v1/forget_password", UsuarioController.forget_password);
 
 //Rotas de usuario GET
 rotasUsuario.get("/api/v1/usuarios/:id_usuario?", UsuarioController.listarUsuarios);
@@ -21,7 +22,6 @@ rotasUsuario.get("/api/v1/usuarios/:id_usuario/administrador", UsuarioController
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/citopatologista", UsuarioController.obterCitopatologista);
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/visitante", UsuarioController.obterVisitante);
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/analista", UsuarioController.obterAnalista);
-rotasUsuario.get("/api/v1/remember_password", UsuarioController.remember_password);
 
 //Rotas PATCH - Despriorizada do MVC
 

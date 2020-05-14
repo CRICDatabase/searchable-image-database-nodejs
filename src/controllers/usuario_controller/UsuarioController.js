@@ -355,11 +355,10 @@ module.exports = {
         }        
     },
 
-    async remember_password(req, res) {
-
+    async forget_password(req, res) {
         try{
-            await RememberPasswordService(req);
-            return res.status(HttpStatus.OK);
+            await RememberPasswordService.Executar(req);
+            return res.status(HttpStatus.OK).end();
         }
         catch(erro){
 
