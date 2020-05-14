@@ -24,9 +24,10 @@
         "indent": ["error", 4, { "VariableDeclarator": "first" }],
         "linebreak-style": ["error", "unix"],
         "lines-between-class-members": ["error", "always"],
-        "quotes": ["error", "double"],
+        "no-prototype-builtins": "off",
         "quote-props": ["error", "as-needed"],
-        "semi-style": ["error", "last"],
-        "semi": "error"
+        "quotes": ["error", "double"],
+        "semi": "error",
+        "semi-style": ["error", "last"]
     }
 }

@@ -1,16 +1,12 @@
 "use strict";
 
-const HttpStatus = require("http-status-codes");
 const JSZip = require("jszip");
 const debug = require("debug")("database.cric:DownloadExecutor");
 const fs = require("fs");
 const path = require("path");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
-const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+// const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 module.exports = {
 
@@ -132,7 +128,7 @@ module.exports = {
                     req.params.id_usuario ? req.params.id_usuario : 1
                 );
 
-                classification_array.push({
+                classifications_array.push({
                     image_id: image.id,
                     image_doi: image.doi,
                     image_name: image.nome,
@@ -150,7 +146,7 @@ module.exports = {
 
                 classifications.forEach(
                     (item) => {
-                        classification_csv_string = classification_csv_string + `${image.id},${image.nome},${item.doi},${item.id_celula},${lesionID2lesionName(item.id_lesao)},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
+                        classifications_csv_string = classifications_csv_string + `${image.id},${image.nome},${item.doi},${item.id_celula},${lesionID2lesionName(item.id_lesao)},${item.coord_centro_nucleo_x},${item.coord_centro_nucleo_y}\n`;
                     }
                 );
             }

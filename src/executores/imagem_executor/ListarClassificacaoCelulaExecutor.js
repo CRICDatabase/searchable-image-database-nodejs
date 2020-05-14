@@ -1,7 +1,6 @@
 "use strict";
 
 const HttpStatus = require("http-status-codes");
-const debug = require("debug")("database.cric:list-classification");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
@@ -72,6 +71,4 @@ async function prepararMensagemRetorno(todasCelulas) {
     for (let cell of todasCelulas) {
         cell.lesao = all_injuries[cell.id_lesao];
     }
-
-    return cells;
 }
