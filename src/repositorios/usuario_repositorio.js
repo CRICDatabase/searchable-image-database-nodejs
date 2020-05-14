@@ -115,25 +115,11 @@ module.exports = {
     },
 
     async obterUsuarioBasePorEmail(email) {
-
-        let resultado;
-        const usuarios = await UsuarioBaseModel.findAll({
+        return await UsuarioBaseModel.findOne({
             where: {
                 email: email
             }
         });
-
-        if (usuarios.length > 0) {
-
-            usuarios.forEach(usuario => {
-
-                if (usuario.email == email) {
-                    resultado = usuario;
-                }
-            });
-        }
-
-        return resultado;
     },
 
     async obterUsuarioBasePorId(id_usuario) {
@@ -287,5 +273,17 @@ module.exports = {
             id: id_usuario,
             codigo_crc: codigo_crc
         });
+    },
+
+    async change_password(email, new_hashed_password) {
+        var user =  await UsuarioBaseModel.findOne({
+            where: {
+                email: email
+            }
+        });
+        user.senha = new_hashed_password;
+        user.save()
+
+        return user;
     }
 };

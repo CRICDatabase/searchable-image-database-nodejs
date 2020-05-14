@@ -34,5 +34,12 @@ module.exports = {
             acquire: 60000
         },
         logging: false
+    },
+    nodemailer: {
+        service: 'gmail',
+        auth: {
+            user: 'youremail@gmail.com',
+            pass: 'yourpassword'
+        }
     }
 };

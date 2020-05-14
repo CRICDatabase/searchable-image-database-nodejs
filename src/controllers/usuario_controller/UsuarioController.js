@@ -9,6 +9,7 @@ const CadastrarAnalistaExecutor = require("../../executores/usuario_executor/Cad
 const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
 const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
 const LoginService = require("../../executores/usuario_executor/LoginService");
+const RememberPasswordService = require("../../executores/usuario_executor/RememberPasswordService");
 const ObterAdministradorExecutor = require("../../executores/usuario_executor/ObterAdministradorExecutor");
 const ObterCitopatologistaExecutor = require("../../executores/usuario_executor/ObterCitopatologistaExecutor");
 const ObterVisitanteExecutor = require("../../executores/usuario_executor/ObterVisitanteExecutor");
@@ -335,6 +336,29 @@ module.exports = {
         try{
             usuarioBase = await LoginService.Executar(req);
             return res.status(HttpStatus.OK).json(usuarioBase);
+        }
+        catch(erro){
+
+            if(erro.status == HttpStatus.BAD_REQUEST) {
+                return res.status(HttpStatus.BAD_REQUEST).json(erro);
+            }
+
+            if(erro.status == HttpStatus.NOT_FOUND) {
+                return res.status(HttpStatus.NOT_FOUND).json(erro);
+            }
+
+            if(erro.status == HttpStatus.UNAUTHORIZED) {
+                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            }
+
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }        
+    },
+
+    async forget_password(req, res) {
+        try{
+            await RememberPasswordService.Executar(req);
+            return res.status(HttpStatus.OK).end();
         }
         catch(erro){
 

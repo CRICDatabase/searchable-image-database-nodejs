@@ -25,3 +25,8 @@ as defined in ``config/custom-environment-variables.js``:
 
 The override is design
 to be used by `Kubernetes Secrets <https://kubernetes.io/docs/concepts/configuration/secret/>`_.
+
+Some features require send email.
+Details of the SMTP server need to be provide.
+For developing,
+you can use `Ethereal Email <https://ethereal.email/messages>`_.
