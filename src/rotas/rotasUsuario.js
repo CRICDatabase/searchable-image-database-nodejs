@@ -21,6 +21,7 @@ rotasUsuario.get("/api/v1/usuarios/:id_usuario/administrador", UsuarioController
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/citopatologista", UsuarioController.obterCitopatologista);
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/visitante", UsuarioController.obterVisitante);
 rotasUsuario.get("/api/v1/usuarios/:id_usuario/analista", UsuarioController.obterAnalista);
+rotasUsuario.get("/api/v1/remember_password", UsuarioController.remember_password);
 
 //Rotas PATCH - Despriorizada do MVC
 
