@@ -1,4 +1,4 @@
-# CRIC Cervix Cell Classification
+# CRIC Cervix Cell Classifications
 
 400 images from microscope slides of the uterine cervix using the conventional smear (Pap smear) and the epithelial cell abnormalities classified according to Bethesda system.
 
@@ -44,7 +44,7 @@ Mariana, Claudia, Alessandra.
     Squamous cell carcinoma
 - `nucleus_x`
 
-  Integer between 1 and 1384 equal to coordinate x of the pixel that represent the cell.
+  Integer between 1 and 1376 equal to coordinate x of the pixel that represent the cell.
 - `nucleus_y`
 
-  Integer between 1 and 1384 equal to coordinate y of the pixel that represent the cell.
+  Integer between 1 and 1020 equal to coordinate y of the pixel that represent the cell.

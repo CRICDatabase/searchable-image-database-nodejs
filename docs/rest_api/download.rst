@@ -9,11 +9,12 @@ Not avaiable.
 Get Operations
 --------------
 
-..  http:get:: /api/v1/imagens/download/base_interna_cvx/{user_id}
+..  http:get:: /api/v1/imagens/download
 
     Download images and classifications.
 
-    :param user_id: Optional user's id. Default user's id is 1.
+    :query string classifications: 1 to include classifications in the download.
+    :query string segmentations: 1 to include classifications in the download.
 
     :statuscode 200:
     :statuscode 400:
@@ -31,23 +32,11 @@ Get Operations
 
     **Example**
 
-    Providing valid user's id.
+    Download segmentations.
 
-    ..  literalinclude:: ../examples/502-get-download.sh
+    ..  literalinclude:: ../examples/504-get-download.sh
         :language: bash
         :caption: Input
-
-    **Example**
-
-    Providing invalid user's id.
-
-    ..  literalinclude:: ../examples/503-get-download.sh
-        :language: bash
-        :caption: Input
-
-    ..  literalinclude:: ../examples/503-get-download.sh.output
-        :language: json
-        :caption: Output
 
 Delete Operations
 -----------------
