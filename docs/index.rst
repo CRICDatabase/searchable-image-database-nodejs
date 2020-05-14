@@ -6,26 +6,17 @@
 Welcome to Node.js Backend for CRIC Database's documentation!
 =============================================================
 
-CRIC Searchable Image Database is a public cervical cell image database
-aiming supporting cervical cancer analysis of Pap smear.
+Center for Recognition and Inspection of Cells (CRIC)
+Searchable Image Database
+is a public cell image database.
 
 This documentation is for the reference implementation written in Node.js.
 More documentation about CRIC Searchable Image Database
 is available at https://cric-database.readthedocs.io/.
 
-REST API
---------
-
-We provide examples
-of calls to the REST API
-using `cURL <https://curl.haxx.se/>`_.
-The output of the calls
-are based in the seeders
-included in the source code.
-
 ..  toctree::
     :maxdepth: 2
-    :caption: Contents:
+    :caption: REST API
 
     rest_api/meta
     rest_api/authentication
@@ -37,12 +28,9 @@ included in the source code.
     rest_api/image
     rest_api/download
 
-Developers
-----------
-
 ..  toctree::
     :maxdepth: 2
-    :caption: Contents:
+    :caption: Developers
 
     dependencies
     settings
