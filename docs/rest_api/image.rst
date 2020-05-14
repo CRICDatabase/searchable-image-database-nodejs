@@ -174,10 +174,10 @@ Get Operations
 
 ..  http:get:: /api/v1/imagens/{image_id}
 
-    List all images.
+    Get information from image.
 
     :param image_id: Image's id
-    :type user_id: int
+    :type image_id: int
 
     :>json int id_usuario: User's id
     :>json int id_lesao: Injury's id
@@ -233,7 +233,6 @@ Get Operations
     ..  literalinclude:: ../examples/410-get-imagens-classificacao-celula.sh.output
         :language: json
         :caption: Output
-
 
 Delete Operations
 -----------------
