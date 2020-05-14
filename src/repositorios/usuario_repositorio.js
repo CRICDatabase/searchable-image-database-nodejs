@@ -282,7 +282,7 @@ module.exports = {
             }
         });
         user.senha = new_hashed_password;
-        user.save()
+        user.save();
 
         return user;
     }

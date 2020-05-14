@@ -20,7 +20,7 @@ module.exports = {
 
         const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem, id_usuario);
         await prepararMensagemRetorno(todasClassificacoes);
-        return todasClassificacoes
+        return todasClassificacoes;
     }
 };
 
@@ -61,13 +61,13 @@ async function prepararMensagemRetorno(todasCelulas) {
 
     let all_injuries = {};
     await ImagemRepositorio.listarLesoes()
-    .then(
-        (response) => {
-            for (let injury of response) {
-                all_injuries[injury.dataValues.id] = injury.dataValues;
+        .then(
+            (response) => {
+                for (let injury of response) {
+                    all_injuries[injury.dataValues.id] = injury.dataValues;
+                }
             }
-        }
-    )
+        );
 
     for (let cell of todasCelulas) {
         cell.lesao = all_injuries[cell.id_lesao];

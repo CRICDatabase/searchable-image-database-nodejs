@@ -49,11 +49,11 @@ module.exports = {
 
         var zip = new JSZip();
 
-        if (req.query.hasOwnProperty('images') && req.query.images === "1") {
+        if (req.query.hasOwnProperty("images") && req.query.images === "1") {
             include_images = true;
         }
 
-        if (req.query.hasOwnProperty('classifications') && req.query.classifications === "1") {
+        if (req.query.hasOwnProperty("classifications") && req.query.classifications === "1") {
             include_classifications = true;
 
             try {
@@ -73,7 +73,7 @@ module.exports = {
             }
         }
 
-        if (req.query.hasOwnProperty('segmentations') && req.query.segmentations === "1") {
+        if (req.query.hasOwnProperty("segmentations") && req.query.segmentations === "1") {
             include_segmentations = true;
             
             await ImagemRepositorio.listarDescricoes().then(
@@ -82,7 +82,7 @@ module.exports = {
                         all_descriptions[row.id] = row.nome;
                     }
                 }
-            )
+            );
 
             try {
                 zip.file(
@@ -164,7 +164,7 @@ module.exports = {
                     (item) => {
                         cytoplasm_segmentations_csv_string = cytoplasm_segmentations_csv_string + `${image.id},${image.nome},${image.doi},${item.id_celula},${all_descriptions[item.id_descricao]},${item.coord_x},${item.coord_y}\n`;
                     }
-                )
+                );
 
                 let nucleus_segmentations = await ImagemRepositorio.listarTodosSegmentosNucleoCelula(
                     image.id,
@@ -174,7 +174,7 @@ module.exports = {
                     (item) => {
                         nucleus_segmentations_csv_string = nucleus_segmentations_csv_string + `${image.id},${image.nome},${image.doi},${item.id_celula},,${all_descriptions[item.id_descricao]},${item.coord_x},${item.coord_y}\n`;
                     }
-                )
+                );
 
                 /* TODO Generate JSON for segmentations */
             }

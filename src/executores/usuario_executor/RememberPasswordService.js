@@ -2,7 +2,7 @@
 
 const config = require("config");
 const HttpStatus = require("http-status-codes");
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 const debug = require("debug")("database.cric:RememberPasswordService");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
@@ -42,14 +42,15 @@ module.exports = {
         var mailOptions = {
             from: smtp_info.auth.user,
             to: usuario.dataValues.email,
-            subject: 'Your Password for CRIC',
+            subject: "Your Password for CRIC",
             text: new_password
         };
 
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
                 debug(error);
-            } else {
+            }
+            else {
                 debug(`Email sent: ${info.response}`);
             }
         });
