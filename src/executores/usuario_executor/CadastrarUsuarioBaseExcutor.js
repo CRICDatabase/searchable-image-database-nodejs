@@ -5,13 +5,11 @@ const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const HttpStatus = require("http-status-codes");
 const Criptografia = require("../../utils/criptografia");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req.body);
         const statusAtivo = 1;
         const senhaCriptografada = Criptografia.criarCriptografiaMd5Utf8(req.body.senha);
