@@ -5,7 +5,6 @@ const Sequelize = require("sequelize");
 const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
 const UsuarioBaseModel = require("../models/UsuarioBaseModel");
 const AdministradorModel = require("../models/AdministradorModel");
-const CitopatologistaModel = require("../models/CitopatologistaModel");
 const VisitanteModel = require("../models/VisitanteModel");
 const AnalistaModel = require("../models/AnalistaModel");
 const db = require("../database");
@@ -50,14 +49,6 @@ module.exports = {
         });
     },
 
-    async cadastrarCitopatologista(id_usuario, dados) {
-
-        return CitopatologistaModel.create({
-            id: id_usuario,
-            codigo_crc: dados.codigo_crc
-        });
-    },
-
     async cadastrarAnalista(id_usuario) {
 
         return AnalistaModel.create({
@@ -83,7 +74,6 @@ module.exports = {
             SELECT *
             FROM usuario_base
             LEFT JOIN administrador on usuario_base.id = administrador.id
-            LEFT JOIN citopatologista on usuario_base.id = citopatologista.id
             LEFT JOIN visitante on usuario_base.id = visitante.id
             LEFT JOIN analista on usuario_base.id = analista.id `;
 
@@ -157,37 +147,6 @@ module.exports = {
         return administrador;
     },
 
-    async obterCitopatologistaPorId(id_usuario) {
-        return CitopatologistaModel.findByPk(id_usuario);
-    },
-
-    async obterCitopatologistaCompleto(id_usuario) {
-
-        let citopatologista;
-        const OBTER_CITOPATOLOGISTA_SQL_QUERY = `
-        SELECT *
-        FROM usuario_base
-        JOIN citopatologista on usuario_base.id = citopatologista.id
-        WHERE usuario_base.id = ${id_usuario}`;
-
-        await db.query(
-            OBTER_CITOPATOLOGISTA_SQL_QUERY,
-            {
-                type: Sequelize.QueryTypes.SELECT
-            }
-        )
-            .then((results) => {
-                if(results.length > 0){
-                    citopatologista = results;
-                }
-                else{
-                    citopatologista = results;
-                }            
-            });
-
-        return citopatologista;
-    },
-
     async obterVisitantePorId(id_usuario) {
         return VisitanteModel.findByPk(id_usuario);
     },
@@ -231,7 +190,6 @@ module.exports = {
         SELECT *
         FROM usuario_base
         LEFT JOIN analista ON usuario_base.id = analista.id
-        LEFT JOIN citopatologista ON usuario_base.id = citopatologista.id
         LEFT JOIN visitante ON usuario_base.id = visitante.id
         WHERE usuario_base.id = ${id_usuario}`;
 
@@ -265,14 +223,6 @@ module.exports = {
 
     async ListarTodosUsuarios() {
         return UsuarioBaseModel.findAll();
-    },
-
-    async transformarUsuarioEmCitopatologista(id_usuario, codigo_crc) {
-
-        return CitopatologistaModel.create({
-            id: id_usuario,
-            codigo_crc: codigo_crc
-        });
     },
 
     async change_password(email, new_hashed_password) {

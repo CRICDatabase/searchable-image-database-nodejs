@@ -36,9 +36,8 @@ async function validarRequisicao(req) {
     const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const administradorTask = UsuarioRepositorio.obterAdministradorPorId(req.params.id_usuario);
-    const citopatologistaTask = UsuarioRepositorio.obterCitopatologistaPorId(req.params.id_usuario);
     const visitanteTask = UsuarioRepositorio.obterVisitantePorId(req.params.id_usuario);
-    const [usuario, imagem, administrador, citopatologista, visitante] = await Promise.all([usuarioTask, imagemTask, administradorTask, citopatologistaTask, visitanteTask]);
+    const [usuario, imagem, administrador, visitante] = await Promise.all([usuarioTask, imagemTask, administradorTask, visitanteTask]);
 
     if (!usuario) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
@@ -46,7 +45,7 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    if (!(administrador || citopatologista || visitante)) {
+    if (!(administrador || visitante)) {
         ObjetoExcecao.status = HttpStatus.FORBIDDEN;
         ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;

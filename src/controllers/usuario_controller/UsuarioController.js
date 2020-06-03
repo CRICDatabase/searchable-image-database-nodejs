@@ -3,7 +3,6 @@
 const HttpStatus = require("http-status-codes");
 const CadastrarUsuarioExecutor = require("../../executores/usuario_executor/CadastrarUsuarioBaseExcutor");
 const CadastrarAdminExecutor = require("../../executores/usuario_executor/CadastrarAdministradorExecutor");
-const CadastrarCitopatologistaExecutor = require("../../executores/usuario_executor/CadastrarCitopatologistaExecutor");
 const CadastrarVisitanteExecutor = require("../../executores/usuario_executor/CadastrarVisitanteExecutor");
 const CadastrarAnalistaExecutor = require("../../executores/usuario_executor/CadastrarAnalistaExecutor");
 const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
@@ -11,11 +10,9 @@ const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/Obte
 const LoginService = require("../../executores/usuario_executor/LoginService");
 const ResetPasswordService = require("../../executores/usuario_executor/ResetPasswordService");
 const ObterAdministradorExecutor = require("../../executores/usuario_executor/ObterAdministradorExecutor");
-const ObterCitopatologistaExecutor = require("../../executores/usuario_executor/ObterCitopatologistaExecutor");
 const ObterVisitanteExecutor = require("../../executores/usuario_executor/ObterVisitanteExecutor");
 const ObterAnalistaExecutor = require("../../executores/usuario_executor/ObterAnalistaExecutor");
 const FazerLogOffExecutor = require("../../executores/usuario_executor/FazerLogOffExecutor");
-const TornarCitopatologistaExecutor = require("../../executores/usuario_executor/TornarCitopatologistaExecutor");
 
 module.exports = {
 
@@ -66,31 +63,6 @@ module.exports = {
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
-    },
-
-    async cadastrarUsuarioCitopatologista(req, res) {
-
-        let citopatologistaCadastrado;
-        try{
-            citopatologistaCadastrado = await CadastrarCitopatologistaExecutor.Executar(req);
-            return res.status(HttpStatus.CREATED).json(citopatologistaCadastrado);
-        }
-        catch(erro){
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.CONFLICT) {
-                return res.status(HttpStatus.CONFLICT).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }        
     },
 
     async cadastrarUsuarioVisitante(req, res) {
@@ -222,31 +194,6 @@ module.exports = {
         }
     },
 
-    async obterCitopatologista(req, res) {
-
-        let citopatologista;
-        try{
-            citopatologista = await ObterCitopatologistaExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(citopatologista); 
-        }
-        catch(erro){
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
     async obterVisitante(req, res) {
 
         let visitante;
@@ -291,39 +238,6 @@ module.exports = {
 
             if(erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
-    async tornarCitopatologista(req, res) {
-
-        let novoCitopatologista;
-        try{
-            novoCitopatologista = await TornarCitopatologistaExecutor.Executar(req);
-            return res.status(HttpStatus.CREATED).json(novoCitopatologista);
-        }
-        catch(erro) {
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.CONFLICT) {
-                return res.status(HttpStatus.CONFLICT).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            if (erro.status == HttpStatus.FORBIDDEN) {
-                return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);

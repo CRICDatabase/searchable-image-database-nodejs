@@ -52,10 +52,9 @@ async function validarRequisicao(req) {
     }
   
     const administradorTask = UsuarioRepositorio.obterAdministradorPorId(req.params.id_usuario);
-    const citopatologistaTask = UsuarioRepositorio.obterCitopatologistaPorId(req.params.id_usuario);
-    const [administrador, citopatologista] = await Promise.all([administradorTask, citopatologistaTask]);
+    const [administrador] = await Promise.all([administradorTask]);
 
-    if(!(administrador || citopatologista)) {
+    if(!(administrador)) {
         ObjetoExcecao.status = HttpStatus.FORBIDDEN;
         ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;
