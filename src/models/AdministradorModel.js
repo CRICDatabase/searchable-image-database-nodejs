@@ -1,14 +1,12 @@
 "use strict";
 
-const { Model, DataTypes }  = require("sequelize");
+const { Model }  = require("sequelize");
 
 /**
  * Represents a administrator.
  * @constructor
  * @param {Object} data - Data sent to server.
  * @param {number} data.id - Integer referencing UsuarioBaseModel.
- * @param {string} data.api_key - Administrator's key to the REST API.
- * @param {string} data.nivel_acesso - Administrator's access level.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class AdministradorModel extends Model {
@@ -17,8 +15,6 @@ class AdministradorModel extends Model {
     static init(connection) {
 
         super.init({
-            api_key: DataTypes.STRING,
-            nivel_acesso: DataTypes.STRING
         },
         {
             defaultScope: {
