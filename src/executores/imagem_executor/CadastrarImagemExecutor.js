@@ -86,7 +86,7 @@ async function prepararCadastroNoBanco(req) {
         excluida: excluida,
         classificacao_aprovada: classificacao_aprovada,
         dt_aquisicao: req.body.dt_aquisicao,
-        fonte_aquisicao: fonte_aquisicao,
+        fonte_aquisicao: 0,  /* FIXME must be 1 for some users */
         caminho_imagem: caminho_imagem,
         id_usuario: req.body.id_usuario,
         id_lesao: req.body.id_lesao,

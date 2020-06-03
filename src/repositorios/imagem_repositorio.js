@@ -11,7 +11,6 @@ const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
 const ClassificacaoModel = require("../models/ClassificacaoCelulaModel");
 const Configuracao = require("../utils/enumeracoes/configuracao_lesao_descricao");
 const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
-const FonteAquisicao = require("../utils/enumeracoes/fonte_aquisicao");
 const db = require("../database");
 
 module.exports = {

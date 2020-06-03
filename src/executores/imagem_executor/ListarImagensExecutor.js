@@ -6,7 +6,6 @@ const HttpStatus = require("http-status-codes");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
-const FonteAquisicao = require("../../utils/enumeracoes/fonte_aquisicao");
 
 module.exports = {
 
