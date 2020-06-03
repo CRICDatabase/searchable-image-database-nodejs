@@ -2,7 +2,6 @@
 
 const config = require("config");
 const cors = require("cors");
-const debug = require("debug")("database.cric:main");
 const express = require("express");
 const FileUpload = require("express-fileupload");
 
