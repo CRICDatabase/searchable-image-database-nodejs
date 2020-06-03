@@ -24,7 +24,7 @@
     "scripts": {
         "lint": "eslint src",
         "fix": "eslint --fix --fix-type layout src",
-        "pretest": "eslint --ignore-path .gitignore .",
+        "test": "jest",
         "dev": "nodemon ./src/server.js",
         "start": "node ./src/server.js"
     },
@@ -47,6 +47,8 @@
     },
     "devDependencies": {
         "eslint": "^6.8.0",
-        "nodemon": "^2.0.3"
+        "jest": "^26.0.1",
+        "nodemon": "^2.0.3",
+        "supertest": "^4.0.2"
     }
 }
