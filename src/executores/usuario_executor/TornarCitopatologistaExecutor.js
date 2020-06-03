@@ -58,10 +58,4 @@ async function validarRequisicao(req) {
         ObjetoExcecao.title = Excecao.CITOPATOLOGISTA_EXISTENTE;
         throw ObjetoExcecao;
     }
-
-    if(await UsuarioRepositorio.obterVisitantePorId(req.params.id_usuario)) {
-        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.title = Excecao.ACAO_PROIBIDA_PARA_VISITANTE;
-        throw ObjetoExcecao;
-    }
 }

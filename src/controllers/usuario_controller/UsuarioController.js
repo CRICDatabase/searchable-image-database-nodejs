@@ -4,7 +4,6 @@ const HttpStatus = require("http-status-codes");
 const CadastrarUsuarioExecutor = require("../../executores/usuario_executor/CadastrarUsuarioBaseExcutor");
 const CadastrarAdminExecutor = require("../../executores/usuario_executor/CadastrarAdministradorExecutor");
 const CadastrarCitopatologistaExecutor = require("../../executores/usuario_executor/CadastrarCitopatologistaExecutor");
-const CadastrarVisitanteExecutor = require("../../executores/usuario_executor/CadastrarVisitanteExecutor");
 const CadastrarAnalistaExecutor = require("../../executores/usuario_executor/CadastrarAnalistaExecutor");
 const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
 const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
@@ -12,7 +11,6 @@ const LoginService = require("../../executores/usuario_executor/LoginService");
 const ResetPasswordService = require("../../executores/usuario_executor/ResetPasswordService");
 const ObterAdministradorExecutor = require("../../executores/usuario_executor/ObterAdministradorExecutor");
 const ObterCitopatologistaExecutor = require("../../executores/usuario_executor/ObterCitopatologistaExecutor");
-const ObterVisitanteExecutor = require("../../executores/usuario_executor/ObterVisitanteExecutor");
 const ObterAnalistaExecutor = require("../../executores/usuario_executor/ObterAnalistaExecutor");
 const FazerLogOffExecutor = require("../../executores/usuario_executor/FazerLogOffExecutor");
 const TornarCitopatologistaExecutor = require("../../executores/usuario_executor/TornarCitopatologistaExecutor");
@@ -91,31 +89,6 @@ module.exports = {
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }        
-    },
-
-    async cadastrarUsuarioVisitante(req, res) {
-
-        let visitanteCadastrado;
-        try{
-            visitanteCadastrado = await CadastrarVisitanteExecutor.Executar(req);
-            return res.status(HttpStatus.CREATED).json(visitanteCadastrado); 
-        }
-        catch(erro){
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.CONFLICT) {
-                return res.status(HttpStatus.CONFLICT).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
     },
 
     async cadastrarAnalista(req, res) {
@@ -228,31 +201,6 @@ module.exports = {
         try{
             citopatologista = await ObterCitopatologistaExecutor.Executar(req);
             return res.status(HttpStatus.OK).json(citopatologista); 
-        }
-        catch(erro){
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
-    async obterVisitante(req, res) {
-
-        let visitante;
-        try{
-            visitante = await ObterVisitanteExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(visitante); 
         }
         catch(erro){
 

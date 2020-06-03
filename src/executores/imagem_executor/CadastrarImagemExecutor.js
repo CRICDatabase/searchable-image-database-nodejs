@@ -60,11 +60,10 @@ async function validarRequisicao(req) {
 
     const administradorTask = UsuarioRepositorio.obterAdministradorPorId(req.body.id_usuario);
     const citopatologistaTask = UsuarioRepositorio.obterCitopatologistaPorId(req.body.id_usuario);
-    const visitanteTask = UsuarioRepositorio.obterVisitantePorId(req.body.id_usuario);
 
-    const [administrador, citopatologista, visitante] = await Promise.all([administradorTask, citopatologistaTask, visitanteTask]);
+    const [administrador, citopatologista] = await Promise.all([administradorTask, citopatologistaTask]);
 
-    let naoAutorizado = administrador || citopatologista || visitante;
+    let naoAutorizado = administrador || citopatologista;
     if (!naoAutorizado) {
         ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
         ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
@@ -78,8 +77,7 @@ async function prepararCadastroNoBanco(req) {
     const novoNomeImagem = `${Crypto.randomBytes(8).toString("hex")}_${nomeImagemTratado}`; //Cria hexadecimal de 16 bits
     const excluida = 0;
     const classificacao_aprovada = 1;
-    const fonte_aquisicao = await obterUsuarioVisitante(req);
-    const caminho_imagem = fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? "imagens/base_interna/" : "imagens/base_externa/" ;    
+    const caminho_imagem = "imagens/base_interna/";
     const altura = 0;
     const largura = 0;
 
@@ -98,12 +96,6 @@ async function prepararCadastroNoBanco(req) {
     };
 
     return imagem;
-}
-
-async function obterUsuarioVisitante(req) {
-
-    const vistante = await UsuarioRepositorio.obterVisitantePorId(req.body.id_usuario);
-    return vistante ? FonteAquisicao.FONTE_AQUISICAO_EXTERNA : FonteAquisicao.FONTE_AQUISICAO_INTERNA;
 }
 
 function obterNomeImagemTratado(entrada) {

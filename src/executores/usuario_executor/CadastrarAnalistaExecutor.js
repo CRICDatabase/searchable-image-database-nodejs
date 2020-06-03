@@ -48,10 +48,9 @@ async function validarRequisicao(usuario) {
     }    
 
     const CitopatologistaTask = UsuarioRepositorio.obterCitopatologistaPorId(usuario.id_usuario);
-    const VisitanteTask = UsuarioRepositorio.obterVisitantePorId(usuario.id_usuario);
-    const [Citopatologista, Visitante] = await Promise.all([CitopatologistaTask, VisitanteTask]);
+    const [Citopatologista] = await Promise.all([CitopatologistaTask]);
 
-    if(!Citopatologista && !Visitante) {
+    if(!Citopatologista) {
         ObjetoExcecao.status = HttpStatus.FORBIDDEN;
         ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         ObjetoExcecao.details = `User with id ${usuario.id_usuario} isn't cytopathologist`;

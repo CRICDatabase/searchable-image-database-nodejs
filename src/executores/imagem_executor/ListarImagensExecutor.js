@@ -15,8 +15,7 @@ module.exports = {
         await validarRequisicao(req);
 
         const todasImagensTask = ImagemRepositorio.listarImagensValidasNoSistema();
-        const visitanteTask = UsuarioRepositorio.obterVisitantePorId(req.params.id_usuario);
-        const [todasImagens, visitante] = await Promise.all([todasImagensTask, visitanteTask]);
+        const [todasImagens] = await Promise.all([todasImagensTask]);
 
         if(todasImagens.length == 0) {
             ObjetoExcecao.status = HttpStatus.NOT_FOUND;
@@ -24,8 +23,7 @@ module.exports = {
             throw ObjetoExcecao;
         }
 
-        const resutado = await prepararRetorno(todasImagens, visitante);
-        return resutado;
+        return await enrich_images(todasImagens);
     }
 };
 
@@ -46,44 +44,7 @@ async function validarRequisicao(req) {
     }
 }
 
-async function prepararRetorno(listaImagens, visitante) {
-
-    let resultado;
-    if(visitante) {
-        const listaFiltrada = filtrarImagensParaVisitante(listaImagens, visitante.dataValues.id);
-        resultado =  await obterObjetoDeRetorno(listaFiltrada);       
-    }
-    else {
-        resultado = await obterObjetoDeRetorno(listaImagens);
-    }
-
-    return resultado;
-}
-
-function filtrarImagensParaVisitante(todasImagens, id_visitante) {
-
-    //falta revisar
-    let contadorImagens = 0;
-    let imagensCadastradasPeloVisitante = [];
-
-    for(let i = 0; i < todasImagens.length && contadorImagens < 6; i++) {
-
-        if(todasImagens[i].dataValues.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA) {
-            imagensCadastradasPeloVisitante.push(todasImagens[i]);
-            contadorImagens++;
-        }
-    }
-
-    todasImagens.forEach(imagem => {
-        if(imagem.dataValues.id_usuario == id_visitante) {
-            imagensCadastradasPeloVisitante.push(imagem);
-        }
-    });
-
-    return imagensCadastradasPeloVisitante;
-}
-
-async function obterObjetoDeRetorno(listaImagens) {
+async function enrich_images(listaImagens) {
 
     let resultado = [];
     for(let i = 0;  i < listaImagens.length; i++) {
