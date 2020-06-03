@@ -98,10 +98,6 @@ module.exports = {
         }
 
         const all_images = await ImagemRepositorio.listarImagensValidasNoSistema();
-        /* TODO process image from user
-        const visitanteTask = UsuarioRepositorio.obterVisitantePorId(req.params.id_usuario);
-        const [todasImagens, visitante] = await Promise.all([todasImagensTask, visitanteTask]);
-        */
         
         for await (let image of all_images){
             if (include_images) {

@@ -11,7 +11,6 @@ module.exports = {
     DESCRICAO_NAO_ENCONTRADA: "Description not found",
     ADMINISTRADOR_NAO_ENCONTRADO: "Admin not found",
     CITOPATOLOGISTA_NAO_ENCONTRADO: "Cytopathologist not found",
-    VISITANTE_NAO_ENCONTRADO: "Visitor not found",
     ANALISTA_NAO_ENCONTRADO: "Analyst not found",
     USUARIO_NAO_AUTORIZADO: "Unauthorized to perform the operation",
     ANALISTA_EXISTENTE: "Analist already registered",
@@ -22,6 +21,5 @@ module.exports = {
     SEGMENTACAO_INVALIDA: "Invalid segmentation data set",
     ERRO_AO_CADASTRAR_IMAGEM: "Could not register image",
     ERRO_AO_CADASTRAR_CELULA: "Error registering cell",
-    ACAO_PROIBIDA_PARA_VISITANTE: "Action not allowed for visitors",
     CELULA_NAO_ENCONTRADA: "Cell not found"
 };

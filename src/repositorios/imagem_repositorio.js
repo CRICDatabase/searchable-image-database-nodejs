@@ -151,22 +151,6 @@ module.exports = {
         });
     },
 
-    async listarImagensPorIdVisitante(id_usuario) {
-        return ImagemModel.findAll({
-            order: [
-                ["created_at", "DESC"]
-            ],
-            where: {
-                id_usuario: {
-                    [Sequelize.Op.eq]: id_usuario
-                },
-                fonte_aquisicao: {
-                    [Sequelize.Op.eq]: FonteAquisicao.FONTE_AQUISICAO_EXTERNA
-                }
-            }
-        });
-    },
-
     async listarSegmentosCitoplasmaCelula(id_imagem, id_usuario) {
 
         let todasSegmentacoesCitoplasma;
