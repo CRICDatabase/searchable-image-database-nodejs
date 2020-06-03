@@ -46,14 +46,4 @@ async function validarRequisicao(usuario) {
         ObjetoExcecao.title = Excecao.ANALISTA_EXISTENTE;
         throw ObjetoExcecao;
     }    
-
-    const CitopatologistaTask = UsuarioRepositorio.obterCitopatologistaPorId(usuario.id_usuario);
-    const [Citopatologista] = await Promise.all([CitopatologistaTask]);
-
-    if(!Citopatologista) {
-        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
-        ObjetoExcecao.details = `User with id ${usuario.id_usuario} isn't cytopathologist`;
-        throw ObjetoExcecao;
-    }
 }

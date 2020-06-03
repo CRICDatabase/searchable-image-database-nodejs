@@ -5,7 +5,6 @@ const config = require("config");
 const Sequelize = require("sequelize");
 const Usuario_Base = require("../models/UsuarioBaseModel");
 const Administrador = require("../models/AdministradorModel");
-const Citopatologista = require("../models/CitopatologistaModel");
 const Analista = require("../models/AnalistaModel");
 const ImagemModel = require("../models/ImagemModel");
 const DescricaoModel = require("../models/DescricaoModel");
@@ -25,7 +24,6 @@ const connection = new Sequelize(config.get("database"));
 //Inicia a conexao no model (cadastra o model na conexao)
 Usuario_Base.init(connection);
 Administrador.init(connection);
-Citopatologista.init(connection);
 Analista.init(connection);
 ImagemModel.init(connection);
 DescricaoModel.init(connection);
