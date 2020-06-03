@@ -59,11 +59,10 @@ async function validarRequisicao(req) {
     }
 
     const administradorTask = UsuarioRepositorio.obterAdministradorPorId(req.body.id_usuario);
-    const citopatologistaTask = UsuarioRepositorio.obterCitopatologistaPorId(req.body.id_usuario);
+    const [administrador] = await Promise.all([administradorTask]);
 
-    const [administrador, citopatologista] = await Promise.all([administradorTask, citopatologistaTask]);
+    let naoAutorizado = administrador;
 
-    let naoAutorizado = administrador || citopatologista;
     if (!naoAutorizado) {
         ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
         ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
