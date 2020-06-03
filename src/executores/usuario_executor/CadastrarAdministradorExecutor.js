@@ -23,7 +23,7 @@ module.exports = {
 
 async function validarRequisicao(usuarioReq) {
 
-    if (!usuarioReq.primeiro_nome || !usuarioReq.email || !usuarioReq.senha || !usuarioReq.api_key || !usuarioReq.nivel_acesso) {
+    if (!usuarioReq.primeiro_nome || !usuarioReq.email || !usuarioReq.senha) {
 
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
@@ -56,8 +56,6 @@ function prepararRetorno(usuarioCriado, adminCriado) {
         email: usuarioCriado.dataValues.email,
         senha: usuarioCriado.dataValues.senha,
         ativo: usuarioCriado.dataValues.ativo,
-        api_key: adminCriado.dataValues.api_key,
-        nivel_acesso: adminCriado.dataValues.nivel_acesso,
         createdAt: adminCriado.dataValues.updatedAt,
         updatedAt: adminCriado.dataValues.createdAt
     };
