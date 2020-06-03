@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  up: (queryInterface) => {
-    return queryInterface.dropTable("citopatologista");
-  },
+    up: (queryInterface) => {
+        return queryInterface.dropTable("citopatologista");
+    },
 
-  down: () => {
-  }
+    down: () => {
+    }
 };
