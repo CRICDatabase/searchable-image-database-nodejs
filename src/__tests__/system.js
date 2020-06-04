@@ -8,20 +8,20 @@ describe(
             "GET",
             () => {
                 return request(app)
-                .get("/api/v1")
-                .then(
-                    response => {
-                        expect(response.statusCode).toBe(200);
-                        expect(
-                            response.body
-                        ).toMatchObject(
-                            {
-                                descricao: expect.any(String),
-                                versao: expect.any(String),
-                            }
-                        );
-                    }
-                );
+                    .get("/api/v1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    descricao: expect.any(String),
+                                    versao: expect.any(String)
+                                }
+                            );
+                        }
+                    );
             }
         );
     }

@@ -11,7 +11,8 @@
         "browser": true,
         "node": true,
         "shared-node-browser": true,
-        "amd": true
+        "amd": true,
+	"jest": true
     },
     "rules": {
         "arrow-body-style": ["error", "always"],
