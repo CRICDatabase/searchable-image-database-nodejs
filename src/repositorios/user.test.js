@@ -2,44 +2,9 @@
 
 jest.useFakeTimers();
 
-const proxyquire = require("proxyquire");
-const SequelizeMock = require("sequelize-mock");
+let UserDOA = require("./usuario_repositorio")
 
-const UsuarioBaseFixtures = require("../fixtures/user");
-const AnalistaFixtures = require("../fixtures/analyst");
-
-const dbMock = new SequelizeMock();
-
-const MockUsuarioBaseModel = dbMock.define("usuario_base");
-MockUsuarioBaseModel.$queueResult(
-    UsuarioBaseFixtures.fixtures.map(
-        (element) => {
-            return MockUsuarioBaseModel.build(
-                element
-            );
-        }
-    )    
-);
-
-const MockAnalistaModel = dbMock.define("analista");
-MockAnalistaModel.$queueResult(
-    AnalistaFixtures.fixtures.map(
-        (element) => {
-            return MockAnalistaModel.build(
-                element
-            );
-        }
-    )    
-);
-
-const UserDOA = proxyquire(
-    "./usuario_repositorio",
-    {
-        "src/models/UsuarioBaseModel": MockUsuarioBaseModel,
-        "src/models/AnalistaModel": MockAnalistaModel,
-        "src/database": dbMock
-    }
-);
+const Criptografia = require("../utils/criptografia");
 
 describe(
     "Test UsuarioBaseModel",
@@ -65,7 +30,7 @@ describe(
                         }
                     );
             }
-        );
+       );
 
         test(
             "obterUsuarioBasePorEmail for cybercriminal",
@@ -110,6 +75,45 @@ describe(
             () => {
                 return UserDOA.obterUsuarioBasePorId(
                     1000
+                )
+                    .then(
+                        data => {
+                            expect(data)
+                                .toBeNull();
+                        }
+                    );
+            }
+        );
+
+        test(
+            "obterUsuarioCompletoPorLogin for admin",
+            () => {
+                return UserDOA.obterUsuarioCompletoPorLogin(
+                    "admin@test.database.cric.com.br",
+                    Criptografia.criarCriptografiaMd5Utf8("123.456")
+                )
+                    .then(
+                        data => {
+                            expect(data)
+                                .toMatchObject(
+                                    {
+                                        id: 1,
+                                        primeiro_nome: "admin",
+                                        ultimo_nome: "",
+                                        email: "admin@test.database.cric.com.br",
+                                        ativo: 1
+                                    }
+                                );
+                        }
+                    );
+            }
+       );
+
+        test(
+            "obterUsuarioCompletoPorLogin for cybercriminal",
+            () => {
+                return UserDOA.obterUsuarioBasePorEmail(
+                    "cybercriminal@test.database.cric.com.br"
                 )
                     .then(
                         data => {
