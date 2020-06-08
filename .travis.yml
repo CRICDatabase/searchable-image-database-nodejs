@@ -3,9 +3,17 @@ node_js:
   - "14"
 dist: bionic
 sudo: required
+services:
+  - mysql
+
+env:
+  - NODE_ENV=travis
 
 install:
   - npm install
+
+before_script:
+  - mysql -u root -e 'CREATE DATABASE jest;'
 
 script:
   - npm run lint
