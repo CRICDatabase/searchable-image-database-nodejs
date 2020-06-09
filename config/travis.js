@@ -2,9 +2,9 @@
 
 module.exports = {
     database: {
-        host: "db",
+        host: "127.0.0.1",
         username: "root",
-        password: "123.456",
+        password: "",
         database: "jest",
         dialect: "mysql",
         timezone: "-03:00",
