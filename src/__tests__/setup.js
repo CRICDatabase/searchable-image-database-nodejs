@@ -1,3 +1,5 @@
+/* eslint global-require: 0 */
+
 module.exports = async () => {
     const UsuarioBaseModel = require("../models/UsuarioBaseModel");
     const AdministradorModel = require("../models/AdministradorModel");
@@ -22,7 +24,7 @@ module.exports = async () => {
                     AdministradorFixtures.fixtures
                 );
 
-                const x = await AnalistaModel.bulkCreate(
+                await AnalistaModel.bulkCreate(
                     AnalistaFixtures.fixtures
                 );
             }

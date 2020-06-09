@@ -2,7 +2,7 @@
 
 jest.useFakeTimers();
 
-let UserDOA = require("./usuario_repositorio")
+let UserDOA = require("./usuario_repositorio");
 
 const Criptografia = require("../utils/criptografia");
 
@@ -30,7 +30,7 @@ describe(
                         }
                     );
             }
-       );
+        );
 
         test(
             "obterUsuarioBasePorEmail for cybercriminal",
@@ -107,7 +107,7 @@ describe(
                         }
                     );
             }
-       );
+        );
 
         test(
             "obterUsuarioCompletoPorLogin for cybercriminal",
