@@ -5,9 +5,19 @@ module.exports = async () => {
     const AdministradorModel = require("../models/AdministradorModel");
     const AnalistaModel = require("../models/AnalistaModel");
 
+    const LesaoModel = require("../models/LesaoModel");
+
+    const ImagemModel = require("../models/ImagemModel");
+
+    const ClassificacaoCelulaModel = require("../models/ClassificacaoCelulaModel");
+
     const UsuarioBaseFixtures = require("../fixtures/user");
     const AdministradorFixtures = require("../fixtures/admin");
     const AnalistaFixtures = require("../fixtures/analyst");
+
+    const LesaoFixtures = require("../fixtures/injury");
+
+    const ImagemFixtures = require("../fixtures/image");
 
     const db = require("../database");
 
@@ -26,6 +36,14 @@ module.exports = async () => {
 
                 await AnalistaModel.bulkCreate(
                     AnalistaFixtures.fixtures
+                );
+
+                await LesaoModel.bulkCreate(
+                    LesaoFixtures.fixtures
+                );
+
+                await ImagemModel.bulkCreate(
+                    ImagemFixtures.fixtures
                 );
             }
         );
