@@ -9,6 +9,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {string} data.nome - Name of the injury.
  * @param {string} data.detalhes - Details of the injury.
  * @param {number} data.grade - Integer indicating how severe is the injury. Higher number means more severe.
+ * @param {string} data.id_collection - Integer refering to CollectionModel.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class LesaoModel extends Model {
@@ -34,6 +35,13 @@ class LesaoModel extends Model {
             tableName: "lesao" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });
     }
+
+    static associacao(models) {
+        this.belongsTo(models.CollectionModel, {
+            foreignKey: "id_collection", as: "fk_lesao_collection"
+        });
+    }
+
 }
 
 module.exports = LesaoModel;

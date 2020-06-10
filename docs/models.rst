@@ -39,3 +39,8 @@ Authorization
 -------------
 
 .. autoclass:: SessaoUsuarioModel
+
+Collection
+-----------
+
+.. autoclass:: CollectionModel
