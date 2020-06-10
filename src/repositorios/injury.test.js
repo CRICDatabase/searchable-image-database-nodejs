@@ -18,11 +18,11 @@ describe(
                 )
                     .then(
                         data => {
-                            expect(data)
+                            expect(data.dataValues)
                                 .toMatchObject(
                                     {
                                         id: expect.any(Number),
-                                        nome: "injury",
+                                        nome: "Injury",
                                         detalhes: 1
                                     }
                                 );
@@ -39,7 +39,7 @@ describe(
                 )
                     .then(
                         data => {
-                            expect(data)
+                            expect(data.dataValues)
                                 .toMatchObject(
                                     {
                                         id: 1,
@@ -73,7 +73,11 @@ describe(
                 return ImageDOA.listarLesoes()
                     .then(
                         data => {
-                            expect(data)
+                            expect(data.map(
+                                item => {
+                                    return item.dataValues;
+                                }
+                            ))
                                 .toMatchObject(
                                     expect.arrayContaining(
                                         [{

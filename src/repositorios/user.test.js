@@ -17,7 +17,7 @@ describe(
                 )
                     .then(
                         data => {
-                            expect(data)
+                            expect(data.dataValues)
                                 .toMatchObject(
                                     {
                                         id: 1,
@@ -55,7 +55,7 @@ describe(
                 )
                     .then(
                         data => {
-                            expect(data)
+                            expect(data.dataValues)
                                 .toMatchObject(
                                     {
                                         id: 1,
@@ -94,6 +94,8 @@ describe(
                 )
                     .then(
                         data => {
+                            /* obterUsuarioCompletoPorLogin uses raw SQL query,
+                               so data.dataValues is undefined */
                             expect(data)
                                 .toMatchObject(
                                     {
@@ -138,7 +140,7 @@ describe(
                 )
                     .then(
                         data => {
-                            expect(data)
+                            expect(data.dataValues)
                                 .toMatchObject(
                                     {
                                         id: expect.any(Number),
@@ -166,7 +168,7 @@ describe(
                 )
                     .then(
                         data => {
-                            expect(data)
+                            expect(data.dataValues)
                                 .toMatchObject(
                                     {
                                         id: 1,
