@@ -10,8 +10,8 @@ beforeAll(() => {
         )
         .send(
             {
-                "email": "admin@test.database.cric.com.br",
-                "senha": "123.456"
+                email: "admin@test.database.cric.com.br",
+                senha: "123.456"
             }
         )
         .then(
@@ -59,12 +59,12 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
-                                        "ativo": 1,
-                                        "email": expect.any(String),
-                                        "id": expect.any(Number),
-                                        "primeiro_nome": expect.any(String),
-                                        "senha": expect.any(String),
-                                        "ultimo_nome": expect.any(String)
+                                        ativo: 1,
+                                        email: expect.any(String),
+                                        id: expect.any(Number),
+                                        primeiro_nome: expect.any(String),
+                                        senha: expect.any(String),
+                                        ultimo_nome: expect.any(String)
                                     }]
                                 )
                             );
