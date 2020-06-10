@@ -11,8 +11,8 @@ beforeAll(() => {
         )
         .send(
             {
-                "email": "admin@test.database.cric.com.br",
-                "senha": "123.456"
+                email: "admin@test.database.cric.com.br",
+                senha: "123.456"
             }
         )
         .then(
@@ -27,8 +27,8 @@ beforeAll(() => {
         )
         .send(
             {
-                "email": "ruby@test.database.cric.com.br",
-                "senha": "123.456"
+                email: "ruby@test.database.cric.com.br",
+                senha: "123.456"
             }
         )
         .then(
@@ -54,24 +54,24 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
-                                        "altura": expect.any(Number),
-                                        "caminho_imagem": expect.any(String),
-                                        "classificacao_aprovada": 1,
-                                        "codigo_lamina": expect.any(String),
-                                        "dt_aquisicao": expect.any(String),
-                                        "excluida": 0,
-                                        "fonte_aquisicao": 1,
-                                        "id": expect.any(Number),
-                                        "id_usuario": 1,
-                                        "largura": expect.any(Number),
-                                        "lesao": {
-                                            "detalhes": expect.any(Number),
-                                            "id": expect.any(Number),
-                                            "nome": expect.any(String)
+                                        altura: expect.any(Number),
+                                        caminho_imagem: expect.any(String),
+                                        classificacao_aprovada: 1,
+                                        codigo_lamina: expect.any(String),
+                                        dt_aquisicao: expect.any(String),
+                                        excluida: 0,
+                                        fonte_aquisicao: 1,
+                                        id: expect.any(Number),
+                                        id_usuario: 1,
+                                        largura: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(Number),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String)
                                         },
-                                        "nome": expect.any(String),
-                                        "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number)
+                                        nome: expect.any(String),
+                                        total_classificacoes: expect.any(Number),
+                                        total_segmentacoes: expect.any(Number)
                                     }]
                                 )
                             );
@@ -105,22 +105,22 @@ describe(
                                 response.body
                             ).toMatchObject(
                                 {
-                                    "altura": expect.any(Number),
-                                    "caminho_imagem": expect.any(String),
-                                    "classificacao_aprovada": 1,
-                                    "codigo_lamina": expect.any(String),
-                                    "dt_aquisicao": expect.any(String),
-                                    "excluida": 0,
-                                    "fonte_aquisicao": 1,
-                                    "id": expect.any(Number),
-                                    "id_usuario": 1,
-                                    "largura": expect.any(Number),
-                                    "lesao": {
-                                        "detalhes": expect.any(Number),
-                                        "id": expect.any(Number),
-                                        "nome": expect.any(String)
+                                    altura: expect.any(Number),
+                                    caminho_imagem: expect.any(String),
+                                    classificacao_aprovada: 1,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: 0,
+                                    fonte_aquisicao: 1,
+                                    id: expect.any(Number),
+                                    id_usuario: 1,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(Number),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String)
                                     },
-                                    "nome": expect.any(String)
+                                    nome: expect.any(String)
                                 }
                             );
                         }
@@ -150,24 +150,24 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
-                                        "altura": expect.any(Number),
-                                        "caminho_imagem": expect.any(String),
-                                        "classificacao_aprovada": 1,
-                                        "codigo_lamina": expect.any(String),
-                                        "dt_aquisicao": expect.any(String),
-                                        "excluida": 0,
-                                        "fonte_aquisicao": 1,
-                                        "id": expect.any(Number),
-                                        "id_usuario": 1,
-                                        "largura": expect.any(Number),
-                                        "lesao": {
-                                            "detalhes": expect.any(Number),
-                                            "id": expect.any(Number),
-                                            "nome": expect.any(String)
+                                        altura: expect.any(Number),
+                                        caminho_imagem: expect.any(String),
+                                        classificacao_aprovada: 1,
+                                        codigo_lamina: expect.any(String),
+                                        dt_aquisicao: expect.any(String),
+                                        excluida: 0,
+                                        fonte_aquisicao: 1,
+                                        id: expect.any(Number),
+                                        id_usuario: 1,
+                                        largura: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(Number),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String)
                                         },
-                                        "nome": expect.any(String),
-                                        "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number)
+                                        nome: expect.any(String),
+                                        total_classificacoes: expect.any(Number),
+                                        total_segmentacoes: expect.any(Number)
                                     }]
                                 )
                             );
@@ -193,24 +193,24 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
-                                        "altura": expect.any(Number),
-                                        "caminho_imagem": expect.any(String),
-                                        "classificacao_aprovada": 1,
-                                        "codigo_lamina": expect.any(String),
-                                        "dt_aquisicao": expect.any(String),
-                                        "excluida": 0,
-                                        "fonte_aquisicao": 1,
-                                        "id": expect.any(Number),
-                                        "id_usuario": 1,
-                                        "largura": expect.any(Number),
-                                        "lesao": {
-                                            "detalhes": expect.any(Number),
-                                            "id": expect.any(Number),
-                                            "nome": expect.any(String)
+                                        altura: expect.any(Number),
+                                        caminho_imagem: expect.any(String),
+                                        classificacao_aprovada: 1,
+                                        codigo_lamina: expect.any(String),
+                                        dt_aquisicao: expect.any(String),
+                                        excluida: 0,
+                                        fonte_aquisicao: 1,
+                                        id: expect.any(Number),
+                                        id_usuario: 1,
+                                        largura: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(Number),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String)
                                         },
-                                        "nome": expect.any(String),
-                                        "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number)
+                                        nome: expect.any(String),
+                                        total_classificacoes: expect.any(Number),
+                                        total_segmentacoes: expect.any(Number)
                                     }]
                                 )
                             );
@@ -235,22 +235,22 @@ describe(
                                 response.body
                             ).toMatchObject(
                                 {
-                                    "altura": expect.any(Number),
-                                    "caminho_imagem": expect.any(String),
-                                    "classificacao_aprovada": 1,
-                                    "codigo_lamina": expect.any(String),
-                                    "dt_aquisicao": expect.any(String),
-                                    "excluida": 0,
-                                    "fonte_aquisicao": 1,
-                                    "id": expect.any(Number),
-                                    "id_usuario": 1,
-                                    "largura": expect.any(Number),
-                                    "lesao": {
-                                        "detalhes": expect.any(Number),
-                                        "id": expect.any(Number),
-                                        "nome": expect.any(String)
+                                    altura: expect.any(Number),
+                                    caminho_imagem: expect.any(String),
+                                    classificacao_aprovada: 1,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: 0,
+                                    fonte_aquisicao: 1,
+                                    id: expect.any(Number),
+                                    id_usuario: 1,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(Number),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String)
                                     },
-                                    "nome": expect.any(String)
+                                    nome: expect.any(String)
                                 }
                             );
                         }
@@ -281,24 +281,24 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
-                                        "altura": expect.any(Number),
-                                        "caminho_imagem": expect.any(String),
-                                        "classificacao_aprovada": 1,
-                                        "codigo_lamina": expect.any(String),
-                                        "dt_aquisicao": expect.any(String),
-                                        "excluida": 0,
-                                        "fonte_aquisicao": 1,
-                                        "id": expect.any(Number),
-                                        "id_usuario": 1,
-                                        "largura": expect.any(Number),
-                                        "lesao": {
-                                            "detalhes": expect.any(Number),
-                                            "id": expect.any(Number),
-                                            "nome": expect.any(String)
+                                        altura: expect.any(Number),
+                                        caminho_imagem: expect.any(String),
+                                        classificacao_aprovada: 1,
+                                        codigo_lamina: expect.any(String),
+                                        dt_aquisicao: expect.any(String),
+                                        excluida: 0,
+                                        fonte_aquisicao: 1,
+                                        id: expect.any(Number),
+                                        id_usuario: 1,
+                                        largura: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(Number),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String)
                                         },
-                                        "nome": expect.any(String),
-                                        "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number)
+                                        nome: expect.any(String),
+                                        total_classificacoes: expect.any(Number),
+                                        total_segmentacoes: expect.any(Number)
                                     }]
                                 )
                             );
@@ -324,24 +324,24 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
-                                        "altura": expect.any(Number),
-                                        "caminho_imagem": expect.any(String),
-                                        "classificacao_aprovada": 1,
-                                        "codigo_lamina": expect.any(String),
-                                        "dt_aquisicao": expect.any(String),
-                                        "excluida": 0,
-                                        "fonte_aquisicao": 1,
-                                        "id": expect.any(Number),
-                                        "id_usuario": 1,
-                                        "largura": expect.any(Number),
-                                        "lesao": {
-                                            "detalhes": expect.any(Number),
-                                            "id": expect.any(Number),
-                                            "nome": expect.any(String)
+                                        altura: expect.any(Number),
+                                        caminho_imagem: expect.any(String),
+                                        classificacao_aprovada: 1,
+                                        codigo_lamina: expect.any(String),
+                                        dt_aquisicao: expect.any(String),
+                                        excluida: 0,
+                                        fonte_aquisicao: 1,
+                                        id: expect.any(Number),
+                                        id_usuario: 1,
+                                        largura: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(Number),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String)
                                         },
-                                        "nome": expect.any(String),
-                                        "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number)
+                                        nome: expect.any(String),
+                                        total_classificacoes: expect.any(Number),
+                                        total_segmentacoes: expect.any(Number)
                                     }]
                                 )
                             );
@@ -366,22 +366,22 @@ describe(
                                 response.body
                             ).toMatchObject(
                                 {
-                                    "altura": expect.any(Number),
-                                    "caminho_imagem": expect.any(String),
-                                    "classificacao_aprovada": 1,
-                                    "codigo_lamina": expect.any(String),
-                                    "dt_aquisicao": expect.any(String),
-                                    "excluida": 0,
-                                    "fonte_aquisicao": 1,
-                                    "id": expect.any(Number),
-                                    "id_usuario": 1,
-                                    "largura": expect.any(Number),
-                                    "lesao": {
-                                        "detalhes": expect.any(Number),
-                                        "id": expect.any(Number),
-                                        "nome": expect.any(String)
+                                    altura: expect.any(Number),
+                                    caminho_imagem: expect.any(String),
+                                    classificacao_aprovada: 1,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: 0,
+                                    fonte_aquisicao: 1,
+                                    id: expect.any(Number),
+                                    id_usuario: 1,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(Number),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String)
                                     },
-                                    "nome": expect.any(String)
+                                    nome: expect.any(String)
                                 }
                             );
                         }

@@ -10,8 +10,6 @@ module.exports = async () => {
 
     const ImagemModel = require("../models/ImagemModel");
 
-    const ClassificacaoCelulaModel = require("../models/ClassificacaoCelulaModel");
-
     const UsuarioBaseFixtures = require("../fixtures/user");
     const AdministradorFixtures = require("../fixtures/admin");
     const AnalistaFixtures = require("../fixtures/analyst");
