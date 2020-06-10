@@ -71,7 +71,7 @@ describe(
                                         },
                                         "nome": expect.any(String),
                                         "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number),
+                                        "total_segmentacoes": expect.any(Number)
                                     }]
                                 )
                             );
@@ -120,7 +120,7 @@ describe(
                                         "id": expect.any(Number),
                                         "nome": expect.any(String)
                                     },
-                                    "nome": expect.any(String),
+                                    "nome": expect.any(String)
                                 }
                             );
                         }
@@ -139,7 +139,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/listar/1")
                     .set(
-                        'token_autenticacao',
+                        "token_autenticacao",
                         ruby_token
                     )
                     .then(
@@ -167,7 +167,7 @@ describe(
                                         },
                                         "nome": expect.any(String),
                                         "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number),
+                                        "total_segmentacoes": expect.any(Number)
                                     }]
                                 )
                             );
@@ -182,7 +182,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/listar/2")
                     .set(
-                        'token_autenticacao',
+                        "token_autenticacao",
                         ruby_token
                     )
                     .then(
@@ -210,7 +210,7 @@ describe(
                                         },
                                         "nome": expect.any(String),
                                         "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number),
+                                        "total_segmentacoes": expect.any(Number)
                                     }]
                                 )
                             );
@@ -225,7 +225,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/1")
                     .set(
-                        'token_autenticacao',
+                        "token_autenticacao",
                         ruby_token
                     )
                     .then(
@@ -250,7 +250,7 @@ describe(
                                         "id": expect.any(Number),
                                         "nome": expect.any(String)
                                     },
-                                    "nome": expect.any(String),
+                                    "nome": expect.any(String)
                                 }
                             );
                         }
@@ -270,7 +270,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/listar/1")
                     .set(
-                        'token_autenticacao',
+                        "token_autenticacao",
                         admin_token
                     )
                     .then(
@@ -298,7 +298,7 @@ describe(
                                         },
                                         "nome": expect.any(String),
                                         "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number),
+                                        "total_segmentacoes": expect.any(Number)
                                     }]
                                 )
                             );
@@ -313,7 +313,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/listar/2")
                     .set(
-                        'token_autenticacao',
+                        "token_autenticacao",
                         admin_token
                     )
                     .then(
@@ -341,7 +341,7 @@ describe(
                                         },
                                         "nome": expect.any(String),
                                         "total_classificacoes": expect.any(Number),
-                                        "total_segmentacoes": expect.any(Number),
+                                        "total_segmentacoes": expect.any(Number)
                                     }]
                                 )
                             );
@@ -356,7 +356,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/1")
                     .set(
-                        'token_autenticacao',
+                        "token_autenticacao",
                         admin_token
                     )
                     .then(
@@ -381,7 +381,7 @@ describe(
                                         "id": expect.any(Number),
                                         "nome": expect.any(String)
                                     },
-                                    "nome": expect.any(String),
+                                    "nome": expect.any(String)
                                 }
                             );
                         }

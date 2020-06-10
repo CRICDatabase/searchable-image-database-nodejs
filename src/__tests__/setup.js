@@ -6,6 +6,7 @@ module.exports = async () => {
     const AnalistaModel = require("../models/AnalistaModel");
 
     const LesaoModel = require("../models/LesaoModel");
+    const DescricaoModel = require("../models/DescricaoModel");
 
     const ImagemModel = require("../models/ImagemModel");
 
@@ -16,6 +17,7 @@ module.exports = async () => {
     const AnalistaFixtures = require("../fixtures/analyst");
 
     const LesaoFixtures = require("../fixtures/injury");
+    const DescricaoFixtures = require("../fixtures/description");
 
     const ImagemFixtures = require("../fixtures/image");
 
@@ -40,6 +42,10 @@ module.exports = async () => {
 
                 await LesaoModel.bulkCreate(
                     LesaoFixtures.fixtures
+                );
+
+                await DescricaoModel.bulkCreate(
+                    DescricaoFixtures.fixtures
                 );
 
                 await ImagemModel.bulkCreate(
