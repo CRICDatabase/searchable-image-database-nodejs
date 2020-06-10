@@ -8,6 +8,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {Object} data - Data sent to server.
  * @param {string} data.codigo - Code used in the decision tree.
  * @param {string} data.nome - Name of the node in the decision tree.
+ * @param {string} data.id_collection - Integer refering to CollectionModel.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class DescricaoModel extends Model {
@@ -32,6 +33,13 @@ class DescricaoModel extends Model {
             tableName: "descricao" //Evita que o sequelize pesquise pelo nome da tabela no plural
         });
     }
+
+    static associacao(models) {
+        this.belongsTo(models.CollectionModel, {
+            foreignKey: "id_collection", as: "fk_descricao_collection"
+        });
+    }
+
 }
 
 module.exports = DescricaoModel;

@@ -12,6 +12,7 @@ const ClassificacaoCelulaModel = require("../models/ClassificacaoCelulaModel");
 const SegmentacaoCitoplasmaModel = require("../models/SegmentacaoCitoplasmaModel");
 const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
 const SessaoUsuarioModel = require("../models/SessaoUsuarioModel");
+const CollectionModel = require("../models/CollectionModel");
 
 // Option 1:
 const connection = new Sequelize(config.get("database"));
@@ -29,6 +30,7 @@ ClassificacaoCelulaModel.init(connection);
 SegmentacaoCitoplasmaModel.init(connection);
 SegmentacaoNucleoModel.init(connection);
 SessaoUsuarioModel.init(connection);
+CollectionModel.init(connection);
 
 //habilita as associações de chaves
 ImagemModel.associacao(connection.models);
@@ -36,5 +38,8 @@ CelulaModel.associacao(connection.models);
 ClassificacaoCelulaModel.associacao(connection.models);
 SegmentacaoCitoplasmaModel.associacao(connection.models);
 SegmentacaoNucleoModel.associacao(connection.models);
+LesaoModel.associacao(connection.models);
+DescricaoModel.associacao(connection.models);
+CollectionModel.associacao(connection.models);
 
 module.exports = connection;
