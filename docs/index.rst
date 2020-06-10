@@ -36,6 +36,7 @@ is available at https://cric-database.readthedocs.io/.
     settings
     models
     database
+    test
     debugging
     contributing
 
