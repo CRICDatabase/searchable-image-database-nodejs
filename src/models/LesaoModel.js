@@ -7,7 +7,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @constructor
  * @param {Object} data - Data sent to server.
  * @param {string} data.nome - Name of the injury.
- * @param {int} data.detalhes - Details of the injury.
+ * @param {string} data.detalhes - Details of the injury.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class LesaoModel extends Model {
@@ -17,7 +17,7 @@ class LesaoModel extends Model {
 
         super.init({
             nome: DataTypes.STRING,
-            detalhes: DataTypes.INTEGER
+            detalhes: DataTypes.STRING
         },
         {
             defaultScope: {

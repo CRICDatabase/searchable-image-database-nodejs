@@ -65,7 +65,7 @@ describe(
                                         id_usuario: 1,
                                         largura: expect.any(Number),
                                         lesao: {
-                                            detalhes: expect.any(Number),
+                                            detalhes: expect.any(String),
                                             id: expect.any(Number),
                                             nome: expect.any(String)
                                         },
@@ -116,7 +116,7 @@ describe(
                                     id_usuario: 1,
                                     largura: expect.any(Number),
                                     lesao: {
-                                        detalhes: expect.any(Number),
+                                        detalhes: expect.any(String),
                                         id: expect.any(Number),
                                         nome: expect.any(String)
                                     },
@@ -161,7 +161,7 @@ describe(
                                         id_usuario: 1,
                                         largura: expect.any(Number),
                                         lesao: {
-                                            detalhes: expect.any(Number),
+                                            detalhes: expect.any(String),
                                             id: expect.any(Number),
                                             nome: expect.any(String)
                                         },
@@ -204,7 +204,7 @@ describe(
                                         id_usuario: 1,
                                         largura: expect.any(Number),
                                         lesao: {
-                                            detalhes: expect.any(Number),
+                                            detalhes: expect.any(String),
                                             id: expect.any(Number),
                                             nome: expect.any(String)
                                         },
@@ -246,7 +246,7 @@ describe(
                                     id_usuario: 1,
                                     largura: expect.any(Number),
                                     lesao: {
-                                        detalhes: expect.any(Number),
+                                        detalhes: expect.any(string),
                                         id: expect.any(Number),
                                         nome: expect.any(String)
                                     },
@@ -292,7 +292,7 @@ describe(
                                         id_usuario: 1,
                                         largura: expect.any(Number),
                                         lesao: {
-                                            detalhes: expect.any(Number),
+                                            detalhes: expect.any(String),
                                             id: expect.any(Number),
                                             nome: expect.any(String)
                                         },
@@ -335,7 +335,7 @@ describe(
                                         id_usuario: 1,
                                         largura: expect.any(Number),
                                         lesao: {
-                                            detalhes: expect.any(Number),
+                                            detalhes: expect.any(String),
                                             id: expect.any(Number),
                                             nome: expect.any(String)
                                         },
@@ -377,7 +377,7 @@ describe(
                                     id_usuario: 1,
                                     largura: expect.any(Number),
                                     lesao: {
-                                        detalhes: expect.any(Number),
+                                        detalhes: expect.any(String),
                                         id: expect.any(Number),
                                         nome: expect.any(String)
                                     },

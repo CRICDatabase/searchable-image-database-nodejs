@@ -12,8 +12,8 @@ describe(
             () => {
                 return ImageDOA.cadastrarLesao(
                     {
-                        nome: "Injury",
-                        detalhes: 1
+                        nome: "Short",
+                        detalhes: "Long"
                     }
                 )
                     .then(
@@ -22,8 +22,8 @@ describe(
                                 .toMatchObject(
                                     {
                                         id: expect.any(Number),
-                                        nome: "Injury",
-                                        detalhes: 1
+                                        nome: "Short",
+                                        detalhes: "Long"
                                     }
                                 );
                         }
@@ -44,7 +44,7 @@ describe(
                                     {
                                         id: 1,
                                         nome: expect.any(String),
-                                        detalhes: expect.any(Number)
+                                        detalhes: expect.any(String)
                                     }
                                 );
                         }
@@ -83,7 +83,7 @@ describe(
                                         [{
                                             id: expect.any(Number),
                                             nome: expect.any(String),
-                                            detalhes: expect.any(Number)
+                                            detalhes: expect.any(String)
                                         }]
                                     )
                                 );
