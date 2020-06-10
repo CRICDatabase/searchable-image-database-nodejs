@@ -35,15 +35,6 @@ module.exports = {
 
         await Promise.all([segmentosCitoplasmaCadastradosTask, segmentosNucleoCadastradosTask]);
 
-        const analista = await UsuarioRepositorio.obterAnalistaPorId(id_usuario);
-        let novoTotalSegmentacoes = parseInt(analista.dataValues.total_segmentacoes) + 1;
-
-        const sqlQuery = `
-            UPDATE analista
-            SET total_segmentacoes = ${novoTotalSegmentacoes}
-            WHERE id = ${id_usuario}`;
-
-        await UsuarioRepositorio.processarQuerySql(sqlQuery);
         return await ListarSegmentacaoCelulaExecutor.Executar(req);
     }
 };
@@ -72,20 +63,13 @@ async function validarRequisicao(req) {
     validarSegmentacao(req.body.segmentos_nucleo);
 
     const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    const analistaTask = UsuarioRepositorio.obterAnalistaPorId(req.params.id_usuario);
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const descricaoTask = ImagemRepositorio.obterDescricaoPorId(req.body.id_descricao);
-    const [usuario, analista, imagem, descricao] = await Promise.all([usuarioTask, analistaTask, imagemTask, descricaoTask]);
+    const [usuario, imagem, descricao] = await Promise.all([usuarioTask, imagemTask, descricaoTask]);
 
     if (!usuario) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-        throw ObjetoExcecao;
-    }
-
-    if (!analista) {
-        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;
     }
 

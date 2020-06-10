@@ -15,12 +15,6 @@ module.exports = {
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);
 
-        const analistaCompleto = await UsuarioRepositorio.obterAnalistaPorId(id_usuario);
-        const analista = {
-            id: analistaCompleto.dataValues.id,
-            total_classificacoes: analistaCompleto.dataValues.total_classificacoes,
-            total_segmentacoes: analistaCompleto.dataValues.total_segmentacoes
-        };
 
         const todasSegmentacoesCitoplasmaTask = ImagemRepositorio.listarSegmentosCitoplasmaCelula(id_imagem, id_usuario);
         const todasSegmentacoesNucleoTask = ImagemRepositorio.listarTodosSegmentosNucleoCelula(id_imagem, id_usuario);
@@ -31,7 +25,6 @@ module.exports = {
 
             let resultado = {
                 id_imagem: req.params.id_imagem,
-                analista: analista,
                 celulas: []
             };
 
@@ -40,7 +33,6 @@ module.exports = {
 
         let resultado = {
             id_imagem: req.params.id_imagem,
-            analista: analista,
             celulas: await prepararRetornoSegmentacao(req, todasSegmentacoesCitoplasma, todasSegmentacoesNucleo)
         };
 
@@ -58,9 +50,8 @@ async function validarRequisicao(req) {
     }
 
     const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    const analistaTask = UsuarioRepositorio.obterAnalistaPorId(req.params.id_usuario);
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
-    const [usuario, analista, imagem] = await Promise.all([usuarioTask, analistaTask, imagemTask]);
+    const [usuario, imagem] = await Promise.all([usuarioTask, imagemTask]);
 
     if (!usuario) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
@@ -71,12 +62,6 @@ async function validarRequisicao(req) {
     if (!imagem) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
-        throw ObjetoExcecao;
-    }
-
-    if (!analista) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.ANALISTA_NAO_ENCONTRADO;
         throw ObjetoExcecao;
     }
 }

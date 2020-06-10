@@ -33,9 +33,8 @@ async function validarRequisicao(req) {
     }
 
     const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    const analistaTask = UsuarioRepositorio.obterAnalistaPorId(req.params.id_usuario);
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
-    const [usuario, analista, imagem] = await Promise.all([usuarioTask, analistaTask, imagemTask]);
+    const [usuario, imagem] = await Promise.all([usuarioTask, imagemTask]);
 
     if (!usuario) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
@@ -46,12 +45,6 @@ async function validarRequisicao(req) {
     if (!imagem) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
-        throw ObjetoExcecao;
-    }
-
-    if (!analista) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.ANALISTA_NAO_ENCONTRADO;
         throw ObjetoExcecao;
     }
 }

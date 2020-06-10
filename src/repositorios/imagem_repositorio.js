@@ -160,11 +160,11 @@ module.exports = {
             celula.id_descricao,
             segmentacao_citoplasma.coord_x,
             segmentacao_citoplasma.coord_y
-        FROM analista
-        JOIN segmentacao_citoplasma ON analista.id = segmentacao_citoplasma.id_usuario
+        FROM usuario_base
+        JOIN segmentacao_citoplasma ON usuario_base.id = segmentacao_citoplasma.id_usuario
         JOIN celula ON celula.id = segmentacao_citoplasma.id_celula
         JOIN imagem ON imagem.id = celula.id_imagem
-        WHERE analista.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
+        WHERE usuario_base.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
 
 
         await db.query(
@@ -190,11 +190,11 @@ module.exports = {
             celula.id_descricao,
             segmentacao_nucleo.coord_x,
             segmentacao_nucleo.coord_y
-        FROM analista
-        JOIN segmentacao_nucleo ON analista.id = segmentacao_nucleo.id_usuario
+        FROM usuario_base
+        JOIN segmentacao_nucleo ON usuario_base.id = segmentacao_nucleo.id_usuario
         JOIN celula ON celula.id = segmentacao_nucleo.id_celula
         JOIN imagem ON imagem.id = celula.id_imagem
-        WHERE analista.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
+        WHERE usuario_base.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
 
         await db.query(
             LISTAR_SEGMENTACAO_NUCLEO_SQL_QUERY,
@@ -220,11 +220,11 @@ module.exports = {
             classificacao_celula.coord_centro_nucleo_x,
             classificacao_celula.coord_centro_nucleo_y,
             classificacao_celula.id AS id_classificacao
-        FROM analista
-        JOIN classificacao_celula ON analista.id = classificacao_celula.id_usuario
+        FROM usuario_base
+        JOIN classificacao_celula ON usuario_base.id = classificacao_celula.id_usuario
         JOIN celula ON celula.id = classificacao_celula.id_celula
         JOIN imagem ON imagem.id = celula.id_imagem
-        WHERE analista.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
+        WHERE usuario_base.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
 
         await db.query(
             LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY,

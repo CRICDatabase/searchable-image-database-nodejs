@@ -48,20 +48,13 @@ async function validarRequisicao(req) {
     }
 
     const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    const analistaTask = UsuarioRepositorio.obterAnalistaPorId(req.params.id_usuario);
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const celulaTask = ImagemRepositorio.obterCelulaPorId(req.body.id_celula);
-    const [usuario, analista, imagem, celula] = await Promise.all([usuarioTask, analistaTask, imagemTask, celulaTask]);
+    const [usuario, imagem, celula] = await Promise.all([usuarioTask, imagemTask, celulaTask]);
 
     if (!usuario) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-        throw ObjetoExcecao;
-    }
-
-    if (!analista) {
-        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;
     }
 

@@ -2,14 +2,10 @@
 
 const HttpStatus = require("http-status-codes");
 const CadastrarUsuarioExecutor = require("../../executores/usuario_executor/CadastrarUsuarioBaseExcutor");
-const CadastrarAdminExecutor = require("../../executores/usuario_executor/CadastrarAdministradorExecutor");
-const CadastrarAnalistaExecutor = require("../../executores/usuario_executor/CadastrarAnalistaExecutor");
 const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
 const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
 const LoginService = require("../../executores/usuario_executor/LoginService");
 const ResetPasswordService = require("../../executores/usuario_executor/ResetPasswordService");
-const ObterAdministradorExecutor = require("../../executores/usuario_executor/ObterAdministradorExecutor");
-const ObterAnalistaExecutor = require("../../executores/usuario_executor/ObterAnalistaExecutor");
 const FazerLogOffExecutor = require("../../executores/usuario_executor/FazerLogOffExecutor");
 
 module.exports = {
@@ -32,64 +28,6 @@ module.exports = {
 
             if(erro.status == HttpStatus.UNAUTHORIZED) {
                 return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
-    async cadastrarUsuarioAdministrador(req, res) {
-
-        let admCadastrado;
-        try{
-            admCadastrado = await CadastrarAdminExecutor.Executar(req);
-            return res.status(HttpStatus.CREATED).json(admCadastrado);
-        }
-        catch(erro){
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.CONFLICT) {
-                return res.status(HttpStatus.CONFLICT).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
-    async cadastrarAnalista(req, res) {
-
-        let analistaCadastrado;
-        try{
-            analistaCadastrado = await CadastrarAnalistaExecutor.Executar(req);
-            return res.status(HttpStatus.CREATED).json(analistaCadastrado);
-        }
-        catch(erro) {
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.CONFLICT) {
-                return res.status(HttpStatus.CONFLICT).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            if (erro.status == HttpStatus.FORBIDDEN) {
-                return res.status(HttpStatus.FORBIDDEN).json(erro);
             }
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
@@ -140,56 +78,6 @@ module.exports = {
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }        
-    },
-
-    async obterAdministrador(req, res) {
-
-        let administrador;
-        try{
-            administrador = await ObterAdministradorExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(administrador);
-        }
-        catch(erro){
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
-    async obterAnalista(req, res) {
-
-        let analista;
-        try{
-            analista = await ObterAnalistaExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(analista); 
-        }
-        catch(erro){
-
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
-            }
-
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
     },
 
     async login(req, res) {

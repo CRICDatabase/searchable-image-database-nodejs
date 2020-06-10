@@ -11,6 +11,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {string} data.email - Email address.
  * @param {string} data.senha - Password for the user. We store a hash of the password.
  * @param {number} data.ativo - 1 if account is active and 0 if account was disabled.
+ * @param {number} data.admin - 1 if account has admin rights and 0 otherwise.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class UsuarioBaseModel extends Model {
@@ -23,7 +24,9 @@ class UsuarioBaseModel extends Model {
             ultimo_nome: DataTypes.STRING,
             email: DataTypes.STRING,
             senha: DataTypes.STRING,
-            ativo: DataTypes.INTEGER
+            ativo: DataTypes.BOOLEAN,
+            admin: DataTypes.BOOLEAN
+
         },
         {
             defaultScope: {
