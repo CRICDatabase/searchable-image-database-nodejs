@@ -32,26 +32,15 @@ function validarRequisicao(req) {
 
 async function prepararRetorno(imagem) {
 
-    let resultado;
-    const lesao = await ImagemRepositorio.obterLesaoPorId(imagem.dataValues.id_lesao);
-
-    resultado = {
-        id: imagem.dataValues.id,
-        nome: imagem.dataValues.nome,
-        doi: imagem.dataValues.doi,
-        codigo_lamina: imagem.dataValues.codigo_lamina,
-        excluida: imagem.dataValues.excluida,
-        classificacao_aprovada: imagem.dataValues.classificacao_aprovada,
-        dt_aquisicao: imagem.dataValues.dt_aquisicao,
-        fonte_aquisicao: imagem.dataValues.fonte_aquisicao,
-        caminho_imagem: imagem.dataValues.caminho_imagem,
-        altura: imagem.dataValues.altura,
-        largura: imagem.dataValues.largura,
-        createdAt: imagem.dataValues.createdAt,
-        updatedAt: imagem.dataValues.updatedAt,
-        id_usuario: imagem.dataValues.id_usuario,
-        lesao: lesao
+    let resultado = {
+        ...imagem.dataValues
     };
+
+    resultado.lesao = await ImagemRepositorio.obterLesaoPorId(
+        resultado.id_lesao
+    );
+
+    delete resultado.id_lesao;
 
     return resultado;
 }
