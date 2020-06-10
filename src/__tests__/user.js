@@ -48,7 +48,7 @@ describe(
                 return request(app)
                     .get("/api/v1/usuarios")
                     .set(
-                        'token_autenticacao',
+                        "token_autenticacao",
                         admin_token
                     )
                     .then(
@@ -64,7 +64,7 @@ describe(
                                         "id": expect.any(Number),
                                         "primeiro_nome": expect.any(String),
                                         "senha": expect.any(String),
-                                        "ultimo_nome": expect.any(String),
+                                        "ultimo_nome": expect.any(String)
                                     }]
                                 )
                             );

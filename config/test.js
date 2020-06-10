@@ -12,7 +12,10 @@ module.exports = {
             charset: "utf8",
             collate: "utf8_general_ci",
             underscored: true,
-            timestamps: true
+            timestamps: true,
+        },
+        query: {
+            raw: true
         },
         pool: {
             max: 5,
