@@ -13,8 +13,6 @@ Users might also be specialists:
 
 .. autoclass:: AdministradorModel
 
-.. autoclass:: CitopatologistaModel
-
 .. autoclass:: AnalistaModel
 
 Images
