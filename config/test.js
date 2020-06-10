@@ -14,9 +14,6 @@ module.exports = {
             underscored: true,
             timestamps: true,
         },
-        query: {
-            raw: true
-        },
         pool: {
             max: 5,
             idle: 30000,
