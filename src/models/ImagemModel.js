@@ -16,6 +16,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {number} data.altura - height of the image in number of pixels.
  * @param {number} data.largura - width of the image in number of pixels.
  * @param {number} data.id_usuario - Integer referencing UsuarioBaseModel.
+ * @param {number} data.id_collection - Integer referencing CollectionModel.
  * @param {number} data.id_lesao - Integer referencing LesaoModel.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
@@ -58,6 +59,10 @@ class ImagemModel extends Model {
 
         this.belongsTo(models.LesaoModel, {
             foreignKey: "id_lesao", as: "fk_imagem_lesao"
+        });
+
+        this.belongsTo(models.CollectionModel, {
+            foreignKey: "id_collection", as: "fk_imagem_collection"
         });
     }
 }
