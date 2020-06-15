@@ -2,7 +2,7 @@
 
 jest.useFakeTimers();
 
-let UserDOA = require("./usuario_repositorio");
+let UserDAO = require("./usuario_repositorio");
 
 const Criptografia = require("../utils/criptografia");
 
@@ -12,7 +12,7 @@ describe(
         test(
             "obterUsuarioBasePorEmail for admin",
             () => {
-                return UserDOA.obterUsuarioBasePorEmail(
+                return UserDAO.obterUsuarioBasePorEmail(
                     "admin@test.database.cric.com.br"
                 )
                     .then(
@@ -35,7 +35,7 @@ describe(
         test(
             "obterUsuarioBasePorEmail for cybercriminal",
             () => {
-                return UserDOA.obterUsuarioBasePorEmail(
+                return UserDAO.obterUsuarioBasePorEmail(
                     "cybercriminal@test.database.cric.com.br"
                 )
                     .then(
@@ -50,7 +50,7 @@ describe(
         test(
             "obterUsuarioBasePorId for 1",
             () => {
-                return UserDOA.obterUsuarioBasePorId(
+                return UserDAO.obterUsuarioBasePorId(
                     1
                 )
                     .then(
@@ -73,7 +73,7 @@ describe(
         test(
             "obterUsuarioBasePorId for 1000",
             () => {
-                return UserDOA.obterUsuarioBasePorId(
+                return UserDAO.obterUsuarioBasePorId(
                     1000
                 )
                     .then(
@@ -88,7 +88,7 @@ describe(
         test(
             "obterUsuarioCompletoPorLogin for admin",
             () => {
-                return UserDOA.obterUsuarioCompletoPorLogin(
+                return UserDAO.obterUsuarioCompletoPorLogin(
                     "admin@test.database.cric.com.br",
                     Criptografia.criarCriptografiaMd5Utf8("123.456")
                 )
@@ -114,7 +114,7 @@ describe(
         test(
             "obterUsuarioCompletoPorLogin for cybercriminal",
             () => {
-                return UserDOA.obterUsuarioBasePorEmail(
+                return UserDAO.obterUsuarioBasePorEmail(
                     "cybercriminal@test.database.cric.com.br"
                 )
                     .then(
@@ -129,7 +129,7 @@ describe(
         test(
             "cadastrarUsuarioBase",
             () => {
-                return UserDOA.cadastrarUsuarioBase(
+                return UserDAO.cadastrarUsuarioBase(
                     {
                         primeiro_nome: "jest",
                         ultimo_nome: "",
@@ -163,7 +163,7 @@ describe(
         test(
             "obterAnalistaPorId for 1",
             () => {
-                return UserDOA.obterAnalistaPorId(
+                return UserDAO.obterAnalistaPorId(
                     1
                 )
                     .then(

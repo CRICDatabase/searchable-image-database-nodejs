@@ -47,7 +47,7 @@ module.exports = {
             caminho_imagem: "imagens/seeders/",
             altura: 400,
             largura: 600,
-            id_usuario: 1,
+            id_usuario: 2,
             id_lesao: 1,
             created_at: "2020-01-01",
             updated_at: "2020-01-01"

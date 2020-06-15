@@ -2,7 +2,7 @@
 
 jest.useFakeTimers();
 
-let ImageDOA = require("./imagem_repositorio");
+let ImageDAO = require("./imagem_repositorio");
 
 describe(
     "Test LesaoModel",
@@ -10,7 +10,7 @@ describe(
         test(
             "cadastrarLesao",
             () => {
-                return ImageDOA.cadastrarLesao(
+                return ImageDAO.cadastrarLesao(
                     {
                         nome: "Short",
                         detalhes: "Long"
@@ -34,7 +34,7 @@ describe(
         test(
             "valid id for obterLesaoPorId",
             () => {
-                return ImageDOA.obterLesaoPorId(
+                return ImageDAO.obterLesaoPorId(
                     1
                 )
                     .then(
@@ -55,7 +55,7 @@ describe(
         test(
             "invalid id for obterLesaoPorId",
             () => {
-                return ImageDOA.obterLesaoPorId(
+                return ImageDAO.obterLesaoPorId(
                     1000
                 )
                     .then(
@@ -70,7 +70,7 @@ describe(
         test(
             "listarLesoes",
             () => {
-                return ImageDOA.listarLesoes()
+                return ImageDAO.listarLesoes()
                     .then(
                         data => {
                             expect(data.map(
