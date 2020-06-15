@@ -2,7 +2,7 @@
 
 jest.useFakeTimers();
 
-let ImageDOA = require("./imagem_repositorio");
+let ImageDAO = require("./imagem_repositorio");
 
 describe(
     "Test DescricaoModel",
@@ -10,7 +10,7 @@ describe(
         test(
             "cadastrarDescricao",
             () => {
-                return ImageDOA.cadastrarDescricao(
+                return ImageDAO.cadastrarDescricao(
                     {
                         codigo: 1000,
                         nome: "Description"
@@ -34,7 +34,7 @@ describe(
         test(
             "valid id for obterDescricaoPorId",
             () => {
-                return ImageDOA.obterDescricaoPorId(
+                return ImageDAO.obterDescricaoPorId(
                     1
                 )
                     .then(
@@ -55,7 +55,7 @@ describe(
         test(
             "invalid id for obterDescricaoPorId",
             () => {
-                return ImageDOA.obterDescricaoPorId(
+                return ImageDAO.obterDescricaoPorId(
                     1000
                 )
                     .then(
@@ -70,7 +70,7 @@ describe(
         test(
             "listarDescricoes",
             () => {
-                return ImageDOA.listarDescricoes()
+                return ImageDAO.listarDescricoes()
                     .then(
                         data => {
                             expect(data.map(
