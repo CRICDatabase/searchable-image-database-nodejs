@@ -86,32 +86,6 @@ describe(
         );
 
         test(
-            "obterUsuarioCompletoPorLogin for admin",
-            () => {
-                return UserDAO.obterUsuarioCompletoPorLogin(
-                    "admin@test.database.cric.com.br",
-                    Criptografia.criarCriptografiaMd5Utf8("123.456")
-                )
-                    .then(
-                        data => {
-                            /* obterUsuarioCompletoPorLogin uses raw SQL query,
-                               so data.dataValues is undefined */
-                            expect(data)
-                                .toMatchObject(
-                                    {
-                                        id: 1,
-                                        primeiro_nome: "admin",
-                                        ultimo_nome: "",
-                                        email: "admin@test.database.cric.com.br",
-                                        ativo: 1
-                                    }
-                                );
-                        }
-                    );
-            }
-        );
-
-        test(
             "obterUsuarioCompletoPorLogin for cybercriminal",
             () => {
                 return UserDAO.obterUsuarioBasePorEmail(
@@ -148,32 +122,6 @@ describe(
                                         ultimo_nome: "",
                                         email: "jest@test.database.cric.com.br",
                                         ativo: 1
-                                    }
-                                );
-                        }
-                    );
-            }
-        );
-    }
-);
-
-describe(
-    "Test AnalistaModel",
-    () => {
-        test(
-            "obterAnalistaPorId for 1",
-            () => {
-                return UserDAO.obterAnalistaPorId(
-                    1
-                )
-                    .then(
-                        data => {
-                            expect(data.dataValues)
-                                .toMatchObject(
-                                    {
-                                        id: 1,
-                                        total_segmentacoes: 28,
-                                        total_classificacoes: 2
                                     }
                                 );
                         }

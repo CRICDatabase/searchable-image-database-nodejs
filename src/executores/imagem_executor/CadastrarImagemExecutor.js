@@ -57,17 +57,6 @@ async function validarRequisicao(req) {
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
-
-    const administradorTask = UsuarioRepositorio.obterAdministradorPorId(req.body.id_usuario);
-    const [administrador] = await Promise.all([administradorTask]);
-
-    let naoAutorizado = administrador;
-
-    if (!naoAutorizado) {
-        ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-        ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
-        throw ObjetoExcecao;
-    }
 }
 
 async function prepararCadastroNoBanco(req) {

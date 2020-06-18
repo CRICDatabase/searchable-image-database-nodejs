@@ -12,15 +12,12 @@ const SessaoRepositorio = require("../../repositorios/sessao_repositorio");
 module.exports = {
 
     async Executar(req) {
-
         const senhaCriptografada = Criptografia.criarCriptografiaMd5Utf8(req.body.senha);
-        let usuario = await UsuarioRepositorio.obterUsuarioCompletoPorLogin(
-            req.body.email,
-            senhaCriptografada
+        let usuario = await UsuarioRepositorio.obterUsuarioBasePorEmail(
+            req.body.email
         );
 
-        if (usuario) {
-
+        if (usuario && usuario.dataValues.senha === senhaCriptografada) {
             let token_autenticacao = GeradorIdUnico.gerarUuidv4();
             const sessaoCriada = await SessaoRepositorio.criarRegistroDeSessao(
                 usuario.email,

@@ -151,7 +151,7 @@ module.exports = {
         }
     },
 
-    async listarClassificacaoDeCelulaParaUmAnalista(req, res) {
+    async listarClassificacaoDeCelulaParaUmUsuario(req, res) {
 
         let todasClassificacoes;
         try {
@@ -175,7 +175,7 @@ module.exports = {
         }
     },
 
-    async listarSegmentacaoDeCelulaParaUmAnalista(req, res) {
+    async listarSegmentacaoDeCelulaParaUmUsuario(req, res) {
 
         let todasSegmentacoes;
         try {

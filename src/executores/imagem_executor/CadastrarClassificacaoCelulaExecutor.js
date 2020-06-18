@@ -41,16 +41,6 @@ module.exports = {
         await ImagemRepositorio.cadastrarClassificacaoCelula(id_usuario, celulaCadastrada.dataValues.id, resultado.coord_x, resultado.coord_y);
 
         if (classificacaoCadastrada) {
-
-            const analista = await UsuarioRepositorio.obterAnalistaPorId(id_usuario);
-            let novoTotalSegmentacoes = parseInt(analista.dataValues.total_classificacoes) + 1;
-
-            const sqlQuery = `
-                UPDATE analista
-                SET total_classificacoes = ${novoTotalSegmentacoes}
-                WHERE id = ${id_usuario}`;
-
-            await UsuarioRepositorio.processarQuerySql(sqlQuery);
             const listaDeClassificacoes = await ListarClassificacaoCelulaExecutor.Executar(req);
 
             await atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes);
@@ -72,20 +62,13 @@ async function validarRequisicao(req) {
     }
 
     const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    const analistaTask = UsuarioRepositorio.obterAnalistaPorId(req.params.id_usuario);
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const lesaoTask = ImagemRepositorio.obterLesaoPorId(req.body.id_lesao);
-    const [usuario, analista, imagem, lesao] = await Promise.all([usuarioTask, analistaTask, imagemTask, lesaoTask]);
+    const [usuario, imagem, lesao] = await Promise.all([usuarioTask, imagemTask, lesaoTask]);
 
     if (!usuario) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-        throw ObjetoExcecao;
-    }
-
-    if (!analista) {
-        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
         throw ObjetoExcecao;
     }
 

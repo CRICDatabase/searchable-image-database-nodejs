@@ -11,6 +11,7 @@ module.exports = {
             email: "admin@test.database.cric.com.br",
             senha: Criptografia.criarCriptografiaMd5Utf8("123.456"),
             ativo: 1,
+            admin: 1,
             created_at: "2020-01-01",
             updated_at: "2020-01-01"
         },
@@ -21,6 +22,7 @@ module.exports = {
             email: "charles@test.database.cric.com.br",
             senha: Criptografia.criarCriptografiaMd5Utf8("123.456"),
             ativo: 1,
+            admin: 0,
             created_at: "2020-01-01",
             updated_at: "2020-01-01"
         }

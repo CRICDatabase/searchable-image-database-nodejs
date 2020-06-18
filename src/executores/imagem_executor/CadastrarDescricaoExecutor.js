@@ -50,13 +50,4 @@ async function validarRequisicao(req) {
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
-
-    const administradorTask = UsuarioRepositorio.obterAdministradorPorId(req.params.id_usuario);
-    const [administrador] = await Promise.all([administradorTask]);
-
-    if(!(administrador)) {
-        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
-        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
-        throw ObjetoExcecao;
-    }
 }

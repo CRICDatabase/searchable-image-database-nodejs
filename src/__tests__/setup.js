@@ -2,8 +2,6 @@
 
 module.exports = async () => {
     const UsuarioBaseModel = require("../models/UsuarioBaseModel");
-    const AdministradorModel = require("../models/AdministradorModel");
-    const AnalistaModel = require("../models/AnalistaModel");
 
     const LesaoModel = require("../models/LesaoModel");
     const DescricaoModel = require("../models/DescricaoModel");
@@ -11,8 +9,6 @@ module.exports = async () => {
     const ImagemModel = require("../models/ImagemModel");
 
     const UsuarioBaseFixtures = require("../fixtures/user");
-    const AdministradorFixtures = require("../fixtures/admin");
-    const AnalistaFixtures = require("../fixtures/analyst");
 
     const LesaoFixtures = require("../fixtures/injury");
     const DescricaoFixtures = require("../fixtures/description");
@@ -28,14 +24,6 @@ module.exports = async () => {
             async () => {
                 await UsuarioBaseModel.bulkCreate(
                     UsuarioBaseFixtures.fixtures
-                );
-
-                await AdministradorModel.bulkCreate(
-                    AdministradorFixtures.fixtures
-                );
-
-                await AnalistaModel.bulkCreate(
-                    AnalistaFixtures.fixtures
                 );
 
                 await LesaoModel.bulkCreate(
