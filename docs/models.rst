@@ -9,12 +9,6 @@ Users
 
 .. autoclass:: UsuarioBaseModel
 
-Users might also be specialists:
-
-.. autoclass:: AdministradorModel
-
-.. autoclass:: AnalistaModel
-
 Images
 ------
 
