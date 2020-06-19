@@ -238,23 +238,25 @@ describe(
                                     return item.dataValues;
                                 }
                             ))
-                                .toMatchObject(
+                                .toEqual(
                                     expect.arrayContaining(
-                                        [{
-                                            altura: expect.any(Number),
-                                            caminho_imagem: expect.any(String),
-                                            classificacao_aprovada: expect.any(Number),
-                                            codigo_lamina: expect.any(String),
-                                            // doi: expect.any(String),
-                                            dt_aquisicao: expect.any(Date),
-                                            excluida: expect.any(Number),
-                                            fonte_aquisicao: expect.any(Number),
-                                            id: expect.any(Number),
-                                            id_lesao: expect.any(Number),
-                                            id_usuario: expect.any(Number),
-                                            largura: expect.any(Number),
-                                            nome: expect.any(String)
-                                        }]
+                                        [
+                                            expect.objectContaining({
+                                                altura: expect.any(Number),
+                                                caminho_imagem: expect.any(String),
+                                                classificacao_aprovada: expect.any(Number),
+                                                codigo_lamina: expect.any(String),
+                                                // doi: expect.any(String),
+                                                dt_aquisicao: expect.any(Date),
+                                                excluida: expect.any(Number),
+                                                fonte_aquisicao: expect.any(Number),
+                                                id: expect.any(Number),
+                                                id_lesao: expect.any(Number),
+                                                id_usuario: expect.any(Number),
+                                                largura: expect.any(Number),
+                                                nome: expect.any(String)
+                                            })
+                                        ]
                                     )
                                 );
                         }

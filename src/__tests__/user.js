@@ -56,16 +56,18 @@ describe(
                             expect(response.statusCode).toBe(200);
                             expect(
                                 response.body
-                            ).toMatchObject(
+                            ).toEqual(
                                 expect.arrayContaining(
-                                    [{
-                                        ativo: true,
-                                        email: expect.any(String),
-                                        id: expect.any(Number),
-                                        primeiro_nome: expect.any(String),
-                                        senha: expect.any(String),
-                                        ultimo_nome: expect.any(String)
-                                    }]
+                                    [
+                                        expect.objectContaining({
+                                            ativo: true,
+                                            email: expect.any(String),
+                                            id: expect.any(Number),
+                                            primeiro_nome: expect.any(String),
+                                            senha: expect.any(String),
+                                            ultimo_nome: expect.any(String)
+                                        })
+                                    ]
                                 )
                             );
                         }
