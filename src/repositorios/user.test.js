@@ -24,7 +24,7 @@ describe(
                                         primeiro_nome: "admin",
                                         ultimo_nome: "",
                                         email: "admin@test.database.cric.com.br",
-                                        ativo: 1
+                                        ativo: true
                                     }
                                 );
                         }
@@ -62,7 +62,7 @@ describe(
                                         primeiro_nome: "admin",
                                         ultimo_nome: "",
                                         email: "admin@test.database.cric.com.br",
-                                        ativo: 1
+                                        ativo: true
                                     }
                                 );
                         }
@@ -121,7 +121,7 @@ describe(
                                         primeiro_nome: "jest",
                                         ultimo_nome: "",
                                         email: "jest@test.database.cric.com.br",
-                                        ativo: 1
+                                        ativo: true
                                     }
                                 );
                         }

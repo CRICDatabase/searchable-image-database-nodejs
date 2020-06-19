@@ -59,7 +59,7 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
-                                        ativo: 1,
+                                        ativo: true,
                                         email: expect.any(String),
                                         id: expect.any(Number),
                                         primeiro_nome: expect.any(String),
