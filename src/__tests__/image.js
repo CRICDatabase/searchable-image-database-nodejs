@@ -290,7 +290,7 @@ describe(
                             id_usuario: 2,
                             id_lesao: 1,
                             codigo_lamina: "JEST Charles",
-                            dt_aquisicao: "2020-01-01",
+                            dt_aquisicao: "2020-01-01"
                         }
                     )
                     .then(

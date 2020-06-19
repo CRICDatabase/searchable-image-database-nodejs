@@ -7,7 +7,6 @@ const rotasUsuario = express.Router();
 
 //Rotas de usuario POST
 rotasUsuario.post("/api/v1/usuarios", UsuarioController.cadastrarUsuarioBase);
-rotasUsuario.post("/api/v1/usuarios/:id_usuario", UsuarioController.obterUsuario);
 rotasUsuario.post("/api/v1/login", UsuarioController.login);
 rotasUsuario.post("/api/v1/reset-password", UsuarioController.reset_password);
 
