@@ -279,16 +279,20 @@ describe(
             "POST /api/v1/imagens/",
             () => {
                 return request(app)
-                    .post("/api/v1/imagens/")
+                    .post("/api/v1/imagens")
                     .set(
                         "token_autenticacao",
                         charles_token
                     )
-                    .field("id_usuario", 2)
-                    .field("id_lesao", 1)
-                    .field("codigo_lamina", "JEST Charles")
-                    .field("dt_aquisicao", "2020-01-01")
                     .attach("files", "src/__tests__/example0006.jpg")
+                    .send(
+                        {
+                            id_usuario: 2,
+                            id_lesao: 1,
+                            codigo_lamina: "JEST Charles",
+                            dt_aquisicao: "2020-01-01",
+                        }
+                    )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(200);
