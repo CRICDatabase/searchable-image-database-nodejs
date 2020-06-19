@@ -16,7 +16,7 @@ describe(
                                 response.body
                             ).toMatchObject(
                                 {
-                                    descricao: expect.any(String),
+                                    descricao: "Center for Recognition and Inspection of Cells (CRIC) Database",
                                     versao: expect.any(String)
                                 }
                             );
