@@ -1,0 +1,37 @@
+name: Docker Image CI
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the (development) Docker image
+      env:
+          GITHUB_REF: ${{ github.ref }}
+      run: docker build --target development -t cricdatabase/nodejs:${GITHUB_REF/refs\/tags\/v/}-development .
+    - name: Build the (production) Docker image
+      env:
+          GITHUB_REF: ${{ github.ref }}
+      run: docker build --target production -t cricdatabase/nodejs:${GITHUB_REF/refs\/tags\/v/}-production .
+    - name: Login into DockerHub
+      env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+      run: docker login -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD}
+    - name: Push the (development) Docker image
+      env:
+          GITHUB_REF: ${{ github.ref }}
+      run: docker push cricdatabase/nodejs:${GITHUB_REF/refs\/tags\/v/}-development
+    - name: Push the (production) Docker image
+      env:
+          GITHUB_REF: ${{ github.ref }}
+      run: docker push cricdatabase/nodejs:${GITHUB_REF/refs\/tags\/v/}-production
+      
