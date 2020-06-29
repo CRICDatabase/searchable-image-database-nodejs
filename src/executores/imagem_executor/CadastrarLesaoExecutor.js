@@ -39,6 +39,14 @@ async function validarRequisicao(req) {
         if(!lesao.nome) {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            ObjetoExcecao.detail = `Missing nome in ${lesao}`;
+            throw ObjetoExcecao;
+        }
+
+        if(!lesao.grade) {
+            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            ObjetoExcecao.detail = `Missing grade in ${lesao}`;
             throw ObjetoExcecao;
         }
 

@@ -88,12 +88,14 @@ async function validarRequisicao(req) {
 
 async function atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes){
 
-    let idLesaoMaisGrave = 1;
+    let higher_grade = 0;
+    let injury_id_with_higher_grade = 1;
     listaDeClassificacoes.celulas.forEach(celula => {
-        if(celula.lesao.id > idLesaoMaisGrave) {
-            idLesaoMaisGrave = celula.lesao.id;
+        if(celula.lesao.grade > higher_grade) {
+            higher_grade = celula.lesao.grade;
+            injury_id_with_higher_grade = celula.lesao.id;
         }
     });
     
-    return ImagemRepositorio.atualizarLesaoImagem(id_imagem, idLesaoMaisGrave);
+    return ImagemRepositorio.atualizarLesaoImagem(id_imagem, injury_id_with_higher_grade);
 }
