@@ -15,13 +15,11 @@ module.exports = {
         });
     },
 
-    async validarTokenAutenticacao(token) {
+    async validarTokenAutenticacao(token_autenticacao) {
 
-        return SessaoUsuarioModel.findAll({
+        return SessaoUsuarioModel.findOne({
             where: {
-                token_autenticacao: {
-                    [Sequelize.Op.eq]: token
-                }
+                token_autenticacao: token_autenticacao
             }
         });
     },

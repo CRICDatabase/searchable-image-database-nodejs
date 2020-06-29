@@ -4,8 +4,6 @@ jest.useFakeTimers();
 
 let UserDAO = require("./usuario_repositorio");
 
-const Criptografia = require("../utils/criptografia");
-
 describe(
     "Test UsuarioBaseModel",
     () => {
