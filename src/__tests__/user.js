@@ -2,9 +2,10 @@ const request = require("supertest");
 const app = require("../app");
 
 let admin_token;
+let charles_token;
 
-beforeAll(() => {
-    return request(app)
+beforeAll(async () => {
+    await request(app)
         .post(
             "/api/v1/login"
         )
@@ -17,6 +18,22 @@ beforeAll(() => {
         .then(
             (response) => {
                 admin_token = response.body.token_autenticacao;
+            }
+        );
+
+    await request(app)
+        .post(
+            "/api/v1/login"
+        )
+        .send(
+            {
+                email: "charles@test.database.cric.com.br",
+                senha: "123.456"
+            }
+        )
+        .then(
+            (response) => {
+                charles_token = response.body.token_autenticacao;
             }
         );
 });
