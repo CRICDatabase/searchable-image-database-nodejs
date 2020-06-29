@@ -231,7 +231,7 @@ describe(
                                     [{
                                         detalhes: expect.any(String),
                                         nome: expect.any(String),
-                                        id: expect.any(Number),
+                                        id: expect.any(Number)
                                     }]
                                 )
                             );
@@ -256,7 +256,7 @@ describe(
                                     [{
                                         codigo: expect.any(Number),
                                         nome: expect.any(String),
-                                        id: expect.any(Number),
+                                        id: expect.any(Number)
                                     }]
                                 )
                             );
@@ -283,7 +283,7 @@ describe(
                                     Carcinoma: expect.any(Number),
                                     HSil: expect.any(Number),
                                     LSil: expect.any(Number),
-                                    Normal: expect.any(Number),
+                                    Normal: expect.any(Number)
                                 }
                             );
                         }
@@ -356,24 +356,24 @@ describe(
                                             descricao: {
                                                 codigo: expect.any(Number),
                                                 id: expect.any(Number),
-                                                nome: expect.any(String),
+                                                nome: expect.any(String)
                                             },
                                             id: expect.any(Number),
                                             segmentos_citoplasma: expect.arrayContaining(
                                                 [{
                                                     coord_x: expect.any(Number),
-                                                    coord_y: expect.any(Number),
+                                                    coord_y: expect.any(Number)
                                                 }]
                                             ),
                                             segmentos_nucleo: expect.arrayContaining(
                                                 [{
                                                     coord_x: expect.any(Number),
-                                                    coord_y: expect.any(Number),
+                                                    coord_y: expect.any(Number)
                                                 }]
                                             ),
-                                            tipo_analise_realizada: expect.any(String),
+                                            tipo_analise_realizada: expect.any(String)
                                         }]
-                                    ),
+                                    )
                                 }
                             );
                         }

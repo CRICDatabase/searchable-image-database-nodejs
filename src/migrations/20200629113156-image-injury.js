@@ -171,13 +171,13 @@ module.exports = {
 
     down: (queryInterface, Sequelize) => {
         return queryInterface.bulkUpdate(
-                    "imagem",
-                    {
-                        id_lesao: 1
-                    },
-                    {
-                        id_lesao: 2
-                    }
+            "imagem",
+            {
+                id_lesao: 1
+            },
+            {
+                id_lesao: 2
+            }
         ).then(
             () => {
                 queryInterface.bulkUpdate(
