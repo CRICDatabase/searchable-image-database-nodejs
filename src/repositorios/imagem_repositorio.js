@@ -27,7 +27,7 @@ module.exports = {
             fonte_aquisicao: imagem.fonte_aquisicao,
             caminho_imagem: imagem.caminho_imagem,
             id_usuario: imagem.id_usuario,
-            id_lesao: imagem.id_lesao,
+            id_lesao: 1,  // Every new image is consider "unkown"
             altura: imagem.altura,
             largura: imagem.largura
         });

@@ -36,12 +36,12 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-    if (!req.body.id_usuario || !req.body.id_lesao ||
-        !ValidarTipo.ehNumero(req.body.id_usuario) || !ValidarTipo.ehNumero(req.body.id_lesao) ||
+    if (!req.body.id_usuario ||
+        !ValidarTipo.ehNumero(req.body.id_usuario) ||
         !req.body.codigo_lamina ) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        ObjetoExcecao.detail = "Check id_usuario, id_lesao and codigo_lamina";
+        ObjetoExcecao.detail = "Check id_usuario and codigo_lamina";
         throw ObjetoExcecao;
     }
     if (!req.files) {
