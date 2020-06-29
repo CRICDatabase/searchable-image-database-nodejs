@@ -21,6 +21,13 @@ module.exports = {
     },
 
     async login_required(req) {
+        if (!req.headers.hasOwnProperty("token_autenticacao")) {
+            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            ObjetoExcecao.detail = "token_autenticacao is missing in header";
+            throw ObjetoExcecao;
+        }
+        
         let session = await SessaoRepositorio.validarTokenAutenticacao(
             req.headers.token_autenticacao
         );
@@ -49,6 +56,13 @@ module.exports = {
     },
 
     async admin_required(req) {
+        if (!req.headers.hasOwnProperty("token_autenticacao")) {
+            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            ObjetoExcecao.detail = "token_autenticacao is missing in header";
+            throw ObjetoExcecao;
+        }
+        
         let session = await SessaoRepositorio.validarTokenAutenticacao(
             req.headers.token_autenticacao
         );

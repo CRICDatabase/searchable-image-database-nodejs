@@ -4,8 +4,8 @@ const app = require("../app");
 let admin_token;
 let charles_token;
 
-beforeAll(() => {
-    request(app)
+beforeAll(async () => {
+    await request(app)
         .post(
             "/api/v1/login"
         )
@@ -21,7 +21,7 @@ beforeAll(() => {
             }
         );
 
-    request(app)
+    await request(app)
         .post(
             "/api/v1/login"
         )
