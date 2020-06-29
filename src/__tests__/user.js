@@ -36,6 +36,51 @@ describe(
                     );
             }
         );
+
+        test(
+            "GET /api/v1/usuarios/1",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "POST /api/v1/usuarios/",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/")
+                    .send(
+                        {
+                            primeiro_nome: "Created by annonymous",
+                            ultimo_nome: "",
+                            email: "create.by.annonymous@test.database.cric.com.br",
+                            senha: "123.456"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(201);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: expect.any(Number),
+                                    primeiro_nome: "Created by annonymous",
+                                    ultimo_nome: "",
+                                    email: "create.by.annonymous@test.database.cric.com.br",
+                                    senha: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
     }
 );
 
