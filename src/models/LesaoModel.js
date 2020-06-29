@@ -8,6 +8,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {Object} data - Data sent to server.
  * @param {string} data.nome - Name of the injury.
  * @param {string} data.detalhes - Details of the injury.
+ * @param {number} data.grade - Integer indicating how severe is the injury. Higher number means more severe.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class LesaoModel extends Model {
@@ -17,7 +18,8 @@ class LesaoModel extends Model {
 
         super.init({
             nome: DataTypes.STRING,
-            detalhes: DataTypes.STRING
+            detalhes: DataTypes.STRING,
+            grade: DataTypes.INTEGER
         },
         {
             defaultScope: {
