@@ -6,6 +6,7 @@ const HttpStatus = require("http-status-codes");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
@@ -40,6 +41,11 @@ async function validarRequisicao(req) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
+    }
+    else {
+        if (usuario.id > 1) {
+            await ValidadorDeSessao.login_required(req, usuario.id);
+        }
     }
 }
 

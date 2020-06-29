@@ -20,7 +20,7 @@ module.exports = {
         }
     },
 
-    async login_required(req) {
+    async login_required(req, requested_user_id) {
         if (!req.headers.hasOwnProperty("token_autenticacao")) {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
@@ -47,10 +47,16 @@ module.exports = {
             ObjetoExcecao.detail = "Token doesn't belong to any user";
             throw ObjetoExcecao;
         }
-        if (user.dataValues.ativo === 0) {        
+        if (user.dataValues.ativo === false) {        
             ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
             ObjetoExcecao.detail = "Token doesn't belong to active user";
+            throw ObjetoExcecao;
+        }
+        if (requested_user_id && !(user.dataValues.admin === true || requested_user_id === user.dataValues.id)) {
+            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+            ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
+            ObjetoExcecao.detail = "Token doesn't belong to required user";
             throw ObjetoExcecao;
         }
     },
@@ -82,7 +88,7 @@ module.exports = {
             ObjetoExcecao.detail = "Token doesn't belong to any user";
             throw ObjetoExcecao;
         }
-        if (user.dataValues.ativo === 0) {        
+        if (user.dataValues.ativo === false) {        
             ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
             ObjetoExcecao.detail = "Token doesn't belong to active user";

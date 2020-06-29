@@ -179,6 +179,87 @@ describe(
                     );
             }
         );
+
+        test(
+            "missing detalhes for POST /api/v1/imagens-lesoes/1",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens-lesoes/1")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .send(
+                        [{
+                            nome: "Test",
+                            grade: 100
+                        }]
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(201);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        detalhes: expect.any(String),
+                                        nome: expect.any(String),
+                                        id: expect.any(Number),
+                                        grade: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "missing nome for POST /api/v1/imagens-lesoes/1",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens-lesoes/1")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .send(
+                        [{
+                            detalhes: "Test",
+                            grade: 100
+                        }]
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+        
+        test(
+            "missing grade for POST /api/v1/imagens-lesoes/1",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens-lesoes/1")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .send(
+                        [{
+                            detalhes: "Test",
+                            nome: "Test"
+                        }]
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
         
         test(
             "GET /api/v1/imagens-lesoes",

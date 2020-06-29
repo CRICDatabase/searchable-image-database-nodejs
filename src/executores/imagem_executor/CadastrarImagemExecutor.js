@@ -18,7 +18,7 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
+        await ValidadorDeSessao.login_required(req);
         await validarRequisicao(req);
         const imagemCadastrada = await cadastrarDadosEArquivoDeImagem(req);
 

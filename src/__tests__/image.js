@@ -49,7 +49,7 @@ describe(
                     .post("/api/v1/imagens")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
@@ -63,7 +63,7 @@ describe(
                     .post("/api/v1/imagens/1/classificacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
@@ -91,7 +91,7 @@ describe(
                     .post("/api/v1/imagens-lesoes/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
@@ -138,7 +138,8 @@ describe(
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
-                                            nome: expect.any(String)
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number),
                                         },
                                         nome: expect.any(String),
                                         total_classificacoes: expect.any(Number),
@@ -159,7 +160,7 @@ describe(
                     .get("/api/v1/imagens/listar/2")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
@@ -210,31 +211,6 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(401);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens-lesoes",
-            () => {
-                /* Anonymous user should be able to get information from injury */
-                return request(app)
-                    .get("/api/v1/imagens-lesoes")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        detalhes: expect.any(String),
-                                        nome: expect.any(String),
-                                        id: expect.any(Number)
-                                    }]
-                                )
-                            );
                         }
                     );
             }
@@ -313,7 +289,8 @@ describe(
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
-                                            nome: expect.any(String)
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
                                         },
                                         tipo_analise_realizada: expect.any(String)
                                     }]
@@ -457,6 +434,50 @@ describe(
     "user /api/v1/imagens",
     () => {
         test(
+            "POST /api/v1/imagens",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .attach("file", "src/__tests__/example0006.jpg")
+                    .field({id_usuario: 2})
+                    .field({codigo_lamina: "JEST Charles"})
+                    .field({dt_aquisicao: "2020-01-01"})
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(201);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    altura: expect.any(Number),
+                                    caminho_imagem: expect.any(String),
+                                    classificacao_aprovada: 1,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: 0,
+                                    fonte_aquisicao: 1,
+                                    id: expect.any(Number),
+                                    id_usuario: 2,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(String),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
+                                    },
+                                    nome: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
             "GET /api/v1/imagens/listar/1",
             () => {
                 return request(app)
@@ -486,7 +507,8 @@ describe(
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
-                                            nome: expect.any(String)
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
                                         },
                                         nome: expect.any(String),
                                         total_classificacoes: expect.any(Number),
@@ -529,7 +551,8 @@ describe(
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
-                                            nome: expect.any(String)
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
                                         },
                                         nome: expect.any(String),
                                         total_classificacoes: expect.any(Number),
@@ -580,50 +603,6 @@ describe(
                     );
             }
         );
-
-        test(
-            "POST /api/v1/imagens/",
-            () => {
-                return request(app)
-                    .post("/api/v1/imagens")
-                    .set(
-                        "token_autenticacao",
-                        charles_token
-                    )
-                    .attach("files", "src/__tests__/example0006.jpg")
-                    .field({id_usuario: 2})
-                    .field({id_lesao: 1})
-                    .field({codigo_lamina: "JEST Charles"})
-                    .field({dt_aquisicao: "2020-01-01"})
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
-                                    classificacao_aprovada: 1,
-                                    codigo_lamina: expect.any(String),
-                                    dt_aquisicao: expect.any(String),
-                                    excluida: 0,
-                                    fonte_aquisicao: 1,
-                                    id: expect.any(Number),
-                                    id_usuario: 2,
-                                    largura: expect.any(Number),
-                                    lesao: {
-                                        detalhes: expect.any(String),
-                                        id: expect.any(Number),
-                                        nome: expect.any(String)
-                                    },
-                                    nome: expect.any(String)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
     }
 );
 
@@ -632,7 +611,7 @@ describe(
     "admin /api/v1/imagens",
     () => {
         test(
-            "POST /api/v1/imagens/",
+            "POST /api/v1/imagens",
             () => {
                 return request(app)
                     .post("/api/v1/imagens")
@@ -642,12 +621,11 @@ describe(
                     )
                     .attach("files", "src/__tests__/example0006.jpg")
                     .field({id_usuario: 1})
-                    .field({id_lesao: 1})
                     .field({codigo_lamina: "JEST Admin"})
                     .field({dt_aquisicao: "2020-01-01"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(201);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -665,7 +643,8 @@ describe(
                                     lesao: {
                                         detalhes: expect.any(String),
                                         id: expect.any(Number),
-                                        nome: expect.any(String)
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
                                     },
                                     nome: expect.any(String)
                                 }
@@ -675,90 +654,6 @@ describe(
             }
         );
 
-        test(
-            "POST /api/v1/imagens-lesoes/1",
-            () => {
-                return request(app)
-                    .post("/api/v1/imagens-lesoes/1")
-                    .set(
-                        "token_autenticacao",
-                        admin_token
-                    )
-                    .send(
-                        [{
-                            detalhes: "Foo",
-                            nome: "Bar"
-                        }]
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(201);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    detalhes: "Foo",
-                                    nome: "Bar",
-                                    id: expect.any(Number)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "missing detalhes for POST /api/v1/imagens-lesoes/1",
-            () => {
-                return request(app)
-                    .post("/api/v1/imagens-lesoes/1")
-                    .set(
-                        "token_autenticacao",
-                        admin_token
-                    )
-                    .send(
-                        [{
-                            nome: "Bar"
-                        }]
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(201);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    detalhes: "",
-                                    nome: "Bar",
-                                    id: expect.any(Number)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "missing nome for POST /api/v1/imagens-lesoes/1",
-            () => {
-                return request(app)
-                    .post("/api/v1/imagens-lesoes/1")
-                    .set(
-                        "token_autenticacao",
-                        admin_token
-                    )
-                    .send(
-                        [{
-                            detalhes: "Foo"
-                        }]
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(400);
-                        }
-                    );
-            }
-        );
 
         test(
             "POST /api/v1/imagens-descricoes/1",
@@ -781,11 +676,13 @@ describe(
                             expect(
                                 response.body
                             ).toMatchObject(
-                                {
-                                    codigo: 1,
-                                    nome: "Bar",
-                                    id: expect.any(Number)
-                                }
+                                expect.arrayContaining(
+                                    [{
+                                        codigo: 1,
+                                        nome: "Bar",
+                                        id: expect.any(Number)
+                                    }]
+                                )
                             );
                         }
                     );
@@ -834,11 +731,13 @@ describe(
                             expect(
                                 response.body
                             ).toMatchObject(
-                                {
-                                    codigo: 1,
-                                    nome: "Bar",
-                                    id: expect.any(Number)
-                                }
+                                expect.arrayContaining(
+                                    [{
+                                        codigo: 1,
+                                        nome: "Bar",
+                                        id: expect.any(Number)
+                                    }]
+                                )
                             );
                         }
                     );
@@ -875,7 +774,8 @@ describe(
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
-                                            nome: expect.any(String)
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
                                         },
                                         nome: expect.any(String),
                                         total_classificacoes: expect.any(Number),
@@ -918,7 +818,8 @@ describe(
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
-                                            nome: expect.any(String)
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
                                         },
                                         nome: expect.any(String),
                                         total_classificacoes: expect.any(Number),
@@ -960,7 +861,8 @@ describe(
                                     lesao: {
                                         detalhes: expect.any(String),
                                         id: expect.any(Number),
-                                        nome: expect.any(String)
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
                                     },
                                     nome: expect.any(String)
                                 }
@@ -999,39 +901,11 @@ describe(
                                     lesao: {
                                         detalhes: expect.any(String),
                                         id: expect.any(Number),
-                                        nome: expect.any(String)
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
                                     },
                                     nome: expect.any(String)
                                 }
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens-lesoes",
-            () => {
-                /* Admin user should be able to get information from injury */
-                return request(app)
-                    .get("/api/v1/imagens-lesoes")
-                    .set(
-                        "token_autenticacao",
-                        admin_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        detalhes: expect.any(String),
-                                        nome: expect.any(String),
-                                        id: expect.any(Number)
-                                    }]
-                                )
                             );
                         }
                     );
@@ -1123,7 +997,8 @@ describe(
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
-                                            nome: expect.any(String)
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
                                         },
                                         tipo_analise_realizada: expect.any(String)
                                     }]
@@ -1160,7 +1035,8 @@ describe(
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
-                                            nome: expect.any(String)
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
                                         },
                                         tipo_analise_realizada: expect.any(String)
                                     }]
