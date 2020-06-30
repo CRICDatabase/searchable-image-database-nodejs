@@ -14,7 +14,7 @@ module.exports = {
 
         await validarRequisicao(req);
 
-        const todasImagensTask = ImagemRepositorio.listarImagensValidasNoSistema();
+        const todasImagensTask = ImagemRepositorio.listarImagensValidasNoSistema(req.params.id_usuario);
         const [todasImagens] = await Promise.all([todasImagensTask]);
 
         if(todasImagens.length == 0) {
@@ -42,10 +42,9 @@ async function validarRequisicao(req) {
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
-    else {
-        if (usuario.id > 1) {
-            await ValidadorDeSessao.login_required(req, usuario.id);
-        }
+
+    if (usuario.id > 1) {
+        await ValidadorDeSessao.login_required(req, usuario.id);
     }
 }
 

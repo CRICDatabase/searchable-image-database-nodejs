@@ -14,7 +14,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         await validarRequisicao(req);
 
         await ImagemRepositorio.excluirClassificacaoDeCelula(req.params.id_celula);
@@ -51,6 +50,15 @@ async function validarRequisicao(req) {
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
+
+    if (imagem.id_usuario !== usuario.id) {
+        ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
+        ObjetoExcecao.detail = `User ${usuario.id} can't change image ${imagem.id}`;
+        throw ObjetoExcecao;
+    }
+
+    await ValidadorDeSessao.login_required(req, usuario.id);
 }
 
 async function atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes){

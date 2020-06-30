@@ -14,7 +14,7 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
+        await ValidadorDeSessao.admin_required(req);
         await validarRequisicao(req);
         const total = req.body.length;
 

@@ -137,7 +137,7 @@ module.exports = {
         });
     },
 
-    async listarImagensValidasNoSistema() {
+    async listarImagensValidasNoSistema(user_id) {
         return ImagemModel.findAll({
             order: [
                 ["created_at", "DESC"]
@@ -145,7 +145,8 @@ module.exports = {
             where: {
                 excluida: {
                     [Sequelize.Op.eq]: 0
-                }
+                },
+                id_usuario: user_id ? user_id : 1
             }
         });
     },

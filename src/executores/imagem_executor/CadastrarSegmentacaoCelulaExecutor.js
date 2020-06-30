@@ -14,7 +14,7 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
+        await ValidadorDeSessao.login_required(req);
         await validarRequisicao(req);
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);
@@ -82,6 +82,13 @@ async function validarRequisicao(req) {
     if (!imagem) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
+        throw ObjetoExcecao;
+    }
+
+    if (imagem.id_usuario !== usuario.id) {
+        ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+        ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
+        ObjetoExcecao.detail = "User can only add classification to own image";
         throw ObjetoExcecao;
     }
 }
