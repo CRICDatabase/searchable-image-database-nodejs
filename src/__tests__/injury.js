@@ -39,10 +39,10 @@ beforeAll(async () => {
 });
 
 describe(
-    "annonymous /api/v1/imagens-lesoes",
+    "POST /api/v1/imagens-lesoes/1",
     () => {
         test(
-            "POST /api/v1/imagens-lesoes/1",
+            "anonymous",
             () => {
                 /* Anonymous user can NOT use POST method */
                 return request(app)
@@ -54,43 +54,11 @@ describe(
                     );
             }
         );
-        
-        test(
-            "GET /api/v1/imagens-lesoes",
-            () => {
-                /* Anonymous user should be able to list injury */
-                return request(app)
-                    .get("/api/v1/imagens-lesoes")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        id: expect.any(Number),
-                                        nome: expect.any(String),
-                                        detalhes: expect.any(String),
-                                        grade: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-    }
-);
 
-describe(
-    "user /api/v1/imagens-lesoes",
-    () => {
         test(
-            "POST /api/v1/imagens-lesoes/1",
+            "charles",
             () => {
                 /* User can NOT use POST method */
-                console.log(charles_token);
                 return request(app)
                     .post("/api/v1/imagens-lesoes/1")
                     .set(
@@ -104,45 +72,9 @@ describe(
                     );
             }
         );
-        
-        test(
-            "GET /api/v1/imagens-lesoes",
-            () => {
-                /* User should be able to list injury */
-                return request(app)
-                    .get("/api/v1/imagens-lesoes")
-                    .set(
-                        "token_autenticacao",
-                        charles_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        id: expect.any(Number),
-                                        nome: expect.any(String),
-                                        detalhes: expect.any(String),
-                                        grade: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-    }
-);
 
-
-describe(
-    "admin /api/v1/imagens-lesoes",
-    () => {
         test(
-            "POST /api/v1/imagens-lesoes/1",
+            "admin",
             () => {
                 /* Admin can use POST method */
                 return request(app)
@@ -180,8 +112,18 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "POST /api/v1/imagens-lesoes/1 (missing detalhes)",
+    () => {
+        /* No test for annoymous as it can't use POST method */
+
+        /* No test for charles as it can't use POST method */
+
         test(
-            "missing detalhes for POST /api/v1/imagens-lesoes/1",
+            "admin",
             () => {
                 return request(app)
                     .post("/api/v1/imagens-lesoes/1")
@@ -215,8 +157,18 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "POST /api/v1/imagens-lesoes/1 (missing nome)",
+    () => {
+        /* No test for annoymous as it can't use POST method */
+
+        /* No test for charles as it can't use POST method */
+
         test(
-            "missing nome for POST /api/v1/imagens-lesoes/1",
+            "admin",
             () => {
                 return request(app)
                     .post("/api/v1/imagens-lesoes/1")
@@ -237,9 +189,19 @@ describe(
                     );
             }
         );
-        
+
+    }
+);
+
+describe(
+    "POST /api/v1/imagens-lesoes/1 (missing grade)",
+    () => {
+        /* No test for annoymous as it can't use POST method */
+
+        /* No test for charles as it can't use POST method */
+
         test(
-            "missing grade for POST /api/v1/imagens-lesoes/1",
+            "admin",
             () => {
                 return request(app)
                     .post("/api/v1/imagens-lesoes/1")
@@ -260,9 +222,71 @@ describe(
                     );
             }
         );
-        
+
+    }
+);
+
+describe(
+    "GET /api/v1/imagens-lesoes",
+    () => {
         test(
-            "GET /api/v1/imagens-lesoes",
+            "anonymous",
+            () => {
+                /* Anonymous user should be able to list injury */
+                return request(app)
+                    .get("/api/v1/imagens-lesoes")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        id: expect.any(Number),
+                                        nome: expect.any(String),
+                                        detalhes: expect.any(String),
+                                        grade: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* User should be able to list injury */
+                return request(app)
+                    .get("/api/v1/imagens-lesoes")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        id: expect.any(Number),
+                                        nome: expect.any(String),
+                                        detalhes: expect.any(String),
+                                        grade: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin should be able to list injury */
                 return request(app)
