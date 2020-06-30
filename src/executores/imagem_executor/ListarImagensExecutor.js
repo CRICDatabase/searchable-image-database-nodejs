@@ -14,7 +14,7 @@ module.exports = {
 
         await validarRequisicao(req);
 
-        const todasImagensTask = ImagemRepositorio.listarImagensValidasNoSistema();
+        const todasImagensTask = ImagemRepositorio.listarImagensValidasNoSistema(req.params.id_usuario);
         const [todasImagens] = await Promise.all([todasImagensTask]);
 
         if(todasImagens.length == 0) {
