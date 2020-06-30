@@ -58,7 +58,6 @@ describe(
                 )
                     .then(
                         data => {
-                            console.log(data);
                             expect(data)
                                 .toBeNull();
                         }
