@@ -1175,7 +1175,7 @@ describe(
                             expect(
                                 response.body
                             ).toMatchObject(
-{
+                                {
                                     celulas: expect.arrayContaining(
                                         [{
                                             descricao: {

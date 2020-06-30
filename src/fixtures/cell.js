@@ -280,6 +280,6 @@ module.exports = {
             id_descricao: 1,
             created_at: "2020-03-28 10:09:35",
             updated_at: "2020-03-28 10:09:35"
-        },
+        }
     ]
 };
