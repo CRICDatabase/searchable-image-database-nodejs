@@ -18,16 +18,8 @@ module.exports = {
             return res.status(HttpStatus.CREATED).json(usuarioCriado);
         }
         catch(erro) {
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.CONFLICT) {
-                return res.status(HttpStatus.CONFLICT).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
             }
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
@@ -43,12 +35,8 @@ module.exports = {
         }
         catch(erro) {
 
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
             }
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
@@ -64,16 +52,8 @@ module.exports = {
         }
         catch(erro){
 
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
             }
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
@@ -89,20 +69,12 @@ module.exports = {
         }
         catch(erro){
 
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
             }
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }        
+        }
     },
 
     async reset_password(req, res) {
@@ -112,16 +84,8 @@ module.exports = {
         }
         catch(erro){
 
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.NOT_FOUND) {
-                return res.status(HttpStatus.NOT_FOUND).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
             }
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
@@ -137,12 +101,8 @@ module.exports = {
         }
         catch(erro){
 
-            if(erro.status == HttpStatus.BAD_REQUEST) {
-                return res.status(HttpStatus.BAD_REQUEST).json(erro);
-            }
-
-            if(erro.status == HttpStatus.UNAUTHORIZED) {
-                return res.status(HttpStatus.UNAUTHORIZED).json(erro);
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
             }
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);

@@ -13,6 +13,10 @@ module.exports = {
             return res.status(HttpStatus.OK).json(status);
         }
         catch(erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     }
