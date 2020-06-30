@@ -41,7 +41,7 @@ module.exports = {
             nome: "example0003.jpg",
             codigo_lamina: "0003",
             excluida: 0,
-            classificacao_aprovada: 1,
+            classificacao_aprovada: 0,
             dt_aquisicao: "2020-01-01",
             fonte_aquisicao: 1,
             caminho_imagem: "imagens/fixtures/",
