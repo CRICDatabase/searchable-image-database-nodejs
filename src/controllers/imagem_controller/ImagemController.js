@@ -315,7 +315,7 @@ module.exports = {
     },
 
     async downloadBase(req, res) {
-
+        console.log("foo");
         let result;
         try {
             result = DownloadBaseExecutor.Executar(req);

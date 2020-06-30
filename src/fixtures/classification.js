@@ -19,6 +19,15 @@ module.exports = {
             id_celula: 2,
             created_at: "2020-01-01",
             updated_at: "2020-01-01"
+        },
+        {
+            id: 3,
+            coord_centro_nucleo_x: 263,
+            coord_centro_nucleo_y: 97,
+            id_usuario: 2,
+            id_celula: 31,
+            created_at: "2020-01-01",
+            updated_at: "2020-01-01"
         }
     ]
 };

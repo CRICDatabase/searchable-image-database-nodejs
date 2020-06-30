@@ -22,7 +22,7 @@ module.exports = {
             doi: imagem.doi,
             codigo_lamina: imagem.codigo_lamina,
             excluida: imagem.excluida,
-            classificacao_aprovada: imagem.classificacao_aprovada,
+            classificacao_aprovada: 0,  // Every new image need is waiting approval
             dt_aquisicao: imagem.dt_aquisicao,
             fonte_aquisicao: imagem.fonte_aquisicao,
             caminho_imagem: imagem.caminho_imagem,
