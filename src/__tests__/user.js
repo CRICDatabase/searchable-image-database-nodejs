@@ -102,6 +102,45 @@ describe(
 );
 
 describe(
+    "user /api/v1/usuarios",
+    () => {
+        test(
+            "GET /api/v1/usuarios",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toEqual(
+                                expect.arrayContaining(
+                                    [
+                                        expect.objectContaining({
+                                            ativo: true,
+                                            email: expect.any(String),
+                                            id: expect.any(Number),
+                                            primeiro_nome: expect.any(String),
+                                            senha: expect.any(String),
+                                            ultimo_nome: expect.any(String)
+                                        })
+                                    ]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+    }
+);
+
+
+describe(
     "admin /api/v1/usuarios",
     () => {
         test(

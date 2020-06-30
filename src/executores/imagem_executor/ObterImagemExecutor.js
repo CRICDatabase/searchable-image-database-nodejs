@@ -4,6 +4,9 @@ const HttpStatus = require("http-status-codes");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+const ValidarTipo = require("../../utils/validacao_de_tipos");
+
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 module.exports = {
@@ -21,12 +24,25 @@ module.exports = {
     }
 };
 
-function validarRequisicao(req) {
+async function validarRequisicao(req) {
 
-    if(Number.isNaN(parseInt(req.params.id_imagem))) {
+    if(!ValidarTipo.ehNumero(req.params.id_imagem)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
+    }
+
+    const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
+    const [imagem] = await Promise.all([imagemTask]);
+
+    if (!imagem) {
+        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+        ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
+        throw ObjetoExcecao;
+    }
+
+    if (imagem.id_usuario > 1) {
+        await ValidadorDeSessao.login_required(req, imagem.id_usuario);
     }
 }
 

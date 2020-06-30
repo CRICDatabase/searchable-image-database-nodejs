@@ -139,7 +139,7 @@ describe(
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
                                             nome: expect.any(String),
-                                            grade: expect.any(Number),
+                                            grade: expect.any(Number)
                                         },
                                         nome: expect.any(String),
                                         total_classificacoes: expect.any(Number),

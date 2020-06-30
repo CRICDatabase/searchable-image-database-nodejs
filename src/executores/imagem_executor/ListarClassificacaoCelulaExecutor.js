@@ -7,6 +7,7 @@ const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
@@ -46,6 +47,17 @@ async function validarRequisicao(req) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
         throw ObjetoExcecao;
+    }
+
+    if (imagem.id_usuario > 1) {
+        if (imagem.id_usuario !== usuario.id) {
+            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+            ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
+            ObjetoExcecao.detail = `User ${usuario.id} can't change image ${imagem.id}`;
+            throw ObjetoExcecao;
+        }
+
+        await ValidadorDeSessao.login_required(req, usuario.id);
     }
 }
 

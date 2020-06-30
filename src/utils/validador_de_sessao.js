@@ -9,17 +9,6 @@ const UsuarioRepositorio = require("../repositorios/usuario_repositorio");
 
 module.exports = {
 
-    async validarAcessoAServicos(req) {
-        let resultado = await SessaoRepositorio.validarTokenAutenticacao(
-            req.headers.token_autenticacao
-        );
-        if (resultado === null) {        
-            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-            ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
-            throw ObjetoExcecao;
-        }
-    },
-
     async login_required(req, requested_user_id) {
         if (!req.headers.hasOwnProperty("token_autenticacao")) {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;

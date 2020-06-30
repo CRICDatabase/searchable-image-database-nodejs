@@ -42,10 +42,9 @@ async function validarRequisicao(req) {
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
     }
-    else {
-        if (usuario.id > 1) {
-            await ValidadorDeSessao.login_required(req, usuario.id);
-        }
+
+    if (usuario.id > 1) {
+        await ValidadorDeSessao.login_required(req, usuario.id);
     }
 }
 
