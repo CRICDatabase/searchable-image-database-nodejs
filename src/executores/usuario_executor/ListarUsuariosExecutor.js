@@ -12,7 +12,7 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 module.exports = {
 
     async Executar(req) {
-        await ValidadorDeSessao.validarAcessoAServicos(req);
+        await ValidadorDeSessao.login_required(req);
         validate_request(req);
 
         let todosUsuarios;

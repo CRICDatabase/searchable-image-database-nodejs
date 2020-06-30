@@ -11,7 +11,7 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 module.exports = {
 
     async Executar(req) {
-
+        debug("run");
         const CSV_CLASSIFICATIONS_FILENAME = "classifications.csv";
         const JSON_CLASSIFICATIONS_FILENAME = "classifications.json";
         const README_CLASSIFICATIONS_FILENAME = "README.classifications.md";

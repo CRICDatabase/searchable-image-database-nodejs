@@ -271,6 +271,15 @@ module.exports = {
             id_descricao: 49,
             created_at: "2020-03-28 10:29:04",
             updated_at: "2020-03-28 10:29:04"
-        }
+        },
+        {
+            id: 31,
+            tipo_analise_realizada: "CLASSIFICACAO",
+            id_imagem: 3,
+            id_lesao: 3,
+            id_descricao: 1,
+            created_at: "2020-03-28 10:09:35",
+            updated_at: "2020-03-28 10:09:35"
+        },
     ]
 };

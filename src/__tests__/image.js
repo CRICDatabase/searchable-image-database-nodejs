@@ -38,11 +38,12 @@ beforeAll(async () => {
         );
 });
 
+
 describe(
-    "annonymous /api/v1/imagens",
+    "POST /api/v1/imagens",
     () => {
         test(
-            "POST /api/v1/imagens",
+            "anonymous",
             () => {
                 /* Anonymous user can NOT use POST method */
                 return request(app)
@@ -56,385 +57,7 @@ describe(
         );
 
         test(
-            "POST /api/v1/imagens/1/classificacao-celula/1",
-            () => {
-                /* Anonymous user can NOT use POST method */
-                return request(app)
-                    .post("/api/v1/imagens/1/classificacao-celula/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(400);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "POST /api/v1/imagens/1/segmentacao-celula/1",
-            () => {
-                /* Anonymous user can NOT use POST method */
-                return request(app)
-                    .post("/api/v1/imagens/1/segmentacao-celula/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(401);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "POST /api/v1/imagens-lesoes/1",
-            () => {
-                /* Anonymous user can NOT use POST method */
-                return request(app)
-                    .post("/api/v1/imagens-lesoes/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(400);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "POST /api/v1/imagens-descricoes/1",
-            () => {
-                /* Anonymous user can NOT use POST method */
-                return request(app)
-                    .post("/api/v1/imagens-descricoes/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(401);
-                        }
-                    );
-            }
-        );
-        
-        test(
-            "GET /api/v1/imagens/listar/1",
-            () => {
-                /* Anonymous user should be able to list imagem from main user */
-                return request(app)
-                    .get("/api/v1/imagens/listar/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
-                                        classificacao_aprovada: 1,
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: 0,
-                                        fonte_aquisicao: 1,
-                                        id: expect.any(Number),
-                                        id_usuario: 1,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/listar/2",
-            () => {
-                /* Anonymous user should not be able to list imagem from users */
-                return request(app)
-                    .get("/api/v1/imagens/listar/2")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(400);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/1",
-            () => {
-                /* Anonymous user should be able to get information of imagem own by main user */
-                return request(app)
-                    .get("/api/v1/imagens/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
-                                    classificacao_aprovada: 1,
-                                    codigo_lamina: expect.any(String),
-                                    dt_aquisicao: expect.any(String),
-                                    excluida: 0,
-                                    fonte_aquisicao: 1,
-                                    id: 1,
-                                    id_usuario: 1,
-                                    largura: expect.any(Number),
-                                    lesao: {
-                                        detalhes: expect.any(String),
-                                        id: expect.any(Number),
-                                        nome: expect.any(String)
-                                    },
-                                    nome: expect.any(String)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/3",
-            () => {
-                /* Anonymous user should not be able to get information of imagem from user */
-                return request(app)
-                    .get("/api/v1/imagens/3")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(400);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens-descricoes",
-            () => {
-                /* Anonymous user should be able to get information from description */
-                return request(app)
-                    .get("/api/v1/imagens-descricoes")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        codigo: expect.any(Number),
-                                        nome: expect.any(String),
-                                        id: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/contagem/lesoes/descricoes",
-            () => {
-                /* Anonymous user should be able to get information of imagem own by main user */
-                return request(app)
-                    .get("/api/v1/imagens/contagem/lesoes/descricoes")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    AscH: expect.any(Number),
-                                    AscUs: expect.any(Number),
-                                    Carcinoma: expect.any(Number),
-                                    HSil: expect.any(Number),
-                                    LSil: expect.any(Number),
-                                    Normal: expect.any(Number)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/1/listar-classificacao-celula/1",
-            () => {
-                /* Anonymous user should be able to get information of classification own by main user */
-                return request(app)
-                    .get("/api/v1/imagens/1/listar-classificacao-celula/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        coord_centro_nucleo_x: expect.any(Number),
-                                        coord_centro_nucleo_y: expect.any(Number),
-                                        id_celula: expect.any(Number),
-                                        id_classificacao: expect.any(Number),
-                                        id_lesao: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        tipo_analise_realizada: expect.any(String)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/1/listar-classificacao-celula/2",
-            () => {
-                /* Anonymous user should NOT be able to get information of classification own by other users */
-                return request(app)
-                    .get("/api/v1/imagens/1/listar-classificacao-celula/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(401);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/1/listar-segmentacao-celula/1",
-            () => {
-                /* Anonymous user should be able to get information of segmentacao own by main user */
-                return request(app)
-                    .get("/api/v1/imagens/1/listar-segmentacao-celula/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    celulas: expect.arrayContaining(
-                                        [{
-                                            descricao: {
-                                                codigo: expect.any(Number),
-                                                id: expect.any(Number),
-                                                nome: expect.any(String)
-                                            },
-                                            id: expect.any(Number),
-                                            segmentos_citoplasma: expect.arrayContaining(
-                                                [{
-                                                    coord_x: expect.any(Number),
-                                                    coord_y: expect.any(Number)
-                                                }]
-                                            ),
-                                            segmentos_nucleo: expect.arrayContaining(
-                                                [{
-                                                    coord_x: expect.any(Number),
-                                                    coord_y: expect.any(Number)
-                                                }]
-                                            ),
-                                            tipo_analise_realizada: expect.any(String)
-                                        }]
-                                    )
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/1/listar-segmentacao-celula/2",
-            () => {
-                /* Anonymous user should NOT be able to get information of segmentacao own by other users */
-                return request(app)
-                    .get("/api/v1/imagens/1/listar-segmentacao-celula/2")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(401);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/download",
-            () => {
-                /* Anonymous user should be able to get zip file */
-                return request(app)
-                    .get("/api/v1/imagens/download")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "PUT /api/v1/imagens/1/atualizar/1",
-            () => {
-                /* Anonymous user can NOT use PUT method */
-                return request(app)
-                    .put("/api/v1/imagens/1/atualizar/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(400);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "DELETE /api/v1/imagens/1/classificacao-celula/1/usuario/1",
-            () => {
-                /* Anonymous user can NOT use DELETE method */
-                return request(app)
-                    .delete("/api/v1/imagens/1/classificacao-celula/1/usuario/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(400);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "DELETE /api/v1/imagens/1/segmentacao-celula/1/usuario/1",
-            () => {
-                /* Anonymous user can NOT use DELETE method */
-                return request(app)
-                    .delete("/api/v1/imagens/1/segmentacao-celula/1/usuario/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(401);
-                        }
-                    );
-            }
-        );
-    }
-);
-
-describe(
-    "user /api/v1/imagens",
-    () => {
-        test(
-            "POST /api/v1/imagens",
+            "charles",
             () => {
                 return request(app)
                     .post("/api/v1/imagens")
@@ -459,16 +82,11 @@ describe(
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
                                     excluida: 0,
-                                    fonte_aquisicao: 1,
+                                    fonte_aquisicao: 0,
                                     id: expect.any(Number),
                                     id_usuario: 2,
+                                    id_lesao: 1,
                                     largura: expect.any(Number),
-                                    lesao: {
-                                        detalhes: expect.any(String),
-                                        id: expect.any(Number),
-                                        nome: expect.any(String),
-                                        grade: expect.any(Number)
-                                    },
                                     nome: expect.any(String)
                                 }
                             );
@@ -478,180 +96,7 @@ describe(
         );
 
         test(
-            "GET /api/v1/imagens/listar/1",
-            () => {
-                return request(app)
-                    .get("/api/v1/imagens/listar/1")
-                    .set(
-                        "token_autenticacao",
-                        charles_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
-                                        classificacao_aprovada: 1,
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: 0,
-                                        fonte_aquisicao: 1,
-                                        id: expect.any(Number),
-                                        id_usuario: 1,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/listar/2",
-            () => {
-                return request(app)
-                    .get("/api/v1/imagens/listar/2")
-                    .set(
-                        "token_autenticacao",
-                        charles_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
-                                        classificacao_aprovada: 1,
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: 0,
-                                        fonte_aquisicao: 1,
-                                        id: expect.any(Number),
-                                        id_usuario: 1,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/1",
-            () => {
-                return request(app)
-                    .get("/api/v1/imagens/1")
-                    .set(
-                        "token_autenticacao",
-                        charles_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
-                                    classificacao_aprovada: 1,
-                                    codigo_lamina: expect.any(String),
-                                    dt_aquisicao: expect.any(String),
-                                    excluida: 0,
-                                    fonte_aquisicao: 1,
-                                    id: 1,
-                                    id_usuario: 1,
-                                    largura: expect.any(Number),
-                                    lesao: {
-                                        detalhes: expect.any(String),
-                                        id: expect.any(Number),
-                                        nome: expect.any(String)
-                                    },
-                                    nome: expect.any(String)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "GET /api/v1/imagens/3",
-            () => {
-                return request(app)
-                    .get("/api/v1/imagens/3")
-                    .set(
-                        "token_autenticacao",
-                        charles_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
-                                    classificacao_aprovada: 0,
-                                    codigo_lamina: expect.any(String),
-                                    dt_aquisicao: expect.any(String),
-                                    excluida: 0,
-                                    fonte_aquisicao: 1,
-                                    id: 3,
-                                    id_usuario: 2,
-                                    largura: expect.any(Number),
-                                    lesao: {
-                                        detalhes: expect.any(String),
-                                        id: expect.any(Number),
-                                        nome: expect.any(String),
-                                        grade: expect.any(Number)
-                                    },
-                                    nome: expect.any(String)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-    }
-);
-
-
-describe(
-    "admin /api/v1/imagens",
-    () => {
-        test(
-            "POST /api/v1/imagens",
+            "admin",
             () => {
                 return request(app)
                     .post("/api/v1/imagens")
@@ -694,9 +139,88 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "POST /api/v1/imagens/1/classificacao-celula/1",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use POST method */
+                return request(app)
+                    .post("/api/v1/imagens/1/classificacao-celula/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "POST /api/v1/imagens/1/segmentacao-celula/1",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use POST method */
+                return request(app)
+                    .post("/api/v1/imagens/1/segmentacao-celula/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "POST /api/v1/imagens-lesoes/1",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use POST method */
+                return request(app)
+                    .post("/api/v1/imagens-lesoes/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "POST /api/v1/imagens-descricoes/1",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use POST method */
+                return request(app)
+                    .post("/api/v1/imagens-descricoes/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
 
         test(
-            "POST /api/v1/imagens-descricoes/1",
+            "admin",
             () => {
                 return request(app)
                     .post("/api/v1/imagens-descricoes/1")
@@ -729,8 +253,14 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "POST /api/v1/imagens-descricoes/1 (missing codigo)",
+    () => {
         test(
-            "POST missing codigo for /api/v1/imagens-descricoes/1",
+            "admin",
             () => {
                 return request(app)
                     .post("/api/v1/imagens-descricoes/1")
@@ -751,8 +281,14 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "POST /api/v1/imagens-descricoes/1 (missing nome)",
+    () => {
         test(
-            "missing nome for POST /api/v1/imagens-descricoes/1",
+            "admin",
             () => {
                 return request(app)
                     .post("/api/v1/imagens-descricoes/1")
@@ -783,16 +319,19 @@ describe(
                     );
             }
         );
-        
+
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/listar/1",
+    () => {
         test(
-            "GET /api/v1/imagens/listar/1",
+            "anonymous",
             () => {
+                /* Anonymous user should be able to list imagem from main user */
                 return request(app)
                     .get("/api/v1/imagens/listar/1")
-                    .set(
-                        "token_autenticacao",
-                        admin_token
-                    )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(200);
@@ -829,10 +368,54 @@ describe(
         );
 
         test(
-            "GET /api/v1/imagens/listar/2",
+            "charles",
             () => {
                 return request(app)
-                    .get("/api/v1/imagens/listar/2")
+                    .get("/api/v1/imagens/listar/1")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        altura: expect.any(Number),
+                                        caminho_imagem: expect.any(String),
+                                        classificacao_aprovada: expect.any(Number),
+                                        codigo_lamina: expect.any(String),
+                                        dt_aquisicao: expect.any(String),
+                                        excluida: 0,
+                                        fonte_aquisicao: 1,
+                                        id: expect.any(Number),
+                                        id_usuario: 1,
+                                        largura: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(String),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
+                                        },
+                                        nome: expect.any(String),
+                                        total_classificacoes: expect.any(Number),
+                                        total_segmentacoes: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .get("/api/v1/imagens/listar/1")
                     .set(
                         "token_autenticacao",
                         admin_token
@@ -847,11 +430,75 @@ describe(
                                     [{
                                         altura: expect.any(Number),
                                         caminho_imagem: expect.any(String),
-                                        classificacao_aprovada: 1,
+                                        classificacao_aprovada: expect.any(Number),
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
                                         excluida: 0,
                                         fonte_aquisicao: 1,
+                                        id: expect.any(Number),
+                                        id_usuario: 1,
+                                        largura: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(String),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
+                                        },
+                                        nome: expect.any(String),
+                                        total_classificacoes: expect.any(Number),
+                                        total_segmentacoes: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/listar/2",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user should not be able to list imagem from users */
+                return request(app)
+                    .get("/api/v1/imagens/listar/2")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .get("/api/v1/imagens/listar/2")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        altura: expect.any(Number),
+                                        caminho_imagem: expect.any(String),
+                                        classificacao_aprovada: 0,
+                                        codigo_lamina: expect.any(String),
+                                        dt_aquisicao: expect.any(String),
+                                        excluida: 0,
+                                        fonte_aquisicao: 0,
                                         id: expect.any(Number),
                                         id_usuario: 2,
                                         largura: expect.any(Number),
@@ -873,7 +520,132 @@ describe(
         );
 
         test(
-            "GET /api/v1/imagens/1",
+            "admin",
+            () => {
+                return request(app)
+                    .get("/api/v1/imagens/listar/2")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        altura: expect.any(Number),
+                                        caminho_imagem: expect.any(String),
+                                        classificacao_aprovada: 0,
+                                        codigo_lamina: expect.any(String),
+                                        dt_aquisicao: expect.any(String),
+                                        excluida: 0,
+                                        fonte_aquisicao: 0,
+                                        id: expect.any(Number),
+                                        id_usuario: 2,
+                                        largura: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(String),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
+                                        },
+                                        nome: expect.any(String),
+                                        total_classificacoes: expect.any(Number),
+                                        total_segmentacoes: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/1",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user should be able to get information of imagem own by main user */
+                return request(app)
+                    .get("/api/v1/imagens/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    altura: expect.any(Number),
+                                    caminho_imagem: expect.any(String),
+                                    classificacao_aprovada: 1,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: 0,
+                                    fonte_aquisicao: 1,
+                                    id: 1,
+                                    id_usuario: 1,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(String),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String)
+                                    },
+                                    nome: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .get("/api/v1/imagens/1")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    altura: expect.any(Number),
+                                    caminho_imagem: expect.any(String),
+                                    classificacao_aprovada: 1,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: 0,
+                                    fonte_aquisicao: 1,
+                                    id: 1,
+                                    id_usuario: 1,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(String),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String)
+                                    },
+                                    nome: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 return request(app)
                     .get("/api/v1/imagens/1")
@@ -912,8 +684,68 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/3",
+    () => {
         test(
-            "GET /api/v1/imagens/3",
+            "anonymous",
+            () => {
+                /* Anonymous user should not be able to get information of imagem from user */
+                return request(app)
+                    .get("/api/v1/imagens/3")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .get("/api/v1/imagens/3")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    altura: expect.any(Number),
+                                    caminho_imagem: expect.any(String),
+                                    classificacao_aprovada: 0,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: 0,
+                                    fonte_aquisicao: 1,
+                                    id: 3,
+                                    id_usuario: 2,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(String),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
+                                    },
+                                    nome: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 return request(app)
                     .get("/api/v1/imagens/3")
@@ -952,8 +784,39 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "GET /api/v1/imagens-descricoes",
+    () => {
         test(
-            "GET /api/v1/imagens-descricoes",
+            "anonymous",
+            () => {
+                /* Anonymous user should be able to get information from description */
+                return request(app)
+                    .get("/api/v1/imagens-descricoes")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        codigo: expect.any(Number),
+                                        nome: expect.any(String),
+                                        id: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user should be able to get information from description */
                 return request(app)
@@ -981,8 +844,40 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/contagem/lesoes/descricoes",
+    () => {
         test(
-            "GET /api/v1/imagens/contagem/lesoes/descricoes",
+            "anonymous",
+            () => {
+                /* Anonymous user should be able to get information of imagem own by main user */
+                return request(app)
+                    .get("/api/v1/imagens/contagem/lesoes/descricoes")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    AscH: expect.any(Number),
+                                    AscUs: expect.any(Number),
+                                    Carcinoma: expect.any(Number),
+                                    HSil: expect.any(Number),
+                                    LSil: expect.any(Number),
+                                    Normal: expect.any(Number)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user should be able to get information of imagem own by main user */
                 return request(app)
@@ -1011,8 +906,49 @@ describe(
             }
         );
 
+
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/1/listar-classificacao-celula/1",
+    () => {
         test(
-            "GET /api/v1/imagens/1/listar-classificacao-celula/1",
+            "anonymous",
+            () => {
+                /* Anonymous user should be able to get information of classification own by main user */
+                return request(app)
+                    .get("/api/v1/imagens/1/listar-classificacao-celula/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        coord_centro_nucleo_x: expect.any(Number),
+                                        coord_centro_nucleo_y: expect.any(Number),
+                                        id_celula: expect.any(Number),
+                                        id_classificacao: expect.any(Number),
+                                        id_lesao: expect.any(Number),
+                                        lesao: {
+                                            detalhes: expect.any(String),
+                                            id: expect.any(Number),
+                                            nome: expect.any(String),
+                                            grade: expect.any(Number)
+                                        },
+                                        tipo_analise_realizada: expect.any(String)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user should be able to get information of classification own by main user */
                 return request(app)
@@ -1049,12 +985,32 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/3/listar-classificacao-celula/2",
+    () => {
         test(
-            "GET /api/v1/imagens/1/listar-classificacao-celula/2",
+            "anonymous",
+            () => {
+                /* Anonymous user should NOT be able to get information of classification own by other users */
+                return request(app)
+                    .get("/api/v1/imagens/3/listar-classificacao-celula/2")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user should be able to get information of classification own by other users */
                 return request(app)
-                    .get("/api/v1/imagens/1/listar-classificacao-celula/2")
+                    .get("/api/v1/imagens/3/listar-classificacao-celula/2")
                     .set(
                         "token_autenticacao",
                         admin_token
@@ -1087,8 +1043,57 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/1/listar-segmentacao-celula/1",
+    () => {
         test(
-            "GET /api/v1/imagens/1/listar-segmentacao-celula/1",
+            "anonymous",
+            () => {
+                /* Anonymous user should be able to get information of segmentacao own by main user */
+                return request(app)
+                    .get("/api/v1/imagens/1/listar-segmentacao-celula/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    celulas: expect.arrayContaining(
+                                        [{
+                                            descricao: {
+                                                codigo: expect.any(Number),
+                                                id: expect.any(Number),
+                                                nome: expect.any(String)
+                                            },
+                                            id: expect.any(Number),
+                                            segmentos_citoplasma: expect.arrayContaining(
+                                                [{
+                                                    coord_x: expect.any(Number),
+                                                    coord_y: expect.any(Number)
+                                                }]
+                                            ),
+                                            segmentos_nucleo: expect.arrayContaining(
+                                                [{
+                                                    coord_x: expect.any(Number),
+                                                    coord_y: expect.any(Number)
+                                                }]
+                                            ),
+                                            tipo_analise_realizada: expect.any(String)
+                                        }]
+                                    )
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user should be able to get information of segmentacao own by main user */
                 return request(app)
@@ -1134,12 +1139,32 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/3/listar-segmentacao-celula/2",
+    () => {
         test(
-            "GET /api/v1/imagens/1/listar-segmentacao-celula/2",
+            "anonymous",
+            () => {
+                /* Anonymous user should NOT be able to get information of segmentacao own by other users */
+                return request(app)
+                    .get("/api/v1/imagens/3/listar-segmentacao-celula/2")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user should be able to get information of segmentacao own by other users */
                 return request(app)
-                    .get("/api/v1/imagens/1/listar-segmentacao-celula/2")
+                    .get("/api/v1/imagens/3/listar-segmentacao-celula/2")
                     .set(
                         "token_autenticacao",
                         admin_token
@@ -1150,7 +1175,7 @@ describe(
                             expect(
                                 response.body
                             ).toMatchObject(
-                                {
+{
                                     celulas: expect.arrayContaining(
                                         [{
                                             descricao: {
@@ -1181,8 +1206,28 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "GET /api/v1/imagens/download",
+    () => {
         test(
-            "GET /api/v1/imagens/download",
+            "anonymous",
+            () => {
+                /* Anonymous user should be able to get zip file */
+                return request(app)
+                    .get("/api/v1/imagens/download")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user should be able to get zip file */
                 return request(app)
@@ -1199,8 +1244,28 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "PUT /api/v1/imagens/1/atualizar/1",
+    () => {
         test(
-            "PUT /api/v1/imagens/1/atualizar/1",
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/1/atualizar/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user can use PUT method */
                 return request(app)
@@ -1217,8 +1282,28 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "DELETE /api/v1/imagens/1/classificacao-celula/1/usuario/1",
+    () => {
         test(
-            "DELETE /api/v1/imagens/1/classificacao-celula/1/usuario/1",
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use DELETE method */
+                return request(app)
+                    .delete("/api/v1/imagens/1/classificacao-celula/1/usuario/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user can use DELETE method */
                 return request(app)
@@ -1235,8 +1320,28 @@ describe(
             }
         );
 
+    }
+);
+
+describe(
+    "DELETE /api/v1/imagens/1/segmentacao-celula/1/usuario/1",
+    () => {
         test(
-            "DELETE /api/v1/imagens/1/segmentacao-celula/1/usuario/1",
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use DELETE method */
+                return request(app)
+                    .delete("/api/v1/imagens/1/segmentacao-celula/1/usuario/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
             () => {
                 /* Admin user can use DELETE method */
                 return request(app)
@@ -1252,5 +1357,6 @@ describe(
                     );
             }
         );
+
     }
 );
