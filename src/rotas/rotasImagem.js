@@ -13,7 +13,7 @@ rotasImagem.post("/api/v1/imagens-descricoes/:id_usuario", ImagemController.cada
 
 //Rotas de imagem GET
 rotasImagem.get("/api/v1/imagens/listar/:id_usuario", ImagemController.listarImagens);
-rotasImagem.get("/api/v1/imagens/:id_imagem(\d+)", ImagemController.obterImagem);  /* eslint no-useless-escape: 0 */
+rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.obterImagem);
 rotasImagem.get("/api/v1/imagens-lesoes", ImagemController.listarLesoes);
 rotasImagem.get("/api/v1/imagens-descricoes", ImagemController.listarDescricoes);
 rotasImagem.get("/api/v1/imagens/contagem/lesoes/descricoes", ImagemController.obterContagemLesoesEDescricoesNucleos);
