@@ -78,7 +78,7 @@ describe(
                                 {
                                     altura: expect.any(Number),
                                     caminho_imagem: expect.any(String),
-                                    classificacao_aprovada: 1,
+                                    classificacao_aprovada: 0,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
                                     excluida: 0,
