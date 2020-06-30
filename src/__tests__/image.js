@@ -210,7 +210,7 @@ describe(
                     .get("/api/v1/imagens/3")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
@@ -394,7 +394,7 @@ describe(
                     .put("/api/v1/imagens/1/atualizar/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
@@ -408,7 +408,7 @@ describe(
                     .delete("/api/v1/imagens/1/classificacao-celula/1/usuario/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
@@ -595,6 +595,46 @@ describe(
                                         detalhes: expect.any(String),
                                         id: expect.any(Number),
                                         nome: expect.any(String)
+                                    },
+                                    nome: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "GET /api/v1/imagens/3",
+            () => {
+                return request(app)
+                    .get("/api/v1/imagens/3")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    altura: expect.any(Number),
+                                    caminho_imagem: expect.any(String),
+                                    classificacao_aprovada: 0,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: 0,
+                                    fonte_aquisicao: 1,
+                                    id: 3,
+                                    id_usuario: 2,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(String),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
                                     },
                                     nome: expect.any(String)
                                 }
@@ -890,7 +930,7 @@ describe(
                                 {
                                     altura: expect.any(Number),
                                     caminho_imagem: expect.any(String),
-                                    classificacao_aprovada: 1,
+                                    classificacao_aprovada: 0,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
                                     excluida: 0,

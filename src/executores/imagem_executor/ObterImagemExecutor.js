@@ -13,7 +13,7 @@ module.exports = {
 
     async Executar(req) {
 
-        validarRequisicao(req);
+        await validarRequisicao(req);
         const imagem = await ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
         if(!imagem) {
             ObjetoExcecao.status = HttpStatus.NOT_FOUND;
