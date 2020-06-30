@@ -1296,7 +1296,7 @@ describe(
                     .delete("/api/v1/imagens/1/classificacao-celula/1/usuario/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
