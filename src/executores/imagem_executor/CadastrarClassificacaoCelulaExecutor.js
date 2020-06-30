@@ -84,7 +84,7 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    if (imagem.id_usuario === usuario.id) {
+    if (imagem.id_usuario !== usuario.id) {
         ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
         ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
         ObjetoExcecao.detail = "User can only add classification to own image";
