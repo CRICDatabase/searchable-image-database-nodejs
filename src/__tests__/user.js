@@ -39,73 +39,23 @@ beforeAll(async () => {
 });
 
 describe(
-    "annonymous /api/v1/usuarios",
+    "GET /api/v1/usuarios",
     () => {
         test(
-            "GET /api/v1/usuarios",
+            "anonymous",
             () => {
                 return request(app)
                     .get("/api/v1/usuarios")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(400);
                         }
                     );
             }
         );
 
         test(
-            "GET /api/v1/usuarios/1",
-            () => {
-                return request(app)
-                    .get("/api/v1/usuarios/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(401);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "POST /api/v1/usuarios/",
-            () => {
-                return request(app)
-                    .post("/api/v1/usuarios/")
-                    .send(
-                        {
-                            primeiro_nome: "Created by annonymous",
-                            ultimo_nome: "",
-                            email: "create.by.annonymous@test.database.cric.com.br",
-                            senha: "123.456"
-                        }
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(201);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    id: expect.any(Number),
-                                    primeiro_nome: "Created by annonymous",
-                                    ultimo_nome: "",
-                                    email: "create.by.annonymous@test.database.cric.com.br",
-                                    senha: expect.any(String)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-    }
-);
-
-describe(
-    "user /api/v1/usuarios",
-    () => {
-        test(
-            "GET /api/v1/usuarios",
+            "charles",
             () => {
                 return request(app)
                     .get("/api/v1/usuarios")
@@ -136,15 +86,9 @@ describe(
                     );
             }
         );
-    }
-);
 
-
-describe(
-    "admin /api/v1/usuarios",
-    () => {
         test(
-            "GET /api/v1/usuarios",
+            "admin",
             () => {
                 return request(app)
                     .get("/api/v1/usuarios")
@@ -170,6 +114,62 @@ describe(
                                         })
                                     ]
                                 )
+                            );
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "GET /api/v1/usuarios/1",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "POST /api/v1/usuarios/",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/")
+                    .send(
+                        {
+                            primeiro_nome: "Created by annonymous",
+                            ultimo_nome: "",
+                            email: "create.by.annonymous@test.database.cric.com.br",
+                            senha: "123.456"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(201);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: expect.any(Number),
+                                    primeiro_nome: "Created by annonymous",
+                                    ultimo_nome: "",
+                                    email: "create.by.annonymous@test.database.cric.com.br",
+                                    senha: expect.any(String)
+                                }
                             );
                         }
                     );

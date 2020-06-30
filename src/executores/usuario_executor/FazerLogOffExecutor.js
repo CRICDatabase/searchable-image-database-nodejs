@@ -10,8 +10,8 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.validarAcessoAServicos(req);
         validarRequisicao(req);
+        await ValidadorDeSessao.login_required(req);
         return await SessaoRepositorio.anularRegistroDeSessao(req.params.token_autenticacao);
     }
 };
