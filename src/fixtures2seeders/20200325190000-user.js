@@ -1,7 +1,6 @@
 "use strict";
 
 const UsuarioBaseFixtures = require("../fixtures/user");
-const Criptografia = require("../utils/criptografia");
 
 module.exports = {
     up: (queryInterface) => {
