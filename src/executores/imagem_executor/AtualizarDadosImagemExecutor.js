@@ -37,25 +37,24 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!ValidarTipo.ehNumero(req.params.id_usuario) || !ValidarTipo.ehNumero(req.params.id_imagem) ||
-        !req.body.codigo_lamina || !req.body.dt_aquisicao || !ValidarTipo.ehNumero(req.body.id_lesao_celula) ||
-        !ValidarTipo.ehNumero(req.body.id_celula)) {
-
+    if (!ValidarTipo.ehNumero(req.params.id_imagem)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = "Route parameter invalid";
         throw ObjetoExcecao;
     }
 
-    const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
+    if (!req.body.codigo_lamina || !req.body.dt_aquisicao || !ValidarTipo.ehNumero(req.body.id_lesao_celula) ||
+        !ValidarTipo.ehNumero(req.body.id_celula)) {
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = "Body request is invalid";
+        throw ObjetoExcecao;
+    }
+
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const celulaTask = ImagemRepositorio.obterCelulaPorId(req.body.id_celula);
-    const [usuario, imagem, celula] = await Promise.all([usuarioTask, imagemTask, celulaTask]);
-
-    if (!usuario) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-        throw ObjetoExcecao;
-    }
+    const [imagem, celula] = await Promise.all([imagemTask, celulaTask]);
 
     if (!imagem) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
@@ -63,22 +62,13 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    if (imagem.id_usuario > 1) {
-        if (imagem.id_usuario !== usuario.id) {
-            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-            ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
-            ObjetoExcecao.detail = `User ${usuario.id} can't change image ${imagem.id}`;
-            throw ObjetoExcecao;
-        }
-
-        await ValidadorDeSessao.login_required(req, usuario.id);
-    }
-
     if(!celula) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.CELULA_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
+
+    await ValidadorDeSessao.login_required(req, usuario.id);
 }
 
 async function atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes) {

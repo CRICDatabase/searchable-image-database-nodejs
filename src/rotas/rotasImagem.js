@@ -22,7 +22,7 @@ rotasImagem.get("/api/v1/imagens/:id_imagem/listar-segmentacao-celula/:id_usuari
 rotasImagem.get("/api/v1/imagens/download", ImagemController.downloadBase);
 
 //Rotas de imagem PUT
-rotasImagem.put("/api/v1/imagens/:id_imagem/atualizar/:id_usuario", ImagemController.atualizarDadosImagem);
+rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.atualizarDadosImagem);
 
 //Rotas de imagem DELETE
 rotasImagem.delete("/api/v1/imagens/:id_imagem/classificacao-celula/:id_celula", ImagemController.excluirRegistroClassificacao);
