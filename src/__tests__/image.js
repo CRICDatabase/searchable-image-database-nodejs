@@ -1379,6 +1379,59 @@ describe(
     }
 );
 
+
+describe(
+    "PUT /api/v1/imagens/1/classificacao-celula/1",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/1")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/1")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
     }
 );
 

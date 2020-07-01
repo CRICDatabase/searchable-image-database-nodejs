@@ -283,6 +283,15 @@ module.exports = {
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
+    },
+
+    async atualizarCelula(req, res) {
+
+        // let resultado;
+        try {
+            // resultado = await AtualizarDadosImagemExecutor.Executar(req);
+            // return res.status(HttpStatus.OK).json(resultado);
+            return res.status(HttpStatus.NOT_IMPLEMENTED).json(resultado);
         }
         catch (erro) {
             if(erro.status) {
