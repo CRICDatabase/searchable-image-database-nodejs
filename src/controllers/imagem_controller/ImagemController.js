@@ -242,7 +242,6 @@ module.exports = {
 
     async excluirRegistroClassificacao(req, res) {
 
-        let resultado;
         try {
             await ExcluirClassificacaoExecutor.Executar(req);
             return res.status(HttpStatus.NO_CONTENT).end();
@@ -258,7 +257,6 @@ module.exports = {
 
     async excluirRegistroSegmentacao(req, res) {
 
-        let resultado;
         try {
             await ExcluirSegmentacaoExecutor.Executar(req);
             return res.status(HttpStatus.NO_CONTENT).end();
