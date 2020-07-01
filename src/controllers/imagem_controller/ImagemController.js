@@ -18,6 +18,7 @@ const DownloadBaseExecutor = require("../../executores/imagem_executor/DownloadB
 const ExcluirClassificacaoExecutor = require("../../executores/imagem_executor/ExcluirClassificacaoExecutor");
 const ExcluirSegmentacaoExecutor = require("../../executores/imagem_executor/ExcluirSegmentacaoExecutor");
 const AtualizarDadosImagemExecutor = require("../../executores/imagem_executor/AtualizarDadosImagemExecutor");
+const AtualizarClassificacaoExecutor = require("../../executores/imagem_executor/AtualizarClassificacaoExecutor");
 
 module.exports = {
 
@@ -272,10 +273,24 @@ module.exports = {
 
     async atualizarDadosImagem(req, res) {
 
-        let resultado;
         try {
-            resultado = await AtualizarDadosImagemExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(resultado);
+            await AtualizarDadosImagemExecutor.Executar(req);
+            return res.status(HttpStatus.NO_CONTENT).end();
+        }
+        catch (erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
+    },
+
+    async atualizarClassificacao(req, res) {
+
+        try {
+            await AtualizarClassificacaoExecutor.Executar(req);
+            return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {
             if(erro.status) {

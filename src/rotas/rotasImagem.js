@@ -22,10 +22,11 @@ rotasImagem.get("/api/v1/imagens/:id_imagem/listar-segmentacao-celula/:id_usuari
 rotasImagem.get("/api/v1/imagens/download", ImagemController.downloadBase);
 
 //Rotas de imagem PUT
-rotasImagem.put("/api/v1/imagens/:id_imagem/atualizar/:id_usuario", ImagemController.atualizarDadosImagem);
+rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.atualizarDadosImagem);
+rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)/classificacao-celula/:id_celula", ImagemController.atualizarClassificacao);
 
 //Rotas de imagem DELETE
-rotasImagem.delete("/api/v1/imagens/:id_imagem/classificacao-celula/:id_celula", ImagemController.excluirRegistroClassificacao);
-rotasImagem.delete("/api/v1/imagens/:id_imagem/segmentacao-celula/:id_celula", ImagemController.excluirRegistroSegmentacao);
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/classificacao-celula/:id_celula(\\d+)", ImagemController.excluirRegistroClassificacao);
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/segmentacao-celula/:id_celula(\\d+)", ImagemController.excluirRegistroSegmentacao);
 
 module.exports = rotasImagem;

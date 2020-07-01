@@ -1246,17 +1246,41 @@ describe(
 );
 
 describe(
-    "PUT /api/v1/imagens/1/atualizar/1",
+    "PUT /api/v1/imagens/1",
     () => {
         test(
             "anonymous",
             () => {
                 /* Anonymous user can NOT use PUT method */
                 return request(app)
-                    .put("/api/v1/imagens/1/atualizar/1")
+                    .put("/api/v1/imagens/1")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* User can only use PUT method in image they own */
+                return request(app)
+                    .put("/api/v1/imagens/1")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            codigo_lamina: "Charles's code",
+                            dt_aquisicao: "2021-01-01"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
                         }
                     );
             }
@@ -1267,10 +1291,149 @@ describe(
             () => {
                 /* Admin user can use PUT method */
                 return request(app)
-                    .put("/api/v1/imagens/1/atualizar/1")
+                    .put("/api/v1/imagens/1")
                     .set(
                         "token_autenticacao",
                         admin_token
+                    )
+                    .send(
+                        {
+                            codigo_lamina: "Admin's code",
+                            dt_aquisicao: "2021-01-01"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(204);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "PUT /api/v1/imagens/3",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* User can only use PUT method in image they own */
+                return request(app)
+                    .put("/api/v1/imagens/3")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            codigo_lamina: "Charles's code",
+                            dt_aquisicao: "2021-01-01"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(204);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            codigo_lamina: "Admin's code",
+                            dt_aquisicao: "2021-01-01"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(204);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+
+describe(
+    "PUT /api/v1/imagens/1/classificacao-celula/1",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/1")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/1")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
                     )
                     .then(
                         response => {
@@ -1279,9 +1442,74 @@ describe(
                     );
             }
         );
-
     }
 );
+
+describe(
+    "PUT /api/v1/imagens/3/classificacao-celula/31",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3/classificacao-celula/31")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3/classificacao-celula/31")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3/classificacao-celula/31")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+    }
+);
+
 
 describe(
     "DELETE /api/v1/imagens/1/classificacao-celula/1",
@@ -1338,6 +1566,45 @@ describe(
 
     }
 );
+
+
+describe(
+    "DELETE /api/v1/imagens/3/classificacao-celula/31",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use DELETE method */
+                return request(app)
+                    .delete("/api/v1/imagens/3/classificacao-celula/31")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* User NOT use DELETE cell from image that they don't own */
+                return request(app)
+                    .delete("/api/v1/imagens/3/classificacao-celula/31")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(204);
+                        }
+                    );
+            }
+        );
+    }
+);
+
 
 describe(
     "DELETE /api/v1/imagens/1/segmentacao-celula/4",

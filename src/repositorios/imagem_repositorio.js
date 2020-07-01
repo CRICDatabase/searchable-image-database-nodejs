@@ -320,18 +320,19 @@ module.exports = {
     },
 
     async atualizarImagem(requisicao) {
-        return ImagemModel.update({
-            codigo_lamina: requisicao.codigo_lamina,
-            dt_aquisicao: requisicao.dt_aquisicao,
-            id_usuario: requisicao.id_usuario
-        },
-        {
-            where: {
-                id: {
-                    [Sequelize.Op.eq]: requisicao.id_imagem
+        return ImagemModel.update(
+            {
+                codigo_lamina: requisicao.codigo_lamina,
+                dt_aquisicao: requisicao.dt_aquisicao
+            },
+            {
+                where: {
+                    id: {
+                        [Sequelize.Op.eq]: requisicao.id_imagem
+                    }
                 }
             }
-        });
+        );
     },
 
     async atualizarCelula(requisicao) {

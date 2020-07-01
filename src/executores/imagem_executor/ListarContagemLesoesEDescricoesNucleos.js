@@ -1,5 +1,8 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:ListarContagemLesoesEDescricaoesNucleos");
+
 const TipoLesao = require("../../utils/enumeracoes/tipo_lesao");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
