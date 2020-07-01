@@ -1,15 +1,18 @@
 "use strict";
 
+const HttpStatus = require("http-status-codes");
+
+const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+
+const ConverterPonto = require("../../utils/transformacao_de_pontos");
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const HttpStatus = require("http-status-codes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
-const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-const ConverterPonto = require("../../utils/transformacao_de_pontos");
+const ValidarTipo = require("../../utils/validacao_de_tipos");
+const image_utils = require("../../utils/image");
+
 const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
-const ListarClassificacaoCelulaExecutor = require("../imagem_executor/ListarClassificacaoCelulaExecutor");
 
 module.exports = {
 
@@ -41,9 +44,11 @@ module.exports = {
         await ImagemRepositorio.cadastrarClassificacaoCelula(id_usuario, celulaCadastrada.dataValues.id, resultado.coord_x, resultado.coord_y);
 
         if (classificacaoCadastrada) {
-            const listaDeClassificacoes = await ListarClassificacaoCelulaExecutor.Executar(req);
-            await atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes);
-            return await ObterImagemExecutor.Executar(req);
+            const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
+            await image_utils.atualizarLesaoMaisGraveNaImagem(
+                id_imagem,
+                todasClassificacoes
+            );
         }
     }
 };
@@ -90,18 +95,4 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
     
-}
-
-
-async function atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes){
-
-    let higher_grade = 0;
-    let injury_id_with_higher_grade = 1;
-    listaDeClassificacoes.forEach(celula => {
-        if(celula.lesao.grade > higher_grade) {
-            higher_grade = celula.lesao.grade;
-            injury_id_with_higher_grade = celula.lesao.id;
-        }
-    });
-    return ImagemRepositorio.atualizarLesaoImagem(id_imagem, injury_id_with_higher_grade);
 }

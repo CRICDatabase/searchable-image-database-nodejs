@@ -1,11 +1,14 @@
 "use strict";
 
+const HttpStatus = require("http-status-codes");
+
+const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const HttpStatus = require("http-status-codes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+const ValidarTipo = require("../../utils/validacao_de_tipos");
+const image_utils = require("../../utils/image");
 
 module.exports = {
 
@@ -13,7 +16,7 @@ module.exports = {
         await validarRequisicao(req);
 
         const id_celula = Number(req.params.id_celula);
-        const id_imagem = Number(req.params.id_celula);
+        const id_imagem = Number(req.params.id_imagem);
 
         await ImagemRepositorio.excluirClassificacaoDeCelula(id_celula);
         await ImagemRepositorio.excluirCelula(
@@ -22,7 +25,7 @@ module.exports = {
         );
 
         const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
-        await atualizarLesaoMaisGraveNaImagem(
+        await image_utils.atualizarLesaoMaisGraveNaImagem(
             id_imagem,
             todasClassificacoes
         );
@@ -48,16 +51,4 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
     await ValidadorDeSessao.login_required(req, imagem.id_usuario);
-}
-
-async function atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes){
-    let higher_grade = 0;
-    let injury_id_with_higher_grade = 1;
-    listaDeClassificacoes.forEach(celula => {
-        if(celula.lesao_grade > higher_grade) {
-            higher_grade = celula.lesao_grade;
-            injury_id_with_higher_grade = celula.id_lesao;
-        }
-    });
-    return ImagemRepositorio.atualizarLesaoImagem(id_imagem, injury_id_with_higher_grade);
 }
