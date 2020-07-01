@@ -82,5 +82,7 @@ async function prepararMensagemRetorno(todasCelulas) {
 
     for (let cell of todasCelulas) {
         cell.lesao = all_injuries[cell.id_lesao];
+        delete cell.id_lesao;
+        delete cell.lesao_grade;
     }
 }

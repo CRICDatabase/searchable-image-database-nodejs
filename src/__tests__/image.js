@@ -931,7 +931,6 @@ describe(
                                         coord_centro_nucleo_y: expect.any(Number),
                                         id_celula: expect.any(Number),
                                         id_classificacao: expect.any(Number),
-                                        id_lesao: expect.any(Number),
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
@@ -969,7 +968,6 @@ describe(
                                         coord_centro_nucleo_y: expect.any(Number),
                                         id_celula: expect.any(Number),
                                         id_classificacao: expect.any(Number),
-                                        id_lesao: expect.any(Number),
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
@@ -993,6 +991,7 @@ describe(
     () => {
         test(
             "anonymous",
+
             () => {
                 /* Anonymous user should NOT be able to get information of classification own by other users */
                 return request(app)
@@ -1027,7 +1026,6 @@ describe(
                                         coord_centro_nucleo_y: expect.any(Number),
                                         id_celula: expect.any(Number),
                                         id_classificacao: expect.any(Number),
-                                        id_lesao: expect.any(Number),
                                         lesao: {
                                             detalhes: expect.any(String),
                                             id: expect.any(Number),
