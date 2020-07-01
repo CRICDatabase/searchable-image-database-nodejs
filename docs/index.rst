@@ -32,6 +32,7 @@ is available at https://cric-database.readthedocs.io/.
     :maxdepth: 2
     :caption: Developers
 
+    design
     dependencies
     settings
     models
