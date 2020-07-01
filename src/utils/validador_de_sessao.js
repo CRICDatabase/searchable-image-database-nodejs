@@ -16,7 +16,7 @@ module.exports = {
             ObjetoExcecao.detail = "token_autenticacao is missing in header";
             throw ObjetoExcecao;
         }
-        
+
         let session = await SessaoRepositorio.validarTokenAutenticacao(
             req.headers.token_autenticacao
         );

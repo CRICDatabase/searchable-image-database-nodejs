@@ -11,7 +11,6 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 module.exports = {
 
     async Executar(req) {
-        debug("run");
         const CSV_CLASSIFICATIONS_FILENAME = "classifications.csv";
         const JSON_CLASSIFICATIONS_FILENAME = "classifications.json";
         const README_CLASSIFICATIONS_FILENAME = "README.classifications.md";
@@ -120,8 +119,7 @@ module.exports = {
 
             if (include_classifications) {
                 let classifications = await ImagemRepositorio.listarClassificacoesCelula(
-                    image.id,
-                    req.params.id_usuario ? req.params.id_usuario : 1
+                    image.id
                 );
 
                 classifications_array.push({

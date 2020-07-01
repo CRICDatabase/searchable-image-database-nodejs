@@ -13,65 +13,54 @@ const ListarClassificacaoCelulaExecutor = require("../imagem_executor/ListarClas
 module.exports = {
 
     async Executar(req) {
-
         await validarRequisicao(req);
 
-        await ImagemRepositorio.excluirClassificacaoDeCelula(req.params.id_celula);
-        await ImagemRepositorio.excluirCelula(req.params.id_celula, req.params.id_imagem);
-        const listaDeClassificacoes = await ListarClassificacaoCelulaExecutor.Executar(req);
-        await atualizarLesaoMaisGraveNaImagem(req.params.id_imagem, listaDeClassificacoes);
-        
-        return await ObterImagemExecutor.Executar(req);
+        const id_celula = Number(req.params.id_celula);
+        const id_imagem = Number(req.params.id_celula);
+
+        await ImagemRepositorio.excluirClassificacaoDeCelula(id_celula);
+        await ImagemRepositorio.excluirCelula(
+            id_celula,
+            id_imagem
+        );
+
+        const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
+        await atualizarLesaoMaisGraveNaImagem(
+            id_imagem,
+            todasClassificacoes
+        );
     }
 };
 
 async function validarRequisicao(req) {
 
-    if (!ValidarTipo.ehNumero(req.params.id_usuario) || !ValidarTipo.ehNumero(req.params.id_imagem) ||
+    if (!ValidarTipo.ehNumero(req.params.id_imagem) ||
         !ValidarTipo.ehNumero(req.params.id_celula)) {
-
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = `Verify route parameters:\n\t- id_imagem: ${req.params.id_imagem}\n\t- id_celula: ${req.params.id_celula}`;
         throw ObjetoExcecao;
     }
 
-    const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
-    const [usuario, imagem] = await Promise.all([usuarioTask, imagemTask]);
-
-    if (!usuario) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-        throw ObjetoExcecao;
-    }
+    const [imagem] = await Promise.all([imagemTask]);
 
     if (!imagem) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
-
-    if (imagem.id_usuario !== usuario.id) {
-        ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-        ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
-        ObjetoExcecao.detail = `User ${usuario.id} can't change image ${imagem.id}`;
-        throw ObjetoExcecao;
-    }
-
-    await ValidadorDeSessao.login_required(req, usuario.id);
+    await ValidadorDeSessao.login_required(req, imagem.id_usuario);
 }
 
 async function atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes){
-
-    if(listaDeClassificacoes.celulas.length > 0) {
-
-        let idLesaoMaisGrave = 1;
-        listaDeClassificacoes.celulas.forEach(celula => {
-            if(celula.lesao.id > idLesaoMaisGrave) {
-                idLesaoMaisGrave = celula.lesao.id;
-            }
-        });
-
-        return ImagemRepositorio.atualizarLesaoImagem(id_imagem, idLesaoMaisGrave);
-    }
+    let higher_grade = 0;
+    let injury_id_with_higher_grade = 1;
+    listaDeClassificacoes.forEach(celula => {
+        if(celula.lesao_grade > higher_grade) {
+            higher_grade = celula.lesao_grade;
+            injury_id_with_higher_grade = celula.id_lesao;
+        }
+    });
+    return ImagemRepositorio.atualizarLesaoImagem(id_imagem, injury_id_with_higher_grade);
 }

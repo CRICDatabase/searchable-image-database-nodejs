@@ -25,7 +25,7 @@ rotasImagem.get("/api/v1/imagens/download", ImagemController.downloadBase);
 rotasImagem.put("/api/v1/imagens/:id_imagem/atualizar/:id_usuario", ImagemController.atualizarDadosImagem);
 
 //Rotas de imagem DELETE
-rotasImagem.delete("/api/v1/imagens/:id_imagem/classificacao-celula/:id_celula/usuario/:id_usuario", ImagemController.excluirRegistroClassificacao);
-rotasImagem.delete("/api/v1/imagens/:id_imagem/segmentacao-celula/:id_celula/usuario/:id_usuario", ImagemController.excluirRegistroSegmentacao);
+rotasImagem.delete("/api/v1/imagens/:id_imagem/classificacao-celula/:id_celula", ImagemController.excluirRegistroClassificacao);
+rotasImagem.delete("/api/v1/imagens/:id_imagem/segmentacao-celula/:id_celula", ImagemController.excluirRegistroSegmentacao);
 
 module.exports = rotasImagem;
