@@ -1303,6 +1303,24 @@ describe(
         );
 
         test(
+            "charles",
+            () => {
+                /* User NOT use DELETE cell from image that they don't own */
+                return request(app)
+                    .delete("/api/v1/imagens/1/classificacao-celula/1")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
             "admin",
             () => {
                 /* Admin user can use DELETE method */
@@ -1335,6 +1353,24 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "anonymous",
+            () => {
+                /* User can NOT use DELETE segmentation in image they don't own */
+                return request(app)
+                    .delete("/api/v1/imagens/1/segmentacao-celula/4")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
                         }
                     );
             }
