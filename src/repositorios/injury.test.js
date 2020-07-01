@@ -13,7 +13,8 @@ describe(
                 return ImageDAO.cadastrarLesao(
                     {
                         nome: "Short",
-                        detalhes: "Long"
+                        detalhes: "Long",
+                        grade: 100
                     }
                 )
                     .then(
@@ -23,7 +24,8 @@ describe(
                                     {
                                         id: expect.any(Number),
                                         nome: "Short",
-                                        detalhes: "Long"
+                                        detalhes: "Long",
+                                        grade: 100
                                     }
                                 );
                         }
@@ -44,7 +46,8 @@ describe(
                                     {
                                         id: 1,
                                         nome: expect.any(String),
-                                        detalhes: expect.any(String)
+                                        detalhes: expect.any(String),
+                                        grade: expect.any(Number)
                                     }
                                 );
                         }
@@ -83,7 +86,8 @@ describe(
                                         [{
                                             id: expect.any(Number),
                                             nome: expect.any(String),
-                                            detalhes: expect.any(String)
+                                            detalhes: expect.any(String),
+                                            grade: expect.any(Number)
                                         }]
                                     )
                                 );
