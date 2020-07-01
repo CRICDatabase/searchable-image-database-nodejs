@@ -15,10 +15,9 @@ module.exports = {
 
         await validarRequisicao(req);
 
-        const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);
 
-        const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem, id_usuario);
+        const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
         await prepararMensagemRetorno(todasClassificacoes);
         return todasClassificacoes;
     }

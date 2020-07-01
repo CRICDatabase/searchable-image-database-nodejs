@@ -2,7 +2,6 @@
 
 const HttpStatus = require("http-status-codes");
 const debug = require("debug")("database.cric:ImageController");
-
 const CadastrarImagemExecutor = require("../../executores/imagem_executor/CadastrarImagemExecutor");
 const ListarImagensExecutor = require("../../executores/imagem_executor/ListarImagensExecutor");
 const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
@@ -243,10 +242,9 @@ module.exports = {
 
     async excluirRegistroClassificacao(req, res) {
 
-        let resultado;
         try {
-            resultado = await ExcluirClassificacaoExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(resultado);
+            await ExcluirClassificacaoExecutor.Executar(req);
+            return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {
             if(erro.status) {
@@ -259,10 +257,9 @@ module.exports = {
 
     async excluirRegistroSegmentacao(req, res) {
 
-        let resultado;
         try {
-            resultado = await ExcluirSegmentacaoExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(resultado);
+            await ExcluirSegmentacaoExecutor.Executar(req);
+            return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {
             if(erro.status) {

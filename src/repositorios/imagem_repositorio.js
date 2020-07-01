@@ -210,22 +210,23 @@ module.exports = {
         return todasSegmentacoesNucleo;
     },
 
-    async listarClassificacoesCelula(id_imagem, id_usuario) {
+    async listarClassificacoesCelula(id_imagem) {
 
         let todasClassificacoes;
         const LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY = `
         SELECT
             celula.id AS id_celula,
             celula.tipo_analise_realizada,
-            celula.id_lesao,
+            lesao.id as id_lesao,
+            lesao.grade as lesao_grade,
             classificacao_celula.coord_centro_nucleo_x,
             classificacao_celula.coord_centro_nucleo_y,
             classificacao_celula.id AS id_classificacao
-        FROM usuario_base
-        JOIN classificacao_celula ON usuario_base.id = classificacao_celula.id_usuario
+        FROM imagem
+        JOIN classificacao_celula ON imagem.id_usuario = classificacao_celula.id_usuario
         JOIN celula ON celula.id = classificacao_celula.id_celula
-        JOIN imagem ON imagem.id = celula.id_imagem
-        WHERE usuario_base.id = ${id_usuario} AND imagem.id = ${id_imagem}`;
+        JOIN lesao ON lesao.id = celula.id_lesao
+        WHERE imagem.id = ${id_imagem}`;
 
         await db.query(
             LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY,
