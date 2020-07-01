@@ -1,5 +1,8 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:CadastrarImagemExecutor");
+
 const path = require("path");
 const Crypto = require("crypto");
 const FileSystem = require("fs");

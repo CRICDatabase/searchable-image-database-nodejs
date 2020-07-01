@@ -1,5 +1,8 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:DownloadBaseExecutor");
+
 const JSZip = require("jszip");
 const debug = require("debug")("database.cric:DownloadExecutor");
 const fs = require("fs");

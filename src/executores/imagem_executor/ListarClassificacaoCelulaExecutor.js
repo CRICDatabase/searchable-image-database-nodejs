@@ -1,5 +1,8 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:ListarClassificacaoCelulaExecutor");
+
 const HttpStatus = require("http-status-codes");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");

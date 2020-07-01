@@ -1,5 +1,8 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:CadastrarClassificacaoExecutor");
+
 const HttpStatus = require("http-status-codes");
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
