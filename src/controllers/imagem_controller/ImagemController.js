@@ -272,10 +272,17 @@ module.exports = {
 
     async atualizarDadosImagem(req, res) {
 
-        let resultado;
         try {
-            resultado = await AtualizarDadosImagemExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(resultado);
+            await AtualizarDadosImagemExecutor.Executar(req);
+            return res.status(HttpStatus.NO_CONTENT).end();
+        }
+        catch (erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
         }
         catch (erro) {
             if(erro.status) {
