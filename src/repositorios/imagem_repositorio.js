@@ -323,7 +323,7 @@ module.exports = {
         return ImagemModel.update(
             {
                 codigo_lamina: requisicao.codigo_lamina,
-                dt_aquisicao: requisicao.dt_aquisicao,
+                dt_aquisicao: requisicao.dt_aquisicao
             },
             {
                 where: {

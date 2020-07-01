@@ -12,8 +12,6 @@ const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const image_utils = require("../../utils/image");
 
-const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
-
 module.exports = {
 
     async Executar(req) {

@@ -1,9 +1,9 @@
 "use strict";
 
-const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+const ImagemRepositorio = require("../repositorios/imagem_repositorio");
 
 module.exports = {
-    async function atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes){
+    async atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes){
 
         let higher_grade = 0;
         let injury_id_with_higher_grade = 1;

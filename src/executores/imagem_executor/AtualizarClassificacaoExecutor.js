@@ -1,9 +1,11 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:AtualizarClassificacaoExecutor");
+
 const HttpStatus = require("http-status-codes");
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
-const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
@@ -22,7 +24,7 @@ module.exports = {
         let requisicao = {
             id_imagem: id_imagem,
             id_lesao_celula: req.body.id_lesao_celula,
-            id_celula: req.body.id_celula
+            id_celula: req.params.id_celula
         };
 
         const atualizarCelulaTask = ImagemRepositorio.atualizarCelula(requisicao);
@@ -38,15 +40,14 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!ValidarTipo.ehNumero(req.params.id_imagem)) {
+    if (!ValidarTipo.ehNumero(req.params.id_imagem) || !ValidarTipo.ehNumero(req.params.id_celula)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Route parameter invalid";
         throw ObjetoExcecao;
     }
 
-    if (!req.body.codigo_lamina || !req.body.dt_aquisicao || !ValidarTipo.ehNumero(req.body.id_lesao_celula) ||
-        !ValidarTipo.ehNumero(req.body.id_celula)) {
+    if (!ValidarTipo.ehNumero(req.body.id_lesao_celula)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Body request is invalid";
@@ -54,7 +55,7 @@ async function validarRequisicao(req) {
     }
 
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
-    const celulaTask = ImagemRepositorio.obterCelulaPorId(req.body.id_celula);
+    const celulaTask = ImagemRepositorio.obterCelulaPorId(req.params.id_celula);
     const [imagem, celula] = await Promise.all([imagemTask, celulaTask]);
 
     if (!imagem) {
@@ -69,5 +70,5 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    await ValidadorDeSessao.login_required(req, usuario.id);
+    await ValidadorDeSessao.login_required(req, imagem.id_usuario);
 }

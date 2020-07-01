@@ -1,14 +1,13 @@
 "use strict";
 
+const HttpStatus = require("http-status-codes");
+
+const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
+
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const HttpStatus = require("http-status-codes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
-const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
-const ListarClassificacaoCelulaExecutor = require("../imagem_executor/ListarClassificacaoCelulaExecutor");
+const ValidarTipo = require("../../utils/validacao_de_tipos");
 
 module.exports = {
 
@@ -19,7 +18,7 @@ module.exports = {
         let requisicao = {
             id_imagem: req.params.id_imagem,
             codigo_lamina: req.body.codigo_lamina,
-            dt_aquisicao: req.body.dt_aquisicao,
+            dt_aquisicao: req.body.dt_aquisicao
         };
 
         const atualizarImagemTask = ImagemRepositorio.atualizarImagem(requisicao);

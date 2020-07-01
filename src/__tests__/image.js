@@ -1407,6 +1407,11 @@ describe(
                         "token_autenticacao",
                         charles_token
                     )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(401);
@@ -1425,6 +1430,11 @@ describe(
                         "token_autenticacao",
                         admin_token
                     )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(200);
@@ -1434,6 +1444,72 @@ describe(
         );
     }
 );
+
+describe(
+    "PUT /api/v1/imagens/3/classificacao-celula/31",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3/classificacao-celula/31")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3/classificacao-celula/31")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3/classificacao-celula/31")
+                    .set(
+                        "token_autenticacao",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+    }
+);
+
 
 describe(
     "DELETE /api/v1/imagens/1/classificacao-celula/1",
@@ -1490,6 +1566,45 @@ describe(
 
     }
 );
+
+
+describe(
+    "DELETE /api/v1/imagens/3/classificacao-celula/31",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use DELETE method */
+                return request(app)
+                    .delete("/api/v1/imagens/3/classificacao-celula/31")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* User NOT use DELETE cell from image that they don't own */
+                return request(app)
+                    .delete("/api/v1/imagens/3/classificacao-celula/31")
+                    .set(
+                        "token_autenticacao",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(204);
+                        }
+                    );
+            }
+        );
+    }
+);
+
 
 describe(
     "DELETE /api/v1/imagens/1/segmentacao-celula/4",
