@@ -8,7 +8,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {Object} data - Data sent to server.
  * @param {string} data.codigo - Code used in the decision tree.
  * @param {string} data.nome - Name of the node in the decision tree.
- * @param {string} data.id_collection - Integer refering to CollectionModel.
+ * @param {number} data.id_collection - Integer refering to CollectionModel.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class DescricaoModel extends Model {

@@ -2,8 +2,6 @@
 
 const { Model, DataTypes }  = require("sequelize");
 
-//fazer tudo ainda
-
 /**
  * Represents a cell.
  * @constructor
@@ -13,7 +11,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {string} data.name - Name of the collection for a better organization.
  * @param {string} data.description - Describe the collection.
  * @param {boolean} data.public - Shows if it is public.
- * @param {boolean} data.owner - Integer referencing to UsuarioBaseModel.
+ * @param {number} data.owner - Integer referencing to UsuarioBaseModel.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class CollectionModel extends Model {
