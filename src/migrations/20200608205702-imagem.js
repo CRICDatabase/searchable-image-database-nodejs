@@ -12,12 +12,17 @@ module.exports = {
         )
         .then(
             ()=>{
-                return queryInterface.bulkUpdate('imagem', 
-                {
-                    id_collection: 1,
-                },{
-                    nome: '*',
-                }
+                return Promise.all(
+                    [
+                        queryInterface.sequelize.query(
+                        `
+                            UPDATE
+                                imagem
+                            SET
+                                id_collection = 1
+                        `
+                        )
+                    ]
                 );
             }
         )
