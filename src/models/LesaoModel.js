@@ -9,7 +9,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {string} data.nome - Name of the injury.
  * @param {string} data.detalhes - Details of the injury.
  * @param {number} data.grade - Integer indicating how severe is the injury. Higher number means more severe.
- * @param {string} data.id_collection - Integer refering to CollectionModel.
+ * @param {number} data.id_collection - Integer refering to CollectionModel.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class LesaoModel extends Model {
