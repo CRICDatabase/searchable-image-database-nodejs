@@ -51,7 +51,7 @@ module.exports = {
               {
                 name: 'Cervix',
                 description: 'This Image represent the cytopathologist of the uterine cervix using conventional smear (Pap smear). The Epithelial cell abonormalities (lesion) are adressed in six classes according to Bethesda System.',
-                slang: 'Cervix',
+                slang: 'cervix',
                 public: true,
                 owner: 1
               }
