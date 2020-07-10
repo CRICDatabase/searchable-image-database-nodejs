@@ -5,6 +5,7 @@
 module.exports = {
     authorization_seed: "CRIC_AUTHORIZATION_SEED",
     database: {
+        host: "CRIC_DB_HOST",
         username: "CRIC_DB_USERNAME",
         password: "CRIC_DB_PASSWORD",
     },
