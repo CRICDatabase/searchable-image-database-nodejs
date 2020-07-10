@@ -4,7 +4,6 @@
 const debug = require("debug")("database.cric:DownloadBaseExecutor");
 
 const JSZip = require("jszip");
-const debug = require("debug")("database.cric:DownloadExecutor");
 const fs = require("fs");
 const path = require("path");
 
