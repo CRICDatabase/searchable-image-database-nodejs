@@ -25,7 +25,7 @@ module.exports = {
         host: process.env.CRIC_DB_HOST,
         username: process.env.CRIC_DB_USERNAME,
         password: process.env.CRIC_DB_PASSWORD,
-        database: "cric",
+        database: process.env.CRIC_DB_DATABASE,
         dialect: "mysql",
         timezone: "-03:00",
         define: {
