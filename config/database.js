@@ -22,7 +22,7 @@ module.exports = {
         logging: false
   },
     production: {
-        host: "db",
+        host: process.env.CRIC_DB_HOST,
         username: process.env.CRIC_DB_USERNAME,
         password: process.env.CRIC_DB_PASSWORD,
         database: "cric",
