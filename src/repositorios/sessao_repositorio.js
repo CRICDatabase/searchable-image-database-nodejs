@@ -7,31 +7,31 @@ const db = require("../database");
 
 module.exports = {
 
-    async criarRegistroDeSessao(email, token_autenticacao) {
+    async criarRegistroDeSessao(email, Authorization) {
 
         return await SessaoUsuarioModel.create({
             email: email,
-            token_autenticacao: token_autenticacao
+            Authorization: Authorization
         });
     },
 
-    async validarTokenAutenticacao(token_autenticacao) {
+    async validarTokenAutenticacao(Authorization) {
 
         return SessaoUsuarioModel.findOne({
             where: {
-                token_autenticacao: token_autenticacao
+                Authorization: Authorization
             }
         });
     },
 
-    async anularRegistroDeSessao(token_autenticacao) {
+    async anularRegistroDeSessao(Authorization) {
 
         let resultado;
         const token_nulo = "--------------------------------------------------";
         const sqlQuery = `            
             UPDATE sessao_usuario
-            SET token_autenticacao = '${token_nulo}'
-            WHERE token_autenticacao = '${token_autenticacao}'`;
+            SET Authorization = '${token_nulo}'
+            WHERE Authorization = '${Authorization}'`;
 
         await db.query(
             sqlQuery,
@@ -46,11 +46,11 @@ module.exports = {
         return resultado;
     },
 
-    async excluirRegistroDeSessao(token_autenticacao) {
+    async excluirRegistroDeSessao(Authorization) {
 
         return await SessaoUsuarioModel.destroy({
             where: {
-                token_autenticacao: token_autenticacao
+                Authorization: Authorization
             }
         });
     }

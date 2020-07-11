@@ -12,13 +12,13 @@ module.exports = {
 
         validarRequisicao(req);
         await ValidadorDeSessao.login_required(req);
-        return await SessaoRepositorio.anularRegistroDeSessao(req.params.token_autenticacao);
+        return await SessaoRepositorio.anularRegistroDeSessao(req.params.Authorization);
     }
 };
 
 function validarRequisicao(req){
 
-    if(!req.params.token_autenticacao){
+    if(!req.params.Authorization){
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;

@@ -18,10 +18,10 @@ module.exports = {
         );
 
         if (usuario && usuario.dataValues.senha === senhaCriptografada) {
-            let token_autenticacao = GeradorIdUnico.gerarUuidv4();
+            let Authorization = GeradorIdUnico.gerarUuidv4();
             const sessaoCriada = await SessaoRepositorio.criarRegistroDeSessao(
                 usuario.email,
-                token_autenticacao
+                Authorization
             ).catch(err => {
                 ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
                 ObjetoExcecao.title = Excecao.ERRO_INTERNO;
@@ -32,7 +32,7 @@ module.exports = {
             if (sessaoCriada) {
                 return {
                     usuario: usuario,
-                    token_autenticacao: token_autenticacao
+                    Authorization: Authorization
                 };
             }
         }

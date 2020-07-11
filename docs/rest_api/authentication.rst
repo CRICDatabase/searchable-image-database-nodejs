@@ -14,7 +14,7 @@ These credentials are transported in plain text.
     :<json string senha: User's password
 
     :>json string usuario: User's details
-    :>json string token_autenticacao: User's authorization code
+    :>json string Authorization: User's authorization code
 
     :statuscode 200:
     :statuscode 400:

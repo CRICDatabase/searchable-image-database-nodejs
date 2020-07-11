@@ -17,7 +17,7 @@ beforeAll(async () => {
         )
         .then(
             (response) => {
-                admin_token = response.body.token_autenticacao;
+                admin_token = response.body.Authorization;
             }
         );
 
@@ -33,7 +33,7 @@ beforeAll(async () => {
         )
         .then(
             (response) => {
-                charles_token = response.body.token_autenticacao;
+                charles_token = response.body.Authorization;
             }
         );
 });
@@ -60,7 +60,7 @@ describe(
                 return request(app)
                     .get("/api/v1/usuarios")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .then(
@@ -93,7 +93,7 @@ describe(
                 return request(app)
                     .get("/api/v1/usuarios")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(

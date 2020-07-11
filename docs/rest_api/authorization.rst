@@ -11,7 +11,7 @@ the authorization code must be provided in as part of the header,
 for example::
 
     curl \
-        -H "token_autenticacao: YOUR_AUTHORIZATION_TOKEN" \
+        -H "Authorization: YOUR_AUTHORIZATION_TOKEN" \
         -X POST "http://api.database.cric.com.br/api/v1/end/point"
 
 

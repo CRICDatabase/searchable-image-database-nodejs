@@ -27,14 +27,14 @@ module.exports = {
 
         usuario.id = usuarioBase.dataValues.id;
         if (req.params.id_usuario == 0) {
-            if (req.headers.token_autenticacao === undefined) {
+            if (req.headers.Authorization === undefined) {
                 ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
                 ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-                ObjetoExcecao.detail = "token_autenticacao is missing in Request Headers.";
+                ObjetoExcecao.detail = "Authorization is missing in Request Headers.";
                 throw ObjetoExcecao;
             }
             validarLogin(req.body.email, senhaCriptografada, usuario);
-            return await obterRetorno(usuario, req.headers.token_autenticacao);
+            return await obterRetorno(usuario, req.headers.Authorization);
         }
 
         const resultado = await UsuarioRepositorio.obterUsuarioBasePorEmail(usuario.email);
@@ -72,10 +72,10 @@ async function obterRetorno(usuario, token_curinga_login) {
     const tokenCuringa = GeradorIdUnico.obterTokenCuringa();
     if (tokenCuringa == token_curinga_login) {
 
-        let token_autenticacao = GeradorIdUnico.gerarUuidv4();
+        let Authorization = GeradorIdUnico.gerarUuidv4();
         const sessaoCriada = await SessaoRepositorio.criarRegistroDeSessao(
             usuario.email,
-            token_autenticacao
+            Authorization
         ).catch(err => {
             ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
             ObjetoExcecao.title = Excecao.ERRO_INTERNO;
@@ -86,7 +86,7 @@ async function obterRetorno(usuario, token_curinga_login) {
         if (sessaoCriada) {
             const retorno = {
                 usuario: usuario,
-                token_autenticacao: token_autenticacao
+                Authorization: Authorization
             };
             return retorno;
         }

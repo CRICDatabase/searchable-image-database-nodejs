@@ -16,7 +16,7 @@ rotasUsuario.get("/api/v1/usuarios/:id_usuario?", UsuarioController.listarUsuari
 //Rotas PATCH - Despriorizada do MVC
 
 //Rotas DELETE - Despriorizada do MVC
-rotasUsuario.delete("/api/v1/usuarios/:token_autenticacao", UsuarioController.fazerLogOff);
+rotasUsuario.delete("/api/v1/usuarios/:Authorization", UsuarioController.fazerLogOff);
 
 //Exporta o módulo de rotas
 module.exports = rotasUsuario;

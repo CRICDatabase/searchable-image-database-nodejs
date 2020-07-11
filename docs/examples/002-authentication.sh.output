@@ -17,5 +17,5 @@
         "total_segmentacoes": 28,
         "total_classificacoes": 2
     },
-    "token_autenticacao": "69b2f757-541e-413d-8497-74b3696b183d"
+    "Authorization": "69b2f757-541e-413d-8497-74b3696b183d"
 }

@@ -7,7 +7,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @constructor
  * @param {Object} data - Data sent to server.
  * @param {string} data.email - Email address of user.
- * @param {string} data.token_autenticacao - Authorization token assigned to the email address.
+ * @param {string} data.Authorization - Authorization token assigned to the email address.
  * @returns {Promise} Promise instance of Sequelize object that was created.
  */
 class SessaoUsuarioModel extends Model {
@@ -17,7 +17,7 @@ class SessaoUsuarioModel extends Model {
 
         super.init({
             email: DataTypes.STRING,
-            token_autenticacao: DataTypes.STRING
+            Authorization: DataTypes.STRING
         },
         {
             defaultScope: {

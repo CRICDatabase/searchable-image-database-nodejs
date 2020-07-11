@@ -12,7 +12,7 @@ describe(
             () => {
                 return SessionDAO.criarRegistroDeSessao(
                     "jest@test.database.cric.com.br",
-                    "token_autenticacao"
+                    "Authorization"
                 )
                     .then(
                         data => {
@@ -21,7 +21,7 @@ describe(
                                     {
                                         id: expect.any(Number),
                                         email: "jest@test.database.cric.com.br",
-                                        token_autenticacao: "token_autenticacao"
+                                        Authorization: "Authorization"
                                     }
                                 );
                         }
@@ -33,7 +33,7 @@ describe(
             "validarTokenAutenticacao",
             () => {
                 return SessionDAO.validarTokenAutenticacao(
-                    "token_autenticacao"
+                    "Authorization"
                 )
                     .then(
                         data => {
@@ -42,7 +42,7 @@ describe(
                                     {
                                         id: expect.any(Number),
                                         email: "jest@test.database.cric.com.br",
-                                        token_autenticacao: "token_autenticacao"
+                                        Authorization: "Authorization"
                                     }
                                 );
                         }

@@ -15,7 +15,7 @@ module.exports = {
                     type: Sequelize.STRING(100),
                     allowNull: false
                 },
-                token_autenticacao: {
+                Authorization: {
                     type: Sequelize.STRING(100),
                     allowNull: false
                 },

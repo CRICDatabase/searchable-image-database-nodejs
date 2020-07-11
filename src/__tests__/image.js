@@ -17,7 +17,7 @@ beforeAll(async () => {
         )
         .then(
             (response) => {
-                admin_token = response.body.token_autenticacao;
+                admin_token = response.body.Authorization;
             }
         );
 
@@ -33,7 +33,7 @@ beforeAll(async () => {
         )
         .then(
             (response) => {
-                charles_token = response.body.token_autenticacao;
+                charles_token = response.body.Authorization;
             }
         );
 });
@@ -62,7 +62,7 @@ describe(
                 return request(app)
                     .post("/api/v1/imagens")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .attach("file", "src/__tests__/example0006.jpg")
@@ -101,7 +101,7 @@ describe(
                 return request(app)
                     .post("/api/v1/imagens")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .attach("files", "src/__tests__/example0006.jpg")
@@ -225,7 +225,7 @@ describe(
                 return request(app)
                     .post("/api/v1/imagens-descricoes/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .send(
@@ -265,7 +265,7 @@ describe(
                 return request(app)
                     .post("/api/v1/imagens-descricoes/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .send(
@@ -293,7 +293,7 @@ describe(
                 return request(app)
                     .post("/api/v1/imagens-descricoes/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .send(
@@ -373,7 +373,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/listar/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .then(
@@ -417,7 +417,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/listar/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -481,7 +481,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/listar/2")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .then(
@@ -525,7 +525,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/listar/2")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -611,7 +611,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .then(
@@ -650,7 +650,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -710,7 +710,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/3")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .then(
@@ -750,7 +750,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/3")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -822,7 +822,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens-descricoes")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -883,7 +883,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/contagem/lesoes/descricoes")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -953,7 +953,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/1/listar-classificacao-celula/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -1011,7 +1011,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/3/listar-classificacao-celula/2")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -1097,7 +1097,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/1/listar-segmentacao-celula/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -1164,7 +1164,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/3/listar-segmentacao-celula/2")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -1231,7 +1231,7 @@ describe(
                 return request(app)
                     .get("/api/v1/imagens/download")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -1269,7 +1269,7 @@ describe(
                 return request(app)
                     .put("/api/v1/imagens/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .send(
@@ -1293,7 +1293,7 @@ describe(
                 return request(app)
                     .put("/api/v1/imagens/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .send(
@@ -1336,7 +1336,7 @@ describe(
                 return request(app)
                     .put("/api/v1/imagens/3")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .send(
@@ -1360,7 +1360,7 @@ describe(
                 return request(app)
                     .put("/api/v1/imagens/3")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .send(
@@ -1404,7 +1404,7 @@ describe(
                 return request(app)
                     .put("/api/v1/imagens/1/classificacao-celula/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .send(
@@ -1427,7 +1427,7 @@ describe(
                 return request(app)
                     .put("/api/v1/imagens/1/classificacao-celula/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .send(
@@ -1469,7 +1469,7 @@ describe(
                 return request(app)
                     .put("/api/v1/imagens/3/classificacao-celula/31")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .send(
@@ -1492,7 +1492,7 @@ describe(
                 return request(app)
                     .put("/api/v1/imagens/3/classificacao-celula/31")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .send(
@@ -1535,7 +1535,7 @@ describe(
                 return request(app)
                     .delete("/api/v1/imagens/1/classificacao-celula/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .then(
@@ -1553,7 +1553,7 @@ describe(
                 return request(app)
                     .delete("/api/v1/imagens/1/classificacao-celula/1")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
@@ -1592,7 +1592,7 @@ describe(
                 return request(app)
                     .delete("/api/v1/imagens/3/classificacao-celula/31")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .then(
@@ -1630,7 +1630,7 @@ describe(
                 return request(app)
                     .delete("/api/v1/imagens/1/segmentacao-celula/4")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         charles_token
                     )
                     .then(
@@ -1648,7 +1648,7 @@ describe(
                 return request(app)
                     .delete("/api/v1/imagens/1/segmentacao-celula/4")
                     .set(
-                        "token_autenticacao",
+                        "Authorization",
                         admin_token
                     )
                     .then(
