@@ -27,14 +27,17 @@ module.exports = {
 
         usuario.id = usuarioBase.dataValues.id;
         if (req.params.id_usuario == 0) {
-            if (req.headers.Authorization === undefined) {
+            if (req.get("Authorization") === undefined) {
                 ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
                 ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
                 ObjetoExcecao.detail = "Authorization is missing in Request Headers.";
                 throw ObjetoExcecao;
             }
             validarLogin(req.body.email, senhaCriptografada, usuario);
-            return await obterRetorno(usuario, req.headers.Authorization);
+            return await obterRetorno(
+                usuario,
+                req.get("Authorization")
+            );
         }
 
         const resultado = await UsuarioRepositorio.obterUsuarioBasePorEmail(usuario.email);

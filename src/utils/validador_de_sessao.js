@@ -10,7 +10,7 @@ const UsuarioRepositorio = require("../repositorios/usuario_repositorio");
 module.exports = {
 
     async login_required(req, requested_user_id) {
-        if (!req.headers.hasOwnProperty("Authorization")) {
+        if (!req.get("Authorization")) {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = "Authorization is missing in header";
@@ -18,7 +18,7 @@ module.exports = {
         }
 
         let session = await SessaoRepositorio.validarTokenAutenticacao(
-            req.headers.Authorization
+            req.get("Authorization")
         );
         
         if (session === null) {        
@@ -51,7 +51,7 @@ module.exports = {
     },
 
     async admin_required(req) {
-        if (!req.headers.hasOwnProperty("Authorization")) {
+        if (!req.get("Authorization")) {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = "Authorization is missing in header";
@@ -59,7 +59,7 @@ module.exports = {
         }
         
         let session = await SessaoRepositorio.validarTokenAutenticacao(
-            req.headers.Authorization
+            req.get("Authorization")
         );
         
         if (session === null) {        
