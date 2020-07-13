@@ -10,6 +10,7 @@ const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 
+const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 module.exports = {
@@ -23,7 +24,7 @@ module.exports = {
             ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
             throw ObjetoExcecao;
         }
-        return await prepararRetorno(imagem); 
+        return await prepararRetorno(imagem);
     }
 };
 
@@ -59,7 +60,12 @@ async function prepararRetorno(imagem) {
         resultado.id_lesao
     );
 
+    resultado.usuario = await UsuarioRepositorio.obterUsuarioBasePorId(
+        resultado.id_usuario
+    );
+
     delete resultado.id_lesao;
+    delete resultado.id_usuario;
 
     return resultado;
 }
