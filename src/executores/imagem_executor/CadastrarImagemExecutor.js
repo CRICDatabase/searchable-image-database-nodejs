@@ -14,6 +14,7 @@ const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const FonteAquisicao = require("../../utils/enumeracoes/fonte_aquisicao");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
@@ -33,8 +34,8 @@ module.exports = {
             throw ObjetoExcecao;
         }
 
-        await converterSalvarArquivoAtualizarRegistroNoBanco(req, imagemCadastrada.dataValues);    
-        return imagemCadastrada;
+        await converterSalvarArquivoAtualizarRegistroNoBanco(req, imagemCadastrada.dataValues);
+        return await prepararRetorno(imagemCadastrada);
     }
 };
 
@@ -248,6 +249,26 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
         let imagemRedimensionada = imagemLida.scaleToFit(256, 256);
         imagemRedimensionada.write(diretorioUploadThumbnail);
     }
+
+    return resultado;
+}
+
+async function prepararRetorno(imagem) {
+
+    let resultado = {
+        ...imagem.dataValues
+    };
+
+    resultado.lesao = await ImagemRepositorio.obterLesaoPorId(
+        resultado.id_lesao
+    );
+
+    resultado.usuario = await UsuarioRepositorio.obterUsuarioBasePorId(
+        resultado.id_usuario
+    );
+
+    delete resultado.id_lesao;
+    delete resultado.id_usuario;
 
     return resultado;
 }
