@@ -19,7 +19,6 @@ module.exports = {
 
     async Executar(req) {
 
-        await ValidadorDeSessao.login_required(req);
         await validarRequisicao(req);
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);
@@ -88,6 +87,8 @@ async function validarRequisicao(req) {
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
+
+    await ValidadorDeSessao.login_required(req, imagem.id_usuario);
 
     if (imagem.id_usuario !== usuario.id) {
         ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
