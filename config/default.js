@@ -29,7 +29,7 @@ module.exports = {
             idle: 30000,
             acquire: 60000
         },
-        logging: false
+        logging: console.log
     },
     nodemailer: {
         host: 'smtp.ethereal.email',
