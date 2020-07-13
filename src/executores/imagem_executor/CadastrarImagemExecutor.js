@@ -11,7 +11,6 @@ const HttpStatus = require("http-status-codes");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const FonteAquisicao = require("../../utils/enumeracoes/fonte_aquisicao");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
