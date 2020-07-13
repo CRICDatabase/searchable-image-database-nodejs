@@ -78,7 +78,6 @@ async function prepararCadastroNoBanco(req) {
         excluida: excluida,
         classificacao_aprovada: classificacao_aprovada,
         dt_aquisicao: req.body.dt_aquisicao,
-        fonte_aquisicao: 0,  /* FIXME must be 1 for some users */
         caminho_imagem: caminho_imagem,
         id_usuario: req.body.id_usuario,
         id_lesao: req.body.id_lesao,
@@ -101,7 +100,7 @@ async function cadastrarDadosEArquivoDeImagem(req) {
     
     let erroAoSalvar;
     const imagem = await prepararCadastroNoBanco(req);
-    const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? "base_interna" : "base_externa";
+    const destino = "png";
     const caminho_base_diretorio = path.join(
         __dirname,
         "..",
@@ -172,7 +171,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
 
     let imagemLida;
     let imagemAtualizacao;
-    const destino = imagem.fonte_aquisicao == FonteAquisicao.FONTE_AQUISICAO_INTERNA ? "base_interna" : "base_externa";
+    const destino = "png";
 
     const filename_parts = imagem.nome.split(".");
     const filename_extension = filename_parts[filename_parts.length - 1];
@@ -191,7 +190,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
             "src",
             "assets",
             "imagens",
-            "base_original",
+            "raw",
             req.files.file.name
         );
         const diretorioUploadFinal = path.join(
@@ -207,7 +206,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
             "src",
             "assets",
             "imagens",
-            "base_thumbnail",
+            "thumbnail",
             req.files.file.name.replace(filename_extension, "png")
         );
 
@@ -235,7 +234,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
             "src",
             "assets",
             "imagens",
-            "base_thumbnail",
+            "thumbnail",
             req.files.file.name
         );
 

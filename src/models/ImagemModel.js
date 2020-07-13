@@ -12,7 +12,6 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {number} data.excluida - 1 if image was removed and 0 otherwise.
  * @param {number} data.classificacao_aprovada - 1 if image was approved and 0 otherwise.
  * @param {string} data.dt_aquisicao - date when the image was scanned.
- * @param {number} data.fonte_aquisicao - 1 if collected by UFOP and 0 otherwise.
  * @param {number} data.altura - height of the image in number of pixels.
  * @param {number} data.largura - width of the image in number of pixels.
  * @param {number} data.id_usuario - Integer referencing UsuarioBaseModel.
@@ -31,7 +30,6 @@ class ImagemModel extends Model {
             excluida: DataTypes.INTEGER,
             classificacao_aprovada: DataTypes.INTEGER,
             dt_aquisicao: DataTypes.DATE,
-            fonte_aquisicao: DataTypes.INTEGER,
             caminho_imagem: DataTypes.STRING,
             altura: DataTypes.INTEGER,
             largura: DataTypes.INTEGER
