@@ -24,7 +24,6 @@ module.exports = {
             excluida: imagem.excluida,
             classificacao_aprovada: 0,  // Every new image need is waiting approval
             dt_aquisicao: imagem.dt_aquisicao,
-            fonte_aquisicao: imagem.fonte_aquisicao,
             caminho_imagem: imagem.caminho_imagem,
             id_usuario: imagem.id_usuario,
             id_lesao: 1,  // Every new image is consider "unkown"
