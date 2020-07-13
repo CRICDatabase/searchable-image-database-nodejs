@@ -1,5 +1,8 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:validador_de_sessao");
+
 const HttpStatus = require("http-status-codes");
 
 const Excecao = require("./enumeracoes/mensagem_excecoes");
@@ -10,6 +13,13 @@ const UsuarioRepositorio = require("../repositorios/usuario_repositorio");
 module.exports = {
 
     async login_required(req, requested_user_id) {
+        if (typeof(requested_user_id) !== "number") {
+            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            ObjetoExcecao.detail = "User id must be a number";
+            throw ObjetoExcecao;
+        }
+
         if (!req.get("Authorization")) {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
@@ -42,7 +52,11 @@ module.exports = {
             ObjetoExcecao.detail = "Token doesn't belong to active user";
             throw ObjetoExcecao;
         }
-        if (requested_user_id && !(user.dataValues.admin === true || requested_user_id === user.dataValues.id)) {
+        if (!user.dataValues.admin && requested_user_id && requested_user_id !== user.dataValues.id) {
+            debug(`requested_user_id: ${requested_user_id}`);
+            debug(`user.dataValues.id: ${user.dataValues.id}`);
+            debug(`requested_user_id !== user.dataValues.id: ${requested_user_id !== user.dataValues.id}}`);
+            debug(`user.dataValues.admin: ${user.dataValues.admin}`);
             ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
             ObjetoExcecao.detail = "Token doesn't belong to required user";

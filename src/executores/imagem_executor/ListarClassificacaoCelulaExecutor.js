@@ -30,19 +30,21 @@ async function validarRequisicao(req) {
     let session_is_valid = false;
 
     if (!ValidarTipo.ehNumero(req.params.id_usuario) || !ValidarTipo.ehNumero(req.params.id_imagem)) {
-
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
     }
 
-    if (req.params.id_usuario > 1) {
-        await ValidadorDeSessao.login_required(req, req.params.id_usuario);
+    const id_usuario = Number(req.params.id_usuario);
+    const id_imagem = Number(req.params.id_imagem);
+
+    if (id_usuario > 1) {
+        await ValidadorDeSessao.login_required(req, id_usuario);
         session_is_valid = true;
     }
 
-    const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
+    const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(id_usuario);
+    const imagemTask = ImagemRepositorio.obterImagemPorId(id_imagem);
     const [usuario, imagem] = await Promise.all([usuarioTask, imagemTask]);
 
     if (!usuario) {
