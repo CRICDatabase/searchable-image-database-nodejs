@@ -104,7 +104,6 @@ async function prepararRetornoSegmentacao(req, segmentacaoCitoplasma, segmentaca
             id_celula = todasCelulas[i].id_celula;
             celulasSegmentadas.push({
                 id: id_celula,
-                tipo_analise_realizada: todasCelulas[i].tipo_analise_realizada,
                 descricao: await obterDescricao(todasCelulas[i].id_descricao),
                 segmentos_citoplasma: listarSegmentosCitoplasmaPorCelula(req, id_celula, segmentacaoCitoplasma),
                 segmentos_nucleo: listarSegmentosNucleoPorCelula(req, id_celula, segmentacaoNucleo)

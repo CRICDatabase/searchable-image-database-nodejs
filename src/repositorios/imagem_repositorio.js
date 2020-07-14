@@ -10,7 +10,6 @@ const SegmentacaoCitoplasmaModel = require("../models/SegmentacaoCitoplasmaModel
 const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
 const ClassificacaoModel = require("../models/ClassificacaoCelulaModel");
 const Configuracao = require("../utils/enumeracoes/configuracao_lesao_descricao");
-const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
 const db = require("../database");
 
 module.exports = {
@@ -96,9 +95,7 @@ module.exports = {
     async cadastrarCelulaSegmentada(id_imagem, id_descricao) {
 
         return CelulaModel.create({
-            tipo_analise_realizada: TipoAnalise.SEGMENTACAO,
             id_imagem: id_imagem,
-            id_lesao: Configuracao.LESAO_NAO_APLICAVEL,
             id_descricao: id_descricao
         });
     },
@@ -147,7 +144,6 @@ module.exports = {
         const LISTAR_SEGMENTACAO_CITOPLASMA_SQL_QUERY = `
         SELECT
             celula.id AS id_celula,
-            celula.tipo_analise_realizada,
             celula.id_descricao,
             segmentacao_citoplasma.coord_x,
             segmentacao_citoplasma.coord_y
@@ -177,7 +173,6 @@ module.exports = {
         const LISTAR_SEGMENTACAO_NUCLEO_SQL_QUERY = `
         SELECT
             celula.id AS id_celula,
-            celula.tipo_analise_realizada,
             celula.id_descricao,
             segmentacao_nucleo.coord_x,
             segmentacao_nucleo.coord_y
