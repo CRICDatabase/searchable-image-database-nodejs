@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  title: cric
+  version: '1.0'
+servers:
+  - url: 'https://api.database.cric.com.br/api/v1'
+paths:
+  /usuarios:
+    post:
+      summary: ''
+      operationId: post-usuarios
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                primeiro_nome:
+                  type: string
+                ultimo_nome:
+                  type: string
+                email:
+                  type: string
+                senha:
+                  type: string
+  '/usuarios/{id_usuario}':
+    parameters:
+      - schema:
+          type: number
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+      operationId: get-usuarios-id_usuario
+  /login:
+    post:
+      summary: ''
+      operationId: login
+      responses:
+        '200':
+          description: OK
+      description: ''
+  /reset-password:
+    post:
+      summary: ''
+      operationId: post-reset-password
+      responses:
+        '200':
+          description: OK
+  '/usuarios/{Authorization}':
+    parameters:
+      - schema:
+          type: string
+        name: Authorization
+        in: path
+        required: true
+    delete:
+      summary: ''
+      operationId: delete-usuarios-Authorization
+      responses:
+        '200':
+          description: OK
+components:
+  schemas: {}
+  securitySchemes:
+    authorization:
+      name: API Key
+      type: apiKey
+      in: header
+security:
+  - authorization: []
