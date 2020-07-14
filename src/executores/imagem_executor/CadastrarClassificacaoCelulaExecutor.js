@@ -32,16 +32,15 @@ module.exports = {
             larguraOriginalImg: req.body.larguraOriginalImg
         };
 
-        const celulaCadastrada = await ImagemRepositorio.cadastrarCelulaClassificada(id_imagem, req.body.id_lesao);
-        if (!celulaCadastrada) {
-            ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
-            ObjetoExcecao.title = Excecao.ERRO_AO_CADASTRAR_CELULA;
-            throw ObjetoExcecao;   
-        }
-        
         let resultado = ConverterPonto.converterPontoParaArmazenarNoBanco(parametros);
         const classificacaoCadastrada = 
-        await ImagemRepositorio.cadastrarClassificacaoCelula(id_usuario, celulaCadastrada.dataValues.id, resultado.coord_x, resultado.coord_y);
+              await ImagemRepositorio.cadastrarClassificacaoCelula(
+                  id_usuario,
+                  id_imagem,
+                  req.body.id_lesao,
+                  resultado.coord_x,
+                  resultado.coord_y
+              );
 
         if (classificacaoCadastrada) {
             const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);

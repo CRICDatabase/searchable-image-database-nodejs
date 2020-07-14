@@ -4,7 +4,6 @@ module.exports = {
     fixtures:  [
         {
             id: 1,
-            tipo_analise_realizada: "CLASSIFICACAO",
             id_imagem: 1,
             id_lesao: 3,
             id_descricao: 1,
@@ -13,7 +12,6 @@ module.exports = {
         },
         {
             id: 2,
-            tipo_analise_realizada: "CLASSIFICACAO",
             id_imagem: 1,
             id_lesao: 3,
             id_descricao: 1,
@@ -22,7 +20,6 @@ module.exports = {
         },
         {
             id: 3,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 1,
             id_lesao: 1,
             id_descricao: 18,
@@ -31,7 +28,6 @@ module.exports = {
         },
         {
             id: 4,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 1,
             id_lesao: 1,
             id_descricao: 73,
@@ -40,7 +36,6 @@ module.exports = {
         },
         {
             id: 5,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 1,
             id_lesao: 1,
             id_descricao: 73,
@@ -49,7 +44,6 @@ module.exports = {
         },
         {
             id: 6,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 1,
             id_lesao: 1,
             id_descricao: 73,
@@ -58,7 +52,6 @@ module.exports = {
         },
         {
             id: 7,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 18,
@@ -67,7 +60,6 @@ module.exports = {
         },
         {
             id: 8,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 18,
@@ -76,7 +68,6 @@ module.exports = {
         },
         {
             id: 9,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 18,
@@ -85,7 +76,6 @@ module.exports = {
         },
         {
             id: 10,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 18,
@@ -94,7 +84,6 @@ module.exports = {
         },
         {
             id: 11,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 18,
@@ -103,7 +92,6 @@ module.exports = {
         },
         {
             id: 12,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 18,
@@ -112,7 +100,6 @@ module.exports = {
         },
         {
             id: 13,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 18,
@@ -121,7 +108,6 @@ module.exports = {
         },
         {
             id: 14,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 45,
@@ -130,7 +116,6 @@ module.exports = {
         },
         {
             id: 15,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 45,
@@ -139,7 +124,6 @@ module.exports = {
         },
         {
             id: 16,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 45,
@@ -148,7 +132,6 @@ module.exports = {
         },
         {
             id: 17,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 45,
@@ -157,7 +140,6 @@ module.exports = {
         },
         {
             id: 18,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 45,
@@ -166,7 +148,6 @@ module.exports = {
         },
         {
             id: 19,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 45,
@@ -175,7 +156,6 @@ module.exports = {
         },
         {
             id: 20,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 45,
@@ -184,7 +164,6 @@ module.exports = {
         },
         {
             id: 21,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 2,
             id_lesao: 1,
             id_descricao: 45,
@@ -193,7 +172,6 @@ module.exports = {
         },
         {
             id: 22,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 18,
@@ -202,7 +180,6 @@ module.exports = {
         },
         {
             id: 23,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 18,
@@ -211,7 +188,6 @@ module.exports = {
         },
         {
             id: 24,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 18,
@@ -220,7 +196,6 @@ module.exports = {
         },
         {
             id: 25,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 18,
@@ -229,7 +204,6 @@ module.exports = {
         },
         {
             id: 26,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 18,
@@ -238,7 +212,6 @@ module.exports = {
         },
         {
             id: 27,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 18,
@@ -247,7 +220,6 @@ module.exports = {
         },
         {
             id: 28,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 18,
@@ -256,7 +228,6 @@ module.exports = {
         },
         {
             id: 29,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 49,
@@ -265,7 +236,6 @@ module.exports = {
         },
         {
             id: 30,
-            tipo_analise_realizada: "SEGMENTACAO",
             id_imagem: 3,
             id_lesao: 1,
             id_descricao: 49,
@@ -274,7 +244,6 @@ module.exports = {
         },
         {
             id: 31,
-            tipo_analise_realizada: "CLASSIFICACAO",
             id_imagem: 3,
             id_lesao: 3,
             id_descricao: 1,

@@ -8,6 +8,7 @@ const { Model, DataTypes }  = require("sequelize");
  * @param {Object} data - Data sent to server.
  * @param {number} data.coord_centro_nucleo_x - Integer of coordinate x of the pixel that represents the cell.
  * @param {number} data.coord_centro_nucleo_y - Integer of coordinate y of the pixel that represents the cell.
+ * @param {number} data.id_lesao - Integer referencing LesaoModel that identify the injury the cell has.
  * @param {number} data.id_usuario - Integer referencing UsuarioBaseModel that create the classification.
  * @param {number} data.id_imagem - Integer referencing ImagemModel where the classification belongs.
  * @returns {Promise} Promise instance of Sequelize object that was created.
@@ -41,9 +42,8 @@ class ClassificacaoCelulaModel extends Model {
             foreignKey: "id_usuario", as: "fk_classificacao_celula_usuario_base"
         });
 
-        //verificar se vai continuar dando erro aqui
-        this.belongsTo(models.CelulaModel, {
-            foreignKey: "id_celula", as: "fk_classificacao_celula_celula"
+        this.belongsTo(models.LesaoModel, {
+            foreignKey: "id_lesao", as: "fk_celula_lesao"
         });
     }
 }

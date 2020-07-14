@@ -10,7 +10,6 @@ const SegmentacaoCitoplasmaModel = require("../models/SegmentacaoCitoplasmaModel
 const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
 const ClassificacaoModel = require("../models/ClassificacaoCelulaModel");
 const Configuracao = require("../utils/enumeracoes/configuracao_lesao_descricao");
-const TipoAnalise = require("../utils/enumeracoes/tipo_analise_realizada");
 const db = require("../database");
 
 module.exports = {
@@ -82,33 +81,22 @@ module.exports = {
         });
     },
 
-    async cadastrarClassificacaoCelula(id_usuario, id_celula, coord_x, coord_y) {
+    async cadastrarClassificacaoCelula(id_usuario, id_imagem, id_lesao, coord_x, coord_y) {
 
         return ClassificacaoModel.create({
             coord_centro_nucleo_x: coord_x,
             coord_centro_nucleo_y: coord_y,
-            id_celula: id_celula,
-            id_usuario: id_usuario
+            id_usuario: id_usuario,
+            id_imagem: id_imagem,
+            id_lesao: id_lesao
         });
     },
 
     async cadastrarCelulaSegmentada(id_imagem, id_descricao) {
 
         return CelulaModel.create({
-            tipo_analise_realizada: TipoAnalise.SEGMENTACAO,
             id_imagem: id_imagem,
-            id_lesao: Configuracao.LESAO_NAO_APLICAVEL,
             id_descricao: id_descricao
-        });
-    },
-
-    async cadastrarCelulaClassificada(id_imagem, id_lesao) {
-
-        return CelulaModel.create({
-            tipo_analise_realizada: TipoAnalise.CLASSIFICACAO,
-            id_imagem: id_imagem,
-            id_lesao: id_lesao,
-            id_descricao: Configuracao.DESCRICAO_NAO_APLICAVEL
         });
     },
 
@@ -156,7 +144,6 @@ module.exports = {
         const LISTAR_SEGMENTACAO_CITOPLASMA_SQL_QUERY = `
         SELECT
             celula.id AS id_celula,
-            celula.tipo_analise_realizada,
             celula.id_descricao,
             segmentacao_citoplasma.coord_x,
             segmentacao_citoplasma.coord_y
@@ -186,7 +173,6 @@ module.exports = {
         const LISTAR_SEGMENTACAO_NUCLEO_SQL_QUERY = `
         SELECT
             celula.id AS id_celula,
-            celula.tipo_analise_realizada,
             celula.id_descricao,
             segmentacao_nucleo.coord_x,
             segmentacao_nucleo.coord_y
@@ -210,34 +196,11 @@ module.exports = {
     },
 
     async listarClassificacoesCelula(id_imagem) {
-
-        let todasClassificacoes;
-        const LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY = `
-        SELECT
-            celula.id AS id_celula,
-            celula.tipo_analise_realizada,
-            lesao.id as id_lesao,
-            lesao.grade as lesao_grade,
-            classificacao_celula.coord_centro_nucleo_x,
-            classificacao_celula.coord_centro_nucleo_y,
-            classificacao_celula.id AS id_classificacao
-        FROM imagem
-        JOIN classificacao_celula ON imagem.id_usuario = classificacao_celula.id_usuario
-        JOIN celula ON celula.id = classificacao_celula.id_celula
-        JOIN lesao ON lesao.id = celula.id_lesao
-        WHERE imagem.id = ${id_imagem}`;
-
-        await db.query(
-            LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY,
-            {
-                type: Sequelize.QueryTypes.SELECT
+        return ClassificacaoModel.findAll({
+            where: {
+                id_imagem: id_imagem
             }
-        )
-            .then((results) => {
-                todasClassificacoes = results;
-            });
-
-        return todasClassificacoes;
+        });
     },
 
     async obterDescricaoPorId(id_descricao) {
@@ -289,7 +252,7 @@ module.exports = {
     async excluirClassificacaoDeCelula(id_celula) {
         return ClassificacaoModel.destroy({
             where: {
-                id_celula: {
+                id: {
                     [Sequelize.Op.eq]: id_celula
                 }
             }
@@ -364,14 +327,11 @@ module.exports = {
     },
 
     async obterTotalClassificacoesImagem(id_imagem) {
-        return CelulaModel.count({
+        return ClassificacaoModel.count({
             where: {
                 id_imagem: {
                     [Sequelize.Op.eq]: id_imagem
                 },
-                tipo_analise_realizada: {
-                    [Sequelize.Op.eq]: TipoAnalise.CLASSIFICACAO
-                }
             }
         });
     },
@@ -382,9 +342,6 @@ module.exports = {
                 id_imagem: {
                     [Sequelize.Op.eq]: id_imagem
                 },
-                tipo_analise_realizada: {
-                    [Sequelize.Op.eq]: TipoAnalise.SEGMENTACAO
-                }
             }
         });
     }
