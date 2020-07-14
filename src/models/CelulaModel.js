@@ -16,7 +16,6 @@ class CelulaModel extends Model {
     static init(connection) {
 
         super.init({
-            tipo_analise_realizada: DataTypes.STRING
         },
         {
             defaultScope: {
