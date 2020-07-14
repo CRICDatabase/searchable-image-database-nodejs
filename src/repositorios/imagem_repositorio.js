@@ -332,14 +332,11 @@ module.exports = {
     },
 
     async obterTotalClassificacoesImagem(id_imagem) {
-        return CelulaModel.count({
+        return ClassificacaoModel.count({
             where: {
                 id_imagem: {
                     [Sequelize.Op.eq]: id_imagem
                 },
-                tipo_analise_realizada: {
-                    [Sequelize.Op.eq]: TipoAnalise.CLASSIFICACAO
-                }
             }
         });
     },
@@ -350,9 +347,6 @@ module.exports = {
                 id_imagem: {
                     [Sequelize.Op.eq]: id_imagem
                 },
-                tipo_analise_realizada: {
-                    [Sequelize.Op.eq]: TipoAnalise.SEGMENTACAO
-                }
             }
         });
     }
