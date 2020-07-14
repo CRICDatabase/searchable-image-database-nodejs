@@ -2,6 +2,12 @@ openapi: 3.0.0
 info:
   title: cric
   version: '1.0'
+  license:
+    name: GNU Affero General Public License
+    url: 'https://www.gnu.org/licenses/agpl-3.0.en.html'
+  contact:
+    url: 'https://database.cric.com.br'
+    email: cric@ufop.edu.br
 servers:
   - url: 'https://api.database.cric.com.br/api/v1'
 paths:
@@ -42,6 +48,18 @@ paths:
         '200':
           description: OK
       operationId: get-usuarios-id_usuario
+    put:
+      summary: ''
+      operationId: put-usuarios-id_usuario
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: ''
+      operationId: delete-usuarios-id_usuario
+      responses:
+        '200':
+          description: OK
   /login:
     post:
       summary: ''
@@ -50,6 +68,15 @@ paths:
         '200':
           description: OK
       description: ''
+    delete:
+      summary: ''
+      operationId: delete-login
+      responses:
+        '200':
+          description: OK
+      security:
+        - API Key Authorization: []
+      parameters: []
   /reset-password:
     post:
       summary: ''
@@ -57,25 +84,144 @@ paths:
       responses:
         '200':
           description: OK
-  '/usuarios/{Authorization}':
-    parameters:
-      - schema:
-          type: string
-        name: Authorization
-        in: path
-        required: true
-    delete:
-      summary: ''
-      operationId: delete-usuarios-Authorization
-      responses:
-        '200':
-          description: OK
 components:
-  schemas: {}
+  schemas:
+    UsuarioBaseModel:
+      title: UsuarioBaseModel
+      type: object
+      properties:
+        id:
+          type: string
+        primeiro_nome:
+          type: string
+        ultimo_nome:
+          type: string
+        email:
+          type: string
+        senha:
+          type: string
+        ativo:
+          type: boolean
+        admin:
+          type: boolean
+    CelulaModel:
+      title: CelulaModel
+      type: object
+      properties:
+        id:
+          type: string
+        tipo_analise_realizada:
+          type: string
+        id_imagem:
+          $ref: ./imagem.v1.yaml
+        id_lesao:
+          $ref: ./lesao.v1.yaml
+        id_descricao:
+          $ref: ./descricao.v1.yaml
+    ClassificacaoCelulaModel:
+      title: ClassificacaoCelulaModel
+      type: object
+      properties:
+        id:
+          type: string
+        coord_centro_nucleo_x:
+          type: integer
+        coord_centro_nucleo_y:
+          type: integer
+        id_usuario:
+          $ref: ./usuario_base.v1.yaml
+        id_celula:
+          $ref: ./celula.v1.yaml
+    DescricaoModel:
+      title: DescricaoModel
+      type: object
+      properties:
+        id:
+          type: string
+        codigo:
+          type: integer
+        nome:
+          type: string
+    ImagemModel:
+      title: ImagemModel
+      type: object
+      properties:
+        id:
+          type: string
+        nome:
+          type: string
+        doi:
+          type: string
+        codigo_lamina:
+          type: string
+        excluida:
+          type: boolean
+        classificacao_aprovada:
+          type: boolean
+        dt_aquisicao:
+          type: string
+        caminho_imagem:
+          type: string
+        altura:
+          type: integer
+        largura:
+          type: integer
+        id_usuario:
+          $ref: ./usuario_base.v1.yaml
+        id_lesao:
+          $ref: ./lesao.v1.yaml
+    LesaoModel:
+      title: LesaoModel
+      type: object
+      properties:
+        id:
+          type: string
+        nome:
+          type: string
+        detalhes:
+          type: string
+        grade:
+          type: integer
+    SegmentacaoCitoplasmaModel:
+      title: SegmentacaoCitoplasmaModel
+      type: object
+      properties:
+        id:
+          type: string
+        coord_x:
+          type: integer
+        coord_y:
+          type: integer
+        id_usuario:
+          $ref: ./usuario_base.v1.yaml
+        id_celula:
+          $ref: ./celula.v1.yaml
+    SegmentacaoNucleoModel:
+      title: SegmentacaoNucleoModel
+      type: object
+      properties:
+        id:
+          type: string
+        coord_x:
+          type: integer
+        coord_y:
+          type: integer
+        id_usuario:
+          $ref: ./usuario_base.v1.yaml
+        id_celula:
+          $ref: ./celula.v1.yaml
+    SessaoUsuarioModel:
+      title: SessaoUsuarioModel
+      type: object
+      properties:
+        id:
+          type: string
+        email:
+          type: string
+        token_autenticacao:
+          type: string
   securitySchemes:
-    authorization:
-      name: API Key
+    API Key Authorization:
+      name: authorization
       type: apiKey
       in: header
-security:
-  - authorization: []

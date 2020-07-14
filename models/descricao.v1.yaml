@@ -1,9 +1,0 @@
-title: descricao
-type: object
-properties:
-  id:
-    type: string
-  codigo:
-    type: integer
-  nome:
-    type: string
