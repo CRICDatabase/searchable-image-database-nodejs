@@ -111,10 +111,36 @@ paths:
       summary: Create New Image
       operationId: post-imagens
       responses:
-        '200':
-          description: OK
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ImagemModel'
       security:
         - API Key Authorization: []
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+                id_usuario:
+                  type: integer
+                codigo_lamina:
+                  type: string
+                dt_aquisicao:
+                  type: string
+                  format: date
+              required:
+                - file
+                - id_usuario
+                - codigo_lamina
+                - dt_aquisicao
+        description: ''
   '/imagens/{id_imagem}':
     parameters:
       - schema:
@@ -290,14 +316,68 @@ paths:
       summary: ''
       operationId: post-descricoes
       responses:
-        '200':
-          description: OK
+        '201':
+          description: Created
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+      security:
+        - API Key Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                codigo:
+                  type: integer
+                nome:
+                  type: string
+              required:
+                - codigo
+                - nome
+            examples:
+              Epithelia:
+                value:
+                  codigo: 1
+                  nome: Epithelia
     get:
       summary: ''
       operationId: get-descricoes
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    codigo:
+                      type: integer
+                    nome:
+                      type: string
+              examples:
+                Level 1:
+                  value:
+                    - id: 1
+                      codigo: 0
+                      nome: Not Applied
+                    - id: 2
+                      codigo: 1
+                      nome: Epithelia
+                    - id: 3
+                      codigo: 2
+                      nome: Flora
+                    - id: 4
+                      codigo: 3
+                      nome: Others
+        '201':
+          description: Created
   '/descricoes/{id_descricoes}':
     parameters:
       - schema:
@@ -311,6 +391,27 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  codigo:
+                    type: integer
+                  nome:
+                    type: string
+              examples:
+                Epithelia:
+                  value:
+                    id: 2
+                    codigo: 1
+                    nome: Epithelia
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
       operationId: get-descricoes-id_descricoes
     put:
       summary: ''
@@ -318,12 +419,32 @@ paths:
       responses:
         '200':
           description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+      security:
+        - API Key Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                codigo:
+                  type: integer
+                nome:
+                  type: string
     delete:
       summary: ''
       operationId: delete-descricoes-id_descricoes
       responses:
         '200':
           description: OK
+        '401':
+          description: Unauthorized
+      security:
+        - API Key Authorization: []
   '/lesoes/{id_lesoes}':
     parameters:
       - schema:
