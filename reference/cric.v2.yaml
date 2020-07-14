@@ -98,16 +98,17 @@ paths:
       security:
         - API Key Authorization: []
       parameters: []
-  /reset-password:
+  /login/reset:
     post:
       summary: ''
       operationId: post-reset-password
       responses:
         '200':
           description: OK
+    parameters: []
   /imagens:
     post:
-      summary: ''
+      summary: Create New Image
       operationId: post-imagens
       responses:
         '200':
@@ -379,7 +380,7 @@ paths:
           description: OK
       security:
         - API Key Authorization: []
-  '/imagens/{id_imagem}/classificacao-celula':
+  '/imagens/{id_imagem}/classificacoes':
     parameters:
       - schema:
           type: string
@@ -392,7 +393,13 @@ paths:
       responses:
         '200':
           description: OK
-  '/imagens/{id_imagem}/classificacao-celula/{id_celula}':
+    get:
+      summary: ''
+      operationId: get-imagens-id_imagem-classificacao
+      responses:
+        '200':
+          description: OK
+  '/imagens/{id_imagem}/classificacoes/{id_celula}':
     parameters:
       - schema:
           type: string
@@ -421,7 +428,7 @@ paths:
       responses:
         '200':
           description: OK
-  '/imagens/{id_imagem}/segmentacao-celula/{id_celula}':
+  '/imagens/{id_imagem}/segmentacoes/{id_celula}':
     parameters:
       - schema:
           type: string
@@ -450,7 +457,7 @@ paths:
       responses:
         '200':
           description: OK
-  '/imagens/{id_imagem}/segmentacao-celula':
+  '/imagens/{id_imagem}/segmentacoes':
     parameters:
       - schema:
           type: string
@@ -460,6 +467,12 @@ paths:
     post:
       summary: ''
       operationId: post-imagens-id_imagem-segmentacao-celula
+      responses:
+        '200':
+          description: OK
+    get:
+      summary: ''
+      operationId: get-imagens-id_imagem-segmentacao
       responses:
         '200':
           description: OK
@@ -497,12 +510,8 @@ components:
       properties:
         id:
           type: string
-        tipo_analise_realizada:
-          type: string
         id_imagem:
           $ref: '#/components/schemas/ImagemModel'
-        id_lesao:
-          $ref: '#/components/schemas/LesaoModel'
         id_descricao:
           $ref: '#/components/schemas/DescricaoModel'
     ClassificacaoCelulaModel:
@@ -517,8 +526,10 @@ components:
           type: integer
         id_usuario:
           $ref: '#/components/schemas/UsuarioBaseModel'
-        id_celula:
-          $ref: '#/components/schemas/CelulaModel'
+        id_imagem:
+          $ref: '#/components/schemas/ImagemModel'
+        id_lesao:
+          $ref: '#/components/schemas/LesaoModel'
     DescricaoModel:
       title: DescricaoModel
       type: object
@@ -546,8 +557,6 @@ components:
         classificacao_aprovada:
           type: boolean
         dt_aquisicao:
-          type: string
-        caminho_imagem:
           type: string
         altura:
           type: integer
