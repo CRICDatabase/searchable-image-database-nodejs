@@ -925,7 +925,6 @@ describe(
                                             nome: expect.any(String),
                                             grade: expect.any(Number)
                                         },
-                                        tipo_analise_realizada: expect.any(String)
                                     }]
                                 )
                             );
@@ -962,7 +961,6 @@ describe(
                                             nome: expect.any(String),
                                             grade: expect.any(Number)
                                         },
-                                        tipo_analise_realizada: expect.any(String)
                                     }]
                                 )
                             );
@@ -1020,7 +1018,6 @@ describe(
                                             nome: expect.any(String),
                                             grade: expect.any(Number)
                                         },
-                                        tipo_analise_realizada: expect.any(String)
                                     }]
                                 )
                             );
@@ -1068,7 +1065,6 @@ describe(
                                                     coord_y: expect.any(Number)
                                                 }]
                                             ),
-                                            tipo_analise_realizada: expect.any(String)
                                         }]
                                     )
                                 }
@@ -1115,7 +1111,6 @@ describe(
                                                     coord_y: expect.any(Number)
                                                 }]
                                             ),
-                                            tipo_analise_realizada: expect.any(String)
                                         }]
                                     )
                                 }
@@ -1182,7 +1177,6 @@ describe(
                                                     coord_y: expect.any(Number)
                                                 }]
                                             ),
-                                            tipo_analise_realizada: expect.any(String)
                                         }]
                                     )
                                 }
