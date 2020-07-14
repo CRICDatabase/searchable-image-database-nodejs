@@ -25,7 +25,7 @@ module.exports = {
                         onUpdate: "CASCADE",
                         onDelete: "RESTRICT"
                     }
-                ),
+                )
             ]
         ).then(
             () => {
@@ -46,7 +46,7 @@ module.exports = {
                 queryInterface.removeColumn(
                     "classificacao_celula",
                     "id_imagem"
-                ),
+                )
             ]
         );
     }

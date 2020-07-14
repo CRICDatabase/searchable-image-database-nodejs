@@ -82,13 +82,14 @@ module.exports = {
         });
     },
 
-    async cadastrarClassificacaoCelula(id_usuario, id_celula, coord_x, coord_y) {
+    async cadastrarClassificacaoCelula(id_usuario, id_imagem, id_lesao, coord_x, coord_y) {
 
         return ClassificacaoModel.create({
             coord_centro_nucleo_x: coord_x,
             coord_centro_nucleo_y: coord_y,
-            id_celula: id_celula,
-            id_usuario: id_usuario
+            id_usuario: id_usuario,
+            id_imagem: id_imagem,
+            id_lesao: id_lesao
         });
     },
 
@@ -99,16 +100,6 @@ module.exports = {
             id_imagem: id_imagem,
             id_lesao: Configuracao.LESAO_NAO_APLICAVEL,
             id_descricao: id_descricao
-        });
-    },
-
-    async cadastrarCelulaClassificada(id_imagem, id_lesao) {
-
-        return CelulaModel.create({
-            tipo_analise_realizada: TipoAnalise.CLASSIFICACAO,
-            id_imagem: id_imagem,
-            id_lesao: id_lesao,
-            id_descricao: Configuracao.DESCRICAO_NAO_APLICAVEL
         });
     },
 
@@ -210,34 +201,11 @@ module.exports = {
     },
 
     async listarClassificacoesCelula(id_imagem) {
-
-        let todasClassificacoes;
-        const LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY = `
-        SELECT
-            celula.id AS id_celula,
-            celula.tipo_analise_realizada,
-            lesao.id as id_lesao,
-            lesao.grade as lesao_grade,
-            classificacao_celula.coord_centro_nucleo_x,
-            classificacao_celula.coord_centro_nucleo_y,
-            classificacao_celula.id AS id_classificacao
-        FROM imagem
-        JOIN classificacao_celula ON imagem.id_usuario = classificacao_celula.id_usuario
-        JOIN celula ON celula.id = classificacao_celula.id_celula
-        JOIN lesao ON lesao.id = celula.id_lesao
-        WHERE imagem.id = ${id_imagem}`;
-
-        await db.query(
-            LISTAR_CELULAS_PARA_A_IMAGEM_SQL_QUERY,
-            {
-                type: Sequelize.QueryTypes.SELECT
+        return ClassificacaoModel.findAll({
+            where: {
+                id_imagem: id_imagem
             }
-        )
-            .then((results) => {
-                todasClassificacoes = results;
-            });
-
-        return todasClassificacoes;
+        });
     },
 
     async obterDescricaoPorId(id_descricao) {
@@ -289,7 +257,7 @@ module.exports = {
     async excluirClassificacaoDeCelula(id_celula) {
         return ClassificacaoModel.destroy({
             where: {
-                id_celula: {
+                id: {
                     [Sequelize.Op.eq]: id_celula
                 }
             }
