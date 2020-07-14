@@ -1,0 +1,13 @@
+title: celula
+type: object
+properties:
+  id:
+    type: string
+  tipo_analise_realizada:
+    type: string
+  id_imagem:
+    $ref: ./imagem.v1.yaml
+  id_lesao:
+    $ref: ./lesao.v1.yaml
+  id_descricao:
+    $ref: ./descricao.v1.yaml

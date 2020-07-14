@@ -1,0 +1,11 @@
+title: lesao
+type: object
+properties:
+  id:
+    type: string
+  nome:
+    type: string
+  detalhes:
+    type: string
+  grade:
+    type: integer

@@ -1,0 +1,13 @@
+title: segmentacao_citoplasma
+type: object
+properties:
+  id:
+    type: string
+  coord_x:
+    type: integer
+  coord_y:
+    type: integer
+  id_usuario:
+    $ref: ./usuario_base.v1.yaml
+  id_celula:
+    $ref: ./celula.v1.yaml

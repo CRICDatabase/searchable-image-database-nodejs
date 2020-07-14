@@ -1,0 +1,27 @@
+title: imagem
+type: object
+properties:
+  id:
+    type: string
+  nome:
+    type: string
+  doi:
+    type: string
+  codigo_lamina:
+    type: string
+  excluida:
+    type: boolean
+  classificacao_aprovada:
+    type: boolean
+  dt_aquisicao:
+    type: string
+  caminho_imagem:
+    type: string
+  altura:
+    type: integer
+  largura:
+    type: integer
+  id_usuario:
+    $ref: ./usuario_base.v1.yaml
+  id_lesao:
+    $ref: ./lesao.v1.yaml

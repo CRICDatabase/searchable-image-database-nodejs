@@ -1,0 +1,9 @@
+title: sessao_usuario
+type: object
+properties:
+  id:
+    type: string
+  email:
+    type: string
+  token_autenticacao:
+    type: string
