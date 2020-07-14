@@ -8,6 +8,7 @@ info:
   contact:
     url: 'https://database.cric.com.br'
     email: cric@ufop.edu.br
+    name: Raniere Silva
 servers:
   - url: 'https://api.database.cric.com.br/api/v2'
 paths:

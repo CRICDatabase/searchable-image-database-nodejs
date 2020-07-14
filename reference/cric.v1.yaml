@@ -7,6 +7,7 @@ info:
   contact:
     url: 'https://database.cric.com.br'
     email: cric@ufop.edu.br
+    name: Fagner Oliveira
 servers:
   - url: 'https://api.database.cric.com.br/api/v1'
 paths:
@@ -19,6 +20,12 @@ paths:
           description: OK
         '400':
           description: Bad Request
+        '401':
+          description: Unauthorized
+        '409':
+          description: Conflict
+        '500':
+          description: Internal Server Error
       requestBody:
         content:
           application/json:
@@ -33,20 +40,12 @@ paths:
                   type: string
                 senha:
                   type: string
-            examples:
-              Full:
-                value:
-                  primeiro_nome: Charles
-                  ultimo_nome: Doe
-                  email: charles@test.database.cric.com.br
-                  senha: '123.456'
-              Minimal:
-                value:
-                  primeiro_nome: Charles
-                  email: charles@test.database.cric.com.br
-                  senha: '123.456'
+                ativo:
+                  type: integer
+            examples: {}
       security:
         - API Key Authorization: []
+      description: Insere um registro na tabela usuario_base.
   '/usuarios/{id_usuario}':
     parameters:
       - schema:
@@ -54,55 +53,31 @@ paths:
         name: id_usuario
         in: path
         required: true
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses:
-        '200':
-          description: OK
-      operationId: get-usuarios-id_usuario
-      security:
-        - API Key Authorization: []
-    put:
-      summary: ''
-      operationId: put-usuarios-id_usuario
-      responses:
-        '200':
-          description: OK
-      security:
-        - API Key Authorization: []
-    delete:
-      summary: ''
-      operationId: delete-usuarios-id_usuario
-      responses:
-        '200':
-          description: OK
-      security:
-        - API Key Authorization: []
-  /login:
     post:
       summary: ''
-      operationId: login
+      operationId: post-usuarios-id_usuario
       responses:
         '200':
           description: OK
-      description: ''
-    delete:
-      summary: ''
-      operationId: delete-login
-      responses:
-        '200':
-          description: OK
-      security:
-        - API Key Authorization: []
-      parameters: []
-  /reset-password:
-    post:
-      summary: ''
-      operationId: post-reset-password
-      responses:
-        '200':
-          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '409':
+          description: Conflict
+        '500':
+          description: Internal Server Error
+      description: 'Se um id_usuário diferente de zero for fornecido a busca será realizada pelo id_usuário, se for passado um id_usuário igual a zero, a busca ocorrerá baseado no body da requisição.'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                senha:
+                  type: string
   /imagens:
     post:
       summary: ''
@@ -110,8 +85,31 @@ paths:
       responses:
         '200':
           description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
       security:
         - API Key Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id_usuario:
+                  type: integer
+                id_lesao:
+                  type: integer
+                codigo_lamina:
+                  type: string
+                dt_aquisicao:
+                  type: string
+        description: ''
   '/imagens/{id_imagem}':
     parameters:
       - schema:
@@ -122,21 +120,587 @@ paths:
     get:
       summary: Your GET endpoint
       tags: []
-      responses: {}
-      operationId: get-imagens-id_imagem
-    put:
-      summary: ''
-      operationId: put-imagens-id_imagem
       responses:
         '200':
           description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-imagens-id_imagem
+  /imagens-lesoes:
+    post:
+      summary: ''
+      operationId: post-lesoes
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      security:
+        - API Key Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nome:
+                  type: string
+                detalhes:
+                  type: string
+            examples: {}
+        description: Cadastra uma lista de lesões no sistema.
+    get:
+      summary: ''
+      operationId: get-lesoes
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      security:
+        - API Key Authorization: []
+    parameters: []
+  /imagens-descricoes:
+    parameters: []
+    post:
+      summary: ''
+      operationId: post-descricoes
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      security:
+        - API Key Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                codigo:
+                  type: string
+                nome:
+                  type: string
+      description: Cadastra uma lista de descrições no sistema.
+    get:
+      summary: ''
+      operationId: get-descricoes
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      security:
+        - API Key Authorization: []
+  '/imagens/{id_imagem}/classificacao-celula/{id_usuario}':
+    parameters:
+      - schema:
+          type: integer
+        name: id_imagem
+        in: path
+        required: true
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    post:
+      summary: ''
+      operationId: post-imagens-id_imagem-classificacao-celula
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      security:
+        - API Key Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id_lesao:
+                  type: integer
+                coord_centro_nucleo_x:
+                  type: integer
+                coord_centro_nucleo_y:
+                  type: integer
+                alturaCanvas:
+                  type: integer
+                larguraCanvas:
+                  type: integer
+                larguraOriginalImg:
+                  type: integer
+      description: Cadastra um registro de classificação de célula no sistema.
+  '/imagens/{id_imagem}/segmentacao-celula/{id_usuario}':
+    parameters:
+      - schema:
+          type: integer
+        name: id_imagem
+        in: path
+        required: true
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    post:
+      summary: ''
+      operationId: post-imagens-id_imagem-segmentacao-celula
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      description: Cadastra um registro de segmentação de célula no sistema.
+      security:
+        - API Key Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id_descricao:
+                  type: integer
+                alturaCanvas:
+                  type: integer
+                larguraCanvas:
+                  type: integer
+                alturaOriginalImg:
+                  type: integer
+                larguraOriginalImg:
+                  type: integer
+                segmentos_citoplasma:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      coord_x:
+                        type: integer
+                      coord_y:
+                        type: integer
+                segmentos_nucleo:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      coord_x: {}
+                      coord_y:
+                        type: integer
+  /usuarios-administrador:
+    post:
+      summary: ''
+      operationId: post-usuarios-administrador
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '409':
+          description: Conflict
+        '500':
+          description: Internal Server Error
+      description: 'Insere um registro na tabela usuário_base e na tabela administrador, usa como chave primária na tabela administrador a mesma chave inserida na tabela usuario_base.'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                primeiro_nome:
+                  type: string
+                ultimo_nome:
+                  type: string
+                email:
+                  type: string
+                senha:
+                  type: string
+                ativo:
+                  type: integer
+                api_key:
+                  type: string
+                nivel_acesso:
+                  type: string
+  /usuarios-citopatologista:
+    post:
+      summary: ''
+      operationId: post-usuarios-citopatologista
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '409':
+          description: Conflict
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                primeiro_nome:
+                  type: string
+                ultimo_nome:
+                  type: string
+                email:
+                  type: string
+                senha:
+                  type: string
+                ativo:
+                  type: string
+                codigo_crc:
+                  type: string
+      description: 'Insere um registro na tabela usuário_base e na tabela citopatologista, usa como chave primária na tabela citopatologista a mesma chave inserida na tabela usuario_base.'
+  /usuarios-visitante:
+    post:
+      summary: ''
+      operationId: post-usuarios-visitante
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '409':
+          description: Conflict
+        '500':
+          description: Internal Server Error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                primeiro_nome:
+                  type: string
+                ultimo_nome:
+                  type: string
+                email:
+                  type: string
+                senha:
+                  type: string
+                ativo:
+                  type: integer
+                pais:
+                  type: string
+                estado_regiao:
+                  type: string
+                cidade:
+                  type: string
+      description: 'Insere um registro na tabela usuário_base e na tabela visitante, usa como chave primária na tabela visitante a mesma chave inserida na tabela usuario_base.'
+  '/usuarios/analista/{id_usuario}':
+    parameters:
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    post:
+      summary: ''
+      operationId: post-usuarios-analista-id_usuario
+      responses:
+        '200':
+          description: OK
+      description: 'Realiza o cadastro de um analista. Um analista deve ser, obrigatoriamente, um citopatologista ou visitante previamente cadastrado no sistema.'
+      security:
+        - API Key Authorization: []
+  '/usuarios/{id_usuario}/administrador':
+    parameters:
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-usuarios-id_usuario-administrador
+      description: Obtém os dados associados ao usuário cadastrado no sistema.
+      security:
+        - API Key Authorization: []
+  '/usuarios/{id_usuario}/citopatologista':
+    parameters:
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-usuarios-id_usuario-citopatologista
+      description: 'Obtém os dados associados ao usuário cadastrado no sistema  '
+      security:
+        - API Key Authorization: []
+  '/usuarios/{id_usuario}/visitante':
+    parameters:
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-usuarios-id_usuario-visitante
+      description: Obtém os dados associados ao usuário cadastrado no sistema.
+      security:
+        - API Key Authorization: []
+  '/usuarios/{id_usuario}/analista':
+    parameters:
+      - schema:
+          type: number
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-usuarios-id_usuario-analista
+      description: Obtém os dados associados ao usuário cadastrado no sistema.
+      security:
+        - API Key Authorization: []
+  '/usuarios/{token_autenticacao}':
+    parameters:
+      - schema:
+          type: string
+        name: token_autenticacao
+        in: path
+        required: true
     delete:
       summary: ''
-      operationId: delete-imagens-id_imagem
+      operationId: delete-usuarios-token_autenticacao
       responses:
         '200':
           description: OK
-  '/usuarios/{id_usuario}/imagens':
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal Server Error
+      description: Realiza a operação de logoff do sistema.
+      security:
+        - API Key Authorization: []
+  '/imagens/{id_imagem}/listar-classificacao-celula/{id_usuario}':
+    parameters:
+      - schema:
+          type: integer
+        name: id_imagem
+        in: path
+        required: true
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-imagens-id_imagem-listar-classificacao-celula-id_usuario
+      description: Lista todas as classificações realizadas em uma imagem.
+  '/imagens/{id_imagem}/listar-segmentacao-celula/{id_usuario}':
+    parameters:
+      - schema:
+          type: integer
+        name: id_imagem
+        in: path
+        required: true
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-imagens-id_imagem-listar-segmentacao-celula-id_usuario
+      security:
+        - API Key Authorization: []
+  '/imagens/listar/{id_usuario}':
+    parameters:
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-imagens-listar-id_usuario
+  /imagens/contagem/lesoes/descricoes:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal Server Error
+      operationId: get-imagens-contagem-lesoes-descricoes
+      description: Lista a contagem de tipos de lesão e descrição em células que foram analisadas
+      security:
+        - API Key Authorization: []
+  '/imagens/download/base_interna_cvx/{id_usuario}':
+    parameters:
+      - schema:
+          type: number
+        name: id_usuario
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-imagens-download-base_interna_cvx-id_usuario
+      description: |
+        Realiza o download da coleção de imagens de células cervicais cadastradas na base por usuários do sistema.
+      security:
+        - API Key Authorization: []
+  '/imagens/download/base_externa_cvx/{id_usuario}':
     parameters:
       - schema:
           type: string
@@ -146,251 +710,57 @@ paths:
     get:
       summary: Your GET endpoint
       tags: []
-      responses: {}
-      operationId: get-usuarios-id_usuario-imagens
-  /lesoes:
-    post:
-      summary: ''
-      operationId: post-lesoes
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: integer
-                    nome:
-                      type: string
-                    detalhes:
-                      type: string
-                    grade:
-                      type: integer
-              examples:
-                Cervix:
-                  value:
-                    - id: 1
-                      nome: Unkown
-                      detalhes: Unkown
-                      grade: 0
-                    - id: 2
-                      nome: Negative
-                      detalhes: Negative for intraepithelial lesion
-                      grade: 1
-                    - id: 3
-                      nome: ASC-US
-                      detalhes: Atypical squamous cells of undetermined significance
-                      grade: 2
-                    - id: 4
-                      nome: LSIL
-                      detalhes: Low grade squamous intraepithelial lesion
-                      grade: 3
-                    - id: 5
-                      nome: ASC-H
-                      detalhes: Atypical squamous cells cannot exclude HSIL
-                      grade: 4
-                    - id2: 6
-                      nome: HSIL
-                      detalhes: High grade squamous intraepithelial lesion
-                      grade: 5
-                    - id: 7
-                      nome: SCC
-                      detalhes: Squamous cell carcinoma
-                      grade: 6
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-imagens-download-base_externa_cvx-id_usuario
+      description: Realiza o download da coleção de imagens de células cervicais cadastradas na base por visitantes.
       security:
         - API Key Authorization: []
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                nome:
-                  type: string
-                detalhes:
-                  type: string
-                grade:
-                  type: integer
-              required:
-                - nome
-                - grade
-            examples:
-              Full:
-                value:
-                  nome: Negative
-                  detalhes: Negative for intraepithelial lesion
-                  grade: 1
-              Minimal:
-                value:
-                  nome: Negative
-                  grade: 1
-        description: ''
-    get:
-      summary: ''
-      operationId: get-lesoes
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: integer
-                    nome:
-                      type: string
-                    detalhes:
-                      type: string
-                    grade:
-                      type: integer
-              examples:
-                Cervix:
-                  value:
-                    - id: 1
-                      nome: Unkown
-                      detalhes: Unkown
-                      grade: 0
-                    - id: 2
-                      nome: Negative
-                      detalhes: Negative for intraepithelial lesion
-                      grade: 1
-                    - id: 3
-                      nome: ASC-US
-                      detalhes: Atypical squamous cells of undetermined significance
-                      grade: 2
-                    - id: 4
-                      nome: LSIL
-                      detalhes: Low grade squamous intraepithelial lesion
-                      grade: 3
-                    - id: 5
-                      nome: ASC-H
-                      detalhes: Atypical squamous cells cannot exclude HSIL
-                      grade: 4
-                    - id2: 6
-                      nome: HSIL
-                      detalhes: High grade squamous intraepithelial lesion
-                      grade: 5
-                    - id: 7
-                      nome: SCC
-                      detalhes: Squamous cell carcinoma
-                      grade: 6
-  /descricoes:
-    parameters: []
-    post:
-      summary: ''
-      operationId: post-descricoes
-      responses:
-        '200':
-          description: OK
-    get:
-      summary: ''
-      operationId: get-descricoes
-      responses:
-        '200':
-          description: OK
-  '/descricoes/{id_descricoes}':
-    parameters:
-      - schema:
-          type: number
-        name: id_descricoes
-        in: path
-        required: true
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses:
-        '200':
-          description: OK
-      operationId: get-descricoes-id_descricoes
-    put:
-      summary: ''
-      operationId: put-descricoes-id_descricoes
-      responses:
-        '200':
-          description: OK
-    delete:
-      summary: ''
-      operationId: delete-descricoes-id_descricoes
-      responses:
-        '200':
-          description: OK
-  '/lesoes/{id_lesoes}':
+  '/imagens/{id_imagem}/classificacao-celula/{id_celula}/usuario/{id_usuario}':
     parameters:
       - schema:
           type: integer
-        name: id_lesoes
+        name: id_imagem
         in: path
         required: true
-    get:
-      summary: Your GET endpoint
+      - schema:
+          type: integer
+        name: id_celula
+        in: path
+        required: true
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+    delete:
+      summary: Your DELETE endpoint
       tags: []
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  id:
-                    type: integer
-                  nome:
-                    type: string
-                  detalhes:
-                    type: string
-                  grade:
-                    type: integer
-      operationId: get-lesoes-id_lesoes
-    put:
-      summary: ''
-      operationId: put-lesoes-id_lesoes
-      responses:
-        '200':
-          description: OK
-      security:
-        - API Key Authorization: []
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                nome:
-                  type: string
-                detalhes:
-                  type: string
-                grade:
-                  type: integer
-        description: ''
-    delete:
-      summary: ''
-      operationId: delete-lesoes-id_lesoes
-      responses:
-        '200':
-          description: OK
-      security:
-        - API Key Authorization: []
-  '/imagens/{id_imagem}/classificacao-celula':
-    parameters:
-      - schema:
-          type: string
-        name: id_imagem
-        in: path
-        required: true
-    post:
-      summary: ''
-      operationId: post-imagens-id_imagem-classificacao-celula
-      responses:
-        '200':
-          description: OK
-  '/imagens/{id_imagem}/classificacao-celula/{id_celula}':
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      operationId: get-imagens-id_imagem-classificacao-celula-id_celula-usuario-id_usuario
+      description: Remove um registro de classificação para a imagem escolhida.
+  '/imagens/{id_imagem}/segmentacao-celula/{id_celula}/usuario/{id_usuario}':
     parameters:
       - schema:
           type: string
@@ -402,73 +772,59 @@ paths:
         name: id_celula
         in: path
         required: true
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses: {}
-      operationId: get-imagens-id_imagem-classificacao-celula-id_celula
-    put:
-      summary: ''
-      operationId: put-imagens-id_imagem-classificacao-celula-id_celula
-      responses:
-        '200':
-          description: OK
-    delete:
-      summary: ''
-      operationId: delete-imagens-id_imagem-classificacao-celula-id_celula
-      responses:
-        '200':
-          description: OK
-  '/imagens/{id_imagem}/segmentacao-celula/{id_celula}':
-    parameters:
       - schema:
           type: string
+        name: id_usuario
+        in: path
+        required: true
+    delete:
+      summary: Your DELETE endpoint
+      operationId: delete-imagens-id_imagem-segmentacao-celula-id_celula-usuario-id_usuario
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      description: Remove um registro de segmentação para a imagem escolhida.
+  '/imagens/{id_imagem}/atualizar/{id_usuario}':
+    parameters:
+      - schema:
+          type: integer
         name: id_imagem
         in: path
         required: true
       - schema:
-          type: string
-        name: id_celula
+          type: integer
+        name: id_usuario
         in: path
         required: true
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses: {}
-      operationId: get-imagens-id_imagem-segmentacao-celula-id_celula
     put:
       summary: ''
-      operationId: put-imagens-id_imagem-segmentacao-celula-id_celula
+      operationId: put-imagens-id_imagem-atualizar-id_usuario
       responses:
         '200':
           description: OK
-    delete:
-      summary: ''
-      operationId: delete-imagens-id_imagem-segmentacao-celula-id_celula
-      responses:
-        '200':
-          description: OK
-  '/imagens/{id_imagem}/segmentacao-celula':
-    parameters:
-      - schema:
-          type: string
-        name: id_imagem
-        in: path
-        required: true
-    post:
-      summary: ''
-      operationId: post-imagens-id_imagem-segmentacao-celula
-      responses:
-        '200':
-          description: OK
-  /imagens/download:
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses:
-        '200':
-          description: OK
-      operationId: get-imagens-download
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      description: Atualiza informações associadas á uma classificação presente em uma imagem e de dados a ela associados.
+      security:
+        - API Key Authorization: []
 components:
   schemas:
     UsuarioBaseModel:
@@ -486,8 +842,6 @@ components:
         senha:
           type: string
         ativo:
-          type: boolean
-        admin:
           type: boolean
     CelulaModel:
       title: CelulaModel
@@ -535,8 +889,6 @@ components:
           type: string
         nome:
           type: string
-        doi:
-          type: string
         codigo_lamina:
           type: string
         excluida:
@@ -555,6 +907,8 @@ components:
           $ref: '#/components/schemas/UsuarioBaseModel'
         id_lesao:
           $ref: '#/components/schemas/CelulaModel'
+        fonte_aquisicao:
+          type: integer
     LesaoModel:
       title: LesaoModel
       type: object
@@ -565,8 +919,6 @@ components:
           type: string
         detalhes:
           type: string
-        grade:
-          type: integer
     SegmentacaoCitoplasmaModel:
       title: SegmentacaoCitoplasmaModel
       type: object
@@ -605,8 +957,48 @@ components:
           type: string
         token_autenticacao:
           type: string
+    AdministradorModel:
+      title: AdministradorModel
+      type: object
+      properties:
+        id:
+          $ref: '#/components/schemas/UsuarioBaseModel'
+        nivel_acesso:
+          type: string
+        api_key:
+          type: string
+    CitopatologistaModel:
+      title: CitopatologistaModel
+      type: object
+      properties:
+        id:
+          $ref: '#/components/schemas/UsuarioBaseModel'
+        codigo_crc:
+          type: string
+    VisitanteModel:
+      title: VisitanteModel
+      type: object
+      properties:
+        id:
+          $ref: '#/components/schemas/UsuarioBaseModel'
+        pais:
+          type: string
+        estado_regiao:
+          type: string
+        cidade:
+          type: string
+    AnalistaModel:
+      title: AnalistaModel
+      type: object
+      properties:
+        id:
+          $ref: '#/components/schemas/UsuarioBaseModel'
+        total_segmentacoes:
+          type: integer
+        total_classificacoes:
+          type: integer
   securitySchemes:
     API Key Authorization:
-      name: authorization
+      name: token_autenticacao
       type: apiKey
       in: header
