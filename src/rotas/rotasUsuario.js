@@ -13,7 +13,7 @@ rotasUsuario.post("/api/v1/usuarios", UsuarioController.cadastrarUsuarioBase);
 
 rotasUsuario.get("/api/v1/usuarios/:id_usuario", UsuarioController.listarUsuarios);
 rotasUsuario.put("/api/v1/usuarios/:id_usuario", SistemaController.not_implemented);
-rotasUsuario.delete("/api/v1/usuarios/:id_usuario", SistemaController.not_implemented);
+rotasUsuario.delete("/api/v1/usuarios/:id_usuario", UsuarioController.delete_user);
 
 rotasUsuario.post("/api/v1/usuarios/:id_usuario/admin", SistemaController.not_implemented);
 rotasUsuario.delete("/api/v1/usuarios/:id_usuario/admin", SistemaController.not_implemented);

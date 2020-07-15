@@ -1,12 +1,14 @@
 "use strict";
 
 const HttpStatus = require("http-status-codes");
+
 const CadastrarUsuarioExecutor = require("../../executores/usuario_executor/CadastrarUsuarioBaseExcutor");
-const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
-const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
-const LoginService = require("../../executores/usuario_executor/LoginService");
-const ResetPasswordService = require("../../executores/usuario_executor/ResetPasswordService");
 const FazerLogOffExecutor = require("../../executores/usuario_executor/FazerLogOffExecutor");
+const ListarUsuariosExecutor = require("../../executores/usuario_executor/ListarUsuariosExecutor");
+const LoginService = require("../../executores/usuario_executor/LoginService");
+const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
+const ResetPasswordService = require("../../executores/usuario_executor/ResetPasswordService");
+const DeleteUserService = require("../../executores/usuario_executor/DeleteUserService");
 
 module.exports = {
 
@@ -58,6 +60,22 @@ module.exports = {
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }        
+    },
+
+    async delete_user(req, res) {
+
+        try{
+            await DeleteUserService.Executar(req);
+            return res.status(HttpStatus.NO_CONTENT).end();
+        }
+        catch(erro){
+
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
     },
 
     async login(req, res) {
