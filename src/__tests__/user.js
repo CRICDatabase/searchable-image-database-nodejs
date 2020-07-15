@@ -3,6 +3,7 @@ const app = require("../app");
 
 let admin_token;
 let charles_token;
+let amelia_token;
 
 beforeAll(async () => {
     await request(app)
@@ -36,6 +37,23 @@ beforeAll(async () => {
                 charles_token = response.body.Authorization;
             }
         );
+
+    await request(app)
+        .post(
+            "/api/v1/usuarios/login"
+        )
+        .send(
+            {
+                email: "amelia@test.database.cric.com.br",
+                senha: "123.456"
+            }
+        )
+        .then(
+            (response) => {
+                amelia_token = response.body.Authorization;
+            }
+        );
+
 });
 
 describe(
@@ -171,6 +189,117 @@ describe(
                                     senha: expect.any(String)
                                 }
                             );
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "POST /api/v1/usuarios/senha/trocar",
+    () => {
+        test(
+            "unauthorized",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/senha/trocar")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "missing new_password1",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/senha/trocar")
+                    .set(
+                        "Authorization",
+                        amelia_token
+                    )
+                    .send(
+                        {
+                            new_password2: "qwerty.uiop",
+                            old_password: "123.456"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "missing new_password2",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/senha/trocar")
+                    .set(
+                        "Authorization",
+                        amelia_token
+                    )
+                    .send(
+                        {
+                            new_password1: "qwerty.uiop",
+                            old_password: "123.456"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "missing old_password",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/senha/trocar")
+                    .set(
+                        "Authorization",
+                        amelia_token
+                    )
+                    .send(
+                        {
+                            new_password1: "qwerty.uiop",
+                            new_password2: "qwerty.uiop",
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "OK",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/senha/trocar")
+                    .set(
+                        "Authorization",
+                        amelia_token
+                    )
+                    .send(
+                        {
+                            new_password1: "qwerty.uiop",
+                            new_password2: "qwerty.uiop",
+                            old_password: "123.456"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
                         }
                     );
             }
