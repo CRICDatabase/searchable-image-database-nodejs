@@ -14,8 +14,8 @@ servers:
 paths:
   /usuarios:
     post:
-      summary: ''
-      operationId: post-usuarios
+      summary: Create user
+      operationId: UsuarioController.cadastrarUsuarioBase
       responses:
         '200':
           description: OK
@@ -49,6 +49,14 @@ paths:
                   senha: '123.456'
       security:
         - API Key Authorization: []
+      tags:
+        - usuarios
+    get:
+      summary: Get users
+      operationId: UsuarioController.listarUsuarios
+      responses:
+        '200':
+          description: OK
   '/usuarios/{id_usuario}':
     parameters:
       - schema:
@@ -57,12 +65,13 @@ paths:
         in: path
         required: true
     get:
-      summary: Your GET endpoint
-      tags: []
+      summary: Get user
+      tags:
+        - usuarios
       responses:
         '200':
           description: OK
-      operationId: get-usuarios-id_usuario
+      operationId: UsuarioController.listarUsuarios
       security:
         - API Key Authorization: []
     put:
@@ -81,7 +90,7 @@ paths:
           description: OK
       security:
         - API Key Authorization: []
-  /login:
+  /usuarios/login:
     post:
       summary: ''
       operationId: login
@@ -89,22 +98,8 @@ paths:
         '200':
           description: OK
       description: ''
-    delete:
-      summary: ''
-      operationId: delete-login
-      responses:
-        '200':
-          description: OK
-      security:
-        - API Key Authorization: []
-      parameters: []
-  /login/reset:
-    post:
-      summary: ''
-      operationId: post-reset-password
-      responses:
-        '200':
-          description: OK
+      tags:
+        - autorizacao
     parameters: []
   /imagens:
     post:
@@ -160,6 +155,8 @@ paths:
             type: integer
           in: query
           name: id_usuario
+      tags:
+        - imagens
   '/imagens/{id_imagem}':
     parameters:
       - schema:
@@ -169,7 +166,8 @@ paths:
         required: true
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - imagens
       responses: {}
       operationId: get-imagens-id_imagem
     put:
@@ -317,6 +315,8 @@ paths:
                       nome: SCC
                       detalhes: Squamous cell carcinoma
                       grade: 6
+      tags:
+        - classificacoes
   /descricoes:
     parameters: []
     post:
@@ -385,6 +385,8 @@ paths:
                       nome: Others
         '201':
           description: Created
+      tags:
+        - segmentacoes
   '/descricoes/{id_descricoes}':
     parameters:
       - schema:
@@ -394,7 +396,8 @@ paths:
         required: true
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - segmentacoes
       responses:
         '200':
           description: OK
@@ -461,7 +464,8 @@ paths:
         required: true
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - classificacoes
       responses:
         '200':
           description: OK
@@ -527,6 +531,9 @@ paths:
       responses:
         '200':
           description: OK
+      tags:
+        - imagens
+        - classificacoes
   '/imagens/{id_imagem}/classificacoes/{id_celula}':
     parameters:
       - schema:
@@ -541,7 +548,9 @@ paths:
         required: true
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - imagens
+        - classificacoes
       responses: {}
       operationId: get-imagens-id_imagem-classificacao-celula-id_celula
     put:
@@ -570,7 +579,9 @@ paths:
         required: true
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - imagens
+        - segmentacoes
       responses: {}
       operationId: get-imagens-id_imagem-segmentacao-celula-id_celula
     put:
@@ -604,10 +615,16 @@ paths:
       responses:
         '200':
           description: OK
+      tags:
+        - imagens
+        - segmentacoes
   /imagens/export:
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - imagens
+        - segmentacoes
+        - classificacoes
       responses:
         '200':
           description: OK
@@ -637,6 +654,8 @@ paths:
           description: Not Found
       security:
         - API Key Authorization: []
+      tags:
+        - usuarios
     delete:
       summary: Remove administrator rights from user
       operationId: delete-usuarios-id_usuario-admin
@@ -666,6 +685,8 @@ paths:
       responses:
         '200':
           description: OK
+      tags:
+        - imagens
     delete:
       summary: ''
       operationId: delete-imagens-id_imagem-approvada
@@ -673,6 +694,37 @@ paths:
         '200':
           description: OK
       description: ''
+  /usuarios/logout:
+    post:
+      summary: ''
+      operationId: post-usuarios-logout
+      responses:
+        '200':
+          description: OK
+      tags:
+        - autorizacao
+  /usuarios/senha/trocar:
+    parameters: []
+    post:
+      summary: ''
+      operationId: post-usuario-senha-trocar
+      responses:
+        '200':
+          description: OK
+      tags:
+        - usuarios
+        - autorizacao
+  /usuarios/senha/recuperar:
+    post:
+      summary: ''
+      operationId: post-usuario-senha-recuperar
+      responses:
+        '200':
+          description: OK
+      tags:
+        - usuarios
+        - autorizacao
+    parameters: []
 components:
   schemas:
     UsuarioBaseModel:
@@ -810,3 +862,9 @@ components:
       name: authorization
       type: apiKey
       in: header
+tags:
+  - name: usuarios
+  - name: imagens
+  - name: classificacoes
+  - name: segmentacoes
+  - name: autorizacao
