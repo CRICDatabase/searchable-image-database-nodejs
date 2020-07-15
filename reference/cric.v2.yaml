@@ -141,6 +141,25 @@ paths:
                 - codigo_lamina
                 - dt_aquisicao
         description: ''
+    get:
+      summary: ''
+      operationId: get-imagens
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      parameters:
+        - schema:
+            type: integer
+          in: query
+          name: id_usuario
   '/imagens/{id_imagem}':
     parameters:
       - schema:
@@ -165,18 +184,6 @@ paths:
       responses:
         '200':
           description: OK
-  '/usuarios/{id_usuario}/imagens':
-    parameters:
-      - schema:
-          type: string
-        name: id_usuario
-        in: path
-        required: true
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses: {}
-      operationId: get-usuarios-id_usuario-imagens
   /lesoes:
     post:
       summary: ''
@@ -439,8 +446,8 @@ paths:
       summary: ''
       operationId: delete-descricoes-id_descricoes
       responses:
-        '200':
-          description: OK
+        '204':
+          description: No Content
         '401':
           description: Unauthorized
       security:
@@ -597,7 +604,7 @@ paths:
       responses:
         '200':
           description: OK
-  /imagens/download:
+  /imagens/export:
     get:
       summary: Your GET endpoint
       tags: []
@@ -605,6 +612,67 @@ paths:
         '200':
           description: OK
       operationId: get-imagens-download
+    parameters: []
+  '/usuarios/{id_usuario}/admin':
+    parameters:
+      - schema:
+          type: integer
+        name: id_usuario
+        in: path
+        required: true
+        description: ''
+    post:
+      summary: Give administrator rights to user
+      operationId: post-usuarios-id_usuario-admin
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      security:
+        - API Key Authorization: []
+    delete:
+      summary: Remove administrator rights from user
+      operationId: delete-usuarios-id_usuario-admin
+      responses:
+        '204':
+          description: No Content
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      security:
+        - API Key Authorization: []
+  '/imagens/{id_imagem}/approvada':
+    parameters:
+      - schema:
+          type: string
+        name: id_imagem
+        in: path
+        required: true
+    post:
+      summary: ''
+      operationId: post-imagens-id_imagem-approvada
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: ''
+      operationId: delete-imagens-id_imagem-approvada
+      responses:
+        '200':
+          description: OK
+      description: ''
 components:
   schemas:
     UsuarioBaseModel:
