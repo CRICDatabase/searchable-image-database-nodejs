@@ -346,3 +346,43 @@ describe(
         );
     }
 );
+
+describe(
+    "POST /api/v1/usuarios/logout",
+    () => {
+        test(
+            "OK",
+            () => {
+                let liam_token;
+                await request(app)
+                    .post(
+                        "/api/v1/usuarios/login"
+                    )
+                    .send(
+                        {
+                            email: "liam@test.database.cric.com.br",
+                            senha: "123.456"
+                        }
+                    )
+                    .then(
+                        (response) => {
+                            liam_token = response.body.Authorization;
+                        }
+                    );
+
+                return request(app)
+                    .post("/api/v1/usuarios/logout")
+                    .set(
+                        "Authorization",
+                        liam_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+    }
+);
