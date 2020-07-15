@@ -15,8 +15,8 @@ rotasUsuario.get("/api/v1/usuarios/:id_usuario", UsuarioController.listarUsuario
 rotasUsuario.put("/api/v1/usuarios/:id_usuario", SistemaController.not_implemented);
 rotasUsuario.delete("/api/v1/usuarios/:id_usuario", UsuarioController.delete_user);
 
-rotasUsuario.post("/api/v1/usuarios/:id_usuario/admin", SistemaController.not_implemented);
-rotasUsuario.delete("/api/v1/usuarios/:id_usuario/admin", SistemaController.not_implemented);
+rotasUsuario.post("/api/v1/usuarios/:id_usuario/admin", UsuarioController.make_admin);
+rotasUsuario.delete("/api/v1/usuarios/:id_usuario/admin", UsuarioController.remove_admin);
 
 rotasUsuario.post("/api/v1/login", UsuarioController.login); // TODO Remove in v2
 rotasUsuario.post("/api/v1/usuarios/login", UsuarioController.login);

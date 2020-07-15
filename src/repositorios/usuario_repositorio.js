@@ -81,4 +81,24 @@ module.exports = {
         user.ativo = false;
         user.save();
     }
+
+    async make_admin(user_id) {
+        let user =  await UsuarioBaseModel.findOne({
+            where: {
+                id: user_id
+            }
+        });
+        user.admin = true;
+        user.save();
+    }
+
+    async remove_admin(user_id) {
+        let user =  await UsuarioBaseModel.findOne({
+            where: {
+                id: user_id
+            }
+        });
+        user.admin = false;
+        user.save();
+    }
 };

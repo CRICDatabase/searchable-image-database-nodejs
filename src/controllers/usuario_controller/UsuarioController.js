@@ -9,6 +9,8 @@ const LoginService = require("../../executores/usuario_executor/LoginService");
 const ObterUsuarioBaseExecutor = require("../../executores/usuario_executor/ObterUsuarioExecutor");
 const ResetPasswordService = require("../../executores/usuario_executor/ResetPasswordService");
 const DeleteUserService = require("../../executores/usuario_executor/DeleteUserService");
+const MakeAdminService = require("../../executores/usuario_executor/MakeAdminService");
+const RemoveAdminService = require("../../executores/usuario_executor/RemoveAdminService");
 
 module.exports = {
 
@@ -66,6 +68,38 @@ module.exports = {
 
         try{
             await DeleteUserService.Executar(req);
+            return res.status(HttpStatus.NO_CONTENT).end();
+        }
+        catch(erro){
+
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
+    },
+
+    async make_admin(req, res) {
+
+        try{
+            await MakeAdminService.Executar(req);
+            return res.status(HttpStatus.OK).end();
+        }
+        catch(erro){
+
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
+    },
+
+    async remove_admin(req, res) {
+
+        try{
+            await RemoveAdminService.Executar(req);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch(erro){
