@@ -179,7 +179,7 @@ describe(
 
 
 describe(
-    "GET /api/v1/usuarios/1",
+    "GET /api/v1/usuarios/:id_usuario",
     () => {
         test(
             "username instead of user's id",
@@ -254,6 +254,243 @@ describe(
     }
 );
 
+describe(
+    "PUT /api/v1/usuarios/:id_usuario",
+    () => {
+        test(
+            "username instead of user's id",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/charles")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/1")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: expect.any(Number),
+                                    primeiro_nome: expect.any(String),
+                                    ultimo_nome: expect.any(String),
+                                    email: expect.any(String),
+                                    senha: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "not found",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/100")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(404);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "DELETE /api/v1/usuarios/:id_usuario",
+    () => {
+        test(
+            "username instead of user's id",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/charles")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/1")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: expect.any(Number),
+                                    primeiro_nome: expect.any(String),
+                                    ultimo_nome: expect.any(String),
+                                    email: expect.any(String),
+                                    senha: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "not found",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/100")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(404);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "POST /api/v1/usuarios/:id_usuario/admin",
+    () => {
+        test(
+            "OK",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/6/admin")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "DELETE /api/v1/usuarios/id_usuario/admin",
+    () => {
+        test(
+            "OK",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/7/admin")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "POST /api/v1/usuarios/logout",
+    () => {
+        test(
+            "OK",
+            () => {
+                let liam_token;
+                await request(app)
+                    .post(
+                        "/api/v1/usuarios/login"
+                    )
+                    .send(
+                        {
+                            email: "liam@test.database.cric.com.br",
+                            senha: "123.456"
+                        }
+                    )
+                    .then(
+                        (response) => {
+                            liam_token = response.body.Authorization;
+                        }
+                    );
+
+                return request(app)
+                    .post("/api/v1/usuarios/logout")
+                    .set(
+                        "Authorization",
+                        liam_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+    }
+);
 
 describe(
     "POST /api/v1/usuarios/senha/trocar",
@@ -406,88 +643,3 @@ describe(
     }
 );
 
-describe(
-    "POST /api/v1/usuarios/logout",
-    () => {
-        test(
-            "OK",
-            () => {
-                let liam_token;
-                await request(app)
-                    .post(
-                        "/api/v1/usuarios/login"
-                    )
-                    .send(
-                        {
-                            email: "liam@test.database.cric.com.br",
-                            senha: "123.456"
-                        }
-                    )
-                    .then(
-                        (response) => {
-                            liam_token = response.body.Authorization;
-                        }
-                    );
-
-                return request(app)
-                    .post("/api/v1/usuarios/logout")
-                    .set(
-                        "Authorization",
-                        liam_token
-                    )
-                    .send()
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                        }
-                    );
-            }
-        );
-    }
-);
-
-describe(
-    "POST /api/v1/usuarios/6/admin",
-    () => {
-        test(
-            "OK",
-            () => {
-                return request(app)
-                    .post("/api/v1/usuarios/6/admin")
-                    .set(
-                        "Authorization",
-                        admin_token
-                    )
-                    .send()
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                        }
-                    );
-            }
-        );
-    }
-);
-
-describe(
-    "DELETE /api/v1/usuarios/7/admin",
-    () => {
-        test(
-            "OK",
-            () => {
-                return request(app)
-                    .post("/api/v1/usuarios/7/admin")
-                    .set(
-                        "Authorization",
-                        admin_token
-                    )
-                    .send()
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
-                        }
-                    );
-            }
-        );
-    }
-);

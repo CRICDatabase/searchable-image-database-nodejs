@@ -29,10 +29,4 @@ rotasUsuario.post("/api/v1/usuarios/senha/trocar", SistemaController.not_impleme
 rotasUsuario.post("/api/v1/reset-password", UsuarioController.reset_password); // TODO Remove in v2
 rotasUsuario.post("/api/v1/usuarios/senha/recuperar", UsuarioController.reset_password);
 
-
-
-
-
-
-
 module.exports = rotasUsuario;
