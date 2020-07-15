@@ -92,7 +92,7 @@ paths:
         - API Key Authorization: []
   /usuarios/login:
     post:
-      summary: ''
+      summary: Basic authentication
       operationId: login
       responses:
         '200':
@@ -706,14 +706,37 @@ paths:
   /usuarios/senha/trocar:
     parameters: []
     post:
-      summary: ''
+      summary: Change password
       operationId: post-usuario-senha-trocar
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  new_password1:
+                    type: string
+                  new_password2:
+                    type: string
+                  old_password:
+                    type: string
+              examples:
+                Minimal:
+                  value:
+                    new_password1: qwerty.uiop
+                    new_password2: qwerty.uiop
+                    old_password: '123.456'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
       tags:
         - usuarios
         - autorizacao
+      security:
+        - API Key Authorization: []
   /usuarios/senha/recuperar:
     post:
       summary: ''
@@ -721,6 +744,19 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  email:
+                    type: string
+              examples:
+                Minimal:
+                  value:
+                    email: amara@test.database.cric.com.br
+        '400':
+          description: Bad Request
       tags:
         - usuarios
         - autorizacao
