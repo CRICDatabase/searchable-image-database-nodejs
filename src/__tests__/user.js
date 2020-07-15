@@ -306,3 +306,43 @@ describe(
         );
     }
 );
+
+describe(
+    "POST /api/v1/usuarios/senha/recuperar",
+    () => {
+        test(
+            "missing email",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/senha/recuperar")
+                    .send(
+                        {
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "OK",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/senha/recuperar")
+                    .send(
+                        {
+                            email: "amara@test.database.cric.com.br"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+    }
+);
