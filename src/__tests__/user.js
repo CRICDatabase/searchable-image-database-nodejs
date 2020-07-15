@@ -386,3 +386,49 @@ describe(
         );
     }
 );
+
+describe(
+    "POST /api/v1/usuarios/6/admin",
+    () => {
+        test(
+            "OK",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/6/admin")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "DELETE /api/v1/usuarios/7/admin",
+    () => {
+        test(
+            "OK",
+            () => {
+                return request(app)
+                    .post("/api/v1/usuarios/7/admin")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(204);
+                        }
+                    );
+            }
+        );
+    }
+);
