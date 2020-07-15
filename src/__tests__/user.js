@@ -141,25 +141,6 @@ describe(
 );
 
 describe(
-    "GET /api/v1/usuarios/1",
-    () => {
-        test(
-            "anonymous",
-            () => {
-                return request(app)
-                    .get("/api/v1/usuarios/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(400);
-                        }
-                    );
-            }
-        );
-
-    }
-);
-
-describe(
     "POST /api/v1/usuarios/",
     () => {
         test(
@@ -195,6 +176,84 @@ describe(
         );
     }
 );
+
+
+describe(
+    "GET /api/v1/usuarios/1",
+    () => {
+        test(
+            "username instead of user's id",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/charles")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(400);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(401);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/1")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(200);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: expect.any(Number),
+                                    primeiro_nome: expect.any(String),
+                                    ultimo_nome: expect.any(String),
+                                    email: expect.any(String),
+                                    senha: expect.any(String)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "not found",
+            () => {
+                return request(app)
+                    .get("/api/v1/usuarios/100")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(404);
+                        }
+                    );
+            }
+        );
+    }
+);
+
 
 describe(
     "POST /api/v1/usuarios/senha/trocar",
@@ -425,7 +484,7 @@ describe(
                     .send()
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(204);
+                            expect(response.statusCode).toBe(200);
                         }
                     );
             }
