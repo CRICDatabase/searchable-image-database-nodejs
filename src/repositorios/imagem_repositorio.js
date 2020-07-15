@@ -2,14 +2,14 @@
 
 const Sequelize = require("sequelize");
 
-const ImagemModel = require("../models/ImagemModel");
-const DescricaoModel = require("../models/DescricaoModel");
-const LesaoModel = require("../models/LesaoModel");
 const CelulaModel = require("../models/CelulaModel");
+const ClassificacaoModel = require("../models/ClassificacaoCelulaModel");
+const DescricaoModel = require("../models/DescricaoModel");
+const ImagemModel = require("../models/ImagemModel");
+const LesaoModel = require("../models/LesaoModel");
 const SegmentacaoCitoplasmaModel = require("../models/SegmentacaoCitoplasmaModel");
 const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
-const ClassificacaoModel = require("../models/ClassificacaoCelulaModel");
-const Configuracao = require("../utils/enumeracoes/configuracao_lesao_descricao");
+
 const db = require("../database");
 
 module.exports = {
@@ -331,7 +331,7 @@ module.exports = {
             where: {
                 id_imagem: {
                     [Sequelize.Op.eq]: id_imagem
-                },
+                }
             }
         });
     },
@@ -341,7 +341,7 @@ module.exports = {
             where: {
                 id_imagem: {
                     [Sequelize.Op.eq]: id_imagem
-                },
+                }
             }
         });
     }

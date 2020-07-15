@@ -459,7 +459,8 @@ describe(
             "OK",
             () => {
                 let liam_token;
-                await request(app)
+                
+                return request(app)
                     .post(
                         "/api/v1/usuarios/login"
                     )
@@ -472,19 +473,19 @@ describe(
                     .then(
                         (response) => {
                             liam_token = response.body.Authorization;
-                        }
-                    );
 
-                return request(app)
-                    .post("/api/v1/usuarios/logout")
-                    .set(
-                        "Authorization",
-                        liam_token
-                    )
-                    .send()
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(200);
+                            request(app)
+                                .post("/api/v1/usuarios/logout")
+                                .set(
+                                    "Authorization",
+                                    liam_token
+                                )
+                                .send()
+                                .then(
+                                    response => {
+                                        expect(response.statusCode).toBe(200);
+                                    }
+                                );
                         }
                     );
             }
@@ -566,7 +567,7 @@ describe(
                     .send(
                         {
                             new_password1: "qwerty.uiop",
-                            new_password2: "qwerty.uiop",
+                            new_password2: "qwerty.uiop"
                         }
                     )
                     .then(

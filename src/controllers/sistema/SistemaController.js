@@ -20,7 +20,7 @@ module.exports = {
 
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
-    }
+    },
 
     not_implemented(req, res) {
         return res.status(HttpStatus.NOT_IMPLEMENTED);

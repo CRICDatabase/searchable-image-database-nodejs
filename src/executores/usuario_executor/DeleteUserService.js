@@ -24,15 +24,15 @@ module.exports = {
             throw ObjetoExcecao;
         }
 
-        const user = await Usuario_Repositorio.obterUsuarioBasePorId(id_usuario);
+        const user = await UsuarioRepositorio.obterUsuarioBasePorId(id_usuario);
 
         if (user) {
-            await Validador_De_Sessao.login_required(
+            await ValidadorDeSessao.login_required(
                 req,
                 user.dataValues.id
             );
 
-            await Usuario_Repositorio.delete_user(
+            await UsuarioRepositorio.delete_user(
                 user.dataValues.id
             );
         }

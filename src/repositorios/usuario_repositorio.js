@@ -70,7 +70,7 @@ module.exports = {
         user.save();
 
         return user;
-    }
+    },
 
     async delete_user(user_id) {
         let user =  await UsuarioBaseModel.findOne({
@@ -80,7 +80,7 @@ module.exports = {
         });
         user.ativo = false;
         user.save();
-    }
+    },
 
     async make_admin(user_id) {
         let user =  await UsuarioBaseModel.findOne({
@@ -90,7 +90,7 @@ module.exports = {
         });
         user.admin = true;
         user.save();
-    }
+    },
 
     async remove_admin(user_id) {
         let user =  await UsuarioBaseModel.findOne({
