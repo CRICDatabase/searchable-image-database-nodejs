@@ -66,7 +66,7 @@ describe(
                     .get("/api/v1/usuarios")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(401);
                         }
                     );
             }
@@ -83,23 +83,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toEqual(
-                                expect.arrayContaining(
-                                    [
-                                        expect.objectContaining({
-                                            ativo: true,
-                                            email: expect.any(String),
-                                            id: expect.any(Number),
-                                            primeiro_nome: expect.any(String),
-                                            senha: expect.any(String),
-                                            ultimo_nome: expect.any(String)
-                                        })
-                                    ]
-                                )
-                            );
+                            expect(response.statusCode).toBe(403);
                         }
                     );
             }
@@ -337,7 +321,7 @@ describe(
             "username instead of user's id",
             () => {
                 return request(app)
-                    .get("/api/v1/usuarios/charles")
+                    .delete("/api/v1/usuarios/daniel")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(400);
@@ -350,7 +334,7 @@ describe(
             "anonymous",
             () => {
                 return request(app)
-                    .get("/api/v1/usuarios/1")
+                    .delete("/api/v1/usuarios/8")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(401);
@@ -363,7 +347,7 @@ describe(
             "admin",
             () => {
                 return request(app)
-                    .get("/api/v1/usuarios/1")
+                    .delete("/api/v1/usuarios/8")
                     .set(
                         "Authorization",
                         admin_token

@@ -27,6 +27,7 @@ module.exports = {
             updated_at: "2020-01-01"
         },
         {
+            // POST /api/v1/usuarios/senha/trocar
             id: 3,
             primeiro_nome: "Amelia",
             ultimo_nome: "",
@@ -38,6 +39,7 @@ module.exports = {
             updated_at: "2020-01-01"
         },
         {
+            // POST /api/v1/usuarios/senha/recuperar
             id: 4,
             primeiro_nome: "Amara",
             ultimo_nome: "",
@@ -49,6 +51,7 @@ module.exports = {
             updated_at: "2020-01-01"
         },
         {
+            // POST /api/v1/usuarios/logout
             id: 5,
             primeiro_nome: "Liam",
             ultimo_nome: "",
@@ -60,6 +63,7 @@ module.exports = {
             updated_at: "2020-01-01"
         },
         {
+            // POST /api/v1/usuarios/:id_usuario/admin
             id: 6,
             primeiro_nome: "Asher",
             ultimo_nome: "",
@@ -71,10 +75,23 @@ module.exports = {
             updated_at: "2020-01-01"
         },
         {
+            // DELETE /api/v1/usuarios/id_usuario/admin
             id: 7,
             primeiro_nome: "Atlas",
             ultimo_nome: "",
             email: "atlas@test.database.cric.com.br",
+            senha: Criptografia.criarCriptografiaMd5Utf8("123.456"),
+            ativo: 1,
+            admin: 1,
+            created_at: "2020-01-01",
+            updated_at: "2020-01-01"
+        },
+        {
+            // DELETE /api/v1/usuarios/:id_usuario
+            id: 8,
+            primeiro_nome: "Daniel",
+            ultimo_nome: "",
+            email: "Daniel@test.database.cric.com.br",
             senha: Criptografia.criarCriptografiaMd5Utf8("123.456"),
             ativo: 1,
             admin: 1,
