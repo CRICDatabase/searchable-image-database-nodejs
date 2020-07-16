@@ -1,32 +1,45 @@
 "use strict";
 
 const express = require("express");
+
+// eslint-disable-next-line no-unused-vars
+const SistemaController = require("../controllers/sistema/SistemaController");
 const ImagemController = require("../controllers/imagem_controller/ImagemController");
+
 const rotasImagem = express.Router();
 
-//Rotas de imagem POST
+rotasImagem.get("/api/v1/imagens", SistemaController.not_implemented);
+rotasImagem.get("/api/v1/imagens/listar/:id_usuario(\\d+)", ImagemController.listarImagens); // TODO Remove in v2
 rotasImagem.post("/api/v1/imagens", ImagemController.cadastrarImagem);
-rotasImagem.post("/api/v1/imagens/:id_imagem/classificacao-celula/:id_usuario", ImagemController.cadastrarClassificacaoDeCelula);
-rotasImagem.post("/api/v1/imagens/:id_imagem/segmentacao-celula/:id_usuario", ImagemController.cadastrarSegmentacaoDeCelula);
-rotasImagem.post("/api/v1/imagens-lesoes/:id_usuario", ImagemController.cadastrarLesoes);
-rotasImagem.post("/api/v1/imagens-descricoes/:id_usuario", ImagemController.cadastrarDescricoes);
 
-//Rotas de imagem GET
-rotasImagem.get("/api/v1/imagens/listar/:id_usuario", ImagemController.listarImagens);
 rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.obterImagem);
-rotasImagem.get("/api/v1/imagens-lesoes", ImagemController.listarLesoes);
-rotasImagem.get("/api/v1/imagens-descricoes", ImagemController.listarDescricoes);
-rotasImagem.get("/api/v1/imagens/contagem/lesoes/descricoes", ImagemController.obterContagemLesoesEDescricoesNucleos);
-rotasImagem.get("/api/v1/imagens/:id_imagem/listar-classificacao-celula/:id_usuario", ImagemController.listarClassificacaoDeCelulaParaUmUsuario);
-rotasImagem.get("/api/v1/imagens/:id_imagem/listar-segmentacao-celula/:id_usuario", ImagemController.listarSegmentacaoDeCelulaParaUmUsuario);
-rotasImagem.get("/api/v1/imagens/download", ImagemController.downloadBase);
-
-//Rotas de imagem PUT
 rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.atualizarDadosImagem);
-rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)/classificacao-celula/:id_celula", ImagemController.atualizarClassificacao);
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)", SistemaController.not_implemented);
 
-//Rotas de imagem DELETE
-rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/classificacao-celula/:id_celula(\\d+)", ImagemController.excluirRegistroClassificacao);
-rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/segmentacao-celula/:id_celula(\\d+)", ImagemController.excluirRegistroSegmentacao);
+rotasImagem.get("/api/v1/imagens/:id_imagem/classificacoes", SistemaController.not_implemented);
+rotasImagem.get("/api/v1/imagens/:id_imagem/listar-classificacao-celula/:id_usuario(\\d+)", ImagemController.listarClassificacaoDeCelulaParaUmUsuario); // TODO Remove in v2
+rotasImagem.post("/api/v1/imagens/:id_imagem/classificacoes", SistemaController.not_implemented);
+rotasImagem.post("/api/v1/imagens/:id_imagem/classificacao-celula/:id_usuario(\\d+)", ImagemController.cadastrarClassificacaoDeCelula); // TODO Remove in v2
+
+rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)/classificacoes/:id_celula(\\d+)", SistemaController.not_implemented);
+rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)/classificacoes/:id_celula(\\d+)", SistemaController.not_implemented);
+rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)/classificacao-celula/:id_celula(\\d+)", ImagemController.atualizarClassificacao); // TODO Remove in v2
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/classificacoes/:id_celula(\\d+)", SistemaController.not_implemented);
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/classificacao-celula/:id_celula(\\d+)", ImagemController.excluirRegistroClassificacao); // TODO Remove in v2
+
+rotasImagem.get("/api/v1/imagens/:id_imagem/segmentacoes", SistemaController.not_implemented);
+rotasImagem.get("/api/v1/imagens/:id_imagem/listar-segmentacao-celula/:id_usuario", ImagemController.listarSegmentacaoDeCelulaParaUmUsuario); // TODO Remove in v2
+rotasImagem.post("/api/v1/imagens/:id_imagem/segmentacoes", SistemaController.not_implemented);
+rotasImagem.post("/api/v1/imagens/:id_imagem/segmentacao-celula/:id_usuario", ImagemController.cadastrarSegmentacaoDeCelula); // TODO Remove in v2
+
+rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)/segmentacoes/:id_celula(\\d+)", SistemaController.not_implemented);
+rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)/segmentacoes/:id_celula(\\d+)", SistemaController.not_implemented);
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/segmentacoes/:id_celula(\\d+)", SistemaController.not_implemented);
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/segmentacao-celula/:id_celula(\\d+)", ImagemController.excluirRegistroSegmentacao); // TODO Remove in v2
+
+rotasImagem.get("/api/v1/imagens/export", ImagemController.downloadBase);
+rotasImagem.get("/api/v1/imagens/download", ImagemController.downloadBase); // TODO Remove in v2
+
+rotasImagem.get("/api/v1/imagens/contagem/lesoes/descricoes", ImagemController.obterContagemLesoesEDescricoesNucleos); // TODO Remove in v2
 
 module.exports = rotasImagem;
