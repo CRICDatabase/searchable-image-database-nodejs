@@ -9,7 +9,7 @@ const ImagemController = require("../controllers/imagem_controller/ImagemControl
 const rotasDescricoes = express.Router();
 
 rotasDescricoes.get("/api/v1/descricoes", ImagemController.listarDescricoes);
--rotasImagem.get("/api/v1/imagens-descricoes", ImagemController.listarDescricoes); // TODO Remove in v2
+rotasDescricoes.get("/api/v1/imagens-descricoes", ImagemController.listarDescricoes); // TODO Remove in v2
 rotasDescricoes.post("/api/v1/descricoes", ImagemController.cadastrarDescricoes);
 rotasDescricoes.post("/api/v1/imagens-descricoes/:id_usuario(\\d+)", ImagemController.cadastrarDescricoes); // TODO Remove in v2
 
