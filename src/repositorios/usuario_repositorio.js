@@ -61,7 +61,7 @@ module.exports = {
     },
 
     async change_password(email, new_hashed_password) {
-        var user =  await UsuarioBaseModel.findOne({
+        let user =  await UsuarioBaseModel.findOne({
             where: {
                 email: email
             }
@@ -70,5 +70,35 @@ module.exports = {
         user.save();
 
         return user;
+    },
+
+    async delete_user(user_id) {
+        let user =  await UsuarioBaseModel.findOne({
+            where: {
+                id: user_id
+            }
+        });
+        user.ativo = false;
+        user.save();
+    },
+
+    async make_admin(user_id) {
+        let user =  await UsuarioBaseModel.findOne({
+            where: {
+                id: user_id
+            }
+        });
+        user.admin = true;
+        user.save();
+    },
+
+    async remove_admin(user_id) {
+        let user =  await UsuarioBaseModel.findOne({
+            where: {
+                id: user_id
+            }
+        });
+        user.admin = false;
+        user.save();
     }
 };

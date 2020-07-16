@@ -1,6 +1,6 @@
 "use strict";
 
-const { Model, DataTypes }  = require("sequelize");
+const { Model }  = require("sequelize");
 
 /**
  * Represents a cell.

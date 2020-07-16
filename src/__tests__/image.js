@@ -924,7 +924,7 @@ describe(
                                             id: expect.any(Number),
                                             nome: expect.any(String),
                                             grade: expect.any(Number)
-                                        },
+                                        }
                                     }]
                                 )
                             );
@@ -960,7 +960,7 @@ describe(
                                             id: expect.any(Number),
                                             nome: expect.any(String),
                                             grade: expect.any(Number)
-                                        },
+                                        }
                                     }]
                                 )
                             );
@@ -1017,7 +1017,7 @@ describe(
                                             id: expect.any(Number),
                                             nome: expect.any(String),
                                             grade: expect.any(Number)
-                                        },
+                                        }
                                     }]
                                 )
                             );
@@ -1064,7 +1064,7 @@ describe(
                                                     coord_x: expect.any(Number),
                                                     coord_y: expect.any(Number)
                                                 }]
-                                            ),
+                                            )
                                         }]
                                     )
                                 }
@@ -1110,7 +1110,7 @@ describe(
                                                     coord_x: expect.any(Number),
                                                     coord_y: expect.any(Number)
                                                 }]
-                                            ),
+                                            )
                                         }]
                                     )
                                 }
@@ -1176,7 +1176,7 @@ describe(
                                                     coord_x: expect.any(Number),
                                                     coord_y: expect.any(Number)
                                                 }]
-                                            ),
+                                            )
                                         }]
                                     )
                                 }
