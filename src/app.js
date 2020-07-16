@@ -7,6 +7,8 @@ const FileUpload = require("express-fileupload");
 
 const rotasIndex = require("./rotas/rotasIndex");
 const rotasUsuario = require("./rotas/rotasUsuario");
+const rotasLesoes = require("./rotas/rotasLesoes");
+const rotasDescricoes = require("./rotas/rotasDescricoes");
 const rotasImagem = require("./rotas/rotasImagem");
 
 require("./database"); //Obtem a conexão com a base de dados
@@ -41,6 +43,8 @@ app.use(function(req, res, next) {
 //Rotas do sistema
 app.use("/", rotasIndex);
 app.use("/", rotasUsuario);
+app.use("/", rotasLesoes);
+app.use("/", rotasDescricoes);
 app.use("/", rotasImagem);
 
 module.exports = app;
