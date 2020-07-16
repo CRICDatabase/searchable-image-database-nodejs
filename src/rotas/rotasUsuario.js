@@ -11,7 +11,7 @@ const rotasUsuario = express.Router();
 rotasUsuario.get("/api/v1/usuarios", UsuarioController.listarUsuarios);
 rotasUsuario.post("/api/v1/usuarios", UsuarioController.cadastrarUsuarioBase);
 
-rotasUsuario.get("/api/v1/usuarios/:id_usuario", UsuarioController.listarUsuarios);
+rotasUsuario.get("/api/v1/usuarios/:id_usuario", UsuarioController.obterUsuario);
 rotasUsuario.put("/api/v1/usuarios/:id_usuario", SistemaController.not_implemented);
 rotasUsuario.delete("/api/v1/usuarios/:id_usuario", UsuarioController.delete_user);
 

@@ -12,31 +12,7 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 module.exports = {
 
     async Executar(req) {
-        await ValidadorDeSessao.login_required(req);
-        validate_request(req);
-
-        let todosUsuarios;
-        if(req.params.id_usuario){
-            todosUsuarios = await UsuarioRepositorio.obterUsuarioCompletoPorIdOuLogin(req.params.id_usuario);
-        }
-        else{
-            todosUsuarios = await UsuarioRepositorio.ListarTodosUsuarios();
-        }
-
-        if(todosUsuarios.length == 0) {
-            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.title = Excecao.NENHUM_USUARIO_ENCONTRATO;
-            throw ObjetoExcecao;
-        }
-
-        return todosUsuarios;
+        await ValidadorDeSessao.admin_required(req);
+        return await UsuarioRepositorio.ListarTodosUsuarios();
     }
 };
-
-function validate_request(req) {
-    if(req.params.id_usuario && !ValidarTipo.ehNumero(req.params.id_usuario)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
-}
