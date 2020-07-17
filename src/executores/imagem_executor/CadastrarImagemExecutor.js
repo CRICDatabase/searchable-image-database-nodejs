@@ -68,7 +68,6 @@ async function prepararCadastroNoBanco(req) {
     const novoNomeImagem = `${Crypto.randomBytes(8).toString("hex")}_${nomeImagemTratado}`; //Cria hexadecimal de 16 bits
     const excluida = 0;
     const classificacao_aprovada = 1;
-    const caminho_imagem = "imagens/base_interna/";
     const altura = 0;
     const largura = 0;
 
@@ -78,7 +77,6 @@ async function prepararCadastroNoBanco(req) {
         excluida: excluida,
         classificacao_aprovada: classificacao_aprovada,
         dt_aquisicao: req.body.dt_aquisicao,
-        caminho_imagem: caminho_imagem,
         id_usuario: req.body.id_usuario,
         id_lesao: req.body.id_lesao,
         altura: altura,

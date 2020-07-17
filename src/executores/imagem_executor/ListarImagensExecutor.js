@@ -67,7 +67,6 @@ async function enrich_images(listaImagens) {
             excluida: listaImagens[i].dataValues.excluida,
             classificacao_aprovada: listaImagens[i].dataValues.classificacao_aprovada,
             dt_aquisicao: listaImagens[i].dataValues.dt_aquisicao,
-            caminho_imagem: listaImagens[i].dataValues.caminho_imagem,
             altura: listaImagens[i].dataValues.altura,
             largura: listaImagens[i].dataValues.largura,
             createdAt: listaImagens[i].dataValues.createdAt,

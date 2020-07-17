@@ -17,7 +17,6 @@ describe(
                         excluida: 0,
                         classificacao_aprovada: 0,
                         dt_aquisicao: "2020-01-01",
-                        caminho_imagem: "imagens/fixtures/",
                         id_usuario: 1,
                         id_lesao: 1,
                         altura: 100,
@@ -30,7 +29,6 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: expect.any(Number),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
@@ -59,7 +57,6 @@ describe(
                         excluida: 0,
                         classificacao_aprovada: 0,
                         dt_aquisicao: "2020-01-01",
-                        caminho_imagem: "imagens/fixtures/",
                         id_usuario: 1,
                         id_lesao: 1,
                         altura: 100,
@@ -72,7 +69,6 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: expect.any(Number),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
@@ -100,7 +96,6 @@ describe(
                         excluida: 0,
                         classificacao_aprovada: 0,
                         dt_aquisicao: "2020-01-01",
-                        caminho_imagem: "imagens/fixtures/",
                         id_usuario: 2,
                         id_lesao: 1,
                         altura: 100,
@@ -113,7 +108,6 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: expect.any(Number),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
@@ -142,7 +136,6 @@ describe(
                         excluida: 0,
                         classificacao_aprovada: 0,
                         dt_aquisicao: "2020-01-01",
-                        caminho_imagem: "imagens/fixtures/",
                         id_usuario: 2,
                         id_lesao: 1,
                         altura: 100,
@@ -155,7 +148,6 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: expect.any(Number),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
@@ -185,7 +177,6 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: expect.any(Number),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
@@ -234,7 +225,6 @@ describe(
                                         [
                                             expect.objectContaining({
                                                 altura: expect.any(Number),
-                                                caminho_imagem: expect.any(String),
                                                 classificacao_aprovada: expect.any(Number),
                                                 codigo_lamina: expect.any(String),
                                                 // doi: expect.any(String),

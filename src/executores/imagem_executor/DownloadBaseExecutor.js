@@ -108,7 +108,8 @@ module.exports = {
                         fs.readFileSync(
                             path.resolve(
                                 path2assets,
-                                image.caminho_imagem,
+                                "imagens",
+                                "png",
                                 image.nome
                             )
                         )

@@ -77,7 +77,6 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
                                     classificacao_aprovada: 0,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
@@ -115,7 +114,6 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
                                     classificacao_aprovada: 1,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
@@ -339,7 +337,6 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: 1,
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
@@ -382,7 +379,6 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: expect.any(Number),
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
@@ -425,7 +421,6 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: expect.any(Number),
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
@@ -488,7 +483,6 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: 0,
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
@@ -531,7 +525,6 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        caminho_imagem: expect.any(String),
                                         classificacao_aprovada: 0,
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
@@ -576,7 +569,6 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
                                     classificacao_aprovada: 1,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
@@ -614,7 +606,6 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
                                     classificacao_aprovada: 1,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
@@ -652,7 +643,6 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
                                     classificacao_aprovada: 1,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
@@ -711,7 +701,6 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
                                     classificacao_aprovada: 0,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
@@ -750,7 +739,6 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    caminho_imagem: expect.any(String),
                                     classificacao_aprovada: 0,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),

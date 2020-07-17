@@ -30,7 +30,6 @@ class ImagemModel extends Model {
             excluida: DataTypes.INTEGER,
             classificacao_aprovada: DataTypes.INTEGER,
             dt_aquisicao: DataTypes.DATE,
-            caminho_imagem: DataTypes.STRING,
             altura: DataTypes.INTEGER,
             largura: DataTypes.INTEGER
         },
