@@ -1,12 +1,12 @@
 "use strict";
 
-const ImagemFixtures = require("../fixtures/image");
+const ImagemFixtures = require("../fixtures/image.json");
 
 module.exports = {
     up: (queryInterface) => {
         return queryInterface.bulkInsert(
             "imagem",
-            ImagemFixtures.fixtures,
+            ImagemFixtures,
             {}
         );
     },

@@ -1,12 +1,12 @@
 "use strict";
 
-const CelulaFixtures = require("../fixtures/cell");
+const CelulaFixtures = require("../fixtures/cell.json");
 
 module.exports = {
     up: (queryInterface) => {
         return queryInterface.bulkInsert(
             "celula",
-            CelulaFixtures.fixtures,
+            CelulaFixtures,
             {}
         );
     },

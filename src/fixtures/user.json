@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "admin": 1,
+        "ativo": 1,
+        "email": "admin@test.database.cric.com.br",
+        "senha": "b316df1d65ee42ff51a5393df1f86105",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000",
+        "ultimo_nome": "",
+        "primeiro_nome": "admin"
+    },
+    {
+        "id": 2,
+        "admin": 0,
+        "ativo": 1,
+        "email": "charles@test.database.cric.com.br",
+        "senha": "b316df1d65ee42ff51a5393df1f86105",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000",
+        "ultimo_nome": "",
+        "primeiro_nome": "Charles"
+    },
+    {
+        "id": 3,
+        "primeiro_nome": "Amelia",
+        "ultimo_nome": "",
+        "email": "amelia@test.database.cric.com.br",
+        "senha": "b316df1d65ee42ff51a5393df1f86105",
+        "ativo": 1,
+        "admin": 0,
+        "created_at": "2020-01-01",
+        "updated_at": "2020-01-01"
+    },
+    {
+        "id": 4,
+        "primeiro_nome": "Amara",
+        "ultimo_nome": "",
+        "email": "amara@test.database.cric.com.br",
+        "senha": "b316df1d65ee42ff51a5393df1f86105",
+        "ativo": 1,
+        "admin": 0,
+        "created_at": "2020-01-01",
+        "updated_at": "2020-01-01"
+    },
+    {
+        "id": 5,
+        "primeiro_nome": "Liam",
+        "ultimo_nome": "",
+        "email": "liam@test.database.cric.com.br",
+        "senha": "b316df1d65ee42ff51a5393df1f86105",
+        "ativo": 1,
+        "admin": 0,
+        "created_at": "2020-01-01",
+        "updated_at": "2020-01-01"
+    },
+    {
+        "id": 6,
+        "primeiro_nome": "Asher",
+        "ultimo_nome": "",
+        "email": "asher@test.database.cric.com.br",
+        "senha": "b316df1d65ee42ff51a5393df1f86105",
+        "ativo": 1,
+        "admin": 0,
+        "created_at": "2020-01-01",
+        "updated_at": "2020-01-01"
+    },
+    {
+        "id": 7,
+        "primeiro_nome": "Atlas",
+        "ultimo_nome": "",
+        "email": "atlas@test.database.cric.com.br",
+        "senha": "b316df1d65ee42ff51a5393df1f86105",
+        "ativo": 1,
+        "admin": 1,
+        "created_at": "2020-01-01",
+        "updated_at": "2020-01-01"
+    },
+    {
+        "id": 8,
+        "primeiro_nome": "Daniel",
+        "ultimo_nome": "",
+        "email": "Daniel@test.database.cric.com.br",
+        "senha": "b316df1d65ee42ff51a5393df1f86105",
+        "ativo": 1,
+        "admin": 1,
+        "created_at": "2020-01-01",
+        "updated_at": "2020-01-01"
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nome": "Unkown",
+        "grade": 0,
+        "detalhes": "Unkown",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    },
+    {
+        "id": 2,
+        "nome": "Negative",
+        "grade": 1,
+        "detalhes": "Negative for intraepithelial lesion",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    },
+    {
+        "id": 3,
+        "nome": "ASC-US",
+        "grade": 2,
+        "detalhes": "Atypical squamous cells of undetermined significance",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    },
+    {
+        "id": 4,
+        "nome": "LSIL",
+        "grade": 3,
+        "detalhes": "Low grade squamous intraepithelial lesion",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    },
+    {
+        "id": 5,
+        "nome": "ASC-H",
+        "grade": 4,
+        "detalhes": "Atypical squamous cells cannot exclude HSIL",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    },
+    {
+        "id": 6,
+        "nome": "HSIL",
+        "grade": 5,
+        "detalhes": "High grade squamous intraepithelial lesion",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    },
+    {
+        "id": 7,
+        "nome": "SCC",
+        "grade": 6,
+        "detalhes": "Squamous cell carcinoma",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    }
+]

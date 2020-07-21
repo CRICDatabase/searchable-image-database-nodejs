@@ -1,12 +1,12 @@
 "use strict";
 
-const SegmentacaoNucleoFixtures = require("../fixtures/nucleus");
+const SegmentacaoNucleoFixtures = require("../fixtures/nucleus.json");
 
 module.exports = {
     up: (queryInterface) => {
         return queryInterface.bulkInsert(
             "segmentacao_nucleo",
-            SegmentacaoNucleoFixtures.fixtures,
+            SegmentacaoNucleoFixtures,
             {}
         );
     },
