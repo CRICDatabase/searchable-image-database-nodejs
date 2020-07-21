@@ -1,12 +1,12 @@
 "use strict";
 
-const UsuarioBaseFixtures = require("../fixtures/user");
+const UsuarioBaseFixtures = require("../fixtures/user.json");
 
 module.exports = {
     up: (queryInterface) => {
         return queryInterface.bulkInsert(
             "usuario_base",
-            UsuarioBaseFixtures.fixtures,
+            UsuarioBaseFixtures,
             {}
         );
     },

@@ -13,17 +13,17 @@ module.exports = async () => {
     const SegmentacaoCitoplasmaModel = require("../models/SegmentacaoCitoplasmaModel");
     const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
 
-    const UsuarioBaseFixtures = require("../fixtures/user");
+    const UsuarioBaseFixtures = require("../fixtures/user.json");
 
-    const LesaoFixtures = require("../fixtures/injury");
-    const DescricaoFixtures = require("../fixtures/description");
+    const LesaoFixtures = require("../fixtures/injury.json");
+    const DescricaoFixtures = require("../fixtures/description.json");
 
-    const ImagemFixtures = require("../fixtures/image");
+    const ImagemFixtures = require("../fixtures/image.json");
 
-    const CelulaFixtures = require("../fixtures/cell");
-    const ClassificacaoCelulaFixtures = require("../fixtures/classification");
-    const SegmentacaoCitoplasmaFixtures = require("../fixtures/cytoplasm");
-    const SegmentacaoNucleoFixtures = require("../fixtures/nucleus");
+    const CelulaFixtures = require("../fixtures/cell.json");
+    const ClassificacaoCelulaFixtures = require("../fixtures/classification.json");
+    const SegmentacaoCitoplasmaFixtures = require("../fixtures/cytoplasm.json");
+    const SegmentacaoNucleoFixtures = require("../fixtures/nucleus.json");
 
 
     const db = require("../database");
@@ -34,35 +34,35 @@ module.exports = async () => {
         .then(
             async () => {
                 await UsuarioBaseModel.bulkCreate(
-                    UsuarioBaseFixtures.fixtures
+                    UsuarioBaseFixtures
                 );
 
                 await LesaoModel.bulkCreate(
-                    LesaoFixtures.fixtures
+                    LesaoFixtures
                 );
 
                 await DescricaoModel.bulkCreate(
-                    DescricaoFixtures.fixtures
+                    DescricaoFixtures
                 );
 
                 await ImagemModel.bulkCreate(
-                    ImagemFixtures.fixtures
+                    ImagemFixtures
                 );
 
                 await CelulaModel.bulkCreate(
-                    CelulaFixtures.fixtures
+                    CelulaFixtures
                 );
 
                 await ClassificacaoCelulaModel.bulkCreate(
-                    ClassificacaoCelulaFixtures.fixtures
+                    ClassificacaoCelulaFixtures
                 );
 
                 await SegmentacaoCitoplasmaModel.bulkCreate(
-                    SegmentacaoCitoplasmaFixtures.fixtures
+                    SegmentacaoCitoplasmaFixtures
                 );
 
                 await SegmentacaoNucleoModel.bulkCreate(
-                    SegmentacaoNucleoFixtures.fixtures
+                    SegmentacaoNucleoFixtures
                 );
             }
         );

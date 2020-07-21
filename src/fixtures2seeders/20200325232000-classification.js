@@ -1,12 +1,12 @@
 "use strict";
 
-const ClassificacaoCelulaFixtures = require("../fixtures/classification");
+const ClassificacaoCelulaFixtures = require("../fixtures/classification.json");
 
 module.exports = {
     up: (queryInterface) => {
         return queryInterface.bulkInsert(
             "classificacao_celula",
-            ClassificacaoCelulaFixtures.fixtures,
+            ClassificacaoCelulaFixtures,
             {}
         );
     },
