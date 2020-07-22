@@ -138,8 +138,8 @@ module.exports = {
 
         let lesoesCadastradas;
         try {
-            lesoesCadastradas = await CadastrarLesaoExecutor.Executar(req);
-            return res.status(HttpStatus.CREATED).json(lesoesCadastradas);
+            await CadastrarLesaoExecutor.Executar(req);
+            return res.status(HttpStatus.CREATED).end();
         }
         catch (erro) {
             if(erro.status) {

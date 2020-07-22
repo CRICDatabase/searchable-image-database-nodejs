@@ -18,12 +18,7 @@ module.exports = {
 
         await ValidadorDeSessao.admin_required(req);
         await validarRequisicao(req);
-        const total = req.body.length;
-        for (let i = 0; i < total; i++) {
-            await ImagemRepositorio.cadastrarLesao(req.body[i]);
-        }
-
-        return await ListarLesoes.Executar(req);        
+        await ImagemRepositorio.cadastrarLesao(req.body);
     }
 };
 
