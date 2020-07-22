@@ -21,7 +21,7 @@ module.exports = {
         }
 
         if (!req.get("Authorization")) {
-            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = "Authorization is missing in header";
             throw ObjetoExcecao;
@@ -52,15 +52,13 @@ module.exports = {
             ObjetoExcecao.detail = "Token doesn't belong to active user";
             throw ObjetoExcecao;
         }
-        if (!user.dataValues.admin && requested_user_id && requested_user_id !== user.dataValues.id) {
-            debug(`requested_user_id: ${requested_user_id}`);
-            debug(`user.dataValues.id: ${user.dataValues.id}`);
-            debug(`requested_user_id !== user.dataValues.id: ${requested_user_id !== user.dataValues.id}}`);
-            debug(`user.dataValues.admin: ${user.dataValues.admin}`);
-            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-            ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
-            ObjetoExcecao.detail = "Token doesn't belong to required user";
-            throw ObjetoExcecao;
+        if (!user.dataValues.admin) {
+            if (requested_user_id !== user.dataValues.id) {
+                ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+                ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
+                ObjetoExcecao.detail = "Token doesn't belong to required user";
+                throw ObjetoExcecao;
+            }
         }
     },
 
