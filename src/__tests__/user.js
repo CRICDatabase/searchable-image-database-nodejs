@@ -125,13 +125,13 @@ describe(
 );
 
 describe(
-    "POST /api/v1/usuarios/",
+    "POST /api/v1/usuarios",
     () => {
         test(
             "anonymous",
             () => {
                 return request(app)
-                    .post("/api/v1/usuarios/")
+                    .post("/api/v1/usuarios")
                     .send(
                         {
                             primeiro_nome: "Created by annonymous",
