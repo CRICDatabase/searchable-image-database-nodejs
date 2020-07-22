@@ -20,10 +20,10 @@ class CollectionModel extends Model {
     static init(connection) {
 
         super.init({
-           slang: DataTypes.STRING,
-           name: DataTypes.STRING,
-           description: DataTypes.STRING,
-           public : DataTypes.BOOLEAN
+            slang: DataTypes.STRING,
+            name: DataTypes.STRING,
+            description: DataTypes.STRING,
+            public : DataTypes.BOOLEAN
         },
         {
             defaultScope: {

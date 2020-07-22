@@ -2,7 +2,7 @@
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.addColumn('imagem', 'id_collection' , Sequelize.BIGINT, 
+        return queryInterface.addColumn("imagem", "id_collection", Sequelize.BIGINT, 
             {
                 allowNull: false,
                 references: { model: "collection", key: "id" },
@@ -10,25 +10,25 @@ module.exports = {
                 onDelete: "RESTRICT"
             }
         )
-        .then(
-            ()=>{
-                return Promise.all(
-                    [
-                        queryInterface.sequelize.query(
-                        `
+            .then(
+                ()=>{
+                    return Promise.all(
+                        [
+                            queryInterface.sequelize.query(
+                                `
                             UPDATE
                                 imagem
                             SET
                                 id_collection = 1
                         `
-                        )
-                    ]
-                );
-            }
-        )
+                            )
+                        ]
+                    );
+                }
+            );
     },
 
     down: (queryInterface) => {
-        return queryInterface.removeColumn('imagem', 'id_collection');
+        return queryInterface.removeColumn("imagem", "id_collection");
     }
 };
