@@ -45,6 +45,10 @@ class ClassificacaoCelulaModel extends Model {
         this.belongsTo(models.LesaoModel, {
             foreignKey: "id_lesao", as: "fk_celula_lesao"
         });
+
+        this.belongsTo(models.ImagemModel, {
+            foreignKey: "id_imagem", as: "fk_classificacao_imagem"
+        });
     }
 }
 
