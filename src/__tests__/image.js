@@ -1,4 +1,7 @@
+const HttpStatus = require("http-status-codes");
+
 const request = require("supertest");
+
 const app = require("../app");
 
 let admin_token;
@@ -50,7 +53,7 @@ describe(
                     .post("/api/v1/imagens")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -71,7 +74,7 @@ describe(
                     .field({dt_aquisicao: "2020-01-01"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(201);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -108,7 +111,7 @@ describe(
                     .field({dt_aquisicao: "2020-01-01"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(201);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -149,7 +152,7 @@ describe(
                     .post("/api/v1/imagens/1/classificacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -169,7 +172,7 @@ describe(
                     .post("/api/v1/imagens/1/segmentacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -189,7 +192,7 @@ describe(
                     .post("/api/v1/imagens-lesoes/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -209,7 +212,7 @@ describe(
                     .post("/api/v1/imagens-descricoes/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -232,7 +235,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(201);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -271,7 +274,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -299,7 +302,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(201);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -330,7 +333,7 @@ describe(
                     .get("/api/v1/imagens/listar/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -372,7 +375,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -414,7 +417,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -459,7 +462,7 @@ describe(
                     .get("/api/v1/imagens/listar/2")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -476,7 +479,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -518,7 +521,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -563,7 +566,7 @@ describe(
                     .get("/api/v1/imagens/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -600,7 +603,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -637,7 +640,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -678,7 +681,7 @@ describe(
                     .get("/api/v1/imagens/3")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -695,7 +698,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -733,7 +736,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -774,7 +777,7 @@ describe(
                     .get("/api/v1/imagens-descricoes")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -803,7 +806,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -834,7 +837,7 @@ describe(
                     .get("/api/v1/imagens/contagem/lesoes/descricoes")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -864,7 +867,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -897,7 +900,7 @@ describe(
                     .get("/api/v1/imagens/1/listar-classificacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -933,7 +936,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -972,7 +975,7 @@ describe(
                     .get("/api/v1/imagens/3/listar-classificacao-celula/2")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -990,7 +993,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -1028,7 +1031,7 @@ describe(
                     .get("/api/v1/imagens/1/listar-segmentacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -1074,7 +1077,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -1122,7 +1125,7 @@ describe(
                     .get("/api/v1/imagens/3/listar-segmentacao-celula/2")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1140,7 +1143,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -1188,7 +1191,7 @@ describe(
                     .get("/api/v1/imagens/download")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -1206,7 +1209,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -1226,7 +1229,7 @@ describe(
                     .put("/api/v1/imagens/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1250,7 +1253,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1274,7 +1277,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(204);
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }
@@ -1293,7 +1296,7 @@ describe(
                     .put("/api/v1/imagens/3")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1317,7 +1320,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(204);
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }
@@ -1341,7 +1344,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(204);
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }
@@ -1361,7 +1364,7 @@ describe(
                     .put("/api/v1/imagens/1/classificacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1384,7 +1387,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1407,7 +1410,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -1426,7 +1429,7 @@ describe(
                     .put("/api/v1/imagens/3/classificacao-celula/31")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1449,7 +1452,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1472,7 +1475,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -1492,7 +1495,7 @@ describe(
                     .delete("/api/v1/imagens/1/classificacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1510,7 +1513,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1528,7 +1531,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(204);
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }
@@ -1549,7 +1552,7 @@ describe(
                     .delete("/api/v1/imagens/3/classificacao-celula/31")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1567,7 +1570,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(204);
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }
@@ -1587,7 +1590,7 @@ describe(
                     .delete("/api/v1/imagens/1/segmentacao-celula/4")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1605,7 +1608,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1623,7 +1626,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(204);
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }

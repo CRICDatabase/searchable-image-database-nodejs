@@ -1,4 +1,7 @@
+const HttpStatus = require("http-status-codes");
+
 const request = require("supertest");
+
 const app = require("../app");
 
 let admin_token;
@@ -49,7 +52,7 @@ describe(
                     .post("/api/v1/lesoes")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -67,7 +70,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(403);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
@@ -92,7 +95,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(201);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
                         }
                     );
             }
@@ -125,7 +128,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(201);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
                         }
                     );
             }
@@ -158,7 +161,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -191,7 +194,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -211,7 +214,7 @@ describe(
                     .get("/api/v1/lesoes")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -241,7 +244,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -271,7 +274,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
