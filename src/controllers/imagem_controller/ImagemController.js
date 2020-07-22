@@ -1,24 +1,27 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:ImagemController");
+
 const HttpStatus = require("http-status-codes");
-const debug = require("debug")("database.cric:ImageController");
-const CadastrarImagemExecutor = require("../../executores/imagem_executor/CadastrarImagemExecutor");
-const ListarImagensExecutor = require("../../executores/imagem_executor/ListarImagensExecutor");
-const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
+
+const AtualizarClassificacaoExecutor = require("../../executores/imagem_executor/AtualizarClassificacaoExecutor");
+const AtualizarDadosImagemExecutor = require("../../executores/imagem_executor/AtualizarDadosImagemExecutor");
 const CadastrarClassificacaoCelulaExecutor = require("../../executores/imagem_executor/CadastrarClassificacaoCelulaExecutor");
-const ListarClassificacaoCelulaExecutor = require("../../executores/imagem_executor/ListarClassificacaoCelulaExecutor");
-const CadastrarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/CadastrarSegmentacaoCelulaExecutor");
-const ListarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/ListarSegmentacaoCelulaExecutor");
-const CadastrarLesaoExecutor = require("../../executores/imagem_executor/CadastrarLesaoExecutor");
-const ListarLesaoExecutor = require("../../executores/imagem_executor/ListarLesoesExecutor");
 const CadastrarDescricao = require("../../executores/imagem_executor/CadastrarDescricaoExecutor");
-const ListarDescricao = require("../../executores/imagem_executor/ListarDescricoesExecutor");
-const ListarContagemLesoesEDescricoesNucleosExecutor = require("../../executores/imagem_executor/ListarContagemLesoesEDescricoesNucleos");
+const CadastrarImagemExecutor = require("../../executores/imagem_executor/CadastrarImagemExecutor");
+const CadastrarLesaoExecutor = require("../../executores/imagem_executor/CadastrarLesaoExecutor");
+const CadastrarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/CadastrarSegmentacaoCelulaExecutor");
 const DownloadBaseExecutor = require("../../executores/imagem_executor/DownloadBaseExecutor");
 const ExcluirClassificacaoExecutor = require("../../executores/imagem_executor/ExcluirClassificacaoExecutor");
 const ExcluirSegmentacaoExecutor = require("../../executores/imagem_executor/ExcluirSegmentacaoExecutor");
-const AtualizarDadosImagemExecutor = require("../../executores/imagem_executor/AtualizarDadosImagemExecutor");
-const AtualizarClassificacaoExecutor = require("../../executores/imagem_executor/AtualizarClassificacaoExecutor");
+const ListarClassificacaoCelulaExecutor = require("../../executores/imagem_executor/ListarClassificacaoCelulaExecutor");
+const ListarContagemLesoesEDescricoesNucleosExecutor = require("../../executores/imagem_executor/ListarContagemLesoesEDescricoesNucleos");
+const ListarDescricao = require("../../executores/imagem_executor/ListarDescricoesExecutor");
+const ListarImagensExecutor = require("../../executores/imagem_executor/ListarImagensExecutor");
+const ListarLesaoExecutor = require("../../executores/imagem_executor/ListarLesoesExecutor");
+const ListarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/ListarSegmentacaoCelulaExecutor");
+const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
 
 module.exports = {
 
@@ -34,6 +37,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -50,6 +54,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -66,6 +71,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -82,6 +88,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -98,6 +105,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -114,6 +122,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -130,6 +139,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -138,14 +148,15 @@ module.exports = {
 
         let lesoesCadastradas;
         try {
-            lesoesCadastradas = await CadastrarLesaoExecutor.Executar(req);
-            return res.status(HttpStatus.CREATED).json(lesoesCadastradas);
+            await CadastrarLesaoExecutor.Executar(req);
+            return res.status(HttpStatus.CREATED).end();
         }
         catch (erro) {
             if(erro.status) {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -162,6 +173,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -178,6 +190,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -194,6 +207,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -210,6 +224,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -237,6 +252,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -252,6 +268,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -267,6 +284,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -282,6 +300,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -297,6 +316,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     }

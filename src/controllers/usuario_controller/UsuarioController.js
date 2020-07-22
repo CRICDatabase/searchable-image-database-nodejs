@@ -1,5 +1,8 @@
 "use strict";
 
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:UsuarioController");
+
 const HttpStatus = require("http-status-codes");
 
 const CadastrarUsuarioExecutor = require("../../executores/usuario_executor/CadastrarUsuarioBaseExcutor");
@@ -26,6 +29,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -43,6 +47,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -60,6 +65,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }        
     },
@@ -76,6 +82,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -92,6 +99,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -108,6 +116,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -125,6 +134,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
@@ -140,6 +150,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }        
     },
@@ -157,6 +168,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     }

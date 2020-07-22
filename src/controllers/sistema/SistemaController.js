@@ -18,6 +18,7 @@ module.exports = {
                 return res.status(erro.status).json(erro);
             }
 
+            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },

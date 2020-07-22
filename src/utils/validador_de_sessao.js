@@ -66,7 +66,7 @@ module.exports = {
 
     async admin_required(req) {
         if (!req.get("Authorization")) {
-            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = "Authorization is missing in header";
             throw ObjetoExcecao;
@@ -98,7 +98,7 @@ module.exports = {
             throw ObjetoExcecao;
         }
         if (user.dataValues.admin === false) {        
-            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+            ObjetoExcecao.status = HttpStatus.FORBIDDEN;
             ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
             ObjetoExcecao.detail = "Token doesn't belong to user with admin rights";
             throw ObjetoExcecao;
