@@ -23,37 +23,18 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-
-    let lesoes = req.body;
-
-    if(!ValidarTipo.ehNumero(req.params.id_usuario) || lesoes.length == 0) {
+    debug(req.body);
+    if(!req.body.nome) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = `Missing nome`;
         throw ObjetoExcecao;
     }
 
-    lesoes.forEach(lesao => {
-
-        if(!lesao.nome) {
-            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-            ObjetoExcecao.detail = `Missing nome in ${lesao}`;
-            throw ObjetoExcecao;
-        }
-
-        if(!lesao.grade) {
-            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-            ObjetoExcecao.detail = `Missing grade in ${lesao}`;
-            throw ObjetoExcecao;
-        }
-
-    });
-
-    const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    if(!usuario) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+    if(!req.body.grade) {
+        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = `Missing grade`;
         throw ObjetoExcecao;
     }
 }
