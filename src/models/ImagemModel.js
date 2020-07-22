@@ -27,8 +27,8 @@ class ImagemModel extends Model {
             nome: DataTypes.STRING,
             doi: DataTypes.STRING,
             codigo_lamina: DataTypes.STRING,
-            excluida: DataTypes.INTEGER,
-            classificacao_aprovada: DataTypes.INTEGER,
+            excluida: DataTypes.BOOLEAN,
+            classificacao_aprovada: DataTypes.BOOLEAN,
             dt_aquisicao: DataTypes.DATE,
             altura: DataTypes.INTEGER,
             largura: DataTypes.INTEGER
