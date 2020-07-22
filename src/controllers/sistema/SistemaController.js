@@ -24,6 +24,6 @@ module.exports = {
     },
 
     not_implemented(req, res) {
-        return res.status(HttpStatus.NOT_IMPLEMENTED);
+        return res.status(HttpStatus.NOT_IMPLEMENTED).end();
     }
 };
