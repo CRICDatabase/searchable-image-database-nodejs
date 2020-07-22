@@ -354,18 +354,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    id: expect.any(Number),
-                                    primeiro_nome: expect.any(String),
-                                    ultimo_nome: expect.any(String),
-                                    email: expect.any(String),
-                                    senha: expect.any(String)
-                                }
-                            );
+                            expect(response.statusCode).toBe(204);
                         }
                     );
             }
