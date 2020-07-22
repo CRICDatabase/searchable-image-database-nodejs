@@ -1,4 +1,7 @@
+const HttpStatus = require("http-status-codes");
+
 const request = require("supertest");
+
 const app = require("../app");
 
 describe(
@@ -11,7 +14,7 @@ describe(
                     .get("/api/v1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(

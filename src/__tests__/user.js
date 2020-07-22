@@ -1,4 +1,7 @@
+const HttpStatus = require("http-status-codes");
+
 const request = require("supertest");
+
 const app = require("../app");
 
 let admin_token;
@@ -66,7 +69,7 @@ describe(
                     .get("/api/v1/usuarios")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -83,7 +86,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(403);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
@@ -100,7 +103,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toEqual(
@@ -125,13 +128,13 @@ describe(
 );
 
 describe(
-    "POST /api/v1/usuarios/",
+    "POST /api/v1/usuarios",
     () => {
         test(
             "anonymous",
             () => {
                 return request(app)
-                    .post("/api/v1/usuarios/")
+                    .post("/api/v1/usuarios")
                     .send(
                         {
                             primeiro_nome: "Created by annonymous",
@@ -142,7 +145,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(201);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -172,7 +175,7 @@ describe(
                     .get("/api/v1/usuarios/charles")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -185,7 +188,7 @@ describe(
                     .get("/api/v1/usuarios/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -202,7 +205,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -230,7 +233,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(404);
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
@@ -248,7 +251,7 @@ describe(
                     .get("/api/v1/usuarios/charles")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -261,7 +264,7 @@ describe(
                     .get("/api/v1/usuarios/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -278,7 +281,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
                             ).toMatchObject(
@@ -306,7 +309,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(404);
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
@@ -324,7 +327,7 @@ describe(
                     .delete("/api/v1/usuarios/daniel")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -337,7 +340,7 @@ describe(
                     .delete("/api/v1/usuarios/8")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -354,18 +357,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    id: expect.any(Number),
-                                    primeiro_nome: expect.any(String),
-                                    ultimo_nome: expect.any(String),
-                                    email: expect.any(String),
-                                    senha: expect.any(String)
-                                }
-                            );
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }
@@ -382,7 +374,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(404);
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
@@ -405,7 +397,7 @@ describe(
                     .send()
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -428,7 +420,7 @@ describe(
                     .send()
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -467,7 +459,7 @@ describe(
                                 .send()
                                 .then(
                                     response => {
-                                        expect(response.statusCode).toBe(200);
+                                        expect(response.statusCode).toBe(HttpStatus.OK);
                                     }
                                 );
                         }
@@ -487,7 +479,7 @@ describe(
                     .post("/api/v1/usuarios/senha/trocar")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -510,7 +502,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -533,7 +525,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -556,7 +548,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -580,7 +572,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }
@@ -602,7 +594,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -620,7 +612,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(200);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
                         }
                     );
             }

@@ -31,7 +31,7 @@ module.exports = {
                 req
             );
 
-            await UsuarioRepositorio.make_admin(
+            return await UsuarioRepositorio.make_admin(
                 user.dataValues.id
             );
         }

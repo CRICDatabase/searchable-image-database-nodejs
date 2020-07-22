@@ -32,7 +32,7 @@ module.exports = {
                 user.dataValues.id
             );
 
-            await UsuarioRepositorio.delete_user(
+            return await UsuarioRepositorio.delete_user(
                 user.dataValues.id
             );
         }

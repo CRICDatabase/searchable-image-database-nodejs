@@ -31,7 +31,7 @@ module.exports = {
                 req
             );
 
-            await UsuarioRepositorio.remove_admin(
+            return await UsuarioRepositorio.remove_admin(
                 user.dataValues.id
             );
         }
