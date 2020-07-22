@@ -39,17 +39,17 @@ beforeAll(async () => {
 });
 
 describe(
-    "POST /api/v1/imagens-lesoes/1",
+    "POST /api/v1/lesoes",
     () => {
         test(
             "anonymous",
             () => {
                 /* Anonymous user can NOT use POST method */
                 return request(app)
-                    .post("/api/v1/imagens-lesoes/1")
+                    .post("/api/v1/lesoes")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(400);
+                            expect(response.statusCode).toBe(401);
                         }
                     );
             }
@@ -60,14 +60,14 @@ describe(
             () => {
                 /* User can NOT use POST method */
                 return request(app)
-                    .post("/api/v1/imagens-lesoes/1")
+                    .post("/api/v1/lesoes")
                     .set(
                         "Authorization",
                         charles_token
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(401);
+                            expect(response.statusCode).toBe(403);
                         }
                     );
             }
@@ -78,35 +78,21 @@ describe(
             () => {
                 /* Admin can use POST method */
                 return request(app)
-                    .post("/api/v1/imagens-lesoes/1")
+                    .post("/api/v1/lesoes")
                     .set(
                         "Authorization",
                         admin_token
                     )
                     .send(
-                        [
-                            {
-                                nome: "Test",
-                                detalhes: "Test",
-                                grade: 100
-                            }
-                        ]
+                        {
+                            nome: "Test",
+                            detalhes: "Test",
+                            grade: 100
+                        }
                     )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(201);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        id: expect.any(Number),
-                                        nome: expect.any(String),
-                                        detalhes: expect.any(String),
-                                        grade: expect.any(Number)
-                                    }]
-                                )
-                            );
                         }
                     );
             }
@@ -116,7 +102,7 @@ describe(
 );
 
 describe(
-    "POST /api/v1/imagens-lesoes/1 (missing detalhes)",
+    "POST /api/v1/lesoes (missing detalhes)",
     () => {
         /* No test for annoymous as it can't use POST method */
 
@@ -126,32 +112,20 @@ describe(
             "admin",
             () => {
                 return request(app)
-                    .post("/api/v1/imagens-lesoes/1")
+                    .post("/api/v1/lesoes")
                     .set(
                         "Authorization",
                         admin_token
                     )
                     .send(
-                        [{
+                        {
                             nome: "Test",
                             grade: 100
-                        }]
+                        }
                     )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(201);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        detalhes: expect.any(String),
-                                        nome: expect.any(String),
-                                        id: expect.any(Number),
-                                        grade: expect.any(Number)
-                                    }]
-                                )
-                            );
                         }
                     );
             }
@@ -161,7 +135,7 @@ describe(
 );
 
 describe(
-    "POST /api/v1/imagens-lesoes/1 (missing nome)",
+    "POST /api/v1/lesoes (missing nome)",
     () => {
         /* No test for annoymous as it can't use POST method */
 
@@ -177,10 +151,10 @@ describe(
                         admin_token
                     )
                     .send(
-                        [{
+                        {
                             detalhes: "Test",
                             grade: 100
-                        }]
+                        }
                     )
                     .then(
                         response => {
@@ -194,7 +168,7 @@ describe(
 );
 
 describe(
-    "POST /api/v1/imagens-lesoes/1 (missing grade)",
+    "POST /api/v1/lesoes (missing grade)",
     () => {
         /* No test for annoymous as it can't use POST method */
 
@@ -210,10 +184,10 @@ describe(
                         admin_token
                     )
                     .send(
-                        [{
+                        {
                             detalhes: "Test",
                             nome: "Test"
-                        }]
+                        }
                     )
                     .then(
                         response => {
@@ -227,14 +201,14 @@ describe(
 );
 
 describe(
-    "GET /api/v1/imagens-lesoes",
+    "GET /api/v1/lesoes",
     () => {
         test(
             "anonymous",
             () => {
                 /* Anonymous user should be able to list injury */
                 return request(app)
-                    .get("/api/v1/imagens-lesoes")
+                    .get("/api/v1/lesoes")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(200);
@@ -260,7 +234,7 @@ describe(
             () => {
                 /* User should be able to list injury */
                 return request(app)
-                    .get("/api/v1/imagens-lesoes")
+                    .get("/api/v1/lesoes")
                     .set(
                         "Authorization",
                         charles_token
@@ -290,7 +264,7 @@ describe(
             () => {
                 /* Admin should be able to list injury */
                 return request(app)
-                    .get("/api/v1/imagens-lesoes")
+                    .get("/api/v1/lesoes")
                     .set(
                         "Authorization",
                         admin_token
