@@ -28,7 +28,8 @@ module.exports = {
 
         public:{
           type: Sequelize.BOOLEAN,
-          allowNull: false
+          allowNull: false,
+          defaultValue: false
         },
 
         owner:{
