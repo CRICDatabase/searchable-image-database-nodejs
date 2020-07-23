@@ -13,13 +13,6 @@ const UsuarioRepositorio = require("../repositorios/usuario_repositorio");
 module.exports = {
 
     async login_required(req, requested_user_id) {
-        if (typeof(requested_user_id) !== "number") {
-            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-            ObjetoExcecao.detail = "User id must be a number";
-            throw ObjetoExcecao;
-        }
-
         if (!req.get("Authorization")) {
             ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
@@ -52,9 +45,9 @@ module.exports = {
             ObjetoExcecao.detail = "Token doesn't belong to active user";
             throw ObjetoExcecao;
         }
-        if (!user.dataValues.admin) {
-            if (requested_user_id !== user.dataValues.id) {
-                ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+        if (!user.dataValues.admin && typeof(requested_user_id) !== "undefined") {
+            if (Number(requested_user_id) !== user.dataValues.id) {
+                ObjetoExcecao.status = HttpStatus.FORBIDDEN;
                 ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
                 ObjetoExcecao.detail = "Token doesn't belong to required user";
                 throw ObjetoExcecao;

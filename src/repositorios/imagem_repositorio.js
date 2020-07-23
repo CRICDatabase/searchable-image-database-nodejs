@@ -111,6 +111,10 @@ module.exports = {
         return ImagemModel.findByPk(id_imagem);
     },
 
+    async obterClassificacaoPorId(id_celula) {
+        return ClassificacaoModel.findByPk(id_celula);
+    },
+
     async obterCelulaPorId(id_celula) {
         return CelulaModel.findByPk(id_celula);
     },
@@ -296,6 +300,23 @@ module.exports = {
         );
     },
 
+    async atualizarClassificacao(requisicao) {
+        return ClassificacaoModel.update({
+            id_lesao: requisicao.id_lesao_celula
+        },
+        {
+            where: {
+                id: {
+                    [Sequelize.Op.eq]: requisicao.id_celula
+                },
+                id_imagem: {
+                    [Sequelize.Op.eq]: requisicao.id_imagem
+                }
+            }
+        });
+    },
+
+    // TODO Fix function
     async atualizarCelula(requisicao) {
         return ClassificacaoModel.update({
             id_lesao: requisicao.id_lesao_celula

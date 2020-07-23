@@ -29,11 +29,11 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Number),
+                                        classificacao_aprovada: expect.any(Boolean),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
                                         dt_aquisicao: expect.any(Date),
-                                        excluida: expect.any(Number),
+                                        excluida: expect.any(Boolean),
                                         id: expect.any(Number),
                                         id_lesao: expect.any(Number),
                                         id_usuario: expect.any(Number),
@@ -69,11 +69,11 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Number),
+                                        classificacao_aprovada: expect.any(Boolean),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
                                         dt_aquisicao: expect.any(Date),
-                                        excluida: expect.any(Number),
+                                        excluida: expect.any(Boolean),
                                         id: expect.any(Number),
                                         id_lesao: expect.any(Number),
                                         id_usuario: expect.any(Number),
@@ -108,11 +108,11 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Number),
+                                        classificacao_aprovada: expect.any(Boolean),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
                                         dt_aquisicao: expect.any(Date),
-                                        excluida: expect.any(Number),
+                                        excluida: expect.any(Boolean),
                                         id: expect.any(Number),
                                         id_lesao: expect.any(Number),
                                         id_usuario: expect.any(Number),
@@ -148,11 +148,11 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Number),
+                                        classificacao_aprovada: expect.any(Boolean),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
                                         dt_aquisicao: expect.any(Date),
-                                        excluida: expect.any(Number),
+                                        excluida: expect.any(Boolean),
                                         id: expect.any(Number),
                                         id_lesao: expect.any(Number),
                                         id_usuario: expect.any(Number),
@@ -177,11 +177,11 @@ describe(
                                 .toMatchObject(
                                     {
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Number),
+                                        classificacao_aprovada: expect.any(Boolean),
                                         codigo_lamina: expect.any(String),
                                         // doi: expect.any(String),
                                         dt_aquisicao: expect.any(Date),
-                                        excluida: expect.any(Number),
+                                        excluida: expect.any(Boolean),
                                         id: expect.any(Number),
                                         id_lesao: expect.any(Number),
                                         id_usuario: expect.any(Number),
@@ -225,11 +225,11 @@ describe(
                                         [
                                             expect.objectContaining({
                                                 altura: expect.any(Number),
-                                                classificacao_aprovada: expect.any(Number),
+                                                classificacao_aprovada: expect.any(Boolean),
                                                 codigo_lamina: expect.any(String),
                                                 // doi: expect.any(String),
                                                 dt_aquisicao: expect.any(Date),
-                                                excluida: expect.any(Number),
+                                                excluida: expect.any(Boolean),
                                                 id: expect.any(Number),
                                                 id_lesao: expect.any(Number),
                                                 id_usuario: expect.any(Number),

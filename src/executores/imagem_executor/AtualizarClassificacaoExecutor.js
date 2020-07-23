@@ -27,7 +27,7 @@ module.exports = {
             id_celula: req.params.id_celula
         };
 
-        const atualizarCelulaTask = ImagemRepositorio.atualizarCelula(requisicao);
+        const atualizarCelulaTask = ImagemRepositorio.atualizarClassificacao(requisicao);
         await Promise.all([atualizarCelulaTask]);
 
         const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
@@ -55,7 +55,7 @@ async function validarRequisicao(req) {
     }
 
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
-    const celulaTask = ImagemRepositorio.obterCelulaPorId(req.params.id_celula);
+    const celulaTask = ImagemRepositorio.obterClassificacaoPorId(req.params.id_celula);
     const [imagem, celula] = await Promise.all([imagemTask, celulaTask]);
 
     if (!imagem) {
