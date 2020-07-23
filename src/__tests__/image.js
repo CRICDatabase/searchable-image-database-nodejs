@@ -80,10 +80,10 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    classificacao_aprovada: 0,
+                                    classificacao_aprovada: false,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
-                                    excluida: 0,
+                                    excluida: false,
                                     id: expect.any(Number),
                                     id_usuario: 2,
                                     id_lesao: 1,
@@ -117,10 +117,10 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    classificacao_aprovada: 1,
+                                    classificacao_aprovada: true,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
-                                    excluida: 0,
+                                    excluida: false,
                                     id: expect.any(Number),
                                     id_usuario: 1,
                                     largura: expect.any(Number),
@@ -340,10 +340,10 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: 1,
+                                        classificacao_aprovada: true,
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
-                                        excluida: 0,
+                                        excluida: false,
                                         id: expect.any(Number),
                                         id_usuario: 1,
                                         largura: expect.any(Number),
@@ -382,10 +382,10 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Number),
+                                        classificacao_aprovada: expect.any(Boolean),
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
-                                        excluida: 0,
+                                        excluida: false,
                                         id: expect.any(Number),
                                         id_usuario: 1,
                                         largura: expect.any(Number),
@@ -424,10 +424,10 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Number),
+                                        classificacao_aprovada: expect.any(Boolean),
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
-                                        excluida: 0,
+                                        excluida: false,
                                         id: expect.any(Number),
                                         id_usuario: 1,
                                         largura: expect.any(Number),
@@ -486,10 +486,10 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: 0,
+                                        classificacao_aprovada: false,
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
-                                        excluida: 0,
+                                        excluida: false,
                                         id: expect.any(Number),
                                         id_usuario: 2,
                                         largura: expect.any(Number),
@@ -528,10 +528,10 @@ describe(
                                 expect.arrayContaining(
                                     [{
                                         altura: expect.any(Number),
-                                        classificacao_aprovada: 0,
+                                        classificacao_aprovada: false,
                                         codigo_lamina: expect.any(String),
                                         dt_aquisicao: expect.any(String),
-                                        excluida: 0,
+                                        excluida: false,
                                         id: expect.any(Number),
                                         id_usuario: 2,
                                         largura: expect.any(Number),
@@ -572,10 +572,10 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    classificacao_aprovada: 1,
+                                    classificacao_aprovada: true,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
-                                    excluida: 0,
+                                    excluida: false,
                                     id: 1,
                                     id_usuario: 1,
                                     largura: expect.any(Number),
@@ -609,10 +609,10 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    classificacao_aprovada: 1,
+                                    classificacao_aprovada: true,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
-                                    excluida: 0,
+                                    excluida: false,
                                     id: 1,
                                     id_usuario: 1,
                                     largura: expect.any(Number),
@@ -646,10 +646,10 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    classificacao_aprovada: 1,
+                                    classificacao_aprovada: true,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
-                                    excluida: 0,
+                                    excluida: false,
                                     id: 1,
                                     id_usuario: 1,
                                     largura: expect.any(Number),
@@ -704,10 +704,10 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    classificacao_aprovada: 0,
+                                    classificacao_aprovada: false,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
-                                    excluida: 0,
+                                    excluida: false,
                                     id: 3,
                                     id_usuario: 2,
                                     largura: expect.any(Number),
@@ -742,10 +742,10 @@ describe(
                             ).toMatchObject(
                                 {
                                     altura: expect.any(Number),
-                                    classificacao_aprovada: 0,
+                                    classificacao_aprovada: false,
                                     codigo_lamina: expect.any(String),
                                     dt_aquisicao: expect.any(String),
-                                    excluida: 0,
+                                    excluida: false,
                                     id: 3,
                                     id_usuario: 2,
                                     largura: expect.any(Number),
