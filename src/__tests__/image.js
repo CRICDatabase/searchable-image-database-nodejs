@@ -911,16 +911,18 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
+                                        id: expect.any(Number),
+                                        id_imagem: expect.any(Number),
+                                        id_lesao: expect.any(Number),
+                                        id_usuario: expect.any(Number),
                                         coord_centro_nucleo_x: expect.any(Number),
                                         coord_centro_nucleo_y: expect.any(Number),
-                                        id_celula: expect.any(Number),
-                                        id_classificacao: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        }
+                                        // lesao: {
+                                        //     detalhes: expect.any(String),
+                                        //     id: expect.any(Number),
+                                        //     nome: expect.any(String),
+                                        //     grade: expect.any(Number)
+                                        // }
                                     }]
                                 )
                             );
@@ -947,16 +949,18 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
+                                        id: expect.any(Number),
+                                        id_imagem: expect.any(Number),
+                                        id_lesao:expect.any(Number),
+                                        id_usuario: expect.any(Number),
                                         coord_centro_nucleo_x: expect.any(Number),
                                         coord_centro_nucleo_y: expect.any(Number),
-                                        id_celula: expect.any(Number),
-                                        id_classificacao: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        }
+                                        // lesao: {
+                                        //     detalhes: expect.any(String),
+                                        //     id: expect.any(Number),
+                                        //     nome: expect.any(String),
+                                        //     grade: expect.any(Number)
+                                        // }
                                     }]
                                 )
                             );
@@ -987,6 +991,44 @@ describe(
         );
 
         test(
+            "charles",
+            () => {
+                /* Owner should be able to get information of classification */
+                return request(app)
+                    .get("/api/v1/imagens/3/listar-classificacao-celula/2")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        id: expect.any(Number),
+                                        id_imagem: expect.any(Number),
+                                        id_lesao:expect.any(Number),
+                                        id_usuario: expect.any(Number),
+                                        coord_centro_nucleo_x: expect.any(Number),
+                                        coord_centro_nucleo_y: expect.any(Number),
+                                        // lesao: {
+                                        //     detalhes: expect.any(String),
+                                        //     id: expect.any(Number),
+                                        //     nome: expect.any(String),
+                                        //     grade: expect.any(Number)
+                                        // }
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
             "admin",
             () => {
                 /* Admin user should be able to get information of classification own by other users */
@@ -1004,16 +1046,18 @@ describe(
                             ).toMatchObject(
                                 expect.arrayContaining(
                                     [{
+                                        id: expect.any(Number),
+                                        id_imagem: expect.any(Number),
+                                        id_lesao:expect.any(Number),
+                                        id_usuario: expect.any(Number),
                                         coord_centro_nucleo_x: expect.any(Number),
                                         coord_centro_nucleo_y: expect.any(Number),
-                                        id_celula: expect.any(Number),
-                                        id_classificacao: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        }
+                                        // lesao: {
+                                        //     detalhes: expect.any(String),
+                                        //     id: expect.any(Number),
+                                        //     nome: expect.any(String),
+                                        //     grade: expect.any(Number)
+                                        // }
                                     }]
                                 )
                             );
@@ -1258,7 +1302,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
@@ -1367,9 +1411,14 @@ describe(
                 /* Anonymous user can NOT use PUT method */
                 return request(app)
                     .put("/api/v1/imagens/1/classificacao-celula/1")
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1424,32 +1473,14 @@ describe(
 );
 
 describe(
-    "PUT /api/v1/imagens/3/classificacao-celula/31",
+    "PUT /api/v1/imagens/3/classificacao-celula/3",
     () => {
         test(
             "anonymous",
             () => {
                 /* Anonymous user can NOT use PUT method */
                 return request(app)
-                    .put("/api/v1/imagens/3/classificacao-celula/31")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "charles",
-            () => {
-                /* Admin user can use PUT method */
-                return request(app)
-                    .put("/api/v1/imagens/3/classificacao-celula/31")
-                    .set(
-                        "Authorization",
-                        charles_token
-                    )
+                    .put("/api/v1/imagens/3/classificacao-celula/3")
                     .send(
                         {
                             id_lesao_celula: 1
@@ -1464,11 +1495,34 @@ describe(
         );
 
         test(
+            "charles",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/3/classificacao-celula/3")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
+                        }
+                    );
+            }
+        );
+
+        test(
             "admin",
             () => {
                 /* Admin user can use PUT method */
                 return request(app)
-                    .put("/api/v1/imagens/3/classificacao-celula/31")
+                    .put("/api/v1/imagens/3/classificacao-celula/3")
                     .set(
                         "Authorization",
                         admin_token
@@ -1481,6 +1535,75 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "PUT /api/v1/imagens/1/classificacao-celula/100",
+    () => {
+
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/100")
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/100")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .put("/api/v1/imagens/1/classificacao-celula/100")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            id_lesao_celula: 1
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
@@ -1518,7 +1641,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
@@ -1547,7 +1670,7 @@ describe(
 
 
 describe(
-    "DELETE /api/v1/imagens/3/classificacao-celula/31",
+    "DELETE /api/v1/imagens/3/classificacao-celula/3",
     () => {
         test(
             "anonymous",
@@ -1566,9 +1689,8 @@ describe(
         test(
             "charles",
             () => {
-                /* User NOT use DELETE cell from image that they don't own */
                 return request(app)
-                    .delete("/api/v1/imagens/3/classificacao-celula/31")
+                    .delete("/api/v1/imagens/3/classificacao-celula/3")
                     .set(
                         "Authorization",
                         charles_token
@@ -1602,7 +1724,7 @@ describe(
         );
 
         test(
-            "anonymous",
+            "charles",
             () => {
                 /* User can NOT use DELETE segmentation in image they don't own */
                 return request(app)
@@ -1613,7 +1735,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
