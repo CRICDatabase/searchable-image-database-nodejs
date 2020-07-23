@@ -297,7 +297,7 @@ module.exports = {
     },
 
     async atualizarCelula(requisicao) {
-        return CelulaModel.update({
+        return ClassificacaoModel.update({
             id_lesao: requisicao.id_lesao_celula
         },
         {
