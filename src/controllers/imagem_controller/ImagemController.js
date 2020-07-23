@@ -16,7 +16,6 @@ const DownloadBaseExecutor = require("../../executores/imagem_executor/DownloadB
 const ExcluirClassificacaoExecutor = require("../../executores/imagem_executor/ExcluirClassificacaoExecutor");
 const ExcluirSegmentacaoExecutor = require("../../executores/imagem_executor/ExcluirSegmentacaoExecutor");
 const ListarClassificacaoCelulaExecutor = require("../../executores/imagem_executor/ListarClassificacaoCelulaExecutor");
-const ListarContagemLesoesEDescricoesNucleosExecutor = require("../../executores/imagem_executor/ListarContagemLesoesEDescricoesNucleos");
 const ListarDescricao = require("../../executores/imagem_executor/ListarDescricoesExecutor");
 const ListarImagensExecutor = require("../../executores/imagem_executor/ListarImagensExecutor");
 const ListarLesaoExecutor = require("../../executores/imagem_executor/ListarLesoesExecutor");
@@ -201,23 +200,6 @@ module.exports = {
         try {
             todasDescricoes = await ListarDescricao.Executar(req);
             return res.status(HttpStatus.OK).json(todasDescricoes);
-        }
-        catch (erro) {
-            if(erro.status) {
-                return res.status(erro.status).json(erro);
-            }
-
-            debug(erro);
-            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
-        }
-    },
-
-    async obterContagemLesoesEDescricoesNucleos(req, res) {
-
-        let resultado;
-        try {
-            resultado = await ListarContagemLesoesEDescricoesNucleosExecutor.Executar(req);
-            return res.status(HttpStatus.OK).json(resultado);
         }
         catch (erro) {
             if(erro.status) {
