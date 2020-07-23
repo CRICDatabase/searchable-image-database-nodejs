@@ -54,7 +54,8 @@ $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
 'id_usuario', id_usuario,
 'created_at', created_at,
 'updated_at', updated_at,
-'id_lesao', id_lesao
+'id_lesao', id_lesao,
+'id_imagem', id_imagem
 )) FROM classificacao_celula" | tail -n 1 | python -m json.tool > classification.json
 
 $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
