@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
@@ -16,10 +16,10 @@ module.exports = {
                 )
             ]
         );
-  },
+    },
 
     down: (queryInterface, Sequelize) => {
-                return Promise.all(
+        return Promise.all(
             [
                 queryInterface.changeColumn(
                     "imagem",
@@ -33,5 +33,5 @@ module.exports = {
                 )
             ]
         );
-  }
+    }
 };

@@ -853,7 +853,7 @@ describe(
                                         id_lesao: expect.any(Number),
                                         id_usuario: expect.any(Number),
                                         coord_centro_nucleo_x: expect.any(Number),
-                                        coord_centro_nucleo_y: expect.any(Number),
+                                        coord_centro_nucleo_y: expect.any(Number)
                                         // lesao: {
                                         //     detalhes: expect.any(String),
                                         //     id: expect.any(Number),
@@ -891,7 +891,7 @@ describe(
                                         id_lesao:expect.any(Number),
                                         id_usuario: expect.any(Number),
                                         coord_centro_nucleo_x: expect.any(Number),
-                                        coord_centro_nucleo_y: expect.any(Number),
+                                        coord_centro_nucleo_y: expect.any(Number)
                                         // lesao: {
                                         //     detalhes: expect.any(String),
                                         //     id: expect.any(Number),
@@ -950,7 +950,7 @@ describe(
                                         id_lesao:expect.any(Number),
                                         id_usuario: expect.any(Number),
                                         coord_centro_nucleo_x: expect.any(Number),
-                                        coord_centro_nucleo_y: expect.any(Number),
+                                        coord_centro_nucleo_y: expect.any(Number)
                                         // lesao: {
                                         //     detalhes: expect.any(String),
                                         //     id: expect.any(Number),
@@ -988,7 +988,7 @@ describe(
                                         id_lesao:expect.any(Number),
                                         id_usuario: expect.any(Number),
                                         coord_centro_nucleo_x: expect.any(Number),
-                                        coord_centro_nucleo_y: expect.any(Number),
+                                        coord_centro_nucleo_y: expect.any(Number)
                                         // lesao: {
                                         //     detalhes: expect.any(String),
                                         //     id: expect.any(Number),

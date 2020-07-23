@@ -145,7 +145,6 @@ module.exports = {
 
     async cadastrarLesoes(req, res) {
 
-        let lesoesCadastradas;
         try {
             await CadastrarLesaoExecutor.Executar(req);
             return res.status(HttpStatus.CREATED).end();
