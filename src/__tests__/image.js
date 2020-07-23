@@ -1415,7 +1415,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }
@@ -1480,7 +1480,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }
