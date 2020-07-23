@@ -832,69 +832,6 @@ describe(
 );
 
 describe(
-    "GET /api/v1/imagens/contagem/lesoes/descricoes",
-    () => {
-        test(
-            "anonymous",
-            () => {
-                /* Anonymous user should be able to get information of imagem own by main user */
-                return request(app)
-                    .get("/api/v1/imagens/contagem/lesoes/descricoes")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    AscH: expect.any(Number),
-                                    AscUs: expect.any(Number),
-                                    Carcinoma: expect.any(Number),
-                                    HSil: expect.any(Number),
-                                    LSil: expect.any(Number),
-                                    Normal: expect.any(Number)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "admin",
-            () => {
-                /* Admin user should be able to get information of imagem own by main user */
-                return request(app)
-                    .get("/api/v1/imagens/contagem/lesoes/descricoes")
-                    .set(
-                        "Authorization",
-                        admin_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    AscH: expect.any(Number),
-                                    AscUs: expect.any(Number),
-                                    Carcinoma: expect.any(Number),
-                                    HSil: expect.any(Number),
-                                    LSil: expect.any(Number),
-                                    Normal: expect.any(Number)
-                                }
-                            );
-                        }
-                    );
-            }
-        );
-
-
-    }
-);
-
-describe(
     "GET /api/v1/imagens/1/listar-classificacao-celula/1",
     () => {
         test(

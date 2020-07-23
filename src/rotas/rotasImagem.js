@@ -40,6 +40,4 @@ rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/segmentacao-celula/:id_celu
 rotasImagem.get("/api/v1/imagens/export", ImagemController.downloadBase);
 rotasImagem.get("/api/v1/imagens/download", ImagemController.downloadBase); // TODO Remove in v2
 
-rotasImagem.get("/api/v1/imagens/contagem/lesoes/descricoes", ImagemController.obterContagemLesoesEDescricoesNucleos); // TODO Remove in v2
-
 module.exports = rotasImagem;
