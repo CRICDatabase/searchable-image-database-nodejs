@@ -2,7 +2,7 @@
     {
         "id": 1,
         "doi": "cric/database.1.v1",
-        "nome": "example0001.jpg",
+        "nome": "example0001.png",
         "altura": 400,
         "largura": 600,
         "excluida": 0,
@@ -17,7 +17,7 @@
     {
         "id": 2,
         "doi": "cric/database.2.v1",
-        "nome": "example0002.jpg",
+        "nome": "example0002.png",
         "altura": 400,
         "largura": 600,
         "excluida": 0,
@@ -32,7 +32,7 @@
     {
         "id": 3,
         "doi": null,
-        "nome": "example0003.jpg",
+        "nome": "example0003.png",
         "altura": 400,
         "largura": 600,
         "excluida": 0,
