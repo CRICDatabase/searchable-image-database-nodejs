@@ -23,7 +23,6 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-    debug(req.body);
     if(!req.body.nome) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
