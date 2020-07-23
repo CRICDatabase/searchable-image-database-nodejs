@@ -1101,7 +1101,7 @@ describe(
 );
 
 describe(
-    "GET /api/v1/imagens/3/listar-segmentacao-celula/2",
+    "GET /api/v1/imagens/1/listar-segmentacao-celula/1",
     () => {
         test(
             "anonymous",
@@ -1111,7 +1111,35 @@ describe(
                     .get("/api/v1/imagens/1/listar-segmentacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    celulas: expect.arrayContaining(
+                                        [{
+                                            descricao: {
+                                                codigo: expect.any(Number),
+                                                id: expect.any(Number),
+                                                nome: expect.any(String)
+                                            },
+                                            id: expect.any(Number),
+                                            segmentos_citoplasma: expect.arrayContaining(
+                                                [{
+                                                    coord_x: expect.any(Number),
+                                                    coord_y: expect.any(Number)
+                                                }]
+                                            ),
+                                            segmentos_nucleo: expect.arrayContaining(
+                                                [{
+                                                    coord_x: expect.any(Number),
+                                                    coord_y: expect.any(Number)
+                                                }]
+                                            )
+                                        }]
+                                    )
+                                }
+                            );
                         }
                     );
             }
