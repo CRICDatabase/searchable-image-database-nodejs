@@ -1,14 +1,17 @@
 "use strict";
 
-const config = require("config");
-const HttpStatus = require("http-status-codes");
-const nodemailer = require("nodemailer");
-const debug = require("debug")("database.cric:ForgetPasswordService");
+// eslint-disable-next-line no-unused-vars
+const debug = require("debug")("database.cric:ResetPasswordService");
 
+const HttpStatus = require("http-status-codes");
+const config = require("config");
+const nodemailer = require("nodemailer");
+
+const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+
+const Criptografia = require("../../utils/criptografia");
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const Criptografia = require("../../utils/criptografia");
-const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 module.exports = {
 

@@ -21,4 +21,12 @@ module.exports = {
         },
         logging: false
     },
+    nodemailer: {
+        host: 'smtp.ethereal.email',
+        port: 587,
+        auth: {
+            user: 'youremail@gmail.com',
+            pass: 'yourpassword'
+        }
+    }
 };
