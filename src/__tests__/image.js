@@ -1171,10 +1171,56 @@ describe(
             () => {
                 /* Anonymous user should NOT be able to get information of segmentacao own by other users */
                 return request(app)
-                    .get("/api/v1/imagens/3/listar-segmentacao-celula/2")
+                    .get("/api/v1/imagens/1/listar-segmentacao-celula/1")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* Admin user should be able to get information of segmentacao own by other users */
+                return request(app)
+                    .get("/api/v1/imagens/1/listar-segmentacao-celula/1")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    celulas: expect.arrayContaining(
+                                        [{
+                                            descricao: {
+                                                codigo: expect.any(Number),
+                                                id: expect.any(Number),
+                                                nome: expect.any(String)
+                                            },
+                                            id: expect.any(Number),
+                                            segmentos_citoplasma: expect.arrayContaining(
+                                                [{
+                                                    coord_x: expect.any(Number),
+                                                    coord_y: expect.any(Number)
+                                                }]
+                                            ),
+                                            segmentos_nucleo: expect.arrayContaining(
+                                                [{
+                                                    coord_x: expect.any(Number),
+                                                    coord_y: expect.any(Number)
+                                                }]
+                                            )
+                                        }]
+                                    )
+                                }
+                            );
                         }
                     );
             }
@@ -1185,7 +1231,7 @@ describe(
             () => {
                 /* Admin user should be able to get information of segmentacao own by other users */
                 return request(app)
-                    .get("/api/v1/imagens/3/listar-segmentacao-celula/2")
+                    .get("/api/v1/imagens/1/listar-segmentacao-celula/1")
                     .set(
                         "Authorization",
                         admin_token
@@ -1225,7 +1271,6 @@ describe(
                     );
             }
         );
-
     }
 );
 
