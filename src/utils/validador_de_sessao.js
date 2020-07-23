@@ -47,7 +47,7 @@ module.exports = {
         }
         if (!user.dataValues.admin && typeof(requested_user_id) !== "undefined") {
             if (Number(requested_user_id) !== user.dataValues.id) {
-                ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
+                ObjetoExcecao.status = HttpStatus.FORBIDDEN;
                 ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
                 ObjetoExcecao.detail = "Token doesn't belong to required user";
                 throw ObjetoExcecao;
