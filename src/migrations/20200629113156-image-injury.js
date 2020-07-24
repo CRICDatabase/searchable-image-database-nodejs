@@ -88,6 +88,78 @@ module.exports = {
         ).then(
             () => {
                 queryInterface.bulkUpdate(
+                    "celula",
+                    {
+                        id_lesao: 7
+                    },
+                    {
+                        id_lesao: 6
+                    }
+                );
+            }
+        ).then(
+            () => {
+                queryInterface.bulkUpdate(
+                    "celula",
+                    {
+                        id_lesao: 6
+                    },
+                    {
+                        id_lesao: 5
+                    }
+                );
+            }
+        ).then(
+            () => {
+                queryInterface.bulkUpdate(
+                    "celula",
+                    {
+                        id_lesao: 5
+                    },
+                    {
+                        id_lesao: 4
+                    }
+                );
+            }
+        ).then(
+            () => {
+                queryInterface.bulkUpdate(
+                    "celula",
+                    {
+                        id_lesao: 4
+                    },
+                    {
+                        id_lesao: 3
+                    }
+                );
+            }
+        ).then(
+            () => {
+                queryInterface.bulkUpdate(
+                    "celula",
+                    {
+                        id_lesao: 3
+                    },
+                    {
+                        id_lesao: 2
+                    }
+                );
+            }
+        ).then(
+            () => {
+                queryInterface.bulkUpdate(
+                    "celula",
+                    {
+                        id_lesao: 2
+                    },
+                    {
+                        id_lesao: 1
+                    }
+                );
+            }
+        ).then(
+            () => {
+                queryInterface.bulkUpdate(
                     "lesao",
                     {
                         nome: "HSIL",
