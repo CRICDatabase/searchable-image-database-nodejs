@@ -459,17 +459,11 @@ module.exports = {
             }
         ).then(
             () => {
-                queryInterface.bulkInsert(
+                queryInterface.bulkDelete(
                     "lesao",
-                    [
-                        {
-                            id: 7,
-                            nome: "SCC",
-                            detalhes: "Squamous cell carcinoma",
-                            created_at: "2020-01-01",
-                            updated_at: "2020-01-01"
-                        }
-                    ]
+                    {
+                        id: 7
+                    }
                 );
             }
         );
