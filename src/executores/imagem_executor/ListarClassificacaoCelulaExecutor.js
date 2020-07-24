@@ -21,8 +21,7 @@ module.exports = {
         const id_imagem = parseInt(req.params.id_imagem);
 
         const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
-        await prepararMensagemRetorno(todasClassificacoes);
-        return todasClassificacoes;
+        return await prepararMensagemRetorno(todasClassificacoes);
     }
 };
 
@@ -73,7 +72,8 @@ async function validarRequisicao(req) {
     }
 }
 
-async function prepararMensagemRetorno(todasCelulas) {
+async function prepararMensagemRetorno(raw_cells) {
+    let cells = [];
 
     let all_injuries = {};
     await ImagemRepositorio.listarLesoes()
@@ -85,9 +85,16 @@ async function prepararMensagemRetorno(todasCelulas) {
             }
         );
 
-    for (let cell of todasCelulas) {
-        cell.lesao = all_injuries[cell.id_lesao];
-        delete cell.id_lesao;
-        delete cell.lesao_grade;
+    for (let cell of raw_cells) {
+        cells.push(
+            {
+                id: cell.id,
+                coord_centro_nucleo_x: cell.coord_centro_nucleo_x,
+                coord_centro_nucleo_y: cell.coord_centro_nucleo_y,
+                lesao: all_injuries[cell.id_lesao]
+            }
+        );
     }
+
+    return cells;
 }
