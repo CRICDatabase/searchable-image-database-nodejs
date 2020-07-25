@@ -1,241 +1,213 @@
 "use strict";
 
 module.exports = {
-    up: (queryInterface) => {
-        return queryInterface.bulkInsert(
-            "lesao",
-            [
+    async up(queryInterface) {
+        const transaction = await queryInterface.sequelize.transaction();
+        try {
+            await queryInterface.bulkInsert(
+                "lesao",
+                [
+                    {
+                        id: 7,
+                        nome: "SCC",
+                        detalhes: "Squamous cell carcinoma",
+                        created_at: "2020-01-01",
+                        updated_at: "2020-01-01"
+                    }
+                ],
+		{ transaction }
+            );
+            await queryInterface.bulkUpdate(
+                "imagem",
                 {
-                    id: 7,
-                    nome: "SCC",
-                    detalhes: "Squamous cell carcinoma",
-                    created_at: "2020-01-01",
-                    updated_at: "2020-01-01"
-                }
-            ]
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "imagem",
-                    {
-                        id_lesao: 7
-                    },
-                    {
-                        id_lesao: 6
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "imagem",
-                    {
-                        id_lesao: 6
-                    },
-                    {
-                        id_lesao: 5
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "imagem",
-                    {
-                        id_lesao: 5
-                    },
-                    {
-                        id_lesao: 4
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "imagem",
-                    {
-                        id_lesao: 4
-                    },
-                    {
-                        id_lesao: 3
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "imagem",
-                    {
-                        id_lesao: 3
-                    },
-                    {
-                        id_lesao: 2
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "imagem",
-                    {
-                        id_lesao: 2
-                    },
-                    {
-                        id_lesao: 1
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "celula",
-                    {
-                        id_lesao: 7
-                    },
-                    {
-                        id_lesao: 6
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "celula",
-                    {
-                        id_lesao: 6
-                    },
-                    {
-                        id_lesao: 5
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "celula",
-                    {
-                        id_lesao: 5
-                    },
-                    {
-                        id_lesao: 4
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "celula",
-                    {
-                        id_lesao: 4
-                    },
-                    {
-                        id_lesao: 3
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "celula",
-                    {
-                        id_lesao: 3
-                    },
-                    {
-                        id_lesao: 2
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "celula",
-                    {
-                        id_lesao: 2
-                    },
-                    {
-                        id_lesao: 1
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "lesao",
-                    {
-                        nome: "HSIL",
-                        detalhes: "High grade squamous intraepithelial lesion"
-                    },
-                    {
-                        id: 6
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "lesao",
-                    {
-                        nome: "ASC-H",
-                        detalhes: "Atypical squamous cells cannot exclude HSIL"
-                    },
-                    {
-                        id: 5
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "lesao",
-                    {
-                        nome: "LSIL",
-                        detalhes: "Low grade squamous intraepithelial lesion"
-                    },
-                    {
-                        id: 4
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "lesao",
-                    {
-                        nome: "ASC-US",
-                        detalhes: "Atypical squamous cells of undetermined significance"
-                    },
-                    {
-                        id: 3
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "lesao",
-                    {
-                        nome: "Negative",
-                        detalhes: "Negative for intraepithelial lesion"
-                    },
-                    {
-                        id: 2
-                    }
-                );
-            }
-        ).then(
-            () => {
-                queryInterface.bulkUpdate(
-                    "lesao",
-                    {
-                        nome: "Unkown",
-                        detalhes: "Unkown"
-                    },
-                    {
-                        id: 1
-                    }
-                );
-            }
-        );
+                    id_lesao: 7
+                },
+                {
+                    id_lesao: 6
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "imagem",
+                {
+                    id_lesao: 6
+                },
+                {
+                    id_lesao: 5
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "imagem",
+                {
+                    id_lesao: 5
+                },
+                {
+                    id_lesao: 4
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "imagem",
+                {
+                    id_lesao: 4
+                },
+                {
+                    id_lesao: 3
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "imagem",
+                {
+                    id_lesao: 3
+                },
+                {
+                    id_lesao: 2
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "imagem",
+                {
+                    id_lesao: 2
+                },
+                {
+                    id_lesao: 1
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "celula",
+                {
+                    id_lesao: 7
+                },
+                {
+                    id_lesao: 6
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "celula",
+                {
+                    id_lesao: 6
+                },
+                {
+                    id_lesao: 5
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "celula",
+                {
+                    id_lesao: 5
+                },
+                {
+                    id_lesao: 4
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "celula",
+                {
+                    id_lesao: 4
+                },
+                {
+                    id_lesao: 3
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "celula",
+                {
+                    id_lesao: 3
+                },
+                {
+                    id_lesao: 2
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "celula",
+                {
+                    id_lesao: 2
+                },
+                {
+                    id_lesao: 1
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "lesao",
+                {
+                    nome: "HSIL",
+                    detalhes: "High grade squamous intraepithelial lesion"
+                },
+                {
+                    id: 6
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "lesao",
+                {
+                    nome: "ASC-H",
+                    detalhes: "Atypical squamous cells cannot exclude HSIL"
+                },
+                {
+                    id: 5
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "lesao",
+                {
+                    nome: "LSIL",
+                    detalhes: "Low grade squamous intraepithelial lesion"
+                },
+                {
+                    id: 4
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "lesao",
+                {
+                    nome: "ASC-US",
+                    detalhes: "Atypical squamous cells of undetermined significance"
+                },
+                {
+                    id: 3
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "lesao",
+                {
+                    nome: "Negative",
+                    detalhes: "Negative for intraepithelial lesion"
+                },
+                {
+                    id: 2
+                },
+		{ transactio }
+            );
+            await queryInterface.bulkUpdate(
+                "lesao",
+                {
+                    nome: "Unkown",
+                    detalhes: "Unkown"
+                },
+                {
+                    id: 1
+                },
+		{ transactio }
+            );
+        }
+        catch (err) {
+            await transaction.rollback();
+            throw err;
+        }
     },
 
     down: (queryInterface) => {
