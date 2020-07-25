@@ -25,7 +25,7 @@ module.exports = {
                 {
                     id_lesao: 6
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "imagem",
@@ -35,7 +35,7 @@ module.exports = {
                 {
                     id_lesao: 5
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "imagem",
@@ -45,7 +45,7 @@ module.exports = {
                 {
                     id_lesao: 4
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "imagem",
@@ -55,7 +55,7 @@ module.exports = {
                 {
                     id_lesao: 3
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "imagem",
@@ -65,7 +65,7 @@ module.exports = {
                 {
                     id_lesao: 2
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "imagem",
@@ -75,7 +75,7 @@ module.exports = {
                 {
                     id_lesao: 1
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "celula",
@@ -85,7 +85,7 @@ module.exports = {
                 {
                     id_lesao: 6
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "celula",
@@ -95,7 +95,7 @@ module.exports = {
                 {
                     id_lesao: 5
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "celula",
@@ -105,7 +105,7 @@ module.exports = {
                 {
                     id_lesao: 4
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "celula",
@@ -115,7 +115,7 @@ module.exports = {
                 {
                     id_lesao: 3
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "celula",
@@ -125,7 +125,7 @@ module.exports = {
                 {
                     id_lesao: 2
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "celula",
@@ -135,7 +135,7 @@ module.exports = {
                 {
                     id_lesao: 1
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "lesao",
@@ -146,7 +146,7 @@ module.exports = {
                 {
                     id: 6
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "lesao",
@@ -157,7 +157,7 @@ module.exports = {
                 {
                     id: 5
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "lesao",
@@ -168,7 +168,7 @@ module.exports = {
                 {
                     id: 4
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "lesao",
@@ -179,7 +179,7 @@ module.exports = {
                 {
                     id: 3
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "lesao",
@@ -190,7 +190,7 @@ module.exports = {
                 {
                     id: 2
                 },
-		{ transactio }
+		{ transaction }
             );
             await queryInterface.bulkUpdate(
                 "lesao",
@@ -201,7 +201,7 @@ module.exports = {
                 {
                     id: 1
                 },
-		{ transactio }
+		{ transaction }
             );
         }
         catch (err) {
