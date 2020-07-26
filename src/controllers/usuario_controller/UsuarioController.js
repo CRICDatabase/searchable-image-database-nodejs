@@ -159,8 +159,8 @@ module.exports = {
 
         let retorno;
         try{
-            retorno = await FazerLogOffExecutor.Executar(req);
-            return res.status(HttpStatus.ACCEPTED).json(retorno); 
+            await FazerLogOffExecutor.Executar(req);
+            return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch(erro){
 
