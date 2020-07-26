@@ -21,8 +21,7 @@ rotasUsuario.delete("/api/v1/usuarios/:id_usuario/admin", UsuarioController.remo
 rotasUsuario.post("/api/v1/login", UsuarioController.login); // TODO Remove in v2
 rotasUsuario.post("/api/v1/usuarios/login", UsuarioController.login);
 
-rotasUsuario.delete("/api/v1/usuarios/:Authorization", UsuarioController.fazerLogOff); // TODO Remove in v2
-rotasUsuario.post("/api/v1/usuarios/logout", SistemaController.not_implemented);
+rotasUsuario.post("/api/v1/usuarios/logout", UsuarioController.fazerLogOff);
 
 rotasUsuario.post("/api/v1/usuarios/senha/trocar", SistemaController.not_implemented);
 

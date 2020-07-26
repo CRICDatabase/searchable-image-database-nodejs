@@ -10,17 +10,14 @@ module.exports = {
 
     async Executar(req) {
 
-        validarRequisicao(req);
-        await ValidadorDeSessao.login_required(req);
-        return await SessaoRepositorio.anularRegistroDeSessao(req.params.Authorization);
+        await validarRequisicao(req);
+        
+        await SessaoRepositorio.anularRegistroDeSessao(
+            req.get("Authorization")
+        );
     }
 };
 
-function validarRequisicao(req){
-
-    if(!req.params.Authorization){
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
+async function validarRequisicao(req){
+    await ValidadorDeSessao.login_required(req);
 }

@@ -25,25 +25,13 @@ module.exports = {
     },
 
     async anularRegistroDeSessao(token_autenticacao) {
-
-        let resultado;
-        const token_nulo = "--------------------------------------------------";
-        const sqlQuery = `            
-            UPDATE sessao_usuario
-            SET token_autenticacao = '${token_nulo}'
-            WHERE token_autenticacao = '${token_autenticacao}'`;
-
-        await db.query(
-            sqlQuery,
+        await SessaoUsuarioModel.destroy(
             {
-                type: Sequelize.QueryTypes.UPDATE
+                where: {
+                    token_autenticacao: token_autenticacao
+                }
             }
         )
-            .then((results) => {
-                resultado = results;
-            });
-
-        return resultado;
     },
 
     async excluirRegistroDeSessao(token_autenticacao) {
