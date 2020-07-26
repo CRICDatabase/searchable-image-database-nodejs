@@ -245,6 +245,8 @@ paths:
       tags:
         - imagens
       description: Get all images.
+      security:
+        - API Key Authorization: []
   '/imagens/{id_imagem}':
     parameters:
       - schema:
