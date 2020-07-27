@@ -121,6 +121,9 @@ async function cadastrarDadosEArquivoDeImagem(req) {
     FileSystem.writeFile(
         diretorioUploadDefinitivo,
         req.files.file.data,
+        {
+            'flags': 'wx'       // fails if the path exists
+        },
         (erro) => {
             if (erro) {
                 erroAoSalvar = erro;
