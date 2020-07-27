@@ -64,7 +64,7 @@ async function validarRequisicao(req) {
 async function prepararCadastroNoBanco(req) {
 
     let nomeImagemTratado = obterNomeImagemTratado(req.files.file.name);
-    const novoNomeImagem = `${Crypto.randomBytes(8).toString("hex")}_${nomeImagemTratado}`; //Cria hexadecimal de 16 bits
+    const novoNomeImagem = `${Crypto.randomBytes(8).toString("hex")}.png`; //Cria hexadecimal de 16 bits
     const excluida = 0;
     const classificacao_aprovada = 1;
     const altura = 0;
@@ -120,6 +120,9 @@ async function cadastrarDadosEArquivoDeImagem(req) {
     FileSystem.writeFile(
         diretorioUploadDefinitivo,
         req.files.file.data,
+        {
+            'flags': 'wx'       // fails if the path exists
+        },
         (erro) => {
             if (erro) {
                 debug(`Fail to write ${diretorioUploadDefinitivo}`);
