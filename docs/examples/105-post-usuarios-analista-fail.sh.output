@@ -1,8 +1,0 @@
-{
-    "type": "",
-    "status": 403,
-    "title": "No permission to perform the operation",
-    "detail": "",
-    "instance": "",
-    "details": "User with id 5 isn't cytopathologist"
-}
