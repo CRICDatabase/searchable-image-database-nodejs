@@ -182,6 +182,8 @@ paths:
                 properties:
                   Authorization:
                     type: string
+                  usuario:
+                    $ref: '#/components/schemas/UsuarioBaseModel'
         '400':
           description: Bad Request
         '404':
