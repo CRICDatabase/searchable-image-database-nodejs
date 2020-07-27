@@ -175,9 +175,36 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Authorization:
+                    type: string
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
       description: Basic user authentication.
       tags:
         - autorizacao
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                senha:
+                  type: string
+            examples:
+              Charles:
+                value:
+                  email: charles@test.database.cric.com.br
+                  senha: '123.456'
+      parameters: []
     parameters: []
   /imagens:
     post:
