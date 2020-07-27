@@ -157,7 +157,6 @@ module.exports = {
 
     async fazerLogOff(req, res) {
 
-        let retorno;
         try{
             await FazerLogOffExecutor.Executar(req);
             return res.status(HttpStatus.NO_CONTENT).end();

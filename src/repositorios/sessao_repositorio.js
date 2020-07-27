@@ -1,9 +1,6 @@
 "use strict";
 
-const Sequelize = require("sequelize");
-
 const SessaoUsuarioModel = require("../models/SessaoUsuarioModel");
-const db = require("../database");
 
 module.exports = {
 
@@ -31,7 +28,7 @@ module.exports = {
                     token_autenticacao: token_autenticacao
                 }
             }
-        )
+        );
     },
 
     async excluirRegistroDeSessao(token_autenticacao) {

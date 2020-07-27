@@ -63,7 +63,6 @@ async function validarRequisicao(req) {
 
 async function prepararCadastroNoBanco(req) {
 
-    let nomeImagemTratado = obterNomeImagemTratado(req.files.file.name);
     const novoNomeImagem = `${Crypto.randomBytes(8).toString("hex")}.png`; //Cria hexadecimal de 16 bits
     const excluida = 0;
     const classificacao_aprovada = 1;
@@ -83,14 +82,6 @@ async function prepararCadastroNoBanco(req) {
     };
 
     return imagem;
-}
-
-function obterNomeImagemTratado(entrada) {
-
-    if (typeof entrada !== "string") {
-        return entrada.toString().replace(" ", "_");
-    }
-    return entrada.replace(" ", "_");
 }
 
 async function cadastrarDadosEArquivoDeImagem(req) {
@@ -121,7 +112,7 @@ async function cadastrarDadosEArquivoDeImagem(req) {
         diretorioUploadDefinitivo,
         req.files.file.data,
         {
-            'flags': 'wx'       // fails if the path exists
+            flags: "wx"       // fails if the path exists
         },
         (erro) => {
             if (erro) {
@@ -149,8 +140,7 @@ async function cadastrarDadosEArquivoDeImagem(req) {
                         (err) => {
                             debug(err);
                         }
-                    )
-                ;
+                    );
             })
             .catch((err) => {
                 debug(`Cound not read file because ${err}`);
@@ -211,7 +201,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(imagem) {
     ).then(
         () => {
             debug(`${diretorioUploadThumbnail} created with success`);
-        },
+        }
     ).catch(
         (err) => {
             debug(err);
