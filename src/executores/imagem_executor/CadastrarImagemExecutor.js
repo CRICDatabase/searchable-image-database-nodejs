@@ -26,14 +26,13 @@ module.exports = {
         const imagemCadastrada = await cadastrarDadosEArquivoDeImagem(req);
 
         if (!imagemCadastrada) {
-            //Apagar o arquivo da pasta base_original caso == .tif ou da pasta bae_original caso != .tif
             ObjetoExcecao.status = HttpStatus.INTERNAL_SERVER_ERROR;
             ObjetoExcecao.title = Excecao.ERRO_AO_CADASTRAR_IMAGEM;
             ObjetoExcecao.detail = "Failed to register a image";
             throw ObjetoExcecao;
         }
 
-        await converterSalvarArquivoAtualizarRegistroNoBanco(req, imagemCadastrada.dataValues);
+        await converterSalvarArquivoAtualizarRegistroNoBanco(imagemCadastrada.dataValues);
         return await prepararRetorno(imagemCadastrada);
     }
 };
@@ -98,6 +97,8 @@ async function cadastrarDadosEArquivoDeImagem(req) {
     
     let erroAoSalvar;
     const imagem = await prepararCadastroNoBanco(req);
+    req.files.file.name = imagem.nome;
+
     const destino = "png";
     const caminho_base_diretorio = path.join(
         __dirname,
@@ -105,8 +106,6 @@ async function cadastrarDadosEArquivoDeImagem(req) {
         "..",
         ".."
     );
-
-    req.files.file.name = imagem.nome;
     let diretorioUploadDefinitivo = path.join(
         caminho_base_diretorio,
         "src",
@@ -123,25 +122,35 @@ async function cadastrarDadosEArquivoDeImagem(req) {
         req.files.file.data,
         (erro) => {
             if (erro) {
+                debug(`Fail to write ${diretorioUploadDefinitivo}`);
                 erroAoSalvar = erro;
             }
         }
     );
 
     /* Gecko and WebKit does NOT support TIFF, so we will convert to PNG */
-    if(filename_extension == "tiff" || filename_extension == "tif") {
+    if(filename_extension.toLowerCase() !== "png") {
         Jimp.read(diretorioUploadDefinitivo)
             .then((image) => {
                 return image
-                    .write(
+                    .writeAsync(
                         diretorioUploadDefinitivo.replace(
                             filename_extension,
                             "png"
                         )
-                    );
+                    ).then(
+                        () => {
+                            debug("Image converted to PNG");
+                        }
+                    ).catch(
+                        (err) => {
+                            debug(err);
+                        }
+                    )
+                ;
             })
             .catch((err) => {
-                console.error(`Cound not read file because ${err}`);
+                debug(`Cound not read file because ${err}`);
             });
 
         imagem.nome = imagem.nome.replace(
@@ -154,25 +163,16 @@ async function cadastrarDadosEArquivoDeImagem(req) {
         );
     }
 
-    let imagemCadastrada;
-    if(!erroAoSalvar) {
-        imagemCadastrada = await ImagemRepositorio.cadastrarImagem(imagem);
-    }
-    else{
+    if(erroAoSalvar) {
         throw erroAoSalvar;
     }
-
-    return imagemCadastrada;
+    return await ImagemRepositorio.cadastrarImagem(imagem);
 }
 
-async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
-
+async function converterSalvarArquivoAtualizarRegistroNoBanco(imagem) {
     let imagemLida;
     let imagemAtualizacao;
     const destino = "png";
-
-    const filename_parts = imagem.nome.split(".");
-    const filename_extension = filename_parts[filename_parts.length - 1];
 
     const caminho_base_diretorio = path.join(
         __dirname,
@@ -180,73 +180,45 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(req, imagem) {
         "..",
         ".."
     );
-    let resultado;
+    const diretorioUploadFinal = path.join(
+        caminho_base_diretorio,
+        "src",
+        "assets",
+        "imagens",
+        destino,
+        imagem.nome
+    );
+    const diretorioUploadThumbnail = path.join(
+        caminho_base_diretorio,
+        "src",
+        "assets",
+        "imagens",
+        "thumbnail",
+        imagem.nome
+    );
 
-    if(filename_extension == "tiff" || filename_extension == "tif") {
-        const diretorioUploadImagemOriginal = path.join(
-            caminho_base_diretorio,
-            "src",
-            "assets",
-            "imagens",
-            "raw",
-            req.files.file.name
-        );
-        const diretorioUploadFinal = path.join(
-            caminho_base_diretorio,
-            "src",
-            "assets",
-            "imagens",
-            destino,
-            req.files.file.name.replace(filename_extension, "png")
-        );
-        const diretorioUploadThumbnail = path.join(
-            caminho_base_diretorio,
-            "src",
-            "assets",
-            "imagens",
-            "thumbnail",
-            req.files.file.name.replace(filename_extension, "png")
-        );
+    imagemLida = await Jimp.read(diretorioUploadFinal);
 
-        imagemLida = await Jimp.read(diretorioUploadImagemOriginal);
-        imagemAtualizacao = imagem;
-        imagemAtualizacao.altura = imagemLida.bitmap.height;
-        imagemAtualizacao.largura = imagemLida.bitmap.width;
-        resultado = await ImagemRepositorio.atualizarDimensoesImagem(imagem.id, imagem.altura, imagem.largura);
-        imagemLida.write(diretorioUploadFinal);
+    // Thumbnail
+    imagemLida.scaleToFit(
+        256,
+        256
+    ).writeAsync(
+        diretorioUploadThumbnail
+    ).then(
+        () => {
+            debug(`${diretorioUploadThumbnail} created with success`);
+        },
+    ).catch(
+        (err) => {
+            debug(err);
+        }
+    );
 
-        let imagemRedimensionada = imagemLida.scaleToFit(256, 256);
-        imagemRedimensionada.write(diretorioUploadThumbnail);
-    }
-    else {
-        const diretorioUploadFinal = path.join(
-            caminho_base_diretorio,
-            "src",
-            "assets",
-            "imagens",
-            destino,
-            req.files.file.name
-        );
-        const diretorioUploadThumbnail = path.join(
-            caminho_base_diretorio,
-            "src",
-            "assets",
-            "imagens",
-            "thumbnail",
-            req.files.file.name
-        );
-
-        imagemLida = await Jimp.read(diretorioUploadFinal);
-        imagemAtualizacao = imagem;
-        imagemAtualizacao.altura = imagemLida.bitmap.height;
-        imagemAtualizacao.largura = imagemLida.bitmap.width;
-        resultado = await ImagemRepositorio.atualizarDimensoesImagem(imagem.id, imagem.altura, imagem.largura);
-
-        let imagemRedimensionada = imagemLida.scaleToFit(256, 256);
-        imagemRedimensionada.write(diretorioUploadThumbnail);
-    }
-
-    return resultado;
+    imagemAtualizacao = imagem;
+    imagemAtualizacao.altura = imagemLida.bitmap.height;
+    imagemAtualizacao.largura = imagemLida.bitmap.width;
+    await ImagemRepositorio.atualizarDimensoesImagem(imagem.id, imagem.altura, imagem.largura);
 }
 
 async function prepararRetorno(imagem) {
