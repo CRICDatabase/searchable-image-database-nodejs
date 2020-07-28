@@ -36,9 +36,10 @@ module.exports = {
         logging: false
     },
     nodemailer: {
-        service: 'gmail',
+        host: 'localhost',
+        port: 587,
         auth: {
-            user: 'youremail@gmail.com',
+            user: 'youremail@localhost',
             pass: 'yourpassword'
         }
     }
