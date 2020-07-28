@@ -36,26 +36,26 @@ module.exports = {
             throw ObjetoExcecao;
         }
 
-
         const smtp_info = config.get("nodemailer");
-
-        var transporter = nodemailer.createTransport(smtp_info);
-
-        var mailOptions = {
+        let transporter = nodemailer.createTransport(smtp_info);
+        let mailOptions = {
             from: smtp_info.auth.user,
             to: usuario.dataValues.email,
             subject: "Your Password for CRIC",
             text: new_password
         };
 
-        transporter.sendMail(mailOptions, function(error, info){
-            if (error) {
-                debug(error);
+        transporter.sendMail(
+            mailOptions,
+            (error, info) => {
+                if (error) {
+                    debug(error);
+                }
+                else {
+                    debug(`Email sent: ${info.response}`);
+                }
             }
-            else {
-                debug(`Email sent: ${info.response}`);
-            }
-        });
+        );
     }
 };
 
