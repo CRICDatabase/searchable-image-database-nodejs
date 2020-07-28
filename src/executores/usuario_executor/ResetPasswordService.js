@@ -47,24 +47,25 @@ Visit https://database.cric.com.br to login using your new password.
 CRIC Searchable Image Database`;
 
         const smtp_info = config.get("nodemailer");
-
-        var transporter = nodemailer.createTransport(smtp_info);
-
-        var mailOptions = {
+        let transporter = nodemailer.createTransport(smtp_info);
+        let mailOptions = {
             from: smtp_info.auth.user,
             to: usuario.dataValues.email,
             subject: "Your New Password for CRIC Searchable Image Database",
             text: email_body
         };
 
-        transporter.sendMail(mailOptions, function(error, info){
-            if (error) {
-                debug(error);
+        transporter.sendMail(
+            mailOptions,
+            (error, info) => {
+                if (error) {
+                    debug(error);
+                }
+                else {
+                    debug(`Email sent: ${info.response}`);
+                }
             }
-            else {
-                debug(`Email sent: ${info.response}`);
-            }
-        });
+        );
     }
 };
 

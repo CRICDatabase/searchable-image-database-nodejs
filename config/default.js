@@ -32,10 +32,10 @@ module.exports = {
         logging: console.log
     },
     nodemailer: {
-        host: 'smtp.ethereal.email',
+        host: 'localhost',
         port: 587,
         auth: {
-            user: 'youremail@gmail.com',
+            user: 'youremail@localhost',
             pass: 'yourpassword'
         }
     }
