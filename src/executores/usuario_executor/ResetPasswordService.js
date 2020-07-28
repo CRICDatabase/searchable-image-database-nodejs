@@ -36,13 +36,23 @@ module.exports = {
             throw ObjetoExcecao;
         }
 
+        const email_body = `Hey,
+
+Your new password is
+
+${new_password}
+
+Visit https://database.cric.com.br to login using your new password.
+
+CRIC Searchable Image Database`;
+
         const smtp_info = config.get("nodemailer");
         let transporter = nodemailer.createTransport(smtp_info);
         let mailOptions = {
             from: smtp_info.auth.user,
             to: usuario.dataValues.email,
-            subject: "Your Password for CRIC",
-            text: new_password
+            subject: "Your New Password for CRIC Searchable Image Database",
+            text: email_body
         };
 
         transporter.sendMail(
