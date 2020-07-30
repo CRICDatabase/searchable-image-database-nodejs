@@ -192,6 +192,15 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(imagem) {
 
     imagemLida = await Jimp.read(diretorioUploadFinal);
 
+    imagemAtualizacao = imagem;
+    imagemAtualizacao.altura = imagemLida.bitmap.height;
+    imagemAtualizacao.largura = imagemLida.bitmap.width;
+    await ImagemRepositorio.atualizarDimensoesImagem(
+        imagem.id,
+        imagem.altura,
+        imagem.largura
+    );
+
     // Thumbnail
     imagemLida.scaleToFit(
         256,
@@ -207,11 +216,6 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(imagem) {
             debug(err);
         }
     );
-
-    imagemAtualizacao = imagem;
-    imagemAtualizacao.altura = imagemLida.bitmap.height;
-    imagemAtualizacao.largura = imagemLida.bitmap.width;
-    await ImagemRepositorio.atualizarDimensoesImagem(imagem.id, imagem.altura, imagem.largura);
 }
 
 async function prepararRetorno(imagem) {
