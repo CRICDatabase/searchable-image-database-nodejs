@@ -90,7 +90,6 @@ async function cadastrarDadosEArquivoDeImagem(req) {
     const imagem = await prepararCadastroNoBanco(req);
     req.files.file.name = imagem.nome;
 
-    const destino = "png";
     const caminho_base_diretorio = path.join(
         __dirname,
         "..",
@@ -102,7 +101,7 @@ async function cadastrarDadosEArquivoDeImagem(req) {
         "src",
         "assets",
         "imagens",
-        destino,
+        "png",
         imagem.nome
     );
     const filename_parts = imagem.nome.split(".");
@@ -150,10 +149,6 @@ async function cadastrarDadosEArquivoDeImagem(req) {
             filename_extension,
             "png"
         );
-        diretorioUploadDefinitivo = diretorioUploadDefinitivo.replace(
-            filename_extension,
-            "png"
-        );
     }
 
     if(erroAoSalvar) {
@@ -165,7 +160,6 @@ async function cadastrarDadosEArquivoDeImagem(req) {
 async function converterSalvarArquivoAtualizarRegistroNoBanco(imagem) {
     let imagemLida;
     let imagemAtualizacao;
-    const destino = "png";
 
     const caminho_base_diretorio = path.join(
         __dirname,
@@ -178,7 +172,7 @@ async function converterSalvarArquivoAtualizarRegistroNoBanco(imagem) {
         "src",
         "assets",
         "imagens",
-        destino,
+        "png",
         imagem.nome
     );
     const diretorioUploadThumbnail = path.join(
