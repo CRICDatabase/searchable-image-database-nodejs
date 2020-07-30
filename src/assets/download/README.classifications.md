@@ -4,7 +4,7 @@
 
 ## How to Cite
 
-Mariana, Claudia, Alessandra.
+Rezende, Mariana Trevisan; Tobias, Alessandra Hermógenes Gomes; Silva, Raniere; Oliveira, Paulo; Sombra de Medeiros, Fatima; Ushizima, Daniela; et al. (2020): CRIC Cervix Cell Classification. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.4960286.v2
 
 ## Data Fields
 
