@@ -33,7 +33,7 @@
         "cors": "^2.8.5",
         "debug": "^4.1.1",
         "express": "^4.17.1",
-        "express-fileupload": "^1.1.6",
+        "express-fileupload": "^1.1.9",
         "express-zip": "^3.0.0",
         "http-status-codes": "^1.4.0",
         "jimp": "^0.9.8",
