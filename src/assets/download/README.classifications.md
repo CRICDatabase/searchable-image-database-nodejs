@@ -27,21 +27,11 @@ Rezende, Mariana Trevisan; Tobias, Alessandra Hermógenes Gomes; Silva, Raniere;
   It is on of the following:
 
   - Negative for intraepithelial lesion
-  - ASC-US
-
-    Atypical squamous cells of undetermined significance
-  - ASC-H
-
-    Atypical squamous cells cannot exclude HSIL
-  - LSIL
-
-    Low grade squamous intraepithelial lesion
-  - HSIL
-
-    High grade squamous intraepithelial lesion
-  - SCC
-
-    Squamous cell carcinoma
+  - ASC-US: Atypical squamous cells of undetermined significance
+  - ASC-H: Atypical squamous cells cannot exclude HSIL
+  - LSIL: Low grade squamous intraepithelial lesion
+  - HSIL: High grade squamous intraepithelial lesion
+  - SCC: Squamous cell carcinoma
 - `nucleus_x`
 
   Integer between 1 and 1376 equal to coordinate x of the pixel that represent the cell.
