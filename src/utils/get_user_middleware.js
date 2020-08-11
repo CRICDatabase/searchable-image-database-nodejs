@@ -3,10 +3,6 @@
 // eslint-disable-next-line no-unused-vars
 const debug = require("debug")("database.cric:get_user_middleware");
 
-const HttpStatus = require("http-status-codes");
-
-const Excecao = require("./enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("./enumeracoes/controle_de_excecoes");
 const SessaoRepositorio = require("../repositorios/sessao_repositorio");
 const UsuarioRepositorio = require("../repositorios/usuario_repositorio");
 
@@ -16,7 +12,7 @@ module.exports = {
         const authorization = req.get("Authorization");
         res.locals.user = undefined;
 
-        if (typeof authorization !== 'undefined') {
+        if (typeof authorization !== "undefined") {
             const session = await SessaoRepositorio.validarTokenAutenticacao(
                 authorization
             );
