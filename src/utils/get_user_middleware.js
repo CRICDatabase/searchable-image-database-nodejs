@@ -13,29 +13,25 @@ const UsuarioRepositorio = require("../repositorios/usuario_repositorio");
 module.exports = {
 
     async from_session(req, res, next) {
-        if (!req.get("Authorization")) {
-            res.locals.user = undefined;
-            next();
+        const authorization = req.get("Authorization");
+        res.locals.user = undefined;
+
+        if (typeof authorization !== 'undefined') {
+            const session = await SessaoRepositorio.validarTokenAutenticacao(
+                authorization
+            );
+
+            if (session !== null) {
+                const user = await UsuarioRepositorio.obterUsuarioBasePorEmail(
+                    session.dataValues.email
+                );
+
+                if (user !== null) {
+                    res.locals.user = user.dataValues;
+                }
+            }
         }
 
-        let session = await SessaoRepositorio.validarTokenAutenticacao(
-            req.get("Authorization")
-        );
-
-        if (session === null) {
-            res.locals.user = undefined;
-            next();
-        }
-
-        let user = await UsuarioRepositorio.obterUsuarioBasePorEmail(
-            session.dataValues.email
-        );
-        if (user === null) {
-            res.locals.user = undefined;
-            next();
-        }
-
-        res.locals.user = user;
         next();
     }
 };
