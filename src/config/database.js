@@ -4,7 +4,7 @@
 module.exports = {
     host: 'localhost',
     username: 'root',
-    password: '',
+    password: 'nve7a3ez',
     database: 'cric_database_2019',
     dialect: 'mysql',
     timezone: '-03:00',
@@ -19,7 +19,7 @@ module.exports = {
         idle: 30000,
         acquire: 60000,
     },
-    logging: false
+    logging: true
 }
 
 //configuracao conexao producao (manter uma das duas configuracoes sempre comentada)
