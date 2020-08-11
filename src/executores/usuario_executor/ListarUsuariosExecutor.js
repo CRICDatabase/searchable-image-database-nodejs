@@ -6,7 +6,7 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
         await ValidadorDeSessao.admin_required(req);
         return await UsuarioRepositorio.ListarTodosUsuarios();
     }

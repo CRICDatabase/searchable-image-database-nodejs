@@ -15,7 +15,7 @@ const image_utils = require("../../utils/image");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
         

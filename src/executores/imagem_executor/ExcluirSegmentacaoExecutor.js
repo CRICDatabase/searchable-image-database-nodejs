@@ -12,7 +12,7 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
         await ImagemRepositorio.excluirSegmentacaoDeCitoplasma(req.params.id_celula);

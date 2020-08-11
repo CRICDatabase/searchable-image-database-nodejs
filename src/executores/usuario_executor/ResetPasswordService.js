@@ -15,7 +15,7 @@ const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
         validarRequisicao(req);
 
         const new_password = String(

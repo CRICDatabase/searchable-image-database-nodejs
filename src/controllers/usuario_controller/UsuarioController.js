@@ -17,11 +17,11 @@ const RemoveAdminService = require("../../executores/usuario_executor/RemoveAdmi
 
 module.exports = {
 
-    async cadastrarUsuarioBase(req, res) {
+    async cadastrarUsuarioBase(req, res, next) {
 
         let usuarioCriado;
         try{
-            usuarioCriado = await CadastrarUsuarioExecutor.Executar(req);
+            usuarioCriado = await CadastrarUsuarioExecutor.Executar(req, res);
             return res.status(HttpStatus.CREATED).json(usuarioCriado);
         }
         catch(erro) {
@@ -34,11 +34,11 @@ module.exports = {
         }
     },
 
-    async listarUsuarios(req, res) {
+    async listarUsuarios(req, res, next) {
 
         let usuarios;
         try{
-            usuarios = await ListarUsuariosExecutor.Executar(req);
+            usuarios = await ListarUsuariosExecutor.Executar(req, res);
             return res.status(HttpStatus.OK).json(usuarios); 
         }
         catch(erro) {
@@ -52,11 +52,11 @@ module.exports = {
         }
     },
 
-    async obterUsuario(req, res) {
+    async obterUsuario(req, res, next) {
 
         let usuarioBase;
         try{
-            usuarioBase = await ObterUsuarioBaseExecutor.Executar(req);
+            usuarioBase = await ObterUsuarioBaseExecutor.Executar(req, res);
             return res.status(HttpStatus.OK).json(usuarioBase);
         }
         catch(erro){
@@ -70,10 +70,10 @@ module.exports = {
         }        
     },
 
-    async delete_user(req, res) {
+    async delete_user(req, res, next) {
 
         try{
-            await DeleteUserService.Executar(req);
+            await DeleteUserService.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch(erro){
@@ -87,10 +87,10 @@ module.exports = {
         }
     },
 
-    async make_admin(req, res) {
+    async make_admin(req, res, next) {
 
         try{
-            await MakeAdminService.Executar(req);
+            await MakeAdminService.Executar(req, res);
             return res.status(HttpStatus.OK).end();
         }
         catch(erro){
@@ -104,10 +104,10 @@ module.exports = {
         }
     },
 
-    async remove_admin(req, res) {
+    async remove_admin(req, res, next) {
 
         try{
-            await RemoveAdminService.Executar(req);
+            await RemoveAdminService.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch(erro){
@@ -121,11 +121,11 @@ module.exports = {
         }
     },
 
-    async login(req, res) {
+    async login(req, res, next) {
 
         let usuarioBase;
         try{
-            usuarioBase = await LoginService.Executar(req);
+            usuarioBase = await LoginService.Executar(req, res);
             return res.status(HttpStatus.OK).json(usuarioBase);
         }
         catch(erro){
@@ -139,9 +139,9 @@ module.exports = {
         }
     },
 
-    async reset_password(req, res) {
+    async reset_password(req, res, next) {
         try{
-            await ResetPasswordService.Executar(req);
+            await ResetPasswordService.Executar(req, res);
             return res.status(HttpStatus.OK).end();
         }
         catch(erro){
@@ -155,10 +155,10 @@ module.exports = {
         }        
     },
 
-    async fazerLogOff(req, res) {
+    async fazerLogOff(req, res, next) {
 
         try{
-            await FazerLogOffExecutor.Executar(req);
+            await FazerLogOffExecutor.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch(erro){

@@ -11,7 +11,7 @@ const SessaoRepositorio = require("../../repositorios/sessao_repositorio");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
         const senhaCriptografada = Criptografia.criarCriptografiaMd5Utf8(req.body.senha);
         let usuario = await UsuarioRepositorio.obterUsuarioBasePorEmail(
             req.body.email

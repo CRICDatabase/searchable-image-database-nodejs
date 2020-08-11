@@ -26,6 +26,7 @@
         "linebreak-style": ["error", "unix"],
         "lines-between-class-members": ["error", "always"],
         "no-prototype-builtins": "off",
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^(res|next)$" }],
         "quote-props": ["error", "as-needed"],
         "quotes": ["error", "double"],
         "semi": "error",

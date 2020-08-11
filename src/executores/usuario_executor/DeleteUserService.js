@@ -13,7 +13,7 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         const id_usuario = Number(req.params.id_usuario);
 

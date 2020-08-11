@@ -14,7 +14,7 @@ const ValidarTipo = require("../../utils/validacao_de_tipos");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
 

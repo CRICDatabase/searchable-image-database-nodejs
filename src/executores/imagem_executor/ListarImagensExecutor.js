@@ -9,22 +9,32 @@ const HttpStatus = require("http-status-codes");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
+        const user_id = Number(req.params.id_usuario);
 
-        const todasImagensTask = ImagemRepositorio.listarImagensValidasNoSistema(req.params.id_usuario);
-        const [todasImagens] = await Promise.all([todasImagensTask]);
-
-        if(todasImagens.length == 0) {
-            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-            ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
-            throw ObjetoExcecao;
+        let todasImagensTask;
+        if (typeof res.locals.user === "undefined") {
+            todasImagensTask = ImagemRepositorio.list_public_images_from_user(user_id);
         }
+        else {
+            if (res.locals.user.admin) {
+                todasImagensTask = ImagemRepositorio.list_all_images_from_user(user_id);
+            }
+            else {
+                if (res.locals.user.id === user_id) {
+                    todasImagensTask = ImagemRepositorio.list_images_from_user(user_id);
+                }
+                else {
+                    todasImagensTask = ImagemRepositorio.list_public_images_from_user(user_id);
+                }
+            }
+        }
+        const [todasImagens] = await Promise.all([todasImagensTask]);
 
         return await enrich_images(todasImagens);
     }
@@ -44,10 +54,6 @@ async function validarRequisicao(req) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
         throw ObjetoExcecao;
-    }
-
-    if (usuario.id > 1) {
-        await ValidadorDeSessao.login_required(req, usuario.id);
     }
 }
 
