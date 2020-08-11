@@ -15,7 +15,7 @@ const ListarDescricoes = require("../imagem_executor/ListarDescricoesExecutor");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await ValidadorDeSessao.admin_required(req);
         await validarRequisicao(req);
@@ -25,7 +25,7 @@ module.exports = {
             await ImagemRepositorio.cadastrarDescricao(req.body[i]);
         }
 
-        return await ListarDescricoes.Executar(req);
+        return await ListarDescricoes.Executar(req, res);
     }
 };
 

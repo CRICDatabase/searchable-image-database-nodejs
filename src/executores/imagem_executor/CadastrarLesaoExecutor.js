@@ -13,7 +13,7 @@ const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await ValidadorDeSessao.admin_required(req);
         await validarRequisicao(req);

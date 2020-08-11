@@ -15,7 +15,7 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
         const imagem = await ImagemRepositorio.obterImagemPorId(req.params.id_imagem);

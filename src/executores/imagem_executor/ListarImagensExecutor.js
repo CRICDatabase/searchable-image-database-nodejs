@@ -13,9 +13,10 @@ const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
+        const user = await ValidadorDeSessao.get_user_from_session(req);
 
         const todasImagensTask = ImagemRepositorio.listarImagensValidasNoSistema(req.params.id_usuario);
         const [todasImagens] = await Promise.all([todasImagensTask]);

@@ -15,7 +15,7 @@ const ConverterPonto = require("../../utils/transformacao_de_pontos");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await ValidadorDeSessao.login_required(req);
         await validarRequisicao(req);
@@ -38,7 +38,7 @@ module.exports = {
 
         await Promise.all([segmentosCitoplasmaCadastradosTask, segmentosNucleoCadastradosTask]);
 
-        return await ListarSegmentacaoCelulaExecutor.Executar(req);
+        return await ListarSegmentacaoCelulaExecutor.Executar(req, res);
     }
 };
 
