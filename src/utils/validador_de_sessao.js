@@ -15,7 +15,7 @@ module.exports = {
     async login_required(req, requested_user_id) {
         const authorization = req.get("Authorization");
 
-        if (typeof authorization === 'undefined') {
+        if (typeof authorization === "undefined") {
             ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = "Authorization is missing in header";
@@ -60,7 +60,7 @@ module.exports = {
     async admin_required(req) {
         const authorization = req.get("Authorization");
 
-        if (typeof authorization === 'undefined') {
+        if (typeof authorization === "undefined") {
             ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = "Authorization is missing in header";
