@@ -920,7 +920,7 @@ paths:
       description: Remove administrator rights from user.
       tags:
         - usuarios
-  '/imagens/{id_imagem}/approvada':
+  '/imagens/{id_imagem}/aprovada':
     parameters:
       - schema:
           type: string
