@@ -1155,7 +1155,6 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
-                    );
             }
         );
 
@@ -1498,6 +1497,113 @@ describe(
     }
 );
 
+describe(
+    "POST /api/v1/imagens/1/aprovada",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .put("/api/v1/imagens/1/aprovada")
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .put("/api/v1/imagens/1/aprovada")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .put("/api/v1/imagens/1/aprovada")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+
+describe(
+    "DELETE /api/v1/imagens/1/aprovada",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/1/aprovada")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/1/aprovada")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/1/aprovada")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
+                        }
+                    );
+            }
+        );
+    }
+);
 
 describe(
     "POST /api/v1/imagens/1/classificacao-celula/1",
