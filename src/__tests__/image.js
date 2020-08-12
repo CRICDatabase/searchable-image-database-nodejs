@@ -1110,7 +1110,7 @@ describe(
 );
 
 describe(
-    "GET /api/v1/imagens/100 (wrong id)",
+    "GET /api/v1/imagens/100 (invalid id)",
     () => {
         test(
             "anonymous",
@@ -1244,6 +1244,12 @@ describe(
                 /* Anonymous user can NOT use PUT method */
                 return request(app)
                     .put("/api/v1/imagens/3")
+                    .send(
+                        {
+                            codigo_lamina: "Anonymous' code",
+                            dt_aquisicao: "2021-01-01"
+                        }
+                    )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
@@ -1301,6 +1307,197 @@ describe(
         );
     }
 );
+
+describe(
+    "PUT /api/v1/imagens/100 (invalid ID)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/100")
+                    .send(
+                        {
+                            codigo_lamina: "Anonymous' code",
+                            dt_aquisicao: "2021-01-01"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .put("/api/v1/imagens/100")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            codigo_lamina: "Charles's code",
+                            dt_aquisicao: "2021-01-01"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .put("/api/v1/imagens/100")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            codigo_lamina: "Admin's code",
+                            dt_aquisicao: "2021-01-01"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+
+describe(
+    "DELETE /api/v1/imagens/6 (own by admin)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .delete("/api/v1/imagens/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* User can only use PUT method in image they own */
+                return request(app)
+                    .delete("/api/v1/imagens/6")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/6")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "DELETE /api/v1/imagens/7 (own by Charles)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                /* Anonymous user can NOT use PUT method */
+                return request(app)
+                    .delete("/api/v1/imagens/7")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                /* User can only use PUT method in image they own */
+                return request(app)
+                    .delete("/api/v1/imagens/7")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        // No test with admin because image was removed
+    }
+);
+
+describe(
+    "DELETE /api/v1/imagens/8 (own by Charles)",
+    () => {
+        // No test with anonymous or Charles because was tested image #7
+        test(
+            "admin",
+            () => {
+                /* Admin user can use PUT method */
+                return request(app)
+                    .put("/api/v1/imagens/8")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
+                        }
+                    );
+            }
+        );
+    }
+);
+
 
 describe(
     "POST /api/v1/imagens/1/classificacao-celula/1",

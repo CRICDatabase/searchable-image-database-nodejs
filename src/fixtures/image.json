@@ -71,5 +71,47 @@
         "dt_aquisicao": "2020-01-01 00:00:00.000000",
         "codigo_lamina": "0001",
         "classificacao_aprovada": false
+    },
+    {
+        "id": 6,
+        "nome": "example0001.png",
+        "altura": 400,
+        "largura": 600,
+        "excluida": false,
+        "id_lesao": 2,
+        "created_at": "2020-01-01 00:00:00.000000",
+        "id_usuario": 1,
+        "updated_at": "2020-01-01 00:00:00.000000",
+        "dt_aquisicao": "2020-01-01 00:00:00.000000",
+        "codigo_lamina": "To be delete by JEST",
+        "classificacao_aprovada": false
+    },
+    {
+        "id": 7,
+        "nome": "example0001.png",
+        "altura": 400,
+        "largura": 600,
+        "excluida": false,
+        "id_lesao": 2,
+        "created_at": "2020-01-01 00:00:00.000000",
+        "id_usuario": 2,
+        "updated_at": "2020-01-01 00:00:00.000000",
+        "dt_aquisicao": "2020-01-01 00:00:00.000000",
+        "codigo_lamina": "To be delete by JEST",
+        "classificacao_aprovada": false
+    },
+    {
+        "id": 8,
+        "nome": "example0001.png",
+        "altura": 400,
+        "largura": 600,
+        "excluida": false,
+        "id_lesao": 2,
+        "created_at": "2020-01-01 00:00:00.000000",
+        "id_usuario": 2,
+        "updated_at": "2020-01-01 00:00:00.000000",
+        "dt_aquisicao": "2020-01-01 00:00:00.000000",
+        "codigo_lamina": "To be delete by JEST",
+        "classificacao_aprovada": false
     }
 ]
