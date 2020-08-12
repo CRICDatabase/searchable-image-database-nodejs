@@ -21,6 +21,8 @@ const ListarImagensExecutor = require("../../executores/imagem_executor/ListarIm
 const ListarLesaoExecutor = require("../../executores/imagem_executor/ListarLesoesExecutor");
 const ListarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/ListarSegmentacaoCelulaExecutor");
 const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
+const approve_image_service = require("../../executores/imagem_executor/approve_image");
+const unapprove_image_service = require("../../executores/imagem_executor/unapprove_image");
 
 module.exports = {
 
@@ -274,6 +276,38 @@ module.exports = {
 
         try {
             await AtualizarDadosImagemExecutor.Executar(req, res);
+            return res.status(HttpStatus.NO_CONTENT).end();
+        }
+        catch (erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            debug(erro);
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
+    },
+
+    async approve_image(req, res, next) {
+
+        try {
+            await approve_image_service.Executar(req, res);
+            return res.status(HttpStatus.NO_CONTENT).end();
+        }
+        catch (erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            debug(erro);
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
+    },
+
+    async unapprove_image(req, res, next) {
+
+        try {
+            await unapprove_image_service.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {

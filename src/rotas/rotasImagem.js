@@ -16,8 +16,8 @@ rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.obterImagem
 rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.atualizarDadosImagem);
 rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)", SistemaController.not_implemented);
 
-rotasImagem.post("/api/v1/imagens/:id_imagem(\\d+)/aprovada", SistemaController.not_implemented);
-rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/aprovada", SistemaController.not_implemented);
+rotasImagem.post("/api/v1/imagens/:id_imagem(\\d+)/aprovada", ImagemController.approve_image);
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/aprovada", ImagemController.unapprove_image);
 
 rotasImagem.get("/api/v1/imagens/:id_imagem/classificacoes", SistemaController.not_implemented);
 rotasImagem.get("/api/v1/imagens/:id_imagem/listar-classificacao-celula/:id_usuario(\\d+)", ImagemController.listarClassificacaoDeCelulaParaUmUsuario); // TODO Remove in v2
