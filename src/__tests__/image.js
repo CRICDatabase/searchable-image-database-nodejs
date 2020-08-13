@@ -1506,11 +1506,11 @@ describe(
             "anonymous",
             () => {
                 return request(app)
-                    .put("/api/v1/imagens/9/aprovada")
+                    .post("/api/v1/imagens/9/aprovada")
                     .send()
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1520,7 +1520,7 @@ describe(
             "charles",
             () => {
                 return request(app)
-                    .put("/api/v1/imagens/9/aprovada")
+                    .post("/api/v1/imagens/9/aprovada")
                     .set(
                         "Authorization",
                         charles_token
@@ -1538,7 +1538,7 @@ describe(
             "admin",
             () => {
                 return request(app)
-                    .put("/api/v1/imagens/9/aprovada")
+                    .post("/api/v1/imagens/9/aprovada")
                     .set(
                         "Authorization",
                         admin_token
@@ -1547,6 +1547,116 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "POST /api/v1/imagens/foo/aprovada (bad request)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens/foo/aprovada")
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens/foo/aprovada")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens/foo/aprovada")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "POST /api/v1/imagens/100/aprovada (not found)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens/100/aprovada")
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens/100/aprovada")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .post("/api/v1/imagens/100/aprovada")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send()
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
@@ -1600,6 +1710,110 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "DELETE /api/v1/imagens/foo/aprovada (bad request)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/foo/aprovada")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/foo/aprovada")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/foo/aprovada")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "DELETE /api/v1/imagens/100/aprovada (not found)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/100/aprovada")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/10/aprovada")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .delete("/api/v1/imagens/10/aprovada")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
