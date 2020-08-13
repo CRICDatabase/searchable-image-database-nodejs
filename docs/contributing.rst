@@ -4,14 +4,29 @@ Contributing
 Reporting Bugs
 --------------
 
+Access https://github.com/CRICDatabase/searchable-image-database-nodejs/issues/new
+to open a issue.
+
 Suggesting Enhancements
 -----------------------
+
+Access https://github.com/CRICDatabase/searchable-image-database-nodejs/issues/new
+to open a enhancement proposal.
 
 Your First Code Contribution
 ----------------------------
 
+Fork https://github.com/CRICDatabase/searchable-image-database-nodejs
+and
+change the code.
+Late,
+open a pull request.
+
 Pull Requests
 -------------
+
+Access https://github.com/CRICDatabase/searchable-image-database-nodejs/compare
+to open a pull request.
 
 Styleguides
 -----------
