@@ -5,7 +5,7 @@ jest.useFakeTimers();
 let ImageDAO = require("./imagem_repositorio");
 
 describe(
-    "Test ImagemModel",
+    "Test ImageDAO",
     () => {
         test(
             "cadastrarImagem without DOI for admin",
@@ -239,6 +239,75 @@ describe(
                                         ]
                                     )
                                 );
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+
+describe(
+    "Test ImageDAO.approve_image",
+    () => {
+        test(
+            "success",
+            () => {
+                return ImageDAO.approve_image(
+                    9
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([1]);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "invalid ID",
+            () => {
+                return ImageDAO.approve_image(
+                    100
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([0]);
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "Test ImageDAO.unapprove_image",
+    () => {
+        test(
+            "success",
+            () => {
+                return ImageDAO.approve_image(
+                    10
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([1]);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "invalid ID",
+            () => {
+                return ImageDAO.approve_image(
+                    100
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([0]);
                         }
                     );
             }
