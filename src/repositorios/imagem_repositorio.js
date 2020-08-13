@@ -337,6 +337,32 @@ module.exports = {
         );
     },
 
+    async approve_image(image_id) {
+        return ImagemModel.update(
+            {
+                classificacao_aprovada: true
+            },
+            {
+                where: {
+                    id: image_id
+                }
+            }
+        );
+    },
+
+    async unapprove_image(image_id) {
+        return ImagemModel.update(
+            {
+                classificacao_aprovada: false
+            },
+            {
+                where: {
+                    id: image_id
+                }
+            }
+        );
+    },
+
     async atualizarClassificacao(requisicao) {
         return ClassificacaoModel.update({
             id_lesao: requisicao.id_lesao_celula
