@@ -1498,13 +1498,13 @@ describe(
 );
 
 describe(
-    "POST /api/v1/imagens/1/aprovada",
+    "POST /api/v1/imagens/9/aprovada",
     () => {
         test(
             "anonymous",
             () => {
                 return request(app)
-                    .put("/api/v1/imagens/1/aprovada")
+                    .put("/api/v1/imagens/9/aprovada")
                     .send()
                     .then(
                         response => {
@@ -1518,7 +1518,7 @@ describe(
             "charles",
             () => {
                 return request(app)
-                    .put("/api/v1/imagens/1/aprovada")
+                    .put("/api/v1/imagens/9/aprovada")
                     .set(
                         "Authorization",
                         charles_token
@@ -1536,7 +1536,7 @@ describe(
             "admin",
             () => {
                 return request(app)
-                    .put("/api/v1/imagens/1/aprovada")
+                    .put("/api/v1/imagens/9/aprovada")
                     .set(
                         "Authorization",
                         admin_token
@@ -1554,13 +1554,13 @@ describe(
 
 
 describe(
-    "DELETE /api/v1/imagens/1/aprovada",
+    "DELETE /api/v1/imagens/10/aprovada",
     () => {
         test(
             "anonymous",
             () => {
                 return request(app)
-                    .delete("/api/v1/imagens/1/aprovada")
+                    .delete("/api/v1/imagens/10/aprovada")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
@@ -1573,7 +1573,7 @@ describe(
             "charles",
             () => {
                 return request(app)
-                    .delete("/api/v1/imagens/1/aprovada")
+                    .delete("/api/v1/imagens/10/aprovada")
                     .set(
                         "Authorization",
                         charles_token
@@ -1590,7 +1590,7 @@ describe(
             "admin",
             () => {
                 return request(app)
-                    .delete("/api/v1/imagens/1/aprovada")
+                    .delete("/api/v1/imagens/10/aprovada")
                     .set(
                         "Authorization",
                         admin_token

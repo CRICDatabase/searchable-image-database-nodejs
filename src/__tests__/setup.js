@@ -19,6 +19,7 @@ module.exports = async () => {
     const DescricaoFixtures = require("../fixtures/description.json");
 
     const ImagemFixtures = require("../fixtures/image.json");
+    const ImagemExtraFixtures = require("../fixtures/image_extra.json");
 
     const CelulaFixtures = require("../fixtures/cell.json");
     const ClassificacaoCelulaFixtures = require("../fixtures/classification.json");
@@ -47,6 +48,9 @@ module.exports = async () => {
 
                 await ImagemModel.bulkCreate(
                     ImagemFixtures
+                );
+                await ImagemModel.bulkCreate(
+                    ImagemExtraFixtures
                 );
 
                 await CelulaModel.bulkCreate(
