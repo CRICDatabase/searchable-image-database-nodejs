@@ -1155,9 +1155,11 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                        }
+                    );
+
             }
         );
-
     }
 );
 
