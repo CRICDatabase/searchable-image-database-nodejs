@@ -5,8 +5,6 @@ const debug = require("debug")("database.cric:get_user_middleware");
 
 const HttpStatus = require("http-status-codes");
 
-const ObjetoExcecao = require("./enumeracoes/controle_de_excecoes");
-
 module.exports = {
 
     async login_required(req, res, next) {
