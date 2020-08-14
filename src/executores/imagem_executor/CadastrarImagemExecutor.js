@@ -11,7 +11,6 @@ const HttpStatus = require("http-status-codes");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 const ValidarTipo = require("../../utils/validacao_de_tipos");
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
@@ -21,8 +20,8 @@ module.exports = {
 
     async Executar(req, res) {
 
-        await ValidadorDeSessao.login_required(req);
-        await validarRequisicao(req);
+        await validarRequisicao(req, res.locals.user);
+
         const imagemCadastrada = await cadastrarDadosEArquivoDeImagem(req);
 
         if (!imagemCadastrada) {
@@ -37,7 +36,7 @@ module.exports = {
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, user) {
     if (!req.body.id_usuario ||
         !ValidarTipo.ehNumero(req.body.id_usuario) ||
         !req.body.codigo_lamina ) {
@@ -53,10 +52,18 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    const UsuarioBase = await UsuarioRepositorio.obterUsuarioBasePorId(req.body.id_usuario);
-    if (!UsuarioBase) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+    if (user.admin || user.id === Number(req.body.id_usuario)) {
+        const UsuarioBase = await UsuarioRepositorio.obterUsuarioBasePorId(req.body.id_usuario);
+        if (!UsuarioBase) {
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+            throw ObjetoExcecao;
+        }
+    }
+    else {
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+        ObjetoExcecao.title = Excecao.TOKEN_AUTORIZACAO_EXPIRADO;
+        ObjetoExcecao.detail = "Token doesn't belong to required user";
         throw ObjetoExcecao;
     }
 }

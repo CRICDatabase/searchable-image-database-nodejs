@@ -179,7 +179,7 @@ describe(
                 /* Anonymous user should be able to list imagem from main user */
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=1')
+                    .query("id_usuario=1")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.OK);
@@ -218,7 +218,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=1')
+                    .query("id_usuario=1")
                     .set(
                         "Authorization",
                         charles_token
@@ -261,7 +261,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=1')
+                    .query("id_usuario=1")
                     .set(
                         "Authorization",
                         admin_token
@@ -308,13 +308,17 @@ describe(
         test(
             "anonymous",
             () => {
-                /* Anonymous user should be able to list imagem from main user */
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=2')
+                    .query("id_usuario=2")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toEqual(
+                                []
+                            );
                         }
                     );
             }
@@ -325,7 +329,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=2')
+                    .query("id_usuario=2")
                     .set(
                         "Authorization",
                         charles_token
@@ -368,7 +372,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=2')
+                    .query("id_usuario=2")
                     .set(
                         "Authorization",
                         admin_token
@@ -417,10 +421,15 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=3')
+                    .query("id_usuario=3")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toEqual(
+                                []
+                            );
                         }
                     );
             }
@@ -431,14 +440,19 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=3')
+                    .query("id_usuario=3")
                     .set(
                         "Authorization",
                         charles_token
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toEqual(
+                                []
+                            );
                         }
                     );
             }
@@ -449,7 +463,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=3')
+                    .query("id_usuario=3")
                     .set(
                         "Authorization",
                         admin_token
@@ -459,28 +473,8 @@ describe(
                             expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Boolean),
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: expect.any(Boolean),
-                                        id: expect.any(Number),
-                                        id_usuario: 3,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
+                            ).toEqual(
+                                []
                             );
                         }
                     );
@@ -716,7 +710,7 @@ describe(
 );
 
 describe(
-    "POST /api/v1/imagens (wrong missing id_usuario)",
+    "POST /api/v1/imagens (wrong id_usuario)",
     () => {
         test(
             "anonymous",
@@ -747,7 +741,7 @@ describe(
                     .field({dt_aquisicao: "2020-01-01"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
@@ -768,7 +762,28 @@ describe(
                     .field({dt_aquisicao: "2020-01-01"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    altura: expect.any(Number),
+                                    classificacao_aprovada: false,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: false,
+                                    id: expect.any(Number),
+                                    // id_usuario: 1,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(String),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
+                                    },
+                                    nome: expect.any(String)
+                                }
+                            );
                         }
                     );
             }
@@ -868,7 +883,28 @@ describe(
                     .field({codigo_lamina: "JEST Charles"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    altura: expect.any(Number),
+                                    classificacao_aprovada: false,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: false,
+                                    id: expect.any(Number),
+                                    // id_usuario: 1,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(String),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
+                                    },
+                                    nome: expect.any(String)
+                                }
+                            );
                         }
                     );
             }
@@ -888,7 +924,28 @@ describe(
                     .field({codigo_lamina: "JEST Admin"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.CREATED);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    altura: expect.any(Number),
+                                    classificacao_aprovada: false,
+                                    codigo_lamina: expect.any(String),
+                                    dt_aquisicao: expect.any(String),
+                                    excluida: false,
+                                    id: expect.any(Number),
+                                    // id_usuario: 1,
+                                    largura: expect.any(Number),
+                                    lesao: {
+                                        detalhes: expect.any(String),
+                                        id: expect.any(Number),
+                                        nome: expect.any(String),
+                                        grade: expect.any(Number)
+                                    },
+                                    nome: expect.any(String)
+                                }
+                            );
                         }
                     );
             }
@@ -1853,239 +1910,6 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
-                        }
-                    );
-            }
-        );
-
-    }
-);
-
-describe(
-    "GET /api/v1/imagens/listar/1",
-    () => {
-        test(
-            "anonymous",
-            () => {
-                /* Anonymous user should be able to list imagem from main user */
-                return request(app)
-                    .get("/api/v1/imagens/listar/1")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        classificacao_aprovada: true,
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: false,
-                                        id: expect.any(Number),
-                                        id_usuario: 1,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "charles",
-            () => {
-                return request(app)
-                    .get("/api/v1/imagens/listar/1")
-                    .set(
-                        "Authorization",
-                        charles_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Boolean),
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: false,
-                                        id: expect.any(Number),
-                                        id_usuario: 1,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "admin",
-            () => {
-                return request(app)
-                    .get("/api/v1/imagens/listar/1")
-                    .set(
-                        "Authorization",
-                        admin_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Boolean),
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: false,
-                                        id: expect.any(Number),
-                                        id_usuario: 1,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-    }
-);
-
-describe(
-    "GET /api/v1/imagens/listar/2",
-    () => {
-        test(
-            "anonymous",
-            () => {
-                /* Anonymous user should not be able to list imagem from users */
-                return request(app)
-                    .get("/api/v1/imagens/listar/2")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
-                        }
-                    );
-            }
-        );
-
-        test(
-            "charles",
-            () => {
-                return request(app)
-                    .get("/api/v1/imagens/listar/2")
-                    .set(
-                        "Authorization",
-                        charles_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        classificacao_aprovada: false,
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: false,
-                                        id: expect.any(Number),
-                                        id_usuario: 2,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
-                            );
-                        }
-                    );
-            }
-        );
-
-        test(
-            "admin",
-            () => {
-                return request(app)
-                    .get("/api/v1/imagens/listar/2")
-                    .set(
-                        "Authorization",
-                        admin_token
-                    )
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        classificacao_aprovada: false,
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: false,
-                                        id: expect.any(Number),
-                                        id_usuario: 2,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
-                            );
                         }
                     );
             }

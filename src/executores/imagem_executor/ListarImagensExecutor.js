@@ -15,7 +15,7 @@ module.exports = {
     async Executar(req, res) {
 
         await validarRequisicao(req);
-        const user_id = Number(req.params.id_usuario);
+        const user_id = req.query.id_usuario ? Number(req.query.id_usuario) : undefined;
 
         let todasImagensTask;
         if (typeof res.locals.user === "undefined") {
@@ -42,18 +42,20 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!ValidarTipo.ehNumero(req.params.id_usuario)) {
+    if (req.query.id_usuario) {
+        if (!ValidarTipo.ehNumero(req.query.id_usuario)) {
 
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
+            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            throw ObjetoExcecao;
+        }
 
-    const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    if (!usuario) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-        throw ObjetoExcecao;
+        const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.query.id_usuario);
+        if (!usuario) {
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+            throw ObjetoExcecao;
+        }
     }
 }
 
