@@ -308,13 +308,17 @@ describe(
         test(
             "anonymous",
             () => {
-                /* Anonymous user should be able to list imagem from main user */
                 return request(app)
                     .get("/api/v1/imagens")
                     .query('id_usuario=2')
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toEqual(
+                                []
+                            );
                         }
                     );
             }
@@ -420,7 +424,12 @@ describe(
                     .query('id_usuario=3')
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toEqual(
+                                []
+                            );
                         }
                     );
             }
@@ -438,7 +447,12 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toEqual(
+                                []
+                            );
                         }
                     );
             }
@@ -459,28 +473,8 @@ describe(
                             expect(response.statusCode).toBe(HttpStatus.OK);
                             expect(
                                 response.body
-                            ).toMatchObject(
-                                expect.arrayContaining(
-                                    [{
-                                        altura: expect.any(Number),
-                                        classificacao_aprovada: expect.any(Boolean),
-                                        codigo_lamina: expect.any(String),
-                                        dt_aquisicao: expect.any(String),
-                                        excluida: expect.any(Boolean),
-                                        id: expect.any(Number),
-                                        id_usuario: 3,
-                                        largura: expect.any(Number),
-                                        lesao: {
-                                            detalhes: expect.any(String),
-                                            id: expect.any(Number),
-                                            nome: expect.any(String),
-                                            grade: expect.any(Number)
-                                        },
-                                        nome: expect.any(String),
-                                        total_classificacoes: expect.any(Number),
-                                        total_segmentacoes: expect.any(Number)
-                                    }]
-                                )
+                            ).toEqual(
+                                []
                             );
                         }
                     );
