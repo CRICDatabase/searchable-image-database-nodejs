@@ -179,7 +179,7 @@ describe(
                 /* Anonymous user should be able to list imagem from main user */
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=1')
+                    .query("id_usuario=1")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.OK);
@@ -218,7 +218,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=1')
+                    .query("id_usuario=1")
                     .set(
                         "Authorization",
                         charles_token
@@ -261,7 +261,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=1')
+                    .query("id_usuario=1")
                     .set(
                         "Authorization",
                         admin_token
@@ -310,7 +310,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=2')
+                    .query("id_usuario=2")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.OK);
@@ -329,7 +329,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=2')
+                    .query("id_usuario=2")
                     .set(
                         "Authorization",
                         charles_token
@@ -372,7 +372,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=2')
+                    .query("id_usuario=2")
                     .set(
                         "Authorization",
                         admin_token
@@ -421,7 +421,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=3')
+                    .query("id_usuario=3")
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.OK);
@@ -440,7 +440,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=3')
+                    .query("id_usuario=3")
                     .set(
                         "Authorization",
                         charles_token
@@ -463,7 +463,7 @@ describe(
             () => {
                 return request(app)
                     .get("/api/v1/imagens")
-                    .query('id_usuario=3')
+                    .query("id_usuario=3")
                     .set(
                         "Authorization",
                         admin_token
