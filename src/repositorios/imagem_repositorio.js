@@ -148,7 +148,7 @@ module.exports = {
             ],
             where: {
                 excluida: false,
-                id_usuario: user_id
+                id_usuario: user_id ? user_id : 1
             }
         });
     },
@@ -161,7 +161,7 @@ module.exports = {
             where: {
                 excluida: false,
                 classificacao_aprovada: true,
-                id_usuario: user_id
+                id_usuario: user_id ? user_id : 1
             }
         });
     },
@@ -173,7 +173,7 @@ module.exports = {
                 ["created_at", "DESC"]
             ],
             where: {
-                id_usuario: user_id
+                id_usuario: user_id ? user_id : 1
             }
         });
     },

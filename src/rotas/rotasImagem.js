@@ -8,8 +8,7 @@ const ImagemController = require("../controllers/imagem_controller/ImagemControl
 
 const rotasImagem = express.Router();
 
-rotasImagem.get("/api/v1/imagens", SistemaController.not_implemented);
-rotasImagem.get("/api/v1/imagens/listar/:id_usuario(\\d+)", ImagemController.listarImagens); // TODO Remove in v2
+rotasImagem.get("/api/v1/imagens", ImagemController.listarImagens);
 rotasImagem.post("/api/v1/imagens", ImagemController.cadastrarImagem);
 
 rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.obterImagem);
