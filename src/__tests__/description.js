@@ -59,6 +59,24 @@ describe(
         );
 
         test(
+            "charles",
+            () => {
+                /* Anonymous user can NOT use POST method */
+                return request(app)
+                    .post("/api/v1/descricoes")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
             "admin",
             () => {
                 return request(app)
@@ -171,6 +189,36 @@ describe(
                 /* Anonymous user should be able to get information from description */
                 return request(app)
                     .get("/api/v1/descricoes")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                expect.arrayContaining(
+                                    [{
+                                        codigo: expect.any(Number),
+                                        nome: expect.any(String),
+                                        id: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+
+        test(
+            "charles",
+            () => {
+                /* Admin user should be able to get information from description */
+                return request(app)
+                    .get("/api/v1/descricoes")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.OK);
