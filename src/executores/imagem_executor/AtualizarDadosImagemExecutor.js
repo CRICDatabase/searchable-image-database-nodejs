@@ -31,7 +31,7 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!req.body.codigo_lamina || !validator.isAlphanumeric(req.body.codigo_lamina) ||
+    if (!req.body.codigo_lamina || !validator.isLength(req.body.codigo_lamina, { min: 3 }) ||
         !req.body.dt_aquisicao || !validator.isDate(req.body.dt_aquisicao)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;

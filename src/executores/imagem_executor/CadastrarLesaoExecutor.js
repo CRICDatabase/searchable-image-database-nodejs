@@ -23,7 +23,7 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-    if(!req.body.nome || !validator.isAlphanumeric(req.body.nome)) {
+    if(!req.body.nome || typeof req.body.nome !== "string") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Missing nome";
