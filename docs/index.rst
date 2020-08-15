@@ -33,6 +33,12 @@ is available at https://cric-database.readthedocs.io/.
     debugging
     contributing
 
+..  toctree::
+    :maxdepth: 2
+    :caption: Cookbook
+
+    creating_new_endpoint
+
 Indices and tables
 ------------------
 
