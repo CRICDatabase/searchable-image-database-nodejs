@@ -883,28 +883,7 @@ describe(
                     .field({codigo_lamina: "JEST Charles"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.CREATED);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    altura: expect.any(Number),
-                                    classificacao_aprovada: false,
-                                    codigo_lamina: expect.any(String),
-                                    dt_aquisicao: expect.any(String),
-                                    excluida: false,
-                                    id: expect.any(Number),
-                                    // id_usuario: 1,
-                                    largura: expect.any(Number),
-                                    lesao: {
-                                        detalhes: expect.any(String),
-                                        id: expect.any(Number),
-                                        nome: expect.any(String),
-                                        grade: expect.any(Number)
-                                    },
-                                    nome: expect.any(String)
-                                }
-                            );
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -924,28 +903,7 @@ describe(
                     .field({codigo_lamina: "JEST Admin"})
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.CREATED);
-                            expect(
-                                response.body
-                            ).toMatchObject(
-                                {
-                                    altura: expect.any(Number),
-                                    classificacao_aprovada: false,
-                                    codigo_lamina: expect.any(String),
-                                    dt_aquisicao: expect.any(String),
-                                    excluida: false,
-                                    id: expect.any(Number),
-                                    // id_usuario: 1,
-                                    largura: expect.any(Number),
-                                    lesao: {
-                                        detalhes: expect.any(String),
-                                        id: expect.any(Number),
-                                        nome: expect.any(String),
-                                        grade: expect.any(Number)
-                                    },
-                                    nome: expect.any(String)
-                                }
-                            );
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -1622,7 +1580,7 @@ describe(
                     .send()
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
@@ -1640,7 +1598,7 @@ describe(
                     .send()
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
@@ -1658,7 +1616,7 @@ describe(
                     .send()
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
                         }
                     );
             }
@@ -1889,7 +1847,7 @@ describe(
                     .post("/api/v1/imagens/1/classificacao-celula/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }

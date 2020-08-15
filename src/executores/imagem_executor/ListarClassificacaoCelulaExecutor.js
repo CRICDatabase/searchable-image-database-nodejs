@@ -5,11 +5,11 @@ const debug = require("debug")("database.cric:ListarClassificacaoCelulaExecutor"
 
 const HttpStatus = require("http-status-codes");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
@@ -27,12 +27,6 @@ module.exports = {
 
 async function validarRequisicao(req) {
     let session_is_valid = false;
-
-    if (!ValidarTipo.ehNumero(req.params.id_usuario) || !ValidarTipo.ehNumero(req.params.id_imagem)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
 
     const id_usuario = Number(req.params.id_usuario);
     const id_imagem = Number(req.params.id_imagem);

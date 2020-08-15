@@ -10,7 +10,6 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
 const image_utils = require("../../utils/image");
 
 module.exports = {
@@ -36,14 +35,6 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-
-    if (!ValidarTipo.ehNumero(req.params.id_imagem) ||
-        !ValidarTipo.ehNumero(req.params.id_celula)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        ObjetoExcecao.detail = `Verify route parameters:\n\t- id_imagem: ${req.params.id_imagem}\n\t- id_celula: ${req.params.id_celula}`;
-        throw ObjetoExcecao;
-    }
 
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const [imagem] = await Promise.all([imagemTask]);

@@ -47,9 +47,14 @@ describe(
         test(
             "anonymous",
             () => {
-                /* Anonymous user can NOT use POST method */
                 return request(app)
                     .post("/api/v1/descricoes")
+                    .send(
+                        [{
+                            codigo: 1,
+                            nome: "Bar"
+                        }]
+                    )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
@@ -61,12 +66,17 @@ describe(
         test(
             "charles",
             () => {
-                /* Anonymous user can NOT use POST method */
                 return request(app)
                     .post("/api/v1/descricoes")
                     .set(
                         "Authorization",
                         charles_token
+                    )
+                    .send(
+                        [{
+                            codigo: 1,
+                            nome: "Bar"
+                        }]
                     )
                     .then(
                         response => {

@@ -3,15 +3,15 @@
 // eslint-disable-next-line no-unused-vars
 const debug = require("debug")("database.cric:CadastrarImagemExecutor");
 
-const path = require("path");
 const Crypto = require("crypto");
 const FileSystem = require("fs");
-const Jimp = require("jimp");
 const HttpStatus = require("http-status-codes");
+const Jimp = require("jimp");
+const path = require("path");
+const validator = require("validator");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
@@ -37,12 +37,14 @@ module.exports = {
 };
 
 async function validarRequisicao(req, user) {
-    if (!req.body.id_usuario ||
-        !ValidarTipo.ehNumero(req.body.id_usuario) ||
-        !req.body.codigo_lamina ) {
+    // req.body is multipart requests instead of JSON!
+    // All fields in req.body are string!
+    if (!req.body.id_usuario || !validator.isNumeric(req.body.id_usuario) ||
+        !req.body.codigo_lamina || !validator.isLength(req.body.codigo_lamina, { min: 3 }) ||
+        !req.body.dt_aquisicao || !validator.isDate(req.body.dt_aquisicao)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        ObjetoExcecao.detail = "Check id_usuario and codigo_lamina";
+        ObjetoExcecao.detail = "Check id_usuario, codigo_lamina, dt_aquisicao";
         throw ObjetoExcecao;
     }
     if (!req.files) {
@@ -76,6 +78,7 @@ async function prepararCadastroNoBanco(req) {
     const altura = 0;
     const largura = 0;
 
+    debug(req.body.dt_aquisicao);
     const imagem = {
         nome: novoNomeImagem,
         codigo_lamina: req.body.codigo_lamina,

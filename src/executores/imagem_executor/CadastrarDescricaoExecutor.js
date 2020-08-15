@@ -3,13 +3,14 @@
 // eslint-disable-next-line no-unused-vars
 const debug = require("debug")("database.cric:CadastrarDescricaoExecutor");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const HttpStatus = require("http-status-codes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 const ListarDescricoes = require("../imagem_executor/ListarDescricoesExecutor");
 
@@ -32,17 +33,19 @@ module.exports = {
 async function validarRequisicao(req) {
     let descricoes = req.body;
 
-    if(!ValidarTipo.ehNumero(req.params.id_usuario) || descricoes.length == 0) {
+    if(descricoes.length == 0) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = "Body must be a array";
         throw ObjetoExcecao;
     }
 
     descricoes.forEach(descricao => {
 
-        if(!ValidarTipo.ehNumero(descricao.codigo)) {
+        if(!descricao.codigo || typeof descricao.codigo !== "number") {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            ObjetoExcecao.detail = `Missing 'codigo' in ${descricao}`;
             throw ObjetoExcecao;
         }
     });
