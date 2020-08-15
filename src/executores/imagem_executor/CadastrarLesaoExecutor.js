@@ -30,7 +30,7 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    if(!req.body.grade || !validator.isNumeric(req.body.grade)) {
+    if(!req.body.grade || typeof req.body.grade !== "number") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Missing grade";

@@ -43,7 +43,7 @@ async function validarRequisicao(req) {
 
     descricoes.forEach(descricao => {
 
-        if(!validator.isNumeric(descricao.codigo)) {
+        if(!descricao.codigo || typeof descricao.codigo !== "number") {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = `Missing 'codigo' in ${descricao}`;

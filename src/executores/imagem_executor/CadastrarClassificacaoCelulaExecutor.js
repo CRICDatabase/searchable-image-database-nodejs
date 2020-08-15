@@ -54,13 +54,13 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!req.body.id_lesao || !validator.isNumeric(req.body.id_lesao) ||
-        !req.body.alturaCanvas || !validator.isNumeric(req.body.alturaCanvas) ||
-        !req.body.larguraCanvas || !validator.isNumeric(req.body.larguraCanvas) ||
-        !req.body.alturaOriginalImg || !validator.isNumeric(req.body.alturaOriginalImg) ||
-        !req.body.larguraOriginalImg || !validator.isNumeric(req.body.larguraOriginalImg) ||
-        !req.body.coord_centro_nucleo_x || !validator.isNumeric(req.body.coord_centro_nucleo_x) ||
-        !req.body.coord_centro_nucleo_y || !validator.isNumeric(req.body.coord_centro_nucleo_y)) {
+    if (!req.body.id_lesao || typeof req.body.id_lesao !== "number" ||
+        !req.body.alturaCanvas || typeof req.body.alturaCanvas !== "number" ||
+        !req.body.larguraCanvas || typeof req.body.larguraCanvas !== "number" ||
+        !req.body.alturaOriginalImg || typeof req.body.alturaOriginalImg !== "number" ||
+        !req.body.larguraOriginalImg || typeof req.body.larguraOriginalImg !== "number" ||
+        !req.body.coord_centro_nucleo_x || typeof req.body.coord_centro_nucleo_x !== "number" ||
+        !req.body.coord_centro_nucleo_y || typeof req.body.coord_centro_nucleo_y !== "number") {
 
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;

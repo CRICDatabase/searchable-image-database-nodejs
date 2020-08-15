@@ -37,7 +37,7 @@ module.exports = {
 };
 
 async function validarRequisicao(req, user) {
-    if (!req.body.id_usuario || !validator.isNumeric(req.body.id_usuario) ||
+    if (!req.body.id_usuario || typeof req.body.id_usuario !== "number" ||
         !req.body.codigo_lamina || !validator.isAlphanumeric(req.body.codigo_lamina) ||
         !req.body.dt_aquisicao || !validator.isDate(req.body.dt_aquisicao)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;

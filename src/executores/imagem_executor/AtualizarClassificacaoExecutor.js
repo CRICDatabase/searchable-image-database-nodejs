@@ -39,7 +39,7 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-    if (!req.body.id_lesao_celula || !validator.isNumeric(req.body.id_lesao_celula)) {
+    if (!req.body.id_lesao_celula || typeof req.body.id_lesao_celula !== "number") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Body request is invalid";

@@ -48,11 +48,11 @@ module.exports = {
 async function validarRequisicao(req) {
 
     if (req.body.segmentos_citoplasma.length == 0 ||
-        !req.body.larguraOriginalImg || !validator.isNumeric(req.body.larguraOriginalImg) ||
-        !req.body.alturaOriginalImg || !validator.isNumeric(req.body.alturaOriginalImg) ||
-        !req.body.larguraCanvas || !validator.isNumeric(req.body.larguraCanvas) ||
-        !req.body.alturaCanvas || !validator.isNumeric(req.body.alturaCanvas) ||
-        !req.body.id_descricao || !validator.isNumeric(req.body.id_descricao)) {
+        !req.body.larguraOriginalImg || typeof req.body.larguraOriginalImg !== "number" ||
+        !req.body.alturaOriginalImg || typeof req.body.alturaOriginalImg !== "number" ||
+        !req.body.larguraCanvas || typeof req.body.larguraCanvas !== "number" ||
+        !req.body.alturaCanvas || typeof req.body.alturaCanvas !== "number" ||
+        !req.body.id_descricao || typeof req.body.id_descricao !== "number") {
 
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
