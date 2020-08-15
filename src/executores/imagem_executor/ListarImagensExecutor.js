@@ -3,12 +3,14 @@
 // eslint-disable-next-line no-unused-vars
 const debug = require("debug")("database.cric:ListarImagensExecutor");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const HttpStatus = require("http-status-codes");
+const validator = require('validator');
+
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
+
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 
 module.exports = {
 
@@ -43,7 +45,7 @@ module.exports = {
 async function validarRequisicao(req) {
 
     if (req.query.id_usuario) {
-        if (!ValidarTipo.ehNumero(req.query.id_usuario)) {
+        if (!validator.isNumeric(req.query.id_usuario)) {
 
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;

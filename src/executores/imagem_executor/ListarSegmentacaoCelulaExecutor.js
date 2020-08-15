@@ -3,12 +3,14 @@
 // eslint-disable-next-line no-unused-vars
 const debug = require("debug")("database.cric:ListarSegmentacaoCelulaExecutor");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const HttpStatus = require("http-status-codes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
+const validator = require('validator');
+
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
@@ -47,7 +49,7 @@ module.exports = {
 async function validarRequisicao(req) {
     let session_is_valid = false;
     
-    if (!ValidarTipo.ehNumero(req.params.id_usuario) || !ValidarTipo.ehNumero(req.params.id_imagem)) {
+    if (!validator.isNumeric(req.params.id_usuario) || !validator.isNumeric(req.params.id_imagem)) {
 
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
