@@ -37,7 +37,9 @@ module.exports = {
 };
 
 async function validarRequisicao(req, user) {
-    if (!req.body.id_usuario || typeof req.body.id_usuario !== "number" ||
+    // req.body is multipart requests instead of JSON!
+    // All fields in req.body are string!
+    if (!req.body.id_usuario || !validator.isNumeric(req.body.id_usuario) ||
         !req.body.codigo_lamina || !validator.isLength(req.body.codigo_lamina, { min: 3 }) ||
         !req.body.dt_aquisicao || !validator.isDate(req.body.dt_aquisicao)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
