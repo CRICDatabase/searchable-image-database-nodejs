@@ -4,7 +4,6 @@
 const debug = require("debug")("database.cric:ObterUsuarioExecutor");
 
 const HttpStatus = require("http-status-codes");
-const validator = require('validator');
 
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
@@ -15,7 +14,6 @@ const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 module.exports = {
 
     async Executar(req, res) {
-        await validarRequisicao(req);
         const id_usuario = Number(req.params.id_usuario);
         
         await ValidadorDeSessao.login_required(
@@ -37,12 +35,3 @@ module.exports = {
         return usuario.dataValues;
     }
 };
-
-async function validarRequisicao(req) {
-
-    if (!validador.isNumeric(req.params.id_usuario)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
-}

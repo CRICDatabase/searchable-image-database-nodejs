@@ -4,7 +4,6 @@
 const debug = require("debug")("database.cric:ListarSegmentacaoCelulaExecutor");
 
 const HttpStatus = require("http-status-codes");
-const validator = require('validator');
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");

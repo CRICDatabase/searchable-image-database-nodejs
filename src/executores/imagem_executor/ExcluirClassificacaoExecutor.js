@@ -4,7 +4,6 @@
 const debug = require("debug")("database.cric:ExcluirClassificacaoExecutor");
 
 const HttpStatus = require("http-status-codes");
-const validator = require('validator');
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 

@@ -4,7 +4,7 @@
 const debug = require("debug")("database.cric:AtualizarDadosImagemExecutor");
 
 const HttpStatus = require("http-status-codes");
-const validator = require('validator');
+const validator = require("validator");
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 

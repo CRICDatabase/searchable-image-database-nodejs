@@ -8,7 +8,7 @@ const FileSystem = require("fs");
 const HttpStatus = require("http-status-codes");
 const Jimp = require("jimp");
 const path = require("path");
-const validator = require('validator');
+const validator = require("validator");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
