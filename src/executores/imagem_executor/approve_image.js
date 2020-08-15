@@ -31,6 +31,4 @@ async function validarRequisicao(req) {
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
-
-    await ValidadorDeSessao.admin_required(req);
 }

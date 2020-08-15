@@ -43,11 +43,16 @@ module.exports = {
     },
 
     async admin_required(req, res, next) {
-        if (typeof res.locals.user === "undefined" || res.locals.user.admin === false) {
+        if (typeof res.locals.user === "undefined") {
             return res.status(HttpStatus.UNAUTHORIZED).end();
         }
         else {
-            next();
+            if (res.locals.user.admin === false) {
+                return res.status(HttpStatus.FORBIDDEN).end();
+            }
+            else {
+                next();
+            }
         }
     }
 
