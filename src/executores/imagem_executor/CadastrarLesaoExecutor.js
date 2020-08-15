@@ -4,6 +4,7 @@
 const debug = require("debug")("database.cric:CadastrarLesaoExecutor");
 
 const HttpStatus = require("http-status-codes");
+const validator = require('validator');
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
@@ -22,14 +23,14 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-    if(!req.body.nome) {
+    if(!req.body.nome || !validator.isAlphanumeric(req.body.nome)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Missing nome";
         throw ObjetoExcecao;
     }
 
-    if(!req.body.grade) {
+    if(!req.body.grade || !validator.isNumeric(req.body.grade)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Missing grade";

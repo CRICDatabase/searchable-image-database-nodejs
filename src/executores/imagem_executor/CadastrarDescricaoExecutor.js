@@ -34,9 +34,10 @@ module.exports = {
 async function validarRequisicao(req) {
     let descricoes = req.body;
 
-    if(!validator.isNumeric(req.params.id_usuario) || descricoes.length == 0) {
+    if(descricoes.length == 0) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+        ObjetoExcecao.detail = "Body must be a array";
         throw ObjetoExcecao;
     }
 
@@ -45,6 +46,7 @@ async function validarRequisicao(req) {
         if(!validator.isNumeric(descricao.codigo)) {
             ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            ObjetoExcecao.detail = `Missing 'codigo' in ${descricao}`;
             throw ObjetoExcecao;
         }
     });

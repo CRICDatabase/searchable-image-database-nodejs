@@ -29,12 +29,6 @@ module.exports = {
 async function validarRequisicao(req) {
     let session_is_valid = false;
 
-    if (!validator.isNumeric(req.params.id_usuario) || !validator.isNumeric(req.params.id_imagem)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
-
     const id_usuario = Number(req.params.id_usuario);
     const id_imagem = Number(req.params.id_imagem);
 

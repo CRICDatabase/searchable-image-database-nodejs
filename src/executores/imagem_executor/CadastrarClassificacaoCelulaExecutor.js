@@ -54,10 +54,13 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!validator.isNumeric(req.params.id_usuario) || !validator.isNumeric(req.params.id_imagem) ||
-        !validator.isNumeric(req.body.id_lesao) || !validator.isNumeric(req.body.alturaCanvas) ||
-        !validator.isNumeric(req.body.larguraCanvas) || !validator.isNumeric(req.body.alturaOriginalImg) || !validator.isNumeric(req.body.larguraOriginalImg) || !validator.isNumeric(req.body.coord_centro_nucleo_x) ||
-        !validator.isNumeric(req.body.coord_centro_nucleo_y)) {
+    if (!req.body.id_lesao || !validator.isNumeric(req.body.id_lesao) ||
+        !req.body.alturaCanvas || !validator.isNumeric(req.body.alturaCanvas) ||
+        !req.body.larguraCanvas || !validator.isNumeric(req.body.larguraCanvas) ||
+        !req.body.alturaOriginalImg || !validator.isNumeric(req.body.alturaOriginalImg) ||
+        !req.body.larguraOriginalImg || !validator.isNumeric(req.body.larguraOriginalImg) ||
+        !req.body.coord_centro_nucleo_x || !validator.isNumeric(req.body.coord_centro_nucleo_x) ||
+        !req.body.coord_centro_nucleo_y || !validator.isNumeric(req.body.coord_centro_nucleo_y)) {
 
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;

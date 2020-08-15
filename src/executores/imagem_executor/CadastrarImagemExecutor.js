@@ -37,9 +37,9 @@ module.exports = {
 };
 
 async function validarRequisicao(req, user) {
-    if (!validator.isNumeric(req.body.id_usuario) ||
-        !validator.isAlphanumeric(req.body.codigo_lamina) ||
-        !validator.isDate(req.body.dt_aquisicao)) {
+    if (!req.body.id_usuario || !validator.isNumeric(req.body.id_usuario) ||
+        !req.body.codigo_lamina || !validator.isAlphanumeric(req.body.codigo_lamina) ||
+        !req.body.dt_aquisicao || !validator.isDate(req.body.dt_aquisicao)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Check id_usuario, codigo_lamina, dt_aquisicao";

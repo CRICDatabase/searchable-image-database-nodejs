@@ -39,15 +39,7 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-
-    if (!validator.isNumeric(req.params.id_imagem) || !validator.isNumeric(req.params.id_celula)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        ObjetoExcecao.detail = "Route parameter invalid";
-        throw ObjetoExcecao;
-    }
-
-    if (!validator.isNumeric(req.body.id_lesao_celula)) {
+    if (!req.body.id_lesao_celula || !validator.isNumeric(req.body.id_lesao_celula)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Body request is invalid";

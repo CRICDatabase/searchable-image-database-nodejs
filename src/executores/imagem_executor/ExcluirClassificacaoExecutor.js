@@ -37,14 +37,6 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!validador.isNumeric(req.params.id_imagem) ||
-        !validator.isNumeric(req.params.id_celula)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        ObjetoExcecao.detail = `Verify route parameters:\n\t- id_imagem: ${req.params.id_imagem}\n\t- id_celula: ${req.params.id_celula}`;
-        throw ObjetoExcecao;
-    }
-
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const [imagem] = await Promise.all([imagemTask]);
 

@@ -49,13 +49,6 @@ module.exports = {
 async function validarRequisicao(req) {
     let session_is_valid = false;
     
-    if (!validator.isNumeric(req.params.id_usuario) || !validator.isNumeric(req.params.id_imagem)) {
-
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
-
     if (req.params.id_usuario > 1) {
         await ValidadorDeSessao.login_required(req, req.params.id_usuario);
         session_is_valid = true;

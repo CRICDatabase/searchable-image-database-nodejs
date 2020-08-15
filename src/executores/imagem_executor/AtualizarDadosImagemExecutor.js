@@ -31,14 +31,8 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!validator.isNumeric(req.params.id_imagem)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        ObjetoExcecao.detail = "Route parameter invalid";
-        throw ObjetoExcecao;
-    }
-
-    if (!req.body.codigo_lamina || !req.body.dt_aquisicao) {
+    if (!req.body.codigo_lamina || !validator.isAlphanumeric(req.body.codigo_lamina) ||
+        !req.body.dt_aquisicao || !validator.isDate(req.body.dt_aquisicao)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Body request is invalid";

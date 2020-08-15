@@ -47,18 +47,12 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (req.body.segmentos_citoplasma.length == 0 || !validator.isNumeric(req.body.larguraOriginalImg) ||
-        !validator.isNumeric(req.body.alturaOriginalImg) || !validator.isNumeric(req.body.larguraCanvas) ||
-        !validator.isNumeric(req.body.alturaCanvas) || !validator.isNumeric(req.body.id_descricao)) {
-
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
-
-    if (!validator.isNumeric(req.params.id_usuario) ||
-        !validator.isNumeric(req.params.id_imagem) ||
-        !validator.isNumeric(req.body.id_descricao)) {
+    if (req.body.segmentos_citoplasma.length == 0 ||
+        !req.body.larguraOriginalImg || !validator.isNumeric(req.body.larguraOriginalImg) ||
+        !req.body.alturaOriginalImg || !validator.isNumeric(req.body.alturaOriginalImg) ||
+        !req.body.larguraCanvas || !validator.isNumeric(req.body.larguraCanvas) ||
+        !req.body.alturaCanvas || !validator.isNumeric(req.body.alturaCanvas) ||
+        !req.body.id_descricao || !validator.isNumeric(req.body.id_descricao)) {
 
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;

@@ -25,14 +25,6 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!validator.isNumeric(req.params.id_imagem) ||
-        !validator.isNumeric(req.params.id_celula)) {
-
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
-
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const [imagem] = await Promise.all([imagemTask]);
 
