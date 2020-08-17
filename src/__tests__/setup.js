@@ -8,8 +8,9 @@ module.exports = async () => {
 
     const ImagemModel = require("../models/ImagemModel");
 
-    const CelulaModel = require("../models/CelulaModel");
     const ClassificacaoCelulaModel = require("../models/ClassificacaoCelulaModel");
+
+    const CelulaModel = require("../models/CelulaModel");
     const SegmentacaoCitoplasmaModel = require("../models/SegmentacaoCitoplasmaModel");
     const SegmentacaoNucleoModel = require("../models/SegmentacaoNucleoModel");
 
@@ -21,8 +22,9 @@ module.exports = async () => {
     const ImagemFixtures = require("../fixtures/image.json");
     const ImagemExtraFixtures = require("../fixtures/image_extra.json");
 
-    const CelulaFixtures = require("../fixtures/cell.json");
     const ClassificacaoCelulaFixtures = require("../fixtures/classification.json");
+
+    const CelulaFixtures = require("../fixtures/cell.json");
     const SegmentacaoCitoplasmaFixtures = require("../fixtures/cytoplasm.json");
     const SegmentacaoNucleoFixtures = require("../fixtures/nucleus.json");
 
@@ -53,12 +55,12 @@ module.exports = async () => {
                     ImagemExtraFixtures
                 );
 
-                await CelulaModel.bulkCreate(
-                    CelulaFixtures
-                );
-
                 await ClassificacaoCelulaModel.bulkCreate(
                     ClassificacaoCelulaFixtures
+                );
+
+                await CelulaModel.bulkCreate(
+                    CelulaFixtures
                 );
 
                 await SegmentacaoCitoplasmaModel.bulkCreate(
