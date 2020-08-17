@@ -1162,7 +1162,7 @@ describe(
             "admin",
             () => {
                 return request(app)
-                    .get("/api/v1/imagens/3")
+                    .get("/api/v1/imagens/100")
                     .set(
                         "Authorization",
                         admin_token
