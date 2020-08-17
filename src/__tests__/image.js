@@ -1195,7 +1195,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1268,7 +1268,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1341,7 +1341,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1407,7 +1407,7 @@ describe(
                     .delete("/api/v1/imagens/1")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -1436,7 +1436,7 @@ describe(
             () => {
                 /* Admin user can use PUT method */
                 return request(app)
-                    .put("/api/v1/imagens/6")
+                    delete("/api/v1/imagens/6")
                     .set(
                         "Authorization",
                         admin_token
@@ -1499,7 +1499,7 @@ describe(
             () => {
                 /* Admin user can use PUT method */
                 return request(app)
-                    .put("/api/v1/imagens/8")
+                    .delete("/api/v1/imagens/8")
                     .set(
                         "Authorization",
                         admin_token
