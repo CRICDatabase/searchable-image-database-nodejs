@@ -32,9 +32,9 @@ rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/classificacoes/:id_celula(\
 rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/classificacao-celula/:id_celula(\\d+)", auth_middleware.login_required, ImagemController.excluirRegistroClassificacao); // TODO Remove in v2
 
 rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)/segmentacoes", SistemaController.not_implemented);
-rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)/listar-segmentacao-celula/:id_usuario", ImagemController.listarSegmentacaoDeCelulaParaUmUsuario); // TODO Remove in v2
+rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)/listar-segmentacao-celula/:id_usuario(\\d+)", ImagemController.listarSegmentacaoDeCelulaParaUmUsuario); // TODO Remove in v2
 rotasImagem.post("/api/v1/imagens/:id_imagem(\\d+)/segmentacoes", auth_middleware.login_required, SistemaController.not_implemented);
-rotasImagem.post("/api/v1/imagens/:id_imagem(\\d+)/segmentacao-celula/:id_usuario", auth_middleware.login_required, ImagemController.cadastrarSegmentacaoDeCelula); // TODO Remove in v2
+rotasImagem.post("/api/v1/imagens/:id_imagem(\\d+)/segmentacao-celula/:id_usuario(\\d+)", auth_middleware.login_required, ImagemController.cadastrarSegmentacaoDeCelula); // TODO Remove in v2
 
 rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)/segmentacoes/:id_celula(\\d+)", SistemaController.not_implemented);
 rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)/segmentacoes/:id_celula(\\d+)", auth_middleware.login_required, SistemaController.not_implemented);
