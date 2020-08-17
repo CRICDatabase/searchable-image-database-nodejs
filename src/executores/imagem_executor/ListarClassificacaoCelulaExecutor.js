@@ -83,6 +83,7 @@ async function prepararMensagemRetorno(raw_cells) {
         cells.push(
             {
                 id: cell.id,
+                id_usuario: cell.id_usuario,
                 coord_centro_nucleo_x: cell.coord_centro_nucleo_x,
                 coord_centro_nucleo_y: cell.coord_centro_nucleo_y,
                 lesao: all_injuries[cell.id_lesao]
