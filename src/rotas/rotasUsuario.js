@@ -13,9 +13,9 @@ const rotasUsuario = express.Router();
 rotasUsuario.get("/api/v1/usuarios", UsuarioController.listarUsuarios);
 rotasUsuario.post("/api/v1/usuarios", UsuarioController.cadastrarUsuarioBase);
 
-rotasUsuario.get("/api/v1/usuarios/:id_usuario", UsuarioController.obterUsuario);
-rotasUsuario.put("/api/v1/usuarios/:id_usuario", auth_middleware.login_required, SistemaController.not_implemented);
-rotasUsuario.delete("/api/v1/usuarios/:id_usuario", auth_middleware.login_required, UsuarioController.delete_user);
+rotasUsuario.get("/api/v1/usuarios/:id_usuario(\\d+)", UsuarioController.obterUsuario);
+rotasUsuario.put("/api/v1/usuarios/:id_usuario(\\d+)", auth_middleware.login_required, SistemaController.not_implemented);
+rotasUsuario.delete("/api/v1/usuarios/:id_usuario(\\d+)", auth_middleware.login_required, UsuarioController.delete_user);
 
 rotasUsuario.post("/api/v1/usuarios/:id_usuario/admin", auth_middleware.admin_required, UsuarioController.make_admin);
 rotasUsuario.delete("/api/v1/usuarios/:id_usuario/admin", auth_middleware.admin_required, UsuarioController.remove_admin);

@@ -13,7 +13,7 @@ const rotasLesoes = express.Router();
 rotasLesoes.get("/api/v1/lesoes", ImagemController.listarLesoes);
 rotasLesoes.get("/api/v1/imagens-lesoes", ImagemController.listarLesoes); // TODO Remove in v2
 rotasLesoes.post("/api/v1/lesoes", auth_middleware.admin_required, ImagemController.cadastrarLesoes);
-rotasLesoes.post("/api/v1/imagens-lesoes/:id_usuario(\\d+)", ImagemController.cadastrarLesoes); // TODO Remove in v2
+rotasLesoes.post("/api/v1/imagens-lesoes/:id_usuario(\\d+)", auth_middleware.admin_required, ImagemController.cadastrarLesoes); // TODO Remove in v2
 
 rotasLesoes.get("/api/v1/lesoes/:id_lesoes(\\d+)", SistemaController.not_implemented);
 rotasLesoes.put("/api/v1/lesoes/:id_lesoes(\\d+)", auth_middleware.admin_required, SistemaController.not_implemented);
