@@ -1433,7 +1433,7 @@ describe(
             "admin",
             () => {
                 return request(app)
-                    delete("/api/v1/imagens/6")
+                    .delete("/api/v1/imagens/6")
                     .set(
                         "Authorization",
                         admin_token
@@ -1757,7 +1757,7 @@ describe(
             }
         );
     }
-)
+);
 
 describe(
     "GET /api/v1/imagens/1/listar-classificacao-celula/1",
