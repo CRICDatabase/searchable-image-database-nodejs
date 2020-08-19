@@ -12,7 +12,6 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const ConverterPonto = require("../../utils/transformacao_de_pontos");
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 const ListarSegmentacaoCelulaExecutor = require("../imagem_executor/ListarSegmentacaoCelulaExecutor");
 
@@ -20,7 +19,6 @@ module.exports = {
 
     async Executar(req, res) {
 
-        await ValidadorDeSessao.login_required(req);
         await validarRequisicao(req);
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);

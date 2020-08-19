@@ -10,7 +10,6 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
@@ -39,7 +38,6 @@ async function validarRequisicao(req) {
     }
 
     if (imagem.id_usuario > 1) {
-        await ValidadorDeSessao.login_required(req, imagem.id_usuario);
     }
 }
 

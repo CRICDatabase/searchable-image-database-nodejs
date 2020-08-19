@@ -11,7 +11,6 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 const ConverterPonto = require("../../utils/transformacao_de_pontos");
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 const image_utils = require("../../utils/image");
 
 module.exports = {
@@ -89,7 +88,6 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    await ValidadorDeSessao.login_required(req, imagem.id_usuario);
 
     if (imagem.id_usuario !== usuario.id) {
         ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;

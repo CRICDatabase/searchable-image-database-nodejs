@@ -9,14 +9,12 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
     async Executar(req, res) {
         const id_usuario = Number(req.params.id_usuario);
         
-        await ValidadorDeSessao.login_required(
             req,
             id_usuario
         );

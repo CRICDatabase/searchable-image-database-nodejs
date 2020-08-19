@@ -1,7 +1,6 @@
 "use strict";
 
 const SessaoRepositorio = require("../../repositorios/sessao_repositorio");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
@@ -16,5 +15,4 @@ module.exports = {
 };
 
 async function validarRequisicao(req){
-    await ValidadorDeSessao.login_required(req);
 }

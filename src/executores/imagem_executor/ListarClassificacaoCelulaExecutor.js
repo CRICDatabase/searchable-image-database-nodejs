@@ -10,7 +10,6 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
@@ -32,7 +31,6 @@ async function validarRequisicao(req) {
     const id_imagem = Number(req.params.id_imagem);
 
     if (id_usuario > 1) {
-        await ValidadorDeSessao.login_required(req, id_usuario);
         session_is_valid = true;
     }
 
@@ -61,7 +59,6 @@ async function validarRequisicao(req) {
         }
 
         if (!session_is_valid) {
-            await ValidadorDeSessao.login_required(req, usuario.id);
         }
     }
 }
