@@ -1039,7 +1039,7 @@ describe(
                     .get("/api/v1/imagens/3")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
