@@ -6,7 +6,6 @@ const debug = require("debug")("database.cric:CadastrarDescricaoExecutor");
 const HttpStatus = require("http-status-codes");
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
-const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");

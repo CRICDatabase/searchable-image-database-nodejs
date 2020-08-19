@@ -262,13 +262,13 @@ describe(
                             expect(data).toEqual(
                                 expect.arrayContaining(
                                     [{
-                                        "coord_x": expect.any(Number),
-                                        "coord_y": expect.any(Number),
-                                        "id_celula": 1,
-                                        "id_descricao": expect.any(Number)
+                                        coord_x: expect.any(Number),
+                                        coord_y: expect.any(Number),
+                                        id_celula: 1,
+                                        id_descricao: expect.any(Number)
                                     }]
                                 )
-                            )
+                            );
                         }
                     );
             }
