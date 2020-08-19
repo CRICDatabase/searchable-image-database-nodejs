@@ -219,6 +219,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ImagemModel'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
       security:
         - API Key Authorization: []
       requestBody:
