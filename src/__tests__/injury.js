@@ -47,9 +47,15 @@ describe(
         test(
             "anonymous",
             () => {
-                /* Anonymous user can NOT use POST method */
                 return request(app)
                     .post("/api/v1/lesoes")
+                    .send(
+                        {
+                            nome: "Test",
+                            detalhes: "Test",
+                            grade: 100
+                        }
+                    )
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
@@ -61,9 +67,15 @@ describe(
         test(
             "charles",
             () => {
-                /* User can NOT use POST method */
                 return request(app)
                     .post("/api/v1/lesoes")
+                    .send(
+                        {
+                            nome: "Test",
+                            detalhes: "Test",
+                            grade: 100
+                        }
+                    )
                     .set(
                         "Authorization",
                         charles_token
@@ -79,7 +91,6 @@ describe(
         test(
             "admin",
             () => {
-                /* Admin can use POST method */
                 return request(app)
                     .post("/api/v1/lesoes")
                     .set(
@@ -209,7 +220,6 @@ describe(
         test(
             "anonymous",
             () => {
-                /* Anonymous user should be able to list injury */
                 return request(app)
                     .get("/api/v1/lesoes")
                     .then(
@@ -235,7 +245,6 @@ describe(
         test(
             "charles",
             () => {
-                /* User should be able to list injury */
                 return request(app)
                     .get("/api/v1/lesoes")
                     .set(
@@ -265,7 +274,6 @@ describe(
         test(
             "admin",
             () => {
-                /* Admin should be able to list injury */
                 return request(app)
                     .get("/api/v1/lesoes")
                     .set(

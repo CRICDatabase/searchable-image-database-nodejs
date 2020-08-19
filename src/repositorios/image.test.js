@@ -5,7 +5,7 @@ jest.useFakeTimers();
 let ImageDAO = require("./imagem_repositorio");
 
 describe(
-    "Test ImagemModel",
+    "Test ImageDAO.cadastrarImagem",
     () => {
         test(
             "cadastrarImagem without DOI for admin",
@@ -239,6 +239,119 @@ describe(
                                         ]
                                     )
                                 );
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "Test ImageDAO.listarSegmentosCitoplasmaCelula",
+    () => {
+        test(
+            "id_imagem = 1, id_usuario = 1",
+            () => {
+                return ImageDAO.listarSegmentosCitoplasmaCelula(
+                    1,
+                    1
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual(
+                                expect.arrayContaining(
+                                    [{
+                                        coord_x: expect.any(Number),
+                                        coord_y: expect.any(Number),
+                                        id_celula: 1,
+                                        id_descricao: expect.any(Number)
+                                    }]
+                                )
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "id_imagem = 100, id_usuario = 100",
+            () => {
+                return ImageDAO.listarSegmentosCitoplasmaCelula(
+                    100,
+                    100
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([]);
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "Test ImageDAO.approve_image",
+    () => {
+        test(
+            "success",
+            () => {
+                return ImageDAO.approve_image(
+                    9
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([1]);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "invalid ID",
+            () => {
+                return ImageDAO.approve_image(
+                    100
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([0]);
+                        }
+                    );
+            }
+        );
+
+    }
+);
+
+describe(
+    "Test ImageDAO.unapprove_image",
+    () => {
+        test(
+            "success",
+            () => {
+                return ImageDAO.approve_image(
+                    10
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([1]);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "invalid ID",
+            () => {
+                return ImageDAO.approve_image(
+                    100
+                )
+                    .then(
+                        data => {
+                            expect(data).toEqual([0]);
                         }
                     );
             }

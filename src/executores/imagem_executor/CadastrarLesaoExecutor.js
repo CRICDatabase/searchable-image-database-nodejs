@@ -9,27 +9,25 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
     async Executar(req, res) {
 
-        await ValidadorDeSessao.admin_required(req);
         await validarRequisicao(req);
         await ImagemRepositorio.cadastrarLesao(req.body);
     }
 };
 
 async function validarRequisicao(req) {
-    if(!req.body.nome) {
+    if(!req.body.nome || typeof req.body.nome !== "string") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Missing nome";
         throw ObjetoExcecao;
     }
 
-    if(!req.body.grade) {
+    if(!req.body.grade || typeof req.body.grade !== "number") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Missing grade";

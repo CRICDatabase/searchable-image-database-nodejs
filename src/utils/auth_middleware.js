@@ -1,14 +1,16 @@
 "use strict";
 
 // eslint-disable-next-line no-unused-vars
-const debug = require("debug")("database.cric:get_user_middleware");
+const debug = require("debug")("database.cric:auth_middleware");
+
+const HttpStatus = require("http-status-codes");
 
 const SessaoRepositorio = require("../repositorios/sessao_repositorio");
 const UsuarioRepositorio = require("../repositorios/usuario_repositorio");
 
 module.exports = {
 
-    async from_session(req, res, next) {
+    async get_user_from_session(req, res, next) {
         const authorization = req.get("Authorization");
         res.locals.user = undefined;
 
@@ -29,5 +31,29 @@ module.exports = {
         }
 
         next();
+    },
+
+    async login_required(req, res, next) {
+        if (typeof res.locals.user === "undefined") {
+            return res.status(HttpStatus.UNAUTHORIZED).end();
+        }
+        else {
+            next();
+        }
+    },
+
+    async admin_required(req, res, next) {
+        if (typeof res.locals.user === "undefined") {
+            return res.status(HttpStatus.UNAUTHORIZED).end();
+        }
+        else {
+            if (res.locals.user.admin === false) {
+                return res.status(HttpStatus.FORBIDDEN).end();
+            }
+            else {
+                next();
+            }
+        }
     }
+
 };

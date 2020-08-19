@@ -1,13 +1,14 @@
 "use strict";
 
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+const HttpStatus = require("http-status-codes");
 
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 
 module.exports = {
 
     async Executar(req, res) {
-        await ValidadorDeSessao.admin_required(req);
         return await UsuarioRepositorio.ListarTodosUsuarios();
     }
 };

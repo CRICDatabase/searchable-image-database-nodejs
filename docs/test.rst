@@ -9,13 +9,22 @@ for test.
 
 Use ::
 
-  npm run test
+    npm run test
   
 to run all tests.
 To run tests stored in ``awesome.test.js``,
 use ::
 
-  npm run test awesome.test.js
+    npm run test -- awesome.test.js
+
+To run test named `foo`,
+use ::
+
+    npm run test -- --testNamePattern foo
+
+or ::
+
+    npm run test -- -t foo
 
 Setup and Teardown
 ------------------

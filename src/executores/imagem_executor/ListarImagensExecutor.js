@@ -3,19 +3,21 @@
 // eslint-disable-next-line no-unused-vars
 const debug = require("debug")("database.cric:ListarImagensExecutor");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const HttpStatus = require("http-status-codes");
+const validator = require("validator");
+
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
+
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 
 module.exports = {
 
     async Executar(req, res) {
 
         await validarRequisicao(req);
-        const user_id = Number(req.params.id_usuario);
+        const user_id = req.query.id_usuario ? Number(req.query.id_usuario) : undefined;
 
         let todasImagensTask;
         if (typeof res.locals.user === "undefined") {
@@ -42,18 +44,20 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!ValidarTipo.ehNumero(req.params.id_usuario)) {
+    if (req.query.id_usuario) {
+        if (!validator.isNumeric(req.query.id_usuario)) {
 
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
+            ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
+            ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
+            throw ObjetoExcecao;
+        }
 
-    const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.params.id_usuario);
-    if (!usuario) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
-        throw ObjetoExcecao;
+        const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(req.query.id_usuario);
+        if (!usuario) {
+            ObjetoExcecao.status = HttpStatus.NOT_FOUND;
+            ObjetoExcecao.title = Excecao.USUARIO_BASE_NAO_ENCONTRATO;
+            throw ObjetoExcecao;
+        }
     }
 }
 

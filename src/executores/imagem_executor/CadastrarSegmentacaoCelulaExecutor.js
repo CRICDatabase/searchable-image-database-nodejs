@@ -3,21 +3,23 @@
 // eslint-disable-next-line no-unused-vars
 const debug = require("debug")("database.cric:CadastrarSegmentacaoCelulaExecutor");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const HttpStatus = require("http-status-codes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+const validator = require("validator");
+
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
-const ListarSegmentacaoCelulaExecutor = require("../imagem_executor/ListarSegmentacaoCelulaExecutor");
+
 const ConverterPonto = require("../../utils/transformacao_de_pontos");
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const gate_keeper = require("../../utils/gate_keeper");
+
+const ListarSegmentacaoCelulaExecutor = require("../imagem_executor/ListarSegmentacaoCelulaExecutor");
 
 module.exports = {
 
     async Executar(req, res) {
 
-        await ValidadorDeSessao.login_required(req);
         await validarRequisicao(req);
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);
@@ -44,18 +46,12 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (req.body.segmentos_citoplasma.length == 0 || !ValidarTipo.ehNumero(req.body.larguraOriginalImg) ||
-        !ValidarTipo.ehNumero(req.body.alturaOriginalImg) || !ValidarTipo.ehNumero(req.body.larguraCanvas) ||
-        !ValidarTipo.ehNumero(req.body.alturaCanvas) || !ValidarTipo.ehNumero(req.body.id_descricao)) {
-
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
-
-    if (!ValidarTipo.ehNumero(req.params.id_usuario) ||
-        !ValidarTipo.ehNumero(req.params.id_imagem) ||
-        !ValidarTipo.ehNumero(req.body.id_descricao)) {
+    if (req.body.segmentos_citoplasma.length == 0 ||
+        !req.body.larguraOriginalImg || typeof req.body.larguraOriginalImg !== "number" ||
+        !req.body.alturaOriginalImg || typeof req.body.alturaOriginalImg !== "number" ||
+        !req.body.larguraCanvas || typeof req.body.larguraCanvas !== "number" ||
+        !req.body.alturaCanvas || typeof req.body.alturaCanvas !== "number" ||
+        !req.body.id_descricao || typeof req.body.id_descricao !== "number") {
 
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
@@ -88,12 +84,10 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    if (imagem.id_usuario !== usuario.id) {
-        ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-        ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
-        ObjetoExcecao.detail = "User can only add classification to own image";
-        throw ObjetoExcecao;
-    }
+    gate_keeper.check_loose_ownership(
+        imagem,
+        res.locals.user
+    );
 }
 
 
@@ -101,7 +95,7 @@ function validarSegmentacao(segmentos) {
 
     if(segmentos.length > 0) {
         segmentos.forEach(ponto => {
-            if(!ValidarTipo.ehNumero(ponto.coord_x) || !ValidarTipo.ehNumero(ponto.coord_y)) {
+            if(!validator.isNumeric(ponto.coord_x) || !validator.isNumeric(ponto.coord_y)) {
                 ObjetoExcecao.status = HttpStatus.NOT_FOUND;
                 ObjetoExcecao.title = Excecao.SEGMENTACAO_INVALIDA;
                 throw ObjetoExcecao;
