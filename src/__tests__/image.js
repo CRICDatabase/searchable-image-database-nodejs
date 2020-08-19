@@ -1034,12 +1034,11 @@ describe(
         test(
             "anonymous",
             () => {
-                /* Anonymous user should not be able to get information of imagem from user */
                 return request(app)
                     .get("/api/v1/imagens/3")
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
                         }
                     );
             }
@@ -2138,7 +2137,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
