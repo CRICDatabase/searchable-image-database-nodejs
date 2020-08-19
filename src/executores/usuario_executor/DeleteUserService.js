@@ -26,10 +26,6 @@ module.exports = {
         const user = await UsuarioRepositorio.obterUsuarioBasePorId(id_usuario);
 
         if (user) {
-                req,
-                user.dataValues.id
-            );
-
             return await UsuarioRepositorio.delete_user(
                 user.dataValues.id
             );

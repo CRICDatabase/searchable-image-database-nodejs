@@ -15,10 +15,6 @@ module.exports = {
     async Executar(req, res) {
         const id_usuario = Number(req.params.id_usuario);
         
-            req,
-            id_usuario
-        );
-            
         const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(
             id_usuario
         );

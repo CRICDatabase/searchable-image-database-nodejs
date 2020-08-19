@@ -26,9 +26,6 @@ module.exports = {
         const user = await UsuarioRepositorio.obterUsuarioBasePorId(id_usuario);
 
         if (user) {
-                req
-            );
-
             return await UsuarioRepositorio.make_admin(
                 user.dataValues.id
             );
