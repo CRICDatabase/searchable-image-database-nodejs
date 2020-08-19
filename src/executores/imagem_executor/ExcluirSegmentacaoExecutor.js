@@ -9,20 +9,20 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+const gate_keeper = require("../../utils/gate_keeper");
 
 module.exports = {
 
     async Executar(req, res) {
 
-        await validarRequisicao(req);
+        await validarRequisicao(req, res);
         await ImagemRepositorio.excluirSegmentacaoDeCitoplasma(req.params.id_celula);
         await ImagemRepositorio.excluirSegmentacaoDeNucleo(req.params.id_celula);
         await ImagemRepositorio.excluirCelula(req.params.id_celula, req.params.id_imagem);
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, res) {
 
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const [imagem] = await Promise.all([imagemTask]);
@@ -33,5 +33,8 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-    await ValidadorDeSessao.login_required(req, imagem.id_usuario);
+    gate_keeper.check_strict_ownership(
+        imagem,
+        res.locals.user
+    );
 }

@@ -9,14 +9,14 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 const image_utils = require("../../utils/image");
+const gate_keeper = require("../../utils/gate_keeper");
 
 module.exports = {
 
     async Executar(req, res) {
 
-        await validarRequisicao(req);
+        await validarRequisicao(req, res);
         
         const id_imagem = Number(req.params.id_imagem);
 
@@ -37,7 +37,7 @@ module.exports = {
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, res) {
     if (!req.body.id_lesao_celula || typeof req.body.id_lesao_celula !== "number") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
@@ -55,11 +55,15 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
+    gate_keeper.check_strict_ownership(
+        imagem,
+        res.locals.user
+    );
+
     if(!celula) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.CELULA_NAO_ENCONTRADA;
         throw ObjetoExcecao;
     }
 
-    await ValidadorDeSessao.login_required(req, imagem.id_usuario);
 }

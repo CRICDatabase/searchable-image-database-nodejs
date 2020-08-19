@@ -1034,7 +1034,6 @@ describe(
         test(
             "anonymous",
             () => {
-                /* Anonymous user should not be able to get information of imagem from user */
                 return request(app)
                     .get("/api/v1/imagens/3")
                     .then(
@@ -1433,7 +1432,7 @@ describe(
             "admin",
             () => {
                 return request(app)
-                    delete("/api/v1/imagens/6")
+                    .delete("/api/v1/imagens/6")
                     .set(
                         "Authorization",
                         admin_token
@@ -1757,7 +1756,7 @@ describe(
             }
         );
     }
-)
+);
 
 describe(
     "GET /api/v1/imagens/1/listar-classificacao-celula/1",
@@ -2138,7 +2137,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.NOT_FOUND);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }

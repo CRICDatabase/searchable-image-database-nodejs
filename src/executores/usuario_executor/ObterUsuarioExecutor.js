@@ -9,18 +9,18 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+const gate_keeper = require("../../utils/gate_keeper");
 
 module.exports = {
 
     async Executar(req, res) {
         const id_usuario = Number(req.params.id_usuario);
-        
-        await ValidadorDeSessao.login_required(
-            req,
-            id_usuario
+
+        gate_keeper.check_strict_ownership(
+            {id_usuario: id_usuario},
+            res.locals.user
         );
-            
+
         const usuario = await UsuarioRepositorio.obterUsuarioBasePorId(
             id_usuario
         );

@@ -7,7 +7,6 @@ const HttpStatus = require("http-status-codes");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
@@ -27,10 +26,6 @@ module.exports = {
         const user = await UsuarioRepositorio.obterUsuarioBasePorId(id_usuario);
 
         if (user) {
-            await ValidadorDeSessao.admin_required(
-                req
-            );
-
             return await UsuarioRepositorio.make_admin(
                 user.dataValues.id
             );

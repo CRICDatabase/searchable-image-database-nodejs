@@ -10,7 +10,7 @@ const UsuarioController = require("../controllers/usuario_controller/UsuarioCont
 
 const rotasUsuario = express.Router();
 
-rotasUsuario.get("/api/v1/usuarios", UsuarioController.listarUsuarios);
+rotasUsuario.get("/api/v1/usuarios", auth_middleware.admin_required, UsuarioController.listarUsuarios);
 rotasUsuario.post("/api/v1/usuarios", UsuarioController.cadastrarUsuarioBase);
 
 rotasUsuario.get("/api/v1/usuarios/:id_usuario(\\d+)", UsuarioController.obterUsuario);
