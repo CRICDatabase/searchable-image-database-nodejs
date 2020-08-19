@@ -169,19 +169,6 @@ describe(
     "GET /api/v1/usuarios/:id_usuario",
     () => {
         test(
-            "username instead of user's id",
-            () => {
-                return request(app)
-                    .get("/api/v1/usuarios/charles")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
-                        }
-                    );
-            }
-        );
-
-        test(
             "anonymous",
             () => {
                 return request(app)
@@ -245,19 +232,6 @@ describe(
     "PUT /api/v1/usuarios/:id_usuario",
     () => {
         test(
-            "username instead of user's id",
-            () => {
-                return request(app)
-                    .get("/api/v1/usuarios/charles")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
-                        }
-                    );
-            }
-        );
-
-        test(
             "anonymous",
             () => {
                 return request(app)
@@ -320,19 +294,6 @@ describe(
 describe(
     "DELETE /api/v1/usuarios/:id_usuario",
     () => {
-        test(
-            "username instead of user's id",
-            () => {
-                return request(app)
-                    .delete("/api/v1/usuarios/daniel")
-                    .then(
-                        response => {
-                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
-                        }
-                    );
-            }
-        );
-
         test(
             "anonymous",
             () => {
