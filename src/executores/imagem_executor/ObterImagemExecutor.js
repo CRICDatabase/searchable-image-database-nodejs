@@ -10,6 +10,7 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const gate_keeper = require("../../utils/gate_keeper");
 
 module.exports = {
 
@@ -23,10 +24,10 @@ module.exports = {
             throw ObjetoExcecao;
         }
 
-        if (imagem.id_usuario !== 1 && !res.locals.user || (res.locals.user.admin === false || imagem.id_usuario !== res.locals.user.id)) {
-            ObjetoExcecao.status = HttpStatus.FORBIDDEN;
-            throw ObjetoExcecao;
-        }
+        gate_keeper.check_loose_ownership(
+            imagem,
+            res.locals.user
+        );
 
         return await prepararRetorno(imagem);
     }

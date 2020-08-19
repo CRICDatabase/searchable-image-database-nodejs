@@ -9,6 +9,7 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const gate_keeper = require("../../utils/gate_keeper");
 
 module.exports = {
 
@@ -32,9 +33,8 @@ async function validarRequisicao(req, res) {
         throw ObjetoExcecao;
     }
 
-    if (res.locals.user && imagem.id_usuario !== res.locals.user.id) {
-        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
-        throw ObjetoExcecao;
-    }
-
+    gate_keeper.check_strict_ownership(
+        imagem,
+        res.locals.user
+    );
 }

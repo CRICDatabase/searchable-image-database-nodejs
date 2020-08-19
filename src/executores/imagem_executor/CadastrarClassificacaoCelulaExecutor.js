@@ -12,6 +12,7 @@ const ConverterPonto = require("../../utils/transformacao_de_pontos");
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const image_utils = require("../../utils/image");
+const gate_keeper = require("../../utils/gate_keeper");
 
 module.exports = {
 
@@ -88,12 +89,9 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
-
-    if (imagem.id_usuario !== usuario.id) {
-        ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-        ObjetoExcecao.title = Excecao.USUARIO_NAO_AUTORIZADO;
-        ObjetoExcecao.detail = "User can only add classification to own image";
-        throw ObjetoExcecao;
-    }
+    gate_keeper.check_loose_ownership(
+        imagem,
+        res.locals.user
+    );
     
 }
