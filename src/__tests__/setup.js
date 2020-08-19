@@ -17,6 +17,7 @@ module.exports = async () => {
     const UsuarioBaseFixtures = require("../fixtures/user.json");
 
     const LesaoFixtures = require("../fixtures/injury.json");
+    const LesaoExtraFixtures = require("../fixtures/injury_extra.json");
     const DescricaoFixtures = require("../fixtures/description.json");
 
     const ImagemFixtures = require("../fixtures/image.json");
@@ -42,6 +43,9 @@ module.exports = async () => {
 
                 await LesaoModel.bulkCreate(
                     LesaoFixtures
+                );
+                await LesaoModel.bulkCreate(
+                    LesaoExtraFixtures
                 );
 
                 await DescricaoModel.bulkCreate(
