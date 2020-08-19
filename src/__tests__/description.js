@@ -80,7 +80,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
                         }
                     );
             }
