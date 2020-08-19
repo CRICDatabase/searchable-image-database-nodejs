@@ -107,6 +107,16 @@ describe(
                     .then(
                         response => {
                             expect(response.statusCode).toBe(HttpStatus.CREATED);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: expect.any(Number),
+                                    nome: "Test",
+                                    detalhes: "Test",
+                                    grade: 100
+                                }
+                            );
                         }
                     );
             }
@@ -295,6 +305,497 @@ describe(
                                     }]
                                 )
                             );
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "GET /api/v1/lesoes/:id_lesoes(\\d+)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .get("/api/v1/lesoes/1")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: 1,
+                                    nome: expect.any(String),
+                                    detalhes: expect.any(String),
+                                    grade: expect.any(Number)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .get("/api/v1/lesoes/1")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: 1,
+                                    nome: expect.any(String),
+                                    detalhes: expect.any(String),
+                                    grade: expect.any(Number)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .get("/api/v1/lesoes/1")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(
+                                response.body
+                            ).toMatchObject(
+                                {
+                                    id: 1,
+                                    nome: expect.any(String),
+                                    detalhes: expect.any(String),
+                                    grade: expect.any(Number)
+                                }
+                            );
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "PUT /api/v1/lesoes/:id_lesoes(\\d+)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+
+describe(
+    "PUT /api/v1/lesoes/:id_lesoes(\\d+) (missing nome)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .send(
+                        {
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "PUT /api/v1/lesoes/:id_lesoes(\\d+) (missing detalhes)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "PUT /api/v1/lesoes/:id_lesoes(\\d+) (missing grade)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/8")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT"
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "PUT /api/v1/lesoes/:id_lesoes(\\d+) (not found)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/100")
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/100")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .put("/api/v1/lesoes/100")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .send(
+                        {
+                            nome: "Changed by PUT",
+                            detalhes: "Changed by PUT",
+                            grade: 100
+                        }
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.OK);
+                        }
+                    );
+            }
+        );
+    }
+);
+
+describe(
+    "DELETE /api/v1/lesoes/:id_lesoes(\\d+)",
+    () => {
+        test(
+            "anonymous",
+            () => {
+                return request(app)
+                    .get("/api/v1/lesoes/9")
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.UNAUTHORIZED);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "charles",
+            () => {
+                return request(app)
+                    .get("/api/v1/lesoes/9")
+                    .set(
+                        "Authorization",
+                        charles_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.FORBIDDEN);
+                        }
+                    );
+            }
+        );
+
+        test(
+            "admin",
+            () => {
+                return request(app)
+                    .get("/api/v1/lesoes/9")
+                    .set(
+                        "Authorization",
+                        admin_token
+                    )
+                    .then(
+                        response => {
+                            expect(response.statusCode).toBe(HttpStatus.NO_CONTENT);
                         }
                     );
             }

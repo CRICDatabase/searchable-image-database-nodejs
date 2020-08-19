@@ -51,7 +51,7 @@ module.exports = {
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, res) {
 
     if (!req.body.id_lesao || typeof req.body.id_lesao !== "number" ||
         !req.body.alturaCanvas || typeof req.body.alturaCanvas !== "number" ||

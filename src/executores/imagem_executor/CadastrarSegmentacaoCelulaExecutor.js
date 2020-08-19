@@ -44,7 +44,7 @@ module.exports = {
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, res) {
 
     if (req.body.segmentos_citoplasma.length == 0 ||
         !req.body.larguraOriginalImg || typeof req.body.larguraOriginalImg !== "number" ||
