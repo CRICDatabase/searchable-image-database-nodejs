@@ -463,7 +463,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
@@ -486,7 +486,7 @@ describe(
                     )
                     .then(
                         response => {
-                            expect(response.statusCode).toBe(HttpStatus.OK);
+                            expect(response.statusCode).toBe(HttpStatus.BAD_REQUEST);
                         }
                     );
             }
