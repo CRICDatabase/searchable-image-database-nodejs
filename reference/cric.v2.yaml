@@ -636,6 +636,10 @@ paths:
                   type: string
                 grade:
                   type: integer
+              required:
+                - nome
+                - detalhes
+                - grade
         description: ''
       description: Updates a existing cell injury.
       tags:
