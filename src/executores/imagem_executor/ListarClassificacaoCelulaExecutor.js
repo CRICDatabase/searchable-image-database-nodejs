@@ -15,7 +15,7 @@ module.exports = {
 
     async Executar(req, res) {
 
-        await validarRequisicao(req);
+        await validarRequisicao(req, res);
 
         const id_imagem = parseInt(req.params.id_imagem);
 
@@ -24,15 +24,10 @@ module.exports = {
     }
 };
 
-async function validarRequisicao(req) {
-    let session_is_valid = false;
+async function validarRequisicao(req, res) {
 
     const id_usuario = Number(req.params.id_usuario);
     const id_imagem = Number(req.params.id_imagem);
-
-    if (id_usuario > 1) {
-        session_is_valid = true;
-    }
 
     const usuarioTask = UsuarioRepositorio.obterUsuarioBasePorId(id_usuario);
     const imagemTask = ImagemRepositorio.obterImagemPorId(id_imagem);
@@ -52,13 +47,13 @@ async function validarRequisicao(req) {
 
     if (imagem.id_usuario > 1) {
         if (imagem.id_usuario !== usuario.id) {
-            ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
-            ObjetoExcecao.title = Excecao.OPERACAO_PROIBIDA_PARA_O_USUARIO;
-            ObjetoExcecao.detail = `User ${usuario.id} can't change image ${imagem.id}`;
+            ObjetoExcecao.status = HttpStatus.FORBIDDEN;
             throw ObjetoExcecao;
         }
 
-        if (!session_is_valid) {
+        if (res.locals.user && imagem.id_usuario !== res.locals.user.id) {
+            ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+            throw ObjetoExcecao;
         }
     }
 }

@@ -15,7 +15,7 @@ module.exports = {
 
     async Executar(req, res) {
 
-        await validarRequisicao(req);
+        await validarRequisicao(req, res);
 
         let requisicao = {
             id_imagem: req.params.id_imagem,
@@ -28,7 +28,7 @@ module.exports = {
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, res) {
 
     if (!req.body.codigo_lamina || !validator.isLength(req.body.codigo_lamina, { min: 3 }) ||
         !req.body.dt_aquisicao || !validator.isDate(req.body.dt_aquisicao)) {
@@ -47,4 +47,8 @@ async function validarRequisicao(req) {
         throw ObjetoExcecao;
     }
 
+    if (!res.locals.user || (res.locals.user.admin === false || imagem.id_usuario !== res.locals.user.id)) {
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+        throw ObjetoExcecao;
+    }
 }

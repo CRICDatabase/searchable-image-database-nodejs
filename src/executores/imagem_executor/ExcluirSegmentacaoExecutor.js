@@ -14,14 +14,14 @@ module.exports = {
 
     async Executar(req, res) {
 
-        await validarRequisicao(req);
+        await validarRequisicao(req, res);
         await ImagemRepositorio.excluirSegmentacaoDeCitoplasma(req.params.id_celula);
         await ImagemRepositorio.excluirSegmentacaoDeNucleo(req.params.id_celula);
         await ImagemRepositorio.excluirCelula(req.params.id_celula, req.params.id_imagem);
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, res) {
 
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const [imagem] = await Promise.all([imagemTask]);
@@ -29,6 +29,11 @@ async function validarRequisicao(req) {
     if (!imagem) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
+        throw ObjetoExcecao;
+    }
+
+    if (res.locals.user && imagem.id_usuario !== res.locals.user.id) {
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
         throw ObjetoExcecao;
     }
 

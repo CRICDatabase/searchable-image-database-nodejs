@@ -14,7 +14,7 @@ const image_utils = require("../../utils/image");
 module.exports = {
 
     async Executar(req, res) {
-        await validarRequisicao(req);
+        await validarRequisicao(req, res);
 
         const id_celula = Number(req.params.id_celula);
         const id_imagem = Number(req.params.id_imagem);
@@ -33,7 +33,7 @@ module.exports = {
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, res) {
 
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const [imagem] = await Promise.all([imagemTask]);
@@ -41,6 +41,11 @@ async function validarRequisicao(req) {
     if (!imagem) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
+        throw ObjetoExcecao;
+    }
+
+    if (res.locals.user && imagem.id_usuario !== res.locals.user.id) {
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
         throw ObjetoExcecao;
     }
 }

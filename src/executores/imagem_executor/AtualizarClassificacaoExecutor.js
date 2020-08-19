@@ -15,7 +15,7 @@ module.exports = {
 
     async Executar(req, res) {
 
-        await validarRequisicao(req);
+        await validarRequisicao(req, res);
         
         const id_imagem = Number(req.params.id_imagem);
 
@@ -36,7 +36,7 @@ module.exports = {
     }
 };
 
-async function validarRequisicao(req) {
+async function validarRequisicao(req, res) {
     if (!req.body.id_lesao_celula || typeof req.body.id_lesao_celula !== "number") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
@@ -51,6 +51,11 @@ async function validarRequisicao(req) {
     if (!imagem) {
         ObjetoExcecao.status = HttpStatus.NOT_FOUND;
         ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
+        throw ObjetoExcecao;
+    }
+
+    if (res.locals.user && imagem.id_usuario !== res.locals.user.id) {
+        ObjetoExcecao.status = HttpStatus.FORBIDDEN;
         throw ObjetoExcecao;
     }
 

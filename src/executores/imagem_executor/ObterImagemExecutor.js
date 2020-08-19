@@ -15,31 +15,22 @@ module.exports = {
 
     async Executar(req, res) {
 
-        await validarRequisicao(req);
         const imagem = await ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
+
         if(!imagem) {
             ObjetoExcecao.status = HttpStatus.NOT_FOUND;
             ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
             throw ObjetoExcecao;
         }
+
+        if (imagem.id_usuario !== 1 && !res.locals.user || (res.locals.user.admin === false || imagem.id_usuario !== res.locals.user.id)) {
+            ObjetoExcecao.status = HttpStatus.FORBIDDEN;
+            throw ObjetoExcecao;
+        }
+
         return await prepararRetorno(imagem);
     }
 };
-
-async function validarRequisicao(req) {
-
-    const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
-    const [imagem] = await Promise.all([imagemTask]);
-
-    if (!imagem) {
-        ObjetoExcecao.status = HttpStatus.NOT_FOUND;
-        ObjetoExcecao.title = Excecao.IMAGEM_NAO_ENCONTRADA;
-        throw ObjetoExcecao;
-    }
-
-    if (imagem.id_usuario > 1) {
-    }
-}
 
 async function prepararRetorno(imagem) {
 
