@@ -1,0 +1,18 @@
+[
+    {
+        "id": 8,
+        "nome": "To be used during PUT",
+        "grade": 0,
+        "detalhes": "",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    },
+    {
+        "id": 9,
+        "nome": "To be used during DELETE",
+        "grade": 0,
+        "detalhes": "",
+        "created_at": "2020-01-01 00:00:00.000000",
+        "updated_at": "2020-01-01 00:00:00.000000"
+    }
+]
