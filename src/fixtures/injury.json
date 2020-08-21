@@ -9,9 +9,9 @@
     },
     {
         "id": 2,
-        "nome": "Negative",
+        "nome": "NILM",
         "grade": 1,
-        "detalhes": "Negative for intraepithelial lesion",
+        "detalhes": "Negative for intraepithelial lesion or malignancy",
         "created_at": "2020-01-01 00:00:00.000000",
         "updated_at": "2020-01-01 00:00:00.000000"
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "nome": "ASC-US",
         "grade": 2,
-        "detalhes": "Atypical squamous cells of undetermined significance",
+        "detalhes": "Atypical squamous cells of undetermined significance, possibly non-neoplastic",
         "created_at": "2020-01-01 00:00:00.000000",
         "updated_at": "2020-01-01 00:00:00.000000"
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "nome": "LSIL",
         "grade": 3,
-        "detalhes": "Low grade squamous intraepithelial lesion",
+        "detalhes": "Low-grade squamous intraepithelial lesion",
         "created_at": "2020-01-01 00:00:00.000000",
         "updated_at": "2020-01-01 00:00:00.000000"
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "nome": "ASC-H",
         "grade": 4,
-        "detalhes": "Atypical squamous cells cannot exclude HSIL",
+        "detalhes": "Atypical squamous cells of undetermined significance, and cannot exclude a high-grade lesion",
         "created_at": "2020-01-01 00:00:00.000000",
         "updated_at": "2020-01-01 00:00:00.000000"
     },
@@ -43,15 +43,15 @@
         "id": 6,
         "nome": "HSIL",
         "grade": 5,
-        "detalhes": "High grade squamous intraepithelial lesion",
+        "detalhes": "High-grade squamous intraepithelial lesion",
         "created_at": "2020-01-01 00:00:00.000000",
         "updated_at": "2020-01-01 00:00:00.000000"
     },
     {
         "id": 7,
-        "nome": "SCC",
+        "nome": "SC",
         "grade": 6,
-        "detalhes": "Squamous cell carcinoma",
+        "detalhes": "Squamous carcinoma",
         "created_at": "2020-01-01 00:00:00.000000",
         "updated_at": "2020-01-01 00:00:00.000000"
     }
