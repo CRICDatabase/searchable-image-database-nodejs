@@ -11,7 +11,7 @@ module.exports = {
                     detalhes: "Squamous carcinoma"
                 },
                 {
-                    id_lesao: 7
+                    id: 7
                 },
                 { transaction }
             );
@@ -22,7 +22,7 @@ module.exports = {
                     detalhes: "High-grade squamous intraepithelial lesion"
                 },
                 {
-                    id_lesao: 6
+                    id: 6
                 },
                 { transaction }
             );
@@ -33,7 +33,7 @@ module.exports = {
                     detalhes: "Atypical squamous cells of undetermined significance, and cannot exclude a high-grade lesion"
                 },
                 {
-                    id_lesao: 5
+                    id: 5
                 },
                 { transaction }
             );
@@ -44,7 +44,7 @@ module.exports = {
                     detalhes: "Low-grade squamous intraepithelial lesion"
                 },
                 {
-                    id_lesao: 4
+                    id: 4
                 },
                 { transaction }
             );
@@ -55,7 +55,7 @@ module.exports = {
                     detalhes: "Atypical squamous cells of undetermined significance, possibly non-neoplastic"
                 },
                 {
-                    id_lesao: 3
+                    id: 3
                 },
                 { transaction }
             );
@@ -66,7 +66,7 @@ module.exports = {
                     detalhes: "Negative for intraepithelial lesion or malignancy"
                 },
                 {
-                    id_lesao: 2
+                    id: 2
                 },
                 { transaction }
             );
