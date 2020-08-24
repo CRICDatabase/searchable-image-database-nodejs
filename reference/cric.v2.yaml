@@ -93,7 +93,7 @@ paths:
   '/usuarios/{id_usuario}':
     parameters:
       - schema:
-          type: number
+          type: integer
         name: id_usuario
         in: path
         required: true
@@ -283,7 +283,7 @@ paths:
   '/imagens/{id_imagem}':
     parameters:
       - schema:
-          type: number
+          type: integer
         name: id_imagem
         in: path
         required: true
@@ -450,10 +450,16 @@ paths:
       responses:
         '201':
           description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescricaoModel'
         '400':
           description: Bad Request
         '401':
           description: Unauthorized
+        '403':
+          description: Forbidden
       security:
         - API Key Authorization: []
       requestBody:
@@ -510,7 +516,7 @@ paths:
   '/descricoes/{id_descricoes}':
     parameters:
       - schema:
-          type: number
+          type: integer
         name: id_descricoes
         in: path
         required: true
@@ -670,7 +676,7 @@ paths:
   '/imagens/{id_imagem}/classificacoes':
     parameters:
       - schema:
-          type: string
+          type: integer
         name: id_imagem
         in: path
         required: true
@@ -696,12 +702,12 @@ paths:
   '/imagens/{id_imagem}/classificacoes/{id_celula}':
     parameters:
       - schema:
-          type: string
+          type: integer
         name: id_imagem
         in: path
         required: true
       - schema:
-          type: string
+          type: integer
         name: id_celula
         in: path
         required: true
@@ -762,12 +768,12 @@ paths:
   '/imagens/{id_imagem}/segmentacoes/{id_celula}':
     parameters:
       - schema:
-          type: string
+          type: integer
         name: id_imagem
         in: path
         required: true
       - schema:
-          type: string
+          type: integer
         name: id_celula
         in: path
         required: true
@@ -828,7 +834,7 @@ paths:
   '/imagens/{id_imagem}/segmentacoes':
     parameters:
       - schema:
-          type: string
+          type: integer
         name: id_imagem
         in: path
         required: true
@@ -935,7 +941,7 @@ paths:
   '/imagens/{id_imagem}/aprovada':
     parameters:
       - schema:
-          type: string
+          type: integer
         name: id_imagem
         in: path
         required: true
