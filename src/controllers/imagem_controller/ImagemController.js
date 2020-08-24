@@ -148,8 +148,8 @@ module.exports = {
     async cadastrarLesoes(req, res, next) {
 
         try {
-            await CadastrarLesaoExecutor.Executar(req, res);
-            return res.status(HttpStatus.CREATED).end();
+            const injury = await CadastrarLesaoExecutor.Executar(req, res);
+            return res.status(HttpStatus.CREATED).json(injury);
         }
         catch (erro) {
             if(erro.status) {

@@ -15,7 +15,7 @@ module.exports = {
     async Executar(req, res) {
 
         await validarRequisicao(req);
-        await ImagemRepositorio.cadastrarLesao(req.body);
+        return await ImagemRepositorio.cadastrarLesao(req.body);
     }
 };
 
