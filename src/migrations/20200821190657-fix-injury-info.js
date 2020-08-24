@@ -1,6 +1,5 @@
-'use strict';
+"use strict";
 
-module.exports = {
 module.exports = {
     async up(queryInterface) {
         const transaction = await queryInterface.sequelize.transaction();
@@ -20,7 +19,7 @@ module.exports = {
                 "lesao",
                 {
                     nome: "HSIL",
-                    detalhes: "High-grade squamous intraepithelial lesion",
+                    detalhes: "High-grade squamous intraepithelial lesion"
                 },
                 {
                     id_lesao: 6
@@ -31,7 +30,7 @@ module.exports = {
                 "lesao",
                 {
                     nome: "ASC-H",
-                    detalhes: "Atypical squamous cells of undetermined significance, and cannot exclude a high-grade lesion",
+                    detalhes: "Atypical squamous cells of undetermined significance, and cannot exclude a high-grade lesion"
                 },
                 {
                     id_lesao: 5
@@ -42,7 +41,7 @@ module.exports = {
                 "lesao",
                 {
                     nome: "LSIL",
-                    detalhes: "Low-grade squamous intraepithelial lesion",
+                    detalhes: "Low-grade squamous intraepithelial lesion"
                 },
                 {
                     id_lesao: 4
@@ -53,7 +52,7 @@ module.exports = {
                 "lesao",
                 {
                     nome: "ASC-US",
-                    detalhes: "Atypical squamous cells of undetermined significance, possibly non-neoplastic",
+                    detalhes: "Atypical squamous cells of undetermined significance, possibly non-neoplastic"
                 },
                 {
                     id_lesao: 3
@@ -64,7 +63,7 @@ module.exports = {
                 "lesao",
                 {
                     nome: "NILM",
-                    detalhes: "Negative for intraepithelial lesion or malignancy",
+                    detalhes: "Negative for intraepithelial lesion or malignancy"
                 },
                 {
                     id_lesao: 2
