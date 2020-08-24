@@ -107,6 +107,21 @@ module.exports = {
         return LesaoModel.create(lesao);
     },
 
+    async update_injury(injury) {
+        return LesaoModel.update(
+            {
+                nome: injury.nome,
+                detalhes: injury.detalhes,
+                grade: injury.grade
+            },
+            {
+                where: {
+                    id: injury.id
+                }
+            }
+        );
+    },
+
     async obterImagemPorId(id_imagem) {
         return ImagemModel.findByPk(id_imagem);
     },

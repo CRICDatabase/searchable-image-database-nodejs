@@ -17,7 +17,7 @@ rotasLesoes.post("/api/v1/lesoes", auth_middleware.admin_required, ImagemControl
 rotasLesoes.post("/api/v1/imagens-lesoes/:id_usuario(\\d+)", auth_middleware.admin_required, ImagemController.cadastrarLesoes); // TODO Remove in v2
 
 rotasLesoes.get("/api/v1/lesoes/:id_lesoes(\\d+)", injuries_controller.get_injury);
-rotasLesoes.put("/api/v1/lesoes/:id_lesoes(\\d+)", auth_middleware.admin_required, SistemaController.not_implemented);
+rotasLesoes.put("/api/v1/lesoes/:id_lesoes(\\d+)", auth_middleware.admin_required, injuries_controller.put_injury);
 rotasLesoes.delete("/api/v1/lesoes/:id_lesoes(\\d+)", auth_middleware.admin_required, SistemaController.not_implemented);
 
 module.exports = rotasLesoes;
