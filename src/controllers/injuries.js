@@ -6,6 +6,7 @@ const debug = require("debug")("database.cric:ImagemController");
 const HttpStatus = require("http-status-codes");
 
 const get_injury_service = require("../executores/injuries/get_injury");
+const put_injury_service = require("../executores/injuries/put_injury");
 
 module.exports = {
 
@@ -23,6 +24,23 @@ module.exports = {
             debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
+    },
+
+    async put_injury(req, res, next) {
+
+        try {
+            await put_injury_service.Executar(req, res);
+            return res.status(HttpStatus.OK).end();
+        }
+        catch (erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            debug(erro);
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
     }
+
 
 };
