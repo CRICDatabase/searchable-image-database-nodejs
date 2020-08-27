@@ -1109,6 +1109,151 @@ paths:
                 owner:
                   type: integer
         description: ''
+  '/collections/{id_collection}':
+    parameters:
+      - schema:
+          type: string
+        name: id_collection
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+      operationId: get-collections-id_collection
+      description: Get a single collection.
+    put:
+      summary: ''
+      operationId: put-collections-id_collection
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: Update a single collection.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                slang:
+                  type: string
+    delete:
+      summary: ''
+      operationId: delete-collections-id_collection
+      responses:
+        '204':
+          description: No Content
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: Deletes a single collection.
+  '/collection/{id_collection}/toggle_public_collection':
+    parameters:
+      - schema:
+          type: string
+        name: id_collection
+        in: path
+        required: true
+    post:
+      summary: ''
+      operationId: post-collection-id_collection-toggle_public_collection
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: Toggle the public atribute.
+    delete:
+      summary: ''
+      operationId: delete-collection-id_collection-toggle_public_collection
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  '/colletions/{slang}':
+    parameters:
+      - schema:
+          type: string
+        name: slang
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+      operationId: get-colletions-slang
+    put:
+      summary: ''
+      operationId: put-colletions-slang
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: Update slang.
+    delete:
+      summary: ''
+      operationId: delete-colletions-slang
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: ''
 components:
   schemas:
     UsuarioBaseModel:
