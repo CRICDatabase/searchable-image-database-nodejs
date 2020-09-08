@@ -1060,8 +1060,6 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/CollectionModel'
-        '400':
-          description: Bad Request
         '401':
           description: Unauthorized
         '403':
@@ -1112,24 +1110,28 @@ paths:
   '/collections/{id_collection}':
     parameters:
       - schema:
-          type: string
+          type: integer
         name: id_collection
         in: path
         required: true
     get:
-      summary: Your GET endpoint
+      summary: Single Collection
       tags: []
       responses:
         '200':
           description: OK
-        '400':
-          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
         '404':
           description: Not Found
       operationId: get-collections-id_collection
       description: Get a single collection.
+      security:
+        - API Key Authorization: []
     put:
-      summary: ''
+      summary: Update collection
       operationId: put-collections-id_collection
       responses:
         '200':
@@ -1156,13 +1158,11 @@ paths:
                 slang:
                   type: string
     delete:
-      summary: ''
+      summary: Delete Collection
       operationId: delete-collections-id_collection
       responses:
         '204':
           description: No Content
-        '400':
-          description: Bad Request
         '401':
           description: Unauthorized
         '403':
@@ -1170,42 +1170,39 @@ paths:
         '404':
           description: Not Found
       description: Deletes a single collection.
-  '/collection/{id_collection}/toggle_public_collection':
+  '/collection/{slang}/public':
     parameters:
       - schema:
-          type: string
-        name: id_collection
+          type: integer
+        name: slang
         in: path
         required: true
     post:
-      summary: ''
-      operationId: post-collection-id_collection-toggle_public_collection
+      summary: 'List of collections'
+      operationId: post-collection-id_collection-public
       responses:
         '200':
           description: OK
-        '400':
-          description: Bad Request
         '401':
           description: Unauthorized
         '403':
           description: Forbidden
         '404':
           description: Not Found
-      description: Toggle the public atribute.
+      description: Make the collection public.
     delete:
-      summary: ''
-      operationId: delete-collection-id_collection-toggle_public_collection
+      summary: 'Make collection private'
+      operationId: delete-collection-id_collection-public
       responses:
         '200':
           description: OK
-        '400':
-          description: Bad Request
         '401':
           description: Unauthorized
         '403':
           description: Forbidden
         '404':
           description: Not Found
+      description: 'Make the collection private'
   '/colletions/{slang}':
     parameters:
       - schema:
