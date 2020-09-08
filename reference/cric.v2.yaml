@@ -1107,11 +1107,11 @@ paths:
                 owner:
                   type: integer
         description: ''
-  '/collections/{id_collection}':
+  '/collections/{slang}':
     parameters:
       - schema:
-          type: integer
-        name: id_collection
+          type: string
+        name: slang
         in: path
         required: true
     get:
@@ -1120,6 +1120,10 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CollectionModel'
         '401':
           description: Unauthorized
         '403':
@@ -1128,8 +1132,6 @@ paths:
           description: Not Found
       operationId: get-collections-id_collection
       description: Get a single collection.
-      security:
-        - API Key Authorization: []
     put:
       summary: Update collection
       operationId: put-collections-id_collection
@@ -1157,6 +1159,8 @@ paths:
                   type: string
                 slang:
                   type: string
+      security:
+        - API Key Authorization: []
     delete:
       summary: Delete Collection
       operationId: delete-collections-id_collection
@@ -1170,15 +1174,17 @@ paths:
         '404':
           description: Not Found
       description: Deletes a single collection.
+      security:
+        - API Key Authorization: []
   '/collection/{slang}/public':
     parameters:
       - schema:
-          type: integer
+          type: string
         name: slang
         in: path
         required: true
     post:
-      summary: 'List of collections'
+      summary: List of collections
       operationId: post-collection-id_collection-public
       responses:
         '200':
@@ -1190,8 +1196,10 @@ paths:
         '404':
           description: Not Found
       description: Make the collection public.
+      security:
+        - API Key Authorization: []
     delete:
-      summary: 'Make collection private'
+      summary: Make collection private
       operationId: delete-collection-id_collection-public
       responses:
         '200':
@@ -1202,55 +1210,9 @@ paths:
           description: Forbidden
         '404':
           description: Not Found
-      description: 'Make the collection private'
-  '/colletions/{slang}':
-    parameters:
-      - schema:
-          type: string
-        name: slang
-        in: path
-        required: true
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses:
-        '201':
-          description: Created
-        '400':
-          description: Bad Request
-        '404':
-          description: Not Found
-      operationId: get-colletions-slang
-    put:
-      summary: ''
-      operationId: put-colletions-slang
-      responses:
-        '200':
-          description: OK
-        '400':
-          description: Bad Request
-        '401':
-          description: Unauthorized
-        '403':
-          description: Forbidden
-        '404':
-          description: Not Found
-      description: Update slang.
-    delete:
-      summary: ''
-      operationId: delete-colletions-slang
-      responses:
-        '200':
-          description: OK
-        '400':
-          description: Bad Request
-        '401':
-          description: Unauthorized
-        '403':
-          description: Forbidden
-        '404':
-          description: Not Found
-      description: ''
+      description: Make the collection private
+      security:
+        - API Key Authorization: []
 components:
   schemas:
     UsuarioBaseModel:
