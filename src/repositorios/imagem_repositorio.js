@@ -282,13 +282,16 @@ module.exports = {
 
     async excluirImagemPorId(id_imagem) {
 
-        return ImagemModel.destroy({
-            where: {
-                id: {
-                    [Sequelize.Op.eq]: id_imagem
+        return ImagemModel.update(
+            {
+                excluida: true
+            },
+            {
+                where: {
+                    id: id_imagem
                 }
             }
-        });
+        );
     },
 
     async excluirCelula(id_celula, id_imagem) {

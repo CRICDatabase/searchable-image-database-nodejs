@@ -21,6 +21,7 @@ const ListarImagensExecutor = require("../../executores/imagem_executor/ListarIm
 const ListarLesaoExecutor = require("../../executores/imagem_executor/ListarLesoesExecutor");
 const ListarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/ListarSegmentacaoCelulaExecutor");
 const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
+const delete_image_service = require("../../executores/imagem_executor/delete_image");
 const approve_image_service = require("../../executores/imagem_executor/approve_image");
 const unapprove_image_service = require("../../executores/imagem_executor/unapprove_image");
 
@@ -32,6 +33,24 @@ module.exports = {
         try {
             imagemCadastrada = await CadastrarImagemExecutor.Executar(req, res);
             return res.status(HttpStatus.CREATED).json(imagemCadastrada);
+        }
+        catch (erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            debug(erro);
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
+    },
+
+
+    async delete_image(req, res, next) {
+
+        let imagemCadastrada;
+        try {
+            await delete_image_service.Executar(req, res);
+            return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {
             if(erro.status) {
