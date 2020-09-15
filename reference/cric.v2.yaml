@@ -1053,6 +1053,172 @@ paths:
         - autorizacao
       description: Recover user's password.
     parameters: []
+  /collections:
+    get:
+      summary: List Collection
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CollectionModel'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      operationId: get-collections
+      description: Get all collections.
+      parameters:
+        - schema:
+            type: integer
+          in: query
+          name: id_usuario
+    post:
+      summary: New Collection
+      operationId: post-collections
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CollectionModel'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      description: Create a single collection.
+      security:
+        - API Key Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                slang:
+                  type: string
+                owner:
+                  type: integer
+        description: ''
+  '/collections/{slang}':
+    parameters:
+      - schema:
+          type: string
+        name: slang
+        in: path
+        required: true
+    get:
+      summary: Single Collection
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CollectionModel'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      operationId: get-collections-id_collection
+      description: Get a single collection.
+    put:
+      summary: Update collection
+      operationId: put-collections-id_collection
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: Update a single collection.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                slang:
+                  type: string
+      security:
+        - API Key Authorization: []
+    delete:
+      summary: Delete Collection
+      operationId: delete-collections-id_collection
+      responses:
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: Deletes a single collection.
+      security:
+        - API Key Authorization: []
+  '/collections/{slang}/public':
+    parameters:
+      - schema:
+          type: string
+        name: slang
+        in: path
+        required: true
+    post:
+      summary: Make collection public
+      operationId: post-collection-id_collection-public
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: Make the collection public.
+      security:
+        - API Key Authorization: []
+    delete:
+      summary: Make collection private
+      operationId: delete-collection-id_collection-public
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      description: Make the collection private
+      security:
+        - API Key Authorization: []
 components:
   schemas:
     UsuarioBaseModel:
@@ -1185,6 +1351,25 @@ components:
           type: string
         token_autenticacao:
           type: string
+    CollectionModel:
+      title: CollectionModel
+      type: object
+      properties:
+        id:
+          type: integer
+        slang:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        public:
+          type: boolean
+        owner:
+          type: integer
+        deleted:
+          type: boolean
+      description: Represents metada of collection.
   securitySchemes:
     API Key Authorization:
       name: authorization
