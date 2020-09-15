@@ -1176,7 +1176,7 @@ paths:
       description: Deletes a single collection.
       security:
         - API Key Authorization: []
-  '/collection/{slang}/public':
+  '/collections/{slang}/public':
     parameters:
       - schema:
           type: string
@@ -1184,7 +1184,7 @@ paths:
         in: path
         required: true
     post:
-      summary: List of collections
+      summary: Make collection public
       operationId: post-collection-id_collection-public
       responses:
         '200':
