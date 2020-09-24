@@ -1,20 +1,20 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  up: (queryInterface, Sequelize) => {
+    up: (queryInterface) => {
         return queryInterface.removeColumn(
             "imagem",
             "caminho_imagem",
             {}
         );
-  },
+    },
 
-  down: (queryInterface, Sequelize) => {
+    down: (queryInterface, Sequelize) => {
         return queryInterface.addColumn(
             "imagem",
             "caminho_imagem",
             Sequelize.INTEGER,
             {}
         );
-  }
+    }
 };

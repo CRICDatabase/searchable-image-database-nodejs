@@ -23,6 +23,7 @@ class CollectionModel extends Model {
             slang: DataTypes.STRING,
             name: DataTypes.STRING,
             description: DataTypes.STRING,
+            delete: DataTypes.BOOLEAN,
             public : DataTypes.BOOLEAN
         },
         {

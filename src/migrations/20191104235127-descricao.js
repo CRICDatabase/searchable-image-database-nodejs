@@ -87,7 +87,7 @@ module.exports = {
                         {
                             id: 8,
                             codigo: 20,
-                            nome: " Leptothrix",
+                            nome: "Leptothrix",
                             created_at: "2020-01-01",
                             updated_at: "2020-01-01"
                         },
