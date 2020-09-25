@@ -156,18 +156,7 @@ describe(
                 return CollectionDOA.delete_collection(1)
                     .then(
                         data => {
-                            expect(data.dataValues)
-                                .toMatchObject(
-                                    {
-                                        id: 1,
-                                        name: expect.any(String),
-                                        slang: expect.any(String),
-                                        public: expect.any(Boolean),
-                                        delete: true,
-                                        description: expect.any(String),
-                                        owner: expect.any(Number)
-                                    }
-                                );
+                            expect(data).toEqual([1]);
                         }
                     );
             }
@@ -184,18 +173,7 @@ describe(
                 return CollectionDOA.get_collection(1)
                     .then(
                         data => {
-                            expect(data.dataValues)
-                                .toMatchObject(
-                                    {
-                                        id: 1,
-                                        name: expect.any(String),
-                                        slang: expect.any(String),
-                                        public: expect.any(Boolean),
-                                        delete: expect.any(Boolean),
-                                        description: expect.any(String),
-                                        owner: expect.any(Number)
-                                    }
-                                );
+                            expect(data).toEqual([1]);
                         }
                     );
             }
