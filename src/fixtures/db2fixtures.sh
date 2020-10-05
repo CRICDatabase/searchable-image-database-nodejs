@@ -27,7 +27,8 @@ $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
 'id_lesao', id_lesao,
 'created_at', created_at,
 'updated_at', updated_at,
-'doi', doi
+'doi', doi,
+'id_collection', id_collection
 )) FROM imagem" | tail -n 1 | python -m json.tool > image.json
 
 $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
@@ -36,7 +37,8 @@ $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
 'detalhes', detalhes,
 'created_at', created_at,
 'updated_at', updated_at,
-'grade', grade
+'grade', grade,
+'id_collection', id_collection
 )) FROM lesao" | tail -n 1 | python -m json.tool > injury.json
 
 $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
@@ -44,7 +46,8 @@ $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
 'codigo', codigo,
 'nome', nome,
 'created_at', created_at,
-'updated_at', updated_at
+'updated_at', updated_at,
+'id_collection', id_collection
 )) FROM descricao" | tail -n 1 | python -m json.tool > description.json
 
 $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
@@ -85,3 +88,13 @@ $MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
 'created_at', created_at,
 'updated_at', updated_at
 )) FROM segmentacao_nucleo" | tail -n 1 | python -m json.tool > nucleus.json
+
+$MYSQL_CALL "SELECT JSON_ARRAYAGG(JSON_OBJECT(
+'id', id,
+'slang', slang,
+'name', name,
+'description', description,
+'public', public,
+'owner', owner,
+'delete', delete
+)) FROM collection" | tail -n 1 | python -m json.tool > collection.json
