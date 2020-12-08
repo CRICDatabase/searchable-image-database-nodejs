@@ -247,7 +247,6 @@ describe(
     }
 );
 
-
 describe(
     "Test ImageDAO.approve_image",
     () => {

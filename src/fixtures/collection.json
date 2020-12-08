@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "slang": "cervix",
+        "name": "Cervix",
+        "description": "This Image represent the cytopathologist of the uterine cervix using conventional smear (Pap smear). The Epithelial cell abonormalities (lesion) are adressed in six classes according to Bethesda System.",
+        "public": false,
+        "delete": false,
+        "owner": 1
+    }
+]
