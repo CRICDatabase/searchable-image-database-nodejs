@@ -5,17 +5,16 @@ const debug = require("debug")("database.cric:ObterImagemExecutor");
 
 const HttpStatus = require("http-status-codes");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
-
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
+const ValidadorDeSessao = require("../../utils/validador_de_sessao");
+
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
         const imagem = await ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
@@ -29,12 +28,6 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-
-    if(!ValidarTipo.ehNumero(req.params.id_imagem)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
 
     const imagemTask = ImagemRepositorio.obterImagemPorId(req.params.id_imagem);
     const [imagem] = await Promise.all([imagemTask]);

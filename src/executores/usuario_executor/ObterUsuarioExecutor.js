@@ -6,20 +6,14 @@ const debug = require("debug")("database.cric:ObterUsuarioExecutor");
 const HttpStatus = require("http-status-codes");
 
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
-const SessaoRepositorio = require("../../repositorios/sessao_repositorio");
 
-const Criptografia = require("../../utils/criptografia");
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const GeradorIdUnico = require("../../utils/gerador_identificador_unico");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
-
 
 module.exports = {
 
-    async Executar(req) {
-        await validarRequisicao(req);
+    async Executar(req, res) {
         const id_usuario = Number(req.params.id_usuario);
         
         await ValidadorDeSessao.login_required(
@@ -39,14 +33,5 @@ module.exports = {
         }
 
         return usuario.dataValues;
-    }
-};
-
-async function validarRequisicao(req) {
-
-    if (!ValidarTipo.ehNumero(req.params.id_usuario)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
     }
 };

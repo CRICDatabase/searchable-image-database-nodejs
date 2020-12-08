@@ -11,7 +11,7 @@ module.exports = {
         password: "CRIC_DB_PASSWORD",
     },
     nodemailer: {
-        service: "NODEMAILER_SERVICE",
+        host: "NODEMAILER_SERVICE",
         auth: {
             user: 'NODEMAILER_ADDRESS',
             pass: 'NODEMAILER_PASSWORD'

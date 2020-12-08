@@ -6,24 +6,22 @@ const ObterStatusSistemaExecutor = require("../../executores/sistema/ObterStatus
 
 module.exports = {
 
-    consultarStatusDoSistema(req, res) {
+    consultarStatusDoSistema(req, res, next) {
 
         let status;
         try{
-            status = ObterStatusSistemaExecutor.Executar(req);
+            status = ObterStatusSistemaExecutor.Executar(req, res);
             return res.status(HttpStatus.OK).json(status);
         }
         catch(erro) {
             if(erro.status) {
                 return res.status(erro.status).json(erro);
             }
-
-            debug(erro);
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
         }
     },
 
-    not_implemented(req, res) {
+    not_implemented(req, res, next) {
         return res.status(HttpStatus.NOT_IMPLEMENTED).end();
     }
 };

@@ -5,35 +5,28 @@ const debug = require("debug")("database.cric:ListarClassificacaoCelulaExecutor"
 
 const HttpStatus = require("http-status-codes");
 
-const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
-const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
+
+const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
+const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
 
         const id_imagem = parseInt(req.params.id_imagem);
 
         const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
-        await prepararMensagemRetorno(todasClassificacoes);
-        return todasClassificacoes;
+        return await prepararMensagemRetorno(todasClassificacoes);
     }
 };
 
 async function validarRequisicao(req) {
     let session_is_valid = false;
-
-    if (!ValidarTipo.ehNumero(req.params.id_usuario) || !ValidarTipo.ehNumero(req.params.id_imagem)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        throw ObjetoExcecao;
-    }
 
     const id_usuario = Number(req.params.id_usuario);
     const id_imagem = Number(req.params.id_imagem);
@@ -73,7 +66,8 @@ async function validarRequisicao(req) {
     }
 }
 
-async function prepararMensagemRetorno(todasCelulas) {
+async function prepararMensagemRetorno(raw_cells) {
+    let cells = [];
 
     let all_injuries = {};
     await ImagemRepositorio.listarLesoes()
@@ -85,9 +79,16 @@ async function prepararMensagemRetorno(todasCelulas) {
             }
         );
 
-    for (let cell of todasCelulas) {
-        cell.lesao = all_injuries[cell.id_lesao];
-        delete cell.id_lesao;
-        delete cell.lesao_grade;
+    for (let cell of raw_cells) {
+        cells.push(
+            {
+                id: cell.id,
+                coord_centro_nucleo_x: cell.coord_centro_nucleo_x,
+                coord_centro_nucleo_y: cell.coord_centro_nucleo_y,
+                lesao: all_injuries[cell.id_lesao]
+            }
+        );
     }
+
+    return cells;
 }

@@ -1,5 +1,0 @@
-Header Parameters
-=================
-
-Basic Auth
-----------

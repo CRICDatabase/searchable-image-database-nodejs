@@ -21,14 +21,16 @@ const ListarImagensExecutor = require("../../executores/imagem_executor/ListarIm
 const ListarLesaoExecutor = require("../../executores/imagem_executor/ListarLesoesExecutor");
 const ListarSegmentacaoCelulaExecutor = require("../../executores/imagem_executor/ListarSegmentacaoCelulaExecutor");
 const ObterImagemExecutor = require("../../executores/imagem_executor/ObterImagemExecutor");
+const approve_image_service = require("../../executores/imagem_executor/approve_image");
+const unapprove_image_service = require("../../executores/imagem_executor/unapprove_image");
 
 module.exports = {
 
-    async cadastrarImagem(req, res) {
+    async cadastrarImagem(req, res, next) {
 
         let imagemCadastrada;
         try {
-            imagemCadastrada = await CadastrarImagemExecutor.Executar(req);
+            imagemCadastrada = await CadastrarImagemExecutor.Executar(req, res);
             return res.status(HttpStatus.CREATED).json(imagemCadastrada);
         }
         catch (erro) {
@@ -41,11 +43,11 @@ module.exports = {
         }
     },
 
-    async listarImagens(req, res) {
+    async listarImagens(req, res, next) {
 
         let imagens;
         try {
-            imagens = await ListarImagensExecutor.Executar(req);
+            imagens = await ListarImagensExecutor.Executar(req, res);
             return res.status(HttpStatus.OK).json(imagens);
         }
         catch (erro) {
@@ -58,11 +60,11 @@ module.exports = {
         }
     },
 
-    async obterImagem(req, res) {
+    async obterImagem(req, res, next) {
 
         let imagem;
         try {
-            imagem = await ObterImagemExecutor.Executar(req);
+            imagem = await ObterImagemExecutor.Executar(req, res);
             return res.status(HttpStatus.OK).json(imagem);
         }
         catch (erro) {
@@ -75,11 +77,11 @@ module.exports = {
         }
     },
 
-    async cadastrarClassificacaoDeCelula(req, res) {
+    async cadastrarClassificacaoDeCelula(req, res, next) {
 
         let classificacoesCadastradas;
         try {
-            classificacoesCadastradas = await CadastrarClassificacaoCelulaExecutor.Executar(req);
+            classificacoesCadastradas = await CadastrarClassificacaoCelulaExecutor.Executar(req, res);
             return res.status(HttpStatus.CREATED).json(classificacoesCadastradas);
         }
         catch (erro) {
@@ -92,11 +94,11 @@ module.exports = {
         }
     },
 
-    async cadastrarSegmentacaoDeCelula(req, res) {
+    async cadastrarSegmentacaoDeCelula(req, res, next) {
 
         let segmentacoesCadastradas;
         try {
-            segmentacoesCadastradas = await CadastrarSegmentacaoCelulaExecutor.Executar(req);
+            segmentacoesCadastradas = await CadastrarSegmentacaoCelulaExecutor.Executar(req, res);
             return res.status(HttpStatus.CREATED).json(segmentacoesCadastradas);
         }
         catch (erro) {
@@ -109,11 +111,11 @@ module.exports = {
         }
     },
 
-    async listarClassificacaoDeCelulaParaUmUsuario(req, res) {
+    async listarClassificacaoDeCelulaParaUmUsuario(req, res, next) {
 
         let todasClassificacoes;
         try {
-            todasClassificacoes = await ListarClassificacaoCelulaExecutor.Executar(req);
+            todasClassificacoes = await ListarClassificacaoCelulaExecutor.Executar(req, res);
             return res.status(HttpStatus.OK).json(todasClassificacoes);
         }
         catch (erro) {
@@ -126,11 +128,11 @@ module.exports = {
         }
     },
 
-    async listarSegmentacaoDeCelulaParaUmUsuario(req, res) {
+    async listarSegmentacaoDeCelulaParaUmUsuario(req, res, next) {
 
         let todasSegmentacoes;
         try {
-            todasSegmentacoes = await ListarSegmentacaoCelulaExecutor.Executar(req);
+            todasSegmentacoes = await ListarSegmentacaoCelulaExecutor.Executar(req, res);
             return res.status(HttpStatus.OK).json(todasSegmentacoes);
         }
         catch (erro) {
@@ -143,11 +145,10 @@ module.exports = {
         }
     },
 
-    async cadastrarLesoes(req, res) {
+    async cadastrarLesoes(req, res, next) {
 
-        let lesoesCadastradas;
         try {
-            await CadastrarLesaoExecutor.Executar(req);
+            await CadastrarLesaoExecutor.Executar(req, res);
             return res.status(HttpStatus.CREATED).end();
         }
         catch (erro) {
@@ -160,11 +161,11 @@ module.exports = {
         }
     },
 
-    async cadastrarDescricoes(req, res) {
+    async cadastrarDescricoes(req, res, next) {
 
         let lesoesCadastradas;
         try {
-            lesoesCadastradas = await CadastrarDescricao.Executar(req);
+            lesoesCadastradas = await CadastrarDescricao.Executar(req, res);
             return res.status(HttpStatus.CREATED).json(lesoesCadastradas);
         }
         catch (erro) {
@@ -177,11 +178,11 @@ module.exports = {
         }
     },
 
-    async listarLesoes(req, res) {
+    async listarLesoes(req, res, next) {
 
         let todasLesoes;
         try {
-            todasLesoes = await ListarLesaoExecutor.Executar(req);
+            todasLesoes = await ListarLesaoExecutor.Executar(req, res);
             return res.status(HttpStatus.OK).json(todasLesoes);
         }
         catch (erro) {
@@ -194,11 +195,11 @@ module.exports = {
         }
     },
 
-    async listarDescricoes(req, res) {
+    async listarDescricoes(req, res, next) {
 
         let todasDescricoes;
         try {
-            todasDescricoes = await ListarDescricao.Executar(req);
+            todasDescricoes = await ListarDescricao.Executar(req, res);
             return res.status(HttpStatus.OK).json(todasDescricoes);
         }
         catch (erro) {
@@ -211,14 +212,14 @@ module.exports = {
         }
     },
 
-    async downloadBase(req, res) {
+    async downloadBase(req, res, next) {
         let result;
         try {
-            result = DownloadBaseExecutor.Executar(req);
+            result = DownloadBaseExecutor.Executar(req, res);
             result.then((zip) => {
                 res.set("Content-Type", "application/zip");
                 zip
-                    .pipe(res)
+                    .pipe(res, next)
                     .on("finish", function () {
                         debug("Zip file with dump of image + data sent to user.");
                     });
@@ -239,10 +240,10 @@ module.exports = {
         }
     },
 
-    async excluirRegistroClassificacao(req, res) {
+    async excluirRegistroClassificacao(req, res, next) {
 
         try {
-            await ExcluirClassificacaoExecutor.Executar(req);
+            await ExcluirClassificacaoExecutor.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {
@@ -255,10 +256,10 @@ module.exports = {
         }
     },
 
-    async excluirRegistroSegmentacao(req, res) {
+    async excluirRegistroSegmentacao(req, res, next) {
 
         try {
-            await ExcluirSegmentacaoExecutor.Executar(req);
+            await ExcluirSegmentacaoExecutor.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {
@@ -271,10 +272,10 @@ module.exports = {
         }
     },
 
-    async atualizarDadosImagem(req, res) {
+    async atualizarDadosImagem(req, res, next) {
 
         try {
-            await AtualizarDadosImagemExecutor.Executar(req);
+            await AtualizarDadosImagemExecutor.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {
@@ -287,10 +288,42 @@ module.exports = {
         }
     },
 
-    async atualizarClassificacao(req, res) {
+    async approve_image(req, res, next) {
 
         try {
-            await AtualizarClassificacaoExecutor.Executar(req);
+            await approve_image_service.Executar(req, res);
+            return res.status(HttpStatus.NO_CONTENT).end();
+        }
+        catch (erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            debug(erro);
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
+    },
+
+    async unapprove_image(req, res, next) {
+
+        try {
+            await unapprove_image_service.Executar(req, res);
+            return res.status(HttpStatus.NO_CONTENT).end();
+        }
+        catch (erro) {
+            if(erro.status) {
+                return res.status(erro.status).json(erro);
+            }
+
+            debug(erro);
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(erro);
+        }
+    },
+
+    async atualizarClassificacao(req, res, next) {
+
+        try {
+            await AtualizarClassificacaoExecutor.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
         }
         catch (erro) {

@@ -8,7 +8,7 @@ const UsuarioRepositorio = require("../../repositorios/usuario_repositorio");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req.body);
         const statusAtivo = 1;

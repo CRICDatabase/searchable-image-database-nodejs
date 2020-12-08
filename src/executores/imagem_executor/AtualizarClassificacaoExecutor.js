@@ -10,12 +10,11 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
 const image_utils = require("../../utils/image");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
         
@@ -39,15 +38,7 @@ module.exports = {
 };
 
 async function validarRequisicao(req) {
-
-    if (!ValidarTipo.ehNumero(req.params.id_imagem) || !ValidarTipo.ehNumero(req.params.id_celula)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        ObjetoExcecao.detail = "Route parameter invalid";
-        throw ObjetoExcecao;
-    }
-
-    if (!ValidarTipo.ehNumero(req.body.id_lesao_celula)) {
+    if (!req.body.id_lesao_celula || typeof req.body.id_lesao_celula !== "number") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Body request is invalid";

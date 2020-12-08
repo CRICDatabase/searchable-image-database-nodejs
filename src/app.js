@@ -5,6 +5,8 @@ const cors = require("cors");
 const express = require("express");
 const FileUpload = require("express-fileupload");
 
+const auth_middleware = require("./utils/auth_middleware");
+
 const rotasIndex = require("./rotas/rotasIndex");
 const rotasUsuario = require("./rotas/rotasUsuario");
 const rotasLesoes = require("./rotas/rotasLesoes");
@@ -39,6 +41,9 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Methods", "*");
     next();
 });
+
+// Middleware
+app.use(auth_middleware.get_user_from_session);
 
 //Rotas do sistema
 app.use("/", rotasIndex);

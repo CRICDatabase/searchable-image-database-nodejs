@@ -141,6 +141,43 @@ module.exports = {
         });
     },
 
+    async list_images_from_user(user_id) {
+        return ImagemModel.findAll({
+            order: [
+                ["created_at", "DESC"]
+            ],
+            where: {
+                excluida: false,
+                id_usuario: user_id ? user_id : 1
+            }
+        });
+    },
+
+    async list_public_images_from_user(user_id) {
+        return ImagemModel.findAll({
+            order: [
+                ["created_at", "DESC"]
+            ],
+            where: {
+                excluida: false,
+                classificacao_aprovada: true,
+                id_usuario: user_id ? user_id : 1
+            }
+        });
+    },
+
+    async list_all_images_from_user(user_id) {
+        // Should only be use by admin
+        return ImagemModel.findAll({
+            order: [
+                ["created_at", "DESC"]
+            ],
+            where: {
+                id_usuario: user_id ? user_id : 1
+            }
+        });
+    },
+
     async listarSegmentosCitoplasmaCelula(id_imagem, id_usuario) {
 
         let todasSegmentacoesCitoplasma;
@@ -295,6 +332,32 @@ module.exports = {
                     id: {
                         [Sequelize.Op.eq]: requisicao.id_imagem
                     }
+                }
+            }
+        );
+    },
+
+    async approve_image(image_id) {
+        return ImagemModel.update(
+            {
+                classificacao_aprovada: true
+            },
+            {
+                where: {
+                    id: image_id
+                }
+            }
+        );
+    },
+
+    async unapprove_image(image_id) {
+        return ImagemModel.update(
+            {
+                classificacao_aprovada: false
+            },
+            {
+                where: {
+                    id: image_id
                 }
             }
         );

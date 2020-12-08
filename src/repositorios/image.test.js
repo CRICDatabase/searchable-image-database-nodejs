@@ -5,7 +5,7 @@ jest.useFakeTimers();
 let ImageDAO = require("./imagem_repositorio");
 
 describe(
-    "Test ImagemModel",
+    "Test ImageDAO",
     () => {
         test(
             "cadastrarImagem without DOI for admin",
@@ -279,9 +279,9 @@ describe(
         );
 
     }
-    );
+);
 
-    describe(
+describe(
     "Test ImageDAO.unapprove_image",
     () => {
         test(
@@ -314,4 +314,3 @@ describe(
 
     }
 );
-

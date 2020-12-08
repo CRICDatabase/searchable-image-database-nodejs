@@ -13,15 +13,17 @@ const UsuarioRepositorio = require("../repositorios/usuario_repositorio");
 module.exports = {
 
     async login_required(req, requested_user_id) {
-        if (!req.get("Authorization")) {
+        const authorization = req.get("Authorization");
+
+        if (typeof authorization === "undefined") {
             ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = "Authorization is missing in header";
             throw ObjetoExcecao;
         }
 
-        let session = await SessaoRepositorio.validarTokenAutenticacao(
-            req.get("Authorization")
+        const session = await SessaoRepositorio.validarTokenAutenticacao(
+            authorization
         );
         
         if (session === null) {        
@@ -30,7 +32,7 @@ module.exports = {
             throw ObjetoExcecao;
         }
 
-        let user = await UsuarioRepositorio.obterUsuarioBasePorEmail(
+        const user = await UsuarioRepositorio.obterUsuarioBasePorEmail(
             session.dataValues.email
         );
         if (user === null) {        
@@ -56,15 +58,17 @@ module.exports = {
     },
 
     async admin_required(req) {
-        if (!req.get("Authorization")) {
+        const authorization = req.get("Authorization");
+
+        if (typeof authorization === "undefined") {
             ObjetoExcecao.status = HttpStatus.UNAUTHORIZED;
             ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
             ObjetoExcecao.detail = "Authorization is missing in header";
             throw ObjetoExcecao;
         }
         
-        let session = await SessaoRepositorio.validarTokenAutenticacao(
-            req.get("Authorization")
+        const session = await SessaoRepositorio.validarTokenAutenticacao(
+            authorization
         );
         
         if (session === null) {        
@@ -73,7 +77,7 @@ module.exports = {
             throw ObjetoExcecao;
         }
 
-        let user = await UsuarioRepositorio.obterUsuarioBasePorEmail(
+        const user = await UsuarioRepositorio.obterUsuarioBasePorEmail(
             session.dataValues.email
         );
         if (user === null) {        

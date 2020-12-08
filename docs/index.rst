@@ -16,17 +16,9 @@ is available at https://cric-database.readthedocs.io/.
 
 ..  toctree::
     :maxdepth: 2
-    :caption: REST API
+    :caption: Users
 
-    rest_api/meta
-    rest_api/authentication
-    rest_api/authorization
-    rest_api/header
-    rest_api/user
-    rest_api/injury
-    rest_api/description
-    rest_api/image
-    rest_api/download
+    rest_api.rst
 
 ..  toctree::
     :maxdepth: 2
@@ -40,6 +32,12 @@ is available at https://cric-database.readthedocs.io/.
     test
     debugging
     contributing
+
+..  toctree::
+    :maxdepth: 2
+    :caption: Cookbook
+
+    creating_new_endpoint
 
 Indices and tables
 ------------------

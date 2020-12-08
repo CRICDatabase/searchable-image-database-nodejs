@@ -4,17 +4,17 @@
 const debug = require("debug")("database.cric:AtualizarDadosImagemExecutor");
 
 const HttpStatus = require("http-status-codes");
+const validator = require("validator");
 
 const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
 const ValidadorDeSessao = require("../../utils/validador_de_sessao");
-const ValidarTipo = require("../../utils/validacao_de_tipos");
 
 module.exports = {
 
-    async Executar(req) {
+    async Executar(req, res) {
 
         await validarRequisicao(req);
 
@@ -31,14 +31,8 @@ module.exports = {
 
 async function validarRequisicao(req) {
 
-    if (!ValidarTipo.ehNumero(req.params.id_imagem)) {
-        ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
-        ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
-        ObjetoExcecao.detail = "Route parameter invalid";
-        throw ObjetoExcecao;
-    }
-
-    if (!req.body.codigo_lamina || !req.body.dt_aquisicao) {
+    if (!req.body.codigo_lamina || !validator.isLength(req.body.codigo_lamina, { min: 3 }) ||
+        !req.body.dt_aquisicao || !validator.isDate(req.body.dt_aquisicao)) {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Body request is invalid";
