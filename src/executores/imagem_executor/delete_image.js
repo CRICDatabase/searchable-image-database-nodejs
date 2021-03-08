@@ -9,7 +9,6 @@ const ImagemRepositorio = require("../../repositorios/imagem_repositorio");
 
 const Excecao = require("../../utils/enumeracoes/mensagem_excecoes");
 const ObjetoExcecao = require("../../utils/enumeracoes/controle_de_excecoes");
-const image_utils = require("../../utils/image");
 const gate_keeper = require("../../utils/gate_keeper");
 
 module.exports = {

@@ -17,8 +17,8 @@ const gate_keeper = require("../../utils/gate_keeper");
 module.exports = {
 
     async Executar(req, res) {
-
         await validarRequisicao(req, res);
+      
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);
 
@@ -52,15 +52,13 @@ module.exports = {
 };
 
 async function validarRequisicao(req, res) {
-
-    if (!req.body.id_lesao || typeof req.body.id_lesao !== "number" ||
-        !req.body.alturaCanvas || typeof req.body.alturaCanvas !== "number" ||
-        !req.body.larguraCanvas || typeof req.body.larguraCanvas !== "number" ||
-        !req.body.alturaOriginalImg || typeof req.body.alturaOriginalImg !== "number" ||
-        !req.body.larguraOriginalImg || typeof req.body.larguraOriginalImg !== "number" ||
-        !req.body.coord_centro_nucleo_x || typeof req.body.coord_centro_nucleo_x !== "number" ||
-        !req.body.coord_centro_nucleo_y || typeof req.body.coord_centro_nucleo_y !== "number") {
-
+    if (!req.body.id_lesao || typeof Number(req.body.id_lesao) !== "number" ||
+        !req.body.alturaCanvas || typeof Number(req.body.alturaCanvas) !== "number" ||
+        !req.body.larguraCanvas || typeof Number(req.body.larguraCanvas) !== "number" ||
+        !req.body.alturaOriginalImg || typeof Number(req.body.alturaOriginalImg) !== "number" ||
+        !req.body.larguraOriginalImg || typeof Number(req.body.larguraOriginalImg) !== "number" ||
+        !req.body.coord_centro_nucleo_x || typeof Number(req.body.coord_centro_nucleo_x) !== "number" ||
+        !req.body.coord_centro_nucleo_y || typeof Number(req.body.coord_centro_nucleo_y) !== "number") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         throw ObjetoExcecao;
