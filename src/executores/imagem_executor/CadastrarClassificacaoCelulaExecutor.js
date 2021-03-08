@@ -18,7 +18,7 @@ module.exports = {
 
     async Executar(req, res) {
         await validarRequisicao(req, res);
-        
+      
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);
 
