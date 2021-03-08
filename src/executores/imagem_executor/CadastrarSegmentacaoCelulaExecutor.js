@@ -20,7 +20,7 @@ module.exports = {
 
     async Executar(req, res) {
 
-        await validarRequisicao(req);
+        await validarRequisicao(req, res);
         const id_usuario = parseInt(req.params.id_usuario);
         const id_imagem = parseInt(req.params.id_imagem);
 
@@ -47,11 +47,11 @@ module.exports = {
 async function validarRequisicao(req, res) {
 
     if (req.body.segmentos_citoplasma.length == 0 ||
-        !req.body.larguraOriginalImg || typeof req.body.larguraOriginalImg !== "number" ||
-        !req.body.alturaOriginalImg || typeof req.body.alturaOriginalImg !== "number" ||
-        !req.body.larguraCanvas || typeof req.body.larguraCanvas !== "number" ||
-        !req.body.alturaCanvas || typeof req.body.alturaCanvas !== "number" ||
-        !req.body.id_descricao || typeof req.body.id_descricao !== "number") {
+        !req.body.larguraOriginalImg || typeof Number(req.body.larguraOriginalImg) !== "number" ||
+        !req.body.alturaOriginalImg || typeof Number(req.body.alturaOriginalImg) !== "number" ||
+        !req.body.larguraCanvas || typeof Number(req.body.larguraCanvas) !== "number" ||
+        !req.body.alturaCanvas || typeof Number(req.body.alturaCanvas) !== "number" ||
+        !req.body.id_descricao || typeof Number(req.body.id_descricao) !== "number") {
 
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
@@ -88,14 +88,13 @@ async function validarRequisicao(req, res) {
         imagem,
         res.locals.user
     );
+    
 }
 
-
 function validarSegmentacao(segmentos) {
-
     if(segmentos.length > 0) {
         segmentos.forEach(ponto => {
-            if(!validator.isNumeric(ponto.coord_x) || !validator.isNumeric(ponto.coord_y)) {
+            if(!ponto.coord_x || !ponto.coord_y) {
                 ObjetoExcecao.status = HttpStatus.NOT_FOUND;
                 ObjetoExcecao.title = Excecao.SEGMENTACAO_INVALIDA;
                 throw ObjetoExcecao;

@@ -47,7 +47,6 @@ module.exports = {
 
     async delete_image(req, res, next) {
 
-        let imagemCadastrada;
         try {
             await delete_image_service.Executar(req, res);
             return res.status(HttpStatus.NO_CONTENT).end();
