@@ -15,9 +15,7 @@ const gate_keeper = require("../../utils/gate_keeper");
 module.exports = {
 
     async Executar(req, res) {
-
         await validarRequisicao(req, res);
-        
         const id_imagem = Number(req.params.id_imagem);
 
         let requisicao = {
@@ -28,7 +26,6 @@ module.exports = {
 
         const atualizarCelulaTask = ImagemRepositorio.atualizarClassificacao(requisicao);
         await Promise.all([atualizarCelulaTask]);
-
         const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
         await image_utils.atualizarLesaoMaisGraveNaImagem(
             id_imagem,
@@ -38,7 +35,7 @@ module.exports = {
 };
 
 async function validarRequisicao(req, res) {
-    if (!req.body.id_lesao_celula || typeof req.body.id_lesao_celula !== "number") {
+    if (!req.body.id_lesao_celula || typeof Number(req.body.id_lesao_celula) !== "number") {
         ObjetoExcecao.status = HttpStatus.BAD_REQUEST;
         ObjetoExcecao.title = Excecao.PARAMETROS_INVALIDOS;
         ObjetoExcecao.detail = "Body request is invalid";
