@@ -17,7 +17,7 @@ rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)", ImagemController.obterImagem
 rotasImagem.put("/api/v1/imagens/:id_imagem(\\d+)", auth_middleware.login_required, ImagemController.atualizarDadosImagem);
 rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)", auth_middleware.login_required, ImagemController.delete_image);
 
-rotasImagem.post("/api/v1/imagens/:id_imagem(\\d+)/aprovada", auth_middleware.admin_required, ImagemController.approve_image);
+rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/aprovada", auth_middleware.admin_required, ImagemController.approve_image);
 rotasImagem.delete("/api/v1/imagens/:id_imagem(\\d+)/aprovada", auth_middleware.admin_required, ImagemController.unapprove_image);
 
 rotasImagem.get("/api/v1/imagens/:id_imagem(\\d+)/classificacoes", SistemaController.not_implemented);

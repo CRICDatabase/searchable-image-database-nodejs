@@ -44,7 +44,6 @@ module.exports = {
         }
     },
 
-
     async delete_image(req, res, next) {
 
         try {
