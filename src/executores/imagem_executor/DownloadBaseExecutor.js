@@ -46,9 +46,24 @@ module.exports = {
         var cytoplasm_segmentations_csv_string = "image_id,image_filename,image_doi,cell_id,bethesda_system,x,y\n";
         var segmentations_csv = cytoplasm_segmentations_csv_string + cytoplasm_segmentations_csv_string;
 
+        var cytoplasm_segmentations_copy = [];
+        var nucleus_segmentations_copy = [];
+
+        let size = 0;
+        let coords = []
+        let cells = []; 
+
         var all_descriptions = {};
 
         var zip = new JSZip();
+
+        function filterCellId(array, size, aux){
+            let arrayAux = [];
+            for(let i = size; i< array.length; i++){
+                if(array[i].id_celula === aux) arrayAux.push(array[i]);
+            }
+            return arrayAux;
+        }
 
         if (req.query.hasOwnProperty("images") && req.query.images === "1") {
             include_images = true;
@@ -158,57 +173,42 @@ module.exports = {
                     req.params.id_usuario ? req.params.id_usuario : 1
                 );
 
-                let cytoplasm_segmentations_copy = [];
-                let size = 0;
-                let aux = cytoplasm_segmentations[size].id_celula;
-                let tuple = [];
-                let coords, cells;
-                let image_cells = [];
-
-                function filterCellId(array, size, aux){
-                    let arrayAux = [];
-                    for(let i = size; i< array.length; i++){
-                        if(array[i].id_celula === aux) arrayAux.push(array[i]);
-                    }
-                    return arrayAux;
-                }
+                size = 0;
+                coords = []
+                cells = []; 
+                
+                let aux_cytoplasm = cytoplasm_segmentations[size].id_celula;
 
                 while(size < cytoplasm_segmentations.length){
 
-                    cytoplasm_segmentations_copy = filterCellId(cytoplasm_segmentations, size, aux);
+                    cytoplasm_segmentations_copy = filterCellId(cytoplasm_segmentations, size, aux_cytoplasm);
 
                     for(let i=0; i < cytoplasm_segmentations_copy.length; i++){
-                        coords = {
-                            coords: tuple.push({
-                                coord_x: cytoplasm_segmentations_copy[i].coord_x,
-                                coord_y: cytoplasm_segmentations_copy[i].coord_y,
-                            })
-                        };
+                        coords.push({
+                            coord_x: cytoplasm_segmentations_copy[i].coord_x,
+                            coord_y: cytoplasm_segmentations_copy[i].coord_y,
+                        });
                     };
 
-                    cells = {
-                        cell_id: cytoplasm_segmentations_copy[0].cell_id,
-                        id_descricao: cytoplasm_segmentations_copy[0].id_descricao,
+                    cells.push({
+                        cell_id: cytoplasm_segmentations_copy[0].id_celula,
+                        description_id: cytoplasm_segmentations_copy[0].id_descricao,
                         coords: coords
-                    };
-
-                    image_cells.push({
-                        cells: cells
                     });
 
                     size += cytoplasm_segmentations_copy.length;
 
                     if(size < cytoplasm_segmentations.length){
-                        aux = cytoplasm_segmentations[size].id_celula;
+                        aux_cytoplasm = cytoplasm_segmentations[size].id_celula;
                     }
                 }
                 
-                cytoplasm_segmentations_array = {
+                cytoplasm_segmentations_array.push({
                     image_id: image.id,
                     image_doi: image.doi,
                     image_name: image.nome,
-                    cytoplasm_segmentation_cells: image_cells
-                };
+                    cytoplasm_segmentation_cells: cells
+                });
 
                 cytoplasm_segmentations.forEach(
                     (item) => {
@@ -220,94 +220,122 @@ module.exports = {
                     image.id,
                     req.params.id_usuario ? req.params.id_usuario : 1
                 );
-                
-                /*
-                nucleus_segmentations_array.push({
-                    image_id: image.id,
-                    image_doi: image.doi,
-                    image_name: image.nome,
-                    cells: nucleus_segmentations.map(
-                        (item) => {
-                            return {
-                                cell_id: item.id,
-                                id_descricao: item.id_descricao,
-                                nucleus_segmentation: item.segmentos_nucleo.map(
-                                    (nucle_cord) => {
-                                        return {
-                                            coord_x: nucle_cord.coord_x,
-                                            coord_y: nucle_cord.coord_y
-                                        }
-                                    }
-                                ),
-                            };
+
+                if(typeof nucleus_segmentations !== 'undefined' && nucleus_segmentations.length > 0){                
+                    size = 0;
+                    coords = []
+                    cells = []; 
+
+                    let aux_nucleus = nucleus_segmentations[size].id_celula;               
+
+                    while(size < nucleus_segmentations.length){
+
+                        nucleus_segmentations_copy = filterCellId(nucleus_segmentations, size, aux_nucleus);
+
+                        for(let i=0; i < nucleus_segmentations_copy.length; i++){
+                            coords.push({
+                                coord_x: nucleus_segmentations_copy[i].coord_x,
+                                coord_y: nucleus_segmentations_copy[i].coord_y,
+                            });
+                        };
+
+                        cells.push({
+                            cell_id: nucleus_segmentations_copy[0].id_celula,
+                            description_id: nucleus_segmentations_copy[0].id_descricao,
+                            coords: coords
+                        });
+
+                        size += nucleus_segmentations_copy.length;
+
+                        if(size < nucleus_segmentations.length){
+                            aux_nucleus = nucleus_segmentations[size].id_celula;
                         }
-                    )
-                });
-                */
+                    }                
+                    
+                    nucleus_segmentations_array.push({
+                        image_id: image.id,
+                        image_doi: image.doi,
+                        image_name: image.nome,
+                        nucleus_segmentation_cells: cells
+                    });
+                }
 
                 nucleus_segmentations.forEach(
                     (item) => {
                         nucleus_segmentations_csv_string = nucleus_segmentations_csv_string + `${image.id},${image.nome},${image.doi},${item.id_celula},,${all_descriptions[item.id_descricao]},${item.coord_x},${item.coord_y}\n`;
                     }
-                );
+                );                
+            }
+        }
 
-                /*
-                var segmentation_cells;
-                var cytoplasm = [];
-                var nucleus = [];
-                var j = 0;
+        if (include_segmentations) {
 
-                for(let i=0; i < cytoplasm_segmentations_array.cells.length; i++){
-                    segmentation_cells = {
-                        cell_id: 1,
-                        bethesda_system: 2,
-                        cytoplasm: cytoplasm.push({
-                            coord_x: cytoplasm_segmentations_array.cells[i].coord_x,
-                            coord_y: cytoplasm_segmentations_array.cells[i].coord_y,
-                        }),
-                        nucleus: cytoplasm_segmentations_array.cells[i].cell_id !== nucleus_segmentations_array.cells[j].cell_id? null 
+            var segmentation_cells = [];
+            var aux = 0;
+
+            for(let images_segmentations=0; images_segmentations < cytoplasm_segmentations_array.length; images_segmentations++){
+
+                segmentation_cells = [];
+                aux = 0;
+
+                for(let i=0; i < cytoplasm_segmentations_array[images_segmentations].cytoplasm_segmentation_cells.length; i++){
+                    segmentation_cells.push({
+                        cell_id: cytoplasm_segmentations_array[images_segmentations].cytoplasm_segmentation_cells[i].cell_id,
+                        description_id: cytoplasm_segmentations_array[images_segmentations].cytoplasm_segmentation_cells[i].description_id,
+                        cytoplasm: cytoplasm_segmentations_array[images_segmentations].cytoplasm_segmentation_cells[i].coords.map(
+                            (item) => {
+                                return {
+                                    coord_x: item.coord_x,
+                                    coord_y: item.coord_y,
+                                };
+                            }
+                        ),
+                        nucleus: cytoplasm_segmentations_array[images_segmentations].cytoplasm_segmentation_cells[i].cell_id !== nucleus_segmentations_array[images_segmentations]?.nucleus_segmentation_cells[aux]?.cell_id? null 
                         :
-                        nucleus.push({
-                            coord_x: nucleus_segmentations_array.cells[j].coord_x,
-                            coord_y: nucleus_segmentations_array.cells[j].coord_y,
-                        }),
-                    };
-
-                    if(cytoplasm_segmentations_array.cells[i].cell_id === nucleus_segmentations_array.cells[j].cell_id) j++;
+                        nucleus_segmentations_array[images_segmentations].nucleus_segmentation_cells[i].coords.map(
+                            (item) => {
+                                return {
+                                    coord_x: item.coord_x,
+                                    coord_y: item.coord_y,
+                                };
+                            }
+                        ),
+                    });
+    
+                    if(cytoplasm_segmentations_array[images_segmentations].cytoplasm_segmentation_cells[i].cell_id === nucleus_segmentations_array[images_segmentations]?.nucleus_segmentation_cells[aux]?.cell_id) aux++;
                 };
 
                 segmentations_array.push({
-                    image_id: this.imagem.id,
-                    image_doi: this.imagem.doi,
-                    image_name: this.imagem.nome,
+                    image_id: cytoplasm_segmentations_array[images_segmentations].image_id,
+                    image_doi: cytoplasm_segmentations_array[images_segmentations].image_doi,
+                    image_name: cytoplasm_segmentations_array[images_segmentations].image_name,
                     cells: segmentation_cells
                 });
-                */
-
-                /*
-                var initial = `${this.imagem.id},${this.imagem.doi},${this.imagem.nome},`;
-                let cytoplasm_line;
-                let nucleus_line;
-
-                this.todasSegmentacoes.celulas.forEach(
-                    (item) => {
-                        cytoplasm_line = initial + `${item.id},${item.descricao.id},${item.descricao.nome},${item.descricao.codigo},` + item.segmentos_citoplasma.map(
-                            (cyto_cord) => {
-                                return `${cyto_cord.coord_x},${cyto_cord.coord_y}`
-                            }
-                        ) + "\n";
-
-                        nucleus_line = initial + `${item.id},${item.descricao.id},${item.descricao.nome},${item.descricao.codigo},` + item.segmentos_nucleo.map(
-                            (nucle_cord) => {
-                                return `${nucle_cord.coord_x},${nucle_cord.coord_y}`
-                            }
-                        ) + "\n";
-                        
-                        segmentation_csv = segmentation_csv + cytoplasm_line + nucleus_line;
-                    }
-                );
-                */
             }
+
+            /*
+            var initial = `${this.imagem.id},${this.imagem.doi},${this.imagem.nome},`;
+            let cytoplasm_line;
+            let nucleus_line;
+
+            this.todasSegmentacoes.celulas.forEach(
+                (item) => {
+                    cytoplasm_line = initial + `${item.id},${item.descricao.id},${item.descricao.nome},${item.descricao.codigo},` + item.segmentos_citoplasma.map(
+                        (cyto_cord) => {
+                            return `${cyto_cord.coord_x},${cyto_cord.coord_y}`
+                        }
+                    ) + "\n";
+
+                    nucleus_line = initial + `${item.id},${item.descricao.id},${item.descricao.nome},${item.descricao.codigo},` + item.segmentos_nucleo.map(
+                        (nucle_cord) => {
+                            return `${nucle_cord.coord_x},${nucle_cord.coord_y}`
+                        }
+                    ) + "\n";
+                    
+                    segmentation_csv = segmentation_csv + cytoplasm_line + nucleus_line;
+                }
+            );
+            */
         }
 
         if (include_classifications) {
