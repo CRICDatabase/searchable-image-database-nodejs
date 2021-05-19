@@ -95,7 +95,6 @@ module.exports = {
     },
 
     async cadastrarClassificacaoDeCelula(req, res, next) {
-
         let classificacoesCadastradas;
         try {
             classificacoesCadastradas = await CadastrarClassificacaoCelulaExecutor.Executar(req, res);
