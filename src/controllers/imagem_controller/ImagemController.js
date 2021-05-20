@@ -44,7 +44,6 @@ module.exports = {
         }
     },
 
-
     async delete_image(req, res, next) {
 
         try {
@@ -96,7 +95,6 @@ module.exports = {
     },
 
     async cadastrarClassificacaoDeCelula(req, res, next) {
-
         let classificacoesCadastradas;
         try {
             classificacoesCadastradas = await CadastrarClassificacaoCelulaExecutor.Executar(req, res);

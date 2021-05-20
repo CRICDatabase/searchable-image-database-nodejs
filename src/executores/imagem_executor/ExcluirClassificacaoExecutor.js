@@ -27,9 +27,11 @@ module.exports = {
         );
 
         const todasClassificacoes = await ImagemRepositorio.listarClassificacoesCelula(id_imagem);
+        const todasLesoes = await ImagemRepositorio.listarLesoes();
         await image_utils.atualizarLesaoMaisGraveNaImagem(
             id_imagem,
-            todasClassificacoes
+            todasClassificacoes,
+            todasLesoes
         );
     }
 };

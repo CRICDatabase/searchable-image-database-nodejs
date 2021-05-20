@@ -6,16 +6,18 @@ const debug = require("debug")("database.cric:utils/image");
 const ImagemRepositorio = require("../repositorios/imagem_repositorio");
 
 module.exports = {
-    async atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes){
+    async atualizarLesaoMaisGraveNaImagem(id_imagem, listaDeClassificacoes, listaLesoes){
 
         let higher_grade = 0;
         let injury_id_with_higher_grade = 1;
         listaDeClassificacoes.forEach(celula => {
-            if(celula.lesao_grade > higher_grade) {
-                higher_grade = celula.lesao_grade;
-                injury_id_with_higher_grade = celula.id_lesao;
-            }
-        });
-        return ImagemRepositorio.atualizarLesaoImagem(id_imagem, injury_id_with_higher_grade);
+            listaLesoes.forEach(lesao => {
+                if(celula.id_lesao === lesao.id && lesao.grade > higher_grade) {
+                    higher_grade = lesao.grade;
+                    injury_id_with_higher_grade = celula.id_lesao;
+                }
+            })
+        });       
+        return await ImagemRepositorio.atualizarLesaoImagem(id_imagem, injury_id_with_higher_grade);
     }
 };
